@@ -2491,17 +2491,17 @@ guiTypes = {
 			}
 
 		}
-### Replace Naval folders ##############################################
+### Replace Naval folders end ##########################################
 
+### Replace Air techs folders ##########################################
 		containerWindowType = {
 			name = "air_techs_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 0 bottom = 24 right = 25}
+			margin = { top = 13 left = 13 bottom = 24 right = 40}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
-			scroll_wheel_factor = 40
 
 			background = {
 				name = "Background"
@@ -2512,7 +2512,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 2000 height = 1300
+					width = 2800 height = 1300
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -2521,19 +2521,19 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_techtree_stripes"
 				}
-
+				
 				iconType = {
 					name ="artillery_techtree_bg"
 					spriteType = "GFX_air_techtree_bg"
 					position = { x=0 y=0 }
 					alwaystransparent = yes
-				}
-
+				}				
+				
 			}
 
 			instantTextBoxType = {
 				name = "airtech_year2"
-				position = { x = 30 y = 160 }
+				position = { x = 20 y = 160 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -2546,7 +2546,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year3"
-				position = { x = 30 y = 298 }
+				position = { x = 20 y = 298 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -2559,7 +2559,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year4"
-				position = { x = 30 y = 440 }
+				position = { x = 20 y = 440 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -2572,7 +2572,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year5"
-				position = { x = 30 y = 580 }
+				position = { x = 20 y = 580 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -2585,7 +2585,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year6"
-				position = { x = 30 y = 858 }
+				position = { x = 20 y = 858 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -2598,7 +2598,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year7"
-				position = { x = 30 y = 998 }
+				position = { x = 20 y = 998 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -2607,17 +2607,34 @@ guiTypes = {
 				maxHeight = 32
 				format = left
 				Orientation = "UPPER_LEFT"
+			}			
+			
+###------> New Air Date Text B <><> <><> <><> <><> <><>	
+
+			instantTextBoxType = {
+				name = "airtech_year8"
+				position = { x = 20 y = 1138 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1955"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
 			}
+
+###------> X <><> <><> <><> <><> <><>	
 
 			containerWindowType = {
 				name = "airtech_year_left"
-				position = { x=1750 y=0 }
-				size = { width = 200 height = 100% }
-				orientation = upper_left
+				position = { x=2300 y=0 }
+				size = { width = 130 height = 100% }
+				orientation = upper_left			
 
 				instantTextBoxType = {
 					name = "airtech_year2"
-					position = { x = 60 y = 160 }
+					position = { x = 260 y = 160 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2627,10 +2644,10 @@ guiTypes = {
 					format = right
 					Orientation = "UPPER_LEFT"
 				}
-
+	
 				instantTextBoxType = {
 					name = "airtech_year3"
-					position = { x = 60 y = 298 }
+					position = { x = 260 y = 298 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2640,10 +2657,10 @@ guiTypes = {
 					format = right
 					Orientation = "UPPER_LEFT"
 				}
-
+	
 				instantTextBoxType = {
 					name = "airtech_year4"
-					position = { x = 60 y = 440 }
+					position = { x = 260 y = 440 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2653,10 +2670,10 @@ guiTypes = {
 					format = right
 					Orientation = "UPPER_LEFT"
 				}
-
+	
 				instantTextBoxType = {
 					name = "airtech_year5"
-					position = { x = 60 y = 580 }
+					position = { x = 260 y = 580 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2666,10 +2683,10 @@ guiTypes = {
 					format = right
 					Orientation = "UPPER_LEFT"
 				}
-
+	
 				instantTextBoxType = {
 					name = "airtech_year6"
-					position = { x = 60 y = 858 }
+					position = { x = 260 y = 858 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2679,10 +2696,10 @@ guiTypes = {
 					format = right
 					Orientation = "UPPER_LEFT"
 				}
-
+	
 				instantTextBoxType = {
 					name = "airtech_year7"
-					position = { x = 60 y = 998 }
+					position = { x = 260 y = 998 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2692,30 +2709,76 @@ guiTypes = {
 					format = right
 					Orientation = "UPPER_LEFT"
 				}
+###------> New Air Date Text B <><> <><> <><> <><> <><>	
+
+				instantTextBoxType = {
+					name = "airtech_year8"
+					position = { x = 260 y = 1138 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1955"
+					maxWidth = 170
+					maxHeight = 32
+					format = right
+					Orientation = "UPPER_LEFT"
+				}
+
+###------> X <><> <><> <><> <><> <><>	
+
 			}
 
-
+				
 			instantTextBoxType = {
 				name = "airtech_subtitle_fighter"
-				position = { x = 355 y = 110 }
+				position = { x = 460 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
+				borderSize = {x = 50 y = 4}
 				text = "AIR_TITLE_FIGHTER"
 				maxWidth = 300
 				maxHeight = 62
 				format = center
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "fighter_equipment_desc"
-			}
-
-			instantTextBoxType = {
-				name = "airtech_subtitle_cas"
-				position = { x = 110 y = 185 }
+			}	
+			
+            instantTextBoxType = {
+				name = "airtech_subtitle_cv_fighter"
+				position = { x = 733 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_CAS"
+				text = "CV Fighter"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "fighter_equipment_desc"
+			}	
+			
+			instantTextBoxType = {
+				name = "airtech_subtitle_cas"
+				position = { x = 83 y = 245 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Dive Bomber"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "CAS_equipment_desc"
+			}
+			
+			instantTextBoxType = {
+				name = "airtech_subtitle_cv_cas"
+				position = { x = 300 y = 245 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "CV Dive Bomber"
+
 				maxWidth = 300
 				maxHeight = 62
 				format = center
@@ -2725,11 +2788,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_nav"
-				position = { x = 595 y = 185 }
+				position = { x = 950 y = 245 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_NAV"
+				text = "Torpedo Bomber"
 				maxWidth = 300
 				maxHeight = 62
 				format = center
@@ -2739,7 +2802,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_h_fighter"
-				position = { x = 870 y = 185 }
+				position = { x = 1255 y = 210 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2753,25 +2816,39 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_tac"
-				position = { x = 1110 y = 90 }
+				position = { x = 1465 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_MEDIUM_BOMBER"
+				text = "Medium Bomber"
 				maxWidth = 300
 				maxHeight = 62
 				format = center
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "tac_bomber_equipment_desc"
 			}
-
+			
 			instantTextBoxType = {
-				name = "airtech_subtitle_strat"
-				position = { x = 1345 y = 185 }
+				name = "airtech_subtitle_flying_boat"
+				position = { x = 1897 y = 108 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_STRAT_BOMBER"
+				text = "Maritime Patrol"	
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "flying_boat_equipment_desc"
+			}
+
+			instantTextBoxType = {
+				name = "airtech_subtitle_strat"
+				position = { x = 1675 y = 245 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Heavy Bomber"
 				maxWidth = 300
 				maxHeight = 62
 				format = center
@@ -2779,9 +2856,85 @@ guiTypes = {
 				pdx_tooltip = "strat_bomber_equipment_desc"
 			}
 
+			containerWindowType = {
+				name = "tiled_research_bg"
+				position = { x=390 y=807 }
+				size = { width = 1685 height = 490 }
+				clipping = no
+	
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}			
+			}
+				
+			gridboxtype = {
+				name = "early_fighter_tree"
+				position = { x = 470 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "cv_early_fighter_tree"
+				position = { x = 688 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "CAS1_tree"
+				position = { x = 315 y = 31 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "cv_CAS1_tree"
+				position = { x = 533 y = 31 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "naval_bomber1_tree"
+				position = { x = 625 y = 31 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "early_bomber_tree"
+				position = { x = 1280 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "heavy_fighter1_tree"
+				position = { x = 1350 y = 32 }	
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "flying_boat_tree"
+				position = { x = 1712 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
 			instantTextBoxType = {
 				name = "airtech_subtitle_scout"
-				position = { x = 1620 y = 185 }
+				position = { x = 2350 y = 185 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2791,40 +2944,11 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "scout_plane_equipment_1_desc"
-			}
-
-
-			containerWindowType = {
-				name = "tiled_research_bg"
-				position = { x=250 y=807 }
-				size = { width = 1475 height = 350 }
-				clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_research_bg"
-				}
-			}
-
-			gridboxtype = {
-				name = "early_fighter_tree"
-				position = { x = 300 y = 32 }
-				size = { width = 400 height = 1000 }
-				slotsize = { width = 60 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "early_bomber_tree"
-				position = { x = 935 y = 32 }
-				size = { width = 400 height = 1000 }
-				slotsize = { width = 60 height = 70 }
-				format = "UP"
-			}
+			}	
 
 			gridboxtype = {
 				name = "strategic_bomber1_tree"
-				position = { x = 1400 y = 32 }
+				position = { x = 1730 y = 32 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2832,20 +2956,75 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "scout_plane1_tree"
-				position = { x = 870 y = 32 }
+				position = { x = 1900 y = 32 }
 				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}	
+
+			instantTextBoxType = {
+				name = "airtech_subtitle_transport"
+				position = { x = 2125 y = 185 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "AIR_TITLE_TRANSPORT_PLANE"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "scout_plane_equipment_1_desc"
+			}
+
+			gridboxtype = {
+				name = "transport_plane1_tree"
+				position = { x = 1525 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}			
+
+			gridboxtype = {
+				name = "experimental_rockets_tree"
+				position = { x = 640 y = 0 }
+				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
 			gridboxtype = {
-				name = "experimental_rockets_tree"
-				position = { x = 540 y = 0 }
-				size = { width = 400 height = 400 }
-				slotsize = { width = 70 height = 70 }
+				name = "cv_naval_bomber1_tree"
+				position = { x = 1222 y = 770 }
+				size = { width = 0 height = 0 }
+				slotsize = { width = 0 height = 0 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "cv_naval_bomber2_tree"
+				position = { x = 1222 y = 770 }
+				size = { width = 0 height = 0 }
+				slotsize = { width = 0 height = 0 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "cv_naval_bomber3_tree"
+				position = { x = 1222 y = 770 }
+				size = { width = 0 height = 0 }
+				slotsize = { width = 0 height = 0 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "electronic_mechanical_engineering_tree"
+				position = { x = 1222 y = 770 }
+				size = { width = 0 height = 0 }
+				slotsize = { width = 0 height = 0 }
 				format = "UP"
 			}
 		}
+### Replace Air techs folders end ##########################################
 		
 ### Replace industry folder #########################################
 		containerWindowType = {

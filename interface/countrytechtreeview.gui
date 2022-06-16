@@ -5143,13 +5143,14 @@ guiTypes = {
 				name = "Background"
 				spriteType ="GFX_subtech_carrier_plane_bg"
 			}
-
+### Replace Icon for R56 techtree ###########################################
 			iconType = {
 				name = "picture"
-				position = { x=6 y=2 }
-				spriteType = "GFX_airwing_carrier_icon"
+				position = { x=4 y=3 }
+				spriteType = "GFX_nav_strike"
 				alwaystransparent = yes
 			}
+### Replace Icon for R56 techtree end #######################################
 		}
 
 	}

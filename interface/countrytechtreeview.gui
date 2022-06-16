@@ -304,6 +304,191 @@ guiTypes = {
 				format = "LEFT"
 			}
 		}
+### Add r56 vehicles #################################
+		containerWindowType = {
+			name = "support_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+
+			containerWindowType = {
+				name = "techtree_stripes"
+				position = { x= 0 y= 0 }
+				size = { 
+					width = 2800 height = 1000
+					min = { width = 100%% height = 100%% }
+				}
+				clipping = no
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_techtree_stripes"
+				}
+
+				iconType = {
+					name ="infantry_techtree_bg"
+					spriteType = "GFX_support_techtree_bg"
+					position = { x=0 y=0 }
+					alwaystransparent = yes
+				}
+				
+				instantTextBoxType = {
+					name = "support_year2"
+					position = { x = 90 y = 50 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1918"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "support_year3"
+					position = { x = 243 y = 50 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1936"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "support_year6"
+					position = { x = 523 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1939"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "support_year9"
+					position = { x = 943 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1942"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+						
+				instantTextBoxType = {
+					name = "support_year12"
+					position = { x = 1363 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1945"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}	
+
+###------> Support Date Top  <><> <><> <><> <><> <><>	
+
+				instantTextBoxType = {
+					name = "support_year13"
+					position = { x = 1783 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1948"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "support_year14"
+					position = { x = 2203 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1951"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "support_year15"
+					position = { x = 2623 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1954"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}				
+
+###------> X  <><> <><> <><> <><> <><>					
+					
+			}	
+				
+			containerWindowType = {
+				name = "tiled_research_bg"
+				position = { x=150 y=640 }
+				size = { width = 2600 height = 430 }
+				clipping = no
+			
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}			
+			}
+				
+			containerWindowType = {
+				name = "tiled_research_bg_2"
+				position = { x=160 y=920 }
+				size = { width = 2580 height = 140 }
+				clipping = no
+			
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}			
+			}
+
+			gridboxtype = {
+				name = "tech_support_tree"
+				position = { x = 100 y = 160 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "electronic_mechanical_engineering_tree"
+				position = { x= 100 y=160 }
+				slotsize = { width=70 height= 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "motorised_infantry_tree"
+				position = { x = 100 y = 160 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+		}
+### Add r56 vehicles end #########################################
 
 		containerWindowType = {
 			name = "support_folder"
@@ -3191,7 +3376,7 @@ guiTypes = {
 
 ### Add Etax Folder End ###################################################
 
-
+### Add r56 buttons ##################################################
 		containerWindowType = {
 			name = "folder_tabs"
 			position = { x=0 y=7 }
@@ -3220,9 +3405,18 @@ guiTypes = {
 				frame = 1
 				clicksound = ui_research_tab_support
 			}
+
+			buttonType = {
+				name = "r56_vechicles_folder_tab"
+				position = { x = 200 y = 0 }
+				quadTextureSprite = "GFX_r56_vechicles_folder_tab"
+				frame = 1
+				clicksound = ui_research_tab_armor
+			}
+
 			buttonType = {
 				name = "armour_folder_tab"
-				position = { x = 200 y = 0 }
+				position = { x = 289 y = 0 }
 				quadTextureSprite = "GFX_armour_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_armor
@@ -3230,7 +3424,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "nsb_armour_folder_tab"
-				position = { x = 200 y = 0 }
+				position = { x = 289 y = 0 }
 				quadTextureSprite = "GFX_armour_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_armor
@@ -3238,7 +3432,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "artillery_folder_tab"
-				position = { x = 289 y = 0 }
+				position = { x = 378 y = 0 }
 				quadTextureSprite = "GFX_artillery_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_artillery
@@ -3246,29 +3440,28 @@ guiTypes = {
 
 			buttonType = {
 				name = "naval_folder_tab"
-				position = { x = 378 y = 0 }
+				position = { x = 467 y = 0 }
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_naval
 			}
 			buttonType = {
 				name = "mtgnavalfolder_tab"
-				position = { x = 378 y = 0 }
+				position = { x = 467 y = 0 }
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_naval
 			}
-
 			buttonType = {
 				name = "air_techs_folder_tab"
-				position = { x = 467 y = 0 }
+				position = { x = 556 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_air
 			}
 
 			buttonType = {
-				position = { x = 556 y = 0 }
+				position = { x = 645 y = 0 }
 				name = "electronics_folder_tab"
 				quadTextureSprite = "GFX_techtree_engineering_tab"
 				frame = 1
@@ -3278,32 +3471,15 @@ guiTypes = {
 			iconType = {
 				name = "highlight_engineering_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=556 y=0}
-				hide = yes
-				alwaystransparent = yes
-			}
-
-			buttonType = {
-				position = { x = 645 y = 0 }
-				name = "industry_folder_tab"
-				quadTextureSprite = "GFX_industry_folder_tab"
-				#quadTextureSprite = "GFX_techtree_engineering_tab"
-				frame = 1
-				clicksound = ui_research_tab_industry
-			}
-
-			iconType = {
-				name = "highlight_industry_folder"
-				spriteType = "GFX_tutorial_research_folder_icon_glow"
 				position = { x=645 y=0}
 				hide = yes
 				alwaystransparent = yes
-			}
-### Add ETAX Tab #################################################
-            buttonType = {
-				position = { x = 745 y = 0 }
-				name = "etax_folder_tab"
-				quadTextureSprite = "GFX_etax_folder_tab"
+			}			
+				
+			buttonType = {
+				position = { x = 734 y = 0 }
+				name = "industry_folder_tab"
+				quadTextureSprite = "GFX_industry_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_industry
 			}
@@ -3311,13 +3487,31 @@ guiTypes = {
 			iconType = {
 				name = "highlight_industry_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=745 y=0}
+				position = { x=734 y=0}
+				hide = yes
+				alwaystransparent = yes
+			}
+			
+			buttonType = {
+				position = { x = 823 y = 0 }
+				name = "etax_folder_tab"
+				quadTextureSprite = "GFX_etax_folder_tab"
+				frame = 1
+				clicksound = ui_research_tab_engineering
+			}
+			
+			iconType = {
+				name = "highlight_etax_folder"
+				spriteType = "GFX_tutorial_research_folder_icon_glow"
+				position = { x=823 y=0}
 				hide = yes
 				alwaystransparent = yes
 			}
 
-### Add ETAX Tab end #################################################
 		}
+
+###------> X <><> <><> <><> <><> <><>
+### Add r56 buttons end ##################################################
 
 		buttonType = {
 			name = "close_button"
@@ -4054,6 +4248,152 @@ guiTypes = {
 			format = right
 		}
 	}
+### Add r56 vehicle folder item ############################################
+#####R56 vech 
+	containerWindowType = {
+		name = "techtree_r56_vechicles_folder_item"
+		position = { x=-55 y=0 }
+		size = { width = 183 height = 84 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=74 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 6 y = -1 }
+			textureFile = ""
+			font = "hoi_20bs"
+			borderSize = {x = 4 y = 4}
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 176
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+		
+		iconType = {
+			name = "bonus_icon"
+			position = { x=111 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 111 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 80
+			maxHeight = 20
+			format = center
+		}
+		
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+			
+			iconType = {
+				name = "picture"
+				position = { x=1 y=2 }
+				spriteType = "GFX_subtech_td"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=141 y=28 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+			
+			iconType = {
+				name = "picture"
+				position = { x=1 y=2 }
+				spriteType = "GFX_subtech_art"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=1 y=2 }
+				spriteType = "GFX_subtech_aa"
+				alwaystransparent = yes
+			}
+		}			
+	}
+	
+	containerWindowType = {
+		name = "techtree_r56_vechicles_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+#############
+### Add r56 vehicle folder item end ########################################
 
 	containerWindowType = {
 		name = "techtree_artillery_folder_small_item"

@@ -1,8 +1,0 @@
-technology_folders = {
-### Added Etax###########################################################
-### Source: KR
-	etax_folder = {
-		ledger = civilian
-	}
-### Added Etax end ###################################################### 
-}

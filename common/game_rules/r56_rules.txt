@@ -1,0 +1,17 @@
+allow_national_characters = {
+	name = "RULE_ALLOW_NATIONAL_CHARACTERS"
+	group = "RULE_GROUP_GAMEPLAY"
+	icon = "GFX_guarantee_independence"
+	option = {
+		name = yes
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_NATIONAL_CHARACTERS_ALLOWED_DESC"
+	}
+
+	option = {
+		name = no
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_NATIONAL_CHARACTERS_BLOCKED_DESC"
+	}
+
+}

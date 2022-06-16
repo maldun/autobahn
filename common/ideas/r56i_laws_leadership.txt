@@ -45,7 +45,8 @@ ideas = {
 				OR = {
 					is_puppet = no
 					OVERLORD = {	
-						has_government = fascism
+						has_government = national_populist
+					    has_government = paternal_autocrat
 					}					
 					
 				}
@@ -71,27 +72,28 @@ ideas = {
 
 				modifier = {
 					OR = {
-						fascism > 0.5
-						has_idea_with_trait = fascist_demagogue						
-						has_government = fascism
-						AND = {
-							has_idea = nationalism
-							NOT = {
-								is_puppet = yes
-								if = {
-									limit = {
-										is_puppet = yes
-									}
-									ROOT = {
-										OVERLORD = {
-											NOT = {	
-												has_government = fascism
-											}
-										}
-									}									
-								}
-						 	}
-					 	}
+						#fascism > 0.5
+						#has_idea_with_trait = fascist_demagogue						
+						has_government = national_populist
+					    has_government = paternal_autocrat
+						#AND = {
+							#has_idea = nationalism
+							#NOT = {
+								#is_puppet = yes
+								#if = {
+									#limit = {
+										#is_puppet = yes
+									#}
+									#ROOT = {
+										#OVERLORD = {
+											#NOT = {	
+												#has_government = fascism
+											#}
+										#}
+									#}									
+								#}
+						 	#}
+					 	#}
 					}
 					factor = 5
 				}
@@ -124,9 +126,10 @@ ideas = {
 
    				modifier = {
 					OR = {
-						has_government = democratic
-						democratic > 0.5
-						has_idea_with_trait = democratic_reformer						
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = market_liberal
+						has_government = social_conservative					
 					}
 					
 					factor = 5
@@ -140,15 +143,17 @@ ideas = {
 			available = {
 				NOT = {
 					OR = {
-						has_government = communism
+						has_government = totalist
+						has_government = syndicalist
 						is_puppet = yes
-						has_idea = internationalism
-						has_idea = nationalism						
+						#has_idea = internationalism
+						#has_idea = nationalism						
 						has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-						has_country_leader = {
-							name = "Anarchist Commune"
-							ruling_only = yes
-						}					
+						has_government = radical_socialist
+						#has_country_leader = {
+							#name = "Anarchist Commune"
+							#ruling_only = yes
+						#}					
 					}
 				}
 			}
@@ -167,13 +172,13 @@ ideas = {
 				   factor = 0.5
 
 				modifier = {
-					has_government = neutrality
+					has_government = authoritarian_democrat
 					NOT = {
-						OR = {
-							tag = TUR
-							fascism > 0.3
-							communism > 0.3
-						}
+						#OR = {
+							#tag = TUR
+							#fascism > 0.3
+							#communism > 0.3
+						#}
 					}
 					factor = 2
 				}
@@ -194,7 +199,8 @@ ideas = {
 
 			available = {
 				NOT = {
-					has_government = fascism
+					has_government = national_populist
+					has_government = paternal_autocrat
 					is_puppet = yes
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
@@ -215,11 +221,12 @@ ideas = {
 
    				modifier = {
 					OR = {
-						has_government = communism
-						communism > 0.5
-						has_idea_with_trait = communist_revolutionary
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						#has_idea_with_trait = communist_revolutionary
 						AND = {
-							has_idea = internationalism
+							#has_idea = internationalism
 							NOT = {
 								is_puppet = yes
 								if = {
@@ -229,7 +236,9 @@ ideas = {
 									ROOT = {
 										OVERLORD = {
 											NOT = {	
-												has_government = communism
+												has_government = totalist
+												has_government = syndicalist
+												has_government = radical_socialist
 											}
 										}
 									}									
@@ -246,11 +255,12 @@ ideas = {
 			picture = SPR_collectivized_society
 			available = {
 				OR = {
-					has_country_leader = {
-						name = "Anarchist Commune"
-						ruling_only = yes
-					}
-					has_idea = SPR_collectivized_society
+					#has_country_leader = {
+						#name = "Anarchist Commune"
+						#ruling_only = yes
+					#}
+					has_government = radical_socialist
+					#has_idea = SPR_collectivized_society
 				}
 			}
 			

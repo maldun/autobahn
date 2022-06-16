@@ -31,12 +31,15 @@ ideas = {
 				   factor = 0.75
 				
 				 modifier = {
-					has_government = democratic
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_conservative
 					factor = 2
 				}
 				   
 			 	modifier = {
-					has_government = neutrality
+					has_government = authoritarian_democrat
 					factor = 1.5
 				}
 			}
@@ -67,12 +70,15 @@ ideas = {
    				factor = 0.5
 
    				modifier = {
-					has_government = fascism
+					has_government = national_populist
+					has_government = paternal_autocrat
 					factor = 2
 				}
 
    				modifier = {
-					has_government = communism
+					has_government = radical_socialist
+					has_government = syndicalist
+					has_government = totalist
 					factor = 2
 				}
    			}
@@ -101,7 +107,7 @@ ideas = {
 				   factor = 0.75
 				   
 				   modifier = {
-					has_government = neutrality
+					has_government = authoritarian_democrat
 					factor = 1.5
 				}
    			}
@@ -132,11 +138,15 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_conservative
+					has_government = radical_socialist
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+					has_government = authoritarian_democrat
 					factor = 0.5
 				}
    			}

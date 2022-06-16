@@ -16,10 +16,11 @@ ideas = {
 			available = {
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-					has_country_leader = {
-						name = "Anarchist Commune"
-						ruling_only = yes
-					}					
+					#has_country_leader = {
+						#name = "Anarchist Commune"
+						#ruling_only = yes
+					#}
+					has_government = radical_socialist
 				}
 			}
 
@@ -37,7 +38,7 @@ ideas = {
 				factor = 0.5	
 				   	
 				modifier = {
-					has_government = neutrality
+					has_government = authoritarian_democrat
 					factor = 1.5
 				}
 			}
@@ -50,11 +51,15 @@ ideas = {
 
 			available = {
 				NOT = {
-					has_government = democratic
-					has_country_leader = {
-						name = "Anarchist Commune"
-						ruling_only = yes
-					}					
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_conservative
+					has_government = radical_socialist
+					#has_country_leader = {
+						#name = "Anarchist Commune"
+						#ruling_only = yes
+					#}					
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
 			}
@@ -77,7 +82,8 @@ ideas = {
    				factor = 0.5
 
 				modifier = {
-					has_government = fascism
+					has_government = national_populist
+					has_government = paternal_autocrat
 					factor = 2
 				}
    			}
@@ -88,11 +94,15 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = democratic
-					has_country_leader = {
-						name = "Anarchist Commune"
-						ruling_only = yes
-					}						
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_conservative
+					has_government = radical_socialist
+					#has_country_leader = {
+						#name = "Anarchist Commune"
+						#ruling_only = yes
+					#}									
 				}
 				
 				NOT = {					
@@ -114,7 +124,10 @@ ideas = {
    				factor = 0.5
 
    				modifier = {
-					has_government = democratic
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_conservative
 					factor = 2
 				}
    			}

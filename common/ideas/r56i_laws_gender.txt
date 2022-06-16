@@ -15,10 +15,11 @@ ideas = {
 			available = {
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-					has_country_leader = {
-						name = "Anarchist Commune"
-						ruling_only = yes
-					}
+					has_government = radical_socialist
+# 					has_country_leader = {
+# 						name = "Anarchist Commune"
+# 						ruling_only = yes
+# 					}
 					has_idea_with_trait = womens_figurehead
 				}	
 			}
@@ -46,10 +47,11 @@ ideas = {
 			available = {
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-					has_country_leader = {
-						name = "Anarchist Commune"
-						ruling_only = yes
-					}
+					has_government = radical_socialist
+# 					has_country_leader = {
+# 						name = "Anarchist Commune"
+# 						ruling_only = yes
+# 					}
 				}
 			}
 
@@ -68,7 +70,10 @@ ideas = {
    				factor = 0.5
 
    				modifier = {
-					has_government = democratic
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_conservative
 					factor = 2
 				}
    			}
@@ -79,12 +84,16 @@ ideas = {
 		
 			available = {
 				NOT = {
-					has_government = communism
+					has_government = syndicalist
+					
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-					has_country_leader = {
-						name = "Anarchist Commune"
-						ruling_only = yes
-					}	
+					has_government = radical_socialist
+					has_government = syndicalist
+					has_government = totalist
+# 					has_country_leader = {
+# 						name = "Anarchist Commune"
+# 						ruling_only = yes
+# 					}	
 					has_idea_with_trait = womens_figurehead				
 				}
 			}
@@ -102,7 +111,7 @@ ideas = {
    				factor = 0.5
 
    				modifier = {
-					has_government = fascism
+					has_government = national_populist
 					factor = 2
 				}
    			}
@@ -125,17 +134,17 @@ ideas = {
 									}		
 								}
 								original_tag = JAP
-								original_tag = PER #remove the veil 
-								original_tag = ETH #mainly gameplay reasons
-								original_tag = SAF
-								original_tag = AST
-								original_tag = NZL
-								original_tag = ARM
-								original_tag = GEO
-								original_tag = TUR
-								original_tag = CHI
-								original_tag = GXC
-								original_tag = SHX
+								#original_tag = PER #remove the veil 
+								#original_tag = ETH #mainly gameplay reasons
+								#original_tag = SAF
+								#original_tag = AST
+								#original_tag = NZL
+								#original_tag = ARM
+								#original_tag = GEO
+								#original_tag = TUR
+								#original_tag = CHI
+								#original_tag = GXC
+								#original_tag = SHX
 							}
 						}	
 					}
@@ -144,7 +153,8 @@ ideas = {
 					}					
 				}
 				NOT = {
-					has_government = fascism
+					has_government = national_populist
+					has_government = paternal_autocrat
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
 			}
@@ -163,7 +173,9 @@ ideas = {
    				factor = 0.5
 
    				modifier = {
-					has_government = communism
+					has_government = radical_socialist
+					has_government = syndicalist
+					has_government = totalist
 					factor = 2
 				}
    			}

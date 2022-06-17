@@ -21,7 +21,7 @@ dependencies={
 	"Kaiserreich(CN.Ver)"
 	"+JP:kaiserreich"
 }
-name="Autobahn"
+name="Autobahn nach 56"
 picture="thumbnail.png"
 supported_version="1.11.*"
 path="/home/maldun/.local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn"

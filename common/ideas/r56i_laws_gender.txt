@@ -149,7 +149,7 @@ ideas = {
 						}	
 					}
 					NOT = {
-						has_government = neutrality
+						has_government = authoritarian_democrat
 					}					
 				}
 				NOT = {

@@ -244,12 +244,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/rules_sum_icon.dds"
 	}
 
-
-	spriteType = {
-		name = "GFX_idea_slot_high_command"
-		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
-	}
-
+### Replace with KRX GFX ########################################################
+	#spriteType = {
+	#	name = "GFX_idea_slot_high_command"
+	#	textureFile = "gfx/interface/officer_corp/select_advisor.dds"
+	#}
+### Replace with KRX GFX ########################################################
 	spriteType = {
 		name = "GFX_idea_slot_chief_of_army"
 		textureFile = "gfx/interface/idea_slot_army_chief.dds"

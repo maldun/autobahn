@@ -5,7 +5,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_categories"
 		texturefile = "gfx/interface/idea_categories.dds"
-		noOfFrames = 6
+		noOfFrames = 8
 	}
 	spriteType = {
 		name = "GFX_autonomy_mandate_city_icon"

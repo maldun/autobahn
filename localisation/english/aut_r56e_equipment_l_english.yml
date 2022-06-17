@@ -1,4 +1,5 @@
-﻿#####---------------------------------------------------------------------Mod by Sig "GreatExperiment" Altre
+﻿### Replace Semi-Modern --> Super-Modern
+#####---------------------------------------------------------------------Mod by Sig "GreatExperiment" Altre
 
 l_english: 
 
@@ -54,8 +55,8 @@ l_english:
  torpedo_equipment_research:0 "Torpedo Research"
  
 ###------> Battlecruisers
- battle_cruiser_3:0 "Semi-Modern Battlecruiser"
- battle_cruiser_3_short:0 "Semi-Modern Battlecruiser"
+ battle_cruiser_3:0 "Super-Modern Battlecruiser"
+ battle_cruiser_3_short:0 "Super-Modern Battlecruiser"
  battle_cruiser_3_desc:0 "Nearly everything from the guns to the engines has been improved. Now, all we need is a kitchen sink."
 
  
@@ -78,8 +79,8 @@ l_english:
  SOV_SH_battleship_3_short:0 "Oktyabrskaya Revolutsiya"
 
 #-<><><> Destroyers
- destroyer_5:0 "Semi-Modern Destroyer"
- destroyer_5_short:0 "Semi-Modern Destroyer"
+ destroyer_5:0 "Super-Modern Destroyer"
+ destroyer_5_short:0 "Super-Modern Destroyer"
  destroyer_5_desc:0 "Nearly everything from the guns to the engines has been improved. Now, all we need is a kitchen sink."
 
 #-<><><> 
@@ -109,8 +110,8 @@ l_english:
 
 
 #-<><><> Submarines <><> <><> <><> <><> <><>
- submarine_5:0 "Semi-Modern Submarine"
- submarine_5_short:0 "Semi-Modern Submarine"
+ submarine_5:0 "Super-Modern Submarine"
+ submarine_5_short:0 "Super-Modern Submarine"
  submarine_5_desc:0 "Nearly everything from the guns to the engines has been improved. Now, all we need is a kitchen sink."
 
 #-<><><> 
@@ -148,8 +149,8 @@ l_english:
  SOV_submarine_nuc_short:0 "Project 627"
 
 #-<><><> Light Cruisers <><> <><> <><> <><> <><>
- light_cruiser_5:0 "Semi-Modern Light Cruiser"
- light_cruiser_5_short:0 "Semi-Modern Light Cruiser"
+ light_cruiser_5:0 "Super-Modern Light Cruiser"
+ light_cruiser_5_short:0 "Super-Modern Light Cruiser"
  light_cruiser_5_desc:0 "Nearly everything from the guns to the engines has been improved. Now, all we need is a kitchen sink."
 
 #-<><><> 
@@ -178,8 +179,8 @@ l_english:
  SOV_light_cruiser_7_short:0 "Kutuzov Class"
  
 #-<><><> Heavy Cruisers <><> <><> <><> <><> <><>
- heavy_cruiser_5:0 "Semi-Modern Heavy Cruiser"
- heavy_cruiser_5_short:0 "Semi-Modern Heavy Cruiser"
+ heavy_cruiser_5:0 "Super-Modern Heavy Cruiser"
+ heavy_cruiser_5_short:0 "Super-Modern Heavy Cruiser"
  heavy_cruiser_5_desc:0 "Nearly everything from the guns to the engines has been improved. Now, all we need is a kitchen sink."
 
 #-<><><> 
@@ -208,8 +209,8 @@ l_english:
  SOV_heavy_cruiser_7_short:0 "Zozulya Class"
  
 #-<><><> Battleships <><> <><> <><> <><> <><>
- battleship_5:0 "Semi-Modern Battleship"
- battleship_5_short:0 "Semi-Modern Battleship"
+ battleship_5:0 "Super-Modern Battleship"
+ battleship_5_short:0 "Super-Modern Battleship"
  battleship_5_desc:0 "Nearly everything from the guns to the engines has been improved. Now, all we need is a kitchen sink."
 
 #-<><><> 
@@ -247,8 +248,8 @@ l_english:
  SOV_battleship_nuc_short:0 "Sovetskaya Rossiya Class"
 
 #-<><><> Carriers <><> <><> <><> <><> <><> 
- carrier_5:0 "Semi-Modern Carrier"
- carrier_5_short:0 "Semi-Modern Carrier"
+ carrier_5:0 "Super-Modern Carrier"
+ carrier_5_short:0 "Super-Modern Carrier"
  carrier_5_desc:0 "Nearly everything from the guns to the engines has been improved. Now, all we need is a kitchen sink."
 
 #-<><><> 

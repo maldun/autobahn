@@ -1,0 +1,10 @@
+l_english:
+ generic_army_chief_offensive:0 "Offensive Army Chief"
+ generic_army_chief_defensive:0 "Defensive Army Chief"
+ generic_army_chief_reform:0 "Innovative Army Chief"
+ generic_navy_chief_decisive_battle:0 "Gunner Navy Chief"
+ generic_navy_chief_commerce_raiding:0 "Raider Navy Chief"
+ generic_navy_chief_reform:0 "Innovative Navy Chief"
+ generic_air_chief_safety:0 "Meticulous Air Chief"
+ generic_air_chief_ground_support:0 "Support Air Chief"
+ generic_air_chief_reform:0 "Innovative Air Chief" 

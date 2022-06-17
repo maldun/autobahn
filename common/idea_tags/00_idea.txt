@@ -78,19 +78,19 @@ idea_categories = {
 	}
 ### Add military staff character from KRX #######################
 ### Source: KR
-#	military_staff_characters = {
-#		character_slot = army_chief 
-#		character_slot = navy_chief 
-#		character_slot = air_chief
-#		character_slot = high_command
-#		character_slot = high_command
-#		character_slot = high_command
-#
-#		ledger = invalid # must be overridden
-#
-#		cost = 150
-#		removal_cost = 0
-#	}
+	military_staff_characters = {
+		character_slot = army_chief 
+		character_slot = navy_chief 
+		character_slot = air_chief
+		character_slot = high_command
+		character_slot = high_command
+		character_slot = high_command
+
+		ledger = invalid # must be overridden
+
+		cost = 150
+		removal_cost = 0
+	}
 ### Add military staff character from KRX end ###################
 
 ### Add expanded ideas ##########################################
@@ -235,7 +235,7 @@ slot_ledgers = {
 	naval_manufacturer = navy
 	aircraft_manufacturer = air
 ### Add KRX stuff ##########################################
-#	weapons_manufacturer = army
+	weapons_manufacturer = army
 ### Add KRX stuff end ######################################
 
 	theorist = invalid # must be overridden

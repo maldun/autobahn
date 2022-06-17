@@ -24,18 +24,15 @@ idea_categories = {
 	}
 
 	government = {
-		slot = mobilization_laws
-		slot = trade_laws
-		slot = economy
+		slot = KR_mobilization_laws
+		slot = KR_trade_laws
+		slot = KR_economy
+		removal_cost = -1
 
 		ledger = civilian
 	}
 
 	minister = {
-		# character_slot = head_of_government
-		# character_slot = person_of_influence
-		# character_slot = person_of_influence
-		# character_slot = person_of_influence
 		slot = head_of_government
 		slot = person_of_influence
 		slot = person_of_influence
@@ -46,26 +43,7 @@ idea_categories = {
 		removal_cost = -1 # works
 	}
 
-	research_production = {
-		slot = tank_manufacturer
-		slot = naval_manufacturer
-		slot = aircraft_manufacturer
-		slot = materiel_manufacturer
-		slot = industrial_concern
-
-		ledger = civilian
-
-		cost = 150
-		removal_cost = 0
-	}
-
 	military_staff = {
-		# character_slot = chief_of_staff
-		# character_slot = chief_of_navy
-		# character_slot = chief_of_air_force
-		# character_slot = chief_of_army
-		# character_slot = chief_of_army
-		# character_slot = chief_of_army
 		slot = chief_of_staff
 		slot = chief_of_army
 		slot = chief_of_navy
@@ -76,8 +54,7 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}
-### Add military staff character from KRX #######################
-### Source: KR
+	
 	military_staff_characters = {
 		character_slot = army_chief 
 		character_slot = navy_chief 
@@ -91,8 +68,20 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}
-### Add military staff character from KRX end ###################
 
+	research_production = {
+		slot = tank_manufacturer
+		slot = naval_manufacturer
+		slot = aircraft_manufacturer
+		slot = weapons_manufacturer
+		slot = industrial_concern
+
+		ledger = civilian
+
+		cost = 150
+		removal_cost = 0
+	}
+	
 ### Add expanded ideas ##########################################
 ###------> *Expanded Ideas <><> <><> <><> <><> <><>
 
@@ -116,9 +105,9 @@ idea_categories = {
 
 		cost = 20
 		removal_cost = -1
-
+		
 		politics_tab = no
-
+		
 		ledger = hidden
 
 		slot = academy_spirit
@@ -129,21 +118,21 @@ idea_categories = {
 
 		cost = 35
 		removal_cost = -1
-
+		
 		politics_tab = no
-
+		
 		ledger = hidden
 		slot = army_spirit
 	}
 
 	division_command_spirit = {
 		type = army_spirit
-
+		
 		cost = 50
 		removal_cost = -1
-
+		
 		politics_tab = no
-
+		
 		ledger = hidden
 		slot = division_command_spirit
 	}
@@ -153,9 +142,9 @@ idea_categories = {
 
 		cost = 20
 		removal_cost = -1
-
+		
 		politics_tab = no
-
+		
 		ledger = hidden
 		slot = naval_academy_spirit
 	}
@@ -165,21 +154,21 @@ idea_categories = {
 
 		cost = 35
 		removal_cost = -1
-
+		
 		politics_tab = no
-
+		
 		ledger = hidden
 		slot = navy_spirit
 	}
 
 	naval_command_spirit = {
 		type = navy_spirit
-
+		
 		cost = 50
 		removal_cost = -1
-
+		
 		politics_tab = no
-
+		
 		ledger = hidden
 		slot = naval_command_spirit
 	}
@@ -187,11 +176,11 @@ idea_categories = {
 	air_force_academy_spirit = {
 		type = air_spirit
 
-		cost = 50
+		cost = 20
 		removal_cost = -1
-
+		
 		politics_tab = no
-
+		
 		ledger = hidden
 		slot = air_force_academy_spirit
 	}
@@ -201,31 +190,27 @@ idea_categories = {
 
 		cost = 50
 		removal_cost = -1
-
+		
 		politics_tab = no
-
+		
 		ledger = hidden
 		slot = air_force_spirit
 	}
 
 	air_force_command_spirit = {
 		type = air_spirit
-
+		
 		politics_tab = no
-
+		
 		cost = 50
 		removal_cost = -1
-
+		
 		ledger = hidden
 		slot = air_force_command_spirit
 	}
 }
 
 slot_ledgers = {
-	# chief_of_staff = army
-	# chief_of_army = army
-	# chief_of_navy = navy
-	# chief_of_air_force = air
 	chief_of_staff = army
 	chief_of_army = army
 	chief_of_navy = navy
@@ -234,9 +219,7 @@ slot_ledgers = {
 	tank_manufacturer = army
 	naval_manufacturer = navy
 	aircraft_manufacturer = air
-### Add KRX stuff ##########################################
 	weapons_manufacturer = army
-### Add KRX stuff end ######################################
 
 	theorist = invalid # must be overridden
 ### Add high command ######################################

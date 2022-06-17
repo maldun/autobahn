@@ -105,7 +105,7 @@ ideas = {
 
 			available = {
 				NOT = {
-					has_government = neutrality
+					has_government = authoritarian_democrat
 					is_puppet = yes
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}

@@ -1,7 +1,7 @@
 version="1.11.*"
 tags={
-	"Techtree"
-	"Focuses"
+	"Technologies"
+	"National Focuses"
 }
 dependencies={
 	"Kaiserreich"

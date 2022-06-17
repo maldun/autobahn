@@ -6,8 +6,8 @@ tags={
 dependencies={
 	"Kaiserredux: A Kaiserreich Expansion"
 }
-name="Autobahn"
+name="Autobahn nach 56 Redux"
 picture="thumbnail.png"
 supported_version="1.11.*"
-path="/home/maldun/.local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn"
+path="/home/maldun/.local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_KX"
 

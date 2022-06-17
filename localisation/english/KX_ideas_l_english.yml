@@ -8,3 +8,7 @@ l_english:
  generic_air_chief_safety:0 "Meticulous Air Chief"
  generic_air_chief_ground_support:0 "Support Air Chief"
  generic_air_chief_reform:0 "Innovative Air Chief" 
+ high_command:0 "Military High Command Focus"
+ army_chief:0 "Army Command Focus"
+ navy_chief:0 "Navy Command Focus"
+ air_chief:0 "Air Force Command Focus"

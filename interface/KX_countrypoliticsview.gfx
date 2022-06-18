@@ -45,6 +45,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/idea_slot_high_command.dds"
 	}
 
+	spriteType = {
+                 name = "GFX_idea_slot_theorist"
+                 textureFile = "gfx/interface/officer_corp/select_advisor.dds"
+                 }
+
 	
 	### Army advisors end
 }

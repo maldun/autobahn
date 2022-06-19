@@ -1,0 +1,354 @@
+﻿capital = 739
+oob = "CAN"
+set_naval_oob = "CAN_naval"
+starting_train_buffer = 2
+set_cosmetic_tag = CAN_entente
+
+set_technology = {
+	### General ###
+	electronic_mechanical_engineering = 1
+	fuel_silos = 1
+
+	### Infantry ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	marines = 1
+	tech_military_police = 1
+	tech_recon = 1
+	interwar_antiair = 1
+
+	### Air ###
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 0
+	fighter1 = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+
+	### Trains ###
+	basic_train = 1
+}
+
+### Tanks - NSB ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
+}
+
+### Tanks - non NSB ###
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_naval_mines = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+
+		## Modules##
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		sonar = 1
+		improved_ship_torpedo_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+
+		### Transport ###
+		mtg_transport = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		heavy_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+
+		### Transport ###
+		transport = 1
+	}
+}
+
+set_research_slots = 4
+
+create_faction = Entente
+add_to_faction = NFA
+add_to_faction = RAJ
+add_to_faction = AST
+add_to_faction = SRD
+add_to_faction = SAF
+
+set_country_flag = cannot_have_conscription
+set_country_flag = KR_british_king_base
+save_global_event_target_as = KR_entente_leader
+save_global_event_target_as = KR_king_base
+save_global_event_target_as = iedc_leader
+set_global_flag = CAN_king_george_V
+set_global_flag = CAN_king_busy
+set_variable = { king_popularity = 3 }
+set_variable = { king_influence = 3 }
+set_variable = { king_civ_factories = 0 }
+set_variable = { king_mil_factories = 0 }
+set_variable = { CAN_conservative_support = 0 }
+set_variable = { CAN_liberal_support = 0 }
+
+country_event = { id = canada.1 days = 1 } #Intro event
+country_event = { id = entf.1 days = 628 } #hobbit
+country_event = { id = entf.5 days = 165 } #Chesterton
+country_event = { id = entf.7 days = 272 } #Allenby
+
+set_war_support = 0.4
+
+set_politics = {
+	ruling_party = market_liberal
+	last_election = "1931.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	totalist = 1
+	radical_socialist = 1
+	syndicalist = 1
+	social_democrat = 2
+	social_liberal = 10
+	market_liberal = 42
+	social_conservative = 30
+	authoritarian_democrat = 1
+	paternal_autocrat = 2
+	national_populist = 10
+}
+
+set_convoys = 250
+
+add_ideas = {
+	CAN_anglo_french_tensions_2
+	CAN_great_depression_2
+}
+
+### Windsors ###
+recruit_character = CAN_george_v
+recruit_character = CAN_edward_windsor
+recruit_character = CAN_albert_windsor
+recruit_character = CAN_henry_windsor
+recruit_character = CAN_george_windsor
+
+### Country Leaders ###
+recruit_character = CAN_timothy_buck
+recruit_character = CAN_richard_parmater_pettipiece
+recruit_character = CAN_claude_jodoin
+recruit_character = CAN_james_shaver_woodsworth
+recruit_character = CAN_major_james_coldwell
+recruit_character = CAN_louis_st_laurent
+recruit_character = CAN_william_lyon_mackenzie_king
+recruit_character = CAN_charles_gavan_power
+recruit_character = CAN_richard_bedford_bennett
+recruit_character = CAN_john_bracken
+recruit_character = CAN_robert_manion
+recruit_character = CAN_arthur_meighen
+recruit_character = CAN_john_horne_blackmore
+recruit_character = CAN_harry_crerar
+recruit_character = CAN_henry_herbert_stevens
+recruit_character = CAN_john_diefenbaker
+
+### Seconds in Command ###
+recruit_character = CAN_canadian_parliament
+
+### Advisors ###
+recruit_character = CAN_maurice_le_noblet_duplessis
+recruit_character = CAN_clarence_decatur_howe
+recruit_character = CAN_ernest_lapointe
+recruit_character = CAN_ernest_charles_manning
+recruit_character = CAN_humphrey_mitchell
+recruit_character = CAN_henry_norman_bethune
+recruit_character = CAN_thomas_clement_douglas
+recruit_character = CAN_george_alexander_drew
+recruit_character = CAN_arthur_blaikie_purvis
+recruit_character = CAN_william_samuel_stephenson
+
+recruit_character = GBR_william_maxwell_aitken
+
+### British PMs ###
+recruit_character = GBR_austen_chamberlain
+recruit_character = GBR_anthony_eden
+recruit_character = GBR_robert_gascoyne_cecil
+recruit_character = GBR_robert_vansittart
+recruit_character = GBR_henry_page_croft
+
+### Theorists ###
+recruit_character = CAN_bernice_weldon_sargent
+recruit_character = CAN_john_frederick_charles_fuller
+
+### Field Marshals ###
+recruit_character = CAN_bernard_montgomery
+recruit_character = CAN_harold_alexander
+
+### Corps Commanders ###
+recruit_character = CAN_bert_hoffmeister
+recruit_character = CAN_guy_simonds
+recruit_character = CAN_henry_maitland_wilson
+recruit_character = CAN_adrian_carton_de_wiart
+recruit_character = CAN_charles_foulkes
+recruit_character = CAN_andrew_mccaughton
+recruit_character = CAN_kenneth_stuart
+recruit_character = CAN_orde_wingate
+recruit_character = CAN_robert_brooke_popham
+recruit_character = CAN_georges_vanier
+recruit_character = CAN_philip_neame
+recruit_character = CAN_alan_brooke
+recruit_character = CAN_richard_o_connor
+recruit_character = CAN_john_dill
+recruit_character = CAN_john_vereker
+recruit_character = CAN_john_hamilton_roberts
+recruit_character = CAN_harry_leonard_nowell_salmon
+recruit_character = CAN_george_kitching
+recruit_character = CAN_garner_ormsby_currie
+
+### Admirals ###
+recruit_character = CAN_john_cunningham
+recruit_character = CAN_percy_nelles
+recruit_character = CAN_louis_mountbatten
+recruit_character = CAN_harry_dewolf
+recruit_character = CAN_roger_backhouse
+recruit_character = CAN_tom_phillips
+recruit_character = CAN_dudley_pound
+recruit_character = CAN_leonard_murray
+recruit_character = CAN_james_somerville
+recruit_character = CAN_john_tovey
+recruit_character = CAN_horatio_nelson_lay
+
+### Military Staff
+recruit_character = CAN_william_avery_bishop
+recruit_character = CAN_arthur_travers_harris
+recruit_character = CAN_charles_frederick_algernon_portal
+recruit_character = CAN_clifford_mackay_mcewen
+recruit_character = CAN_hugh_montague_trenchard
+recruit_character = CAN_george_owen_johnson
+recruit_character = CAN_robert_leckie
+
+### Activated Advisors ###
+activate_advisor = CAN_william_lyon_mackenzie_king_sic
+activate_advisor = GBR_austen_chamberlain
+
+### Characters Recruited by Effect ###
+CAN_john_hamilton_roberts = { retire = yes }
+CAN_harry_leonard_nowell_salmon = { retire = yes }
+CAN_george_kitching = { retire = yes }
+CAN_garner_ormsby_currie = { retire = yes }
+CAN_horatio_nelson_lay = { retire = yes }
+
+### Character Flags ###
+GBR_austen_chamberlain = { set_character_flag = GBR_character }
+GBR_anthony_eden = { set_character_flag = GBR_character }
+GBR_robert_gascoyne_cecil = { set_character_flag = GBR_character }
+GBR_robert_vansittart = { set_character_flag = GBR_character }
+GBR_henry_page_croft = { set_character_flag = GBR_character }
+GBR_william_maxwell_aitken = { set_character_flag = GBR_character }
+CAN_john_frederick_charles_fuller = { set_character_flag = GBR_character }
+CAN_arthur_travers_harris = { set_character_flag = GBR_character }
+CAN_hugh_montague_trenchard = { set_character_flag = GBR_character }
+CAN_charles_frederick_algernon_portal = { set_character_flag = GBR_character }
+
+### Event Targets ###
+random_character = {
+	limit = { is_character = CAN_george_v }
+	save_global_event_target_as = CAN_george_v_target
+}
+random_character = {
+	limit = { is_character = CAN_edward_windsor }
+	save_global_event_target_as = CAN_edward_windsor_target
+}
+random_character = {
+	limit = { is_character = CAN_albert_windsor }
+	save_global_event_target_as = CAN_albert_windsor_target
+}
+random_character = {
+	limit = { is_character = CAN_henry_windsor }
+	save_global_event_target_as = CAN_henry_windsor_target
+}
+random_character = {
+	limit = { is_character = CAN_george_windsor }
+	save_global_event_target_as = CAN_george_windsor_target
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "Wilfred Dunderdale"
+		GFX = GFX_portrait_kr_wilfred_dunderdale
+		traits = {
+			operative_seducer
+			operative_well_groomed
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GBR CAN ENG }
+	}
+	create_operative_leader = {
+		name = "T. E. Lawrence"
+		GFX = GFX_portrait_kr_te_lawrence
+		traits = {
+			operative_infiltrator
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GBR CAN ENG }
+	}
+}

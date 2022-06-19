@@ -1,0 +1,312 @@
+﻿capital = 282
+oob = "JAP"
+set_naval_oob = "JAP_naval"
+set_stability = 0.75
+set_war_support = 0.65
+set_fuel_ratio = 0.75
+set_research_slots = 4
+set_convoys = 300
+starting_train_buffer = 2
+
+set_technology = {
+	### General ###
+	fuel_silos = 1
+
+	### Infantry ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	motorised_infantry = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	marines = 1
+	gw_artillery = 1
+
+	### Air ###
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 0
+	fighter1 = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	cv_CAS1 = 1
+	heavy_fighter1 = 1
+
+	### Trains ###
+	basic_train = 1
+}
+
+### Tanks - NSB ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+### Tanks - non NSB ###
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+
+		## Modules##
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		improved_secondary_battery = 1
+		basic_secondary_battery = 1
+		improved_ship_torpedo_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		improved_airplane_launcher = 1
+
+		### Transport ###
+		mtg_transport = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		heavy_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+
+		### Transport ###
+		transport = 1
+	}
+}
+
+country_event = { id = japdom.1 days = 1 } #Recovering from the Lost Decade
+country_event = { id = japfor.1 days = 7 } #Mantetsu Declares Record Earnings
+country_event = { id = japdom.6 days = 135 } #The May 15 Incident
+country_event = { id = japdom.8 days = 153 } #The NSA debate begins
+country_event = { id = japfor.500 days = 237 } # Kitei Son and Nan Shoryu
+country_event = { id = japdom.56 days = 658 random = 360 } #The Emperor has been shot!
+country_event = { id = japdom.45 days = 714 } #The Popular Front Incident
+country_event = { id = japdom.53 days = 1247 } #The Great Drought of 1939
+news_event = { id = worldnews.483 days = 1688 } # 1940 Olympics
+country_event = { id = japdom.57 days = 1754 } #A Second Meiji restoration?
+country_event = { id = literature.12 days = 2160 } #'Little Marin and the Sailor' - Newest Book on Japan's Shelves
+country_event = { id = japdom.58 days = 2591 } #Hayashi Senjuro is dead!
+
+add_ideas = {
+	#Ideas
+	JAP_narrow_rail
+	JAP_bad_land
+	JAP_no_army_focus
+	FNG_mantetsu_profits
+
+	#Laws
+	limited_conscription
+	limited_exports
+	low_economic_mobilisation
+}
+
+add_dynamic_modifier = {
+	modifier = FNG_mantetsu_profits_modifier
+	scope = FNG
+}
+
+give_guarantee = FNG
+add_to_array = { FNG.guarantor_array = JAP }
+
+add_opinion_modifier = { target = QIE modifier = embargo }
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1932.2.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	totalist = 0
+	radical_socialist = 0
+	syndicalist = 2
+	social_democrat = 3
+	social_liberal = 5
+	authoritarian_democrat = 8
+	market_liberal = 27
+	social_conservative = 51
+	paternal_autocrat = 3
+	national_populist = 1
+}
+
+create_faction = co_prosperity_sphere
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	every_country = {
+		limit = { is_ally_with = JAP }
+		add_to_tech_sharing_group = japan_research
+	}
+}
+
+### Country Leaders ###
+recruit_character = JAP_hirohito
+recruit_character = JAP_yasuhito
+
+recruit_character = JAP_arahata_kanson
+recruit_character = JAP_katayama_tetsu
+recruit_character = JAP_ishibashi_tanzan
+recruit_character = JAP_yoshida_shigeru
+recruit_character = JAP_kishi_nobusuke
+
+### Field Marshals ###
+recruit_character = JAP_terauchi_hisaichi
+recruit_character = JAP_hata_shunroku
+
+### Generals ###
+recruit_character = JAP_ishiwara_kanji
+recruit_character = JAP_higashikuni_naruhiko
+recruit_character = JAP_itagaki_seishiro
+recruit_character = JAP_adachi_hatazo
+recruit_character = JAP_araki_sadao
+recruit_character = JAP_koiso_kuniaki
+recruit_character = JAP_kanin_haruhito
+recruit_character = JAP_yamashita_tomoyuki
+recruit_character = JAP_muto_akira
+recruit_character = JAP_tanaka_shizuichi
+recruit_character = JAP_okamura_yasuji
+recruit_character = JAP_nishio_toshizo
+recruit_character = JAP_ando_rikichi
+recruit_character = JAP_sakai_takashi
+recruit_character = JAP_doihara_kenji
+recruit_character = JAP_ueda_kenkichi
+recruit_character = JAP_honjo_shigeru
+recruit_character = JAP_umezu_yoshijiro
+recruit_character = JAP_yamada_otozo
+recruit_character = JAP_matsui_iwane
+recruit_character = JAP_fujie_keisuke
+recruit_character = JAP_higuchi_kiichiro
+recruit_character = JAP_homma_masaharu
+recruit_character = JAP_hyakutake_harukichi
+recruit_character = JAP_iimura_jo
+recruit_character = JAP_imamura_hitoshi
+
+### Admirals ###
+recruit_character = JAP_yamamoto_isoroku
+recruit_character = JAP_koga_mineichi
+recruit_character = JAP_hasegawa_kiyoshi
+recruit_character = JAP_inoue_shigeyoshi
+recruit_character = JAP_kondo_nobutake
+recruit_character = JAP_takagi_takeo
+recruit_character = JAP_toyoda_soemu
+recruit_character = JAP_ozawa_jisaburo
+recruit_character = JAP_yoshida_zengo
+recruit_character = JAP_daigo_tadashige
+recruit_character = JAP_hyakutake_gengo
+recruit_character = JAP_yamaguchi_tamon
+recruit_character = JAP_nagumo_chuichi
+
+### Advisors ###
+# NatPop
+recruit_character = JAP_okawa_shumei
+recruit_character = JAP_nakano_seigo
+recruit_character = JAP_hashimoto_kingoro
+recruit_character = JAP_suetsugu_nobumasa
+# PatAut
+recruit_character = JAP_goto_fumio
+# Democracy
+recruit_character = JAP_minobe_tatsukichi
+recruit_character = JAP_kijuro_shidehara
+recruit_character = JAP_ozaki_yukio
+# Neutral
+recruit_character = JAP_fujiwara_ginjiro
+recruit_character = JAP_godo_takuo
+recruit_character = JAP_ikeda_shigeaki
+recruit_character = JAP_matsuoka_yosuke
+recruit_character = JAP_kido_koichi
+
+### Second in Command ###
+recruit_character = JAP_imperial_diet
+recruit_character = JAP_inukai_tsuyoshi
+recruit_character = JAP_suzuki_kisaburo
+recruit_character = JAP_mizuno_rentaro
+recruit_character = JAP_hamaguchi_osachi
+recruit_character = JAP_ugaki_kazushige
+recruit_character = JAP_machida_chuji
+recruit_character = JAP_adachi_kenzo
+recruit_character = JAP_maeda_yonezo
+recruit_character = JAP_hatoyama_ichiro
+recruit_character = JAP_yoshizawa_kenkichi
+recruit_character = JAP_abe_isoo
+recruit_character = JAP_katayama_testu
+recruit_character = JAP_hiranuma_kiichiro
+recruit_character = JAP_konoe_fumimaro
+recruit_character = JAP_kuhara_furanosuke
+recruit_character = JAP_hayashi_senjuro
+recruit_character = JAP_nagata_tetsuzan
+
+activate_advisor = JAP_inukai_tsuyoshi
+
+### Military Staff ###
+recruit_character = JAP_sugawara_michio
+recruit_character = JAP_ugaki_matome
+recruit_character = JAP_kanin_kotohito
+recruit_character = JAP_nishi_yoshizaku
+recruit_character = JAP_hajime_sugiyama
+recruit_character = JAP_fushimi_hiroyasu
+recruit_character = JAP_osami_nagano
+recruit_character = JAP_shimada_shigetaro
+recruit_character = JAP_tsukahara_nishizo
+recruit_character = JAP_teramoto_kumiachi
+
+recruit_character = JAP_nishina_yoshio
+recruit_character = JAP_obata_toshiro
+recruit_character = JAP_tokugawa_yoshitoshi
+
+### others
+activate_targeted_decision = { decision = JAP_develop_chosen_tungsten_mines1 target = JAP }

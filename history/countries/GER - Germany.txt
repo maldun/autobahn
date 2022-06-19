@@ -1,0 +1,385 @@
+﻿capital = 64
+oob = "GER"
+set_naval_oob = "GER_naval"
+set_research_slots = 4
+set_convoys = 400
+set_stability = 0.6
+starting_train_buffer = 2
+
+add_ideas = {
+	GER_victors_of_wwi
+	GER_quenched_militarism
+	GER_imperial_pride
+
+	limited_conscription
+}
+
+#activate_advisor = GER_august_von_mackensen
+
+### Starting Technologies ###
+
+set_technology = {
+	### General ###
+	electronic_mechanical_engineering = 1
+	fuel_silos = 1
+
+	### Infantry ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	motorised_infantry = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	marines = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+
+	### Air ###
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 0
+	fighter1 = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+
+	### Trains ###
+	basic_train = 1
+}
+
+### Tanks - NSB ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
+}
+
+### Tanks - non NSB ###
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_naval_mines = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		cruiser_submarines = 1
+
+		## Modules##
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		improved_ship_torpedo_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		submarine_mine_laying = 1
+
+		### Transport ###
+		mtg_transport = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		heavy_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+
+		### Transport ###
+		transport = 1
+	}
+}
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1932.3.8"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	totalist = 1
+	radical_socialist = 3
+	syndicalist = 2
+	social_democrat = 22
+	social_liberal = 6
+	market_liberal = 3
+	social_conservative = 12
+	authoritarian_democrat = 42
+	paternal_autocrat = 7
+	national_populist = 2
+}
+
+create_faction = Mittelmacht
+add_to_faction = GER
+add_to_faction = BEL
+add_to_faction = LIT
+add_to_faction = BAT
+add_to_faction = WHR
+add_to_faction = UKR
+add_to_faction = MOR
+add_to_faction = MAF
+add_to_faction = GEA
+
+# Mitteleuropa
+every_country = {
+	limit = {
+		OR = {
+			is_ally_with = GER
+			tag = DEN
+			tag = ICE
+			tag = SWE
+			tag = FIN
+			tag = HOL
+			tag = DEI
+			tag = POL
+			tag = IRE
+			tag = AZR
+			tag = GEO
+			tag = DKB
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+			is_ally_with = GER
+		}
+		add_to_tech_sharing_group = german_research
+	}
+	GER_add_to_mitteleuropa = yes
+}
+
+country_event = { id = gerdom.1 hours = 2 } #Introduction Event
+country_event = { id = mittel.43 days = 84 } #The Kenyatta-Solf Affair
+MAF = { country_event = { id = mittel.43 days = 84 } } #The Kenyatta-Solf Affair
+country_event = { id = gerfla.1 days = 238 } #Sedanday
+country_event = { id = gerdom.2 days = 360 } #Hans von Seeckt dies
+news_event = { id = gerfla.2 days = 400 } #Trans-pacific flight
+country_event = { id = gerfla.6 days = 525 } # Ludendorff dies
+country_event = { id = gerfla.7 days = 540 }  # Michaelis dies
+country_event = { id = sprc.256 days = 720 random_hours = 3840 } #Peace with Andorra
+country_event = { id = gerdom.106 days = 731 random_days = 75 } #Further increasing our internal security
+country_event = { id = gerdom.43 days = 896 } #Relations with Italy
+country_event = { id = literature.15 days = 952 } #Tintin and the Blue Lotus
+news_event = { id = gerfla.3 days = 1218 } #Wilhelm Groener dies
+country_event = { id = gerdom.40 days = 1354 } #The first SPD Reichskanzler is dead!
+country_event = { id = gerdom.41 days = 1354 } #Otto Wels dies
+
+# End WK2 AI boosts
+country_event = { id = ai_events.302 days = 2558 }
+FRA = { country_event = { id = ai_events.302 days = 2558 } }
+ENG = { country_event = { id = ai_events.302 days = 2558 } }
+RUS = { country_event = { id = ai_events.302 days = 2558 } }
+SOV = { country_event = { id = ai_events.302 days = 2558 } }
+AUS = { country_event = { id = ai_events.302 days = 2558 } }
+
+### Country Leaders ###
+recruit_character = GER_wilhelm_ii #order matters - first one takes precedence
+recruit_character = GER_wilhelm_iii
+
+recruit_character = GER_ernst_thalmann
+recruit_character = GER_rudolf_rocker
+recruit_character = GER_wilhelm_pieck
+recruit_character = GER_willi_munzenberg
+recruit_character = GER_kurt_schumacher
+recruit_character = GER_erich_kochweser
+recruit_character = GER_gustav_krupp
+recruit_character = GER_heinrich_bruning
+recruit_character = GER_franz_von_papen
+recruit_character = GER_erwin_von_witzleben
+recruit_character = GER_heinrich_class
+
+### Field Marshals ###
+recruit_character = GER_gerd_von_rundstedt
+recruit_character = GER_rupprecht_von_bayern
+recruit_character = GER_august_von_mackensen
+
+### Generals ###
+recruit_character = GER_erich_von_manstein
+recruit_character = GER_heinz_guderian
+recruit_character = GER_walter_model
+recruit_character = GER_werner_von_blomberg
+recruit_character = GER_gunther_von_kluge
+recruit_character = GER_wilhelm_ritter_von_leeb
+recruit_character = GER_albert_kesselring
+recruit_character = GER_eberhard_von_mackensen
+recruit_character = GER_nikolaus_von_falkenhorst
+recruit_character = GER_erich_hoepner
+recruit_character = GER_ewald_von_kleist
+recruit_character = GER_fedor_von_bock
+recruit_character = GER_friedrich_paulus
+recruit_character = GER_georg_von_kuchler
+recruit_character = GER_franz_halder
+recruit_character = GER_gotthard_heinrici
+recruit_character = GER_hermann_hoth
+recruit_character = GER_franz_von_bayern
+recruit_character = GER_curt_haase
+recruit_character = GER_walther_von_reichenau
+
+### Admirals ###
+recruit_character = GER_karl_donitz
+recruit_character = GER_erich_raeder
+recruit_character = GER_lothar_von_arnauld_de_la_periere
+recruit_character = GER_alfred_saalwachter
+recruit_character = GER_hermann_boehm
+recruit_character = GER_wilhelm_marschall
+recruit_character = GER_max_bastian
+recruit_character = GER_willy_von_nordeck
+recruit_character = GER_max_valentiner
+recruit_character = GER_rolf_carls
+recruit_character = GER_gunther_lutjens
+recruit_character = GER_bernhard_rogge
+
+### SiC ###
+recruit_character = GER_kurt_von_schleicher
+recruit_character = GER_otto_wels
+recruit_character = GER_hans_vogel
+recruit_character = GER_paul_von_lettow_vorbeck
+recruit_character = GER_carl_friedrich_goerdeler
+activate_advisor = GER_franz_von_papen # Already recruited earlier
+
+### Advisors ###
+recruit_character = GER_alfred_hugenberg
+recruit_character = GER_theodor_wolff
+recruit_character = GER_carl_siemens
+recruit_character = GER_fritz_thyssen
+recruit_character = GER_paul_lejeune_jung
+recruit_character = GER_wilhelm_groener
+recruit_character = GER_oswald_lutz
+recruit_character = GER_ufa
+recruit_character = GER_max_planck
+recruit_character = GER_adolf_georg_maltzan
+recruit_character = GER_carl_bosch
+recruit_character = GER_konrad_zuse
+recruit_character = GER_uranverein
+recruit_character = GER_hafraba
+recruit_character = GER_franz_gurtner
+recruit_character = GER_hjalmar_schacht
+recruit_character = GER_karl_helfferich
+recruit_character = GER_wilhelm_canaris
+
+recruit_character = GER_walther_von_brauchitsch
+recruit_character = GER_kurt_von_hammerstein_equord
+recruit_character = GER_ludwig_beck
+recruit_character = GER_werner_von_fritsch
+recruit_character = GER_wolfgang_wegener
+recruit_character = GER_walther_wever
+recruit_character = GER_robert_von_greim
+recruit_character = GER_kurt_student
+recruit_character = GER_hugo_sperrle
+recruit_character = GER_walter_dornberger
+recruit_character = GER_werner_heisenberg
+
+### Character Flags ###
+every_character = {
+	limit = {
+		can_be_country_leader = yes
+		NOT = {
+			is_character = GER_wilhelm_ii
+			is_character = GER_wilhelm_iii
+			is_character = GER_willi_munzenberg
+		}
+	}
+	set_character_flag = GER_republican_leader
+}
+
+### Event Targets ###
+random_character = {
+	limit = { is_character = GER_wilhelm_ii }
+	save_global_event_target_as = GER_wilhelm_ii_target
+}
+random_character = {
+	limit = { is_character = GER_wilhelm_iii }
+	save_global_event_target_as = GER_wilhelm_iii_target
+}
+random_character = {
+	limit = { is_character = GER_rupprecht_von_bayern }
+	save_global_event_target_as = GER_rupprecht_von_bayern_target
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	create_operative_leader = {
+		name = "Hermann Giskes"
+		GFX = GFX_portrait_kr_hermann_giskes
+		traits = {
+			operative_master_interrogator
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+	}
+	create_operative_leader = {
+		name = "Hugo Bleicher"
+		GFX = GFX_portrait_kr_hugo_bleicher
+		traits = {
+			operative_demolition_expert
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+	}
+	create_operative_leader = {
+		name = "Josef Jakobs"
+		GFX = GFX_portrait_kr_josef_jakobs
+		traits = {
+			operative_commando
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+	}
+}
+

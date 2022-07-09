@@ -77,7 +77,6 @@ ideas = {
                         ruling_only = yes
                         
                     }
-                    has_government = radical_socialist
                     has_government = syndicalist
                     has_government = totalist
                     has_government = radical_socialist

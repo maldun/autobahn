@@ -1,0 +1,507 @@
+capital = 358
+set_convoys = 150
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        
+    }
+    
+}
+set_technology = {
+    basic_train = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_recon = 1
+    motorised_infantry = 1
+    gw_artillery = 1
+    early_fighter = 1
+    naval_bomber1 = 1
+    early_bomber = 1
+    strategic_bomber1 = 1
+    CAS1 = 1
+    cv_early_fighter = 1
+    cv_CAS1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        improved_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        improved_ship_hull_cruiser = 1
+        panzerschiffe = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        improved_ship_hull_submarine = 1
+        cruiser_submarines = 1
+        early_ship_hull_carrier = 1
+        basic_ship_hull_carrier = 1
+        improved_ship_hull_carrier = 1
+        early_ship_hull_heavy = 1
+        basic_ship_hull_heavy = 1
+        improved_ship_hull_heavy = 1
+        ship_hull_super_heavy = 1
+        basic_naval_mines = 1
+        submarine_mine_laying = 1
+        mtg_transport = 1
+        basic_torpedo = 1
+        improved_ship_torpedo_launcher = 1
+        advanced_ship_torpedo_launcher = 1
+        basic_battery = 1
+        magnetic_detonator = 1
+        electric_torpedo = 1
+        basic_submarine_snorkel = 1
+        basic_light_battery = 1
+        improved_light_battery = 1
+        basic_secondary_battery = 1
+        improved_secondary_battery = 1
+        basic_depth_charges = 1
+        improved_depth_charges = 1
+        advanced_depth_charges = 1
+        smoke_generator = 1
+        sonar = 1
+        basic_cruiser_armor_scheme = 1
+        improved_cruiser_armor_scheme = 1
+        basic_heavy_battery = 1
+        improved_heavy_battery = 1
+        advanced_heavy_battery = 1
+        basic_medium_battery = 1
+        improved_medium_battery = 1
+        advanced_medium_battery = 1
+        basic_heavy_armor_scheme = 1
+        improved_heavy_armor_scheme = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        improved_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        improved_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        improved_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        improved_heavy_cruiser = 1
+        early_battlecruiser = 1
+        basic_battlecruiser = 1
+        early_battleship = 1
+        basic_battleship = 1
+        improved_battleship = 1
+        heavy_battleship = 1
+        early_carrier = 1
+        basic_carrier = 1
+        improved_carrier = 1
+        transport = 1
+        
+    }
+    
+}
+set_research_slots = 3
+set_stability = 0.35
+set_war_support = 0.35
+starting_train_buffer = 1
+country_event = {
+    id = NYC.0
+    days = 1
+    
+}
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 2
+    radical_socialist = 20
+    social_liberal = 24
+    social_democrat = 14
+    market_liberal = 8
+    social_conservative = 13
+    authoritarian_democrat = 9
+    paternal_autocrat = 6
+    national_populist = 4
+    
+}
+country_event = {
+    id = NYC_flavor.55
+    days = 30
+    random_days = 10
+    
+}
+country_event = {
+    id = NYC_flavor.42
+    days = 80
+    random_days = 20
+    
+}
+country_event = {
+    id = NYC_flavor.28
+    days = 100
+    random_days = 30
+    
+}
+country_event = {
+    id = NYC_flavor.37
+    days = 150
+    random_days = 40
+    
+}
+country_event = {
+    id = NYC_flavor.60
+    days = 180
+    random_days = 50
+    
+}
+country_event = {
+    id = NYC_flavor.35
+    days = 250
+    random_days = 60
+    
+}
+country_event = {
+    id = NYC_flavor.20
+    days = 300
+    random_days = 70
+    
+}
+country_event = {
+    id = NYC_flavor.22
+    days = 350
+    random_days = 80
+    
+}
+country_event = {
+    id = NYC_flavor.23
+    days = 400
+    random_days = 90
+    
+}
+country_event = {
+    id = NYC_flavor.26
+    days = 450
+    random_days = 100
+    
+}
+country_event = {
+    id = NYC_flavor.27
+    days = 500
+    random_days = 110
+    
+}
+country_event = {
+    id = NYC_flavor.30
+    days = 550
+    random_days = 120
+    
+}
+country_event = {
+    id = NYC_flavor.33
+    days = 400
+    random_days = 130
+    
+}
+country_event = {
+    id = NYC_flavor.38
+    days = 450
+    random_days = 140
+    
+}
+country_event = {
+    id = NYC_flavor.66
+    days = 428
+    random_days = 150
+    
+}
+country_event = {
+    id = NYC_flavor.67
+    days = 390
+    random_days = 160
+    
+}
+country_event = {
+    id = NYC_flavor.78
+    days = 78
+    random_days = 170
+    
+}
+country_event = {
+    id = NYC_flavor.6677
+    days = 230
+    random_days = 180
+    
+}
+country_event = {
+    id = NYC_flavor.6678
+    days = 330
+    random_days = 190
+    
+}
+country_event = {
+    id = NYC_flavor.79
+    days = 75
+    
+}
+create_country_leader = {
+    name = "Christian Front Assembly"
+    picture = "gfx/leaders/NYC/Portrait_NYC_Christian_Front.png"
+    expire = "1965.1.1"
+    ideology = fundementalism_subtype
+    traits = 
+    
+}
+create_country_leader = {
+    name = "The Commission"
+    desc = "POLITICS_COMISSION_DESC"
+    picture = "gfx/leaders/NYC/Portrait_NYC_Commission.png"
+    expire = "1965.1.1"
+    ideology = crime_syndicate_subtype
+    traits = 
+    
+}
+create_country_leader = {
+    name = "Lewis J. Valentine"
+    desc = "POLITICS_LEWIS_VALENTINE_DESC"
+    picture = "gfx/leaders/NYC/Portrait_NYC_Lewis_Joseph_Valentine.png"
+    expire = "1965.1.1"
+    ideology = police_state_subtype
+    traits = 
+    
+}
+create_country_leader = {
+    name = "Society of St. Tammany"
+    desc = "POLITICS_TAMMANNY_DESC"
+    picture = "gfx/leaders/NYC/Portrait_NYC_Tammany_Hall.png"
+    expire = "1965.1.1"
+    ideology = clientelism_subtype
+    traits = 
+    
+}
+create_country_leader = {
+    name = "Fred Trump"
+    desc = "POLITICS_FRED_TRUMP_DESC"
+    picture = "gfx/leaders/NEE/Portrait_NEE_Fred_Trump.png"
+    expire = "1965.1.1"
+    ideology = libertarian_subtype
+    traits = {
+        captain_of_industry
+        
+    }
+    
+}
+create_country_leader = {
+    name = "Orson Welles"
+    desc = "POLITICS_ORSON_WELLES_DESC"
+    picture = "gfx/leaders/NYC/Portrait_NYC_Orson_Welles.png"
+    expire = "1965.1.1"
+    ideology = social_democrat_subtype
+    traits = 
+    
+}
+create_country_leader = {
+    name = "Fiorello H. La Guardia"
+    desc = "POLITICS_FIORELLO_H_LA_GUARDIA_DESC"
+    picture = "gfx/leaders/NYC/Portrait_NYC_Fiorello_La_Guardia.png"
+    expire = "1965.1.1"
+    ideology = social_liberal_subtype
+    traits = 
+    
+}
+create_country_leader = {
+    name = "John Steinbeck"
+    desc = "POLITICS_JOHN_STEINBECK_DESC"
+    picture = "gfx/leaders/NYC/Portrait_NYC_John_Steinbeck.png"
+    expire = "1965.1.1"
+    ideology = radical_progressivism_subtype
+    traits = 
+    
+}
+create_country_leader = {
+    name = "August Claessens"
+    picture = "gfx/leaders/NYC/Portrait_NYC_August_Claessens.png"
+    expire = "1965.1.1"
+    ideology = democratic_syndicalism_subtype
+    traits = 
+    
+}
+create_country_leader = {
+    name = "Franklin D. Roosevelt Jr."
+    desc = "POLITICS_FDR_JR_DESC"
+    picture = "gfx/leaders/NYC/Portrait_NYC_Franklin_Delano_Roosevelt_Jr.png"
+    expire = "1965.1.1"
+    ideology = natsynd_subtype
+    traits = 
+    
+}
+add_ideas = {
+    NYC_Fiorello_La_Guardia_hog_sli
+    NYC_Grover_Whalen_for_sli
+    NYC_Henry_Morgenthau_Jr_eco_sli
+    NYC_Hubert_Thomas_Delany_sec_sli
+    NYC_tammany_hall
+    NYC_the_mafia
+    NYC_economic_devestation
+    NYC_nypd
+    
+}
+create_field_marshal = {
+    name = "John F. O'Ryan"
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_John_F_O'Ryan.png"
+    traits = {
+        skilled_staffer
+        organizer
+        
+    }
+    skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 2
+    
+}
+create_field_marshal = {
+    name = "Lewis J. Valentine "
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_Lewis_Joseph_Valentine.png"
+    traits = {
+        politically_connected
+        NYC_police_officer
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    id = 15409
+    
+}
+create_corps_commander = {
+    name = "James M. Gavin"
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_James_M_Gavin.png"
+    traits = {
+        war_hero
+        infantry_leader
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Louis F. Costuma"
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_Louis_F_Costuma.png"
+    traits = {
+        NYC_police_officer
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Samuel L. Battle"
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_Samuel_L_Battle.png"
+    traits = {
+        NYC_police_officer
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Mary Sullivan"
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_Mary_Sullivan.png"
+    traits = {
+        NYC_police_officer
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_navy_leader = {
+    name = "Edward L. Beach Jr."
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_Edward_Beach_Jr.png"
+    traits = {
+        hunter_killer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    maneuvering_skill = 3
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Evan Peter Aurand"
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_Evan_Peter_Aurand.png"
+    traits = {
+        aviation_enthusiast
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    maneuvering_skill = 1
+    coordination_skill = 3
+    
+}
+USA_start_naval_variant = yes

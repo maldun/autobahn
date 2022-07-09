@@ -1,0 +1,951 @@
+capital = 395
+OOB = "empty"
+set_country_flag = soc_dems_are_socialists
+starting_train_buffer = 2.0
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        basic_heavy_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        improved_light_tank_chassis = 1
+        basic_heavy_tank_chassis = 1
+        engine_tech_1 = 1
+        
+    }
+    
+}
+set_technology = {
+    basic_train = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_recon = 1
+    motorised_infantry = 1
+    gw_artillery = 1
+    early_fighter = 1
+    naval_bomber1 = 1
+    early_bomber = 1
+    strategic_bomber1 = 1
+    CAS1 = 1
+    cv_early_fighter = 1
+    cv_CAS1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    create_equipment_variant = {
+        name = "RIA-L1921"
+        type = light_tank_chassis_0
+        parent_version = 0
+        modules = {
+            main_armament_slot = tank_heavy_machine_gun
+            turret_type_slot = tank_light_one_man_tank_turret
+            suspension_type_slot = tank_bogie_suspension
+            armor_type_slot = tank_riveted_armor
+            engine_type_slot = tank_gasoline_engine
+            
+        }
+        upgrades = {
+            tank_nsb_armor_upgrade = 3
+            tank_nsb_engine_upgrade = 1
+            
+        }
+        obsolete = yes
+        icon = "gfx/interface/technologies/USA/USA_gwtank.png"
+        
+    }
+    create_equipment_variant = {
+        name = "RIA-L2"
+        type = light_tank_chassis_1
+        parent_version = 0
+        modules = {
+            main_armament_slot = tank_heavy_machine_gun
+            turret_type_slot = tank_light_one_man_tank_turret
+            suspension_type_slot = tank_bogie_suspension
+            armor_type_slot = tank_riveted_armor
+            engine_type_slot = tank_gasoline_engine
+            special_type_slot_1 = tank_radio_1
+            
+        }
+        upgrades = {
+            tank_nsb_armor_upgrade = 2
+            tank_nsb_engine_upgrade = 5
+            
+        }
+        icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        panzerschiffe = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        cruiser_submarines = 1
+        early_ship_hull_carrier = 1
+        basic_ship_hull_carrier = 1
+        early_ship_hull_heavy = 1
+        basic_ship_hull_heavy = 1
+        ship_hull_super_heavy = 1
+        basic_naval_mines = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_medium_battery = 1
+        basic_heavy_battery = 1
+        basic_secondary_battery = 1
+        improved_secondary_battery = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        basic_heavy_armor_scheme = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battlecruiser = 1
+        early_battleship = 1
+        basic_battleship = 1
+        heavy_battleship = 1
+        early_carrier = 1
+        basic_carrier = 1
+        transport = 1
+        
+    }
+    
+}
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.55
+set_war_support = 0.65
+add_opinion_modifier = {
+    target = CAL
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = USA
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = TEX
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = CAN
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = GER
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = AST
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = FRP
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = NEE
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = OTT
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = GBR
+    modifier = embargo
+    
+}
+CSA = {
+    add_ideas = extensive_conscription
+    
+}
+country_event = {
+    id = csa.111
+    days = 130
+    
+}
+set_politics = {
+    ruling_party = syndicalist
+    last_election = "1936.11.08"
+    election_frequency = 48
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 12
+    radical_socialist = 14
+    syndicalist = 56
+    social_democrat = 10
+    social_liberal = 3
+    market_liberal = 1
+    social_conservative = 1
+    authoritarian_democrat = 0
+    paternal_autocrat = 1
+    national_populist = 2
+    
+}
+create_country_leader = {
+    name = "William Haywood"
+    desc = "POLITICS_BIG_BILL_HAYWOOD_DESC"
+    picture = "gfx/leaders/CSA/Portrait_CSA_William_Haywood.png"
+    expire = "1965.1.1"
+    ideology = syndicalist_subtype
+    traits = {
+        big_bill
+        
+    }
+    
+}
+create_country_leader = {
+    name = "William Haywood"
+    desc = "POLITICS_BIG_BILL_HAYWOOD_DESC"
+    picture = "gfx/leaders/CSA/Portrait_CSA_William_Haywood.png"
+    expire = "1965.1.1"
+    ideology = totalist_subtype
+    traits = {
+        big_bill
+        
+    }
+    
+}
+create_country_leader = {
+    name = "William Haywood"
+    desc = "POLITICS_BIG_BILL_HAYWOOD_DESC"
+    picture = "gfx/leaders/CSA/Portrait_CSA_William_Haywood.png"
+    expire = "1965.1.1"
+    ideology = bellamyism_subtype
+    traits = {
+        big_bill
+        
+    }
+    
+}
+add_ideas = {
+    CSA_Elizabeth_Gurly_Flynn_hog_syn
+    CSA_Ralph_Chaplin_for_syn
+    CSA_Harry_Bridges_eco_syn
+    CSA_Steve_Nelson_sec_tot
+    
+}
+create_corps_commander = {
+    name = "Evans Fordyce Carlson"
+    desc = "CSA_EVANS_CARLSON_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Evans_Carlson.png"
+    traits = {
+        war_hero
+        commando
+        
+    }
+    skill = 3
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Maurice Rose"
+    desc = "CSA_MAURICE_ROSE_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Maurice_Rose.png"
+    traits = {
+        armor_officer
+        trait_reckless
+        brilliant_strategist
+        
+    }
+    skill = 3
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Milton Wolff"
+    desc = "CSA_MILTON_WOLFF_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_milton_wolff.png"
+    traits = {
+        career_officer
+        infantry_officer
+        trickster
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Edward A. Carter Jr."
+    desc = "CSA_EDWARD_CARTER_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_edward_carter.png"
+    traits = {
+        trait_reckless
+        armor_officer
+        panzer_leader
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "George H. Cannon"
+    desc = "CSA_GEORGE_H_CANNON_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_george_cannon.png"
+    traits = {
+        trait_reckless
+        trickster
+        commando
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Benjamin Katine"
+    desc = "CSA_BENJAMIN_KATINE_ARMY_DESC"
+    id = 962
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_benjamin_katine.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "James Patrick Murphy"
+    desc = "CSA_JAMES_PATRICK_MURPHY_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_james_murphy.png"
+    traits = {
+        trait_reckless
+        armor_officer
+        panzer_leader
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "John Tisa"
+    desc = "CSA_JOHN_TISA_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_john_tisa.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Oliver Law"
+    desc = "CSA_OLIVER_LAW_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Oliver_Law.png"
+    traits = {
+        trickster
+        trait_reckless
+        
+    }
+    skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Thomas Page"
+    desc = "CSA_THOMAS_PAGE_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Thomas_Page.png"
+    traits = {
+        trait_reckless
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    id = 42069
+    
+}
+create_corps_commander = {
+    name = "Alvah Bessie"
+    desc = "CSA_ALVAH_BESSIE_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/CSA_alvah_bessie.png"
+    traits = {
+        trickster
+        inflexible_strategist
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Bill Aalto"
+    desc = "CSA_BILL_AALTO_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/CSA_Bill_Aalto.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Cecil Cole"
+    desc = "CSA_CECIL_COLE_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/CSA_Cecil_Cole.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "David Doran"
+    desc = "CSA_DAVID_DORAN_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/CSA_David_Doran.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Elliot Loomis"
+    desc = "CSA_CECIL_COLE_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/CSA_Elliot_Loomis.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Eugene Nolte"
+    desc = "CSA_CECIL_COLE_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/CSA_Eugene_Nolte.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Henry Mucci"
+    desc = "CSA_CECIL_COLE_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/CSA_Henry_Mucci.png"
+    traits = 
+    skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Irving Goff"
+    desc = "CSA_IRVING_GOFF_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/CSA_Irving_Goff.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Jack Shulman"
+    portrait_path = "gfx/leaders/CSA/CSA_Jack_Shulman.png"
+    traits = {
+        offensive_doctrine
+        
+    }
+    skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    id = 991
+    
+}
+create_corps_commander = {
+    name = "Jesse Wallach"
+    portrait_path = "gfx/leaders/CSA/CSA_Jesse_Wallach.png"
+    traits = 
+    skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Joe Luftig"
+    portrait_path = "gfx/leaders/CSA/CSA_Joe_Luftig.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Nathan Wolf"
+    portrait_path = "gfx/leaders/CSA/CSA_Nathan_Wolf.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Patrick Read"
+    portrait_path = "gfx/leaders/CSA/CSA_Patrick_Read.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "William Oderaka"
+    portrait_path = "gfx/leaders/CSA/CSA_William_Oderaka.png"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Joseph Beyrle"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_joseph_beyrle.png"
+    traits = {
+        inflexible_strategist
+        infantry_officer
+        trait_engineer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Gus Hall "
+    desc = "CSA_GUS_HALL_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_General_Gus_Hall.png"
+    traits = {
+        politically_connected
+        trait_cautious
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Robert Sharon Allen"
+    desc = "CSA_ROBERT_ALLEN_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Robert_Allen.png"
+    traits = {
+        panzer_leader
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "David Monroe Shoup"
+    desc = "CSA_DAVID_SHOUP_ARMY_DESC"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_David_Shoup.png"
+    traits = {
+        commando
+        adaptable
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "William H. Blizzard"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Bill_Blizzard.png"
+    traits = {
+        trait_mountaineer
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Walter W. Waters"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Walter_Waters.png"
+    traits = {
+        war_hero
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+    
+}
+create_navy_leader = {
+    name = "George Whelan Anderson Jr."
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_george_anderson.png"
+    traits = {
+        superior_tactician
+        air_controller
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    maneuvering_skill = 3
+    coordination_skill = 4
+    
+}
+create_navy_leader = {
+    name = "Hyman G. Rickover"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_hyman_rickover.png"
+    traits = {
+        seawolf
+        superior_tactician
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    maneuvering_skill = 3
+    coordination_skill = 4
+    
+}
+create_navy_leader = {
+    name = "Hugh Mulzac"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_hugh_mulzac.png"
+    traits = {
+        blockade_runner
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    maneuvering_skill = 1
+    coordination_skill = 2
+    
+}
+create_navy_leader = {
+    name = "Willard J. Smith"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_willard_smith.png"
+    traits = {
+        fly_swatter
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    maneuvering_skill = 1
+    coordination_skill = 2
+    
+}
+create_navy_leader = {
+    name = "Youngblood Nance"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_youngblood_nance.png"
+    traits = {
+        seawolf
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    maneuvering_skill = 2
+    coordination_skill = 2
+    
+}
+create_navy_leader = {
+    name = "Arthur S. Carpender"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_arthur_carpender.png"
+    traits = {
+        ironside
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    maneuvering_skill = 2
+    coordination_skill = 2
+    
+}
+create_navy_leader = {
+    name = "William R. Furlong"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_william_furlong.png"
+    traits = 
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    maneuvering_skill = 2
+    coordination_skill = 2
+    
+}
+if = {
+    limit = {
+        has_dlc = "La Resistance"
+        
+    }
+    create_operative_leader = {
+        name = "Josephine Baker"
+        GFX = GFX_portrait_josephine_baker
+        traits = {
+            operative_infiltrator
+            operative_escape_artist
+            
+        }
+        bypass_recruitment = yes
+        available_to_spy_master = yes
+        female = yes
+        nationalities = {
+            CSA
+            COR
+            USA
+            TEX
+            CAL
+            NEE
+            WCC
+            
+        }
+        
+    }
+    create_operative_leader = {
+        name = "Lucille Ball"
+        GFX = GFX_portrait_lucille_ball
+        traits = {
+            operative_well_groomed
+            operative_natural_orator
+            
+        }
+        bypass_recruitment = yes
+        available_to_spy_master = yes
+        female = yes
+        nationalities = {
+            CSA
+            COR
+            USA
+            TEX
+            CAL
+            NEE
+            WCC
+            
+        }
+        
+    }
+    create_operative_leader = {
+        name = "Lee Pressman"
+        GFX = GFX_portrait_lee_pressman
+        traits = {
+            operative_infiltrator
+            operative_safe_cracker
+            
+        }
+        bypass_recruitment = yes
+        available_to_spy_master = yes
+        female = yes
+        nationalities = {
+            CSA
+            COR
+            USA
+            TEX
+            CAL
+            NEE
+            WCC
+            
+        }
+        
+    }
+    create_operative_leader = {
+        name = "Mildred Gillars"
+        GFX = GFX_portrait_HOTB_Mildred_Gillars
+        traits = {
+            operative_natural_orator
+            operative_double_agent
+            
+        }
+        bypass_recruitment = yes
+        available_to_spy_master = yes
+        female = yes
+        nationalities = {
+            CSA
+            COR
+            USA
+            TEX
+            CAL
+            NEE
+            WCC
+            
+        }
+        
+    }
+    create_operative_leader = {
+        name = "Julius Rosenberg"
+        GFX = GFX_portrait_HOTB_Julius_Rosenberg
+        traits = {
+            operative_infiltrator
+            
+        }
+        bypass_recruitment = yes
+        available_to_spy_master = yes
+        nationalities = {
+            CSA
+            COR
+            USA
+            TEX
+            CAL
+            NEE
+            WCC
+            
+        }
+        
+    }
+    create_operative_leader = {
+        name = "Ethel Greenglass"
+        GFX = GFX_portrait_HOTB_Ethel_Greenglass
+        traits = {
+            operative_infiltrator
+            
+        }
+        bypass_recruitment = yes
+        available_to_spy_master = yes
+        female = yes
+        nationalities = {
+            CSA
+            COR
+            USA
+            TEX
+            CAL
+            NEE
+            WCC
+            
+        }
+        
+    }
+    
+}
+CSA_start_naval_variant = yes

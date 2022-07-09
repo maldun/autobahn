@@ -1,0 +1,1394 @@
+capital = 64
+set_naval_oob = "GER_naval"
+starting_train_buffer = 2.0
+add_ideas = {
+    GER_victors_of_wwi
+    GER_quenched_militarism
+    GER_imperial_pride
+    limited_conscription
+    GER_Franz_von_Papen_hog_ade
+    GER_Friedrich_Werner_von_der_Schulenberg_for_ade
+    GER_Hjalmar_Schacht_eco_ade
+    GER_Johann_von_Bernstorff_sec_ade
+    GER_August_Von_Mackensen_carm_pau
+    GER_Manfred_Freiherr_von_Richthofen_cair_ade
+    GER_Hans_von_Seeckt_cos_pau
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        basic_heavy_tank = 1
+        
+    }
+    set_oob = "GER"
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        improved_light_tank_chassis = 1
+        basic_heavy_tank_chassis = 1
+        engine_tech_1 = 1
+        
+    }
+    create_equipment_variant = {
+        name = "A7V"
+        type = heavy_tank_chassis_0
+        parent_version = 0
+        modules = {
+            main_armament_slot = tank_small_cannon
+            turret_type_slot = tank_light_fixed_superstructure_turret
+            suspension_type_slot = tank_bogie_suspension
+            armor_type_slot = tank_riveted_armor
+            engine_type_slot = tank_gasoline_engine
+            special_type_slot_1 = additional_machine_guns
+            special_type_slot_2 = additional_machine_guns
+            
+        }
+        upgrades = {
+            tank_nsb_engine_upgrade = 1
+            tank_nsb_armor_upgrade = 1
+            
+        }
+        obsolete = yes
+        icon = "gfx/interface/technologies/gwtank.png"
+        
+    }
+    create_equipment_variant = {
+        name = "Kätzchen"
+        type = light_tank_chassis_1
+        parent_version = 0
+        modules = {
+            main_armament_slot = tank_heavy_machine_gun
+            turret_type_slot = tank_light_one_man_tank_turret
+            suspension_type_slot = tank_christie_suspension
+            armor_type_slot = tank_riveted_armor
+            engine_type_slot = tank_gasoline_engine
+            
+        }
+        upgrades = {
+            tank_nsb_engine_upgrade = 5
+            tank_nsb_armor_upgrade = 1
+            
+        }
+        icon = "gfx/interface/technologies/ger_basic_light_tank.png"
+        obsolete = yes
+        
+    }
+    create_equipment_variant = {
+        name = "Versuchskonstruktion 31"
+        type = heavy_tank_chassis_1
+        parent_version = 0
+        modules = {
+            main_armament_slot = tank_close_support_gun
+            turret_type_slot = tank_heavy_three_man_tank_turret
+            suspension_type_slot = tank_bogie_suspension
+            armor_type_slot = tank_riveted_armor
+            engine_type_slot = tank_gasoline_engine
+            special_type_slot_1 = secondary_turret_hmg
+            special_type_slot_2 = secondary_turret_hmg
+            
+        }
+        upgrades = {
+            tank_nsb_engine_upgrade = 6
+            tank_nsb_armor_upgrade = 2
+            
+        }
+        icon = "gfx/interface/technologies/ger_basic_heavy_tank.png"
+        
+    }
+    create_equipment_variant = {
+        name = "Ozelot"
+        type = light_tank_chassis_2
+        parent_version = 0
+        modules = {
+            main_armament_slot = tank_auto_cannon
+            turret_type_slot = tank_light_two_man_tank_turret
+            suspension_type_slot = tank_christie_suspension
+            armor_type_slot = tank_riveted_armor
+            engine_type_slot = tank_gasoline_engine
+            
+        }
+        upgrades = {
+            tank_nsb_engine_upgrade = 5
+            tank_nsb_armor_upgrade = 2
+            
+        }
+        icon = "gfx/interface/technologies/ger_imp_light_tank.png"
+        
+    }
+    set_oob = "GER_NSB"
+    
+}
+set_technology = {
+    basic_train = 1
+    electronic_mechanical_engineering = 1
+    fuel_silos = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    motorised_infantry = 1
+    tech_recon = 1
+    tech_engineers = 1
+    tech_mountaineers = 1
+    marines = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    early_fighter = 1
+    naval_bomber1 = 1
+    early_bomber = 1
+    cv_early_fighter = 1
+    cv_CAS1 = 1
+    fighter1 = 1
+    tactical_bomber1 = 1
+    strategic_bomber1 = 1
+    CAS1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "La Resistance"
+        
+    }
+    set_technology = {
+        armored_car1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        panzerschiffe = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        cruiser_submarines = 1
+        early_ship_hull_carrier = 1
+        basic_ship_hull_carrier = 1
+        early_ship_hull_heavy = 1
+        basic_ship_hull_heavy = 1
+        ship_hull_super_heavy = 1
+        basic_naval_mines = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_medium_battery = 1
+        basic_heavy_battery = 1
+        basic_secondary_battery = 1
+        improved_secondary_battery = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        basic_heavy_armor_scheme = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battlecruiser = 1
+        early_battleship = 1
+        basic_battleship = 1
+        heavy_battleship = 1
+        early_carrier = 1
+        basic_carrier = 1
+        transport = 1
+        
+    }
+    
+}
+POL = {
+    give_military_access = GER
+    
+}
+DKB = {
+    give_military_access = GER
+    
+}
+AZE = {
+    give_military_access = GER
+    
+}
+OTT = {
+    give_military_access = GER
+    
+}
+LEC = {
+    give_military_access = GER
+    
+}
+MTR = {
+    give_military_access = GER
+    
+}
+give_guarantee = LEC
+add_to_array = {
+    LEC.guarantor_array = GER
+    
+}
+add_to_array = {
+    AZE.guarantor_array = GER
+    
+}
+add_to_array = {
+    DKB.guarantor_array = GER
+    
+}
+AZE = {
+    give_resource_rights = {
+        state = 990
+        receiver = GER
+        
+    }
+    
+}
+set_research_slots = 4
+set_convoys = 400
+set_stability = 0.6
+set_global_flag = GER_has_oil
+set_country_flag = legation_council_vote
+diplomatic_relation = {
+    country = AUS
+    relation = non_aggression_pact
+    
+}
+add_opinion_modifier = {
+    target = ENG
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = BHC
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = FRA
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = CSA
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = DEH
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = FNG
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = SRI
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = GEO
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = SQI
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = CNT
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = LEC
+    modifier = LEC_member
+    
+}
+add_opinion_modifier = {
+    target = MAF
+    modifier = colonial_master
+    
+}
+add_opinion_modifier = {
+    target = GEA
+    modifier = colonial_master
+    
+}
+add_opinion_modifier = {
+    target = AOG
+    modifier = colonial_master
+    
+}
+add_opinion_modifier = {
+    target = HAI
+    modifier = HAI_foreign_council
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1932.3.8"
+    election_frequency = 60
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 1
+    radical_socialist = 3
+    syndicalist = 2
+    social_democrat = 22
+    social_liberal = 6
+    market_liberal = 3
+    social_conservative = 12
+    authoritarian_democrat = 42
+    paternal_autocrat = 7
+    national_populist = 2
+    
+}
+set_autonomy = {
+    target = LIT
+    autonomy_state = kr_default_puppet
+    
+}
+set_autonomy = {
+    target = POL
+    autonomy_state = kr_default_puppet
+    
+}
+set_autonomy = {
+    target = WHR
+    autonomy_state = kr_default_puppet
+    
+}
+set_autonomy = {
+    target = CRE
+    autonomy_state = kr_default_puppet
+    
+}
+set_autonomy = {
+    target = MLT
+    autonomy_state = kr_default_puppet
+    
+}
+set_autonomy = {
+    target = GEA
+    autonomy_state = kr_colonial_government
+    
+}
+set_autonomy = {
+    target = AOG
+    autonomy_state = kr_colonial_government
+    
+}
+set_autonomy = {
+    target = MOR
+    autonomy_state = kr_autonomous_puppet
+    
+}
+if = {
+    limit = {
+        has_dlc = "Together for Victory"
+        
+    }
+    add_to_tech_sharing_group = german_research
+    every_country = {
+        limit = {
+            is_subject_of = GER
+            
+        }
+        add_to_tech_sharing_group = german_research
+        
+    }
+    
+}
+MAF = {
+    set_rule = {
+        can_be_called_to_war = yes
+        can_decline_call_to_war = no
+        can_not_declare_war = yes
+        
+    }
+    
+}
+create_faction = Mittelmacht
+add_to_faction = GER
+add_to_faction = BEL
+add_to_faction = LIT
+add_to_faction = BAT
+add_to_faction = WHR
+add_to_faction = UKR
+add_to_faction = MOR
+add_to_faction = MAF
+add_to_faction = GEA
+add_to_faction = MLT
+add_to_faction = CRE
+add_to_faction = AOG
+every_country = {
+    limit = {
+        OR = {
+            is_ally_with = GER
+            tag = DEN
+            tag = ICE
+            tag = SWE
+            tag = FIN
+            tag = HOL
+            tag = DEI
+            tag = POL
+            tag = IRE
+            
+        }
+        
+    }
+    GER_add_to_mitteleuropa = yes
+    
+}
+country_event = {
+    id = gerdom.1
+    hours = 2
+    
+}
+country_event = {
+    id = black.1
+    days = 34
+    
+}
+country_event = {
+    id = mittel.43
+    days = 90
+    
+}
+news_event = {
+    id = gerfla.1
+    days = 238
+    
+}
+country_event = {
+    id = gerdom.2
+    days = 360
+    
+}
+news_event = {
+    id = gerfla.2
+    days = 400
+    
+}
+country_event = {
+    id = gerfla.6
+    days = 525
+    
+}
+country_event = {
+    id = gerfla.7
+    days = 540
+    
+}
+country_event = {
+    id = sprc.256
+    days = 720
+    random_hours = 3840
+    
+}
+country_event = {
+    id = gerdom.106
+    days = 731
+    random_days = 75
+    
+}
+country_event = {
+    id = literature.15
+    days = 952
+    
+}
+news_event = {
+    id = gerfla.3
+    days = 1218
+    
+}
+country_event = {
+    id = gerdom.62
+    days = 1255
+    
+}
+country_event = {
+    id = gerdom.40
+    days = 1354
+    
+}
+country_event = {
+    id = gerdom.41
+    days = 1354
+    
+}
+country_event = {
+    id = gerdom.63
+    days = 1374
+    
+}
+country_event = {
+    id = gerdom.47
+    days = 2011
+    
+}
+country_event = {
+    id = gerdom.64
+    days = 2908
+    
+}
+country_event = {
+    id = gerdom.65
+    days = 3566
+    
+}
+country_event = {
+    id = gerdom.65
+    days = 3665
+    
+}
+country_event = {
+    id = gerdom.66
+    days = 4408
+    
+}
+news_event = {
+    id = flavornews.1
+    days = 13
+    
+}
+news_event = {
+    id = flavornews.2
+    days = 214
+    
+}
+create_import = {
+    resource = oil
+    factories = 3
+    exporter = ROM
+    
+}
+create_import = {
+    resource = oil
+    factories = 1
+    exporter = AZE
+    
+}
+create_country_leader = {
+    name = "Rudolf Hess"
+    desc = "POLITICS_RUDOLF_HESS_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Rudolf_Hess.png"
+    expire = "1965.1.1"
+    ideology = volkism_subtype
+    
+}
+create_country_leader = {
+    name = "Wilhelm Pieck"
+    desc = "POLITICS_WILHELM_PIECK_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck_I.png"
+    expire = "1965.1.1"
+    ideology = authcom_subtype
+    
+}
+create_country_leader = {
+    name = "Ernst Thälmann"
+    desc = "POLITICS_ERNST_THALMANN_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Ernst_Thalmann.png"
+    expire = "1965.1.1"
+    ideology = centralized_syndicalism_subtype
+    
+}
+create_country_leader = {
+    name = "Rudolf Rocker"
+    desc = "POLITICS_RUDOLF_ROCKER_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Rudolf_Rocker_I.png"
+    expire = "1965.1.1"
+    ideology = anarchism_subtype
+    
+}
+create_country_leader = {
+    name = "Wilhelm II"
+    desc = "POLITICS_WILHELM_II_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II_Auth.png"
+    expire = "1965.1.1"
+    ideology = christian_democracy_subtype
+    
+}
+create_country_leader = {
+    name = "Wilhelm II"
+    desc = "POLITICS_WILHELM_II_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II_Auth.png"
+    expire = "1965.1.1"
+    ideology = marlib_national_liberalism_subtype
+    
+}
+create_country_leader = {
+    name = "Wilhelm II"
+    desc = "POLITICS_WILHELM_II_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II_Auth.png"
+    expire = "1965.1.1"
+    ideology = centrist_subtype
+    
+}
+create_country_leader = {
+    name = "Wilhelm II"
+    desc = "POLITICS_WILHELM_II_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II_Auth.png"
+    expire = "1965.1.1"
+    ideology = social_democrat_subtype
+    
+}
+create_country_leader = {
+    name = "Wilhelm II"
+    desc = "POLITICS_WILHELM_II_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II_Auth.png"
+    expire = "1965.1.1"
+    ideology = paternal_autocrat_subtype
+    
+}
+create_country_leader = {
+    name = "Wilhelm II"
+    desc = "POLITICS_WILHELM_II_DESC"
+    picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II_Auth.png"
+    expire = "1965.1.1"
+    ideology = prussian_constitutionalism_subtype
+    
+}
+create_field_marshal = {
+    name = "Hans von Seeckt"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Hans_von_Seeckt.png"
+    traits = {
+        trickster
+        war_hero
+        brilliant_strategist
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 2
+    id = 9836
+    
+}
+create_field_marshal = {
+    name = "Paul von Lettow-Vorbeck"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Paul_von_Lettow_Vorbeck.png"
+    traits = {
+        trickster
+        war_hero
+        media_personality
+        jungle_rat
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 5
+    
+}
+create_field_marshal = {
+    name = "Gerd von Rundstedt"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Gerd_von_Rundstedt_kr.png"
+    traits = {
+        defensive_doctrine
+        offensive_doctrine
+        
+    }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+    
+}
+create_field_marshal = {
+    name = "Rupprecht von Bayern"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Rupprecht_Bayern_kr.png"
+    traits = {
+        trait_cautious
+        inflexible_strategist
+        defensive_doctrine
+        organizer
+        thorough_planner
+        
+    }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 3
+    
+}
+create_field_marshal = {
+    name = "August von Mackensen"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_August_Mackensen_kr.png"
+    traits = {
+        offensive_doctrine
+        old_guard
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 3
+    id = 983
+    
+}
+create_field_marshal = {
+    name = "Wilhelm von Preußen"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Wilhelm_III_field_marshall.png"
+    traits = {
+        old_guard
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Erich von Manstein"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Erich_von_Manstein_kr.png"
+    traits = {
+        trickster
+        armor_officer
+        brilliant_strategist
+        trait_engineer
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 4
+    
+}
+create_corps_commander = {
+    name = "Heinz Guderian"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Heinz_Guderian_kr.png"
+    traits = {
+        trickster
+        brilliant_strategist
+        panzer_leader
+        armor_officer
+        career_officer
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Walter Model"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Walter_Model_kr.png"
+    traits = {
+        politically_connected
+        trait_cautious
+        harsh_leader
+        brilliant_strategist
+        trickster
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 5
+    planning_skill = 2
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Werner von Blomberg"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Werner_von_Blomberg.png"
+    traits = {
+        trickster
+        armor_officer
+        career_officer
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Günther von Kluge"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Gunther_Kluge_kr.png"
+    traits = {
+        career_officer
+        armor_officer
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Erwin von Witzleben"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Erwin_von_Witzleben_kr.png"
+    traits = {
+        skilled_staffer
+        career_officer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Wilhelm Ritter von Leeb"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Ritter_von_Leeb_kr.png"
+    traits = {
+        skilled_staffer
+        infantry_officer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Albert Kesselring"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Albert_Kesselring_kr.png"
+    traits = {
+        inflexible_strategist
+        infantry_officer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Eberhard von Mackensen"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Eberhard_Mackensen_kr.png"
+    traits = {
+        cavalry_leader
+        cavalry_officer
+        
+    }
+    skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Eduard Dietl"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Eduard_Dietl_kr.png"
+    traits = {
+        winter_specialist
+        commando
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 4
+    
+}
+create_corps_commander = {
+    name = "Erich Hoepner"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Erich_Hoepner_kr.png"
+    traits = {
+        armor_officer
+        trait_reckless
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Ewald von Kleist"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Ewald_Kleist_kr.png"
+    traits = {
+        skilled_staffer
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Fedor von Bock"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Fedor_Bock_kr.png"
+    traits = {
+        brilliant_strategist
+        harsh_leader
+        trait_cautious
+        
+    }
+    skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Friedrich Paulus"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Friedrich_Paulus_kr.png"
+    traits = {
+        infantry_officer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Georg von Küchler"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Georg_Kuchler_kr.png"
+    traits = {
+        politically_connected
+        career_officer
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Franz Halder"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Franz_Halder_kr.png"
+    traits = {
+        organizer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Gotthard Heinrici"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Gotthard_Heinrici_kr.png"
+    traits = {
+        trait_engineer
+        fortress_buster
+        
+    }
+    skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Hermann Hoth"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Hermann_Hoth_kr.png"
+    traits = {
+        infantry_officer
+        infantry_leader
+        infantry_expert
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Franz von Bayern"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Franz_Bayern_kr.png"
+    traits = {
+        trait_engineer
+        fortress_buster
+        hill_fighter
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Curt Haase"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Curt_Hasse.png"
+    traits = {
+        trickster
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Nikolaus von Falkenhorst"
+    portrait_path = "gfx/leaders/GER/Portrait_GER_Nikolaus_von_Falkenhorst.png"
+    traits = {
+        commando
+        winter_specialist
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 4
+    
+}
+create_corps_commander = {
+    name = "Kurt von Hammerstein-Equord"
+    portrait_path = "gfx/leaders/GER/Portrait_GER_Kurt_von_Hammerstein_Equord.png"
+    traits = {
+        politically_connected
+        brilliant_strategist
+        defensive_doctrine
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Erwin von Witzleben"
+    portrait_path = "gfx/leaders/GER/Portrait_GER_Erwin_von_Witzleben.png"
+    traits = {
+        career_officer
+        skilled_staffer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Karl Dönitz"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Karl_Donitz_kr.png"
+    traits = {
+        seawolf
+        silent_hunter
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    maneuvering_skill = 4
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Erich Raeder"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Erich_Raeder_kr.png"
+    traits = {
+        ironside
+        
+    }
+    skill = 5
+    attack_skill = 5
+    defense_skill = 3
+    maneuvering_skill = 4
+    coordination_skill = 4
+    
+}
+create_navy_leader = {
+    name = "Lothar von Arnauld de la Perière"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Lothar_Arnauld_Periere_kr.png"
+    traits = {
+        seawolf
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    maneuvering_skill = 4
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Alfred Saalwächter"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Alfred_Saalwachter_kr.png"
+    traits = 
+    skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    maneuvering_skill = 3
+    coordination_skill = 4
+    
+}
+create_navy_leader = {
+    name = "Hermann Boehm"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Hermann_Boehm_kr.png"
+    traits = {
+        superior_tactician
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 4
+    maneuvering_skill = 3
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Wilhelm Marschall"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Marschall_kr.png"
+    traits = {
+        blockade_runner
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    maneuvering_skill = 3
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Ludwig von Reuter"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Ludwig_Reuter_kr.png"
+    traits = {
+        ironside
+        superior_tactician
+        old_guard_navy
+        
+    }
+    skill = 5
+    id = 984
+    attack_skill = 4
+    defense_skill = 4
+    maneuvering_skill = 4
+    coordination_skill = 5
+    
+}
+create_navy_leader = {
+    name = "Wilhelm Souchon"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Souchon_kr.png"
+    traits = {
+        spotter
+        old_guard_navy
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    maneuvering_skill = 3
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Max Valentiner"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Max_Valentiner_kr.png"
+    traits = {
+        seawolf
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 1
+    maneuvering_skill = 4
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Rolf Carls"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Rolf_Carls_kr.png"
+    traits = {
+        blockade_runner
+        old_guard_navy
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    maneuvering_skill = 4
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Günther Lütjens"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Gunther_Lutjens_kr.png"
+    traits = 
+    skill = 3
+    attack_skill = 3
+    defense_skill = 1
+    maneuvering_skill = 2
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Bernhard Rogge"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Bernhard_Rogge_kr.png"
+    traits = {
+        seawolf
+        
+    }
+    skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    maneuvering_skill = 2
+    coordination_skill = 1
+    
+}
+create_navy_leader = {
+    name = "Max Bastian"
+    portrait_path = "gfx/leaders/GER/Portrait_GER_Max_Bastian.png"
+    traits = {
+        superior_tactician
+        ironside
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    maneuvering_skill = 2
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Willy von Nordeck"
+    portrait_path = "gfx/leaders/GER/Portrait_GER_Willy_von_Nordeck.png"
+    traits = {
+        spotter
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    maneuvering_skill = 2
+    coordination_skill = 3
+    
+}
+if = {
+    limit = {
+        has_dlc = "La Resistance"
+        
+    }
+    create_intelligence_agency = yes
+    create_operative_leader = {
+        name = "Hermann Giskes"
+        GFX = GFX_portrait_hermann_giskes
+        traits = {
+            operative_master_interrogator
+            
+        }
+        bypass_recruitment = no
+        available_to_spy_master = yes
+        nationalities = {
+            GER
+            
+        }
+        
+    }
+    create_operative_leader = {
+        name = "Hugo Bleicher"
+        GFX = GFX_portrait_hugo_bleicher
+        traits = {
+            operative_demolition_expert
+            
+        }
+        bypass_recruitment = no
+        available_to_spy_master = yes
+        nationalities = {
+            GER
+            
+        }
+        
+    }
+    create_operative_leader = {
+        name = "Josef Jakobs"
+        GFX = GFX_portrait_josef_jakobs
+        traits = {
+            operative_commando
+            
+        }
+        bypass_recruitment = no
+        available_to_spy_master = yes
+        nationalities = {
+            GER
+            
+        }
+        
+    }
+    
+}
+GER_start_naval_variant = yes

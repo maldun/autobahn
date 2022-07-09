@@ -2265,7 +2265,7 @@ spriteTypes = {
 	
 		SpriteType = {
 		    name = "GFX_FRA_ship_hull_cruiser_submarine_medium"
-		    texturefile = "gfx/interface/technologies/ships/r56_tech_fra_cruiser_submarine.dds"
+		    texturefile = "gfx/interface/technologies/ships/r56_tech_FRA_cruiser_submarine.dds"
 	    }
 	#)#	
 			
@@ -2875,7 +2875,7 @@ spriteTypes = {
 	
 		SpriteType = {
 		    name = "GFX_JAP_ship_hull_cruiser_submarine_medium"
-		    texturefile = "gfx/interface/technologies/ships/r56_tech_jap_cruiser_submarine.dds"
+		    texturefile = "gfx/interface/technologies/ships/r56_tech_JAP_cruiser_submarine.dds"
 	    }
 	#)#	    
 			
@@ -3196,7 +3196,7 @@ spriteTypes = {
 	
 		SpriteType = {
 		    name = "GFX_GER_ship_hull_cruiser_submarine_medium"
-		    texturefile = "gfx/interface/technologies/ships/r56_tech_ger_cruiser_submarine.dds"
+		    texturefile = "gfx/interface/technologies/ships/r56_tech_GER_cruiser_submarine.dds"
 	    }
 	#)#	    
 		

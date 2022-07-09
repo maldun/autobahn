@@ -1,193 +1,255 @@
-﻿capital = 1020 #Batavia
-
+capital = 1020
 set_research_slots = 2
 oob = "DEI"
 set_naval_oob = "DEI_naval"
-
 add_ideas = {
-	DEI_idea_colonial_nation
-	DEI_idea_insulindian_unity_low
-	DEI_idea_insulindian_strength_very_low
-	DEI_idea_defunct_army
-	free_trade
+    DEI_idea_colonial_nation
+    DEI_idea_insulindian_unity_low
+    DEI_idea_insulindian_strength_very_low
+    DEI_idea_defunct_army
+    free_trade
+    
 }
-
-set_country_flag = { flag = dei_insulindian_unity value = 7 }
-set_country_flag = { flag = dei_insulindian_strength value = 2 }
+set_country_flag = {
+    flag = dei_insulindian_unity
+    value = 7
+    
+}
+set_country_flag = {
+    flag = dei_insulindian_strength
+    value = 2
+    
+}
 set_convoys = 250
-
-add_offsite_building = { type = arms_factory level = 2 }
-
+add_offsite_building = {
+    type = arms_factory
+    level = 2
+    
+}
 HOL = {
-	set_autonomy = {
-		target = DEI
-		autonomy_state = kr_colonial_government
-	}
+    set_autonomy = {
+        target = DEI
+        autonomy_state = kr_colonial_government
+        
+    }
+    
 }
-
-### Starting Technologies ###, clone of Holland
 set_technology = {
-	### Infantry ###
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	marines = 1
-	tech_support = 1
-	tech_engineers = 1
-	tech_recon = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-
-	### Air ###
-	early_fighter = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	cv_early_fighter = 1
-	cv_CAS1 = 1
-	cv_naval_bomber1 = 0
-	fighter1 = 1
-	tactical_bomber1 = 1
-	strategic_bomber1 = 1
-	CAS1 = 1
-
-	### Trains ###
-	basic_train = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    marines = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_recon = 1
+    motorised_infantry = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    early_fighter = 1
+    naval_bomber1 = 1
+    early_bomber = 1
+    cv_early_fighter = 1
+    cv_CAS1 = 1
+    fighter1 = 1
+    tactical_bomber1 = 1
+    strategic_bomber1 = 1
+    CAS1 = 1
+    basic_train = 1
+    
 }
-
-### Tanks - NSB ###
 if = {
-	limit = { has_dlc = "No Step Back" }
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        
+    }
+    
 }
-
-### Tanks - non NSB ###
 if = {
-	limit = { NOT = { has_dlc = "No Step Back" } }
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        
+    }
+    
 }
-
-### Navy - MtG ###
-
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
-
-		## Modules##
-		basic_depth_charges = 1
-		basic_cruiser_armor_scheme = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		basic_secondary_battery = 1
-		basic_torpedo = 1
-		improved_ship_torpedo_launcher = 1
-		basic_naval_mines = 1
-
-		### Transport ###
-		mtg_transport = 1
-	}
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_heavy = 1
+        basic_ship_hull_heavy = 1
+        early_ship_hull_carrier = 1
+        basic_depth_charges = 1
+        basic_cruiser_armor_scheme = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_medium_battery = 1
+        basic_heavy_battery = 1
+        basic_secondary_battery = 1
+        basic_torpedo = 1
+        improved_ship_torpedo_launcher = 1
+        basic_naval_mines = 1
+        mtg_transport = 1
+        
+    }
+    
 }
-
-### Navy - Non MtG ###
-
 if = {
-	limit = {
-		NOT = {
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_technology = {
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_submarine = 1
-		basic_submarine = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_carrier = 1
-
-		### Transport ###
-		transport = 1
-	}
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battleship = 1
+        basic_battleship = 1
+        early_carrier = 1
+        transport = 1
+        
+    }
+    
 }
-
 set_war_support = 0.25
-
 set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1935.11.14"
-	election_frequency = 48
-	elections_allowed = no
+    ruling_party = authoritarian_democrat
+    last_election = "1935.11.14"
+    election_frequency = 48
+    elections_allowed = no
+    
 }
-
 set_popularities = {
-	totalist = 0
-	radical_socialist = 0
-	syndicalist = 0
-	social_democrat = 0
-	social_liberal = 3
-	market_liberal = 7
-	social_conservative = 4
-	authoritarian_democrat = 57
-	paternal_autocrat = 29
-	national_populist = 0
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 0
+    social_liberal = 3
+    market_liberal = 7
+    social_conservative = 4
+    authoritarian_democrat = 57
+    paternal_autocrat = 29
+    national_populist = 0
+    
 }
-
-country_event = { id = dei.1 hours = 4 } #Dutch East Indies in 1936
-country_event = { id = dei.2 days = 60 } #Black Monday comes to the Indies
-country_event = { id = dei.16 days = 188 } #Volksraad passes Petition-Sutardjo
-country_event = { id = dei.7 days = 542 } #Governor General De Jonge resigns
-
-country_event = { id = dei_flavor.11 days = 16 } #Return of the Mimika expedition
-country_event = { id = dei_flavor.3 days = 191 } #Founding of the NIVU
-country_event = { id = dei_flavor.10 days = 156 } #East-Indies-Hungary
-country_event = { id = dei_flavor.6 days = 302 } #The Carstenz Expedition
-country_event = { id = dei_flavor.4 days = 707 } #Premiere of Terang Boelan
-country_event = { id = dei_flavor.1 days = 712 } #Founding of ANTARA
-country_event = { id = dei_flavor.5 days = 1346 } #First launch of Cultureel Indië
-country_event = { id = dei_flavor.2 days = 1586 } #Renovation of the Sociëteit Concordia
-
+country_event = {
+    id = dei.1
+    hours = 4
+    
+}
+country_event = {
+    id = dei.2
+    days = 60
+    
+}
+country_event = {
+    id = dei.16
+    days = 188
+    
+}
+country_event = {
+    id = dei.7
+    days = 542
+    
+}
+country_event = {
+    id = dei_flavor.11
+    days = 16
+    
+}
+country_event = {
+    id = dei_flavor.3
+    days = 191
+    
+}
+country_event = {
+    id = dei_flavor.10
+    days = 156
+    
+}
+country_event = {
+    id = dei_flavor.6
+    days = 302
+    
+}
+country_event = {
+    id = dei_flavor.4
+    days = 707
+    
+}
+country_event = {
+    id = dei_flavor.1
+    days = 712
+    
+}
+country_event = {
+    id = dei_flavor.5
+    days = 1346
+    
+}
+country_event = {
+    id = dei_flavor.2
+    days = 1586
+    
+}
 668 = {
-	state_event = { id = ins.75 trigger_for = controller days = 730 }
+    state_event = {
+        id = ins.75
+        trigger_for = controller
+        days = 730
+        
+    }
+    
 }
 1022 = {
-	state_event = { id = ins.76 trigger_for = controller days = 2743 }
+    state_event = {
+        id = ins.76
+        trigger_for = controller
+        days = 2743
+        
+    }
+    
 }
 335 = {
-	state_event = { id = ins.77 trigger_for = controller days = 2788 }
+    state_event = {
+        id = ins.77
+        trigger_for = controller
+        days = 2788
+        
+    }
+    
 }
-
 recruit_character = DEI_bonifacius_de_jonge
 recruit_character = DEI_alidius_tjarda_van_starkenborgh_stachouwer
 recruit_character = DEI_nico_palar
-
-### Generals ###
 recruit_character = DEI_abdulkadir_widjojoatmodjo
-
-#DEI's Dutch generals/admirals are set in the HOL file
-
-# Advisors
 recruit_character = DEI_pieter_sjoerds_gerbrandy
 recruit_character = DEI_ivo_samkalden
 recruit_character = DEI_johan_ringers
@@ -200,5 +262,4 @@ recruit_character = DEI_edzard_jacob_van_holthe
 recruit_character = DEI_jan_van_der_hoop
 recruit_character = DEI_jan_hilgers
 recruit_character = DEI_the_volksraad
-
 activate_advisor = DEI_the_volksraad_sic

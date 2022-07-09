@@ -12,7 +12,7 @@ KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695
 KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426030/"
 RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
 
-KX = True
+KX = False
 OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_diff"
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
@@ -67,6 +67,12 @@ def ideology_map():
                [add_multiple, [["has_government",["radical_socialist"]]]]
                ]
     maps.append(mapping)
+    if KX is False:
+        mapping = [[has_value, val],
+               [remove, val]
+               ]
+        maps.append(mapping)
+    
     return maps
 
 def apply_ideology_map(maps):

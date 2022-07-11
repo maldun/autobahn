@@ -31,9 +31,17 @@ ideologies = {"fascism": ("national_populist", "paternal_autocrat"),
                   }
 
 rt56_techs = {
-    "etax_doctrine", # special research division
-    "camo", # Camouflagetech
-    
+    "etax_doctrine",   # special research division
+    "camo",            # Camouflagetech
+    "sniper_rifle",    # Sniper Rifle
+    "transport_plane1",
+    "steel_production_1",
+    "aluminum_production_1",
+    "shocktroops",
+    "jaegers",
+    "desertinfantry_at",
+    "jngdst_clothes_gw", # jungle clothing
+    "winter_clothes_gw", 
     }
 
 

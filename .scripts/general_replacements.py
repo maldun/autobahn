@@ -12,12 +12,15 @@ KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695
 KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426030/"
 RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
 
-KX = False
+# Set for mod in question
+KX = True
+
 OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_diff"
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
 IDEA_PATH = "common/ideas"
 HISTORY_COUNTRY_PATH = "history/countries"
+# RULES_PATH = 
 
 ideologies = {"fascism": ("national_populist", "paternal_autocrat"),
                   "democratic": ("social_democrat", "social_liberal",
@@ -25,6 +28,12 @@ ideologies = {"fascism": ("national_populist", "paternal_autocrat"),
                   "communism": ("radical_socialist", "syndicalist", "totalist"),
                   "neutrality": ("authoritarian_democrat",)
                   }
+
+rt56_techs = {
+    etax_doctrine, # special research division
+    camo, # Camouflagetech
+    }
+}
 
 def ideology_map():
     maps = []
@@ -93,6 +102,12 @@ def remove_obsolete_equipment_maps():
                  [remove, key_and_val]])
 
     return maps
+
+def create_equipment_table():
+    country_folder56 = os.path.join(RT56_FOLDER, HISTORY_COUNTRY_PATH)
+    country_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
+
+    
     
 def apply_equipment_maps(maps):
     in_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
@@ -111,6 +126,18 @@ def apply_equipment_maps(maps):
         except:
             import pdb; pdb.set_trace()
 
+def apply_game_rule():
+# if = {
+# limit = {
+# has_game_rule = {
+# rule = allow_r56_techs
+# 			option = no
+# 		}
+# 	}
+# 	set_global_flag = disable_r56_techs
+# }
+
+    
     
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)

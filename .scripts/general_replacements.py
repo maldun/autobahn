@@ -41,9 +41,17 @@ rt56_techs = {
     "jaegers",
     "desertinfantry_at",
     "jngdst_clothes_gw", # jungle clothing
-    "winter_clothes_gw", 
+    "winter_clothes_gw",
+    "r56_gw_railway_gun",
+    "r56_railway_mortar_subtech",
+    "r56_militia_tech",
+    "r56_guerilla_warfare", # Docrtine
     }
 
+country_inheritance = {"TUR": ("OTT",),
+                       "USA": ("CSA",),
+                       "SOV": ("RUS",),
+                       }
 
 def ideology_map():
     maps = []
@@ -119,12 +127,37 @@ def remove_obsolete_equipment_maps():
 
     return maps
 
-def create_equipment_table():
+def create_equipment_table(out_file):
     country_folder56 = os.path.join(RT56_FOLDER, HISTORY_COUNTRY_PATH)
     country_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
     countries = [fname[:3] for fname in os.listdir(country_folder)]
-    
-    
+    countries56 = [fname[:3] for fname in os.listdir(country_folder56)]
+    common_countries = set(countries).intersection(countries56)
+    rest_countries = set(countries).difference(countries56)
+    df = pd.DataFrame(columns=sorted(list(rt56_techs)),
+                      dtype=pd.Int64Dtype())
+    for fname in os.listdir(country_folder56):
+        tag = fname[:3]
+        if tag in common_countries:
+            try:
+                obj = paradox2list(os.path.join(country_folder56, fname))
+            except:
+                import pdb; pdb.set_trace()
+
+            found, inds = has_key(obj, "set_technology")
+            if len(found) == 0:
+                df.loc[tag] = float("nan")
+            else:
+                for tech in rt56_techs:
+                    found2, inds = has_key(found, tech)
+                    if len(found2) == 1:
+                        val = found2[0][1][0]
+                        df.loc[tag, tech] = val
+
+
+    for tag in rest_countries:
+         df.loc[tag] = float("nan")
+    df.to_csv(out_file)
     
 def apply_equipment_maps(maps):
     in_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
@@ -146,7 +179,9 @@ def apply_equipment_maps(maps):
     
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
+    create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     maps = ideology_map()
     apply_ideology_map(maps)
     maps = remove_obsolete_equipment_maps()
     apply_equipment_maps(maps)
+    

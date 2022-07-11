@@ -1,0 +1,24 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_r56_techs
+						option = no
+					}
+				}
+				set_global_flag = disable_r56_techs
+			}
+            if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_national_characters
+						option = no
+					}
+				}
+				set_global_flag = NATIONAL_CHARACTERS_BLOCKED
+			}
+		}
+    }
+}

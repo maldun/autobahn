@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
+import pandas as pd 
 HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
 import Hoi4Converter
@@ -30,10 +31,11 @@ ideologies = {"fascism": ("national_populist", "paternal_autocrat"),
                   }
 
 rt56_techs = {
-    etax_doctrine, # special research division
-    camo, # Camouflagetech
+    "etax_doctrine", # special research division
+    "camo", # Camouflagetech
+    
     }
-}
+
 
 def ideology_map():
     maps = []
@@ -81,6 +83,12 @@ def ideology_map():
                [remove, val]
                ]
         maps.append(mapping)
+
+    # Remove ideas
+    ideas = ["nationalism", "internationalism","SPR_collectivized_society"]
+    ideas_items = [["has_idea", [idea]] for idea in ideas]
+    for item in ideas_items:
+        maps.append([[has_key_and_val, item],[remove,item]])
     
     return maps
 
@@ -106,7 +114,8 @@ def remove_obsolete_equipment_maps():
 def create_equipment_table():
     country_folder56 = os.path.join(RT56_FOLDER, HISTORY_COUNTRY_PATH)
     country_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
-
+    countries = [fname[:3] for fname in os.listdir(country_folder)]
+    
     
     
 def apply_equipment_maps(maps):
@@ -125,18 +134,6 @@ def apply_equipment_maps(maps):
                            maps)
         except:
             import pdb; pdb.set_trace()
-
-def apply_game_rule():
-# if = {
-# limit = {
-# has_game_rule = {
-# rule = allow_r56_techs
-# 			option = no
-# 		}
-# 	}
-# 	set_global_flag = disable_r56_techs
-# }
-
     
     
 if __name__ == "__main__":

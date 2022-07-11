@@ -31,7 +31,6 @@ ideas = {
                 modifier = {
                     OR = {
                         AND = {
-                            has_idea = nationalism
                             NOT = {
                                 is_puppet = yes
                                 if = {
@@ -107,8 +106,6 @@ ideas = {
                 NOT = {
                     OR = {
                         is_puppet = yes
-                        has_idea = internationalism
-                        has_idea = nationalism
                         has_global_flag = NATIONAL_CHARACTERS_BLOCKED
                         has_country_leader = {
                             name = "Anarchist Commune"
@@ -185,7 +182,6 @@ ideas = {
                 modifier = {
                     OR = {
                         AND = {
-                            has_idea = internationalism
                             NOT = {
                                 is_puppet = yes
                                 if = {
@@ -232,7 +228,6 @@ ideas = {
                         ruling_only = yes
                         
                     }
-                    has_idea = SPR_collectivized_society
                     has_government = radical_socialist
                     
                 }

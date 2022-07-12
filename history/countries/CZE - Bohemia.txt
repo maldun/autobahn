@@ -1,0 +1,468 @@
+capital = 1129
+oob = "BOM"
+set_cosmetic_tag = CZE_habsburg
+starting_train_buffer = 2.0
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        engine_tech_1 = 1
+        
+    }
+    
+}
+set_technology = {
+    basic_train = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    motorised_infantry = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    early_bomber = 1
+    CAS1 = 1
+    camo = 1
+    etax_doctrine = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    
+}
+set_research_slots = 3
+set_war_support = 0.38
+set_stability = 0.56
+add_opinion_modifier = {
+    target = FRA
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = SRI
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = ENG
+    modifier = embargo
+    
+}
+add_ideas = {
+    CZE_Edvard_Benes_hog_sli
+    CZE_Jan_Masaryk_for_sli
+    CZE_Emil_Franke_eco_sli
+    CZE_Otakar_Krousky_sec_sli
+    AUS_part_of_the_Empire
+    BOH_sudeten_german_divide
+    BOH_prague_university
+    BOH_skoda_works_different
+    BOH_rural_divide
+    BOH_legacy_of_coronation
+    
+}
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 1
+    radical_socialist = 3
+    social_democrat = 17
+    social_liberal = 19
+    market_liberal = 21
+    social_conservative = 15
+    authoritarian_democrat = 17
+    paternal_autocrat = 2
+    national_populist = 5
+    
+}
+create_country_leader = {
+    name = "Antonín Zápotocký"
+    desc = "POLITICS_ZAPOTOCKY_DESC"
+    picture = "gfx/leaders/CZE/CZE_Antonin_Zapotocky.png"
+    expire = "1965.1.1"
+    ideology = authcom_subtype
+    
+}
+create_country_leader = {
+    name = "Stanislav Kostka Neumann"
+    desc = "POLITICS_STANISLAV_NEUMANN_DESC"
+    picture = "gfx/leaders/CZE/Portrait_CZE_Stanislav_Neumann.png"
+    expire = "1965.1.1"
+    ideology = anarcho_syndicalist_subtype
+    
+}
+create_country_leader = {
+    name = "Zdeněk Nejedlý"
+    desc = "POLITICS_ZDENEK_NEJEDLY_DESC"
+    picture = "gfx/leaders/CZE/Portrait_CZE_Zdenek_Nejedly.png"
+    expire = "1965.1.1"
+    ideology = agrarian_socialism_subtype
+    
+}
+create_country_leader = {
+    name = "František Soukup"
+    desc = "POLITICS_FRANTISEK_SOUKUP_DESC"
+    picture = "gfx/leaders/CZE/Portrait_CZE_Frantisek_Soukup.png"
+    expire = "1965.1.1"
+    ideology = austromarxism_subtype
+    
+}
+create_country_leader = {
+    name = "T.G. Masaryk"
+    desc = "POLITICS_T_G_MASARYK_DESC"
+    picture = "gfx/leaders/CZE/CZE_T_G_Masaryk.png"
+    expire = "1965.1.1"
+    ideology = national_socialism_subtype
+    
+}
+create_country_leader = {
+    name = "Rudolf Beran"
+    desc = "POLITICS_RUDOLF_BERAN_DESC"
+    picture = "gfx/leaders/CZE/CZE_Rudolf_Beran.png"
+    expire = "1965.1.1"
+    ideology = marlib_agrarianism_subtype
+    
+}
+create_country_leader = {
+    name = "Jan Šrámek"
+    desc = "POLITICS_JAN_SRAMEK_DESC"
+    picture = "gfx/leaders/CZE/CZE_Jan_Sramek.png"
+    expire = "1965.1.1"
+    ideology = christian_democracy_subtype
+    
+}
+create_country_leader = {
+    name = "Jiří Stříbrný"
+    desc = "POLITICS_JIRI_STRIBRNY_DESC"
+    picture = "gfx/leaders/CZE/CZE_Jiri_Stribrny.png"
+    expire = "1965.1.1"
+    ideology = czech_national_democracy_subtype
+    
+}
+create_country_leader = {
+    name = "František Mareš"
+    desc = "POLITICS_FRANTISEK_MARES_DESC"
+    picture = "gfx/leaders/CZE/CZE_Frantisek_Mares.png"
+    expire = "1965.1.1"
+    ideology = paternal_autocrat_subtype
+    
+}
+create_country_leader = {
+    name = "Jan Rys-Rozsévač"
+    desc = "POLITICS_RYS_ROSZEVAC_DESC"
+    picture = "gfx/leaders/CZE/CZE_Rys_Roszevac.png"
+    expire = "1965.1.1"
+    ideology = legionarism_subtype
+    
+}
+create_field_marshal = {
+    name = "Jan Syrový"
+    portrait_path = "gfx/leaders/CZE/general/Portrait_CZE_Jan_Syrovy.png"
+    traits = {
+        war_hero
+        organizer
+        artillery_specialist
+        trickster
+        trait_cautious
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 5
+    planning_skill = 3
+    logistics_skill = 3
+    id = 8281
+    
+}
+create_field_marshal = {
+    name = "Ludvík Krejčí"
+    portrait_path = "gfx/leaders/CZE/general/CZE_Ludvik_Krejci.png"
+    traits = {
+        war_hero
+        organizer
+        infantry_leader
+        brilliant_strategist
+        artillery_specialist
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+    id = 8282
+    
+}
+create_corps_commander = {
+    name = "Jaroslav Eminger"
+    portrait_path = "gfx/leaders/CZE/general/CZE_Jaroslav_Eminger.png"
+    traits = {
+        old_guard
+        organizer
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+    id = 8283
+    
+}
+create_corps_commander = {
+    name = "Alois Eliáš"
+    portrait_path = "gfx/leaders/CZE/general/CZE_Alois_Elias.png"
+    traits = {
+        old_guard
+        organizer
+        trickster
+        cavalry_officer
+        skilled_staffer
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 3
+    id = 8284
+    
+}
+create_corps_commander = {
+    name = "Josef Votruba"
+    portrait_path = "gfx/leaders/CZE/general/CZE_Josef_Votruba.png"
+    traits = {
+        old_guard
+        infantry_leader
+        trait_mountaineer
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+    id = 8285
+    
+}
+create_corps_commander = {
+    name = "Lev Prchala"
+    portrait_path = "gfx/leaders/CZE/general/CZE_Lev_Prchala.png"
+    traits = {
+        infantry_leader
+        winter_specialist
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+    id = 8286
+    
+}
+create_corps_commander = {
+    name = "Bedrich Homola"
+    portrait_path = "gfx/leaders/CZE/general/CZE_Bedrich_Homola.png"
+    traits = {
+        infantry_leader
+        winter_specialist
+        war_hero
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 3
+    id = 8287
+    
+}
+add_manpower = 100000
+country_event = {
+    id = bdeczeflavor.131
+    days = 130
+    random = 120
+    
+}
+country_event = {
+    id = bdeboh.0
+    days = 1
+    
+}
+country_event = {
+    id = bdeboh.1
+    days = 180
+    random = 120
+    
+}
+country_event = {
+    id = bdeczeflavor.20
+    days = 243
+    
+}
+country_event = {
+    id = bdeczeflavor.54
+    days = 814
+    random = 512
+    
+}
+country_event = {
+    id = bdeczeflavor.205
+    days = 636
+    
+}
+country_event = {
+    id = bdeczeflavor.22
+    days = 3230
+    
+}
+country_event = {
+    id = bdeczeflavor.23
+    days = 2920
+    random = 3000
+    
+}
+country_event = {
+    id = bdeczeflavor.24
+    days = 256
+    
+}
+country_event = {
+    id = bdeczeflavor.12
+    days = 1492
+    random = 1200
+    
+}
+country_event = {
+    id = bdeczeflavor.25
+    days = 4358
+    
+}
+country_event = {
+    id = bdeczeflavor.26
+    days = 487
+    random = 480
+    
+}
+country_event = {
+    id = bdeczeflavor.27
+    days = 5341
+    random = 720
+    
+}
+country_event = {
+    id = bdeczeflavor.28
+    days = 127
+    random = 240
+    
+}
+country_event = {
+    id = bdeczeflavor.79
+    days = 1010
+    random = 400
+    
+}
+country_event = {
+    id = bdeczeflavor.88
+    days = 1937
+    random = 400
+    
+}
+country_event = {
+    id = bdeczeflavor.92
+    days = 634
+    
+}
+country_event = {
+    id = bdeczeflavor.95
+    days = 320
+    random = 200
+    
+}
+country_event = {
+    id = bdeczeflavor.95
+    days = 320
+    random = 200
+    
+}
+country_event = {
+    id = bdecze.10
+    days = 2190
+    random = 200
+    
+}
+country_event = {
+    id = bdeczeflavor.147
+    days = 1628
+    random = 500
+    
+}
+country_event = {
+    id = bdeczeflavor.146
+    days = 1290
+    random = 500
+    
+}
+country_event = {
+    id = bdeczeflavor.146
+    days = 1290
+    random = 500
+    
+}
+country_event = {
+    id = bdeczeflavor.146
+    days = 1089
+    random = 500
+    
+}
+country_event = {
+    id = bdeczeflavor.103
+    days = 2480
+    random = 200
+    
+}
+country_event = {
+    id = bdeczeflavor.160
+    days = 400
+    random = 200
+    
+}
+random_list = {
+    35 = {
+        country_event = {
+            id = bdeczenews.25
+            days = 1095
+            random = 1000
+            
+        }
+        
+    }
+    65 = 
+    
+}

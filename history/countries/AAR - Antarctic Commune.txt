@@ -53,6 +53,8 @@ set_technology = {
     cv_early_fighter = 1
     cv_CAS1 = 1
     basic_train = 1
+    camo = 1
+    etax_doctrine = 1
     
 }
 if = {

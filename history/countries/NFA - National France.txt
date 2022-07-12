@@ -70,6 +70,8 @@ set_technology = {
     tactical_bomber1 = 1
     transport = 1
     camelry = 1
+    camo = 1
+    etax_doctrine = 1
     
 }
 if = {

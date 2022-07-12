@@ -21,6 +21,8 @@ set_technology = {
     tactical_bomber1 = 1
     strategic_bomber1 = 1
     CAS1 = 1
+    camo = 1
+    etax_doctrine = 1
     
 }
 if = {

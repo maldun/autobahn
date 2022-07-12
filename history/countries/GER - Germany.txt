@@ -157,6 +157,14 @@ set_technology = {
     tactical_bomber1 = 1
     strategic_bomber1 = 1
     CAS1 = 1
+    camo = 1
+    etax_doctrine = 1
+    r56_gw_railway_gun = 1
+    r56_railway_mortar_subtech = 1
+    shocktroops = 1
+    sniper_rifle = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
     
 }
 if = {
@@ -442,7 +450,6 @@ if = {
 }
 MAF = {
     set_rule = {
-        can_be_called_to_war = yes
         can_decline_call_to_war = no
         can_not_declare_war = yes
         

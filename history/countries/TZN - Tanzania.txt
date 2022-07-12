@@ -1,0 +1,73 @@
+capital = 965
+OOB = "empty"
+set_research_slots = 4
+set_technology = {
+    infantry_weapons = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+set_politics = {
+    ruling_party = national_populist
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+add_ideas = {
+    MAF_Hermann_von_Goering_hog_npo
+    MAF_Fritz_Thyssen_eco_npo
+    MAF_Hermann_von_Goering_sec_npo
+    GER_Max_Amann_for_npo
+    war_economy
+    limited_exports
+    
+}
+country_event = {
+    id = goering.1
+    days = 10
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 0
+    social_liberal = 5
+    market_liberal = 5
+    social_conservative = 10
+    authoritarian_democrat = 20
+    paternal_autocrat = 20
+    national_populist = 40
+    
+}
+create_country_leader = {
+    name = "Hermann von Göring"
+    desc = "POLITICS_WARLORD_GOERING_DESC"
+    picture = "gfx/leaders/TNZ/TNZ_Hermann_Goering.png"
+    expire = "1965.1.1"
+    ideology = goering_loyalism_subtype
+    traits = 
+    
+}
+create_field_marshal = {
+    name = "Hermann von Göring"
+    portrait_path = "gfx/leaders/TNZ/TNZ_Hermann_Goering.png"
+    traits = {
+        trait_reckless
+        harsh_leader
+        politically_connected
+        media_personality
+        logistics_wizard
+        
+    }
+    skill = 5
+    attack_skill = 5
+    defense_skill = 5
+    planning_skill = 5
+    logistics_skill = 5
+    id = 12413
+    
+}
+GER_start_naval_variant = yes

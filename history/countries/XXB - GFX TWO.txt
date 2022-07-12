@@ -1,0 +1,98 @@
+capital = 1
+OOB = "empty"
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+set_technology = {
+    infantry_weapons = 1
+    basic_train = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_naval_mines = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_torpedo = 1
+        smoke_generator = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_light_cruiser = 1
+        transport = 1
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = totalist
+    last_election = "1933.3.7"
+    election_frequency = 36
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 100
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 0
+    social_liberal = 0
+    market_liberal = 0
+    social_conservative = 0
+    authoritarian_democrat = 0
+    paternal_autocrat = 0
+    national_populist = 0
+    
+}
+create_country_leader = {
+    name = "Joe Biden"
+    picture = "gfx/leaders/USA/Portrait_The_Cooler_Joe_Biden.png"
+    expire = "1965.1.1"
+    ideology = totalist_subtype
+    
+}

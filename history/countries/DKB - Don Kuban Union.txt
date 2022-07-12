@@ -1,0 +1,318 @@
+capital = 218
+set_convoys = 5
+set_stability = 0.5
+set_war_support = 0.4
+starting_train_buffer = 1
+oob = "DKB"
+set_naval_oob = "DKB_naval"
+set_technology = {
+    basic_train = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    early_fighter = 1
+    tech_support = 1
+    gw_artillery = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        panzerschiffe = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        cruiser_submarines = 1
+        basic_naval_mines = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_medium_battery = 1
+        basic_heavy_battery = 1
+        basic_secondary_battery = 1
+        improved_secondary_battery = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battleship = 1
+        transport = 1
+        
+    }
+    
+}
+country_event = {
+    id = dkb.1
+    days = 1
+    
+}
+add_ideas = {
+    DON_Cossack_state
+    DON_Cossack_army
+    limited_conscription
+    DKB_Pyetr_N_Krasnov_hog_ade
+    DKB_Aleksandr_Cheryachukin_for_ade
+    DKB_Vladimir_Lebedev_eco_ade
+    DKB_Ivan_Konovodov_sec_ade
+    
+}
+set_country_flag = RUS_can_integrate
+set_research_slots = 3
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 4
+    radical_socialist = 6
+    syndicalist = 1
+    social_democrat = 2
+    social_liberal = 2
+    market_liberal = 13
+    social_conservative = 19
+    authoritarian_democrat = 29
+    paternal_autocrat = 23
+    national_populist = 1
+    
+}
+create_country_leader = {
+    name = "Semyon Budyonny"
+    picture = "gfx/leaders/SOV/Semyon_Budyonny.png"
+    expire = "1965.1.1"
+    ideology = red_junta_subtype
+    
+}
+create_country_leader = {
+    name = "Sergey Syrtsov"
+    desc = "POLITICS_SERGEY_SYRTSOV_DESC"
+    picture = "gfx/leaders/DKB/Portrait_DKB_Sergey_Syrtsov.png"
+    expire = "1965.1.1"
+    ideology = radsoc_communism_subtype
+    
+}
+create_country_leader = {
+    name = "Sergey Syrtsov"
+    desc = "POLITICS_SERGEY_SYRTSOV_DESC"
+    picture = "gfx/leaders/DKB/Portrait_DKB_Sergey_Syrtsov.png"
+    expire = "1965.1.1"
+    ideology = centralized_syndicalism_subtype
+    
+}
+create_country_leader = {
+    name = "Pyotr Krasnov"
+    desc = "POLITICS_PETR_KRASNOV_DESC"
+    picture = "gfx/leaders/DKB/Portrait_DKB_Petr_Krasnov.png"
+    expire = "1965.1.1"
+    ideology = authdem_cossack_subtype
+    
+}
+create_country_leader = {
+    name = "Helmuth von Pannwitz"
+    picture = "gfx/leaders/DKB/Portrait_DKB_Helmuth_von_Pannwitz.png"
+    expire = "1965.1.1"
+    ideology = autocratic_colonial_govt_subtype
+    
+}
+create_field_marshal = {
+    name = "Pyotr Krasnov"
+    portrait_path = "gfx/leaders/DKB/Portrait_DKB_Petr_Krasnov.png"
+    traits = {
+        old_guard
+        offensive_doctrine
+        war_hero
+        cavalry_leader
+        urban_assault_specialist
+        politically_connected
+        
+    }
+    skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+    id = 3337
+    
+}
+create_field_marshal = {
+    name = "Afrikan Bogaewsky"
+    portrait_path = "gfx/leaders/DKB/Portrait_DKB_Bogaevskiy.png"
+    traits = {
+        career_officer
+        defensive_doctrine
+        politically_connected
+        cavalry_leader
+        trickster
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+    id = 3338
+    
+}
+create_corps_commander = {
+    name = "Fyedor Abramov"
+    id = 418
+    portrait_path = "gfx/leaders/RUS/Portrait_RUS_Fyodor_Abramov.png"
+    traits = {
+        old_guard
+        artillery_officer
+        cavalry_officer
+        cavalry_leader
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Adrian Guselschikov"
+    portrait_path = "gfx/leaders/DKB/Portrait_DKB_Adrian_Guselschikov.png"
+    traits = {
+        old_guard
+        cavalry_officer
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Ivan Polyakov"
+    id = 420
+    portrait_path = "gfx/leaders/RUS/Portrait_RUS_Ivan_Polyakov.png"
+    traits = {
+        cavalry_officer
+        old_guard
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Issa Pliyev"
+    portrait_path = "gfx/leaders/SOV/Issa_Pliyev.png"
+    traits = {
+        cavalry_officer
+        hidden_sympathies
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Konstantin Mamantov"
+    portrait_path = "gfx/leaders/RUS/Portrait_RUS_Konstantin_Mamontov.png"
+    traits = {
+        old_guard
+        cavalry_officer
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Semyon Krasnov"
+    portrait_path = "gfx/leaders/DKB/Portrait_DKB_Semyon_Krasnov.png"
+    traits = {
+        old_guard
+        cavalry_officer
+        politically_connected
+        
+    }
+    id = 42021
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Sergey Pavlov"
+    portrait_path = "gfx/leaders/DKB/Portrait_DKB_Sergey_Pavlov.png"
+    traits = {
+        air_commander
+        cavalry_officer
+        
+    }
+    id = 42022
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_navy_leader = {
+    name = "Mikhail Dmyrkin"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    maneuvering_skill = 1
+    coordination_skill = 1
+    
+}
+create_navy_leader = {
+    name = "Nikita Dranilov"
+    traits = 
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    maneuvering_skill = 1
+    coordination_skill = 1
+    
+}
+DKB_start_naval_variant = yes

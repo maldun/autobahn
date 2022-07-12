@@ -55,6 +55,8 @@ set_technology = {
     fighter1 = 1
     tactical_bomber1 = 1
     CAS1 = 1
+    camo = 1
+    etax_doctrine = 1
     
 }
 add_opinion_modifier = {

@@ -1,0 +1,142 @@
+capital = 750
+OOB = "empty"
+set_research_slots = 2
+set_technology = {
+    infantry_weapons = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        basic_naval_mines = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        smoke_generator = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 2
+    radical_socialist = 2
+    syndicalist = 4
+    social_democrat = 13
+    social_liberal = 14
+    market_liberal = 5
+    social_conservative = 11
+    authoritarian_democrat = 39
+    paternal_autocrat = 8
+    national_populist = 2
+    
+}
+add_ideas = {
+    CAM_Sisowath_Sirik_Matak_hog_ade
+    CAM_Phan_Sina_for_sco
+    CAM_Sisowath_Monireth_eco_sli
+    CAM_Sakiwat_Phirun_sec_ade
+    
+}
+create_country_leader = {
+    name = "Lon Nol"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Lon_Nol.png"
+    expire = "1985.11.17"
+    ideology = national_populist_subtype
+    
+}
+create_country_leader = {
+    name = "Sisowath Monivong"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
+    expire = "1941.4.24"
+    ideology = paternal_autocrat_subtype
+    
+}
+create_country_leader = {
+    name = "Sisowath Monivong"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
+    expire = "1941.4.24"
+    ideology = authoritarian_democrat_subtype
+    
+}
+create_country_leader = {
+    name = "Sisowath Monivong"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
+    expire = "1941.4.24"
+    ideology = social_conservative_subtype
+    
+}
+create_country_leader = {
+    name = "Sisowath Monivong"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
+    expire = "1941.4.24"
+    ideology = market_liberal_subtype
+    
+}
+create_country_leader = {
+    name = "Sisowath Monivong"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
+    expire = "1941.4.24"
+    ideology = social_liberal_subtype
+    
+}
+create_country_leader = {
+    name = "Sisowath Monivong"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
+    expire = "1941.4.24"
+    ideology = social_democrat_subtype
+    
+}
+create_country_leader = {
+    name = "Tou Samouth"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Tou_Samouth.png"
+    expire = "1962.7.8"
+    ideology = radical_socialist_subtype
+    
+}
+create_country_leader = {
+    name = "Tou Samouth"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Tou_Samouth.png"
+    expire = "1962.7.8"
+    ideology = syndicalist_subtype
+    
+}
+create_country_leader = {
+    name = "Tou Samouth"
+    picture = "gfx/leaders/CAM/Portrait_Cambodia_Tou_Samouth.png"
+    expire = "1962.7.8"
+    ideology = totalist_subtype
+    
+}

@@ -159,6 +159,8 @@ set_technology = {
     naval_bomber1 = 1
     CAS1 = 1
     cv_early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
     
 }
 if = {

@@ -1,0 +1,296 @@
+capital = 288
+oob = "BRM"
+set_technology = {
+    infantry_weapons = 1
+    basic_train = 1
+    tech_mountaineers = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        basic_naval_mines = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        smoke_generator = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        
+    }
+    
+}
+set_research_slots = 2
+set_convoys = 20
+add_opinion_modifier = {
+    target = SIA
+    modifier = embargo
+    
+}
+add_ideas = {
+    BRM_U_Chit_Hlaing_hog_ade
+    BRM_Maung_Gyi_for_ade
+    BRM_U_May_Aung_eco_sco
+    BRM_Saw_Durmay_sec_ade
+    BRM_young_officers
+    BRM_birds
+    
+}
+set_war_support = 0.2
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 1
+    radical_socialist = 12
+    syndicalist = 8
+    social_democrat = 14
+    social_liberal = 0
+    market_liberal = 1
+    social_conservative = 3
+    authoritarian_democrat = 46
+    paternal_autocrat = 8
+    national_populist = 7
+    
+}
+country_event = {
+    id = burma.0
+    days = 1
+    
+}
+country_event = {
+    id = burma.1
+    days = 150
+    random = 240
+    
+}
+country_event = {
+    id = burma.3
+    days = 250
+    random = 360
+    
+}
+country_event = {
+    id = burma.9
+    days = 45
+    
+}
+create_country_leader = {
+    name = "U Saw"
+    picture = "gfx/leaders/BRM/Portrait_Burma_U_Saw.png"
+    expire = "1965.1.1"
+    ideology = national_populist_subtype
+    
+}
+create_country_leader = {
+    name = "Ba Maw"
+    picture = "gfx/leaders/BRM/Portrait_Burma_Ba_Maw_army.png"
+    expire = "1965.1.1"
+    ideology = junta_subtype
+    
+}
+create_country_leader = {
+    name = "Myat Paya Lat"
+    picture = "gfx/leaders/BRM/Portrait_Burma_Myat_Paya_Lat.png"
+    expire = "1965.1.1"
+    ideology = oligarchy_subtype
+    female = yes
+    
+}
+create_country_leader = {
+    name = "U Saw"
+    picture = "gfx/leaders/BRM/Portrait_Burma_U_Saw.png"
+    expire = "1965.1.1"
+    ideology = social_conservative_subtype
+    
+}
+create_country_leader = {
+    name = "Maung Gyi"
+    picture = "gfx/leaders/BRM/Portrait_Burma_Maung_Gyi.png"
+    expire = "1965.1.1"
+    ideology = market_liberal_subtype
+    
+}
+create_country_leader = {
+    name = "Chit Hlaing"
+    picture = "gfx/leaders/BRM/Portrait_Burma_Chit_Hlaing.png"
+    expire = "1965.1.1"
+    ideology = social_liberal_subtype
+    
+}
+create_country_leader = {
+    name = "U Nu"
+    picture = "gfx/leaders/BRM/Portrait_Burma_U_Nu.png"
+    expire = "1965.1.1"
+    ideology = social_democrat_subtype
+    
+}
+create_country_leader = {
+    name = "Aung San"
+    picture = "gfx/leaders/BRM/Portrait_Burma_Aung_San_army.png"
+    expire = "1965.1.1"
+    ideology = radsoc_red_junta_subtype
+    
+}
+create_country_leader = {
+    name = "Aung San"
+    picture = "gfx/leaders/BRM/Portrait_Burma_Aung_San_army.png"
+    expire = "1965.1.1"
+    ideology = syndicalist_subtype
+    
+}
+create_country_leader = {
+    name = "Aung San"
+    picture = "gfx/leaders/BRM/Portrait_Burma_Aung_San_army.png"
+    expire = "1965.1.1"
+    ideology = red_junta_subtype
+    
+}
+create_field_marshal = {
+    name = "Smith Dun"
+    portrait_path = "gfx/leaders/BRM/Portrait_Burma_Smith_Dun.png"
+    traits = {
+        career_officer
+        organizer
+        logistics_wizard
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Aung San"
+    portrait_path = "gfx/leaders/BRM/Portrait_Burma_Aung_San_army.png"
+    traits = {
+        trait_reckless
+        trickster
+        
+    }
+    skill = 2
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Ba Maw"
+    portrait_path = "gfx/leaders/BRM/Portrait_Burma_Ba_Maw_army.png"
+    traits = {
+        politically_connected
+        commando
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Hla Pe"
+    portrait_path = "gfx/leaders/BRM/Portrait_Burma_Bo_Let_Ya.png"
+    traits = {
+        infantry_officer
+        jungle_rat
+        
+    }
+    skill = 1
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Ne Win"
+    portrait_path = "gfx/leaders/BRM/Portrait_Burma_Ne_Win.png"
+    traits = {
+        infantry_officer
+        jungle_rat
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Ko Saung"
+    portrait_path = "gfx/leaders/BRM/Portrait_Burma_Bo_Htein_Win.png"
+    traits = {
+        politically_connected
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Thakin Soe"
+    portrait_path = "gfx/leaders/BRM/Portrait_Burma_Thakin_Soe.png"
+    traits = {
+        politically_connected
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Khin Maung Lat"
+    portrait_path = "gfx/leaders/BRM/Portrait_Burma_Khin_Maung_Lat.png"
+    traits = {
+        politically_connected
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 2
+    
+}

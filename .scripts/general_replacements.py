@@ -48,6 +48,7 @@ rt56_techs = {
     "r56_railway_mortar_subtech",
     "r56_militia_tech",
     "r56_guerilla_warfare", # Docrtine
+    "jungletroops",
     }
 
 country_inheritance = {"TUR": ("OTT",),
@@ -203,7 +204,6 @@ def apply_equipment_maps(general_maps, specific_maps):
                            maps)
         except:
             import pdb; pdb.set_trace()
-    
     
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)

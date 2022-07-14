@@ -37,6 +37,10 @@ set_technology = {
     early_fighter = 1
     camo = 1
     etax_doctrine = 1
+    jngdst_clothes_gw = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    jungletroops = 1
     
 }
 set_country_flag = KX_no_naval_tech_decision_enable

@@ -51,6 +51,8 @@ set_technology = {
     cv_CAS1 = 1
     camo = 1
     etax_doctrine = 1
+    steel_production_1 = 1
+    winter_clothes_gw = 1
     
 }
 if = {

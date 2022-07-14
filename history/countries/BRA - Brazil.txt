@@ -41,6 +41,7 @@ set_technology = {
     etax_doctrine = 1
     jngdst_clothes_gw = 1
     transport_plane1 = 1
+    jungletroops = 1
     
 }
 if = {

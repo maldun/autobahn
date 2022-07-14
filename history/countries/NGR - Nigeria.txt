@@ -8,7 +8,6 @@ set_technology = {
     basic_train = 1
     infantry_weapons = 1
     camo = 1
-    etax_doctrine = 1
     
 }
 if = {

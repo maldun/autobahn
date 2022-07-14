@@ -9,6 +9,8 @@ set_technology = {
     gw_artillery = 1
     camo = 1
     etax_doctrine = 1
+    jngdst_clothes_gw = 1
+    jungletroops = 1
     
 }
 if = {

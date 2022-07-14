@@ -53,7 +53,16 @@ set_technology = {
     tactical_bomber1 = 1
     CAS1 = 1
     camo = 1
+    desertinfantry_at = 1
     etax_doctrine = 1
+    jngdst_clothes_gw = 1
+    r56_gw_railway_gun = 1
+    r56_railway_mortar_subtech = 1
+    shocktroops = 1
+    sniper_rifle = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    jungletroops = 1
     
 }
 if = {

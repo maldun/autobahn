@@ -39,6 +39,8 @@ set_technology = {
     early_bomber = 1
     camo = 1
     etax_doctrine = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
     
 }
 add_offsite_building = {

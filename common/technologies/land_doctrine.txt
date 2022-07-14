@@ -2864,7 +2864,7 @@ technologies = {
 				factor = 0.8
 			}
 			modifier = {
-				tag = SOV
+				tag = RUS
 				factor = 2
 			}
 
@@ -3560,8 +3560,7 @@ technologies = {
 					original_tag = SHX
 					original_tag = XSM
 					original_tag = SIK
-					original_tag = LAT
-					original_tag = EST
+					original_tag = BAT
 					original_tag = VIN
 					original_tag = LAO
 					original_tag = MON
@@ -3635,8 +3634,7 @@ technologies = {
 					original_tag = SHX
 					original_tag = XSM
 					original_tag = SIK
-					original_tag = LAT
-					original_tag = EST
+					original_tag = BAT
 					original_tag = VIN
 					original_tag = LAO
 					original_tag = MON
@@ -3720,8 +3718,7 @@ technologies = {
 					original_tag = SHX
 					original_tag = XSM
 					original_tag = SIK
-					original_tag = LAT
-					original_tag = EST
+					original_tag = BAT
 					original_tag = VIN
 					original_tag = LAO
 					original_tag = MON
@@ -3772,8 +3769,7 @@ technologies = {
 			modifier = {
 				OR = {
 					original_tag = FIN
-					original_tag = LAT
-					original_tag = EST
+					original_tag = BAT
 				}
 				factor = 0.7
 			}
@@ -4148,8 +4144,7 @@ technologies = {
 			modifier = {
 				OR = {
 					original_tag = FIN
-					original_tag = LAT
-					original_tag = EST
+					original_tag = BAT
 				}
 				factor = 0.6
 			}
@@ -4414,8 +4409,7 @@ technologies = {
 					original_tag = SHX
 					original_tag = XSM
 					original_tag = SIK
-					original_tag = LAT
-					original_tag = EST
+					original_tag = BAT
 					original_tag = VIN
 					original_tag = LAO
 					original_tag = MON

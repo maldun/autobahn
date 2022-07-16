@@ -1,0 +1,149 @@
+capital = 316
+oob = "COS"
+set_naval_oob = "COS_naval"
+set_research_slots = 2
+set_war_support = 0
+set_technology = {
+    infantry_weapons = 1
+    gw_artillery = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        transport = 1
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = social_conservative
+    last_election = "1932.02.02"
+    election_frequency = 48
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 5
+    radical_socialist = 0
+    social_democrat = 4
+    social_liberal = 21
+    market_liberal = 12
+    social_conservative = 53
+    authoritarian_democrat = 5
+    paternal_autocrat = 0
+    national_populist = 0
+    
+}
+country_event = {
+    id = cos.1
+    hours = 2
+    
+}
+country_event = {
+    id = cos.2
+    days = 17
+    
+}
+country_event = {
+    id = cos.5
+    days = 52
+    
+}
+country_event = {
+    id = cos.16
+    days = 283
+    
+}
+country_event = {
+    id = cos.123
+    days = 1159
+    
+}
+country_event = {
+    id = cafla.18
+    days = 258
+    
+}
+add_ideas = {
+    disarmed_nation
+    free_trade
+    CEN_monroe_doctrine
+    COS_beacon_democracy
+    COS_labour_conflicts
+    
+}
+activate_targeted_decision = {
+    decision = CEN_unite_central_america
+    target = THIS
+    
+}
+recruit_character = COS_manuel_mora_valverde
+recruit_character = COS_rafael_angel_calderon_guardia
+recruit_character = COS_teodoro_picado_michalski
+recruit_character = COS_ricardo_jimenez_oreamuno
+recruit_character = COS_leon_cortes_castro
+recruit_character = COS_consejo_de_seguridad_nacional
+recruit_character = COS_jose_figueres_ferrer
+recruit_character = COS_fernando_figuls_quiros
+recruit_character = COS_julio_acosta_garcia
+recruit_character = COS_ricardo_castro_beeche
+recruit_character = COS_rafael_calderon_mumoz
+recruit_character = COS_jose_albertazzi_avendano
+recruit_character = COS_juan_rafael_arias_bonilla
+recruit_character = COS_cleto_gonzalez_viquez
+recruit_character = COS_santos_leon_herrera
+recruit_character = COS_jorge_volio_jimenez
+recruit_character = COS_manuel_zuniga_jiron
+random_character = {
+    limit = {
+        is_character = COS_rafael_angel_calderon_guardia
+        
+    }
+    save_global_event_target_as = COS_rafael_angel_calderon_guardia_target
+    
+}
+random_character = {
+    limit = {
+        is_character = COS_jose_figueres_ferrer
+        
+    }
+    save_global_event_target_as = COS_jose_figueres_ferrer_target
+    
+}
+random_character = {
+    limit = {
+        is_character = COS_fernando_figuls_quiros
+        
+    }
+    save_global_event_target_as = COS_fernando_figuls_quiros_target
+    
+}

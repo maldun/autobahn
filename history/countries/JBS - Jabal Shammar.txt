@@ -1,0 +1,131 @@
+capital = 915
+oob = "JBS"
+set_convoys = 20
+set_research_slots = 1
+set_war_support = 0.4
+set_technology = {
+    infantry_weapons = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    camelry = 1
+    early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+TUR = {
+    set_autonomy = {
+        target = JBS
+        autonomy_state = kr_ottoman_emirate
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 0
+    social_liberal = 0
+    market_liberal = 0
+    social_conservative = 0
+    authoritarian_democrat = 46
+    paternal_autocrat = 39
+    national_populist = 15
+    
+}
+country_event = {
+    id = jbs.0
+    days = 1
+    
+}
+recruit_character = JBS_saud_bin_abd_al_aziz
+recruit_character = JBS_abdallah_ibn_talal_al_rashid
+recruit_character = JBS_abdallah_ibn_mitab_ibn_abd_al_aziz_al_rashid
+recruit_character = JBS_muhammad_ibn_talil_al_rashid
+recruit_character = JBS_saud_al_subhan
+add_ideas = {
+    limited_conscription
+    isolation
+    JBS_shammar_chauvinism
+    JBS_ottoman_lapdogs
+    
+}
+add_offsite_building = {
+    type = arms_factory
+    level = 1
+    
+}
+country_event = {
+    id = jbs.25
+    days = 150
+    
+}
+country_event = {
+    id = jbs.29
+    days = 400
+    
+}
+recruit_character = JBS_abd_al_rahman_ibn_rubayin
+recruit_character = JBS_dulaim_ibn_barrak
+recruit_character = JBS_ulemma_influence
+recruit_character = JBS_bedouin_influence
+recruit_character = JBS_urban_nobility_influence
+activate_advisor = JBS_ulemma_influence
+activate_advisor = JBS_bedouin_influence
+activate_advisor = JBS_urban_nobility_influence
+JBS_abd_al_rahman_ibn_rubayin = {
+    set_nationality = XXA
+    
+}
+JBS_dulaim_ibn_barrak = {
+    set_nationality = XXA
+    
+}
+random_character = {
+    limit = {
+        is_character = JBS_saud_bin_abd_al_aziz
+        
+    }
+    save_global_event_target_as = JBS_Aziz_Emir
+    
+}
+random_character = {
+    limit = {
+        is_character = JBS_abdallah_ibn_talal_al_rashid
+        
+    }
+    save_global_event_target_as = JBS_Abdallah_ibn_Talal_al_Rashid
+    
+}
+random_character = {
+    limit = {
+        is_character = JBS_abdallah_ibn_mitab_ibn_abd_al_aziz_al_rashid
+        
+    }
+    save_global_event_target_as = JBS_Abdallah_ibn_Mitab_ibn_Abd_al_Aziz
+    
+}
+random_character = {
+    limit = {
+        is_character = JBS_muhammad_ibn_talil_al_rashid
+        
+    }
+    save_global_event_target_as = JBS_Muhammad_ibn_Talil
+    
+}
+random_character = {
+    limit = {
+        is_character = JBS_saud_al_subhan
+        
+    }
+    save_global_event_target_as = JBS_Saud_al_Subhan
+    
+}

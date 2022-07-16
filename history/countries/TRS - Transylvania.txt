@@ -1,0 +1,46 @@
+capital = 76
+set_research_slots = 3
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+set_politics = {
+    ruling_party = social_conservative
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 7
+    social_liberal = 8
+    market_liberal = 10
+    social_conservative = 60
+    authoritarian_democrat = 8
+    paternal_autocrat = 5
+    national_populist = 2
+    
+}
+recruit_character = TRS_albert_wass
+recruit_character = TRS_gheorghe_flondor
+recruit_character = TRS_constantin_isopescu_grecul
+recruit_character = TRS_samoila_marza
+recruit_character = TRS_miklos_banffy
+recruit_character = TRS_alexandru_borza
+recruit_character = TRS_octavian_codru_taslauanu
+recruit_character = TRS_miron_cristea
+recruit_character = TRS_iuliu_hossu
+recruit_character = TRS_iosif_jumanca
+recruit_character = TRS_aurel_vlad
+recruit_character = TRS_georg_domaschnian
+recruit_character = TRS_michael_trapsia
+recruit_character = TRS_theodor_seracsin
+recruit_character = TRS_ienache_ion
+recruit_character = TRS_ladislaus_cenna
+recruit_character = TRS_michael_schandru

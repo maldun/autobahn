@@ -1,0 +1,36 @@
+capital = 556
+set_technology = {
+    infantry_weapons = 1
+    camo = 1
+    desertinfantry_at = 1
+    etax_doctrine = 1
+    jngdst_clothes_gw = 1
+    
+}
+set_research_slots = 2
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 19
+    syndicalist = 3
+    social_democrat = 17
+    social_liberal = 23
+    market_liberal = 5
+    social_conservative = 16
+    authoritarian_democrat = 9
+    paternal_autocrat = 5
+    national_populist = 3
+    
+}
+recruit_character = MLI_modibo_keita
+recruit_character = MLI_mamadou_konate
+recruit_character = MLI_mamby_sidibe
+recruit_character = MLI_emile_belime
+recruit_character = MLI_hamallah_bin_muhammad_al_tishiti
+recruit_character = MLI_noukoun_kone

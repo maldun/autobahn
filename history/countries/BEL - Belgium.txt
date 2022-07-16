@@ -1,0 +1,436 @@
+capital = 925
+oob = "BEL"
+set_naval_oob = "BEL_naval"
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.2
+set_convoys = 30
+set_cosmetic_tag = BEL_flanders_wallonia
+starting_train_buffer = 1
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    motorised_infantry = 1
+    bicycle_infantry = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_recon = 1
+    gw_artillery = 1
+    interwar_antitank = 1
+    early_fighter = 1
+    early_bomber = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    jaegers = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    winter_clothes_gw = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        basic_light_td = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        early_ship_hull_cruiser = 1
+        early_ship_hull_heavy = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        basic_heavy_armor_scheme = 1
+        basic_medium_battery = 1
+        basic_heavy_battery = 1
+        basic_depth_charges = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_light_cruiser = 1
+        early_battleship = 1
+        transport = 1
+        
+    }
+    
+}
+country_event = {
+    id = bel.94
+    days = 1
+    
+}
+country_event = {
+    id = bel.225
+    days = 10
+    
+}
+country_event = {
+    id = mittel.109
+    days = 32
+    
+}
+country_event = {
+    id = bel.1
+    days = 48
+    
+}
+country_event = {
+    id = flawa.1
+    days = 95
+    
+}
+country_event = {
+    id = bel.140
+    days = 96
+    
+}
+country_event = {
+    id = bel.9
+    days = 120
+    
+}
+country_event = {
+    id = flawa.5
+    days = 120
+    
+}
+country_event = {
+    id = bel.30
+    days = 132
+    
+}
+country_event = {
+    id = bel.118
+    days = 192
+    
+}
+country_event = {
+    id = bel.218
+    days = 202
+    
+}
+country_event = {
+    id = bel.23
+    days = 255
+    
+}
+country_event = {
+    id = bel.807
+    days = 553
+    
+}
+country_event = {
+    id = flawa.26
+    days = 746
+    random_days = 30
+    
+}
+country_event = {
+    id = flawa.28
+    days = 851
+    
+}
+country_event = {
+    id = wallonia.713
+    days = 2677
+    
+}
+WAL = {
+    country_event = {
+        id = wallonia.713
+        days = 2677
+        
+    }
+    
+}
+GER = {
+    set_autonomy = {
+        target = BEL
+        autonomy_state = kr_default_puppet
+        
+    }
+    country_event = {
+        id = bel.73
+        days = 731
+        random_days = 5
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 5
+    social_democrat = 17
+    social_liberal = 2
+    market_liberal = 9
+    social_conservative = 23
+    authoritarian_democrat = 39
+    paternal_autocrat = 4
+    national_populist = 1
+    
+}
+add_ideas = {
+    BEL_King_Exile
+    BEL_Language_Trouble
+    BEL_anti_german_sentiment3
+    
+}
+recruit_character = BEL_adelbert_von_hohenzollern
+recruit_character = BEL_belgian_parliament
+recruit_character = BEL_albert_van_belgie
+recruit_character = BEL_leopold_van_belgie
+recruit_character = BEL_hendrik_de_man
+recruit_character = BEL_joseph_jacquemotte
+recruit_character = BEL_xavier_relecom
+recruit_character = BEL_achille_van_acker
+recruit_character = BEL_paul_henri_spaak
+recruit_character = BEL_paul_emile_janson
+recruit_character = BEL_paul_van_zeeland
+recruit_character = BEL_charles_daspremont_lynden
+recruit_character = BEL_joris_van_severen
+recruit_character = BEL_leon_degrelle
+recruit_character = BEL_georges_prosper_remi
+recruit_character = BEL_edouard_van_den_bergen
+recruit_character = BEL_jean_baptiste_piron
+recruit_character = BEL_victor_van_strydonck_de_burkel
+recruit_character = BEL_maurice_keyaerts
+recruit_character = BEL_georges_deffontaine
+recruit_character = BEL_maximilien_de_neve_de_roden
+recruit_character = BEL_raoul_daufresne_de_la_chevalerie
+recruit_character = BEL_georges_timmermans
+recruit_character = BEL_victor_billet
+recruit_character = BEL_georges_theunis
+recruit_character = BEL_emile_francqui
+recruit_character = BEL_alexandre_galopin
+recruit_character = BEL_albert_eduard_janssen
+recruit_character = BEL_henri_baels
+recruit_character = BEL_gustave_sap
+recruit_character = BEL_adolphe_max
+recruit_character = BEL_julius_hoste_jr
+recruit_character = BEL_edward_anseele
+recruit_character = BEL_emile_vandervelde
+recruit_character = BEL_ernest_ghislain_graff
+recruit_character = BEL_karel_jan_bossart
+recruit_character = BEL_robert_desmet
+recruit_character = BEL_henri_denis
+recruit_character = BEL_raoul_van_overstraeten
+recruit_character = BEL_eduard_blondeel
+recruit_character = BEL_felix_iserentant
+recruit_character = BEL_emile_galet
+recruit_character = BEL_herman_bodson
+recruit_character = BEL_oscar_michiels
+recruit_character = BEL_adolphe_cumont
+recruit_character = BEL_lambert_robins
+recruit_character = BEL_paul_hierneaux
+BEL_albert_van_belgie = {
+    retire = yes
+    
+}
+BEL_leopold_van_belgie = {
+    retire = yes
+    
+}
+BEL_charles_daspremont_lynden = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_georges_prosper_remi = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_leon_degrelle = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_georges_theunis = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_emile_francqui = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_alexandre_galopin = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_gustave_sap = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_adolphe_max = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_maurice_keyaerts = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_georges_deffontaine = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_jean_baptiste_piron = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_maximilien_de_neve_de_roden = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_raoul_daufresne_de_la_chevalerie = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_henri_denis = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_felix_iserentant = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_emile_galet = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_adolphe_cumont = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_paul_hierneaux = {
+    set_character_flag = BEL_walloon_character
+    
+}
+BEL_hendrik_de_man = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_paul_henri_spaak = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_joris_van_severen = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_albert_eduard_janssen = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_henri_baels = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_julius_hoste_jr = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_edward_anseele = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_emile_vandervelde = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_ernest_ghislain_graff = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_edouard_van_den_bergen = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_victor_van_strydonck_de_burkel = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_victor_billet = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_georges_timmermans = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_raoul_van_overstraeten = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_eduard_blondeel = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_herman_bodson = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_oscar_michiels = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_lambert_robins = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_karel_jan_bossart = {
+    set_character_flag = BEL_flemish_character
+    
+}
+BEL_robert_desmet = {
+    set_character_flag = BEL_flemish_character
+    
+}

@@ -1,0 +1,436 @@
+capital = 219
+set_convoys = 60
+set_stability = 0.6
+set_war_support = 0.3
+set_research_slots = 4
+starting_train_buffer = 3
+oob = "RUS"
+set_naval_oob = "RUS_naval"
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    motorised_infantry = 1
+    tech_mountaineers = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_recon = 1
+    gw_artillery = 1
+    early_fighter = 1
+    early_bomber = 1
+    fighter1 = 1
+    strategic_bomber1 = 1
+    naval_bomber1 = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    jaegers = 1
+    r56_militia_tech = 1
+    r56_railway_mortar_subtech = 1
+    shocktroops = 1
+    sniper_rifle = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    winter_clothes_gw = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        basic_heavy_tank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        basic_heavy_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_medium_battery = 1
+        basic_secondary_battery = 1
+        basic_cruiser_armor_scheme = 1
+        basic_naval_mines = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battlecruiser = 1
+        early_battleship = 1
+        
+    }
+    
+}
+SOV = {
+    embargo_ROOT = yes
+    
+}
+TRM = {
+    embargo_ROOT = yes
+    
+}
+country_event = {
+    id = russia.1
+    days = 1
+    
+}
+country_event = {
+    id = russia.5
+    days = 5
+    
+}
+country_event = {
+    id = russia.20
+    days = 406
+    
+}
+country_event = {
+    id = russia.21
+    days = 830
+    
+}
+country_event = {
+    id = russia.22
+    days = 898
+    
+}
+country_event = {
+    id = russia.24
+    days = 385
+    random = 600
+    
+}
+country_event = {
+    id = rusd.66
+    days = 365
+    random = 600
+    
+}
+country_event = {
+    id = russia.2700
+    days = 424
+    
+}
+country_event = {
+    id = rusd.56
+    days = 1014
+    random = 720
+    
+}
+country_event = {
+    id = rusd.96
+    days = 4238
+    
+}
+country_event = {
+    id = rusd.100
+    days = 2618
+    
+}
+country_event = {
+    id = rusd.101
+    days = 1128
+    
+}
+country_event = {
+    id = rusd.105
+    days = 58
+    
+}
+country_event = {
+    id = rusd.106
+    days = 170
+    
+}
+country_event = {
+    id = rusd.109
+    days = 1008
+    
+}
+country_event = {
+    id = rusd.128
+    days = 150
+    
+}
+country_event = {
+    id = rusd.129
+    days = 4627
+    
+}
+country_event = {
+    id = rusd.130
+    days = 771
+    
+}
+country_event = {
+    id = rusd.149
+    days = 160
+    
+}
+country_event = {
+    id = rusd.148
+    days = 470
+    
+}
+country_event = {
+    id = rusd.147
+    days = 290
+    
+}
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1932.6.9"
+    election_frequency = 60
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 1
+    radical_socialist = 2
+    syndicalist = 3
+    social_democrat = 5
+    social_liberal = 20
+    market_liberal = 6
+    social_conservative = 8
+    authoritarian_democrat = 10
+    paternal_autocrat = 13
+    national_populist = 32
+    
+}
+add_ideas = RUS_political_unrest
+add_ai_strategy = {
+    type = ignore_claim
+    id = "EST"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "BAT"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "LAT"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "LIT"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "WHR"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "POL"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "UKR"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "DKB"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "GEO"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "AZR"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "ARM"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "MON"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "TRM"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "JAP"
+    value = 1
+    
+}
+create_country_leader = {
+    name = RUS_karl_radek
+    picture = "gfx/leaders/RUS/Portrait_RUS_Karl_Radek.png"
+    ideology = totalist_subtype
+    
+}
+create_country_leader = {
+    name = RUS_aleksandra_kollontai
+    picture = "gfx/leaders/RUS/Portrait_RUS_Aleksandra_Kollontai.png"
+    ideology = syndicalist_subtype
+    female = yes
+    
+}
+create_country_leader = {
+    name = RUS_aleksey_rykov
+    picture = "gfx/leaders/RUS/Portrait_RUS_Aleksey_Rykov.png"
+    ideology = radical_socialist_subtype
+    
+}
+recruit_character = RUS_irakli_tsereteli
+recruit_character = RUS_aleksandr_kerensky
+recruit_character = RUS_viktor_chernov
+recruit_character = RUS_pavel_milyukov
+recruit_character = RUS_vasily_maklakov
+recruit_character = RUS_nikolay_trubetskoy
+recruit_character = RUS_ariadna_tyrkova
+recruit_character = RUS_dmitry_romanov
+recruit_character = RUS_lavr_kornilov
+recruit_character = RUS_boris_savinkov
+recruit_character = RUS_anastasy_vonsyatsky
+recruit_character = RUS_kirill_romanov
+recruit_character = RUS_vladimir_romanov
+recruit_character = RUS_state_duma
+activate_advisor = RUS_state_duma_sic
+recruit_character = RUS_vladimir_nabokov
+recruit_character = RUS_patriarch_kirill
+recruit_character = RUS_vasily_kharlamov
+recruit_character = RUS_mikhail_bernatsky
+recruit_character = RUS_ivan_erdeli
+recruit_character = RUS_aleksandr_kazembek
+recruit_character = RUS_aleksey_putilov
+recruit_character = RUS_feliks_yusupov
+recruit_character = RUS_klavdiy_foss
+recruit_character = RUS_pyotr_wrangel
+recruit_character = RUS_anton_denikin
+recruit_character = RUS_pavel_shatilov
+recruit_character = RUS_vladimir_kappel
+recruit_character = RUS_mikhail_drozdovsky
+recruit_character = RUS_ivan_romanovsky
+recruit_character = RUS_aleksander_kutepov
+recruit_character = RUS_anton_turkul
+recruit_character = RUS_boris_shteyfon
+recruit_character = RUS_vladimir_vitkovsky
+recruit_character = RUS_mikhail_levitov
+recruit_character = RUS_vladimir_manstein
+recruit_character = RUS_sergey_markov
+recruit_character = RUS_fyodor_abramov
+recruit_character = RUS_vyacheslav_naumenko
+recruit_character = RUS_pavel_bermondt_avalov
+recruit_character = RUS_adrian_guselshchikov
+recruit_character = RUS_abram_dragomirov
+recruit_character = RUS_markian_popov
+recruit_character = RUS_mikhail_kedrov
+recruit_character = RUS_nestor_monastyrev
+recruit_character = RUS_aleksandr_nemits
+recruit_character = RUS_sergei_rudenko
+recruit_character = RUS_vyacheslav_tkachov
+recruit_character = RUS_aleksandr_kazakov
+recruit_character = RUS_vsevolod_marchenko
+recruit_character = RUS_aleksandr_samoylo
+recruit_character = RUS_vyacheslav_baranov
+random_character = {
+    limit = {
+        is_character = RUS_dmitry_romanov
+        
+    }
+    save_global_event_target_as = RUS_dmitry_romanov_target
+    
+}
+random_character = {
+    limit = {
+        is_character = RUS_kirill_romanov
+        
+    }
+    save_global_event_target_as = RUS_kirill_romanov_target
+    
+}
+random_character = {
+    limit = {
+        is_character = RUS_vladimir_romanov
+        
+    }
+    save_global_event_target_as = RUS_vladimir_romanov_target
+    
+}
+random_character = {
+    limit = {
+        is_character = RUS_pyotr_wrangel
+        
+    }
+    save_global_event_target_as = RUS_pyotr_wrangel_target
+    
+}

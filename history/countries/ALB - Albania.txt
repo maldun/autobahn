@@ -1,0 +1,99 @@
+capital = 44
+oob = "ALB"
+set_naval_oob = "ALB_naval"
+set_convoys = 20
+set_research_slots = 3
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_recon = 1
+    early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        
+    }
+    
+}
+add_ideas = {
+    ALB_polarised_nation_idea
+    ALB_illiteracy
+    
+}
+set_war_support = 0.1
+country_event = {
+    id = albania.1
+    days = 1
+    
+}
+set_politics = {
+    ruling_party = social_conservative
+    last_election = "1932.6.12"
+    election_frequency = 48
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 4
+    social_democrat = 38
+    social_liberal = 7
+    market_liberal = 4
+    social_conservative = 42
+    authoritarian_democrat = 0
+    paternal_autocrat = 2
+    national_populist = 3
+    
+}
+recruit_character = ALB_enver_hoxha
+recruit_character = ALB_ali_kelmendi
+recruit_character = ALB_avni_rustemi
+recruit_character = ALB_fan_noli
+recruit_character = ALB_xhafer_ypi
+recruit_character = ALB_shefqet_verlaci
+recruit_character = ALB_ahmet_zogu
+recruit_character = ALB_luigj_bumci
+recruit_character = ALB_eshref_frasheri
+recruit_character = ALB_midhat_frasheri
+recruit_character = ALB_wilhelm_zu_wied
+recruit_character = ALB_luigj_gurakuqi
+recruit_character = ALB_ibrahim_karbunara
+recruit_character = ALB_mehdi_frasheri
+recruit_character = ALB_hasan_prishtina
+recruit_character = ALB_fejzi_alizoti
+recruit_character = ALB_prenk_pervizi
+recruit_character = ALB_muharrem_bajraktari
+recruit_character = ALB_elez_isufi
+recruit_character = ALB_azem_galica
+recruit_character = ALB_ali_shefqet_shkupi
+recruit_character = ALB_gustaf_von_myrdacz
+recruit_character = ALB_kadri_rustem_bardulla
+recruit_character = ALB_spiro_moisiu
+recruit_character = ALB_bajram_fevziu
+recruit_character = ALB_mujo_ulqinaku

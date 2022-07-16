@@ -1,0 +1,80 @@
+capital = 846
+set_research_slots = 2
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    early_fighter = 1
+    camo = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 2
+    social_liberal = 6
+    market_liberal = 6
+    social_conservative = 12
+    authoritarian_democrat = 15
+    paternal_autocrat = 47
+    national_populist = 12
+    
+}
+recruit_character = MAL_ibrahim_i_of_johor
+recruit_character = MAL_yusof_bin_ishak
+recruit_character = MAL_chin_peng
+recruit_character = MAL_burhanuddin_al_helmy
+recruit_character = MAL_mokhtarrudin_lasso
+recruit_character = MAL_lai_teck
+recruit_character = MAL_ishak_haji_muhammad
+recruit_character = MAL_henry_lee_hau_shik
+recruit_character = MAL_leong_yew_koh
+recruit_character = MAL_tunku_abdul_rahman
+recruit_character = MAL_ibrahim_bin_haji_yaacob
+recruit_character = MAL_lim_bo_seng
+recruit_character = MAL_tan_chong_tee
+recruit_character = MAL_adnan_saidi

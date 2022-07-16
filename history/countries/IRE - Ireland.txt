@@ -1,0 +1,220 @@
+capital = 113
+oob = "IRE"
+set_naval_oob = "IRE_naval"
+set_convoys = 30
+set_stability = 0.5
+set_war_support = 0.2
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    early_fighter = 1
+    gw_artillery = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_military_police = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    sniper_rifle = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_depth_charges = 1
+        basic_battery = 1
+        basic_torpedo = 1
+        basic_naval_mines = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_light_cruiser = 1
+        early_submarine = 1
+        
+    }
+    
+}
+set_research_slots = 3
+add_ideas = {
+    IRE_DEFENCE
+    limited_conscription
+    
+}
+set_variable = {
+    ire_loyalist_tensions = 0
+    
+}
+set_variable = {
+    ire_loyalist_escalation = 0
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1932.12.5"
+    election_frequency = 60
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 3
+    radical_socialist = 5
+    syndicalist = 10
+    social_democrat = 5
+    social_liberal = 3
+    market_liberal = 3
+    social_conservative = 13
+    authoritarian_democrat = 46
+    paternal_autocrat = 7
+    national_populist = 5
+    
+}
+country_event = {
+    id = ire.2
+    days = 1
+    
+}
+country_event = {
+    id = ire.53
+    days = 15
+    
+}
+country_event = {
+    id = ire.55
+    days = 113
+    
+}
+news_event = {
+    id = worldnews.482
+    days = 227
+    
+}
+country_event = {
+    id = ire.57
+    days = 1117
+    
+}
+country_event = {
+    id = ire.240
+    days = 1461
+    random_days = 120
+    
+}
+country_event = {
+    id = ire.241
+    days = 37
+    random_days = 5
+    
+}
+country_event = {
+    id = ire.3000
+    days = 350
+    random_days = 20
+    
+}
+recruit_character = IRE_sean_murray
+recruit_character = IRE_jim_larkin
+recruit_character = IRE_peadar_odonnell
+recruit_character = IRE_cathal_brugha
+recruit_character = IRE_eamon_de_valera
+recruit_character = IRE_sean_lemass
+recruit_character = IRE_frank_macdermot
+recruit_character = IRE_michael_collins
+recruit_character = IRE_gearoid_o_cuinneagain
+recruit_character = IRE_padraic_o_maille
+recruit_character = IRE_jorge_maria_oneill
+recruit_character = IRE_jim_gralton
+recruit_character = IRE_william_x_obrien
+recruit_character = IRE_bill_gannon
+recruit_character = IRE_thomas_johnson
+recruit_character = IRE_sean_t_okelly
+recruit_character = IRE_wt_cosgrave
+recruit_character = IRE_james_dillon
+recruit_character = IRE_eoin_oduffy
+recruit_character = IRE_alexander_mccabe
+recruit_character = IRE_richard_mulcahy
+recruit_character = IRE_liam_lynch
+recruit_character = IRE_hugo_macneill
+recruit_character = IRE_tom_barry
+recruit_character = IRE_jj_oconnell
+recruit_character = IRE_daniel_mckenna
+recruit_character = IRE_daniel_hogan
+recruit_character = IRE_seamus_o_muiris
+recruit_character = IRE_john_charles_mcquaid
+recruit_character = IRE_ernest_blythe
+recruit_character = IRE_douglas_hyde
+recruit_character = IRE_eoin_macneill
+recruit_character = IRE_benjamin_farrington
+recruit_character = IRE_noel_browne
+recruit_character = IRE_george_gilmore
+recruit_character = IRE_roddy_connolly
+recruit_character = IRE_joseph_brennan
+recruit_character = IRE_harry_ferguson
+recruit_character = IRE_roy_c_geary
+recruit_character = IRE_james_martin
+recruit_character = IRE_timothy_smiddy
+recruit_character = IRE_ernest_walton
+recruit_character = IRE_liam_archer
+recruit_character = IRE_michael_brennan
+recruit_character = IRE_dan_bryan
+recruit_character = IRE_michael_j_costello
+recruit_character = IRE_emmet_dalton
+recruit_character = IRE_martin_doyle
+recruit_character = IRE_wre_murphy
+recruit_character = IRE_john_t_prout
+recruit_character = IRE_sean_russell
+recruit_character = IRE_r_erskine_childers
+recruit_character = IRE_anthony_t_lawlor
+recruit_character = IRE_standish_ogrady_roche
+recruit_character = IRE_paddy_saul
+recruit_character = IRE_boyle_somerville
+recruit_character = IRE_henry_hg_stoker
+recruit_character = IRE_william_p_delamere
+recruit_character = IRE_james_fitzmaurice
+recruit_character = IRE_herbert_c_irwin
+recruit_character = IRE_william_mcsweeney
+recruit_character = IRE_patrick_a_mulcahy
+recruit_character = IRE_cf_russell
+activate_advisor = IRE_eoin_oduffy_sic

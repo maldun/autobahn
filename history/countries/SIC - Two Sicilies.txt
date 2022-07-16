@@ -1,0 +1,188 @@
+capital = 117
+oob = "SIC"
+set_naval_oob = "SIC_naval"
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.55
+set_war_support = 0.2
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_mountaineers = 1
+    motorised_infantry = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    early_bomber = 1
+    naval_bomber1 = 1
+    CAS1 = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_heavy = 1
+        basic_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battleship = 1
+        basic_battleship = 1
+        transport = 1
+        
+    }
+    
+}
+country_event = {
+    id = sic.1
+    days = 1
+    
+}
+country_event = {
+    id = sic.61
+    days = 720
+    
+}
+add_ideas = {
+    SIC_shipyard_profits
+    SIC_pretty_much_feudalism
+    
+}
+set_politics = {
+    ruling_party = social_conservative
+    last_election = "1932.5.5"
+    election_frequency = 60
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 0
+    radical_socialist = 8
+    social_democrat = 10
+    social_liberal = 10
+    market_liberal = 12
+    social_conservative = 30
+    authoritarian_democrat = 8
+    paternal_autocrat = 12
+    national_populist = 10
+    
+}
+recruit_character = SIC_ferdinando_borbone
+recruit_character = SIC_salvatore_aldisio
+recruit_character = SIC_luigi_sturzo
+recruit_character = SIC_enrico_de_nicola
+recruit_character = SIC_enrico_mole
+activate_advisor = SIC_luigi_sturzo_sic
+recruit_character = SIC_silvio_gai
+recruit_character = SIC_guido_jung
+recruit_character = SIC_giovanni_niutta
+recruit_character = SIC_vincenzo_azzolini
+recruit_character = SIC_giovanni_amendola
+recruit_character = SIC_giovanni_leone
+recruit_character = SIC_gaetano_martino
+recruit_character = SIC_ugo_la_malfa
+recruit_character = SIC_cipriano_facchinetti
+recruit_character = SIC_virgilio_nasi
+recruit_character = SIC_francesco_saverio_nitti
+recruit_character = SIC_giovanni_ciraolo
+recruit_character = SIC_federicco_morozzo_della_rocca
+recruit_character = SIC_mario_caraciollo
+recruit_character = SIC_federico_baistrocchi
+recruit_character = SIC_aurelio_liotta
+recruit_character = SIC_francesco_de_pinedo
+recruit_character = SIC_francesco_pricolo
+recruit_character = SIC_fulco_ruffo_di_calabria
+recruit_character = SIC_royal_armed_forces_command
+recruit_character = SIC_alessandro_pirzio_biroli
+recruit_character = SIC_giovanni_messe
+recruit_character = SIC_antonio_gualano
+recruit_character = SIC_giuseppe_izzo
+recruit_character = SIC_carlo_geloso
+recruit_character = SIC_achille_starace
+recruit_character = SIC_pietro_ago
+recruit_character = SIC_mario_arisio
+recruit_character = SIC_giulio_ingianni
+recruit_character = SIC_salvatore_todaro
+recruit_character = SIC_antonino_toscano
+recruit_character = SIC_romeo_oliva
+recruit_character = SIC_luigi_rizzo
+activate_targeted_decision = {
+    target = THIS
+    decision = SIC_declare_italian_empire
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = SIC_form_italian_confed
+    
+}

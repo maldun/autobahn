@@ -1,0 +1,106 @@
+capital = 1072
+oob = "SHX"
+set_research_slots = 2
+complete_national_focus = SHX_Yan_In_Power
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    gw_artillery = 1
+    camo = 1
+    etax_doctrine = 1
+    r56_militia_tech = 1
+    transport_plane1 = 1
+    
+}
+add_offsite_building = {
+    type = arms_factory
+    level = 1
+    
+}
+add_offsite_building = {
+    type = industrial_complex
+    level = 2
+    
+}
+set_research_slots = 2
+add_ideas = {
+    SHX_neutrality
+    SHX_power_struggle
+    SHX_legacy_of_guominjun
+    
+}
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 2
+    syndicalist = 0
+    social_democrat = 1
+    social_liberal = 4
+    market_liberal = 4
+    social_conservative = 4
+    authoritarian_democrat = 36
+    paternal_autocrat = 46
+    national_populist = 3
+    
+}
+set_variable = {
+    SHX_xishan_control_gov = 90
+    
+}
+set_variable = {
+    SHX_yuxiang_control_gov = 10
+    
+}
+set_variable = {
+    SHX_xishan_control_mil = 38
+    
+}
+set_variable = {
+    SHX_yuxiang_control_mil = 62
+    
+}
+country_event = {
+    id = shx.0
+    days = 1
+    
+}
+recruit_character = SHX_zhang_zizhong
+recruit_character = SHX_han_fuju
+recruit_character = SHX_sun_lianzhong
+recruit_character = SHX_feng_yuxiang
+recruit_character = SHX_yan_xishan
+recruit_character = SHX_xu_yongchang
+recruit_character = SHX_yang_hucheng
+recruit_character = SHX_fu_zuoyi
+recruit_character = SHX_cui_xiaoqian
+recruit_character = SHX_yu_xinqing
+recruit_character = SHX_liang_huazhi
+recruit_character = SHX_h_h_kung
+recruit_character = SHX_chih_kung_jen
+recruit_character = SHX_du_runsheng
+recruit_character = SHX_wang_xiang
+recruit_character = SHX_cao_baoqing
+recruit_character = SHX_xie_wenda
+recruit_character = SHX_zhong_jihan
+recruit_character = SHX_zhao_chengshou
+recruit_character = SHX_zhu_shouguang
+recruit_character = SHX_wang_jingguo
+recruit_character = SHX_sun_chu
+recruit_character = SHX_liu_zizhen
+recruit_character = SHX_han_duofeng
+activate_targeted_decision = {
+    target = THIS
+    decision = SHX_Feng_Coup
+    
+}
+activate_targeted_decision = {
+    target = QIE
+    decision = SHX_Attack_QIE
+    
+}

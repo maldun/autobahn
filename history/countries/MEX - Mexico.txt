@@ -1,0 +1,266 @@
+capital = 277
+oob = "MEX"
+set_naval_oob = "MEX_naval"
+set_convoys = 40
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_recon = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    early_fighter = 1
+    naval_bomber1 = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_medium_battery = 1
+        basic_secondary_battery = 1
+        basic_cruiser_armor_scheme = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        transport = 1
+        
+    }
+    
+}
+country_event = {
+    id = mexico.1
+    days = 2
+    
+}
+country_event = {
+    id = mexico.2
+    days = 68
+    
+}
+country_event = {
+    id = mexico.132
+    days = 572
+    
+}
+country_event = {
+    id = mexico.128
+    days = 1271
+    
+}
+country_event = {
+    id = mexico.133
+    days = 1600
+    
+}
+country_event = {
+    id = mexico.125
+    days = 1715
+    
+}
+country_event = {
+    id = mexico.24
+    days = 1895
+    random_days = 1683
+    
+}
+country_event = {
+    id = mexico.134
+    days = 1931
+    
+}
+country_event = {
+    id = mexico.127
+    days = 2292
+    
+}
+country_event = {
+    id = mexico.136
+    days = 2260
+    
+}
+country_event = {
+    id = mexico.131
+    days = 2337
+    
+}
+country_event = {
+    id = mexico.126
+    days = 2687
+    
+}
+country_event = {
+    id = mexico.28
+    days = 496
+    
+}
+country_event = {
+    id = mexico.29
+    days = 223
+    
+}
+country_event = {
+    id = mexico.30
+    days = 861
+    
+}
+country_event = {
+    id = mexico.31
+    days = 953
+    
+}
+country_event = {
+    id = mexico.32
+    days = 130
+    
+}
+country_event = {
+    id = mexico.33
+    days = 466
+    
+}
+country_event = {
+    id = mexico.34
+    days = 161
+    
+}
+country_event = {
+    id = mexico.35
+    days = 896
+    
+}
+country_event = {
+    id = mexico.36
+    days = 540
+    random_days = 540
+    
+}
+add_opinion_modifier = {
+    target = NIC
+    modifier = NIC_revolutionary_allies
+    
+}
+set_research_slots = 3
+set_war_support = 0.1
+set_politics = {
+    ruling_party = radical_socialist
+    last_election = "1932.7.1"
+    election_frequency = 60
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 16
+    syndicalist = 17
+    radical_socialist = 45
+    social_democrat = 17
+    social_liberal = 0
+    market_liberal = 0
+    social_conservative = 0
+    authoritarian_democrat = 0
+    paternal_autocrat = 0
+    national_populist = 5
+    
+}
+add_ideas = {
+    limited_exports
+    MEX_revolution_economic
+    MEX_revolution_military
+    
+}
+recruit_character = MEX_plutarco_elias_calles
+recruit_character = MEX_lazaro_cardenas_del_rio
+recruit_character = MEX_emilio_candido_portes_gil
+recruit_character = MEX_abelardo_rodriguez_lujan
+recruit_character = MEX_vicente_lombardo_toledano
+recruit_character = MEX_fidel_velazquez_sanchez
+recruit_character = MEX_rosendo_salazar_alamo
+recruit_character = MEX_emiliano_zapata_salazar
+recruit_character = MEX_francisco_pancho_villa
+recruit_character = MEX_antonio_irineo_vilarreal_gonzalez
+recruit_character = MEX_ruben_jaramillo_menez
+recruit_character = MEX_pascual_ortiz_rubio
+recruit_character = MEX_manuel_avila_camacho
+recruit_character = MEX_miguel_aleman_valdes
+recruit_character = MEX_juan_andreu_almazan
+recruit_character = MEX_pablo_gonzalez_garza
+recruit_character = MEX_jose_antonio_urquiza
+recruit_character = MEX_aaron_saenz_garza
+recruit_character = MEX_alfonso_junco_voigt
+recruit_character = MEX_amalia_gonzalez_caballero_de_castillo_ledon
+recruit_character = MEX_efrain_gonzalez_luna
+recruit_character = MEX_elisa_acuna_rossetti
+recruit_character = MEX_ezequiel_padilla_penaloza
+recruit_character = MEX_fernando_rodarte_fernandez
+recruit_character = MEX_jose_isidro_fabela_alfaro
+recruit_character = MEX_luis_napoleon_morones_negrete
+recruit_character = MEX_victorino_barcenas
+recruit_character = MEX_antonio_diaz_soto_y_gama
+recruit_character = MEX_leopoldo_trevino_garza
+recruit_character = MEX_juan_gonzales_cabral
+recruit_character = MEX_pablo_quiroga_escamilla
+recruit_character = MEX_joaquin_amaro_dominguez
+recruit_character = MEX_francisco_luis_urquizo_benavides
+recruit_character = MEX_pablo_macias_valenzuela
+recruit_character = MEX_maximino_avila_camacho
+recruit_character = MEX_othon_pompeyo_blanco_nunez_de_caceres
+recruit_character = MEX_manuel_zermeno_araico
+recruit_character = MEX_gildardo_magana_cerda
+recruit_character = MEX_heriberto_jara_corona
+recruit_character = MEX_jesus_agustin_castro_rivera
+recruit_character = MEX_luis_farell_cubillas
+recruit_character = MEX_eduardo_aldasoro_suarez

@@ -1,0 +1,187 @@
+capital = 109
+oob = "CRO"
+set_naval_oob = "CRO_naval"
+set_research_slots = 3
+set_war_support = 0.1
+set_convoys = 30
+set_cosmetic_tag = CRO_illyria_habsburg
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    motorised_infantry = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    early_bomber = 1
+    CAS1 = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_carrier = 1
+        early_ship_hull_heavy = 1
+        basic_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        improved_secondary_battery = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        basic_heavy_armor_scheme = 1
+        basic_medium_battery = 1
+        basic_heavy_battery = 1
+        submarine_mine_laying = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battlecruiser = 1
+        early_battleship = 1
+        basic_battleship = 1
+        transport = 1
+        
+    }
+    
+}
+add_ideas = CRO_croatian_command
+country_event = {
+    id = illyria.1
+    days = 1
+    
+}
+country_event = {
+    id = illyria.3
+    days = 135
+    
+}
+country_event = {
+    id = illyria.4
+    days = 220
+    
+}
+country_event = {
+    id = illyria.5
+    days = 330
+    
+}
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 1
+    radical_socialist = 4
+    syndicalist = 2
+    social_democrat = 8
+    social_liberal = 34
+    market_liberal = 23
+    social_conservative = 2
+    authoritarian_democrat = 7
+    paternal_autocrat = 16
+    national_populist = 3
+    
+}
+recruit_character = CRO_stjepan_radic
+recruit_character = CRO_ivo_pillar
+recruit_character = CRO_slavko_kvaternik
+recruit_character = CRO_mihajlo_lukic
+recruit_character = CRO_fedor_dragojlov
+recruit_character = CRO_eduard_bunic_de_bona
+recruit_character = CRO_matija_canic
+recruit_character = CRO_vladimir_laxa
+recruit_character = CRO_duro_jakcin
+recruit_character = CRO_edgar_angeli
+recruit_character = CRO_nikola_steinfel
+recruit_character = CRO_aleksandar_ehrmann
+recruit_character = CRO_oton_vinski
+recruit_character = CRO_ivan_rikard_ivanovic
+recruit_character = CRO_aloysius_stepinac
+recruit_character = CRO_andrija_artukovic
+recruit_character = CRO_vladimir_kosak
+recruit_character = CRO_ivan_subasic
+recruit_character = CRO_stjepan_ivsic
+recruit_character = CRO_duro_basaricek
+recruit_character = CRO_miroslav_navratil
+recruit_character = CRO_vilko_begic
+recruit_character = CRO_slavko_stancer
+recruit_character = CRO_vladimir_kren
+recruit_character = CRO_ivan_prpic
+recruit_character = CRO_duro_dragicevic
+recruit_character = CRO_milan_miesler
+recruit_character = CRO_domobranske_akademija
+recruit_character = CRO_mornaricka_akademija
+random_character = {
+    limit = {
+        is_character = CRO_stjepan_radic
+        
+    }
+    save_global_event_target_as = CRO_stjepan_radic_target
+    
+}

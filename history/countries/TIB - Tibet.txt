@@ -1,0 +1,112 @@
+capital = 322
+oob = "TIB"
+set_research_slots = 2
+set_technology = {
+    infantry_weapons = 1
+    tech_mountaineers = 1
+    tech_support = 1
+    tech_recon = 1
+    camo = 1
+    etax_doctrine = 1
+    r56_militia_tech = 1
+    
+}
+add_offsite_building = {
+    type = industrial_complex
+    level = 3
+    
+}
+HND = {
+    embargo_ROOT = yes
+    
+}
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 5
+    social_liberal = 0
+    market_liberal = 0
+    social_conservative = 0
+    authoritarian_democrat = 30
+    paternal_autocrat = 65
+    national_populist = 0
+    
+}
+add_ideas = {
+    limited_conscription
+    isolation
+    limited_exports
+    TIB_struggle_tibet
+    TIB_monastic_governance
+    TIB_dob_dobs_trad
+    TIB_serfdom
+    
+}
+set_variable = {
+    var = yushu_control
+    value = 40
+    
+}
+set_variable = {
+    var = yushu_tensions
+    value = 5
+    
+}
+country_event = {
+    id = tib.1
+    days = 1
+    
+}
+recruit_character = TIB_nicholas_roerich
+recruit_character = TIB_sangye_yeshi
+recruit_character = TIB_the_9th_panchen_lama
+recruit_character = TIB_the_14th_dalai_lama
+recruit_character = TIB_tsipon_lungshar
+recruit_character = TIB_tsarong_dzasa
+recruit_character = TIB_the_5th_reting_rinpoche
+recruit_character = TIB_chao_kung
+recruit_character = TIB_changra
+recruit_character = TIB_trimon
+recruit_character = TIB_huang_musong
+recruit_character = TIB_ngapoi_ngawang_jigme
+recruit_character = TIB_dingja
+recruit_character = TIB_bondong
+recruit_character = TIB_mondro
+recruit_character = TIB_lonchhen_yapshi_langdun_kung
+recruit_character = TIB_khenchen_lobsang_tashi
+recruit_character = TIB_ngawang_sungrab_thutob
+recruit_character = TIB_lhalu_tsewang_dorje
+recruit_character = TIB_thubten_kunphela
+activate_advisor = TIB_lonchhen_yapshi_langdun_kung_sic
+recruit_character = TIB_heinrich_harrer
+recruit_character = TIB_yuthok_tashi_dhondup
+recruit_character = TIB_tobgyal_pangdatsang
+recruit_character = TIB_gompo_tashi_andrutsang
+recruit_character = BHU_tibetan_army_council
+recruit_character = TIB_kapshoba
+recruit_character = TIB_dechen_nyingpo
+recruit_character = TIB_lobzang_yampel_pangdatsang
+recruit_character = TIB_lukhangpa
+recruit_character = TIB_shengka_gyurme_topgyal
+recruit_character = TIB_ngagchen_rinpoche
+recruit_character = TIB_agvan_dorzhiev
+recruit_character = TIB_norbhu_dhondhup
+recruit_character = TIB_tsepon_wangchuk_shakabpa
+recruit_character = TIB_dudjom_jigdral_yeshe_dorje
+recruit_character = TIB_jamyang_tenpe_gyeltsen
+recruit_character = TIB_gendun_chophel
+recruit_character = TIB_hugh_richardson
+recruit_character = TIB_rapga_pangdatsang
+recruit_character = TIB_karl_tonisson
+recruit_character = TIB_surkhang_wangchen_gelek
+recruit_character = TIB_rigzin_dorje_ringang
+recruit_character = TIB_wangdu_norbu_kyipup
+recruit_character = TIB_peter_aufschnaiter

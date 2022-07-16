@@ -62,6 +62,7 @@ ideas = {
             available = {
                 NOT = {
                     has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    has_government = radical_socialist
                     has_government = syndicalist
                     has_government = totalist
                     has_government = radical_socialist
@@ -115,7 +116,6 @@ ideas = {
                                 original_tag = TUR
                                 original_tag = CHI
                                 original_tag = GXC
-                                original_tag = OTT
                                 
                             }
                             

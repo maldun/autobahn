@@ -1,0 +1,241 @@
+capital = 840
+oob = "FIN"
+set_naval_oob = "FIN_naval"
+starting_train_buffer = 1
+set_convoys = 20
+set_research_slots = 3
+set_war_support = 0.4
+set_cosmetic_tag = FIN_kingdom
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    gw_artillery = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
+    tech_mountaineers = 1
+    interwar_antiair = 1
+    early_fighter = 1
+    early_bomber = 1
+    fighter1 = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    jaegers = 1
+    r56_guerilla_warfare = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    winter_clothes_gw = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        basic_naval_mines = 1
+        submarine_mine_laying = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_heavy_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        transport = 1
+        
+    }
+    
+}
+country_event = {
+    id = finland.1
+    days = 1
+    
+}
+country_event = {
+    id = finland.129
+    days = 1609
+    
+}
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 3
+    radical_socialist = 0
+    social_democrat = 29
+    social_liberal = 7
+    market_liberal = 1
+    social_conservative = 14
+    authoritarian_democrat = 4
+    paternal_autocrat = 30
+    national_populist = 12
+    
+}
+add_opinion_modifier = {
+    target = GER
+    modifier = KR_approves_of_govt
+    
+}
+reverse_add_opinion_modifier = {
+    target = GER
+    modifier = KR_approves_of_govt
+    
+}
+diplomatic_relation = {
+    country = GER
+    relation = non_aggression_pact
+    
+}
+give_military_access = GER
+add_ideas = {
+    FIN_sisu
+    FIN_mounting_dissent_idea
+    FIN_ukrainian_grain_imports_idea
+    limited_conscription
+    
+}
+recruit_character = FIN_friedrich_karl_von_hessen_kassel
+recruit_character = FIN_wolfgang_von_hessen_kassel
+recruit_character = FIN_otto_wille_kuusinen
+recruit_character = FIN_kullervo_manner
+recruit_character = FIN_oskari_tokoi
+recruit_character = FIN_vaino_tanner
+recruit_character = FIN_kyosti_kallio
+recruit_character = FIN_kaarlo_juho_stahlberg
+recruit_character = FIN_pehr_evind_svinhufvud
+recruit_character = FIN_carl_gustaf_mannerheim
+recruit_character = FIN_juho_kusti_paasikivi
+activate_advisor = FIN_juho_kusti_paasikivi_sic
+recruit_character = FIN_kurt_martti_wallenius
+recruit_character = FIN_vilho_annala
+recruit_character = FIN_tuomas_hyrskymurto
+recruit_character = FIN_adolf_taimi
+recruit_character = FIN_karl-august_fagerholm
+recruit_character = FIN_juho_sunila
+recruit_character = FIN_aimo_cajander
+recruit_character = FIN_edwin_flinck
+recruit_character = FIN_bruno_salmiala
+recruit_character = FIN_johan_henrik_lumivuokko
+recruit_character = FIN_august_wesley
+recruit_character = FIN_edvard_gylling
+recruit_character = FIN_hella_wuolijoki
+recruit_character = FIN_vaino_voionmaa
+recruit_character = FIN_urho_kekkonen
+recruit_character = FIN_eljas_erkko
+recruit_character = FIN_risto_ryti
+recruit_character = FIN_rafael_haarla
+recruit_character = FIN_hjalmar_procope
+recruit_character = FIN_elmo_kaila
+recruit_character = FIN_elias_simojoki
+recruit_character = FIN_vihtori_kosola
+recruit_character = FIN_aladar_paasonen
+recruit_character = FIN_reino_hallamaa
+recruit_character = FIN_vaino_vuori
+recruit_character = FIN_sixtus_hjelmman
+recruit_character = FIN_erik_heinrichs
+recruit_character = FIN_lauri_malmberg
+recruit_character = FIN_karl_lennart_oesch
+recruit_character = FIN_aksel_airo
+recruit_character = FIN_aaro_pajari
+recruit_character = FIN_wiljo_tuompo
+recruit_character = FIN_ruben_lagus
+recruit_character = FIN_vilho_peter_nenonen
+recruit_character = FIN_paavo_talvela
+recruit_character = FIN_paul_von_gerich
+recruit_character = FIN_hjalmar_siilasvuo
+recruit_character = FIN_niilo_hersalo
+recruit_character = FIN_harald_ohquist
+recruit_character = FIN_hugo_osterman
+recruit_character = FIN_aarne_sihvo
+recruit_character = FIN_vaino_valve
+recruit_character = FIN_eero_rahola
+recruit_character = FIN_svante_sundman
+every_unit_leader = {
+    set_character_flag = FIN_leader
+    
+}
+FIN_carl_gustaf_mannerheim = {
+    set_character_flag = FIN_leader
+    
+}
+FIN_vaino_voionmaa = {
+    set_character_flag = FIN_leader
+    
+}
+FIN_urho_kekkonen = {
+    set_character_flag = FIN_leader
+    
+}
+FIN_eljas_erkko = {
+    set_character_flag = FIN_leader
+    
+}
+FIN_risto_ryti = {
+    set_character_flag = FIN_leader
+    
+}
+FIN_hjalmar_procope = {
+    set_character_flag = FIN_leader
+    
+}

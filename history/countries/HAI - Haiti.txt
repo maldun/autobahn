@@ -1,0 +1,238 @@
+capital = 318
+oob = "HAI"
+set_convoys = 20
+set_research_slots = 2
+set_technology = {
+    infantry_weapons = 1
+    gw_artillery = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        early_ship_hull_cruiser = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_light_cruiser = 1
+        transport = 1
+        
+    }
+    
+}
+add_opinion_modifier = {
+    target = DOM
+    modifier = HAI_border_dispute
+    
+}
+reverse_add_opinion_modifier = {
+    target = GER
+    modifier = HAI_foreign_council
+    
+}
+set_stability = 0.4
+set_war_support = 0.25
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1932.4.6"
+    election_frequency = 48
+    elections_allowed = yes
+    
+}
+set_country_flag = HAI_american_restrictions
+set_country_flag = HAI_election
+set_country_flag = HAI_noENT
+set_popularities = {
+    totalist = 2
+    radical_socialist = 9
+    syndicalist = 3
+    social_democrat = 19
+    social_liberal = 14
+    market_liberal = 5
+    social_conservative = 19
+    authoritarian_democrat = 26
+    paternal_autocrat = 1
+    national_populist = 2
+    
+}
+add_ideas = {
+    HAI_precarious_governance
+    HAI_crippling_illiteracy
+    HAI_foreign_control
+    HAI_border_clashes_idea
+    free_trade
+    limited_conscription
+    
+}
+country_event = {
+    id = hai.1
+    hours = 12
+    
+}
+country_event = {
+    id = hai_cal.14
+    days = 550
+    random = 25
+    
+}
+country_event = {
+    id = hai_civ.1
+    days = 80
+    
+}
+add_dynamic_modifier = {
+    modifier = HAI_foreign_control_dynamic_modifier
+    
+}
+add_dynamic_modifier = {
+    modifier = HAI_border_clashes_dynamic_modifier
+    
+}
+set_variable = {
+    HAI_american_influence = 3
+    
+}
+set_variable = {
+    HAI_german_influence = 1
+    
+}
+set_variable = {
+    HAI_french_influence = 1
+    
+}
+set_variable = {
+    HAIeconomicinfluncecivs = 1
+    
+}
+set_variable = {
+    HAIeconomicinfluncepp = -0.1
+    
+}
+set_variable = {
+    HAI_assembly_support = 14
+    
+}
+clamp_variable = {
+    var = HAI_assembly_support
+    min = 0
+    max = 40
+    
+}
+set_variable = {
+    HAI_council_support = 5
+    
+}
+clamp_variable = {
+    var = HAI_council_support
+    min = 0
+    max = 21
+    
+}
+set_variable = {
+    HAIborderclashesWS = 0.05
+    
+}
+set_variable = {
+    HAIborderclashesST = -0.1
+    
+}
+set_variable = {
+    HAIborderclashesORG = -0.05
+    
+}
+set_variable = {
+    HAI_corruption = 0.35
+    
+}
+clamp_variable = {
+    var = HAI_corruption
+    min = 0
+    max = 100
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_strongarm_assemblymen
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_meet_with_commissioner_russell
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_secure_the_election
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_campaign_in_north
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_campaign_in_rural_areas
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_campaign_in_south
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_strongarm_councillors
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_nominate_councillor
+    
+}
+activate_targeted_decision = {
+    target = THIS
+    decision = HAI_lower_corruption
+    
+}
+recruit_character = HAI_joseph_jolibois_fils
+recruit_character = HAI_jacques_romain
+recruit_character = HAI_max_hudincourt
+recruit_character = HAI_demosthenes_calixte
+recruit_character = HAI_paul_magloire
+recruit_character = HAI_jean_price_mars
+recruit_character = HAI_louis_dejoie
+recruit_character = HAI_elie_lescot
+recruit_character = HAI_stenio_vincent
+recruit_character = HAI_john_russell
+recruit_character = HAI_franck_lavaud
+recruit_character = HAI_carl_brouard
+recruit_character = HAI_alfred_auguste_nemours
+recruit_character = HAI_antonio_thrasybule_kebreau
+recruit_character = HAI_JD_Sam
+recruit_character = HAI_Philippe_Thoby_Marcelin
+recruit_character = HAI_Dumarsais_Estime
+recruit_character = HAI_Alix_Pasquet

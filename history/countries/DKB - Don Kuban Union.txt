@@ -1,0 +1,109 @@
+capital = 234
+set_stability = 0.35
+set_war_support = 0.25
+set_research_slots = 3
+oob = "DKB"
+set_naval_oob = "DKB_naval"
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    early_fighter = 1
+    gw_artillery = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        early_ship_hull_submarine = 1
+        early_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        submarine_mine_laying = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_submarine = 1
+        early_battleship = 1
+        
+    }
+    
+}
+GER = {
+    give_guarantee = DKB
+    
+}
+country_event = {
+    id = dkb.1
+    days = 1
+    
+}
+country_event = {
+    id = dkb.2
+    days = 36
+    
+}
+country_event = {
+    id = dkb.7
+    days = 105
+    random_days = 10
+    
+}
+country_event = {
+    id = dkb.6
+    days = 150
+    random_days = 10
+    
+}
+country_event = {
+    id = dkb.8
+    days = 288
+    random_days = 10
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 2
+    social_liberal = 6
+    market_liberal = 6
+    social_conservative = 12
+    authoritarian_democrat = 47
+    paternal_autocrat = 15
+    national_populist = 12
+    
+}
+set_convoys = 20
+recruit_character = DKB_pyotr_krasnov
+recruit_character = DKB_andrey_shkuro

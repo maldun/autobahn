@@ -1,0 +1,55 @@
+capital = 679
+set_technology = {
+    infantry_weapons = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+set_research_slots = 2
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 0
+    social_liberal = 0
+    market_liberal = 0
+    social_conservative = 0
+    authoritarian_democrat = 0
+    paternal_autocrat = 100
+    national_populist = 0
+    
+}
+recruit_character = IKH_zaidan_ibn_hithlain
+recruit_character = IKH_sultan_ibn_humaid_ibn_bijad
+recruit_character = IKH_nida_ibn_nuhair
+random_character = {
+    limit = {
+        is_character = IKH_zaidan_ibn_hithlain
+        
+    }
+    save_global_event_target_as = IKH_zaidan_ibn_hithlain_target
+    
+}
+random_character = {
+    limit = {
+        is_character = IKH_sultan_ibn_humaid_ibn_bijad
+        
+    }
+    save_global_event_target_as = IKH_sultan_ibn_humaid_ibn_bijad_target
+    
+}
+random_character = {
+    limit = {
+        is_character = IKH_nida_ibn_nuhair
+        
+    }
+    save_global_event_target_as = IKH_nida_ibn_nuhair_target
+    
+}

@@ -1,0 +1,207 @@
+capital = 427
+oob = "PRF"
+set_naval_oob = "PRF_naval"
+set_research_slots = 3
+set_convoys = 50
+set_war_support = 0.2
+starting_train_buffer = 1
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_mountaineers = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    jngdst_clothes_gw = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    jungletroops = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_secondary_battery = 1
+        basic_naval_mines = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        early_heavy_cruiser = 1
+        
+    }
+    
+}
+country_event = {
+    id = prf.0
+    days = 1
+    
+}
+country_event = {
+    id = prf.1
+    days = 41
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "HND"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "RAJ"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "POR"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "SIK"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "ETS"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "KUM"
+    value = 1
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 5
+    syndicalist = 2
+    social_democrat = 0
+    social_liberal = 13
+    market_liberal = 8
+    social_conservative = 2
+    authoritarian_democrat = 40
+    paternal_autocrat = 22
+    national_populist = 8
+    
+}
+set_autonomy = {
+    target = MDR
+    autonomy_state = kr_default_puppet
+    
+}
+MDR = {
+    set_politics = {
+        ruling_party = social_liberal
+        last_election = "1930.11.9"
+        election_frequency = 48
+        elections_allowed = no
+        
+    }
+    set_popularities = {
+        totalist = 2
+        radical_socialist = 3
+        syndicalist = 5
+        social_democrat = 13
+        social_liberal = 41
+        market_liberal = 21
+        social_conservative = 10
+        authoritarian_democrat = 3
+        paternal_autocrat = 2
+        national_populist = 0
+        
+    }
+    
+}
+add_ideas = {
+    PRF_rule_of_princes_1
+    PRF_backwards_economy_1
+    
+}
+promote_character = {
+    character = HYD_osman_ali_khan
+    ideology = authoritarian_democrat_subtype
+    
+}
+recruit_character = PRF_council_of_princes
+recruit_character = PRF_rajaram_iii_of_kolhapur
+recruit_character = PRF_krushna_chandra_gajapati
+recruit_character = PRF_akbar_hydari
+recruit_character = PRF_mirza_muhammad_ismail
+recruit_character = PRF_nawab_fazal_nawaz_jung_bahadur
+activate_advisor = PRF_council_of_princes_sic
+recruit_character = PRF_chintaman_dwarakanath_deshmukh
+recruit_character = PRF_umaid_singh
+recruit_character = PRF_harilal_jekisundas_kania
+recruit_character = PRF_albion_rajkumar_banerjee
+recruit_character = PRF_mokshagundam_visvesvaraya
+recruit_character = PRF_kishen_pershad
+recruit_character = PRF_khan_chhatari
+recruit_character = PRF_kodandera_madappa_cariappa
+recruit_character = PRF_d_n_mukerji
+recruit_character = PRF_nathu_singh_rathore
+recruit_character = PRF_yashwantrao_martandrao_mukne
+recruit_character = PRF_jagdish_chandra_varma
+recruit_character = PRF_abdul_naeem_aziz
+recruit_character = PRF_syed_abbas_hussain

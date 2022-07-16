@@ -1,0 +1,83 @@
+capital = 324
+oob = "BHU"
+set_research_slots = 1
+set_technology = {
+    infantry_weapons = 1
+    tech_mountaineers = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+country_event = {
+    id = bhutan.0
+    days = 1
+    
+}
+set_stability = 0.3
+set_war_support = 0.1
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1888.1.1"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 0
+    radical_socialist = 6
+    social_democrat = 6
+    social_liberal = 5
+    market_liberal = 6
+    social_conservative = 3
+    authoritarian_democrat = 32
+    paternal_autocrat = 22
+    national_populist = 20
+    
+}
+add_ideas = {
+    BHU_hermit_kingdom
+    BHU_Monastic_Control
+    BHU_feudal_4
+    closed_economy
+    limited_conscription
+    isolation
+    
+}
+set_country_flag = {
+    flag = bhu_feudal_unity
+    value = 11
+    
+}
+set_country_flag = {
+    flag = bhu_econ_dev
+    value = 8
+    
+}
+set_country_flag = {
+    flag = bhu_mil_invest
+    value = 8
+    
+}
+recruit_character = BHU_db_gurung
+recruit_character = BHU_mahasur_chhetri
+recruit_character = BHU_bal_bahadur_basnet
+recruit_character = BHU_jigme_wangchuck
+recruit_character = BHU_interregnum
+recruit_character = BHU_tshering_penjor
+recruit_character = BHU_choekyi_wangchuck
+recruit_character = BHU_zhabdrung
+recruit_character = BHU_sonam_topgye_dorji
+recruit_character = BHU_jigme_dorji_wangchuck
+recruit_character = BHU_namgyal_bahadur
+recruit_character = BHU_zamadar_chencho
+recruit_character = BHU_chhoki_gyeltshen
+activate_advisor = BHU_sonam_topgye_dorji_sic
+recruit_character = BHU_chimi_dorji_rabden
+recruit_character = BHU_chogley_jigme_tenzin
+recruit_character = BHU_jhulendra_bahadur_pradhan
+recruit_character = BHU_phuntsho_choden
+recruit_character = BHU_samten_jamtsho
+recruit_character = BHU_tashi_namgyal
+recruit_character = BHU_thinley_namgyel
+recruit_character = BHU_royal_army_council

@@ -1,0 +1,123 @@
+capital = 288
+oob = "BRM"
+set_naval_oob = "BRM_naval"
+set_technology = {
+    infantry_weapons = 1
+    tech_mountaineers = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        
+    }
+    
+}
+set_research_slots = 2
+set_convoys = 20
+set_stability = 45
+set_war_support = 0.4
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1935.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 2
+    syndicalist = 4
+    radical_socialist = 10
+    social_democrat = 15
+    social_liberal = 9
+    market_liberal = 4
+    social_conservative = 16
+    authoritarian_democrat = 20
+    paternal_autocrat = 12
+    national_populist = 8
+    
+}
+country_event = {
+    id = burma.0
+    days = 1
+    
+}
+country_event = {
+    id = burma.1
+    days = 300
+    random = 240
+    
+}
+country_event = {
+    id = burma.3
+    days = 450
+    random = 360
+    
+}
+recruit_character = BRM_than_thun
+recruit_character = BRM_aung_san
+recruit_character = BRM_po_hla_gyi
+recruit_character = BRM_ba_maw
+recruit_character = BRM_chit_hlaing
+recruit_character = BRM_joseph_augustus_maung_gyi
+recruit_character = BRM_kodaw_hmaing
+recruit_character = BRM_u_ba_pe
+recruit_character = BRM_u_saw
+recruit_character = BRM_tharrawaddy_u_pu
+recruit_character = BRM_myat_paya_lat
+recruit_character = BRM_provisional_government
+recruit_character = BRM_smith_dun
+recruit_character = BRM_ne_win
+recruit_character = BRM_soe
+recruit_character = BRM_ba_hein
+recruit_character = BRM_kyaw_zaw
+recruit_character = BRM_bo_yan_naing
+recruit_character = BRM_htoon_aung_gyaw
+recruit_character = BRM_u_kyaw_min
+recruit_character = BRM_tun_oke
+recruit_character = BRM_baganset_u_thaw
+recruit_character = BRM_tharrawaddy_u_ye_yay
+recruit_character = BRM_zin
+recruit_character = BRM_thein_pe_myint
+recruit_character = BRM_kyaw_tun
+recruit_character = BRM_dr_thein_maung
+recruit_character = BRM_tin_tut
+recruit_character = BRM_lim_kar_chang
+recruit_character = BRM_u_pu
+recruit_character = BRM_ohn_ghine
+recruit_character = BRM_u_tint_swe
+recruit_character = BRM_myo_kin
+recruit_character = BRM_sithu_u_tin
+recruit_character = BRM_ba_chit
+activate_advisor = BRM_baganset_u_thaw_sic

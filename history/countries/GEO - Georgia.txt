@@ -1,0 +1,126 @@
+capital = 231
+oob = "GEO"
+set_naval_oob = "GEO_naval"
+add_ideas = {
+    GEO_treaty_of_poti_idea
+    GEO_minority_problem
+    
+}
+set_stability = 0.6
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_mountaineers = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_naval_mines = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_submarine = 1
+        basic_submarine = 1
+        
+    }
+    
+}
+set_research_slots = 3
+set_convoys = 20
+set_politics = {
+    ruling_party = social_democrat
+    last_election = "1935.6.6"
+    election_frequency = 48
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 0
+    radical_socialist = 6
+    social_democrat = 49
+    social_liberal = 7
+    market_liberal = 5
+    social_conservative = 29
+    authoritarian_democrat = 0
+    paternal_autocrat = 4
+    national_populist = 0
+    
+}
+GER = {
+    give_guarantee = GEO
+    
+}
+add_to_array = {
+    GEO.guarantor_array = GER
+    
+}
+give_military_access = GER
+country_event = {
+    id = geo.1
+    days = 1
+    
+}
+country_event = {
+    id = geo.67
+    days = 510
+    
+}
+recruit_character = GEO_leo_shengelaia
+recruit_character = GEO_noe_zhordania
+recruit_character = GEO_evgeni_gegechkori
+recruit_character = GEO_iosif_baratov
+recruit_character = GEO_grigory_veshapeli
+recruit_character = GEO_ekvtime_takaishvili
+recruit_character = GEO_mikheil_tsereteli
+recruit_character = GEO_giorgi_bagration_mukhraneli
+recruit_character = GEO_ioachim_von_hohenzollern
+recruit_character = GEO_kakutsa_cholokashvili
+recruit_character = GEO_giorgi_khimshiashvili
+recruit_character = GEO_valiko_jugheli
+recruit_character = GEO_vladimer_goguadze
+recruit_character = GEO_giorgi_abashvili
+recruit_character = GEO_pm_consolidated
+activate_advisor = GEO_pm_consolidated_sic
+recruit_character = GEO_filipp_gogichaishvili
+recruit_character = GEO_nikoloz_muskhelishvili
+recruit_character = GEO_grigol_peradze
+recruit_character = GEO_dimitri_arakishvili
+recruit_character = GEO_ivane_javakhishvili
+recruit_character = GEO_kato_mikeladze
+recruit_character = GEO_melchizedek_kedia
+recruit_character = GEO_shalva_maglakelidze
+recruit_character = GEO_mikheil_grigorashvili
+recruit_character = GEO_yaroslav_iosseliani
+recruit_character = GEO_giorgi_kvinitadze
+recruit_character = GEO_aleksandre_kartvelishvili
+recruit_character = GEO_ivane_karangozishvili
+recruit_character = GEO_mikheil_gogolashvili

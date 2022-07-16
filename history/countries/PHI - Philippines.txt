@@ -1,0 +1,111 @@
+capital = 327
+oob = "PHI"
+set_naval_oob = "PHI_naval"
+set_convoys = 20
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.15
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_mountaineers = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        early_ship_hull_cruiser = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_secondary_battery = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_light_cruiser = 1
+        
+    }
+    
+}
+USA = {
+    set_autonomy = {
+        target = PHI
+        autonomy_state = kr_default_puppet
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 2
+    radical_socialist = 3
+    syndicalist = 5
+    social_democrat = 13
+    social_liberal = 41
+    market_liberal = 21
+    social_conservative = 10
+    authoritarian_democrat = 3
+    paternal_autocrat = 2
+    national_populist = 0
+    
+}
+country_event = {
+    id = phil.0
+    days = 1
+    
+}
+recruit_character = PHI_manuel_luis_quezon
+recruit_character = PHI_manuel_roxas
+recruit_character = PHI_elpidio_quirino
+recruit_character = PHI_emilio_aguinaldo
+recruit_character = PHI_juan_antonio_araneta
+recruit_character = PHI_lope_kanseco_santos
+recruit_character = PHI_crisanto_evangelista
+recruit_character = PHI_basilio_jose_valdes
+recruit_character = PHI_vicente_lim
+recruit_character = PHI_paulino_santos
+recruit_character = PHI_carlos_pena_romulo
+recruit_character = PHI_ruperto_kangleon
+recruit_character = PHI_rafael_liwanag
+recruit_character = PHI_alberto_ramos
+recruit_character = PHI_antonio_de_las_alas
+recruit_character = PHI_sergio_osmena
+recruit_character = PHI_carlos_p_garcia
+recruit_character = PHI_gregario_licaros
+recruit_character = PHI_jesus_vargas
+recruit_character = PHI_mateo_capinpin
+recruit_character = PHI_ramon_magsaysay
+recruit_character = PHI_basilio_fernando
+recruit_character = PHI_pelagio_cruz
+recruit_character = PHI_felix_pestana
+recruit_character = PHI_enrique_jurado
+recruit_character = PHI_jose_v_andrada
+recruit_character = PHI_jose_v_francisco

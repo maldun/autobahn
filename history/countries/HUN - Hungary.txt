@@ -1,0 +1,183 @@
+capital = 43
+oob = "HUN"
+set_naval_oob = "HUN_naval"
+set_war_support = 0.2
+set_research_slots = 3
+set_cosmetic_tag = HUN_habsburg
+starting_train_buffer = 1
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    motorised_infantry = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    early_bomber = 1
+    CAS1 = 1
+    basic_train = 1
+    aluminum_production_1 = 1
+    camo = 1
+    etax_doctrine = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_carrier = 1
+        early_ship_hull_heavy = 1
+        basic_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        improved_secondary_battery = 1
+        improved_ship_torpedo_launcher = 1
+        basic_cruiser_armor_scheme = 1
+        basic_heavy_armor_scheme = 1
+        basic_medium_battery = 1
+        basic_heavy_battery = 1
+        submarine_mine_laying = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battlecruiser = 1
+        early_battleship = 1
+        basic_battleship = 1
+        transport = 1
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 1
+    radical_socialist = 0
+    syndicalist = 1
+    social_democrat = 9
+    social_liberal = 3
+    market_liberal = 24
+    social_conservative = 12
+    authoritarian_democrat = 9
+    paternal_autocrat = 32
+    national_populist = 9
+    
+}
+add_ideas = HUN_financial_ties_broken
+recruit_character = HUN_bela_kun
+recruit_character = HUN_arpad_szakasits
+recruit_character = HUN_oszkar_jaszi
+recruit_character = HUN_istvan_bethlen
+recruit_character = AUS_joseph_august_von_habsburg
+recruit_character = HUN_laszlo_bardossy
+recruit_character = HUN_kocsard_janky_de_bulcs
+recruit_character = HUN_hugo_sonyi
+recruit_character = HUN_vilmos_nagy_de_nagybaczon
+recruit_character = HUN_bela_miklos_de_dalnok
+recruit_character = HUN_dezso_laszlo
+recruit_character = HUN_gusztav_jany
+recruit_character = HUN_lajos_veress_de_dalnok
+recruit_character = HUN_gusztav_denk_de_kistorony
+recruit_character = HUN_dome_sztojay
+recruit_character = HUN_szilard_bakay
+recruit_character = HUN_karoly_bartha_de_dalnokfalva
+recruit_character = HUN_jeno_ratz
+recruit_character = HUN_sandor_karacsony
+recruit_character = HUN_bela_bangha
+recruit_character = HUN_janos_kabay
+recruit_character = HUN_gedeon_richter
+recruit_character = HUN_farkas_heller
+recruit_character = HUN_rusztem_vambery
+recruit_character = HUN_ferenc_chorin
+recruit_character = HUN_mihaly_polanyi
+recruit_character = HUN_Kalman_Daranyi_de_Pusztaszentgyorgyi
+recruit_character = HUN_Gusztav_Gratz
+recruit_character = HUN_vilmos_roder
+recruit_character = HUN_kalman_hardy
+recruit_character = HUN_richard_olaf_wulff
+recruit_character = HUN_sandor_magyarossy
+recruit_character = HUN_laszlo_hary
+recruit_character = HUN_istvan_birnbauer
+recruit_character = HUN_arpad_bertalan
+recruit_character = HUN_waldemar_kenese
+recruit_character = HUN_henrik_werth
+recruit_character = HUN_laszlo_hollosy_kuthy
+recruit_character = HUN_teofil_harosy
+recruit_character = HUN_todor_karman
+recruit_character = HUN_leo_szilard
+HUN_Kalman_Daranyi_de_Pusztaszentgyorgyi_sic = yes
+random_character = {
+    limit = {
+        is_character = AUS_joseph_august_von_habsburg
+        
+    }
+    set_character_flag = AUS_habsburg
+    save_global_event_target_as = AUS_joseph_august_von_habsburg_target
+    
+}

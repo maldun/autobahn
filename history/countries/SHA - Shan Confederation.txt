@@ -1,0 +1,34 @@
+capital = 72
+set_technology = {
+    infantry_weapons = 1
+    tech_mountaineers = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.4
+add_ideas = partial_economic_mobilisation
+set_politics = {
+    ruling_party = social_conservative
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 0
+    radical_socialist = 1
+    social_democrat = 2
+    social_liberal = 18
+    market_liberal = 4
+    social_conservative = 48
+    authoritarian_democrat = 22
+    paternal_autocrat = 4
+    national_populist = 1
+    
+}
+recruit_character = KAC_sao_shwe_thaik
+recruit_character = KAC_sao_yang_wen_pin

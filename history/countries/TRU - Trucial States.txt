@@ -1,0 +1,49 @@
+capital = 658
+set_convoys = 20
+set_research_slots = 1
+set_technology = {
+    infantry_weapons = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+set_war_support = 0.4
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 0
+    social_liberal = 0
+    market_liberal = 10
+    social_conservative = 10
+    authoritarian_democrat = 16
+    paternal_autocrat = 59
+    national_populist = 5
+    
+}
+add_ideas = {
+    limited_conscription
+    isolation
+    
+}
+recruit_character = TRU_hamad_bin_isa_al_khalifa
+recruit_character = TRU_shakhbut_bin_sultan_al_nahyan
+recruit_character = TRU_zayed_bin_sultan_al_nahyan
+random_character = {
+    limit = {
+        is_character = TRU_shakhbut_bin_sultan_al_nahyan
+        
+    }
+    save_global_event_target_as = TRU_shakhbut_bin_sultan_al_nahyan_target
+    
+}

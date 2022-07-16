@@ -1,0 +1,236 @@
+capital = 613
+oob = "LEP"
+set_convoys = 50
+set_research_slots = 2
+set_war_support = 0.3
+starting_train_buffer = 1
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_mountaineers = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    sniper_rifle = 1
+    steel_production_1 = 1
+    
+}
+set_cosmetic_tag = LEP_LEP
+country_lock_all_division_template = yes
+add_offsite_building = {
+    type = arms_factory
+    level = 3
+    
+}
+add_offsite_building = {
+    type = industrial_complex
+    level = 6
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        early_ship_hull_submarine = 1
+        basic_depth_charges = 1
+        basic_battery = 1
+        basic_torpedo = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_submarine = 1
+        
+    }
+    
+}
+diplomatic_relation = {
+    country = GEA
+    relation = non_aggression_pact
+    
+}
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 0
+    social_liberal = 5
+    market_liberal = 19
+    social_conservative = 7
+    authoritarian_democrat = 15
+    paternal_autocrat = 54
+    national_populist = 0
+    
+}
+add_opinion_modifier = {
+    target = FNG
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = JAP
+    modifier = embargo
+    
+}
+add_ideas = {
+    LEP_Conspicuous_Kleptocracy
+    LEP_Nanking_Kommission
+    LEP_Tsingtau_Collaboration2
+    LEP_units_bonus
+    
+}
+set_variable = {
+    var = LEP_tsingtau_level
+    value = 2
+    
+}
+country_event = {
+    id = lepcollapse.1
+    days = 3
+    
+}
+country_event = {
+    id = lep.1
+    days = 1
+    
+}
+recruit_character = LEP_board_of_directors
+recruit_character = LEP_sun_chuanfang
+recruit_character = LEP_qi_xieyuan
+activate_advisor = LEP_qi_xieyuan_sic
+recruit_character = LEP_wang_kemin
+recruit_character = LEP_ma_yuren
+recruit_character = LEP_zhang_xinyi
+recruit_character = LEP_zhang_taiyan
+recruit_character = LEP_chen_taoyi
+recruit_character = LEP_ding_wenjiang
+recruit_character = LEP_wei_daofeng
+recruit_character = LEP_pan_guogang
+recruit_character = LEP_tang_erhe
+recruit_character = LEP_hermann_kriebel
+recruit_character = LEP_chen_ta_ching
+recruit_character = LEP_chen_cheng
+recruit_character = LEP_huang_wei
+recruit_character = LEP_zhang_dingfan
+recruit_character = LEP_qiu_qingquan
+recruit_character = LEP_qian_zongze
+recruit_character = LEP_chen_jia_shang
+recruit_character = LEP_liu_cuigang
+recruit_character = LEP_chen_zhaoqiang
+recruit_character = LEP_cheng_tienfong
+recruit_character = LEP_chen_yi
+recruit_character = LEP_zheng_junyan
+recruit_character = LEP_deng_ruzhou
+recruit_character = LEP_zhou_yinren
+recruit_character = LEP_shangguan_yunxiang
+recruit_character = LEP_zhou_fengqi
+recruit_character = LEP_tang_enbo
+recruit_character = LEP_shi_yousan
+recruit_character = LEP_yang_shuzhuang
+recruit_character = ANQ_shen_jingchen
+recruit_character = ANQ_sa_benxin
+country_event = {
+    id = lep.206
+    days = 1521
+    
+}
+country_event = {
+    id = lep.207
+    days = 762
+    
+}
+country_event = {
+    id = lep.208
+    days = 81
+    
+}
+country_event = {
+    id = lep.209
+    days = 285
+    
+}
+country_event = {
+    id = lep.210
+    days = 285
+    
+}
+random_character = {
+    limit = {
+        is_character = LEP_chen_yi
+        
+    }
+    save_global_event_target_as = LEP_chen_yi_target
+    
+}
+random_character = {
+    limit = {
+        is_character = LEP_shangguan_yunxiang
+        
+    }
+    save_global_event_target_as = LEP_shangguan_yunxiang_target
+    
+}
+random_character = {
+    limit = {
+        is_character = LEP_zheng_junyan
+        
+    }
+    save_global_event_target_as = LEP_zheng_junyan_target
+    
+}
+random_character = {
+    limit = {
+        is_character = LEP_deng_ruzhou
+        
+    }
+    save_global_event_target_as = LEP_deng_ruzhou_target
+    
+}

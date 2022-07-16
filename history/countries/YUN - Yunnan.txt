@@ -1,0 +1,146 @@
+capital = 325
+oob = "YUN"
+set_stability = 0.4
+set_war_support = 0.4
+set_research_slots = 2
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_mountaineers = 1
+    tech_engineers = 1
+    tech_recon = 1
+    gw_artillery = 1
+    early_fighter = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    r56_militia_tech = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 1
+    radical_socialist = 1
+    syndicalist = 1
+    social_democrat = 4
+    social_liberal = 16
+    market_liberal = 6
+    social_conservative = 12
+    authoritarian_democrat = 15
+    paternal_autocrat = 43
+    national_populist = 1
+    
+}
+add_ideas = {
+    partial_economic_mobilisation
+    volunteer_only
+    YUN_Tangs_rule
+    YUN_opium_exports
+    YUN_starting_army_idea
+    YUN_AOG_tin_control_over_us
+    
+}
+add_offsite_building = {
+    type = industrial_complex
+    level = 9
+    
+}
+add_offsite_building = {
+    type = arms_factory
+    level = 2
+    
+}
+country_event = {
+    id = yun.1
+    days = 1
+    
+}
+country_event = {
+    id = yun.335
+    months = 53
+    
+}
+recruit_character = YUN_wang_fusheng
+recruit_character = YUN_li_xin
+recruit_character = YUN_zhao_xingwu
+recruit_character = YUN_zhu_de
+recruit_character = YUN_zhang_bojun
+recruit_character = YUN_miao_yuntai
+recruit_character = YUN_gong_shou
+recruit_character = YUN_tang_jiyao
+recruit_character = YUN_tang_jiyu
+activate_advisor = YUN_tang_jiyu_sic
+recruit_character = YUN_liu_angong
+recruit_character = YUN_zhang_chong
+recruit_character = YUN_sun_du
+recruit_character = YUN_gu_zhenglun
+recruit_character = YUN_li_peitian
+recruit_character = YUN_zhang_weihan
+recruit_character = YUN_tao_hongtao
+recruit_character = YUN_chen_jun
+recruit_character = YUN_naval_council
+recruit_character = YUN_liu_peiquan
+recruit_character = YUN_wang_shuming
+recruit_character = YUN_yan_yucong
+recruit_character = YUN_long_yun
+recruit_character = YUN_hu_ruoyu
+recruit_character = YUN_zhu_peide
+recruit_character = YUN_lu_han
+recruit_character = YUN_tang_huaiyuan
+recruit_character = YUN_fan_shisheng
+recruit_character = YUN_yang_jie
+recruit_character = YUN_jin_handing
+recruit_character = YUN_luo_binghui
+recruit_character = YUN_zhang_lingfu
+recruit_character = YUN_zhou_baozhong
+recruit_character = YUN_zeng_zesheng
+recruit_character = YUN_sun_yuanliang
+recruit_character = YUN_he_yingqin
+random_character = {
+    limit = {
+        is_character = YUN_long_yun
+        
+    }
+    save_global_event_target_as = YUN_long_yun_target
+    
+}
+random_character = {
+    limit = {
+        is_character = YUN_he_yingqin
+        
+    }
+    save_global_event_target_as = YUN_he_yingqin_target
+    
+}

@@ -1,0 +1,107 @@
+capital = 306
+oob = "COL"
+set_naval_oob = "COL_naval"
+set_research_slots = 3
+set_technology = {
+    infantry_weapons = 1
+    tech_mountaineers = 1
+    tech_support = 1
+    tech_recon = 1
+    gw_artillery = 1
+    early_fighter = 1
+    naval_bomber1 = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_depth_charges = 1
+        basic_battery = 1
+        basic_torpedo = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        transport = 1
+        
+    }
+    
+}
+set_war_support = 0.1
+country_event = {
+    id = col.1
+    days = 1
+    
+}
+set_politics = {
+    ruling_party = social_democrat
+    last_election = "1934.5.2"
+    election_frequency = 48
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 15
+    syndicalist = 0
+    social_democrat = 33
+    social_liberal = 2
+    market_liberal = 3
+    social_conservative = 29
+    authoritarian_democrat = 0
+    paternal_autocrat = 11
+    national_populist = 7
+    
+}
+set_convoys = 30
+recruit_character = COL_gilberto_vieira
+recruit_character = COL_pedro_nel_gomez_agudelo
+recruit_character = COL_jorge_eliecer_gaitan
+recruit_character = COL_alfonso_lopez_pumarejo
+recruit_character = COL_eduardo_santos_montejo
+recruit_character = COL_gabriel_turbay_ayala
+recruit_character = COL_mariano_ospina_perez
+recruit_character = COL_alfredo_vasquez_cobo
+recruit_character = COL_laureano_gomez_castro
+recruit_character = COL_jose_maria_villarreal
+recruit_character = COL_gustavo_rojas_pinilla
+recruit_character = COL_eliseo_arango_ramos
+recruit_character = COL_efrain_rojas
+recruit_character = COL_luis_acevedo
+recruit_character = COL_mario_espinoza_gacitua
+recruit_character = COL_esteban_jaramillo
+recruit_character = COL_eduardo_zalamea_borda
+recruit_character = COL_carlos_lozano_y_lozano
+recruit_character = COL_benito_hernandez_bustos
+recruit_character = COL_carlos_lleras_restrepo
+recruit_character = COL_julian_bucheli_ayerbe
+recruit_character = COL_ruben_piedrahita_arango
+recruit_character = COL_congreso_de_la_republica
+recruit_character = COL_baldomero_sanin_cano
+recruit_character = COL_guillermo_padilla_manrique
+recruit_character = COL_gabriel_paris_gordillo
+recruit_character = COL_camilo_daza_alvarez
+recruit_character = COL_arturo_lema_posada
+recruit_character = COL_laureano_gomez
+recruit_character = COL_felix_mercado
+recruit_character = COL_mauricio_soto_gomez
+activate_advisor = COL_congreso_de_la_republica_sic

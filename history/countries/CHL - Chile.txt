@@ -1,0 +1,141 @@
+capital = 279
+oob = "CHL"
+set_naval_oob = "CHL_naval"
+starting_train_buffer = 1
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_cruiser = 1
+        early_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_battery = 1
+        basic_secondary_battery = 1
+        basic_torpedo = 1
+        basic_naval_mines = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        early_battleship = 1
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = syndicalist
+    last_election = "1935.11.29"
+    election_frequency = 60
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 10
+    radical_socialist = 12
+    syndicalist = 47
+    social_democrat = 8
+    social_liberal = 2
+    market_liberal = 0
+    social_conservative = 2
+    authoritarian_democrat = 5
+    paternal_autocrat = 5
+    national_populist = 9
+    
+}
+create_faction = Southern_Alliance
+add_to_faction = FOP
+set_convoys = 30
+set_research_slots = 3
+add_ideas = {
+    limited_conscription
+    CHL_home_of_south_american_syndicalism
+    
+}
+country_event = {
+    id = chl.101
+    hours = 2
+    
+}
+country_event = {
+    id = chl.51
+    days = 833
+    
+}
+country_event = {
+    id = chl.100
+    days = 1120
+    
+}
+recruit_character = CHL_carlos_contrera_labarca
+recruit_character = CHL_pablo_de_rokha
+recruit_character = CHL_marmaduke_grove_vallejo
+recruit_character = CHL_clotario_leopoldo_blest_riffo
+recruit_character = CHL_ricardo_eliecer_neftali_reyes_basoalto
+recruit_character = CHL_salvador_guillermo_allende_gossens
+recruit_character = CHL_lucila_godoy_alcayaga
+recruit_character = CHL_aurelio_celedon_palma
+recruit_character = CHL_pedro_aguirre_cerda
+recruit_character = CHL_juan_esteban_montero
+recruit_character = CHL_gabriel_gonzales_videla
+recruit_character = CHL_arturo_alessandri_palma
+recruit_character = CHL_eduardo_alessandri_rodriguez
+recruit_character = CHL_carlos_ibanez_del_campo
+recruit_character = CHL_juan_pablo_bennett_argandona
+recruit_character = CHL_bartolome_guillermo_blanche_espejo
+recruit_character = CHL_francisco_javier_diaz_valderrama
+recruit_character = CHL_arturo_puga_osorio
+recruit_character = CHL_carlos_fuentes_rabe
+recruit_character = CHL_oscar_izurieta_molina
+recruit_character = CHL_carlos_arturo_espinoza_mujica
+recruit_character = CHL_oscar_escudero_otarola
+recruit_character = CHL_alfredo_portales_mourgues
+recruit_character = CHL_guillermo_barrios_tirado
+recruit_character = CHL_julio_allard_pinto
+recruit_character = CHL_jose_consiglio_rebora
+recruit_character = CHL_carlos_jouanne_de_la_motte_du_portail
+recruit_character = CHL_francisco_oryan_orrego
+recruit_character = CHL_vicente_merino_bielich
+recruit_character = CHL_gaston_kulczewski_garcia
+recruit_character = CHL_arturo_merino_benitez
+recruit_character = CHL_oscar_schnake
+recruit_character = CHL_carlos_davila
+recruit_character = CHL_carlos_alberto_martinez
+recruit_character = CHL_hernan_barros_bianchi
+recruit_character = CHL_oscar_novoa_fuentes
+recruit_character = CHL_luis_otero_mujica
+recruit_character = CHL_diego_aracena
+recruit_character = CHL_manuel_tovarias
+recruit_character = CHL_raul_gonzalez_nolle

@@ -1,0 +1,408 @@
+capital = 608
+oob = "QIE"
+set_naval_oob = "QIE_naval"
+create_faction = Qing_faction
+add_to_faction = XSM
+add_to_faction = SHX
+add_to_faction = SZC
+add_to_faction = YUN
+add_to_faction = SQI
+add_to_faction = SIK
+add_to_faction = LEP
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    tech_recon = 1
+    early_fighter = 1
+    early_bomber = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    sniper_rifle = 1
+    steel_production_1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        early_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        basic_torpedo = 1
+        basic_naval_mines = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_light_cruiser = 1
+        early_submarine = 1
+        early_heavy_cruiser = 1
+        early_battleship = 1
+        
+    }
+    
+}
+add_opinion_modifier = {
+    target = CHI
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = JAP
+    modifier = embargo
+    
+}
+add_opinion_modifier = {
+    target = FNG
+    modifier = embargo
+    
+}
+set_country_flag = can_assume_national_leadership
+set_country_flag = china_integration_unlocked
+set_stability = 0.5
+set_war_support = 0.4
+set_research_slots = 3
+set_convoys = 70
+add_offsite_building = {
+    type = dockyard
+    level = 3
+    
+}
+add_offsite_building = {
+    type = arms_factory
+    level = 6
+    
+}
+add_offsite_building = {
+    type = industrial_complex
+    level = 6
+    
+}
+diplomatic_relation = {
+    country = LEP
+    relation = docking_rights
+    active = yes
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 10
+    social_liberal = 5
+    market_liberal = 15
+    social_conservative = 10
+    authoritarian_democrat = 48
+    paternal_autocrat = 10
+    national_populist = 2
+    
+}
+add_ideas = {
+    QIE_fractured_empire
+    QIE_big_debt
+    QIE_leadership_crisis
+    
+}
+add_dynamic_modifier = {
+    modifier = QIE_german_influence_dynamic_modifier
+    
+}
+QIE_recalculate_peking_commission = yes
+set_variable = {
+    kr_china_provinceintegration_cost_small = 50
+    
+}
+set_variable = {
+    kr_china_provinceintegration_cost_medium = 75
+    
+}
+set_variable = {
+    kr_china_provinceintegration_cost_large = 100
+    
+}
+set_variable = {
+    kr_china_concessionintegration_cost = 15
+    
+}
+set_variable = {
+    kr_china_provinceintegration_speed = 90
+    
+}
+set_variable = {
+    kr_china_concessionintegration_speed = 60
+    
+}
+country_event = {
+    id = qiedom.1
+    days = 1
+    
+}
+country_event = {
+    id = qiedom.18
+    days = 14
+    random = 96
+    
+}
+country_event = {
+    id = qiedom.4
+    days = 31
+    random = 72
+    
+}
+country_event = {
+    id = qieflavor.11
+    days = 1096
+    random = 1440
+    
+}
+activate_targeted_decision = {
+    target = FROM
+    decision = QIE_bribe_lobbyists
+    
+}
+activate_targeted_decision = {
+    target = FROM
+    decision = QIE_encourage_domestic_production
+    
+}
+activate_targeted_decision = {
+    target = FROM
+    decision = QIE_encourage_anti_german_boycott
+    
+}
+activate_targeted_decision = {
+    target = FROM
+    decision = QIE_entice_financial_support
+    
+}
+recruit_character = QIE_aisin_gioro_puyi
+recruit_character = QIE_aisin_gioro_pugong
+recruit_character = QIE_james_yen
+recruit_character = QIE_li_huang
+recruit_character = QIE_huang_boqiao
+recruit_character = QIE_aisin_gioro_pujie
+recruit_character = QIE_wellington_koo
+recruit_character = QIE_hu_shih
+recruit_character = QIE_yan_huiqing
+recruit_character = QIE_wu_peifu
+recruit_character = QIE_cao_kun
+recruit_character = QIE_kang_tongbi
+recruit_character = QIE_wen_tsungyao
+activate_advisor = QIE_wu_peifu_sic
+activate_advisor = QIE_cao_kun
+recruit_character = QIE_jiang_baili
+recruit_character = QIE_wang_huaiqing
+recruit_character = QIE_aisin_gioro_zaitao
+recruit_character = QIE_cai_chengxun
+recruit_character = QIE_liu_menggeng
+recruit_character = QIE_wang_chengbin
+recruit_character = QIE_gobulo_runqi
+recruit_character = QIE_zhang_qihuang
+recruit_character = QIE_lu_xiangting
+recruit_character = QIE_xiao_yaonan
+recruit_character = QIE_li_bingzhi
+recruit_character = QIE_aisin_gioro_xiqia
+recruit_character = QIE_zhang_shaozeng
+recruit_character = QIE_cao_shijie
+recruit_character = QIE_aisin_gioro_jixing
+recruit_character = QIE_ling_bin
+recruit_character = QIE_fang_zhijian
+recruit_character = QIE_wu_renli
+recruit_character = QIE_sa_zhenbing
+recruit_character = QIE_du_xigui
+recruit_character = QIE_aisin_gioro_zaixun
+recruit_character = QIE_li_linsi
+recruit_character = QIE_philip_z_c_diao
+recruit_character = QIE_victor_zai
+recruit_character = QIE_zhang_lande
+recruit_character = QIE_sa_fulin
+recruit_character = QIE_aisin_gioro_zaizhen
+recruit_character = QIE_liu_quanxiang
+recruit_character = QIE_aisin_gioro_putong
+recruit_character = QIE_huang_zifang
+recruit_character = QIE_yu_xuezhong
+recruit_character = QIE_gao_zhihang
+QIE_jiang_baili = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_wang_huaiqing = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_zhang_qihuang = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_xiao_yaonan = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_zhang_shaozeng = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_liu_menggeng = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_cai_chengxun = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_cao_shijie = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+random_character = {
+    limit = {
+        is_character = QIE_aisin_gioro_puyi
+        
+    }
+    save_global_event_target_as = QIE_aisin_gioro_puyi_target
+    
+}
+random_unit_leader = {
+    limit = {
+        is_character = QIE_jiang_baili
+        
+    }
+    save_global_event_target_as = QIE_jiang_baili_target
+    
+}
+random_character = {
+    limit = {
+        is_character = QIE_zhang_qihuang
+        
+    }
+    save_global_event_target_as = QIE_zhang_qihuang_target
+    
+}
+random_character = {
+    limit = {
+        is_character = QIE_gobulo_runqi
+        
+    }
+    save_global_event_target_as = QIE_gobulo_runqi_target
+    
+}
+random_character = {
+    limit = {
+        is_character = QIE_lu_xiangting
+        
+    }
+    save_global_event_target_as = QIE_lu_xiangting_target
+    
+}
+random_character = {
+    limit = {
+        is_character = QIE_wen_tsungyao
+        
+    }
+    save_global_event_target_as = QIE_wen_tsungyao_target
+    
+}
+random_character = {
+    limit = {
+        is_character = QIE_aisin_gioro_pugong
+        
+    }
+    save_global_event_target_as = QIE_aisin_gioro_pugong_target
+    
+}
+XXA = {
+    recruit_character = QIE_wang_lingyun
+    recruit_character = QIE_du_xijun
+    recruit_character = QIE_guo_jijiao
+    recruit_character = QIE_wei_yisan
+    random_army_leader = {
+        limit = {
+            is_character = QIE_wang_lingyun
+            
+        }
+        save_global_event_target_as = QIE_wang_lingyun_target
+        
+    }
+    random_army_leader = {
+        limit = {
+            is_character = QIE_du_xijun
+            
+        }
+        save_global_event_target_as = QIE_du_xijun_target
+        
+    }
+    random_army_leader = {
+        limit = {
+            is_character = QIE_guo_jijiao
+            
+        }
+        save_global_event_target_as = QIE_guo_jijiao_target
+        
+    }
+    random_army_leader = {
+        limit = {
+            is_character = QIE_wei_yisan
+            
+        }
+        save_global_event_target_as = QIE_wei_yisan_target
+        
+    }
+    
+}
+set_temp_variable = {
+    coalition_partner_var = token:paternal_autocrat
+    
+}
+add_to_coalition = yes

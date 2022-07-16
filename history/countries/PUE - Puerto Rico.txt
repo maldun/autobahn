@@ -1,0 +1,99 @@
+capital = 686
+set_research_slots = 2
+set_naval_oob = "PUE_naval"
+set_convoys = 5
+set_technology = {
+    infantry_weapons = 1
+    gw_artillery = 1
+    marines = 1
+    early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        early_ship_hull_cruiser = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_secondary_battery = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        early_light_cruiser = 1
+        
+    }
+    
+}
+add_ideas = PUE_economic_disaster
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 2
+    radical_socialist = 3
+    syndicalist = 5
+    social_democrat = 13
+    social_liberal = 41
+    market_liberal = 21
+    social_conservative = 10
+    authoritarian_democrat = 3
+    paternal_autocrat = 2
+    national_populist = 0
+    
+}
+recruit_character = PUE_santiago_iglesias_pantin
+recruit_character = PUE_cesar_andreu_iglesias
+recruit_character = PUE_bolivar_pagan_lucca
+recruit_character = PUE_antonio_rafael_barcelo
+recruit_character = PUE_ernesto_ramos_antonini
+recruit_character = PUE_luis_munoz_marin
+recruit_character = PUE_gobierno_de_la_fortaleza
+recruit_character = PUE_jose_coll_y_cuchi
+recruit_character = PUE_blanton_winship
+recruit_character = PUE_pedro_albizu_campos
+recruit_character = PUE_luis_raul_esteves
+recruit_character = PUE_salvador_teodoro_roig_marietti
+recruit_character = PUE_carlos_betances_ramirez
+recruit_character = PUE_juan_antonio_corretjer
+recruit_character = PUE_clemente_soto_velez
+recruit_character = PUE_jesus_t_pinero
+recruit_character = PUE_leopoldo_figueroa
+recruit_character = PUE_rafael_carrion_sr
+recruit_character = PUE_ramiro_l_colon
+recruit_character = PUE_juanita_garcia_peraza
+recruit_character = PUE_jaime_benitez_rexach
+recruit_character = PUE_santos_p_amadeo
+recruit_character = PUE_joseph_b_aviles_sr
+recruit_character = PUE_edmund_ernest_garcia
+recruit_character = PUE_rafael_celestino_benitez
+recruit_character = PUE_virgil_r_miller
+recruit_character = PUE_juan_cesar_cordero_davila
+recruit_character = PUE_carlos_fernando_chardon
+every_unit_leader = {
+    set_character_flag = PUE_leader
+    
+}

@@ -1,0 +1,145 @@
+capital = 305
+oob = "ECU"
+set_naval_oob = "ECU_naval"
+set_research_slots = 3
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_battery = 1
+        basic_torpedo = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        
+    }
+    
+}
+set_war_support = 0.1
+country_event = {
+    id = ecu.0
+    days = 1
+    
+}
+country_event = {
+    id = ecu.18
+    days = 540
+    random_days = 15
+    
+}
+country_event = {
+    id = ecu.25
+    days = 500
+    random_days = 15
+    
+}
+country_event = {
+    id = ecu.30
+    days = 500
+    
+}
+country_event = {
+    id = ecu.32
+    days = 90
+    random_days = 45
+    
+}
+country_event = {
+    id = ecu.34
+    days = 300
+    random_days = 30
+    
+}
+country_event = {
+    id = ecu.37
+    days = 450
+    random_days = 45
+    
+}
+country_event = {
+    id = ecu.38
+    days = 1164
+    
+}
+set_politics = {
+    ruling_party = social_conservative
+    election_frequency = 60
+    last_election = "1931.8.15"
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 1
+    radical_socialist = 2
+    syndicalist = 1
+    social_democrat = 13
+    social_liberal = 8
+    market_liberal = 20
+    social_conservative = 37
+    authoritarian_democrat = 16
+    paternal_autocrat = 2
+    national_populist = 0
+    
+}
+set_convoys = 30
+recruit_character = ECU_carlos_mancheno_cajas
+recruit_character = ECU_alberto_enriquez_gallo
+recruit_character = ECU_jose_maria_velasco_ibarra
+recruit_character = ECU_carlos_julio_arosemena_tola
+recruit_character = ECU_antonio_pons_campuzano
+recruit_character = ECU_naptali_bonifaz_ascaszubi
+recruit_character = ECU_mariano_suarez_veintimilla
+recruit_character = ECU_isidro_ramon_antonio_ayora_cueva
+recruit_character = ECU_carlos_alberto_arroyo_del_rio
+recruit_character = ECU_andres_fernandez_de_cordova_nieto
+recruit_character = ECU_alfredo_baquerizo_moreno
+recruit_character = ECU_federico_paez_chiriboaga
+recruit_character = ECU_nela_martinez_espinosa
+recruit_character = ECU_ricardo_paredes_romero
+recruit_character = ECU_dolores_caucango_quilo
+recruit_character = ECU_francisco_urrutia_suarez
+recruit_character = ECU_cesar_edmundo_chiribonga_gonzalez
+recruit_character = ECU_hugo_ortiz_garces
+recruit_character = ECU_luis_alberto_larrea_alba
+recruit_character = ECU_rafael_moran_valverde
+recruit_character = ECU_victor_emilio_estrada
+recruit_character = ECU_matilde_hidalgo
+recruit_character = ECU_luisa_gomez_de_la_torre_paez
+recruit_character = ECU_augusto_nicolas_martinez
+recruit_character = ECU_leopoldo_benites
+recruit_character = ECU_antonio_parra_velasco
+recruit_character = ECU_bayardo_tovar
+recruit_character = ECU_cosimo_rennella
+recruit_character = ECU_juan_ramon_castro
+recruit_character = ECU_victor_leonidas_naranjo_fiallo
+recruit_character = ECU_cabrera_sevilla_gral_luis
+recruit_character = ECU_hugo_endara_penaherrera
+recruit_character = ECU_juan_de_dios_martinez
+recruit_character = ECU_congreso_nacional_de_ecuador
+activate_advisor = ECU_congreso_nacional_de_ecuador_sic

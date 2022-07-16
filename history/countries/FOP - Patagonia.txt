@@ -1,0 +1,228 @@
+capital = 512
+oob = "FOP"
+set_naval_oob = "FOP_naval"
+set_research_slots = 2
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_recon = 1
+    gw_artillery = 1
+    early_fighter = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_submarine = 1
+        basic_torpedo = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_submarine = 1
+        
+    }
+    
+}
+set_cosmetic_tag = FOP_WIN_ARG
+add_offsite_building = {
+    type = dockyard
+    level = 1
+    
+}
+set_variable = {
+    fop_im_factor = 100
+    
+}
+set_war_support = 0.3
+set_stability = 0.15
+set_politics = {
+    ruling_party = syndicalist
+    last_election = "1934.2.2"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 20
+    radical_socialist = 24
+    syndicalist = 29
+    social_democrat = 10
+    social_liberal = 1
+    market_liberal = 2
+    social_conservative = 1
+    authoritarian_democrat = 8
+    paternal_autocrat = 5
+    national_populist = 0
+    
+}
+country_event = {
+    id = fopintro.1
+    days = 1
+    
+}
+country_event = {
+    id = fop.6
+    days = 60
+    
+}
+country_event = {
+    id = fop.104
+    days = 600
+    random = 576
+    
+}
+country_event = {
+    id = fop.39
+    months = 13
+    
+}
+URG = {
+    country_event = {
+        id = arg_flavour.2
+        days = 415
+        
+    }
+    
+}
+country_event = {
+    id = arg_flavour.2
+    days = 415
+    
+}
+country_event = {
+    id = arg_flavour.3
+    days = 779
+    
+}
+country_event = {
+    id = arg_flavour.9
+    days = 888
+    
+}
+country_event = {
+    id = arg_flavour.10
+    days = 1001
+    
+}
+country_event = {
+    id = arg_flavour.11
+    days = 1145
+    
+}
+country_event = {
+    id = arg_flavour.13
+    days = 1430
+    
+}
+country_event = {
+    id = arg_flavour.14
+    days = 1606
+    
+}
+country_event = {
+    id = arg_flavour.15
+    days = 1706
+    
+}
+country_event = {
+    id = arg_flavour.16
+    days = 2010
+    
+}
+country_event = {
+    id = arg_flavour.17
+    days = 2190
+    
+}
+country_event = {
+    id = arg_flavour.18
+    days = 2315
+    
+}
+add_ideas = {
+    partial_economic_mobilisation
+    extensive_conscription
+    FOP_patagonian_resistance
+    FOP_illegitimate_republic
+    
+}
+recruit_character = FOP_rodolfo_ghioldi
+recruit_character = FOP_antonio_soto
+recruit_character = FOP_severino_di_giovanni
+recruit_character = FOP_baldomero_ugarte
+recruit_character = FOP_alfredo_palacios
+recruit_character = FOP_jacques_antoine_bernard
+recruit_character = FOP_liborio_justo
+recruit_character = FOP_paulina_mansurova
+recruit_character = FOP_miguel_roscigna
+recruit_character = FOP_marc_augier
+recruit_character = FOP_umberto_lanciotti
+recruit_character = FOP_kurt_gustav
+recruit_character = FOP_esteban_luchich
+recruit_character = FOP_micaela_feldman
+recruit_character = FOP_juan_moran
+recruit_character = FOP_luis_alberto_quesada
+recruit_character = FOP_guillermo_mac_hannaford
+recruit_character = FOP_leonidas_barletta
+recruit_character = FOP_candido_testa
+recruit_character = FOP_alvaro_yunque
+recruit_character = FOP_rodolfo_gonzalez_pacheco
+recruit_character = FOP_roberto_noble
+recruit_character = FOP_geronimo_arnedo_alvarez
+recruit_character = FOP_diego_abad_de_santillan
+recruit_character = FOP_antonio_de_tomaso
+recruit_character = FOP_gregorio_bermann
+every_character = {
+    limit = {
+        OR = {
+            is_advisor = yes
+            is_unit_leader = yes
+            
+        }
+        
+    }
+    set_character_flag = FOP_leader
+    
+}

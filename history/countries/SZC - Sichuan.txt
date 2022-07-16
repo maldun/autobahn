@@ -1,0 +1,227 @@
+capital = 605
+oob = "SZC"
+set_stability = 0.1
+set_war_support = 0.3
+set_research_slots = 2
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_mountaineers = 1
+    tech_engineers = 1
+    tech_recon = 1
+    gw_artillery = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+set_politics = {
+    ruling_party = authoritarian_democrat
+    last_election = "1930.11.9"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    syndicalist = 0
+    radical_socialist = 0
+    social_democrat = 2
+    social_liberal = 2
+    market_liberal = 16
+    social_conservative = 20
+    authoritarian_democrat = 18
+    paternal_autocrat = 42
+    national_populist = 0
+    
+}
+add_ideas = {
+    SZC_baoding_influence
+    SZC_internal_divisions
+    SZC_famine_danger
+    
+}
+country_lock_all_division_template = yes
+add_offsite_building = {
+    type = industrial_complex
+    level = 2
+    
+}
+add_offsite_building = {
+    type = arms_factory
+    level = 2
+    
+}
+country_event = {
+    id = sichuan.1
+    hours = 2
+    
+}
+country_event = {
+    id = sichuan.120
+    days = 48
+    random = 432
+    
+}
+country_event = {
+    id = sichuan.125
+    days = 451
+    random = 288
+    
+}
+recruit_character = SZC_zhang_lan
+recruit_character = SZC_lu_chao
+recruit_character = SZC_xiong_kewu
+recruit_character = SZC_liu_wenhui
+recruit_character = SZC_deng_xihou
+recruit_character = SZC_yang_sen
+recruit_character = SZC_liu_cunhou
+recruit_character = SZC_liu_xiang
+recruit_character = SZC_fan_shaozeng
+recruit_character = SZC_wang_lingji
+recruit_character = SZC_he_guoguang
+recruit_character = SZC_wang_zuanxu
+recruit_character = SZC_tian_songyao
+recruit_character = SZC_pan_wenhua
+recruit_character = SZC_liu_bocheng
+recruit_character = SZC_lu_zuofu
+recruit_character = SZC_ba_jin
+recruit_character = SZC_luo_ruiqing
+recruit_character = SZC_zhou_conghua
+recruit_character = SZC_li_jiayu
+recruit_character = SZC_tang_chun_i
+recruit_character = SZC_luo_zezhou
+recruit_character = SZC_zhao_weibin
+recruit_character = SZC_xu_guozhang
+recruit_character = SZC_wang_mingzhang
+recruit_character = SZC_guo_xunqi
+recruit_character = SZC_zheng_shaoyu
+recruit_character = SZC_yue_yiqin
+recruit_character = SZC_yang_shukan
+random_character = {
+    limit = {
+        is_character = SZC_yang_sen
+        
+    }
+    set_character_flag = SZC_armament_leader
+    save_global_event_target_as = SZC_Yang_Sen
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_liu_cunhou
+        
+    }
+    set_character_flag = SZC_armament_leader
+    save_global_event_target_as = SZC_Liu_Cunhou
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_fan_shaozeng
+        
+    }
+    set_character_flag = SZC_armament_leader
+    save_global_event_target_as = SZC_Fan_Shaozeng
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_wang_lingji
+        
+    }
+    set_character_flag = SZC_armament_leader
+    save_global_event_target_as = SZC_Wang_Lingji
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_he_guoguang
+        
+    }
+    set_character_flag = SZC_armament_leader
+    save_global_event_target_as = SZC_He_Guoguang
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_deng_xihou
+        
+    }
+    save_global_event_target_as = SZC_Deng_Xihou
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_liu_wenhui
+        
+    }
+    save_global_event_target_as = SZC_Liu_Wenhui
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_wang_zuanxu
+        
+    }
+    save_global_event_target_as = SZC_Wang_Zuanxu
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_tian_songyao
+        
+    }
+    save_global_event_target_as = SZC_Tian_Songyao
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_liu_xiang
+        
+    }
+    set_character_flag = SZC_industrial_leader
+    save_global_event_target_as = SZC_Liu_Xiang
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_pan_wenhua
+        
+    }
+    set_character_flag = SZC_industrial_leader
+    save_global_event_target_as = SZC_Pan_Wenhua
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_lu_chao
+        
+    }
+    set_character_flag = SZC_officer_leader
+    set_character_flag = CHI_original_unit_leader
+    save_global_event_target_as = SZC_Lu_Chao
+    retire = yes
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_xiong_kewu
+        
+    }
+    set_character_flag = SZC_officer_leader
+    set_character_flag = CHI_original_unit_leader
+    save_global_event_target_as = SZC_Xiong_Kewu
+    retire = yes
+    
+}
+random_character = {
+    limit = {
+        is_character = SZC_liu_bocheng
+        
+    }
+    set_character_flag = SZC_officer_leader
+    set_character_flag = CHI_original_unit_leader
+    save_global_event_target_as = SZC_Liu_Bocheng
+    retire = yes
+    
+}

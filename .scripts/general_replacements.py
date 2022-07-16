@@ -14,7 +14,7 @@ KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426
 RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
 
 # Set for mod in question
-KX = True
+KX = False
 
 OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_diff"
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
@@ -89,7 +89,8 @@ def ideology_map():
         maps.append([[has_key_and_val, [key, [val]]], [remove, [key, [val]]]])
     val = "TUR"
     val2 = "OTT"
-    maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
+    if KX is True:
+        maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
 
     # Add RadSoc when anarchist Commune is there
     val = ['has_country_leader', [['name', ['"Anarchist Commune"']], ['ruling_only', [True]]]]
@@ -211,6 +212,6 @@ if __name__ == "__main__":
     maps = ideology_map()
     apply_ideology_map(maps)
     maps = remove_obsolete_equipment_maps()
-    country_maps = apply_equipment_table("KX_equipment.csv")
+    country_maps = apply_equipment_table("equipment.csv")
     apply_equipment_maps(maps, country_maps)
     

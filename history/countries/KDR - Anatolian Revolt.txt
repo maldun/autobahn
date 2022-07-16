@@ -1,0 +1,38 @@
+capital = 354
+set_technology = {
+    infantry_weapons = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+set_research_slots = 2
+set_politics = {
+    ruling_party = national_populist
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+add_ideas = {
+    partial_economic_mobilisation
+    limited_exports
+    extensive_conscription
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 0
+    social_liberal = 0
+    market_liberal = 0
+    social_conservative = 7
+    authoritarian_democrat = 33
+    paternal_autocrat = 22
+    national_populist = 38
+    
+}
+recruit_character = KDR_selahaddin_efendi
+recruit_character = KDR_xalid_bege_cibiri
+recruit_character = KDR_xalis_bege_sipki
+recruit_character = KDR_mehmed_vehip_pasha

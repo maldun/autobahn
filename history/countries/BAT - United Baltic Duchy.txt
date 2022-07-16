@@ -1,0 +1,345 @@
+capital = 842
+set_stability = 0.3
+set_war_support = 0.4
+set_research_slots = 3
+oob = "BAT"
+set_naval_oob = "BAT_naval"
+set_convoys = 30
+starting_train_buffer = 0.5
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
+    motorised_infantry = 1
+    gw_artillery = 1
+    early_fighter = 1
+    early_bomber = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    r56_guerilla_warfare = 1
+    r56_militia_tech = 1
+    r56_railway_mortar_subtech = 1
+    shocktroops = 1
+    sniper_rifle = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        basic_light_tank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        basic_light_tank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        basic_naval_mines = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_battleship = 1
+        
+    }
+    
+}
+add_ideas = {
+    BAT_byzantine_government
+    BAT_landeswehr
+    BAT_emigration
+    volunteer_only
+    
+}
+country_event = {
+    id = KRBAT.1
+    hours = 2
+    
+}
+country_event = {
+    id = KRBAT.6
+    days = 18
+    
+}
+country_event = {
+    id = KRBAT.44
+    days = 24
+    
+}
+country_event = {
+    id = KRBAT.65
+    days = 1000
+    random_days = 60
+    
+}
+country_event = {
+    id = KRBAT.34
+    days = 1460
+    random_days = 100
+    
+}
+country_event = {
+    id = KRBAT.36
+    days = 960
+    random_days = 200
+    
+}
+country_event = {
+    id = KRBAT.37
+    days = 3900
+    random_days = 15
+    
+}
+country_event = {
+    id = KRBAT.82
+    days = 600
+    random_days = 30
+    
+}
+country_event = {
+    id = KRBAT.83
+    days = 309
+    
+}
+country_event = {
+    id = KRBAT.84
+    days = 54
+    
+}
+country_event = {
+    id = KRBAT.85
+    days = 610
+    
+}
+country_event = {
+    id = KRBAT.87
+    days = 420
+    
+}
+country_event = {
+    id = KRBAT.91
+    days = 3096
+    
+}
+country_event = {
+    id = KRBAT.118
+    days = 1000
+    random_days = 60
+    
+}
+RUS = {
+    country_event = {
+        id = KRBAT.115
+        days = 180
+        random_days = 30
+        
+    }
+    
+}
+GER = {
+    set_autonomy = {
+        target = BAT
+        autonomy_state = kr_oststaat
+        
+    }
+    
+}
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 0
+    radical_socialist = 0
+    syndicalist = 0
+    social_democrat = 5
+    social_liberal = 32
+    market_liberal = 8
+    social_conservative = 13
+    authoritarian_democrat = 14
+    paternal_autocrat = 25
+    national_populist = 3
+    
+}
+recruit_character = LAT_jekabs_peterss
+recruit_character = LAT_ernests_morics
+recruit_character = LAT_pauls_kalnins
+recruit_character = BAT_inner_circle
+recruit_character = BAT_adolf_friedrich
+recruit_character = BAT_max_von_scheubner_richter
+recruit_character = BAT_helmuth_stegman
+recruit_character = BAT_wilhelm_munter
+recruit_character = BAT_rudiger_von_der_goltz
+recruit_character = BAT_harry_lutz
+recruit_character = BAT_wessel_von_loringhoven
+recruit_character = BAT_ernst_von_nolcken
+recruit_character = BAT_heinrich_von_behr
+recruit_character = BAT_constantin_von_weiss
+recruit_character = BAT_hans_von_manteuffel_szoege
+recruit_character = BAT_otto_goldfeld
+recruit_character = BAT_alexander_von_salza
+recruit_character = BAT_adam_friedrich_von_gernet
+recruit_character = EST_johan_pitka
+recruit_character = BAT_friedrich_von_samson_himmelstjerna
+recruit_character = BAT_axel_von_freytagh_loringhoven
+recruit_character = BAT_otto_von_kursell
+recruit_character = BAT_edwin_magnus
+recruit_character = BAT_ewald_ammende
+recruit_character = BAT_arno_schickedanz
+activate_advisor = BAT_friedrich_von_samson_himmelstjerna_sic
+recruit_character = BAT_paul_schiemann
+recruit_character = BAT_heinrich_von_stackelberg
+recruit_character = BAT_wilhelm_robert_von_bulmerincq
+recruit_character = BAT_baltische_landeswehrkommission
+recruit_character = BAT_rolf_von_ungern_sternberg
+activate_advisor = BAT_rolf_von_ungern_sternberg
+recruit_character = BAT_hermann_von_keyserling
+recruit_character = BAT_adolf_constantin_pilar_von_pilchau
+activate_advisor = BAT_adolf_constantin_pilar_von_pilchau
+recruit_character = BAT_the_inner_circle
+recruit_character = BAT_bernhard_bielenstein
+recruit_character = BAT_wolf_kirstein
+recruit_character = BAT_gerhard_buschmann
+random_character = {
+    limit = {
+        is_character = LAT_jekabs_peterss
+        
+    }
+    save_global_event_target_as = LAT_jekabs_peterss_target
+    
+}
+random_character = {
+    limit = {
+        is_character = LAT_ernests_morics
+        
+    }
+    save_global_event_target_as = LAT_ernests_morics_target
+    
+}
+random_character = {
+    limit = {
+        is_character = LAT_pauls_kalnins
+        
+    }
+    save_global_event_target_as = LAT_pauls_kalnins_target
+    
+}
+random_character = {
+    limit = {
+        is_character = BAT_rudiger_von_der_goltz
+        
+    }
+    save_global_event_target_as = BAT_rudiger_von_der_goltz_target
+    
+}
+random_character = {
+    limit = {
+        is_character = BAT_harry_lutz
+        
+    }
+    save_global_event_target_as = BAT_harry_lutz_target
+    
+}
+random_character = {
+    limit = {
+        is_character = BAT_wessel_von_loringhoven
+        
+    }
+    save_global_event_target_as = BAT_wessel_von_loringhoven_target
+    
+}
+random_character = {
+    limit = {
+        is_character = BAT_heinrich_von_behr
+        
+    }
+    save_global_event_target_as = BAT_heinrich_von_behr_target
+    
+}
+random_character = {
+    limit = {
+        is_character = BAT_ernst_von_nolcken
+        
+    }
+    save_global_event_target_as = BAT_ernst_von_nolcken_target
+    
+}
+random_character = {
+    limit = {
+        is_character = BAT_hans_von_manteuffel_szoege
+        
+    }
+    save_global_event_target_as = BAT_hans_von_manteuffel_szoege_target
+    
+}
+random_character = {
+    limit = {
+        is_character = BAT_otto_goldfeld
+        
+    }
+    save_global_event_target_as = BAT_otto_goldfeld_target
+    
+}
+random_character = {
+    limit = {
+        is_character = EST_johan_pitka
+        
+    }
+    save_global_event_target_as = EST_johan_pitka_target
+    
+}

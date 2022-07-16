@@ -1,0 +1,310 @@
+capital = 47
+oob = "GRE"
+set_naval_oob = "GRE_naval"
+set_research_slots = 3
+starting_train_buffer = 1
+set_technology = {
+    infantry_weapons = 1
+    gw_artillery = 1
+    tech_support = 1
+    tech_recon = 1
+    early_fighter = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "No Step Back"
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "No Step Back"
+            
+        }
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        basic_ship_hull_cruiser = 1
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_heavy = 1
+        basic_depth_charges = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        basic_light_battery = 1
+        basic_secondary_battery = 1
+        basic_naval_mines = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        basic_destroyer = 1
+        early_light_cruiser = 1
+        basic_light_cruiser = 1
+        early_submarine = 1
+        basic_submarine = 1
+        early_heavy_cruiser = 1
+        basic_heavy_cruiser = 1
+        early_battleship = 1
+        transport = 1
+        
+    }
+    
+}
+set_convoys = 40
+set_stability = 0.35
+set_war_support = 0.2
+add_ideas = {
+    GRE_foreign_industry_GER1
+    GRE_foreign_industry_AUS1
+    GRE_memories_of_king
+    GRE_legacy_of_alexander_idea
+    
+}
+country_event = {
+    id = gre.1
+    days = 1
+    
+}
+country_event = {
+    id = gre.3
+    days = 85
+    
+}
+country_event = {
+    id = gre.24
+    days = 137
+    
+}
+country_event = {
+    id = gre.20
+    days = 763
+    random_days = 100
+    
+}
+country_event = {
+    id = gre.21
+    days = 1553
+    random_days = 100
+    
+}
+country_event = {
+    id = gre.19
+    days = 1855
+    
+}
+country_event = {
+    id = gre.23
+    days = 4912
+    
+}
+set_politics = {
+    ruling_party = social_liberal
+    last_election = "1934.1.26"
+    election_frequency = 48
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 2
+    radical_socialist = 5
+    syndicalist = 0
+    social_democrat = 14
+    social_liberal = 36
+    market_liberal = 10
+    social_conservative = 21
+    authoritarian_democrat = 6
+    paternal_autocrat = 5
+    national_populist = 1
+    
+}
+set_country_flag = {
+    flag = gre_monarchist_sympathies
+    value = 0
+    
+}
+recruit_character = GRE_athanasios_klaras
+recruit_character = GRE_georgios_siantos
+recruit_character = GRE_nikos_zachariadis
+recruit_character = GRE_konstantinos_speras
+recruit_character = GRE_nikos_beloyannis
+recruit_character = GRE_kostas_gavriilides
+recruit_character = GRE_nikos_ploumpidis
+recruit_character = GRE_alexandros_papanastasiou
+recruit_character = GRE_nikolaos_plastiras
+recruit_character = GRE_georgios_papandreou
+recruit_character = GRE_panagiotis_kanellopoulos
+recruit_character = GRE_themistoklis_sofoulis
+recruit_character = GRE_konstantinos_tsatsos
+recruit_character = GRE_panagis_tsaldaris
+recruit_character = GRE_konstantinos_tsaldaris
+recruit_character = GRE_alexandros_papagos
+recruit_character = GRE_christodoulos_tsigantes
+recruit_character = GRE_ioannis_metaxas
+recruit_character = GRE_alexandros_koryzis
+recruit_character = GRE_georgios_mercouris
+recruit_character = GRE_alexandros_glyksbourg
+recruit_character = GRE_georgios_glyksbourg
+recruit_character = GRE_pavlos_glyksbourg
+recruit_character = GRE_vouli_ton_ellinon
+activate_advisor = GRE_vouli_ton_ellinon_sic
+recruit_character = GRE_emmanouil_tsouderos
+recruit_character = GRE_georgios_tsolakoglou
+recruit_character = GRE_georgios_athanasiadis_novas
+recruit_character = GRE_agamemnon_schliemann
+recruit_character = GRE_sotirios_gotzamanis
+recruit_character = GRE_evangelos_averoff
+recruit_character = GRE_aristeidis_dimitratos
+recruit_character = GRE_stylianos_gonatas
+recruit_character = GRE_markos_vafeiadis
+recruit_character = GRE_charilaos_florakis
+recruit_character = GRE_angelos_evert
+recruit_character = GRE_napoleon_zervas
+recruit_character = GRE_manolis_mantakas
+recruit_character = GRE_konstantinos_bakopoulos
+recruit_character = GRE_georgios_grivas
+recruit_character = GRE_dimitrios_psarros
+recruit_character = GRE_vasileios_vrachnos
+recruit_character = GRE_konstantinos_davakis
+recruit_character = GRE_stefanos_sarafis
+recruit_character = GRE_alexandros_sakellariou
+recruit_character = GRE_petros_voulgaris
+recruit_character = GRE_ioannis_toumbas
+recruit_character = GRE_antonis_mezeviris
+recruit_character = GRE_stylianos_lykoudis
+recruit_character = GRE_konstantinos_mazarakis_ainian
+recruit_character = GRE_aristeidis_chasapidis
+recruit_character = GRE_markos_drakos
+recruit_character = GRE_konstantinos_manetas
+recruit_character = GRE_sofoklis_dousmanis
+recruit_character = GRE_alexandros_hatzikyriakos
+recruit_character = GRE_spyridon_avgeris
+recruit_character = GRE_christos_adamidis
+recruit_character = GRE_michael_moutoussis
+recruit_character = GRE_kostas_perrikos
+random_character = {
+    limit = {
+        is_character = GRE_alexandros_papagos
+        
+    }
+    save_global_event_target_as = GRE_alexandros_papagos_target
+    set_character_flag = GRE_royalist
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_napoleon_zervas
+        
+    }
+    save_global_event_target_as = GRE_napoleon_zervas_target
+    set_character_flag = GRE_royalist
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_georgios_grivas
+        
+    }
+    save_global_event_target_as = GRE_georgios_grivas_target
+    set_character_flag = GRE_royalist
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_georgios_siantos
+        
+    }
+    save_global_event_target_as = GRE_georgios_siantos_target
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_konstantinos_speras
+        
+    }
+    save_global_event_target_as = GRE_konstantinos_speras_target
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_athanasios_klaras
+        
+    }
+    save_global_event_target_as = GRE_athanasios_klaras_target
+    set_character_flag = GRE_socialist
+    retire = yes
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_stefanos_sarafis
+        
+    }
+    save_global_event_target_as = GRE_stefanos_sarafis_target
+    set_character_flag = GRE_socialist
+    retire = yes
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_alexandros_glyksbourg
+        
+    }
+    save_global_event_target_as = GRE_alexandros_glyksbourg_target
+    retire = yes
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_georgios_glyksbourg
+        
+    }
+    save_global_event_target_as = GRE_georgios_glyksbourg_target
+    retire = yes
+    
+}
+random_character = {
+    limit = {
+        is_character = GRE_pavlos_glyksbourg
+        
+    }
+    save_global_event_target_as = GRE_pavlos_glyksbourg_target
+    retire = yes
+    
+}

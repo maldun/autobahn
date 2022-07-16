@@ -1,0 +1,50 @@
+capital = 70
+set_technology = {
+    infantry_weapons = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+set_research_slots = 3
+set_politics = {
+    ruling_party = social_democrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 3
+    radical_socialist = 10
+    syndicalist = 15
+    social_democrat = 47
+    social_liberal = 11
+    market_liberal = 6
+    social_conservative = 5
+    authoritarian_democrat = 2
+    paternal_autocrat = 1
+    national_populist = 0
+    
+}
+set_stability = 0.6
+recruit_character = SLO_milan_hodza
+recruit_character = SLO_ferdinand_catlos
+recruit_character = SLO_jan_golian
+recruit_character = SLO_stefan_jurech
+recruit_character = SLO_augustin_malar
+recruit_character = SLO_josef_snejdarek
+recruit_character = SLO_mikulas_ferjencik
+recruit_character = SLO_viliam_zingor
+recruit_character = SLO_army_reform_group
+recruit_character = SLO_jan_reznak
+recruit_character = SLO_jozef_turanec
+recruit_character = SLO_rudolf_viest
+recruit_character = SLO_martin_razus
+recruit_character = SLO_emil_stodola
+recruit_character = SLO_ivan_derer
+recruit_character = SLO_vavro_srobar
+recruit_character = SLO_vojtech_tuka
+recruit_character = SLO_andrej_hlinka
+recruit_character = SLO_jan_sverma
+recruit_character = SLO_karol_smidke

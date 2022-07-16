@@ -1,0 +1,128 @@
+capital = 302
+oob = "BOL"
+set_research_slots = 2
+add_ideas = {
+    BOL_Trash_Army
+    BOL_Struggling_Economy
+    
+}
+country_event = {
+    id = bol.1
+    days = 1
+    
+}
+country_event = {
+    id = bol.6
+    days = 30
+    
+}
+country_event = {
+    id = bol.7
+    days = 200
+    random = 1000
+    
+}
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    early_fighter = 1
+    camo = 1
+    etax_doctrine = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_naval_mines = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "Man the Guns"
+            
+        }
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        transport = 1
+        
+    }
+    
+}
+PAR = {
+    embargo_ROOT = yes
+    
+}
+set_politics = {
+    ruling_party = paternal_autocrat
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 2
+    radical_socialist = 0
+    syndicalist = 8
+    social_democrat = 7
+    social_liberal = 3
+    market_liberal = 19
+    social_conservative = 15
+    authoritarian_democrat = 0
+    paternal_autocrat = 42
+    national_populist = 4
+    
+}
+set_stability = 0.4
+set_war_support = 0.3
+activate_targeted_decision = {
+    target = PAR
+    decision = BOL_kill_PAR
+    
+}
+activate_targeted_decision = {
+    target = CHL
+    decision = BOL_kill_CHL
+    
+}
+recruit_character = BOL_bernardino_bilbao_rioja
+recruit_character = BOL_german_busch_becerra
+recruit_character = BOL_carlos_quintanilla_quiroga
+recruit_character = BOL_mamerto_urriolagoitia_harriague
+recruit_character = BOL_enrique_hertzog
+recruit_character = BOL_simon_iturri_patino
+recruit_character = BOL_alcides_arguedas
+recruit_character = BOL_enrique_penaranda_castillo
+recruit_character = BOL_victor_paz_estenssoro
+recruit_character = BOL_francisco_javier_del_granado_y_granado
+recruit_character = BOL_hernan_siles_zuazo
+recruit_character = BOL_franz_tamayo_solares
+recruit_character = BOL_jose_antonio_arze_y_arze
+recruit_character = BOL_daniel_sanchez_bustamante
+recruit_character = BOL_carlos_salazar_mostajo
+recruit_character = BOL_angel_ayora
+recruit_character = BOL_gualberto_villarroel_lopez
+recruit_character = BOL_manuel_marzana
+recruit_character = BOL_walter_guevara
+recruit_character = BOL_carlos_montenegro
+recruit_character = BOL_moritz_hochschild
+recruit_character = BOL_hugo_ballivian
+recruit_character = BOL_amalia_villa_de_la_tapia
+recruit_character = BOL_ronan_monje_roca
+recruit_character = BOL_palacio_quemado
+activate_advisor = BOL_palacio_quemado_sic

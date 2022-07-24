@@ -220,7 +220,7 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = georgism_subtype
     traits = {
-        captain_of_industry
+        PSA_inward_reformer
         
     }
     
@@ -232,7 +232,7 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = centrist_subtype
     traits = {
-        backroom_backstabber
+        PSA_crusader_of_justice
         
     }
     
@@ -256,7 +256,7 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = liberal_conservative_subtype
     traits = {
-        prince_of_terror
+        PSA_champion_of_the_establishment
         
     }
     
@@ -268,7 +268,7 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = radical_progressivism_subtype
     traits = {
-        author
+        PSA_an_end_to_poverty
         
     }
     

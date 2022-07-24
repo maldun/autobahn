@@ -32,11 +32,6 @@ ICE = {
         days = 104
         
     }
-    country_event = {
-        id = ice.250
-        days = 505
-        
-    }
     
 }
 set_technology = {

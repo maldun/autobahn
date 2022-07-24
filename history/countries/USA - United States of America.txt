@@ -50,8 +50,6 @@ set_technology = {
     CAS1 = 1
     cv_early_fighter = 1
     cv_CAS1 = 1
-    
-    # RT56 tech
     aluminum_production_1 = 1
     camo = 1
     etax_doctrine = 1

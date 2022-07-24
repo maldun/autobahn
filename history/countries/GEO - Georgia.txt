@@ -98,12 +98,18 @@ country_event = {
     days = 510
     
 }
+country_event = {
+    id = geo.126
+    days = 1461
+    random = 5000
+    
+}
 create_country_leader = {
     name = "Leo Shengelaia"
     desc = "POLITICS_LEO_SHENGELAIA_DESC"
     picture = "gfx/leaders/GEO/Portrait_GEO_Leo_Shengelaia.png"
     expire = "1965.1.1"
-    ideology = agrarian_socialism_subtype
+    ideology = narodism_subtype
     
 }
 create_country_leader = {

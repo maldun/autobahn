@@ -492,11 +492,6 @@ country_event = {
     
 }
 country_event = {
-    id = rusd.113
-    days = 1154
-    
-}
-country_event = {
     id = rusd.114
     days = 1789
     
@@ -701,10 +696,6 @@ set_variable = {
     value = 0.25
     
 }
-RUS_setup_initial_state_popularities = yes
-RUS_Get_Lower_House_Array = yes
-RUS_setup_initial_senate = yes
-RUS_Get_Senate_Elections_Array = yes
 set_variable = {
     var = additional_popular_support
     value = 0
@@ -738,6 +729,10 @@ set_popularities = {
     national_populist = 27
     
 }
+RUS_setup_initial_state_popularities = yes
+RUS_Get_Lower_House_Array = yes
+RUS_setup_initial_senate = yes
+RUS_Get_Senate_Elections_Array = yes
 set_autonomy = {
     target = ALO
     autonomous_state = kr_integrated_puppet
@@ -858,7 +853,7 @@ create_country_leader = {
     desc = "POLITICS_ALEXANDER_KERENSKY_DESC"
     picture = "gfx/leaders/RUS/Portrait_RUS_Alexander_Kerensky.png"
     expire = "1965.1.1"
-    ideology = centrist_subtype
+    ideology = soclib_narodism_subtype
     
 }
 create_country_leader = {
@@ -1863,7 +1858,7 @@ random_unit_leader = {
     save_global_event_target_as = RUS_Leonid_Govorov
     
 }
-random_unit_leader = {
+random_navy_leader = {
     limit = {
         has_id = 17892
         
@@ -1873,7 +1868,7 @@ random_unit_leader = {
     set_nationality = RUS
     
 }
-random_unit_leader = {
+random_navy_leader = {
     limit = {
         has_id = 17893
         
@@ -1883,7 +1878,7 @@ random_unit_leader = {
     set_nationality = RUS
     
 }
-random_unit_leader = {
+random_navy_leader = {
     limit = {
         has_id = 497
         
@@ -1893,7 +1888,7 @@ random_unit_leader = {
     set_nationality = RUS
     
 }
-random_unit_leader = {
+random_navy_leader = {
     limit = {
         has_id = 495
         

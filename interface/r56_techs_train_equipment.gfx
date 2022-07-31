@@ -219,17 +219,17 @@ spriteTypes = {
 	}
 	#-> SOV <><>
 	SpriteType = {
-		name = "GFX_SOV_train_equipment_1_medium"
+		name = "GFX_RUS_train_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_SOV_train_equipment_2_medium"
+		name = "GFX_RUS_train_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/SOV_train_equipment_2.dds"
 	}
 
 	SpriteType = { #stand in
-		name = "GFX_SOV_train_equipment_5_medium"
+		name = "GFX_RUS_train_equipment_5_medium"
 		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_train_equipment_diesel_eng.dds"
 	}
 

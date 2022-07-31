@@ -234,7 +234,7 @@ spriteTypes = {
 	
 	#-> SOV <><>
 	SpriteType = { #stand in
-		name = "GFX_SOV_r56_postwar_train_medium"
+		name = "GFX_RUS_r56_postwar_train_medium"
 		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_train_equipment_diesel_eng.dds"
 	}
 

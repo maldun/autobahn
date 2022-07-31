@@ -165,10 +165,10 @@ spriteTypes = {
 	SpriteType = { name = "GFX_POL_armored_car3_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_POL_armored_car_03.dds" }
 	SpriteType = { name = "GFX_POL_armored_car_at_upgrade_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_POL_armored_car_04.dds" }
 	
-	SpriteType = { name = "GFX_SOV_armored_car1_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_01.dds" }
-	SpriteType = { name = "GFX_SOV_armored_car2_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_02.dds" }
-	SpriteType = { name = "GFX_SOV_armored_car3_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_03.dds" }
-	SpriteType = { name = "GFX_SOV_armored_car_at_upgrade_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_04.dds" }
+	SpriteType = { name = "GFX_RUS_armored_car1_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_01.dds" }
+	SpriteType = { name = "GFX_RUS_armored_car2_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_02.dds" }
+	SpriteType = { name = "GFX_RUS_armored_car3_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_03.dds" }
+	SpriteType = { name = "GFX_RUS_armored_car_at_upgrade_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_04.dds" }
 	
 	SpriteType = { name = "GFX_MON_armored_car1_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_01.dds" }
 	SpriteType = { name = "GFX_MON_armored_car2_medium" texturefile = "gfx/interface/technologies/armored_car/r56_tech_SOV_armored_car_02.dds" }

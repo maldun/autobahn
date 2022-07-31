@@ -154,19 +154,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/electronics/r56_tech_GER_guided_missile_04.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_guided_missile_equipment_1_medium"
+		name = "GFX_RUS_guided_missile_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/electronics/r56_tech_SOV_guided_missile_01.dds"
 	}	
 	SpriteType = {
-		name = "GFX_SOV_guided_missile_equipment_2_medium"
+		name = "GFX_RUS_guided_missile_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/electronics/r56_tech_SOV_guided_missile_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_guided_missile_equipment_3_medium"
+		name = "GFX_RUS_guided_missile_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/electronics/r56_tech_SOV_guided_missile_03.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_guided_missile_equipment_4_medium"
+		name = "GFX_RUS_guided_missile_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/electronics/r56_tech_SOV_guided_missile_04.dds"
 	}
 	SpriteType = {

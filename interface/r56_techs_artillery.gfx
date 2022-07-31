@@ -870,21 +870,21 @@ spriteTypes = {
 	SpriteType = { name = "GFX_ROM_rocket_artillery_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_01_GEN_28cm.dds" }
 	SpriteType = { name = "GFX_ROM_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_GEN_21cm.dds" }
 
-	SpriteType = { name = "GFX_SOV_gw_artillery_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_01_SOV_M1930.dds" }
-	SpriteType = { name = "GFX_SOV_artillery1_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_02_SOV_M1936.dds" }
-	SpriteType = { name = "GFX_SOV_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_03_SOV_M1942.dds" }
-	SpriteType = { name = "GFX_SOV_artillery_b_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_04_SOV_D44.dds" }
-	SpriteType = { name = "GFX_SOV_interwar_antitank_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_01_SOV_45mm.dds" }
-	SpriteType = { name = "GFX_SOV_antitank2_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_02_SOV_45mm.dds" }
-	SpriteType = { name = "GFX_SOV_antitank5_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_02_SOV_57mm.dds" }
-	SpriteType = { name = "GFX_SOV_antitank_c_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_04_SOV_ATGM.dds" }
-	SpriteType = { name = "GFX_SOV_interwar_antiair_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_01_SOV_25mm.dds" }
-	SpriteType = { name = "GFX_SOV_antiair2_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_02_SOV_37mm.dds" }
-	SpriteType = { name = "GFX_SOV_antiair5_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_03_SOV_25mm.dds" }
-	SpriteType = { name = "GFX_SOV_antiair_c_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_03_SOV_57mm.dds" }	
-	SpriteType = { name = "GFX_SOV_rocket_artillery_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_01_SOV_86.dds" }
-	SpriteType = { name = "GFX_SOV_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_SOV_300.dds" }
-	SpriteType = { name = "GFX_SOV_rocket_artillery_c_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_SOV_300.dds" }
+	SpriteType = { name = "GFX_RUS_gw_artillery_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_01_SOV_M1930.dds" }
+	SpriteType = { name = "GFX_RUS_artillery1_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_02_SOV_M1936.dds" }
+	SpriteType = { name = "GFX_RUS_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_03_SOV_M1942.dds" }
+	SpriteType = { name = "GFX_RUS_artillery_b_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_04_SOV_D44.dds" }
+	SpriteType = { name = "GFX_RUS_interwar_antitank_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_01_SOV_45mm.dds" }
+	SpriteType = { name = "GFX_RUS_antitank2_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_02_SOV_45mm.dds" }
+	SpriteType = { name = "GFX_RUS_antitank5_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_02_SOV_57mm.dds" }
+	SpriteType = { name = "GFX_RUS_antitank_c_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_04_SOV_ATGM.dds" }
+	SpriteType = { name = "GFX_RUS_interwar_antiair_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_01_SOV_25mm.dds" }
+	SpriteType = { name = "GFX_RUS_antiair2_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_02_SOV_37mm.dds" }
+	SpriteType = { name = "GFX_RUS_antiair5_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_03_SOV_25mm.dds" }
+	SpriteType = { name = "GFX_RUS_antiair_c_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_03_SOV_57mm.dds" }	
+	SpriteType = { name = "GFX_RUS_rocket_artillery_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_01_SOV_86.dds" }
+	SpriteType = { name = "GFX_RUS_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_SOV_300.dds" }
+	SpriteType = { name = "GFX_RUS_rocket_artillery_c_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_SOV_300.dds" }
 
 	SpriteType = { name = "GFX_MON_gw_artillery_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_01_SOV_M1930.dds" }
 	SpriteType = { name = "GFX_MON_artillery1_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_02_SOV_M1936.dds" }

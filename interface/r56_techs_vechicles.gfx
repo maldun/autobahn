@@ -240,17 +240,17 @@ spriteTypes = {
 
 	#-> TUR <><>
 	SpriteType = { #stand in
-		name = "GFX_TUR_basic_train_medium"
+		name = "GFX_OTT_basic_train_medium"
 		texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
 	}
 
 	SpriteType = { #what they used
-		name = "GFX_TUR_wartime_train_medium"
+		name = "GFX_OTT_wartime_train_medium"
 		texturefile = "gfx/interface/technologies/ENG_train_equipment_2.dds"
 	}
 
 	SpriteType = { #what they used
-		name = "GFX_TUR_r56_mid_wartime_train_medium"
+		name = "GFX_OTT_r56_mid_wartime_train_medium"
 		texturefile = "gfx/interface/technologies/r56_vechicles/tech_train_equipment_5_usa.dds"
 	}
 	#-> USA <><>

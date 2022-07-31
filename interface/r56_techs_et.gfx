@@ -73,7 +73,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/et/clothes/r56_tech_JAP_winter_clothes_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_winter_clothes_gw_medium"
+		name = "GFX_RUS_winter_clothes_gw_medium"
 		texturefile = "gfx/interface/technologies/et/clothes/r56_tech_SOV_winter_clothes_01.dds"
 	}
 	SpriteType = {
@@ -109,7 +109,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/et/clothes/r56_tech_GER_camo_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_camo_medium"
+		name = "GFX_RUS_camo_medium"
 		texturefile = "gfx/interface/technologies/et/clothes/r56_tech_SOV_camo_01.dds"
 	}
 	SpriteType = {
@@ -137,7 +137,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/et/clothes/r56_tech_ITA_camo_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_camo1942_medium"
+		name = "GFX_RUS_camo1942_medium"
 		texturefile = "gfx/interface/technologies/et/clothes/r56_tech_SOV_camo_02.dds"
 	}
 	SpriteType = {
@@ -231,7 +231,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/et/modifications/r56_tech_JAP_painting_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_painting2_medium"
+		name = "GFX_RUS_painting2_medium"
 		texturefile = "gfx/interface/technologies/et/modifications/r56_tech_SOV_painting_02.dds"
 	}
 	SpriteType = {
@@ -263,7 +263,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/et/modifications/r56_tech_JAP_painting_03.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_painting3_medium"
+		name = "GFX_RUS_painting3_medium"
 		texturefile = "gfx/interface/technologies/et/modifications/r56_tech_SOV_painting_03.dds"
 	}
 	SpriteType = {

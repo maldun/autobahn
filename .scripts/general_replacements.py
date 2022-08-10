@@ -267,7 +267,6 @@ def filter_spirits(fname, keys):
     with open(out_file, 'w', encoding=UTF8) as file:
         content = list2paradox(new_obj)
         file.write(content)
-    import pdb; pdb.set_trace()
 
     
 if __name__ == "__main__":

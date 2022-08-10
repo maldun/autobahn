@@ -355,6 +355,10 @@ set_variable = {
     SPA_strength = 0
     
 }
+set_variable = {
+    ODP_strength = 0
+    
+}
 set_research_slots = 4
 set_convoys = 100
 set_global_flag = monroe_doctrine

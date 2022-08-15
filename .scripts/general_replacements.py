@@ -111,10 +111,10 @@ def ideology_map():
     vals = ["SHX", "PER"]
     for val in vals:
         maps.append([[has_key_and_val, [key, [val]]], [remove, [key, [val]]]])
-    val = "TUR"
-    val2 = "OTT"
-    if KX is True:
-        maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
+    # val = "TUR"
+    # val2 = "OTT"
+    # if KX is True:
+    #     maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
 
     # Add RadSoc when anarchist Commune is there
     val = ['has_country_leader', [['name', ['"Anarchist Commune"']], ['ruling_only', [True]]]]

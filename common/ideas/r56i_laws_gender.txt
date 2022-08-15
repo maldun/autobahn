@@ -131,7 +131,6 @@ ideas = {
                                 original_tag = TUR
                                 original_tag = CHI
                                 original_tag = GXC
-                                original_tag = OTT
                                 
                             }
                             

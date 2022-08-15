@@ -1001,13 +1001,13 @@ spriteTypes = {
 	SpriteType = { name = "GFX_SWI_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_ENG_5in.dds" }
 	SpriteType = { name = "GFX_SWI_rocket_artillery_c_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_ENG_5in.dds" }
 
-	SpriteType = { name = "GFX_OTT_gw_artillery_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_01_TUR_leFH16.dds" }
-	SpriteType = { name = "GFX_OTT_artillery1_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_02_TUR_L30.dds" }
-	SpriteType = { name = "GFX_OTT_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_03_GEN_leFH18.dds" }
-	SpriteType = { name = "GFX_OTT_interwar_antitank_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_01_GER_TAK28.dds" }
-	SpriteType = { name = "GFX_OTT_interwar_antiair_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_01_FRA_25mm.dds" }
-	SpriteType = { name = "GFX_OTT_rocket_artillery_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_01_GEN_28cm.dds" }
-	SpriteType = { name = "GFX_OTT_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_GEN_21cm.dds" }
+	SpriteType = { name = "GFX_TUR_gw_artillery_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_01_TUR_leFH16.dds" }
+	SpriteType = { name = "GFX_TUR_artillery1_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_02_TUR_L30.dds" }
+	SpriteType = { name = "GFX_TUR_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_03_GEN_leFH18.dds" }
+	SpriteType = { name = "GFX_TUR_interwar_antitank_medium" texturefile = "gfx/interface/technologies/artillery/anti_tank/r56_tech_anti_tank_01_GER_TAK28.dds" }
+	SpriteType = { name = "GFX_TUR_interwar_antiair_medium" texturefile = "gfx/interface/technologies/artillery/anti_air/r56_tech_anti_air_01_FRA_25mm.dds" }
+	SpriteType = { name = "GFX_TUR_rocket_artillery_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_01_GEN_28cm.dds" }
+	SpriteType = { name = "GFX_TUR_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/artillery/rocket_artillery/r56_tech_rocket_artillery_02_GEN_21cm.dds" }
 
 	SpriteType = { name = "GFX_USA_gw_artillery_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_01_USA_M1897.dds" }
 	SpriteType = { name = "GFX_USA_artillery1_medium" texturefile = "gfx/interface/technologies/artillery/field_artillery/r56_tech_artillery_02_USA_M1.dds" }

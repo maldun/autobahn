@@ -114,7 +114,7 @@ add_ideas = {
 add_equipment_to_stockpile = {
     type = infantry_equipment_0
     amount = 2500
-    producer = OTT
+    producer = TUR
     
 }
 country_event = {

@@ -212,7 +212,7 @@ add_opinion_modifier = {
     
 }
 add_opinion_modifier = {
-    target = OTT
+    target = TUR
     modifier = embargo
     
 }

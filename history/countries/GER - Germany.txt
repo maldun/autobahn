@@ -254,7 +254,7 @@ AZE = {
     give_military_access = GER
     
 }
-OTT = {
+TUR = {
     give_military_access = GER
     
 }

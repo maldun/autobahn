@@ -138,7 +138,7 @@ spriteTypes = {
 
 #-> SOV <><>
 	SpriteType = {
-		name = "GFX_SOV_tech_support_medium"
+		name = "GFX_RUS_tech_support_medium"
 		texturefile = "gfx/interface/technologies/infantry/support_equipment/r56_tech_SOV_support_equipment_01.dds"
 	}
 	SpriteType = {

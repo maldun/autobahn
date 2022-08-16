@@ -23,7 +23,14 @@ IDEA_PATH = "common/ideas"
 HISTORY_COUNTRY_PATH = "history/countries"
 # RULES_PATH = 
 SET_TECH_KEY = "set_technology"
-
+SPIRIT_KEYS = {"air_spirits.txt": ("air_force_spirit",
+                                   "air_force_command_spirit"),
+               "army_spirits.txt": ("academy_spirit", "army_spirit",
+                                    "division_command_spirit"),
+               "navy_spirits.txt": ("naval_academy_spirit",
+                                     "navy_spirit",
+                                     "naval_command_spirit"),
+               }
 
 ideologies = {"fascism": ("national_populist", "paternal_autocrat"),
                   "democratic": ("social_democrat", "social_liberal",
@@ -31,6 +38,30 @@ ideologies = {"fascism": ("national_populist", "paternal_autocrat"),
                   "communism": ("radical_socialist", "syndicalist", "totalist"),
                   "neutrality": ("authoritarian_democrat",)
                   }
+
+TECH_CRITS = {"air_spirits.txt": ['available',
+                 [['OR', [['has_tech', ['air_superiority']],
+                          ['has_tech', ['formation_flying']],
+                          ['has_tech', ['force_rotation']]]]]],
+              "army_spirits.txt": ['available',
+                    [['OR', [['has_tech', ['mobile_warfare']],
+                             ['has_tech', ['superior_firepower']],
+                             ['has_tech', ['trench_warfare']],
+                             ['has_tech', ['mass_assault']],
+                             ['has_tech', ['r56_guerilla_warfare']]]]]],
+              "navy_spirits.txt": ['available',
+                        [['OR', [['has_tech', ['fleet_in_being']],
+                                ['has_tech', ['trade_interdiction']],
+                                 ['has_tech', ['base_strike']]]]]]
+              }
+
+KR_SPIRIT_MAP = {"air_spirits.txt":"01 Air Spirits.txt", "army_spirits.txt":"01 Army Spirits.txt","navy_spirits.txt": "01 Navy Spirits.txt"}
+KR_REV_SPIRIT_MAP = {val:key for key,val in KR_SPIRIT_MAP.items()}
+KR_TECH_CRITS = {}
+KR_SPIRIT_KEYS = {}
+for kx_file, kr_file in KR_SPIRIT_MAP.items():
+    KR_SPIRIT_KEYS[kr_file] = SPIRIT_KEYS[kx_file]
+    KR_TECH_CRITS[kr_file] = TECH_CRITS[kx_file]
 
 rt56_techs = {
     "etax_doctrine",   # special research division
@@ -87,10 +118,10 @@ def ideology_map():
     vals = ["SHX", "PER"]
     for val in vals:
         maps.append([[has_key_and_val, [key, [val]]], [remove, [key, [val]]]])
-    val = "TUR"
-    val2 = "OTT"
-    if KX is True:
-        maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
+    # val = "TUR"
+    # val2 = "OTT"
+    # if KX is True:
+    #     maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
 
     # Add RadSoc when anarchist Commune is there
     val = ['has_country_leader', [['name', ['"Anarchist Commune"']], ['ruling_only', [True]]]]
@@ -205,13 +236,59 @@ def apply_equipment_maps(general_maps, specific_maps):
                            maps)
         except:
             import pdb; pdb.set_trace()
+
+def filter_spirits(fname, keys):
+    idea_path = os.path.join(MAIN_MOD, IDEA_PATH)
+    rt56_idea_path = os.path.join(RT56_FOLDER, IDEA_PATH)
+    rt56_fname = fname if KX is True else KR_REV_SPIRIT_MAP[fname]
+    
+    obj1 = paradox2list(os.path.join(rt56_idea_path, rt56_fname))
+    obj2 = paradox2list(os.path.join(idea_path, fname))
+    new_obj = [["ideas",[]]]
+    tech_crit = TECH_CRITS[fname] if KX is True else KR_TECH_CRITS[fname]
+
+    skeys = [None]*2
+    for key in keys:
+        for k, obj in enumerate([obj1, obj2]):
+            _, inds = has_key(obj, key)
+            spirits = get_object_from_inds(obj, inds[0])
+            skeys[k] = {o[0] for o in spirits[1]}
+
+        diff = skeys[1].difference(skeys[0])
+        missing = []
+        for dkey in diff:
+            o1, inds = has_key(obj2, dkey)
+            ava, _ = has_key(o1, "available")
+            if len(ava) == 0:
+                o1[0][1] += [tech_crit]
+            else:
+                import pdb; pdb.set_trace()
+
+            missing += o1
+
+        if len(missing) > 0:
+            new_obj[0][1].append([key, missing])
+    prefix = "kx_" if KX is True else "kr_"
+    out_path = os.path.join(OUT_FOLDER,IDEA_PATH)
+    os.makedirs(out_path, exist_ok=True)
+    out_file = os.path.join(out_path,prefix+fname)
+    with open(out_file, 'w', encoding=UTF8) as file:
+        content = list2paradox(new_obj)
+        file.write(content)
+
     
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
+    # add missing spirits
+    
+    for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
+        filter_spirits(fname, keys)
     #create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     maps = ideology_map()
     apply_ideology_map(maps)
     maps = remove_obsolete_equipment_maps()
     country_maps = apply_equipment_table("equipment.csv")
     apply_equipment_maps(maps, country_maps)
+
+   
     

@@ -3471,293 +3471,293 @@ spriteTypes = {
   
 	#(Soviet submarines#
 	    SpriteType = {
-		    name = "GFX_SOV_early_submarine_medium"
+		    name = "GFX_RUS_early_submarine_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_submarine_01.dds"
 	    }	
 		SpriteType = {	
-			name = "GFX_SOV_early_ship_hull_submarine_medium"
+			name = "GFX_RUS_early_ship_hull_submarine_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_submarine_01.dds"
 		}	
 
 		SpriteType = {
-			name = "GFX_SOV_basic_submarine_medium"
+			name = "GFX_RUS_basic_submarine_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_submarine_02.dds"
 		}	
 		SpriteType = {
-			name = "GFX_SOV_basic_ship_hull_submarine_medium"
+			name = "GFX_RUS_basic_ship_hull_submarine_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_submarine_02.dds"
 		}	
 
 		SpriteType = {
-			name = "GFX_SOV_improved_submarine_medium"
+			name = "GFX_RUS_improved_submarine_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_submarine_03.dds"
 		}
 		SpriteType = {
-			name = "GFX_SOV_improved_ship_hull_submarine_medium"
+			name = "GFX_RUS_improved_ship_hull_submarine_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_submarine_03.dds"
 		}
 	
 		SpriteType = {
-			name = "GFX_SOV_advanced_submarine_medium"
+			name = "GFX_RUS_advanced_submarine_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_submarine_04.dds"
 		}
 		SpriteType = {
-			name = "GFX_SOV_advanced_ship_hull_submarine_medium"
+			name = "GFX_RUS_advanced_ship_hull_submarine_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_submarine_04.dds"
 		}
 	#)#	    
 			
 	#(Soviet destroyer#
 	    SpriteType = {
-		    name = "GFX_SOV_early_destroyer_medium"
+		    name = "GFX_RUS_early_destroyer_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_destroyer_01.dds"
 	    }	
 	    SpriteType = {	
-	    	name = "GFX_SOV_early_ship_hull_light_medium"
+	    	name = "GFX_RUS_early_ship_hull_light_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_destroyer_01.dds"
     	}
 
 	    SpriteType = {
-	    	name = "GFX_SOV_basic_destroyer_medium"
+	    	name = "GFX_RUS_basic_destroyer_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_destroyer_02.dds"
 	    }	
     	SpriteType = {
-	    	name = "GFX_SOV_basic_ship_hull_light_medium"
+	    	name = "GFX_RUS_basic_ship_hull_light_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_destroyer_02.dds"
 	    }
 		
 	    SpriteType = {
-	    	name = "GFX_SOV_improved_destroyer_medium"
+	    	name = "GFX_RUS_improved_destroyer_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_destroyer_03.dds"
 	    }
 		SpriteType = {
-    		name = "GFX_SOV_improved_ship_hull_light_medium"
+    		name = "GFX_RUS_improved_ship_hull_light_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_destroyer_03.dds"
     	}
 		
 		SpriteType = {
-		    name = "GFX_SOV_advanced_destroyer_medium"
+		    name = "GFX_RUS_advanced_destroyer_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_destroyer_04.dds"
 	    }
 		SpriteType = {
-		    name = "GFX_SOV_advanced_ship_hull_light_medium"
+		    name = "GFX_RUS_advanced_ship_hull_light_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_destroyer_04.dds"
     	}
 	#)#	    
 			
 	#(Soviet light cruiser#
 	    SpriteType = {
-	    	name = "GFX_SOV_early_light_cruiser_medium"
+	    	name = "GFX_RUS_early_light_cruiser_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_01.dds"
 	    }	
      	SpriteType = {	
-	    	name = "GFX_SOV_early_ship_hull_cruiser_medium"
+	    	name = "GFX_RUS_early_ship_hull_cruiser_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_01.dds"
 	    }
 	    SpriteType = {
-	     	name = "GFX_SOV_ship_hull_cruiser_1_medium"
+	     	name = "GFX_RUS_ship_hull_cruiser_1_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_01.dds"
 	    }	
 		
 	    SpriteType = {
-	    	name = "GFX_SOV_basic_light_cruiser_medium"
+	    	name = "GFX_RUS_basic_light_cruiser_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_02.dds"
 	    }
 		SpriteType = {
-	    	name = "GFX_SOV_ship_hull_cruiser_2_medium"
+	    	name = "GFX_RUS_ship_hull_cruiser_2_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_02.dds"
 	    }
 
 		SpriteType = {
-    		name = "GFX_SOV_improved_light_cruiser_medium"
+    		name = "GFX_RUS_improved_light_cruiser_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_03.dds"
     	}
 	    SpriteType = {
-	    	name = "GFX_SOV_ship_hull_cruiser_3_medium"
+	    	name = "GFX_RUS_ship_hull_cruiser_3_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_03.dds"
 	    }		
 	
     	SpriteType = {
-    		name = "GFX_SOV_advanced_light_cruiser_medium"
+    		name = "GFX_RUS_advanced_light_cruiser_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_04.dds"
     	}
 	    SpriteType = {
-	    	name = "GFX_SOV_ship_hull_cruiser_4_medium"
+	    	name = "GFX_RUS_ship_hull_cruiser_4_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_light_cruiser_04.dds"
 	    }
 	#)#	    
 			
 	#(Soviet heavy cruiser#
 	    SpriteType = {
-	    	name = "GFX_SOV_early_light_cruiser_capital_medium"
+	    	name = "GFX_RUS_early_light_cruiser_capital_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_01.dds"
 	    }
 		SpriteType = {
-		    name = "GFX_SOV_early_heavy_cruiser_medium"
+		    name = "GFX_RUS_early_heavy_cruiser_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_01.dds"
 	    }
 		SpriteType = {
-	    	name = "GFX_SOV_ship_hull_cruiser_1_capital_medium"
+	    	name = "GFX_RUS_ship_hull_cruiser_1_capital_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_01.dds"
 	    }
 	
 		SpriteType = {
-    		name = "GFX_SOV_basic_light_cruiser_capital_medium"
+    		name = "GFX_RUS_basic_light_cruiser_capital_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_02.dds"
     	}
     	SpriteType = {
-    		name = "GFX_SOV_basic_heavy_cruiser_medium"
+    		name = "GFX_RUS_basic_heavy_cruiser_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_02.dds"
 	    }
 		SpriteType = {
-    		name = "GFX_SOV_basic_ship_hull_cruiser_medium"
+    		name = "GFX_RUS_basic_ship_hull_cruiser_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_02.dds"
     	}
 		SpriteType = {
-	    	name = "GFX_SOV_ship_hull_cruiser_2_capital_medium"
+	    	name = "GFX_RUS_ship_hull_cruiser_2_capital_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_02.dds"
 	    }
 		
 	    SpriteType = {
-    		name = "GFX_SOV_improved_light_cruiser_capital_medium"
+    		name = "GFX_RUS_improved_light_cruiser_capital_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_03.dds"
     	}
     	SpriteType = {
-	    	name = "GFX_SOV_improved_heavy_cruiser_medium"
+	    	name = "GFX_RUS_improved_heavy_cruiser_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_03.dds"
 	    }
 		SpriteType = {
-    		name = "GFX_SOV_improved_ship_hull_cruiser_medium"
+    		name = "GFX_RUS_improved_ship_hull_cruiser_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_03.dds"
     	}
 	    SpriteType = {
-	    	name = "GFX_SOV_ship_hull_cruiser_3_capital_medium"
+	    	name = "GFX_RUS_ship_hull_cruiser_3_capital_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_03.dds"
 	    }		
 	
 		SpriteType = {
-    		name = "GFX_SOV_advanced_light_cruiser_capital_medium"
+    		name = "GFX_RUS_advanced_light_cruiser_capital_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_04.dds"
     	}
 		SpriteType = {
-		    name = "GFX_SOV_advanced_heavy_cruiser_medium"
+		    name = "GFX_RUS_advanced_heavy_cruiser_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_04.dds"
 	    }
 		SpriteType = {
-		    name = "GFX_SOV_advanced_ship_hull_cruiser_medium"
+		    name = "GFX_RUS_advanced_ship_hull_cruiser_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_04.dds"
 	    }
 	    SpriteType = {
-	    	name = "GFX_SOV_ship_hull_cruiser_4_capital_medium"
+	    	name = "GFX_RUS_ship_hull_cruiser_4_capital_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_cruiser_04.dds"
 	    }
 	#)#	    
 			
 	#(Soviet battle cruiser#
 		SpriteType = {	
-		    name = "GFX_SOV_early_battlecruiser_medium"
+		    name = "GFX_RUS_early_battlecruiser_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battlecruiser_01.dds"
 	    }
 
 	    SpriteType = {
-		    name = "GFX_SOV_basic_battlecruiser_medium"
+		    name = "GFX_RUS_basic_battlecruiser_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battlecruiser_02.dds"
 	    }
 	#)#	    
 			
 	#(Soviet battleship#
     	SpriteType = {
-    		name = "GFX_SOV_early_battleship_medium"
+    		name = "GFX_RUS_early_battleship_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battleship_01.dds"
 	    }	
 	    SpriteType = {	
-	    	name = "GFX_SOV_early_ship_hull_heavy_medium"
+	    	name = "GFX_RUS_early_ship_hull_heavy_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battleship_01.dds"
 	    }	
 
     	SpriteType = {
-    		name = "GFX_SOV_basic_battleship_medium"
+    		name = "GFX_RUS_basic_battleship_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battleship_02.dds"
     	}
 	    SpriteType = {
-	    	name = "GFX_SOV_basic_ship_hull_heavy_medium"
+	    	name = "GFX_RUS_basic_ship_hull_heavy_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battleship_02.dds"
 	    }
 
     	SpriteType = {
-    		name = "GFX_SOV_improved_battleship_medium"
+    		name = "GFX_RUS_improved_battleship_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battleship_03.dds"
     	}
     	SpriteType = {
-    		name = "GFX_SOV_improved_ship_hull_heavy_medium"
+    		name = "GFX_RUS_improved_ship_hull_heavy_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battleship_03.dds"
 	    }		
 	
 		SpriteType = {
-    		name = "GFX_SOV_advanced_battleship_medium"
+    		name = "GFX_RUS_advanced_battleship_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battleship_04.dds"
     	}
     	SpriteType = {
-    		name = "GFX_SOV_advanced_ship_hull_heavy_medium"
+    		name = "GFX_RUS_advanced_ship_hull_heavy_medium"
     		texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_battleship_04.dds"
     	}
 	#)#	    
 			
 	#(Soviet super-heavy battleship#
 	   	SpriteType = {
-	    	name = "GFX_SOV_heavy_battleship_medium"
+	    	name = "GFX_RUS_heavy_battleship_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_battleship_01.dds"
     	}
 		SpriteType = {
-		    name = "GFX_SOV_ship_hull_super_heavy_1_medium"
+		    name = "GFX_RUS_ship_hull_super_heavy_1_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_battleship_01.dds"
 	    }
 		
 	    SpriteType = {
-	    	name = "GFX_SOV_heavy_battleship2_medium"
+	    	name = "GFX_RUS_heavy_battleship2_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_heavy_battleship_02.dds"
 	    }
 	#)#	    
 	
    #(Soviet carrier#
        	SpriteType = {
-		    name = "GFX_SOV_ship_hull_carrier_conversion_ca_medium"
+		    name = "GFX_RUS_ship_hull_carrier_conversion_ca_medium"
 		    texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_conversion_ca.dds"
 	    }	
 
 		SpriteType = {
-	    	name = "GFX_SOV_early_carrier_medium"
+	    	name = "GFX_RUS_early_carrier_medium"
 	    	texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_01.dds"
 		}
 		SpriteType = {	
-			name = "GFX_SOV_early_ship_hull_carrier_medium"
+			name = "GFX_RUS_early_ship_hull_carrier_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_01.dds"
 		}	
 
 		SpriteType = {
-			name = "GFX_SOV_basic_carrier_medium"
+			name = "GFX_RUS_basic_carrier_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_02.dds"
 		}
 			SpriteType = {
-			name = "GFX_SOV_basic_ship_hull_carrier_medium"
+			name = "GFX_RUS_basic_ship_hull_carrier_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_02.dds"
 		}
 
 		SpriteType = {
-			name = "GFX_SOV_improved_carrier_medium"
+			name = "GFX_RUS_improved_carrier_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_03.dds"
 		}
 		SpriteType = {
-			name = "GFX_SOV_improved_ship_hull_carrier_medium"
+			name = "GFX_RUS_improved_ship_hull_carrier_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_03.dds"
 		}
 	
 		SpriteType = {
-			name = "GFX_SOV_advanced_carrier_medium"
+			name = "GFX_RUS_advanced_carrier_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_04.dds"
 		}
 		SpriteType = {
-			name = "GFX_SOV_advanced_ship_hull_carrier_medium"
+			name = "GFX_RUS_advanced_ship_hull_carrier_medium"
 			texturefile = "gfx/interface/technologies/ships/r56_tech_SOV_carrier_04.dds"
 		}
 	#)#	    

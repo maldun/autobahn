@@ -70,7 +70,7 @@ SpriteTypes = {
 		texturefile = "gfx/interface/technologies/aircraft/transport_plane/r56_tech_PRC_transport_plane_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_transport_plane1_medium"
+		name = "GFX_RUS_transport_plane1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/transport_plane/r56_tech_SOV_transport_plane_equipment.dds"
 	}
 	SpriteType = {
@@ -19521,261 +19521,261 @@ SpriteTypes = {
 ###--->  SOV <><> <><> <><>
 #-> Scout planes <><>
 	SpriteType = {
-		    name = "GFX_SOV_scout_plane1_medium"
+		    name = "GFX_RUS_scout_plane1_medium"
 		    texturefile = "gfx/interface/technologies/aircraft/scout_plane/r56_tech_SOV_scout_plane_01.dds"
 	}
 	SpriteType = {
-		    name = "GFX_SOV_scout_plane2_medium"
+		    name = "GFX_RUS_scout_plane2_medium"
 		    texturefile = "gfx/interface/technologies/aircraft/scout_plane/r56_tech_SOV_scout_plane_02.dds"
 	}
 
 #-> Transport planes <><>
 	SpriteType = {
-		name = "GFX_SOV_transport_plane_equipment_medium"
+		name = "GFX_RUS_transport_plane_equipment_medium"
 		texturefile = "gfx/interface/technologies/aircraft/transport_plane/r56_tech_SOV_transport_plane_equipment.dds"
 	}
 	
 #-> Dive bombers <><>
 	SpriteType = {
-		name = "GFX_SOV_CAS1_medium"
+		name = "GFX_RUS_CAS1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/dive_bomber/r56_tech_SOV_dive_bomber_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_CAS2_medium"
+		name = "GFX_RUS_CAS2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/dive_bomber/r56_tech_SOV_dive_bomber_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_CAS3_medium"
+		name = "GFX_RUS_CAS3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/dive_bomber/r56_tech_SOV_dive_bomber_03.dds"
 	}
 
 #-> Carrier dive bombers <><>
 	SpriteType = {
-		name = "GFX_SOV_cv_CAS1_medium"
+		name = "GFX_RUS_cv_CAS1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/dive_bomber/r56_tech_SOV_dive_bomber_01.dds"
 	}
 		SpriteType = {
-		name = "GFX_SOV_cv_CAS2_medium"
+		name = "GFX_RUS_cv_CAS2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/dive_bomber/r56_tech_SOV_dive_bomber_02.dds"
 	}
 		SpriteType = {
-		name = "GFX_SOV_cv_CAS3_medium"
+		name = "GFX_RUS_cv_CAS3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/dive_bomber/r56_tech_SOV_dive_bomber_03.dds"
 	}
 
 #-> Light fighters <><>
 	SpriteType = {
-		name = "GFX_SOV_early_fighter_medium"
+		name = "GFX_RUS_early_fighter_medium"
 		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_00.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_fighter1_medium"
+		name = "GFX_RUS_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_fighter2_medium"
+		name = "GFX_RUS_fighter2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_fighter3_medium"
+		name = "GFX_RUS_fighter3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_03.dds"
 	}
 
 #-> Light fighter-bombers <><>
 	SpriteType = {
-		name = "GFX_SOV_fighter_bomber2_medium"
+		name = "GFX_RUS_fighter_bomber2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_fighter_bomber3_medium"
+		name = "GFX_RUS_fighter_bomber3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_03.dds"
 	}
 	
 #-> Carrier-based light fighters <><>
 	SpriteType = {
-		name = "GFX_SOV_cv_early_fighter_medium"
+		name = "GFX_RUS_cv_early_fighter_medium"
 		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_00.dds"
 	}
 		SpriteType = {
-		name = "GFX_SOV_cv_fighter1_medium"
+		name = "GFX_RUS_cv_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/cv_fighter/r56_tech_SOV_cv_fighter_01.dds"
 	}
 		SpriteType = {
-		name = "GFX_SOV_cv_fighter2_medium"
+		name = "GFX_RUS_cv_fighter2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/cv_fighter/r56_tech_SOV_cv_fighter_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_cv_fighter3_medium"
+		name = "GFX_RUS_cv_fighter3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/cv_fighter/r56_tech_SOV_cv_fighter_03.dds"
 	}
 
 #-> Torpedo bombers <><>
 	SpriteType = {
-		name = "GFX_SOV_naval_bomber1_medium"
+		name = "GFX_RUS_naval_bomber1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/naval_bomber/r56_tech_SOV_naval_bomber_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_naval_bomber2_medium"
+		name = "GFX_RUS_naval_bomber2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/naval_bomber/r56_tech_SOV_naval_bomber_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_naval_bomber3_medium"
+		name = "GFX_RUS_naval_bomber3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/naval_bomber/r56_tech_SOV_naval_bomber_03.dds"
 	}
 
 #-> Heavy fighters <><>
 	SpriteType = {
-		name = "GFX_SOV_heavy_fighter1_medium"
+		name = "GFX_RUS_heavy_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_fighter/r56_tech_SOV_heavy_fighter_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_heavy_fighter2_medium"
+		name = "GFX_RUS_heavy_fighter2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_fighter/r56_tech_SOV_heavy_fighter_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_heavy_fighter3_medium"
+		name = "GFX_RUS_heavy_fighter3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_fighter/r56_tech_SOV_heavy_fighter_03.dds"
 	}
 
 #-> Heavy fighter-bomber <><>
 	SpriteType = {
-		name = "GFX_SOV_hfighter_bomber1_medium"
+		name = "GFX_RUS_hfighter_bomber1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_fighter/r56_tech_SOV_heavy_fighter_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_hfighter_bomber2_medium"
+		name = "GFX_RUS_hfighter_bomber2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_fighter/r56_tech_SOV_heavy_fighter_02.dds"
 	}
 
 #-> Medium bomber <><>
 	SpriteType = {
-		name = "GFX_SOV_early_bomber_medium"
+		name = "GFX_RUS_early_bomber_medium"
 		texturefile = "gfx/interface/technologies/aircraft/medium_bomber/r56_tech_SOV_medium_bomber_00.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_tactical_bomber1_medium"
+		name = "GFX_RUS_tactical_bomber1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/medium_bomber/r56_tech_SOV_medium_bomber_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_tactical_bomber2_medium"
+		name = "GFX_RUS_tactical_bomber2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/medium_bomber/r56_tech_SOV_medium_bomber_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_tactical_bomber3_medium"
+		name = "GFX_RUS_tactical_bomber3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/medium_bomber/r56_tech_SOV_medium_bomber_03.dds"
 	}
 
 #-> Medium maritime bomber <><>
 	SpriteType = {
-		name = "GFX_SOV_med_maritime1_medium"
+		name = "GFX_RUS_med_maritime1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/medium_bomber/r56_tech_SOV_medium_bomber_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_med_maritime2_medium"
+		name = "GFX_RUS_med_maritime2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/medium_bomber/r56_tech_SOV_medium_bomber_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_med_maritime3_medium"
+		name = "GFX_RUS_med_maritime3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/medium_bomber/r56_tech_SOV_medium_bomber_03.dds"
 	}
 
 #-> Heavy bomber <><>
 	SpriteType = {
-		name = "GFX_SOV_strategic_bomber1_medium"
+		name = "GFX_RUS_strategic_bomber1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_bomber/r56_tech_SOV_heavy_bomber_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_strategic_bomber2_medium"
+		name = "GFX_RUS_strategic_bomber2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_bomber/r56_tech_SOV_heavy_bomber_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_strategic_bomber3_medium"
+		name = "GFX_RUS_strategic_bomber3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_bomber/r56_tech_SOV_heavy_bomber_03.dds"
 	}
 
 #-> Heavy maritime bomber <><>
 	SpriteType = {
-		name = "GFX_SOV_strat_maritime1_medium"
+		name = "GFX_RUS_strat_maritime1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_bomber/r56_tech_SOV_heavy_bomber_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_strat_maritime2_medium"
+		name = "GFX_RUS_strat_maritime2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_bomber/r56_tech_SOV_heavy_bomber_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_strat_maritime3_medium"
+		name = "GFX_RUS_strat_maritime3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/heavy_bomber/r56_tech_SOV_heavy_bomber_03.dds"
 	}
 	
 #-> Maritime patrol <><>
 	SpriteType = {
-		name = "GFX_SOV_flying_boat1_medium"
+		name = "GFX_RUS_flying_boat1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/maritime_patrol/r56_tech_SOV_maritime_patrol_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_flying_boat2_medium"
+		name = "GFX_RUS_flying_boat2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/maritime_patrol/r56_tech_SOV_maritime_patrol_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_flying_boat3_medium"
+		name = "GFX_RUS_flying_boat3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/maritime_patrol/r56_tech_SOV_maritime_patrol_03.dds"
 	}	
 
 #-> Rocket interceptors <><>
 	SpriteType = {
-		name = "GFX_SOV_rocket_interceptor_equipment_1_medium"
+		name = "GFX_RUS_rocket_interceptor_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/rocket_interceptor/r56_tech_SOV_rocket_interceptor_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_rocket_interceptor_equipment_2_medium"
+		name = "GFX_RUS_rocket_interceptor_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/rocket_interceptor/r56_tech_SOV_rocket_interceptor_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_rocket_interceptor_equipment_3_medium"
+		name = "GFX_RUS_rocket_interceptor_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/aircraft/rocket_interceptor/r56_tech_SOV_rocket_interceptor_03.dds"
 	}
 	
 #-> Jet fighters <><>
 	SpriteType = {
-		name = "GFX_SOV_jet_fighter1_medium"
+		name = "GFX_RUS_jet_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_SOV_jet_fighter_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_jet_fighter2_medium"
+		name = "GFX_RUS_jet_fighter2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_SOV_jet_fighter_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_jet_fighter_a_medium"
+		name = "GFX_RUS_jet_fighter_a_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_SOV_jet_fighter_03.dds"
 	}
 
 #-> Carrier-based jet fighters <><>
 	SpriteType = {
-		name = "GFX_SOV_jet_cv_fighter1_medium"
+		name = "GFX_RUS_jet_cv_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_SOV_jet_fighter_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_jet_cv_fighter2_medium"
+		name = "GFX_RUS_jet_cv_fighter2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_SOV_jet_fighter_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_jet_cv_fighter_a_medium"
+		name = "GFX_RUS_jet_cv_fighter_a_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_SOV_jet_fighter_03.dds"
 	}
 
 #-> Jet medium bombers <><>
 	SpriteType = {
-		name = "GFX_SOV_jet_tactical_bomber1_medium"
+		name = "GFX_RUS_jet_tactical_bomber1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_medium_bomber/r56_tech_SOV_jet_medium_bomber_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_jet_tactical_bomber2_medium"
+		name = "GFX_RUS_jet_tactical_bomber2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_medium_bomber/r56_tech_SOV_jet_medium_bomber_02.dds"
 	}
 
 #-> Jet heavy bombers <><>
 	SpriteType = {
-		name = "GFX_SOV_jet_strategic_bomber1_medium"
+		name = "GFX_RUS_jet_strategic_bomber1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_heavy_bomber/r56_tech_SOV_jet_heavy_bomber_01.dds"
 	}
 

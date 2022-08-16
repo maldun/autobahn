@@ -332,22 +332,6 @@ random_character = {
 }
 random_character = {
     limit = {
-        is_character = QIE_gobulo_runqi
-        
-    }
-    save_global_event_target_as = QIE_gobulo_runqi_target
-    
-}
-random_character = {
-    limit = {
-        is_character = QIE_lu_xiangting
-        
-    }
-    save_global_event_target_as = QIE_lu_xiangting_target
-    
-}
-random_character = {
-    limit = {
         is_character = QIE_wen_tsungyao
         
     }

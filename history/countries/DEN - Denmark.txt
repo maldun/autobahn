@@ -318,6 +318,14 @@ DEN_bertel_dahlgaard = {
     set_character_flag = DEN_leader
     
 }
+DEN_ebbe_gortz = {
+    set_character_flag = DEN_leader
+    
+}
+DEN_christian_forslev = {
+    set_character_flag = DEN_leader
+    
+}
 random_character = {
     limit = {
         is_character = DEN_christian_af_glucksborg

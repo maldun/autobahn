@@ -178,7 +178,6 @@ recruit_character = RUS_giorgy_shubin
 recruit_character = RUS_pyotr_nikiforov
 recruit_character = RUS_nikolay_uhtomski
 recruit_character = RUS_aleksey_sirodenko
-recruit_character = RUS_boris_bakhmetev
 recruit_character = RUS_magomed_gasanovich
 recruit_character = RUS_roman_basilievsky
 recruit_character = RUS_dimitry_lebedev

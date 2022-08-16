@@ -167,6 +167,11 @@ country_event = {
     
 }
 country_event = {
+    id = arg_flavour.19
+    days = 1905
+    
+}
+country_event = {
     id = arg_flavour.16
     days = 2010
     

@@ -138,7 +138,6 @@ set_country_flag = KR_british_king_base
 save_global_event_target_as = KR_entente_leader
 save_global_event_target_as = KR_king_base
 save_global_event_target_as = iedc_leader
-set_global_flag = CAN_king_george_V
 set_global_flag = CAN_king_busy
 set_variable = {
     king_popularity = 3
@@ -211,11 +210,6 @@ add_ideas = {
     CAN_great_depression_2
     
 }
-recruit_character = CAN_george_v
-recruit_character = CAN_edward_windsor
-recruit_character = CAN_albert_windsor
-recruit_character = CAN_henry_windsor
-recruit_character = CAN_george_windsor
 recruit_character = CAN_timothy_buck
 recruit_character = CAN_richard_parmater_pettipiece
 recruit_character = CAN_claude_jodoin
@@ -243,12 +237,6 @@ recruit_character = CAN_thomas_clement_douglas
 recruit_character = CAN_george_alexander_drew
 recruit_character = CAN_arthur_blaikie_purvis
 recruit_character = CAN_william_samuel_stephenson
-recruit_character = GBR_william_maxwell_aitken
-recruit_character = GBR_austen_chamberlain
-recruit_character = GBR_anthony_eden
-recruit_character = GBR_robert_gascoyne_cecil
-recruit_character = GBR_robert_vansittart
-recruit_character = GBR_henry_page_croft
 recruit_character = CAN_bernice_weldon_sargent
 recruit_character = CAN_john_frederick_charles_fuller
 recruit_character = CAN_bernard_montgomery
@@ -291,7 +279,6 @@ recruit_character = CAN_hugh_montague_trenchard
 recruit_character = CAN_george_owen_johnson
 recruit_character = CAN_robert_leckie
 activate_advisor = CAN_william_lyon_mackenzie_king_sic
-activate_advisor = GBR_austen_chamberlain
 CAN_john_hamilton_roberts = {
     retire = yes
     
@@ -312,30 +299,6 @@ CAN_horatio_nelson_lay = {
     retire = yes
     
 }
-GBR_austen_chamberlain = {
-    set_character_flag = GBR_character
-    
-}
-GBR_anthony_eden = {
-    set_character_flag = GBR_character
-    
-}
-GBR_robert_gascoyne_cecil = {
-    set_character_flag = GBR_character
-    
-}
-GBR_robert_vansittart = {
-    set_character_flag = GBR_character
-    
-}
-GBR_henry_page_croft = {
-    set_character_flag = GBR_character
-    
-}
-GBR_william_maxwell_aitken = {
-    set_character_flag = GBR_character
-    
-}
 CAN_john_frederick_charles_fuller = {
     set_character_flag = GBR_character
     
@@ -350,46 +313,6 @@ CAN_hugh_montague_trenchard = {
 }
 CAN_charles_frederick_algernon_portal = {
     set_character_flag = GBR_character
-    
-}
-random_character = {
-    limit = {
-        is_character = CAN_george_v
-        
-    }
-    save_global_event_target_as = CAN_george_v_target
-    
-}
-random_character = {
-    limit = {
-        is_character = CAN_edward_windsor
-        
-    }
-    save_global_event_target_as = CAN_edward_windsor_target
-    
-}
-random_character = {
-    limit = {
-        is_character = CAN_albert_windsor
-        
-    }
-    save_global_event_target_as = CAN_albert_windsor_target
-    
-}
-random_character = {
-    limit = {
-        is_character = CAN_henry_windsor
-        
-    }
-    save_global_event_target_as = CAN_henry_windsor_target
-    
-}
-random_character = {
-    limit = {
-        is_character = CAN_george_windsor
-        
-    }
-    save_global_event_target_as = CAN_george_windsor_target
     
 }
 if = {

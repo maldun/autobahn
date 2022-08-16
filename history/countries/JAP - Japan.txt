@@ -127,6 +127,11 @@ if = {
     }
     
 }
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 7260
+    
+}
 country_event = {
     id = japdom.1
     days = 1
@@ -174,11 +179,6 @@ news_event = {
     
 }
 country_event = {
-    id = japdom.57
-    days = 1754
-    
-}
-country_event = {
     id = literature.12
     days = 2160
     
@@ -195,7 +195,6 @@ add_ideas = {
     FNG_mantetsu_profits
     limited_conscription
     limited_exports
-    low_economic_mobilisation
     
 }
 add_dynamic_modifier = {

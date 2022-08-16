@@ -91,8 +91,6 @@ add_ideas = {
     ARG_interservice_rivalry_navy_dominant
     ARG_Military_Cliques
     ARG_Military_Apparatus
-    partial_economic_mobilisation
-    limited_conscription
     
 }
 unlock_national_focus = ARG_Woes_of_the_Christmas_Coup
@@ -223,6 +221,11 @@ country_event = {
     
 }
 country_event = {
+    id = arg_flavour.19
+    days = 1905
+    
+}
+country_event = {
     id = arg_flavour.16
     days = 2010
     
@@ -266,15 +269,15 @@ set_politics = {
     
 }
 set_popularities = {
-    totalist = 8
-    radical_socialist = 0
+    totalist = 4
+    radical_socialist = 4
     syndicalist = 4
-    social_democrat = 11
-    social_liberal = 15
-    market_liberal = 16
-    social_conservative = 9
+    social_democrat = 10
+    social_liberal = 18
+    market_liberal = 21
+    social_conservative = 6
     paternal_autocrat = 10
-    authoritarian_democrat = 8
+    authoritarian_democrat = 4
     national_populist = 19
     
 }
@@ -283,7 +286,6 @@ recruit_character = ARG_juan_domingo_peron
 recruit_character = ARG_pedro_pablo_ramirez
 recruit_character = ARG_roberto_ortiz
 recruit_character = ARG_ramon_antonio_castillo
-recruit_character = ARG_hipolito_yrigoyen
 recruit_character = ARG_nicolas_repetto
 recruit_character = ARG_angel_borlenghi
 recruit_character = ARG_jose_peter
@@ -330,23 +332,31 @@ ARG_juan_pistarini = {
     set_character_flag = ARG_can_join_FOP
     
 }
-ARG_pedro_eugenio_aramburu = {
-    set_character_flag = ARG_can_join_FOP
-    
-}
-ARG_humberto_sosa_molina = {
-    set_character_flag = ARG_can_join_FOP
-    
-}
-ARG_juan_domingo_peron = {
-    set_character_flag = ARG_can_join_FOP
-    
-}
-ARG_edelmiro_julian_farrell = {
+ARG_enrique_mosconi = {
     set_character_flag = ARG_can_join_FOP
     
 }
 ARG_bernardo_alberte = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_jose_maria_sobral = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_manuel_savio = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_luis_costa = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_juan_cooke = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_carlos_sanchez_viamonte = {
     set_character_flag = ARG_can_join_FOP
     
 }
@@ -371,6 +381,26 @@ ARG_arturo_frondizi = {
     
 }
 ARG_ricardo_balbin = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_humberto_sosa_molina = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_eleazar_videla = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_isaac_francisco_rojas = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_bartolome_de_la_colina = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_pedro_castex_lainfor = {
     set_character_flag = ARG_can_join_FOP
     
 }

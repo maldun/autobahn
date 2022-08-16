@@ -250,6 +250,22 @@ NOR_terje_wold = {
     set_character_flag = NOR_leader
     
 }
+NOR_ole_reistad = {
+    set_character_flag = NOR_leader
+    
+}
+NOR_hjalmar_riiser_larsen = {
+    set_character_flag = NOR_leader
+    
+}
+NOR_skule_storheill = {
+    set_character_flag = NOR_leader
+    
+}
+NOR_tryggve_gran = {
+    set_character_flag = NOR_leader
+    
+}
 random_character = {
     limit = {
         is_character = NOR_haakon_vii

@@ -49,6 +49,7 @@ if = {
         gwtank_chassis = 1
         basic_light_tank_chassis = 1
         basic_heavy_tank_chassis = 1
+        engine_tech_1 = 1
         
     }
     
@@ -176,6 +177,7 @@ add_ideas = {
     free_trade
     GEA_AOG_bonus_idea
     GEA_Protecting_GER_interest
+    YUN_GEA_tin_profits
     
 }
 add_dynamic_modifier = {

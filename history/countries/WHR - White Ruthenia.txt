@@ -92,6 +92,14 @@ country_event = {
     days = 2629
     
 }
+RUS = {
+    country_event = {
+        id = whrmisc.23
+        days = 1492
+        
+    }
+    
+}
 set_variable = {
     WHR_Land_Reform_Success = 40
     

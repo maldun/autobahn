@@ -60,6 +60,13 @@ TECH_CRITS = {"air_spirits.txt": ['available',
                                  ['has_tech', ['base_strike']]]]]]
               }
 
+KR_SPIRIT_MAP = {"air_spirits.txt":"01 Air Spirits.txt", "army_spirits.txt":"01 Army Spirits.txt","navy_spirits.txt": "01 Navy Spirits.txt"}
+KR_REV_SPIRIT_MAP = {val:key for key,val in KR_SPIRIT_MAP.items()}
+KR_TECH_CRITS = {}
+KR_SPIRIT_KEYS = {}
+for kx_file, kr_file in KR_SPIRIT_MAP.items():
+    KR_SPIRIT_KEYS[kr_file] = SPIRIT_KEYS[kx_file]
+    KR_TECH_CRITS[kr_file] = TECH_CRITS[kx_file]
 
 rt56_techs = {
     "etax_doctrine",   # special research division
@@ -237,11 +244,12 @@ def apply_equipment_maps(general_maps, specific_maps):
 def filter_spirits(fname, keys):
     idea_path = os.path.join(MAIN_MOD, IDEA_PATH)
     rt56_idea_path = os.path.join(RT56_FOLDER, IDEA_PATH)
-
-    obj1 = paradox2list(os.path.join(rt56_idea_path, fname))
+    rt56_fname = fname if KX is True else KR_REV_SPIRIT_MAP[fname]
+    
+    obj1 = paradox2list(os.path.join(rt56_idea_path, rt56_fname))
     obj2 = paradox2list(os.path.join(idea_path, fname))
     new_obj = [["ideas",[]]]
-    tech_crit = TECH_CRITS[fname]
+    tech_crit = TECH_CRITS[fname] if KX is True else KR_TECH_CRITS[fname]
 
     skeys = [None]*2
     for key in keys:
@@ -273,8 +281,8 @@ def filter_spirits(fname, keys):
         file.write(content)
 
     # copy rt56 file
-    orig_in_file = os.path.join(rt56_idea_path, fname)
-    orig_out_file = os.path.join(out_path, fname)
+    orig_in_file = os.path.join(rt56_idea_path, rt56_fname)
+    orig_out_file = os.path.join(out_path, rt56_fname)
     shutil.copy2(orig_in_file, orig_out_file)
 
 def update_chinese_army_reform(file="China_decisions.txt"):
@@ -309,7 +317,8 @@ if __name__ == "__main__":
     rt56_update.post_steps(RT56_FOLDER, OUT_FOLDER)
     
     # add missing spirits
-    for fname, keys in SPIRIT_KEYS.items():
+    
+    for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
         filter_spirits(fname, keys)
     # update China Army Reform
     update_chinese_army_reform()

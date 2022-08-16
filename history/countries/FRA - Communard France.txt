@@ -6,6 +6,7 @@ set_stability = 0.75
 set_war_support = 0.4
 set_research_slots = 4
 starting_train_buffer = 2
+set_fuel_ratio = 0.8
 set_technology = {
     fuel_silos = 1
     synth_oil_experiments = 1
@@ -44,6 +45,9 @@ if = {
         gwtank_chassis = 1
         basic_light_tank_chassis = 1
         basic_heavy_tank_chassis = 1
+        improved_light_tank_chassis = 1
+        armor_tech_1 = 1
+        engine_tech_1 = 1
         
     }
     
@@ -60,6 +64,7 @@ if = {
         gwtank = 1
         basic_light_tank = 1
         basic_heavy_tank = 1
+        improved_light_tank = 1
         
     }
     
@@ -261,10 +266,13 @@ recruit_character = FRA_pierre_jules_cot
 recruit_character = FRA_suzanne_girault
 recruit_character = FRA_irene_and_frederic_joliot_curie
 recruit_character = FRA_robert_esnault_pelterie
-recruit_character = FRA_etienne_schlumberger
+recruit_character = FRA_louis_lazare_kahn
 recruit_character = FRA_joseph_vuillemin
 recruit_character = FRA_martial_henri_valin
 recruit_character = FRA_maryse_bastie
+recruit_character = FRA_jean_francois_jannekeyn
+recruit_character = FRA_alfred_heurtaux
+recruit_character = FRA_georges_guynemer
 recruit_character = FRA_victor_leon_ernest_denain
 if = {
     limit = {

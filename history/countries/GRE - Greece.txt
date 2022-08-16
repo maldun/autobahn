@@ -263,6 +263,14 @@ random_character = {
 }
 random_character = {
     limit = {
+        is_character = GRE_nikos_beloyannis
+        
+    }
+    save_global_event_target_as = GRE_nikos_beloyannis_target
+    
+}
+random_character = {
+    limit = {
         is_character = GRE_athanasios_klaras
         
     }

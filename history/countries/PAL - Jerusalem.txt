@@ -93,7 +93,6 @@ country_event = {
     
 }
 recruit_character = PAL_radwan_alhilu
-recruit_character = PAL_raghib_alnashashibi
 recruit_character = PAL_musa_alalami
 recruit_character = PAL_awni_abd_alhadi
 recruit_character = PAL_esat_sagay

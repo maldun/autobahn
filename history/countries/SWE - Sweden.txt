@@ -1,6 +1,10 @@
 capital = 141
 oob = "SWE"
 set_naval_oob = "SWE_naval"
+set_research_slots = 3
+set_stability = 0.9
+set_war_support = 0.1
+set_convoys = 75
 starting_train_buffer = 1
 country_event = {
     id = swe.0
@@ -258,9 +262,6 @@ if = {
     }
     
 }
-set_research_slots = 3
-set_convoys = 75
-set_war_support = 0.2
 set_politics = {
     ruling_party = social_conservative
     last_election = "1932.9.20"
@@ -373,6 +374,18 @@ SWE_per_edvin_skold = {
     
 }
 SWE_osten_unden = {
+    set_character_flag = SWE_leader
+    
+}
+SWE_eric_virgin = {
+    set_character_flag = SWE_leader
+    
+}
+SWE_torsten_friis = {
+    set_character_flag = SWE_leader
+    
+}
+SWE_bengt_nordenskiold = {
     set_character_flag = SWE_leader
     
 }

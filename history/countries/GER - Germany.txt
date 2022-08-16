@@ -53,6 +53,8 @@ if = {
         gwtank_chassis = 1
         basic_light_tank_chassis = 1
         basic_heavy_tank_chassis = 1
+        armor_tech_1 = 1
+        engine_tech_1 = 1
         
     }
     
@@ -284,51 +286,6 @@ country_event = {
     days = 1354
     
 }
-country_event = {
-    id = ai_events.302
-    days = 2558
-    
-}
-FRA = {
-    country_event = {
-        id = ai_events.302
-        days = 2558
-        
-    }
-    
-}
-ENG = {
-    country_event = {
-        id = ai_events.302
-        days = 2558
-        
-    }
-    
-}
-RUS = {
-    country_event = {
-        id = ai_events.302
-        days = 2558
-        
-    }
-    
-}
-SOV = {
-    country_event = {
-        id = ai_events.302
-        days = 2558
-        
-    }
-    
-}
-AUS = {
-    country_event = {
-        id = ai_events.302
-        days = 2558
-        
-    }
-    
-}
 recruit_character = GER_wilhelm_ii
 recruit_character = GER_wilhelm_iii
 recruit_character = GER_ernst_thalmann
@@ -343,7 +300,7 @@ recruit_character = GER_franz_von_papen
 recruit_character = GER_erwin_von_witzleben
 recruit_character = GER_heinrich_class
 recruit_character = GER_gerd_von_rundstedt
-recruit_character = GER_rupprecht_von_bayern
+recruit_character = GER_alfred_von_vollard_bockelberg
 recruit_character = GER_august_von_mackensen
 recruit_character = GER_erich_von_manstein
 recruit_character = GER_heinz_guderian
@@ -365,6 +322,7 @@ recruit_character = GER_hermann_hoth
 recruit_character = GER_franz_von_bayern
 recruit_character = GER_curt_haase
 recruit_character = GER_walther_von_reichenau
+recruit_character = GER_rupprecht_von_bayern
 recruit_character = GER_karl_donitz
 recruit_character = GER_erich_raeder
 recruit_character = GER_lothar_von_arnauld_de_la_periere
@@ -441,14 +399,6 @@ random_character = {
         
     }
     save_global_event_target_as = GER_wilhelm_iii_target
-    
-}
-random_character = {
-    limit = {
-        is_character = GER_rupprecht_von_bayern
-        
-    }
-    save_global_event_target_as = GER_rupprecht_von_bayern_target
     
 }
 if = {

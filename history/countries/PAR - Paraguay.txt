@@ -40,7 +40,6 @@ if = {
 }
 add_ideas = {
     extensive_conscription
-    low_economic_mobilisation
     PAR_pensions
     PAR_prussia
     
@@ -69,6 +68,11 @@ set_popularities = {
 country_event = {
     id = par.1
     days = 2
+    
+}
+country_event = {
+    id = par.29
+    days = 950
     
 }
 recruit_character = PAR_higinio_morinigo_martinez

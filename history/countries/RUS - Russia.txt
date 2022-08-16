@@ -41,7 +41,9 @@ if = {
     set_technology = {
         gwtank_chassis = 1
         basic_light_tank_chassis = 1
-        basic_heavy_tank_chassis = 1
+        improved_light_tank_chassis = 1
+        engine_tech_1 = 1
+        engine_tech_2 = 1
         
     }
     
@@ -57,7 +59,6 @@ if = {
     set_technology = {
         gwtank = 1
         basic_light_tank = 1
-        basic_heavy_tank = 1
         
     }
     
@@ -365,14 +366,20 @@ recruit_character = RUS_kirill_romanov
 recruit_character = RUS_vladimir_romanov
 recruit_character = RUS_state_duma
 activate_advisor = RUS_state_duma_sic
-recruit_character = RUS_vladimir_nabokov
+recruit_character = RUS_gerasim_vdovenko
 recruit_character = RUS_patriarch_kirill
+recruit_character = RUS_sergey_obolensky
+recruit_character = RUS_aleksandr_rodzyanko
+recruit_character = RUS_ilya_fondaminsky
+recruit_character = RUS_boris_bakhmetev
 recruit_character = RUS_vasily_kharlamov
-recruit_character = RUS_mikhail_bernatsky
-recruit_character = RUS_ivan_erdeli
-recruit_character = RUS_aleksandr_kazembek
-recruit_character = RUS_aleksey_putilov
-recruit_character = RUS_feliks_yusupov
+recruit_character = RUS_nikolay_markov
+recruit_character = RUS_boris_vysheslavtsev
+recruit_character = RUS_pyotr_sokolov
+recruit_character = RUS_nikolay_kondratyev
+recruit_character = RUS_aleksandr_liverovsky
+recruit_character = RUS_lev_kafenhaus
+recruit_character = RUS_aleksandr_voznesensky
 recruit_character = RUS_klavdiy_foss
 recruit_character = RUS_pyotr_wrangel
 recruit_character = RUS_anton_denikin

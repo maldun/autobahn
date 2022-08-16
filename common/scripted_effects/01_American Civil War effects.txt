@@ -941,14 +941,14 @@ USA_civil_war_begins = {
 					create_unit = {
 						division = "name = \"Jersey 'Devils'\" division_template = \"Continental Line\" start_experience_factor = 1.0"
 						allow_spawning_on_enemy_provs = yes
-						prioritize_location = 10814
+						prioritize_location = 3878
 						owner = CSA
 						id = 1776
 					}
 					create_unit = {
 						division = "name = \"Bronx 'Yankees'\" division_template = \"Continental Line\" start_experience_factor = 1.0"
 						allow_spawning_on_enemy_provs = yes
-						prioritize_location = 10814
+						prioritize_location = 3878
 						owner = CSA
 						id = 1776
 					}
@@ -3345,6 +3345,7 @@ USA_spawn_new_england = {
 	set_autonomy = {
 		target = NEE
 		autonomy_state = kr_autonomous_puppet
+		end_wars = no
 	}
 	add_to_faction = NEE
 	hidden_effect = {
@@ -3675,7 +3676,10 @@ USA_starting_techs = {
 		strategic_bomber1 = 1
 		CAS1 = 1
 		cv_early_fighter = 1
+		cv_naval_bomber1 = 1
 		cv_CAS1 = 1
+		
+		### New Tech##################
 		aluminum_production_1 = 1
 		camo = 1
 		etax_doctrine = 1
@@ -3683,7 +3687,9 @@ USA_starting_techs = {
 		r56_railway_mortar_subtech = 1
 		steel_production_1 = 1
 		transport_plane1 = 1
+		### New Tech end #############
 
+		
 		### Trains ###
 		basic_train = 1
 	}
@@ -3694,7 +3700,6 @@ USA_starting_techs = {
 		set_technology = {
 			gwtank_chassis = 1
 			basic_light_tank_chassis = 1
-			basic_heavy_tank_chassis = 1
 		}
 	}
 
@@ -3704,7 +3709,6 @@ USA_starting_techs = {
 		set_technology = {
 			gwtank = 1
 			basic_light_tank = 1
-			basic_heavy_tank = 1
 		}
 	}
 
@@ -3786,7 +3790,7 @@ USA_starting_tank_variants = {
 			}
 			upgrades = {
 				tank_nsb_armor_upgrade = 2
-				tank_nsb_engine_upgrade = 5
+				tank_nsb_engine_upgrade = 4
 			}
 			icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
 		}
@@ -3805,24 +3809,9 @@ USA_starting_tank_variants = {
 			}
 			upgrades = {
 				tank_nsb_armor_upgrade = 2
-				tank_nsb_engine_upgrade = 5
+				tank_nsb_engine_upgrade = 4
 			}
 			icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
-		}
-		create_equipment_variant = {
-			name = "T1 Heavy Tank"
-			type = heavy_tank_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_close_support_gun
-				turret_type_slot = tank_medium_two_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-				special_type_slot_2 = additional_machine_guns
-			}
-			icon = "gfx/interface/technologies/USA_basic_heavy_tank.dds"
 		}
 	}
 }

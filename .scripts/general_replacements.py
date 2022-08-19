@@ -21,8 +21,10 @@ MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
 IDEA_PATH = "common/ideas"
 HISTORY_COUNTRY_PATH = "history/countries"
+DECISION_PATH = "common/decisions"
 # RULES_PATH = 
 SET_TECH_KEY = "set_technology"
+HAS_TECH_KEY = "has_tech"
 SPIRIT_KEYS = {"air_spirits.txt": ("air_force_spirit",
                                    "air_force_command_spirit"),
                "army_spirits.txt": ("academy_spirit", "army_spirit",
@@ -267,18 +269,44 @@ def filter_spirits(fname, keys):
         content = list2paradox(new_obj)
         file.write(content)
 
+def update_chinese_army_reform(file="China_decisions.txt"):
+    in_folder = os.path.join(MAIN_MOD, DECISION_PATH)
+    out_folder = os.path.join(OUT_FOLDER, DECISION_PATH)
+    os.makedirs(out_folder, exist_ok=True)
+    tech_dic = {"delay": ("r56_double_envelopment",),
+                "mobile_infantry": ("r56_infiltration_assault", "r56_milita_formation"),
+                "mass_motorization": ("r56_infiltration_in_depth", "r56_nd_conscription"),
+                "mechanised_offensive":("r56_backhand_blow", "r56_peoples_army"),
+                "volkssturm":("r56_prepared_defense", "r56_breakout")
+                }
+    maps = []
+    for key, techs in tech_dic.items():
+        values = [[HAS_TECH_KEY, [tech]] for tech in techs]
+        maps += [[[has_value, [HAS_TECH_KEY, [key]]],
+                  [add_multiple, values]]]
+
+    obj = paradox2list(os.path.join(in_folder,file))
+    try:
+        apply_maps_on_file(os.path.join(in_folder, file),
+                           os.path.join(out_folder, file),
+                           maps)
+    except Exception as exc:
+        print(exc)
+        import pdb; pdb.set_trace()
     
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
     # add missing spirits
     for fname, keys in SPIRIT_KEYS.items():
         filter_spirits(fname, keys)
+    # update China Army Reform
+    update_chinese_army_reform()
     #create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     maps = ideology_map()
     apply_ideology_map(maps)
     maps = remove_obsolete_equipment_maps()
     country_maps = apply_equipment_table("KX_equipment.csv")
     apply_equipment_maps(maps, country_maps)
-
+    
    
     

@@ -4,6 +4,7 @@ set_technology = {
     mau_mau_rifle = 1
     camo = 1
     etax_doctrine = 1
+    r56_guerilla_warfare = 1
     
 }
 set_country_flag = KX_no_naval_tech_decision_enable

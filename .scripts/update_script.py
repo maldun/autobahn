@@ -300,6 +300,7 @@ if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
     # update rt56 techs
     rt56_update.tanks(RT56_FOLDER, OUT_FOLDER)
+    rt56_update.post_steps(RT56_FOLDER, OUT_FOLDER)
     
     # add missing spirits
     for fname, keys in SPIRIT_KEYS.items():

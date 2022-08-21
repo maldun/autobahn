@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
-import pandas as pd 
+import pandas as pd
+import shutil
 HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
 import Hoi4Converter
@@ -270,6 +271,11 @@ def filter_spirits(fname, keys):
     with open(out_file, 'w', encoding=UTF8) as file:
         content = list2paradox(new_obj)
         file.write(content)
+
+    # copy rt56 file
+    orig_in_file = os.path.join(rt56_idea_path, fname)
+    orig_out_file = os.path.join(out_path, fname)
+    shutil.copy2(orig_in_file, orig_out_file)
 
 def update_chinese_army_reform(file="China_decisions.txt"):
     in_folder = os.path.join(MAIN_MOD, DECISION_PATH)

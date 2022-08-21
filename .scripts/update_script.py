@@ -8,6 +8,8 @@ import Hoi4Converter
 from Hoi4Converter.mappings import *
 from Hoi4Converter.converter import *
 
+import rt56_update
+
 HOI4_FOLDER = HOME + ".local/share/Steam/steamapps/common/Hearts of Iron IV/"
 KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695605/"
 KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426030/"
@@ -296,6 +298,9 @@ def update_chinese_army_reform(file="China_decisions.txt"):
     
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
+    # update rt56 techs
+    rt56_update.tanks(RT56_FOLDER, OUT_FOLDER)
+    
     # add missing spirits
     for fname, keys in SPIRIT_KEYS.items():
         filter_spirits(fname, keys)

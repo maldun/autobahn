@@ -1,10 +1,10 @@
 {
     "common/technologies/": {
-        "r56e_etax.txt": [],
-        "NSB_armor.txt": [],
+        "armor.txt": [],
+        "NSB_armor.txt": []
     },
     "common/technology_tags/": {
-	"r56e_technology.txt":[], 
+	"r56e_technology.txt": []
     },
     "common/units/equipment/": {
 	"tank_amphibious.txt": [],
@@ -13,7 +13,10 @@
 	"tank_medium.txt": [],
 	"tank_modern.txt": [],
 	"tank_super_heavy.txt": [],
-	"tank_chassis.txt": [],
+	"tank_chassis.txt": []
     },
-    
+    "interface/replace/": {
+	"r56_techs_tank.gfx": ["interface/","r56_techs_tank.gfx"],
+	"r56_techs_amphibious_tank.gfx": ["interface/", "r56_techs_amphibious_tank.gfx"]
+    }
 }

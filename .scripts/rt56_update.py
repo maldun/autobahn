@@ -30,7 +30,18 @@ def copy_json(json_file, rt56_path, out_path):
             os.makedirs(os.path.split(out_file)[0], exist_ok=True)
             shutil.copy2(in_file, out_file)
 
+def copy_files(fname):
+    def cdecorator(func):
+        def new_func(rt56_path, out_path, *args, **kwargs):
+            copy_json(fname, rt56_path, out_path)
+            return func(rt56_path, out_path,*args,**kwargs)
+        return new_func
+    return cdecorator
 
-TANK_COPY_JSON = "rt56_copy_tank.json"
+@copy_files("rt56_copy_tank.json")
 def tanks(rt56_path, out_path):
-    copy_json(TANK_COPY_JSON, rt56_path, out_path)
+    pass
+    
+@copy_files("rt56_copy_post.json")
+def post_steps(rt56_path, out_path):
+    pass

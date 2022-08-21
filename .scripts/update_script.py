@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
-import pandas as pd 
+import pandas as pd
+import shutil
 HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
 import Hoi4Converter
 from Hoi4Converter.mappings import *
 from Hoi4Converter.converter import *
+
+import rt56_update
 
 HOI4_FOLDER = HOME + ".local/share/Steam/steamapps/common/Hearts of Iron IV/"
 KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695605/"
@@ -21,8 +24,10 @@ MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
 IDEA_PATH = "common/ideas"
 HISTORY_COUNTRY_PATH = "history/countries"
+DECISION_PATH = "common/decisions"
 # RULES_PATH = 
 SET_TECH_KEY = "set_technology"
+HAS_TECH_KEY = "has_tech"
 SPIRIT_KEYS = {"air_spirits.txt": ("air_force_spirit",
                                    "air_force_command_spirit"),
                "army_spirits.txt": ("academy_spirit", "army_spirit",
@@ -118,10 +123,9 @@ def ideology_map():
     vals = ["SHX", "PER"]
     for val in vals:
         maps.append([[has_key_and_val, [key, [val]]], [remove, [key, [val]]]])
-    # val = "TUR"
-    # val2 = "OTT"
-    # if KX is True:
-    #     maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
+    #val = "TUR"
+    #val2 = "OTT"
+    #maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
 
     # Add RadSoc when anarchist Commune is there
     val = ['has_country_leader', [['name', ['"Anarchist Commune"']], ['ruling_only', [True]]]]
@@ -276,19 +280,54 @@ def filter_spirits(fname, keys):
         content = list2paradox(new_obj)
         file.write(content)
 
+    # copy rt56 file
+    orig_in_file = os.path.join(rt56_idea_path, rt56_fname)
+    orig_out_file = os.path.join(out_path, rt56_fname)
+    shutil.copy2(orig_in_file, orig_out_file)
+
+def update_chinese_army_reform(file="China_decisions.txt"):
+    in_folder = os.path.join(MAIN_MOD, DECISION_PATH)
+    out_folder = os.path.join(OUT_FOLDER, DECISION_PATH)
+    os.makedirs(out_folder, exist_ok=True)
+    tech_dic = {"delay": ("r56_double_envelopment",),
+                "mobile_infantry": ("r56_infiltration_assault", "r56_milita_formation"),
+                "mass_motorization": ("r56_infiltration_in_depth", "r56_nd_conscription"),
+                "mechanised_offensive":("r56_backhand_blow", "r56_peoples_army"),
+                "volkssturm":("r56_prepared_defense", "r56_breakout")
+                }
+    maps = []
+    for key, techs in tech_dic.items():
+        values = [[HAS_TECH_KEY, [tech]] for tech in techs]
+        maps += [[[has_value, [HAS_TECH_KEY, [key]]],
+                  [add_multiple, values]]]
+
+    obj = paradox2list(os.path.join(in_folder,file))
+    try:
+        apply_maps_on_file(os.path.join(in_folder, file),
+                           os.path.join(out_folder, file),
+                           maps)
+    except Exception as exc:
+        print(exc)
+        import pdb; pdb.set_trace()
     
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
+    # update rt56 techs
+    rt56_update.tanks(RT56_FOLDER, OUT_FOLDER)
+    rt56_update.post_steps(RT56_FOLDER, OUT_FOLDER)
+    
     # add missing spirits
     
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
         filter_spirits(fname, keys)
+    # update China Army Reform
+    update_chinese_army_reform()
     #create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     maps = ideology_map()
     apply_ideology_map(maps)
     maps = remove_obsolete_equipment_maps()
-    country_maps = apply_equipment_table("equipment.csv")
+    country_maps = apply_equipment_table("KX_equipment.csv")
     apply_equipment_maps(maps, country_maps)
-
+    
    
     

@@ -316,8 +316,7 @@ if __name__ == "__main__":
     rt56_update.tanks(RT56_FOLDER, OUT_FOLDER)
     rt56_update.post_steps(RT56_FOLDER, OUT_FOLDER)
     
-    # add missing spirits
-    
+    # add missing spirits    
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
         filter_spirits(fname, keys)
     # update China Army Reform

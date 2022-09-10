@@ -1,4 +1,4 @@
-capital = 842
+capital = 13
 set_research_slots = 3
 set_convoys = 5
 set_technology = {
@@ -40,66 +40,59 @@ if = {
     
 }
 set_politics = {
-    ruling_party = social_democrat
+    ruling_party = paternal_autocrat
     last_election = "1888.6.15"
     election_frequency = 48
     elections_allowed = no
     
 }
 set_popularities = {
-    totalist = 2
-    radical_socialist = 25
+    totalist = 0
+    radical_socialist = 2
     syndicalist = 0
-    social_democrat = 15
-    social_liberal = 8
-    market_liberal = 7
-    social_conservative = 11
-    authoritarian_democrat = 28
-    paternal_autocrat = 2
-    national_populist = 2
+    social_democrat = 11
+    social_liberal = 4
+    market_liberal = 6
+    social_conservative = 17
+    authoritarian_democrat = 21
+    paternal_autocrat = 38
+    national_populist = 1
     
 }
 add_ideas = {
-    LAT_dualism
-    LAT_desesperate_situation
-    LAT_disorganised_economy
-    LAT_army_0
-    LAT_remember_riga
     LAT_EST_roads_to_riga_1
+    EST_agrarian_issue_1
     limited_conscription
     
 }
-recruit_character = LAT_constitutional_assembly
-recruit_character = LAT_margers_skujenieks
-recruit_character = LAT_peteris_jurasevskis
-recruit_character = LAT_janis_kurelis
-recruit_character = LAT_karlis_ulmanis
-recruit_character = LAT_kristaps_upelnieks
-recruit_character = LAT_gustavs_celmins
-recruit_character = LAT_vilis_lacis
-recruit_character = LAT_alfreds_bilmanis
-recruit_character = LAT_julijs_danisevskis
-recruit_character = LAT_karlis_karlsons
-recruit_character = LAT_janis_kaminskis
-recruit_character = LAT_alberts_kviesis
-recruit_character = LAT_janis_balodis
-recruit_character = LAT_kornelijs_veitmanis
-recruit_character = LAT_ludwig_adamovich
-recruit_character = LAT_janis_fridrihsons
-recruit_character = LAT_martins_penikis
-recruit_character = LAT_oskars_dankers
-recruit_character = LAT_teodors_spade
-recruit_character = LAT_peteris_radzins
-recruit_character = LAT_eduards_kalnins
-recruit_character = LAT_vilis_janums
-recruit_character = LAT_janis_berzins
-recruit_character = LAT_janis_indans
-recruit_character = LAT_arturs_silgailis
-recruit_character = LAT_voldemars_ozols
-recruit_character = LAT_army_reform_council
+country_event = {
+    id = KREST.1
+    days = 2
+    
+}
+recruit_character = EST_jaan_anvelt
+recruit_character = EST_arnold_sommerling
+recruit_character = EST_august_rei
+recruit_character = EST_otto_strandman
+recruit_character = EST_jaan_tonisson
+recruit_character = EST_juri_uluots
+recruit_character = EST_artur_sirk
+recruit_character = EST_andres_larka
+recruit_character = EST_hengo_tulnola
+recruit_character = EST_aleksander_tonisson
+recruit_character = EST_jaan_kruus
+recruit_character = EST_johan_laidoner
+recruit_character = EST_karl_liidemann
+recruit_character = EST_leo_sepp
+recruit_character = EST_ants_piip
+recruit_character = EST_hjalmar_mae
+recruit_character = EST_august_tuulse
+recruit_character = EST_richard_tomberg
+recruit_character = EST_johannes_soodla
+recruit_character = EST_alfons_rebane
 division_template = {
-    name = "Kajnieku divizija"
-    division_names_group = LAT_INF_01
+    name = "Jalaväediviis"
+    division_names_group = EST_INF_01
     regiments = {
         infantry = {
             x = 0
@@ -136,8 +129,8 @@ division_template = {
     
 }
 division_template = {
-    name = "Jatnieku divizija"
-    division_names_group = LAT_CAV_01
+    name = "Ratsarügement"
+    division_names_group = EST_CAV_01
     regiments = {
         cavalry = {
             x = 0
@@ -164,7 +157,7 @@ division_template = {
     
 }
 create_equipment_variant = {
-    name = "Spidola Class"
+    name = "Kalev Class"
     type = ship_hull_submarine_1
     name_group = LAT_SS_HISTORICAL
     parent_version = 0
@@ -177,7 +170,7 @@ create_equipment_variant = {
     
 }
 create_equipment_variant = {
-    name = "Cesis Class"
+    name = "Wambola Class"
     type = ship_hull_light_1
     name_group = LAT_DD_HISTORICAL
     parent_version = 0

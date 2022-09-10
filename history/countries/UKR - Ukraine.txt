@@ -2,22 +2,21 @@ capital = 202
 set_convoys = 30
 set_stability = 0.5
 set_war_support = 0.2
+set_research_slots = 3
 oob = "UKR"
 set_naval_oob = "UKR_naval"
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
-    tech_recon = 1
-    tech_support = 1
-    tech_engineers = 1
     tech_mountaineers = 1
     motorised_infantry = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
     gw_artillery = 1
     early_fighter = 1
-    fighter1 = 1
-    CAS1 = 1
     early_bomber = 1
-    tactical_bomber1 = 1
+    fuel_silos = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
@@ -57,23 +56,21 @@ if = {
         
     }
     set_technology = {
+        early_ship_hull_submarine = 1
         early_ship_hull_light = 1
-        basic_naval_mines = 1
+        early_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
         basic_ship_hull_light = 1
         early_ship_hull_cruiser = 1
         basic_ship_hull_cruiser = 1
-        early_ship_hull_submarine = 1
         basic_ship_hull_submarine = 1
         early_ship_hull_heavy = 1
         basic_ship_hull_heavy = 1
-        basic_depth_charges = 1
-        basic_torpedo = 1
+        basic_naval_mines = 1
+        submarine_mine_laying = 1
         basic_battery = 1
-        basic_light_battery = 1
-        basic_medium_battery = 1
-        basic_secondary_battery = 1
-        improved_ship_torpedo_launcher = 1
-        basic_cruiser_armor_scheme = 1
+        basic_torpedo = 1
+        basic_depth_charges = 1
         
     }
     
@@ -87,34 +84,12 @@ if = {
         
     }
     set_technology = {
+        early_submarine = 1
         early_destroyer = 1
         basic_destroyer = 1
         early_light_cruiser = 1
-        basic_light_cruiser = 1
-        early_submarine = 1
-        basic_submarine = 1
-        early_heavy_cruiser = 1
-        basic_heavy_cruiser = 1
-        early_battleship = 1
-        basic_battleship = 1
         
     }
-    
-}
-set_research_slots = 3
-country_event = {
-    id = ukraine.1
-    days = 2
-    
-}
-country_event = {
-    id = ukraine.76
-    days = 40
-    
-}
-country_event = {
-    id = ukraine.77
-    days = 190
     
 }
 set_politics = {
@@ -140,6 +115,21 @@ set_popularities = {
 add_ideas = {
     Hetman_army
     language_issue
+    
+}
+country_event = {
+    id = ukraine.1
+    days = 2
+    
+}
+country_event = {
+    id = ukraine.76
+    days = 40
+    
+}
+country_event = {
+    id = ukraine.77
+    days = 190
     
 }
 recruit_character = UKR_wilhelm_franz_von_habsburg
@@ -212,7 +202,4 @@ random_character = {
     save_global_event_target_as = UKR_danylo_skoropadskyi_target
     
 }
-UKR = {
-    UKR_pavlo_skoropadskyi_sic = yes
-    
-}
+UKR_pavlo_skoropadskyi_sic = yes

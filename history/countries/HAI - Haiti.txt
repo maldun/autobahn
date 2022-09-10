@@ -1,7 +1,10 @@
 capital = 318
 oob = "HAI"
-set_convoys = 20
+set_naval_oob = "HAI_naval"
 set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.25
+set_convoys = 5
 set_technology = {
     infantry_weapons = 1
     gw_artillery = 1
@@ -18,11 +21,8 @@ if = {
     set_technology = {
         early_ship_hull_light = 1
         basic_naval_mines = 1
-        early_ship_hull_cruiser = 1
         basic_battery = 1
-        basic_light_battery = 1
-        basic_secondary_battery = 1
-        mtg_transport = 1
+        basic_torpedo = 1
         
     }
     
@@ -37,8 +37,6 @@ if = {
     }
     set_technology = {
         early_destroyer = 1
-        early_light_cruiser = 1
-        transport = 1
         
     }
     
@@ -53,8 +51,6 @@ reverse_add_opinion_modifier = {
     modifier = HAI_foreign_council
     
 }
-set_stability = 0.4
-set_war_support = 0.25
 set_politics = {
     ruling_party = authoritarian_democrat
     last_election = "1932.4.6"
@@ -219,7 +215,7 @@ activate_targeted_decision = {
     
 }
 recruit_character = HAI_joseph_jolibois_fils
-recruit_character = HAI_jacques_romain
+recruit_character = HAI_jacques_roumain
 recruit_character = HAI_max_hudincourt
 recruit_character = HAI_demosthenes_calixte
 recruit_character = HAI_paul_magloire

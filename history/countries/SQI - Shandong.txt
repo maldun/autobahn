@@ -110,10 +110,11 @@ country_event = {
     days = 1
     
 }
+set_country_flag = SQI_needed
 recruit_character = SQI_fu_sinian
 recruit_character = SQI_zhang_shulin
 recruit_character = SQI_ma_shiwei
-recruit_character = SQI_song_zheyuan
+recruit_character = SQI_qu_yingguang
 recruit_character = SQI_zhang_zongchang
 recruit_character = SQI_zhang_tianran
 recruit_character = SQI_chu_yupu
@@ -126,7 +127,6 @@ recruit_character = SQI_wang_zonglu
 recruit_character = SQI_han_enrong
 recruit_character = SQI_lu_zhongjie
 recruit_character = SQI_kong_dechong
-recruit_character = SQI_qu_yingguang
 recruit_character = SQI_li_jinglin
 recruit_character = SQI_zhao_hong_wenguo
 recruit_character = SQI_feng_anbang

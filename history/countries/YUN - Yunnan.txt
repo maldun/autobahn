@@ -18,31 +18,6 @@ set_technology = {
     transport_plane1 = 1
     
 }
-if = {
-    limit = {
-        has_dlc = "No Step Back"
-        
-    }
-    set_technology = {
-        gwtank_chassis = 1
-        
-    }
-    
-}
-if = {
-    limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
-        
-    }
-    set_technology = {
-        gwtank = 1
-        
-    }
-    
-}
 set_politics = {
     ruling_party = paternal_autocrat
     last_election = "1888.6.15"
@@ -114,6 +89,10 @@ recruit_character = YUN_naval_council
 recruit_character = YUN_liu_peiquan
 recruit_character = YUN_wang_shuming
 recruit_character = YUN_yan_yucong
+recruit_character = YUN_dai_jitao
+recruit_character = YUN_yang_yongtai
+recruit_character = YUN_zhang_qun
+recruit_character = YUN_lu_chongren
 recruit_character = YUN_long_yun
 recruit_character = YUN_hu_ruoyu
 recruit_character = YUN_zhu_peide

@@ -2,8 +2,7 @@ capital = 278
 oob = "ARG"
 set_naval_oob = "ARG_naval"
 set_research_slots = 3
-set_convoys = 40
-starting_train_buffer = 2
+set_convoys = 50
 set_technology = {
     infantry_weapons = 1
     tech_support = 1
@@ -255,8 +254,8 @@ country_event = {
     days = 3950
     
 }
-set_stability = -0.1
-set_war_support = 0.3
+set_stability = 0
+set_war_support = 0.35
 set_variable = {
     arg_im_factor = 100
     
@@ -328,23 +327,7 @@ recruit_character = ARG_antonio_parodi
 recruit_character = ARG_bartolome_de_la_colina
 recruit_character = ARG_pedro_castex_lainfor
 recruit_character = ARG_marcos_zar
-ARG_juan_pistarini = {
-    set_character_flag = ARG_can_join_FOP
-    
-}
-ARG_enrique_mosconi = {
-    set_character_flag = ARG_can_join_FOP
-    
-}
-ARG_bernardo_alberte = {
-    set_character_flag = ARG_can_join_FOP
-    
-}
 ARG_jose_maria_sobral = {
-    set_character_flag = ARG_can_join_FOP
-    
-}
-ARG_manuel_savio = {
     set_character_flag = ARG_can_join_FOP
     
 }
@@ -357,6 +340,10 @@ ARG_juan_cooke = {
     
 }
 ARG_carlos_sanchez_viamonte = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_carlos_begnis = {
     set_character_flag = ARG_can_join_FOP
     
 }
@@ -384,11 +371,27 @@ ARG_ricardo_balbin = {
     set_character_flag = ARG_can_join_FOP
     
 }
+ARG_juan_pistarini = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_enrique_mosconi = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_manuel_savio = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
 ARG_humberto_sosa_molina = {
     set_character_flag = ARG_can_join_FOP
     
 }
 ARG_eleazar_videla = {
+    set_character_flag = ARG_can_join_FOP
+    
+}
+ARG_segundo_storni = {
     set_character_flag = ARG_can_join_FOP
     
 }

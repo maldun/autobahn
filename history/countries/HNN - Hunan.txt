@@ -12,31 +12,6 @@ set_technology = {
     etax_doctrine = 1
     
 }
-if = {
-    limit = {
-        has_dlc = "No Step Back"
-        
-    }
-    set_technology = {
-        gwtank_chassis = 1
-        
-    }
-    
-}
-if = {
-    limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
-        
-    }
-    set_technology = {
-        gwtank = 1
-        
-    }
-    
-}
 add_offsite_building = {
     type = industrial_complex
     level = 2
@@ -80,18 +55,7 @@ add_ideas = {
 }
 recruit_character = HNN_tang_shengzhi
 recruit_character = HNN_zhao_hengti
-CHI = {
-    recruit_character = HNN_cheng_qian
-    random_character = {
-        limit = {
-            is_character = HNN_cheng_qian
-            
-        }
-        save_global_event_target_as = HNN_cheng_qian_target
-        
-    }
-    
-}
+recruit_character = HNN_cheng_qian
 recruit_character = HNN_tang_shengming
 recruit_character = HNN_he_yaozu
 recruit_character = HNN_peng_dehuai
@@ -121,6 +85,15 @@ random_character = {
         
     }
     save_global_event_target_as = HNN_zhao_hengti_target
+    
+}
+random_character = {
+    limit = {
+        is_character = HNN_cheng_qian
+        
+    }
+    save_global_event_target_as = HNN_cheng_qian_target
+    set_nationality = CHI
     
 }
 division_template = {

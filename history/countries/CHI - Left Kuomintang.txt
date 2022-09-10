@@ -110,6 +110,8 @@ add_opinion_modifier = {
     
 }
 set_cosmetic_tag = CHI_rebel
+set_country_flag = can_assume_national_leadership
+set_country_flag = china_integration_unlocked
 set_variable = {
     kr_china_provinceintegration_cost_small = 50
     
@@ -134,8 +136,6 @@ set_variable = {
     kr_china_concessionintegration_speed = 60
     
 }
-set_country_flag = can_assume_national_leadership
-set_country_flag = china_integration_unlocked
 add_ideas = {
     limited_exports
     volunteer_only
@@ -263,7 +263,7 @@ recruit_character = CHI_deng_yingchao
 recruit_character = CHI_chiang_ching_kuo
 activate_advisor = CHI_liao_zhongkai_sic
 recruit_character = CHI_deng_wenyi
-recruit_character = CHI_zhou_zirou
+recruit_character = CHI_zhou_zhirou
 recruit_character = CHI_mao_bangchu
 recruit_character = CHI_su_yu
 recruit_character = CHI_he_zhonghan

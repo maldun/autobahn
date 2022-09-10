@@ -12,6 +12,7 @@ set_technology = {
     tech_support = 1
     tech_engineers = 1
     gw_artillery = 1
+    interwar_antiair = 1
     early_fighter = 1
     early_bomber = 1
     basic_train = 1
@@ -50,21 +51,28 @@ if = {
         
     }
     set_technology = {
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
         early_ship_hull_light = 1
-        basic_naval_mines = 1
         basic_ship_hull_light = 1
         early_ship_hull_cruiser = 1
         basic_ship_hull_cruiser = 1
-        early_ship_hull_submarine = 1
+        coastal_defense_ships = 1
         early_ship_hull_heavy = 1
         basic_ship_hull_heavy = 1
+        basic_naval_mines = 1
+        submarine_mine_laying = 1
         basic_depth_charges = 1
         basic_torpedo = 1
         basic_battery = 1
         basic_light_battery = 1
+        basic_medium_battery = 1
+        basic_heavy_battery = 1
         basic_secondary_battery = 1
-        improved_ship_torpedo_launcher = 1
+        improved_secondary_battery = 1
         basic_cruiser_armor_scheme = 1
+        basic_heavy_armor_scheme = 1
+        improved_airplane_launcher = 1
         mtg_transport = 1
         
     }
@@ -79,16 +87,14 @@ if = {
         
     }
     set_technology = {
-        early_destroyer = 1
-        basic_destroyer = 1
-        early_light_cruiser = 1
-        basic_light_cruiser = 1
         early_submarine = 1
+        basic_submarine = 1
+        early_destroyer = 1
+        early_light_cruiser = 1
         early_heavy_cruiser = 1
-        basic_heavy_cruiser = 1
-        early_battlecruiser = 1
-        basic_battlecruiser = 1
         early_battleship = 1
+        basic_battleship = 1
+        early_battlecruiser = 1
         transport = 1
         
     }
@@ -164,6 +170,41 @@ set_popularities = {
     authoritarian_democrat = 0
     paternal_autocrat = 42
     national_populist = 0
+    
+}
+activate_targeted_decision = {
+    target = ITA
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = SIC
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = PAP
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = VNC
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = EMI
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = TUS
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = LOM
+    decision = SRD_attack_italy
     
 }
 recruit_character = SRD_amedeo_aosta

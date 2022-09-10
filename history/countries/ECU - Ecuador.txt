@@ -1,47 +1,21 @@
 capital = 305
 oob = "ECU"
-set_naval_oob = "ECU_naval"
+set_war_support = 0.1
+set_convoys = 5
 set_research_slots = 3
 set_technology = {
     infantry_weapons = 1
+    tech_mountaineers = 1
     tech_support = 1
     tech_engineers = 1
-    tech_mountaineers = 1
     gw_artillery = 1
     early_fighter = 1
+    fuel_silos = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
     
 }
-if = {
-    limit = {
-        has_dlc = "Man the Guns"
-        
-    }
-    set_technology = {
-        early_ship_hull_light = 1
-        basic_battery = 1
-        basic_torpedo = 1
-        
-    }
-    
-}
-if = {
-    limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
-        
-    }
-    set_technology = {
-        early_destroyer = 1
-        
-    }
-    
-}
-set_war_support = 0.1
 country_event = {
     id = ecu.0
     days = 1
@@ -107,7 +81,6 @@ set_popularities = {
     national_populist = 0
     
 }
-set_convoys = 30
 recruit_character = ECU_carlos_mancheno_cajas
 recruit_character = ECU_alberto_enriquez_gallo
 recruit_character = ECU_jose_maria_velasco_ibarra

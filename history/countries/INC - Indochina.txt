@@ -9,6 +9,7 @@ set_technology = {
     jungle_warfare = 1
     camo = 1
     etax_doctrine = 1
+    r56_guerilla_warfare = 1
     
 }
 if = {

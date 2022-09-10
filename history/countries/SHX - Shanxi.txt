@@ -94,6 +94,7 @@ recruit_character = SHX_wang_jingguo
 recruit_character = SHX_sun_chu
 recruit_character = SHX_liu_zizhen
 recruit_character = SHX_han_duofeng
+recruit_character = SHX_song_zheyuan
 activate_targeted_decision = {
     target = THIS
     decision = SHX_Feng_Coup

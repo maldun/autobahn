@@ -1,17 +1,19 @@
 capital = 849
 oob = "VEN"
 set_naval_oob = "VEN_naval"
-set_convoys = 30
 set_research_slots = 3
+set_war_support = 0.2
+set_convoys = 10
 set_technology = {
     infantry_weapons = 1
-    infantry_weapons1 = 1
     tech_mountaineers = 1
     tech_support = 1
     tech_recon = 1
     gw_artillery = 1
+    interwar_antiair = 1
     early_fighter = 1
-    naval_bomber1 = 1
+    fuel_silos = 1
+    fuel_refining = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
@@ -36,6 +38,21 @@ if = {
 }
 if = {
     limit = {
+        has_dlc = "Man the Guns"
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_depth_charges = 1
+        basic_battery = 1
+        basic_torpedo = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
         NOT = {
             has_dlc = "Man the Guns"
             
@@ -44,13 +61,11 @@ if = {
     }
     set_technology = {
         early_destroyer = 1
-        early_light_cruiser = 1
-        early_heavy_cruiser = 1
+        transport = 1
         
     }
     
 }
-set_war_support = 0.2
 set_politics = {
     ruling_party = social_democrat
     last_election = "1934.5.15"

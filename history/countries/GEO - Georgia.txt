@@ -107,6 +107,7 @@ recruit_character = GEO_kakutsa_cholokashvili
 recruit_character = GEO_giorgi_khimshiashvili
 recruit_character = GEO_valiko_jugheli
 recruit_character = GEO_vladimer_goguadze
+recruit_character = GEO_valerian_tevzadze
 recruit_character = GEO_giorgi_abashvili
 recruit_character = GEO_pm_consolidated
 activate_advisor = GEO_pm_consolidated_sic

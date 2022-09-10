@@ -2,15 +2,17 @@ capital = 306
 oob = "COL"
 set_naval_oob = "COL_naval"
 set_research_slots = 3
+set_war_support = 0.1
+set_convoys = 10
 set_technology = {
     infantry_weapons = 1
     tech_mountaineers = 1
     tech_support = 1
     tech_recon = 1
     gw_artillery = 1
+    interwar_antiair = 1
     early_fighter = 1
     naval_bomber1 = 1
-    basic_train = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
@@ -46,7 +48,6 @@ if = {
     }
     
 }
-set_war_support = 0.1
 country_event = {
     id = col.1
     days = 1
@@ -72,7 +73,6 @@ set_popularities = {
     national_populist = 7
     
 }
-set_convoys = 30
 recruit_character = COL_gilberto_vieira
 recruit_character = COL_pedro_nel_gomez_agudelo
 recruit_character = COL_jorge_eliecer_gaitan

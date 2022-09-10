@@ -1,3 +1,43 @@
 ideas = {
+    army_spirit = {
+        ideological_loyalty_spirit_KR = {
+            name = ideological_loyalty_spirit
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea ideological_loyalty_spirit"
+                
+            }
+            ledger = army
+            visible = {
+                OR = {
+                    has_socialist_government = yes
+                    has_government = national_populist
+                    
+                }
+                
+            }
+            modifier = {
+                pocket_penalty = -0.2
+                weekly_manpower = 500
+                
+            }
+            ai_will_do = {
+                factor = 1
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
     
 }

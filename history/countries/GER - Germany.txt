@@ -12,16 +12,14 @@ add_ideas = {
     
 }
 set_technology = {
-    electronic_mechanical_engineering = 1
-    fuel_silos = 1
     infantry_weapons = 1
     infantry_weapons1 = 1
-    tech_support = 1
     motorised_infantry = 1
-    tech_recon = 1
-    tech_engineers = 1
     tech_mountaineers = 1
     marines = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
     gw_artillery = 1
     interwar_antiair = 1
     early_fighter = 1
@@ -31,8 +29,9 @@ set_technology = {
     cv_CAS1 = 1
     fighter1 = 1
     tactical_bomber1 = 1
-    strategic_bomber1 = 1
     CAS1 = 1
+    fuel_silos = 1
+    fuel_refining = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
@@ -81,32 +80,33 @@ if = {
         
     }
     set_technology = {
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
         early_ship_hull_light = 1
-        basic_naval_mines = 1
         basic_ship_hull_light = 1
         early_ship_hull_cruiser = 1
         basic_ship_hull_cruiser = 1
-        early_ship_hull_submarine = 1
-        basic_ship_hull_submarine = 1
-        early_ship_hull_carrier = 1
-        basic_ship_hull_carrier = 1
         early_ship_hull_heavy = 1
         basic_ship_hull_heavy = 1
         ship_hull_super_heavy = 1
-        cruiser_submarines = 1
+        early_ship_hull_carrier = 1
+        basic_ship_hull_carrier = 1
+        ship_hull_super_heavy = 1
+        panzerschiffe = 1
+        basic_naval_mines = 1
+        submarine_mine_laying = 1
         basic_torpedo = 1
+        improved_ship_torpedo_launcher = 1
         basic_battery = 1
         basic_light_battery = 1
-        basic_secondary_battery = 1
-        improved_secondary_battery = 1
-        improved_ship_torpedo_launcher = 1
-        basic_cruiser_armor_scheme = 1
-        basic_heavy_armor_scheme = 1
         basic_medium_battery = 1
         basic_heavy_battery = 1
-        smoke_generator = 1
+        basic_secondary_battery = 1
+        improved_secondary_battery = 1
         basic_depth_charges = 1
-        submarine_mine_laying = 1
+        smoke_generator = 1
+        basic_cruiser_armor_scheme = 1
+        basic_heavy_armor_scheme = 1
         mtg_transport = 1
         
     }
@@ -121,18 +121,17 @@ if = {
         
     }
     set_technology = {
+        early_submarine = 1
+        basic_submarine = 1
         early_destroyer = 1
         basic_destroyer = 1
         early_light_cruiser = 1
         basic_light_cruiser = 1
-        early_submarine = 1
-        basic_submarine = 1
         early_heavy_cruiser = 1
         basic_heavy_cruiser = 1
-        early_battlecruiser = 1
         early_battleship = 1
         basic_battleship = 1
-        heavy_battleship = 1
+        early_battlecruiser = 1
         early_carrier = 1
         basic_carrier = 1
         transport = 1
@@ -160,7 +159,7 @@ set_popularities = {
     national_populist = 2
     
 }
-create_faction = Mittelmacht
+create_faction = reichspakt
 add_to_faction = GER
 add_to_faction = BEL
 add_to_faction = LIT
@@ -173,7 +172,12 @@ add_to_faction = GEA
 every_country = {
     limit = {
         OR = {
-            is_ally_with = GER
+            tag = GER
+            tag = BEL
+            tag = LIT
+            tag = BAT
+            tag = WHR
+            tag = UKR
             tag = DEN
             tag = ICE
             tag = SWE
@@ -252,12 +256,6 @@ country_event = {
 country_event = {
     id = gerfla.8
     days = 1218
-    
-}
-country_event = {
-    id = sprc.256
-    days = 720
-    random_hours = 3840
     
 }
 country_event = {

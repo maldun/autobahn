@@ -14,10 +14,13 @@ set_technology = {
     tech_support = 1
     tech_engineers = 1
     gw_artillery = 1
+    interwar_antiair = 1
     early_fighter = 1
     early_bomber = 1
     naval_bomber1 = 1
     CAS1 = 1
+    fuel_silos = 1
+    fuel_refining = 1
     basic_train = 1
     aluminum_production_1 = 1
     camo = 1
@@ -61,24 +64,27 @@ if = {
         
     }
     set_technology = {
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
         early_ship_hull_light = 1
-        basic_naval_mines = 1
         basic_ship_hull_light = 1
         early_ship_hull_cruiser = 1
         basic_ship_hull_cruiser = 1
-        early_ship_hull_submarine = 1
-        basic_ship_hull_submarine = 1
         early_ship_hull_heavy = 1
         basic_ship_hull_heavy = 1
+        basic_naval_mines = 1
+        submarine_mine_laying = 1
         basic_depth_charges = 1
         basic_torpedo = 1
         basic_battery = 1
         basic_light_battery = 1
         basic_medium_battery = 1
+        basic_heavy_battery = 1
         basic_secondary_battery = 1
-        improved_ship_torpedo_launcher = 1
+        improved_secondary_battery = 1
         basic_cruiser_armor_scheme = 1
-        submarine_mine_laying = 1
+        basic_heavy_armor_scheme = 1
+        improved_airplane_launcher = 1
         mtg_transport = 1
         
     }
@@ -93,16 +99,14 @@ if = {
         
     }
     set_technology = {
-        early_destroyer = 1
-        basic_destroyer = 1
-        early_light_cruiser = 1
-        basic_light_cruiser = 1
         early_submarine = 1
         basic_submarine = 1
+        early_destroyer = 1
+        early_light_cruiser = 1
         early_heavy_cruiser = 1
-        basic_heavy_cruiser = 1
         early_battleship = 1
         basic_battleship = 1
+        early_battlecruiser = 1
         transport = 1
         
     }
@@ -240,6 +244,7 @@ recruit_character = ITA_Federico_Comandini
 recruit_character = ITA_Giovanni_Uberti
 recruit_character = ITA_Augusto_de_Marsenisch
 recruit_character = ITA_Cesare_Forni
+recruit_character = ITA_Meuccio_Ruini
 recruit_character = ITA_Mario_Abbiate
 recruit_character = ITA_Carlo_Schanzer
 recruit_character = ITA_Luigi_Gasparotto

@@ -209,6 +209,11 @@ country_event = {
     
 }
 country_event = {
+    id = ustates.538
+    days = 185
+    
+}
+country_event = {
     id = ustates.25
     days = 104
     random = 720
@@ -543,7 +548,7 @@ create_country_leader = {
     
 }
 add_ideas = {
-    USA_Herbert_Hoover_hog_mli
+    USA_Charles_Curtis_veep_mli
     USA_Henry_Lewis_Stimson_for_sli
     USA_Roy_Dikeman_Chapin_Sr_eco_mli
     USA_Charles_Evans_Hughes_Sr_sec_mli
@@ -614,7 +619,7 @@ create_field_marshal = {
 create_field_marshal = {
     name = "Henry H. Arnold"
     desc = "USA_HENRY_H_ARNOLD_ARMY_DESC"
-    portrait_path = "gfx/leaders/CAL/Portrait_CAL_Henry_Arnold.png"
+    portrait_path = "gfx/leaders/USA/Portrait_USA_Henry_Arnold.png"
     traits = {
         career_officer
         politically_connected
@@ -978,7 +983,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Herbert Charles Heitke"
     desc = "USA_HERBERT_HOLDRIDGE_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/Portrait_CSA_herbert_holdridge.png"
+    portrait_path = "gfx/leaders/USA/Portrait_USA_herbert_holdridge.png"
     traits = {
         trickster
         

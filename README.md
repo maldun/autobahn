@@ -1,6 +1,5 @@
 # Autobahn nach 56
 ## a hoi 4 submod for Kaiserreich
-## v0.1
 
 Goal of this mod is to merge the tech from Road to 56 with Kaiserreich.
 

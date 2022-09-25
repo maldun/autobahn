@@ -83,7 +83,7 @@ random_list = {
         set_country_flag = INC_Full_Vanguardist
         
     }
-    40 = 
+    40 = {}
     
 }
 add_ideas = {

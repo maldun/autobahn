@@ -60,7 +60,7 @@ TECH_CRITS = {"air_spirits.txt": ['available',
                                  ['has_tech', ['base_strike']]]]]]
               }
 
-KR_SPIRIT_MAP = {"air_spirits.txt":"01 Air Spirits.txt", "army_spirits.txt":"01 Army Spirits.txt","navy_spirits.txt": "01 Navy Spirits.txt"}
+KR_SPIRIT_MAP = {"air_spirits.txt":"01 Air Spirits.txt", "army_spirits.txt": "01 Army Spirits.txt","navy_spirits.txt": "01 Navy Spirits.txt"}
 KR_REV_SPIRIT_MAP = {val:key for key,val in KR_SPIRIT_MAP.items()}
 KR_TECH_CRITS = {}
 KR_SPIRIT_KEYS = {}
@@ -275,14 +275,15 @@ def filter_spirits(fname, keys):
     prefix = "kx_" if KX is True else "kr_"
     out_path = os.path.join(OUT_FOLDER,IDEA_PATH)
     os.makedirs(out_path, exist_ok=True)
-    out_file = os.path.join(out_path,prefix+fname)
+    out_file = os.path.join(out_path, prefix+fname)
+
     with open(out_file, 'w', encoding=UTF8) as file:
         content = list2paradox(new_obj)
         file.write(content)
 
     # copy rt56 file
     orig_in_file = os.path.join(rt56_idea_path, rt56_fname)
-    orig_out_file = os.path.join(out_path, rt56_fname)
+    orig_out_file = os.path.join(out_path, fname)
     shutil.copy2(orig_in_file, orig_out_file)
 
 def update_chinese_army_reform(file="China_decisions.txt"):

@@ -14,7 +14,8 @@ import rt56_update
 HOI4_FOLDER = HOME + ".local/share/Steam/steamapps/common/Hearts of Iron IV/"
 KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695605/"
 KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426030/"
-RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
+#RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
+RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/1956_beta/"
 
 # Set for mod in question
 KX = False
@@ -314,8 +315,10 @@ def update_chinese_army_reform(file="China_decisions.txt"):
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
     # update rt56 techs
-    rt56_update.tanks(RT56_FOLDER, OUT_FOLDER)
-    rt56_update.post_steps(RT56_FOLDER, OUT_FOLDER)
+    import pdb; pdb.set_trace()
+    update_keys = [key for key in rt56_update.__dict__.keys() if key.startswith("update_")]
+    for func in update_keys:
+        rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
     
     # add missing spirits    
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():

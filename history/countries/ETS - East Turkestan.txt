@@ -83,11 +83,3 @@ country_event = {
     days = 1
     
 }
-random_character = {
-    limit = {
-        is_character = ETS_abdullah_bughra
-        
-    }
-    save_global_event_target_as = ETS_abdullah_bughra_target
-    
-}

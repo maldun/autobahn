@@ -7,6 +7,10 @@ ideas = {
                 
             }
             ledger = army
+            allowed = {
+                has_dlc_nsb = yes
+                
+            }
             visible = {
                 OR = {
                     has_socialist_government = yes

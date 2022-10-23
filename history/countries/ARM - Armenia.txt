@@ -11,9 +11,6 @@ set_technology = {
     gw_artillery = 1
     tech_military_police = 1
     tech_field_hospital = 1
-    camelry = 1
-    early_fighter = 1
-    early_bomber = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
@@ -22,7 +19,34 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_bba = yes
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -34,10 +58,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {

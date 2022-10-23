@@ -14,9 +14,6 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    early_bomber = 1
-    CAS1 = 1
     fuel_silos = 1
     fuel_refining = 1
     basic_train = 1
@@ -29,7 +26,38 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "HUN_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        engines_2 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        early_bombs = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "HUN_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        CAS1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -41,10 +69,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {
@@ -56,7 +81,7 @@ if = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -73,12 +98,10 @@ if = {
         basic_depth_charges = 1
         basic_torpedo = 1
         basic_battery = 1
-        basic_secondary_battery = 1
         basic_cruiser_armor_scheme = 1
         basic_heavy_battery = 1
         basic_medium_battery = 1
         basic_light_battery = 1
-        improved_secondary_battery = 1
         basic_heavy_armor_scheme = 1
         improved_airplane_launcher = 1
         mtg_transport = 1
@@ -88,10 +111,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -172,12 +192,56 @@ recruit_character = HUN_teofil_harosy
 recruit_character = HUN_todor_karman
 recruit_character = HUN_leo_szilard
 HUN_Kalman_Daranyi_de_Pusztaszentgyorgyi_sic = yes
-random_character = {
+AUS_joseph_august_von_habsburg = {
+    set_character_flag = AUS_habsburg
+    
+}
+danubia_create_plane_variants = yes
+if = {
     limit = {
-        is_character = AUS_joseph_august_von_habsburg
+        has_dlc_nsb = yes
         
     }
-    set_character_flag = AUS_habsburg
-    save_global_event_target_as = AUS_joseph_august_von_habsburg_target
+    create_equipment_variant = {
+        name = "Burstyn-ÖL"
+        type = light_tank_chassis_0
+        parent_version = 0
+        modules = {
+            main_armament_slot = tank_small_cannon
+            turret_type_slot = tank_light_two_man_tank_turret
+            suspension_type_slot = tank_bogie_suspension
+            armor_type_slot = tank_riveted_armor
+            engine_type_slot = tank_gasoline_engine
+            special_type_slot_1 = additional_machine_guns
+            
+        }
+        upgrades = {
+            tank_nsb_engine_upgrade = 0
+            tank_nsb_armor_upgrade = 0
+            
+        }
+        obsolete = yes
+        
+    }
+    create_equipment_variant = {
+        name = "35M k. hk."
+        type = light_tank_chassis_1
+        parent_version = 0
+        modules = {
+            main_armament_slot = tank_small_cannon
+            turret_type_slot = tank_light_two_man_tank_turret
+            suspension_type_slot = tank_bogie_suspension
+            armor_type_slot = tank_riveted_armor
+            engine_type_slot = tank_gasoline_engine
+            special_type_slot_1 = tank_radio_1
+            
+        }
+        upgrades = {
+            tank_nsb_engine_upgrade = 2
+            tank_nsb_armor_upgrade = 2
+            
+        }
+        
+    }
     
 }

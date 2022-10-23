@@ -1,12 +1,12 @@
 capital = 313
 oob = "GUA"
 set_research_slots = 2
-set_stability = 0.47
+set_stability = 0.5
 set_war_support = 0.35
+set_convoys = 5
 set_technology = {
     infantry_weapons = 1
     gw_artillery = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
@@ -14,33 +14,20 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_bba = yes
         
     }
-    set_technology = {
-        early_ship_hull_light = 1
-        basic_naval_mines = 1
-        early_ship_hull_cruiser = 1
-        basic_battery = 1
-        basic_light_battery = 1
-        basic_secondary_battery = 1
-        mtg_transport = 1
-        
-    }
+    set_air_oob = "GUA_air_bba"
     
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_bba = no
         
     }
+    set_air_oob = "GUA_air_legacy"
     set_technology = {
-        early_destroyer = 1
-        early_light_cruiser = 1
-        transport = 1
+        early_fighter = 1
         
     }
     
@@ -70,7 +57,6 @@ set_popularities = {
     national_populist = 0
     
 }
-set_convoys = 20
 add_ideas = {
     CEN_monroe_doctrine
     GUA_socialist_compensation

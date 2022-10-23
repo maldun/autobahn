@@ -1,13 +1,9 @@
 capital = 312
 oob = "HON"
-set_naval_oob = "HON_naval"
 set_convoys = 10
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
-    tech_mountaineers = 1
-    gw_artillery = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
@@ -15,36 +11,18 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_bba = yes
         
     }
-    set_technology = {
-        early_ship_hull_light = 1
-        basic_naval_mines = 1
-        early_ship_hull_cruiser = 1
-        basic_torpedo = 1
-        basic_battery = 1
-        basic_light_battery = 1
-        basic_secondary_battery = 1
-        mtg_transport = 1
-        
-    }
+    set_air_oob = "HON_air_bba"
     
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_bba = no
         
     }
-    set_technology = {
-        early_destroyer = 1
-        early_light_cruiser = 1
-        transport = 1
-        
-    }
+    set_air_oob = "HON_air_legacy"
     
 }
 set_stability = 0.5

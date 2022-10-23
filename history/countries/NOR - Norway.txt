@@ -18,14 +18,12 @@ set_technology = {
     tech_recon = 1
     tech_engineers = 1
     gw_artillery = 1
-    early_fighter = 1
-    early_bomber = 1
     basic_train = 1
     
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -36,10 +34,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {
@@ -50,7 +45,7 @@ if = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -63,7 +58,6 @@ if = {
         basic_naval_mines = 1
         submarine_mine_laying = 1
         basic_battery = 1
-        basic_secondary_battery = 1
         basic_torpedo = 1
         
     }
@@ -71,10 +65,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -83,6 +74,37 @@ if = {
         early_submarine = 1
         early_light_cruiser = 1
         early_heavy_cruiser = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "NOR_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        engines_2 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "NOR_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
         
     }
     
@@ -252,13 +274,5 @@ NOR_skule_storheill = {
 }
 NOR_tryggve_gran = {
     set_character_flag = NOR_leader
-    
-}
-random_character = {
-    limit = {
-        is_character = NOR_haakon_vii
-        
-    }
-    save_global_event_target_as = NOR_haakon_vii_target
     
 }

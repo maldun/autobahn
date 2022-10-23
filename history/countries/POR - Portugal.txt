@@ -10,9 +10,8 @@ set_technology = {
     gw_artillery = 1
     tech_support = 1
     tech_engineers = 1
-    early_fighter = 1
-    early_bomber = 1
-    CAS1 = 1
+    tech_recon = 1
+    transport = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
@@ -21,7 +20,40 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "POR_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        aa_cannon_1 = 1
+        engines_1 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "POR_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        CAS1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -42,10 +74,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -143,27 +172,3 @@ recruit_character = POR_carlos_viegas_gago_coutinho
 recruit_character = POR_humberto_da_silva_delgado
 recruit_character = POR_secretariado_geral_de_defesa_nacional
 recruit_character = POR_humberto_amaral_da_cruz
-random_character = {
-    limit = {
-        is_character = POR_duarte_braganca
-        
-    }
-    save_global_event_target_as = POR_duarte_braganca_target
-    
-}
-random_character = {
-    limit = {
-        is_character = POR_maria_adelaide_braganca
-        
-    }
-    save_global_event_target_as = POR_maria_adelaide_braganca_target
-    
-}
-random_character = {
-    limit = {
-        is_character = POR_maria_ana_braganca
-        
-    }
-    save_global_event_target_as = POR_maria_ana_braganca_target
-    
-}

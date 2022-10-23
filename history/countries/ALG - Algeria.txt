@@ -11,7 +11,7 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -25,7 +25,6 @@ if = {
         basic_torpedo = 1
         basic_battery = 1
         basic_light_battery = 1
-        basic_secondary_battery = 1
         improved_ship_torpedo_launcher = 1
         mtg_transport = 1
         
@@ -34,10 +33,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {

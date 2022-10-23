@@ -6,14 +6,34 @@ set_research_slots = 3
 set_technology = {
     infantry_weapons = 1
     tech_mountaineers = 1
-    tech_support = 1
-    tech_engineers = 1
-    gw_artillery = 1
-    early_fighter = 1
     fuel_silos = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = yes
+        
+    }
+    set_technology = {
+        iw_small_airframe = 1
+        aa_lmg = 1
+        engines_1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_technology = {
+        early_fighter = 1
+        
+    }
     
 }
 country_event = {

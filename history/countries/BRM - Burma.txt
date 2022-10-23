@@ -11,7 +11,7 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -22,17 +22,13 @@ if = {
         basic_ship_hull_cruiser = 1
         basic_battery = 1
         basic_light_battery = 1
-        basic_secondary_battery = 1
         
     }
     
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {

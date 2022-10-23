@@ -4,6 +4,7 @@ set_stability = 0.5
 set_war_support = 0.3
 set_research_slots = 4
 starting_train_buffer = 3
+save_global_event_target_as = original_russia
 oob = "RUS"
 set_naval_oob = "RUS_naval"
 set_technology = {
@@ -16,11 +17,6 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    early_bomber = 1
-    fighter1 = 1
-    strategic_bomber1 = 1
-    naval_bomber1 = 1
     fuel_silos = 1
     fuel_refining = 1
     synth_oil_experiments = 1
@@ -39,7 +35,45 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "RUS_air_bba"
+    set_technology = {
+        iw_small_airframe = 1
+        aa_lmg = 1
+        aa_cannon_1 = 1
+        early_bombs = 1
+        engines_1 = 1
+        engines_2 = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        basic_small_airframe = 1
+        basic_medium_airframe = 1
+        aircraft_construction = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "RUS_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        fighter1 = 1
+        early_bomber = 1
+        strategic_bomber1 = 1
+        naval_bomber1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -54,10 +88,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {
@@ -69,7 +100,7 @@ if = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -83,7 +114,6 @@ if = {
         basic_light_battery = 1
         basic_torpedo = 1
         basic_depth_charges = 1
-        basic_secondary_battery = 1
         basic_naval_mines = 1
         submarine_mine_laying = 1
         mtg_transport = 1
@@ -93,10 +123,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -404,41 +431,14 @@ recruit_character = RUS_markian_popov
 recruit_character = RUS_mikhail_kedrov
 recruit_character = RUS_nestor_monastyrev
 recruit_character = RUS_aleksandr_nemits
-recruit_character = RUS_sergei_rudenko
+recruit_character = RUS_sergey_rudenko
+recruit_character = RUS_sergey_korolyov
+recruit_character = RUS_igor_kurchatov
 recruit_character = RUS_vyacheslav_tkachov
 recruit_character = RUS_aleksandr_kazakov
 recruit_character = RUS_vsevolod_marchenko
 recruit_character = RUS_aleksandr_samoylo
 recruit_character = RUS_vyacheslav_baranov
-random_character = {
-    limit = {
-        is_character = RUS_dmitry_romanov
-        
-    }
-    save_global_event_target_as = RUS_dmitry_romanov_target
-    
-}
-random_character = {
-    limit = {
-        is_character = RUS_kirill_romanov
-        
-    }
-    save_global_event_target_as = RUS_kirill_romanov_target
-    
-}
-random_character = {
-    limit = {
-        is_character = RUS_vladimir_romanov
-        
-    }
-    save_global_event_target_as = RUS_vladimir_romanov_target
-    
-}
-random_character = {
-    limit = {
-        is_character = RUS_pyotr_wrangel
-        
-    }
-    save_global_event_target_as = RUS_pyotr_wrangel_target
-    
-}
+RUS_starting_plane_variants = yes
+RUS_starting_tank_variants = yes
+RUS_starting_naval_variants = yes

@@ -315,10 +315,14 @@ def update_chinese_army_reform(file="China_decisions.txt"):
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
     # update rt56 techs
-    import pdb; pdb.set_trace()
-    update_keys = [key for key in rt56_update.__dict__.keys() if key.startswith("update_")]
-    for func in update_keys:
-        rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
+    #update_keys = [key for key in rt56_update.__dict__.keys() if key.startswith("update_")]
+    #for func in update_keys:
+    #    rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
+
+    rt56_update.update_air(RT56_FOLDER, OUT_FOLDER)
+    rt56_update.update_tanks(RT56_FOLDER, OUT_FOLDER)
+    rt56_update.update_navy(RT56_FOLDER, OUT_FOLDER)
+    rt56_update.update_post_steps(RT56_FOLDER, OUT_FOLDER)
     
     # add missing spirits    
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():

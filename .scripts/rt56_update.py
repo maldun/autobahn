@@ -40,6 +40,11 @@ def copy_files(fname):
     return cdecorator
 
 
+@copy_files("rt56_copy_air.json")
+def update_air(rt56_path, out_path):
+    pass
+
+
 @copy_files("rt56_copy_tank.json")
 def update_tanks(rt56_path, out_path):
     pass

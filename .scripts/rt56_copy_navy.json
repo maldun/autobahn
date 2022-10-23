@@ -2,5 +2,15 @@
   "common/technologies/": {
     "MTG_naval.txt": [],
     "MTG_naval_Support.txt": []
+  },
+   "common/units/equipment/modules/": {
+      "00_ship_modules.txt": []
+    },
+  "common/units/equipment/": {
+    "ship_hull_carrier.txt": [],
+    "ship_hull_cruiser.txt": [],
+    "ship_hull_heavy.txt": [],
+    "ship_hull_light.txt": [],
+    "ship_hull_submarine.txt": []
   }
 }

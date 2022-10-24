@@ -45,6 +45,14 @@ if = {
     }
     
 }
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    else = {}
+    
+}
 add_opinion_modifier = {
     target = HAI
     modifier = HAI_border_dispute

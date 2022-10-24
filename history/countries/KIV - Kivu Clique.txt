@@ -47,7 +47,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Joseph_Kasongo.png"
     expire = "1965.1.1"
     ideology = tot_left_panafricanism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -56,7 +56,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Cyrille_Adoula.png"
     expire = "1965.1.1"
     ideology = african_syndicalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -65,7 +65,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Joseph_Ileo.png"
     expire = "1965.1.1"
     ideology = left_nationalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -74,7 +74,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Isaac_Kalonji.png"
     expire = "1965.1.1"
     ideology = socdem_radical_progressivism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -83,7 +83,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Joseph_Kasa_Vubu.png"
     expire = "1965.1.1"
     ideology = national_liberalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -92,7 +92,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Moise_Tshombe.png"
     expire = "1965.1.1"
     ideology = libertarian_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -101,7 +101,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Jean_Bolikango.png"
     expire = "1965.1.1"
     ideology = conservative_populism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -110,7 +110,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Louis_de_Gonzague_Bobozo.png"
     expire = "1965.1.1"
     ideology = authdem_junta_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -119,7 +119,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Louis_de_Gonzague_Bobozo.png"
     expire = "1965.1.1"
     ideology = junta_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -128,7 +128,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIV/Portrait_KIV_Louis_de_Gonzague_Bobozo.png"
     expire = "1965.1.1"
     ideology = natpop_right_panafricanism_subtype
-    traits = 
+    traits = {}
     
 }
 create_corps_commander = {
@@ -258,53 +258,5 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 1
     logistics_skill = 3
-    
-}
-random_army_leader = {
-    limit = {
-        has_id = 15378
-        
-    }
-    save_global_event_target_as = KIV_Isaac_Kalonji
-    
-}
-random_army_leader = {
-    limit = {
-        has_id = 15379
-        
-    }
-    save_global_event_target_as = KIV_Joseph_Kasa_Vubu
-    
-}
-random_army_leader = {
-    limit = {
-        has_id = 15372
-        
-    }
-    save_global_event_target_as = KIV_Louis_de_Gonzague_Bobozo
-    
-}
-random_army_leader = {
-    limit = {
-        has_id = 153780
-        
-    }
-    save_global_event_target_as = KIV_Gaston_Soumialot
-    
-}
-random_army_leader = {
-    limit = {
-        has_id = 153781
-        
-    }
-    save_global_event_target_as = KIV_Nicholas_Olenga
-    
-}
-random_army_leader = {
-    limit = {
-        has_id = 153782
-        
-    }
-    save_global_event_target_as = KIV_Victor_Lundula
     
 }

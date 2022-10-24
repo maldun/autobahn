@@ -9,14 +9,39 @@ set_technology = {
     tech_engineers = 1
     tech_recon = 1
     gw_artillery = 1
-    early_fighter = 1
-    early_bomber = 1
-    CAS1 = 1
     aluminum_production_1 = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
     winter_clothes_gw = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "SWI_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    SWI_BBA_air_variants = yes
+    else = {
+        set_air_oob = "SWI_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            early_bomber = 1
+            CAS1 = 1
+            
+        }
+        
+    }
     
 }
 starting_train_buffer = 1.5
@@ -356,29 +381,13 @@ create_corps_commander = {
     name = "Jean de Muralt"
     desc = "POLITICS_SWI_JEAN_DE_MURALT_ARMY_DESC"
     portrait_path = "gfx/leaders/SWI/Portrait_Switzerland_Jean_de_Muralt.png"
-    traits = 
+    traits = {}
     id = 26708
     skill = 2
     attack_skill = 4
     defense_skill = 1
     planning_skill = 1
     logistics_skill = 1
-    
-}
-random_army_leader = {
-    limit = {
-        has_id = 26700
-        
-    }
-    save_global_event_target_as = SWI_Henri_Guisan
-    
-}
-random_army_leader = {
-    limit = {
-        has_id = 26701
-        
-    }
-    save_global_event_target_as = SWI_Eugen_Bircher
     
 }
 create_navy_leader = {

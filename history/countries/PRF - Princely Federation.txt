@@ -34,13 +34,33 @@ set_technology = {
     tech_mountaineers = 1
     tech_engineers = 1
     gw_artillery = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     jngdst_clothes_gw = 1
     steel_production_1 = 1
     transport_plane1 = 1
     jungletroops = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        
+    }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -359,7 +379,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Ahmad Ali of Malerjotla"
     portrait_path = "gfx/leaders/PRF/Portrait_PRF_Ahmad_Ali_of_Malerjotla.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -489,7 +509,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Kishore Debbarman"
     portrait_path = "gfx/leaders/PRF/Portrait_PRF_Kishore_Debbarman.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -514,25 +534,9 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Thimmdyya"
-    portrait_path = "gfx/leaders/PRF/Portrait_PRF_Thimmdyya.png"
-    traits = {
-        trickster
-        cavalry_officer
-        
-    }
-    skill = 2
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 1
-    logistics_skill = 1
-    id = 1266
-    
-}
-create_corps_commander = {
     name = "Hashim Nawaz Jung"
     portrait_path = "gfx/leaders/PRF/Portrait_PRF_Hashim_Nawaz_Jung.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1

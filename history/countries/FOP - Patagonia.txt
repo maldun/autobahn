@@ -35,9 +35,29 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     tech_mountaineers = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        
+    }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -449,5 +469,29 @@ create_navy_leader = {
     defense_skill = 1
     maneuvering_skill = 2
     coordination_skill = 2
+    
+}
+create_navy_leader = {
+    name = "Pavel Dybenko"
+    id = 495
+    portrait_path = "gfx/leaders/SOV/Pavel_Dybenko.png"
+    traits = {
+        blockade_runner
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 2
+    maneuvering_skill = 1
+    coordination_skill = 1
+    
+}
+random_navy_leader = {
+    limit = {
+        has_id = 495
+        
+    }
+    add_unit_leader_trait = SOV_bolshevik_officer
+    set_nationality = FOP
     
 }

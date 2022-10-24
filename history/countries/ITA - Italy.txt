@@ -60,6 +60,7 @@ if = {
     }
     set_technology = {
         gwtank_chassis = 1
+        basic_light_tank_chassis = 1
         
     }
     
@@ -73,10 +74,6 @@ set_technology = {
     tech_mountaineers = 1
     motorised_infantry = 1
     gw_artillery = 1
-    early_fighter = 1
-    early_bomber = 1
-    naval_bomber1 = 1
-    CAS1 = 1
     fleet_in_being = 1
     aluminum_production_1 = 1
     camo = 1
@@ -85,6 +82,41 @@ set_technology = {
     shocktroops = 1
     steel_production_1 = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "ITA_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        engines_2 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        basic_small_airframe = 1
+        basic_medium_airframe = 1
+        
+    }
+    ITA_BBA_air_variants = yes
+    else = {
+        set_air_oob = "ITA_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -391,7 +423,7 @@ create_corps_commander = {
     name = "Sebastiano Visconti Prasca"
     portrait_path = "gfx/leaders/ITA/Portrait_ITA_Sebastiano_Visconti_Prasca.png"
     id = 556
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 3
@@ -419,7 +451,7 @@ create_corps_commander = {
     name = "Enrico Riccardi"
     portrait_path = "gfx/leaders/ITA/Portrait_ITA_Enrico_Riccardi.png"
     id = 558
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 2
@@ -491,7 +523,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Ugo Cavallero"
     portrait_path = "gfx/leaders/ITA/Portrait_ITA_Ugo_Cavallero.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 1
@@ -549,7 +581,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Carlo Bergamini"
     portrait_path = "gfx/leaders/ITA/Portrait_ITA_Carlo_Bergamini.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 1
@@ -561,7 +593,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Costanzo Ciano"
     portrait_path = "gfx/leaders/ITA/Portrait_ITA_Costanzo_Ciano.png"
-    traits = 
+    traits = {}
     skill = 3
     attack_skill = 3
     defense_skill = 2
@@ -588,7 +620,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Aimone di Savoia-Aosta"
     portrait_path = "gfx/leaders/SRD/Portrait_SRD_Aimone.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 3
     defense_skill = 2

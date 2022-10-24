@@ -32,15 +32,39 @@ set_technology = {
     basic_train = 1
     infantry_weapons = 1
     tech_support = 1
-    tech_mountaineers = 1
     tech_engineers = 1
     gw_artillery = 1
-    early_fighter = 1
-    early_bomber = 1
+    motorised_infantry = 1
+    tech_recon = 1
+    gw_artillery = 1
     camo = 1
     etax_doctrine = 1
     steel_production_1 = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            early_bomber = 1
+            
+        }
+        
+    }
     
 }
 add_offsite_building = {
@@ -93,6 +117,10 @@ diplomatic_relation = {
     relation = non_aggression_pact
     
 }
+GEA = {
+    give_military_access = LEP
+    
+}
 set_politics = {
     ruling_party = paternal_autocrat
     last_election = "1888.6.15"
@@ -127,6 +155,7 @@ add_ideas = {
     LEP_Conspicuous_Kleptocracy
     LEP_Nanking_Kommission
     LEP_Tsingtau_Collaboration2
+    AOG_warlord_armies
     LEP_Yang_Wenkai_hog_pau
     LEP_Ma_Yuren_for_pau
     LEP_Ding_Wenjiang_eco_sco

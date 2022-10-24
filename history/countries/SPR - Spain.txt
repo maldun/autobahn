@@ -39,15 +39,40 @@ set_technology = {
     tech_engineers = 1
     tech_recon = 1
     gw_artillery = 1
-    early_fighter = 1
-    early_bomber = 1
-    naval_bomber1 = 1
-    strategic_bomber1 = 1
     aluminum_production_1 = 1
     camo = 1
     etax_doctrine = 1
     shocktroops = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "SPR_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    SPR_BBA_air_variants = yes
+    else = {
+        set_air_oob = "SPR_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -246,7 +271,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Carlos Asensio Cabanillas"
     portrait_path = "gfx/leaders/SPR/Portrait_SPR_Asensio_Cabanillas.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 2
@@ -305,7 +330,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Manuel Goded Llopis"
     portrait_path = "gfx/leaders/SPR/Portrait_SPR_Goded_Llopis.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -333,7 +358,7 @@ create_corps_commander = {
 create_navy_leader = {
     name = "Rafael Estrada Arnais"
     portrait_path = "gfx/leaders/SPR/Portrait_SPR_Estrada_Arnais.png"
-    traits = 
+    traits = {}
     skill = 1
     maneuvering_skill = 1
     defense_skill = 1
@@ -345,7 +370,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Cervera Valderrama"
     portrait_path = "gfx/leaders/Generic/Portrait_Europe_Generic_navy_new_5.png"
-    traits = 
+    traits = {}
     skill = 1
     maneuvering_skill = 1
     defense_skill = 1

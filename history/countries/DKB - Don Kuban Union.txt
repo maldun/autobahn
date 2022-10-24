@@ -9,11 +9,30 @@ set_technology = {
     basic_train = 1
     infantry_weapons = 1
     infantry_weapons1 = 1
-    early_fighter = 1
     tech_support = 1
     gw_artillery = 1
     camo = 1
     etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        
+    }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -151,7 +170,8 @@ create_field_marshal = {
         old_guard
         offensive_doctrine
         war_hero
-        cavalry_leader
+        cossack_leader
+        cavalry_officer
         urban_assault_specialist
         politically_connected
         
@@ -171,7 +191,7 @@ create_field_marshal = {
         career_officer
         defensive_doctrine
         politically_connected
-        cavalry_leader
+        cossack_leader
         trickster
         
     }
@@ -190,8 +210,8 @@ create_corps_commander = {
     traits = {
         old_guard
         artillery_officer
-        cavalry_officer
         cavalry_leader
+        cossack_leader
         
     }
     skill = 2
@@ -206,7 +226,8 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Adrian_Guselschikov.png"
     traits = {
         old_guard
-        cavalry_officer
+        cavalry_leader
+        cossack_leader
         
     }
     skill = 2
@@ -221,7 +242,8 @@ create_corps_commander = {
     id = 420
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Ivan_Polyakov.png"
     traits = {
-        cavalry_officer
+        cavalry_leader
+        cossack_leader
         old_guard
         
     }
@@ -252,7 +274,8 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Konstantin_Mamontov.png"
     traits = {
         old_guard
-        cavalry_officer
+        cavalry_leader
+        cossack_leader
         
     }
     skill = 2
@@ -267,7 +290,8 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Semyon_Krasnov.png"
     traits = {
         old_guard
-        cavalry_officer
+        cavalry_leader
+        cossack_leader
         politically_connected
         
     }
@@ -297,7 +321,7 @@ create_corps_commander = {
 }
 create_navy_leader = {
     name = "Mikhail Dmyrkin"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -307,7 +331,7 @@ create_navy_leader = {
 }
 create_navy_leader = {
     name = "Nikita Dranilov"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1

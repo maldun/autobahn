@@ -44,14 +44,6 @@ set_technology = {
     tech_mountaineers = 1
     motorised_infantry = 1
     gw_artillery = 1
-    early_fighter = 1
-    early_bomber = 1
-    fighter1 = 1
-    naval_bomber1 = 1
-    tactical_bomber1 = 1
-    CAS1 = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
     camo = 1
     etax_doctrine = 1
     jngdst_clothes_gw = 1
@@ -62,6 +54,40 @@ set_technology = {
     steel_production_1 = 1
     transport_plane1 = 1
     jungletroops = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "GEA_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        basic_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    GEA_BBA_air_variants = yes
+    else = {
+        set_air_oob = "GEA_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            fighter1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            tactical_bomber1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -245,13 +271,13 @@ set_variable = {
 add_equipment_to_stockpile = {
     type = infantry_equipment_0
     amount = 4000
-    producer = GER
+    producer = GEA
     
 }
 add_equipment_to_stockpile = {
     type = infantry_equipment_1
     amount = 1000
-    producer = GER
+    producer = GEA
     
 }
 add_equipment_to_stockpile = {
@@ -263,7 +289,7 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
     type = artillery_equipment_1
     amount = 600
-    producer = GER
+    producer = GEA
     
 }
 add_manpower = 35000
@@ -379,7 +405,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Emil Krebs"
     portrait_path = "gfx/leaders/GEA/Portrait_GEA_Emil_Krebs.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -405,7 +431,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Fritz Bayerlein"
     portrait_path = "gfx/leaders/GEA/Portrait_GEA_Fritz_Bayerlein_kr.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 2
     defense_skill = 1
@@ -441,10 +467,55 @@ create_corps_commander = {
     logistics_skill = 2
     
 }
+create_corps_commander = {
+    name = "Hermann Voigt-Ruscheweyh"
+    portrait_path = "gfx/leaders/AOG/Portrait_AOG_Hermann_Voigt_Ruscheweyh.png"
+    traits = {
+        hill_fighter
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    id = 12046
+    
+}
+create_corps_commander = {
+    name = "Dietrich von Saucken"
+    portrait_path = "gfx/leaders/GEA/Portrait_GEA_Dietrich_von_Saucken.png"
+    traits = {
+        cavalry_officer
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+    id = 12047
+    
+}
+create_corps_commander = {
+    name = "Fritz Sachße"
+    portrait_path = "gfx/leaders/GEA/Portrait_GEA_Fritz_Sachsse.png"
+    traits = {
+        naval_invader
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+    id = 12048
+    
+}
 create_navy_leader = {
     name = "Hellmuth von Mücke"
     portrait_path = "gfx/leaders/GEA/Portrait_GEA_Hellmuth_von_Mucke_Admiral.png"
-    traits = 
+    traits = {}
     skill = 4
     attack_skill = 3
     defense_skill = 3

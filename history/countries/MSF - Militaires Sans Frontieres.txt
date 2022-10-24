@@ -85,7 +85,7 @@ create_country_leader = {
     picture = "gfx/leaders/MSF/MSF_Jacques_Massu.png"
     expire = "1965.1.1"
     ideology = neo_feudalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {

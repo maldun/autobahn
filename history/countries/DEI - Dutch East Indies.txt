@@ -68,12 +68,36 @@ set_technology = {
     tech_recon = 1
     motorised_infantry = 1
     gw_artillery = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    cv_early_fighter = 1
     camo = 1
     etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    DEI_BBA_air_variants = yes
+    else = {
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            cv_early_fighter = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -255,7 +279,7 @@ create_country_leader = {
 create_field_marshal = {
     name = "Hein ter Poorten"
     portrait_path = "gfx/leaders/DEI/Portrait_DEI_ter_Poorten.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 3

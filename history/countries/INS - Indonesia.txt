@@ -17,6 +17,32 @@ set_technology = {
 }
 if = {
     limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "INS_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    else = {
+        set_air_oob = "INS_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            early_bomber = 1
+            
+        }
+        
+    }
+    
+}
+if = {
+    limit = {
         has_dlc = "Man the Guns"
         
     }
@@ -157,7 +183,7 @@ create_field_marshal = {
 create_corps_commander = {
     name = "Basuki Rahmat"
     portrait_path = "gfx/leaders/INS/Portrait_Indonesia_Rachmat.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -168,7 +194,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Sudirman"
     portrait_path = "gfx/leaders/INS/Portrait_Indonesia_Sudirman.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 3
@@ -179,7 +205,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Suhadi"
     portrait_path = "gfx/leaders/INS/Portrait_Indonesia_Suhadi.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1

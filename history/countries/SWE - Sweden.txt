@@ -202,11 +202,6 @@ set_technology = {
     gw_artillery = 1
     tech_support = 1
     interwar_antiair = 1
-    early_fighter = 1
-    cv_early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    CAS1 = 1
     aluminum_production_1 = 1
     camo = 1
     etax_doctrine = 1
@@ -214,6 +209,36 @@ set_technology = {
     steel_production_1 = 1
     transport_plane1 = 1
     winter_clothes_gw = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "SWE_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        basic_small_airframe = 1
+        
+    }
+    SWE_BBA_air_variants = yes
+    else = {
+        set_air_oob = "SWE_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -429,7 +454,7 @@ create_field_marshal = {
     
 }
 create_corps_commander = {
-    name = "Archibald Douglas"
+    name = "Archibald Douglas "
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Archibald_Douglas.png"
     traits = {
         cavalry_officer
@@ -442,6 +467,23 @@ create_corps_commander = {
     planning_skill = 2
     logistics_skill = 2
     id = 1003
+    
+}
+create_corps_commander = {
+    name = "Axel Gyllenkrok"
+    portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Axel_Gyllenkrok.png"
+    traits = {
+        infantry_leader
+        harsh_leader
+        air_commander
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
+    id = 10032
     
 }
 create_corps_commander = {
@@ -520,6 +562,23 @@ create_corps_commander = {
     planning_skill = 4
     logistics_skill = 2
     id = 1008
+    
+}
+create_corps_commander = {
+    name = "Carl August Ehrensvärd"
+    portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Carl_August_Ehrensvard.png"
+    traits = {
+        career_officer
+        naval_liason
+        politically_connected
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 2
+    id = 10081
     
 }
 create_corps_commander = {
@@ -623,7 +682,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Nils Björk"
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Nils_Bjork.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 3
@@ -682,7 +741,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Otto Lybeck"
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Otto_Lybeck.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 2
@@ -694,7 +753,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Bertil of Sweden"
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Prince_Bertil.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 3
     defense_skill = 1
@@ -722,7 +781,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Claës Lindsström"
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Claes_Lindsstrom.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 2
@@ -734,7 +793,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Gunnar Bjurner"
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Gunnar_Bjurner.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 3
     defense_skill = 3
@@ -746,7 +805,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Gösta Ehrensvärd"
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Gosta_Ehrensvard.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 3
@@ -758,7 +817,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Harald Åkermark"
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Harald_Akermark.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 3
     defense_skill = 1
@@ -770,7 +829,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Jens Stefenson"
     portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Jens_Stefenson.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 2

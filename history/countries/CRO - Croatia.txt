@@ -10,10 +10,38 @@ set_technology = {
     tech_support = 1
     tech_recon = 1
     tech_mountaineers = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "CRO_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        
+    }
+    CRO_BBA_air_variants = yes
+    else = {
+        set_air_oob = "CRO_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            early_bomber = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -134,7 +162,7 @@ create_country_leader = {
     picture = "gfx/leaders/CRO/CRO_tito.png"
     expire = "1965.1.1"
     ideology = authcom_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -143,7 +171,7 @@ create_country_leader = {
     picture = "gfx/leaders/CRO/CRO_tito.png"
     expire = "1965.1.1"
     ideology = syndicalist_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -152,7 +180,7 @@ create_country_leader = {
     picture = "gfx/leaders/CRO/CRO_tito.png"
     expire = "1965.1.1"
     ideology = radsoc_communism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -161,7 +189,7 @@ create_country_leader = {
     picture = "gfx/leaders/CRO/CRO_tito.png"
     expire = "1965.1.1"
     ideology = socdem_democratic_socialism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {

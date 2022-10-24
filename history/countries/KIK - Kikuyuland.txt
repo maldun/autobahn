@@ -53,7 +53,7 @@ create_country_leader = {
     picture = "gfx/leaders/KIK/KIK_Hussein_Onyango_Obama.png"
     expire = "1965.1.1"
     ideology = obammunism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {

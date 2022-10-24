@@ -34,14 +34,39 @@ set_technology = {
     tech_support = 1
     tech_engineers = 1
     gw_artillery = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    CAS1 = 1
     camo = 1
     etax_doctrine = 1
     jngdst_clothes_gw = 1
     transport_plane1 = 1
     jungletroops = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "BRA_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    BRA_BBA_air_variants = yes
+    else = {
+        set_air_oob = "BRA_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -823,7 +848,7 @@ create_corps_commander = {
     name = "Palimércio de Rezende"
     desc = "BRA_PALIMERCIO_DE_REZENDE_ARMY_DESC"
     portrait_path = "gfx/leaders/BRA/Portrait_BRA_Palimercio_de_Rezende.png"
-    traits = 
+    traits = {}
     skill = 3
     attack_skill = 1
     defense_skill = 4
@@ -867,7 +892,7 @@ create_navy_leader = {
     name = "Adalberto de Barros Nunes"
     portrait_path = "gfx/leaders/BRA/Portrait_BRA_Adalberto_Nunes.png"
     id = 1635
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -879,7 +904,7 @@ create_navy_leader = {
     name = "Isaías de Noronha"
     portrait_path = "gfx/leaders/BRA/Portrait_BRA_Isaias_de_Noronha.png"
     id = 1636
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1

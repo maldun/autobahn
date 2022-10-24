@@ -7,12 +7,36 @@ set_technology = {
     tech_support = 1
     tech_mountaineers = 1
     tech_recon = 1
-    early_fighter = 1
-    early_bomber = 1
     camo = 1
     desertinfantry_at = 1
     etax_doctrine = 1
     jngdst_clothes_gw = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "DEN_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    else = {
+        set_air_oob = "DEN_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            early_bomber = 1
+            
+        }
+        
+    }
     
 }
 set_research_slots = 1
@@ -54,7 +78,7 @@ create_country_leader = {
     picture = "gfx/leaders/DJI/Portrait_Djbouti_Hassan_Gouled_Aptidon.png"
     expire = "1965.1.1"
     ideology = social_democrat_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -63,7 +87,7 @@ create_country_leader = {
     picture = "gfx/leaders/DJI/Portrait_Djbouti_Hassan_Gouled_Aptidon.png"
     expire = "1965.1.1"
     ideology = social_liberal_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -72,7 +96,7 @@ create_country_leader = {
     picture = "gfx/leaders/DJI/Portrait_Djbouti_Hassan_Gouled_Aptidon.png"
     expire = "1965.1.1"
     ideology = market_liberal_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -81,7 +105,7 @@ create_country_leader = {
     picture = "gfx/leaders/DJI/Portrait_Djbouti_Hassan_Gouled_Aptidon.png"
     expire = "1965.1.1"
     ideology = moderate_authoritarianism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -90,7 +114,7 @@ create_country_leader = {
     picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Ludwig_Bockholt.png"
     expire = "1965.1.1"
     ideology = autocratic_colonial_govt_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -99,7 +123,7 @@ create_country_leader = {
     picture = "gfx/leaders/DJI/Portrait_Djbouti_Pierre_Nouailhetas.png"
     expire = "1965.1.1"
     ideology = colonial_govt_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -107,8 +131,8 @@ create_country_leader = {
     desc = "POLITICS_HARBI_DESC"
     picture = "gfx/leaders/DJI/Portrait_Djbouti_Mahmoud_Harbi.png"
     expire = "1965.1.1"
-    ideology = militarism_subtype
-    traits = 
+    ideology = natpop_pan_somalism_subtype
+    traits = {}
     
 }
 create_corps_commander = {
@@ -162,7 +186,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Grigory Pushkin"
     portrait_path = "gfx/leaders/DJI/Portrait_Djbouti_Grigory_Pushkin.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 2
     defense_skill = 2

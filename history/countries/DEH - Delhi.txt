@@ -35,17 +35,42 @@ set_technology = {
     tech_engineers = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    early_bomber = 1
-    naval_bomber1 = 1
-    CAS1 = 1
-    fighter1 = 1
     camo = 1
     etax_doctrine = 1
     jngdst_clothes_gw = 1
     steel_production_1 = 1
     transport_plane1 = 1
     jungletroops = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "DEH_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    DEH_BBA_air_variants = yes
+    else = {
+        set_air_oob = "DEH_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -362,7 +387,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Mir Dast"
     portrait_path = "gfx/leaders/PRF/Portrait_PRF_Mir_Dast.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -436,7 +461,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Shahamad Khan"
     portrait_path = "gfx/leaders/PRF/Portrait_PRF_Shahamad_Khan.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 2

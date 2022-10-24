@@ -168,7 +168,7 @@ create_country_leader = {
     picture = "gfx/leaders/USA/Portrait_USA_gen_omar_bradley.png"
     expire = "1965.1.1"
     ideology = authdem_junta_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -177,7 +177,7 @@ create_country_leader = {
     picture = "gfx/leaders/USA/Portrait_USA_gen_omar_bradley.png"
     expire = "1965.1.1"
     ideology = junta_subtype
-    traits = 
+    traits = {}
     
 }
 add_ideas = {
@@ -241,7 +241,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Harry S. Truman"
     portrait_path = "gfx/leaders/AFT/Portrait_AFT_Truman_General.png"
-    traits = 
+    traits = {}
     skill = 3
     attack_skill = 3
     defense_skill = 1

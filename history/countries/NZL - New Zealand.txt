@@ -9,14 +9,40 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    early_bomber = 1
-    naval_bomber1 = 1
-    fighter1 = 1
-    CAS1 = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "NZL_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        basic_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    CAN_GUNERIC_BBA_air_variants = yes
+    else = {
+        set_air_oob = "NZL_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            fighter1 = 1
+            CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -277,7 +303,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "John Saunders"
     portrait_path = "gfx/leaders/NZL/Portrait_NZL_John_Saunders.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -302,7 +328,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Peter Phipps"
     portrait_path = "gfx/leaders/NZL/Portrait_NZL_Peter_Phipps.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 2
@@ -313,7 +339,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "William Edward Parry"
     portrait_path = "gfx/leaders/NZL/Portrait_NZL_William_Parry.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 1

@@ -32,10 +32,31 @@ set_technology = {
     infantry_weapons = 1
     tech_mountaineers = 1
     gw_artillery = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "HON_air_bba"
+    set_technology = {
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        
+    }
+    else = {
+        set_air_oob = "HON_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -214,7 +235,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Federico Davidson Blanco"
     portrait_path = "gfx/leaders/HON/Portrait_HON_Federico_Davidson_Blanco.png"
-    traits = 
+    traits = {}
     id = 1606
     skill = 2
     attack_skill = 2
@@ -227,7 +248,7 @@ create_corps_commander = {
     name = "Juan Manuel Galvez"
     desc = "ARMY_HON_JUAN_GALVEZ_DESC"
     portrait_path = "gfx/leaders/HON/Portrait_HON_Juan_Manuel_Galvez.png"
-    traits = 
+    traits = {}
     id = 16200
     skill = 2
     attack_skill = 1
@@ -239,7 +260,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Anastasio Somoza García"
     portrait_path = "gfx/leaders/NIC/Portrait_NIC_Anastasio_Somoza_Garcia_2.png"
-    traits = 
+    traits = {}
     id = 16210
     skill = 2
     attack_skill = 2

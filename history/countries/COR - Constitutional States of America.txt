@@ -42,17 +42,45 @@ set_technology = {
     motorised_infantry = 1
     gw_artillery = 1
     marines = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    strategic_bomber1 = 1
-    CAS1 = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
     camo = 1
     etax_doctrine = 1
     steel_production_1 = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "COR_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        basic_small_airframe = 1
+        basic_medium_airframe = 1
+        
+    }
+    COR_BBA_air_variants = yes
+    else = {
+        set_air_oob = "COR_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -183,6 +211,16 @@ country_event = {
     days = 150
     
 }
+country_event = {
+    id = constate.4091
+    days = 4114
+    
+}
+country_event = {
+    id = constate.4092
+    days = 4114
+    
+}
 set_research_slots = 3
 set_convoys = 80
 set_stability = 0.5
@@ -249,7 +287,7 @@ create_country_leader = {
     picture = "gfx/leaders/COR/COR_William_Joseph_Simmons.png"
     expire = "1965.1.1"
     ideology = klan_nationalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -270,7 +308,10 @@ create_country_leader = {
     picture = "gfx/leaders/COR/Portrait_David_Bibb_Graves.png"
     expire = "1965.1.1"
     ideology = national_liberalism_subtype
-    traits = 
+    traits = {
+        COR_klan_ties_traits
+        
+    }
     
 }
 create_country_leader = {
@@ -290,8 +331,11 @@ create_country_leader = {
     desc = "POLITICS_RUSH_LIMBAUGH_SR_DESC"
     picture = "gfx/leaders/COR/Portrait_COR_Rush_Limbaugh_sr.png"
     expire = "1965.1.1"
-    ideology = socdem_dixiecrat_subtype
-    traits = 
+    ideology = social_democrat_subtype
+    traits = {
+        COR_anchorman_traits
+        
+    }
     
 }
 add_ideas = {
@@ -644,7 +688,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Francis L. Garrett"
     portrait_path = "gfx/leaders/COR/Portrait_COR_Francis_L_Garrett.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 2
@@ -655,7 +699,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "John G. Crommelin"
     portrait_path = "gfx/leaders/TEX/Portrait_TEX_david_bagley.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -666,7 +710,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Mickey Cochrane"
     portrait_path = "gfx/leaders/COR/Mickey_Cochrane.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1

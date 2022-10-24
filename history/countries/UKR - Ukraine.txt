@@ -15,19 +15,44 @@ set_technology = {
     tech_mountaineers = 1
     motorised_infantry = 1
     gw_artillery = 1
-    early_fighter = 1
-    early_bomber = 1
-    fighter1 = 1
-    naval_bomber1 = 1
-    tactical_bomber1 = 1
-    CAS1 = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
     camo = 1
     etax_doctrine = 1
     r56_gw_railway_gun = 1
     steel_production_1 = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "UKR_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    UKR_BBA_air_variants = yes
+    else = {
+        set_air_oob = "UKR_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            tactical_bomber1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -38,7 +63,7 @@ if = {
         }
         
     }
-    set_technology = 
+    set_technology = {}
     
 }
 if = {
@@ -384,7 +409,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Mykola Kapustyanskyi"
     portrait_path = "gfx/leaders/UKR/Portrait_UKR_Mykola_Kapustyanskyi.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -395,7 +420,10 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Ivan Poltavets-Ostrianytsia"
     portrait_path = "gfx/leaders/UKR/Portrait_UKR_Ivan_Poltavets_Ostrianytsia.png"
-    traits = 
+    traits = {
+        cossack_leader
+        
+    }
     skill = 1
     attack_skill = 1
     defense_skill = 1

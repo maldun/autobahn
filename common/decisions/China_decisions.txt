@@ -12,6 +12,7 @@ political_actions = {
                 tag = FNG
                 tag = CHI
                 tag = UPC
+                tag = LEP
                 
             }
             
@@ -128,14 +129,6 @@ political_actions = {
             set_potential_national_government = yes
             set_country_flag = has_united_china
             if = {
-                limit = {
-                    tag = LEP
-                    
-                }
-                set_cosmetic_tag = LEP_CHI
-                
-            }
-            else_if = {
                 limit = {
                     tag = XSM
                     

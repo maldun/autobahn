@@ -222,7 +222,7 @@ create_country_leader = {
     picture = "gfx/leaders/LIB/Portrait_LIB_Mud_Hut.png"
     expire = "1965.1.1"
     ideology = syndicalist_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {

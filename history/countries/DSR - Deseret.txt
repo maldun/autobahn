@@ -37,15 +37,34 @@ set_technology = {
     tech_recon2 = 1
     motorised_infantry = 1
     gw_artillery = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    strategic_bomber1 = 1
-    CAS1 = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
     camo = 1
     etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "DSR_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    else = {
+        set_air_oob = "DSR_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            early_bomber = 1
+            CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -198,7 +217,7 @@ create_country_leader = {
     picture = "gfx/leaders/DSR/George_Dern.png"
     expire = "1965.1.1"
     ideology = social_democrat_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -207,7 +226,7 @@ create_country_leader = {
     picture = "gfx/leaders/DSR/Henry_Blood.png"
     expire = "1965.1.1"
     ideology = social_liberal_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -216,7 +235,7 @@ create_country_leader = {
     picture = "gfx/leaders/DSR/Ezra_Benson.png"
     expire = "1965.1.1"
     ideology = market_liberal_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -225,7 +244,7 @@ create_country_leader = {
     picture = "gfx/leaders/DSR/George_Romney.png"
     expire = "1965.1.1"
     ideology = social_conservative_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -258,7 +277,7 @@ create_country_leader = {
     picture = "gfx/leaders/DSR/Reuben_Clark.png"
     expire = "1965.1.1"
     ideology = fundementalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_corps_commander = {
@@ -296,7 +315,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "DeWitt Clinton Ramsey"
     portrait_path = "gfx/leaders/DSR/DeWitt_Clinton_Ramsey.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 2
     defense_skill = 2

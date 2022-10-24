@@ -109,21 +109,51 @@ set_technology = {
     tech_military_police = 1
     marines = 1
     gw_artillery = 1
-    early_fighter = 1
-    cv_early_fighter = 1
-    early_bomber = 1
-    naval_bomber1 = 1
-    fighter1 = 1
-    tactical_bomber1 = 1
-    CAS1 = 1
-    cv_CAS1 = 1
-    heavy_fighter1 = 1
     aluminum_production_1 = 1
     camo = 1
     etax_doctrine = 1
     r56_gw_railway_gun = 1
     steel_production_1 = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "JAP_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        aa_cannon_1 = 1
+        early_bombs = 1
+        engines_1 = 1
+        engines_2 = 1
+        iw_small_airframe = 1
+        basic_small_airframe = 1
+        iw_medium_airframe = 1
+        basic_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    JAP_BBA_air_variants = yes
+    else = {
+        set_air_oob = "JAP_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            tactical_bomber1 = 1
+            heavy_fighter1 = 1
+            fighter1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -611,7 +641,7 @@ if = {
         create_corps_commander = {
             name = "Ishiwara Kanji"
             portrait_path = "gfx/leaders/JAP/Portrait_JAP_Kanji_Ishiwara.png"
-            traits = 
+            traits = {}
             skill = 1
             attack_skill = 1
             defense_skill = 1
@@ -670,7 +700,7 @@ if = {
         create_corps_commander = {
             name = "Araki Sadao"
             portrait_path = "gfx/leaders/JAP/Portrait_JAP_Sadao_Araki.png"
-            traits = 
+            traits = {}
             skill = 2
             attack_skill = 1
             defense_skill = 2
@@ -1038,7 +1068,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Hasegawa Kiyoshi"
     portrait_path = "gfx/leaders/JAP/Portrait_JAP_Hasegawa_Kiyoshi.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 2
@@ -1077,7 +1107,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Takagi Takeo"
     portrait_path = "gfx/leaders/JAP/Portrait_JAP_Takeo_Takagi.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 2
@@ -1117,7 +1147,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Yoshida Zengo"
     portrait_path = "gfx/leaders/JAP/Portrait_JAP_Zengo_Yoshida.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 2
@@ -1142,7 +1172,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Hyakutake Gengo"
     portrait_path = "gfx/leaders/JAP/Portrait_JAP_Gengo_Hyakutake.png"
-    traits = 
+    traits = {}
     skill = 3
     attack_skill = 3
     defense_skill = 3

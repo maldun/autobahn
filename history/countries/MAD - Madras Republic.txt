@@ -34,13 +34,33 @@ set_technology = {
     tech_mountaineers = 1
     tech_engineers = 1
     gw_artillery = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     jngdst_clothes_gw = 1
     steel_production_1 = 1
     transport_plane1 = 1
     jungletroops = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        
+    }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            
+        }
+        
+    }
     
 }
 set_country_flag = KX_no_naval_tech_decision_enable
@@ -147,7 +167,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Ramakrishna Ranga Rao"
     portrait_path = "gfx/leaders/MAD/Portrait_Madras_Sri_Ramakrishna_Ranga_Rao.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -173,7 +193,7 @@ create_corps_commander = {
 create_navy_leader = {
     name = "Ranjid"
     portrait_path = "gfx/leaders/Generic/Portrait_India_Generic_navy_new_5.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1

@@ -48,7 +48,7 @@ create_country_leader = {
     picture = "gfx/leaders/TNZ/TNZ_Hermann_Goering.png"
     expire = "1965.1.1"
     ideology = goering_loyalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_field_marshal = {

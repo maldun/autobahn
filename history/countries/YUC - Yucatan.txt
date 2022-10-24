@@ -9,10 +9,32 @@ set_technology = {
     tech_recon = 1
     tech_mountaineers = 1
     gw_artillery = 1
-    early_fighter = 1
-    naval_bomber1 = 1
     camo = 1
     etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "YUC_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        
+    }
+    else = {
+        set_air_oob = "YUC_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -95,7 +117,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Tomas_Garrido_Canabal.png"
     expire = "1965.1.1"
     ideology = militant_atheism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -104,7 +126,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Bartolomeo_Garcia_Correa.png"
     expire = "1965.1.1"
     ideology = syndicalist_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -113,7 +135,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Felipe_Puerto.png"
     expire = "1965.1.1"
     ideology = moderate_socialist_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -122,7 +144,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Hircano_Ayuso_y_O_Horibe.png"
     expire = "1965.1.1"
     ideology = social_democrat_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -131,7 +153,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Miguel_Alonzo_Romero.png"
     expire = "1965.1.1"
     ideology = social_liberal_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -140,7 +162,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Bernardino_Mena_Brito.png"
     expire = "1965.1.1"
     ideology = liberal_conservative_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -149,7 +171,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Temistocles_Correa_Gutierrez.png"
     expire = "1965.1.1"
     ideology = social_conservative_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -158,7 +180,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Salvador_Alvarado.png"
     expire = "1965.1.1"
     ideology = authoritarian_democrat_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -167,7 +189,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Salvador_Alvarado.png"
     expire = "1965.1.1"
     ideology = red_tinted_autocracy_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -176,7 +198,7 @@ create_country_leader = {
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Francisco_May_Pech.png"
     expire = "1965.1.1"
     ideology = townerism_subtype
-    traits = 
+    traits = {}
     
 }
 add_ideas = {

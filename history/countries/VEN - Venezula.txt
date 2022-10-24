@@ -11,11 +11,34 @@ set_technology = {
     tech_support = 1
     tech_recon = 1
     gw_artillery = 1
-    early_fighter = 1
-    naval_bomber1 = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -201,7 +224,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Elías Guiterrez"
     portrait_path = "gfx/leaders/Generic/Portrait_South_America_Generic_land_new_1.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -306,7 +329,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Wolfgang Enrique Larrazábal Ugueto"
     portrait_path = "gfx/leaders/VEN/Portrait_Venezuela_Wolfgang_Larrazabal.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1

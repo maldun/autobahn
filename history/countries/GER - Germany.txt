@@ -148,15 +148,6 @@ set_technology = {
     marines = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
-    fighter1 = 1
-    tactical_bomber1 = 1
-    strategic_bomber1 = 1
-    CAS1 = 1
     camo = 1
     etax_doctrine = 1
     r56_gw_railway_gun = 1
@@ -165,6 +156,56 @@ set_technology = {
     sniper_rifle = 1
     steel_production_1 = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "GER_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        aa_cannon_1 = 1
+        engines_1 = 1
+        engines_2 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        basic_small_airframe = 1
+        iw_medium_airframe = 1
+        basic_medium_airframe = 1
+        iw_large_airframe = 1
+        basic_large_airframe = 1
+        
+    }
+    GER_BBA_air_variants = yes
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "By Blood Alone"
+            
+        }
+        
+    }
+    else = {
+        set_air_oob = "GER_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            fighter1 = 1
+            tactical_bomber1 = 1
+            strategic_bomber1 = 1
+            CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -363,11 +404,6 @@ add_opinion_modifier = {
     
 }
 add_opinion_modifier = {
-    target = AOG
-    modifier = colonial_master
-    
-}
-add_opinion_modifier = {
     target = HAI
     modifier = HAI_foreign_council
     
@@ -423,11 +459,6 @@ set_autonomy = {
     
 }
 set_autonomy = {
-    target = AOG
-    autonomy_state = kr_colonial_government
-    
-}
-set_autonomy = {
     target = MOR
     autonomy_state = kr_autonomous_puppet
     
@@ -468,7 +499,6 @@ add_to_faction = MAF
 add_to_faction = GEA
 add_to_faction = MLT
 add_to_faction = CRE
-add_to_faction = AOG
 every_country = {
     limit = {
         OR = {
@@ -1179,7 +1209,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Alfred Saalwächter"
     portrait_path = "gfx/leaders/GER/Portrait_Germany_Alfred_Saalwachter_kr.png"
-    traits = 
+    traits = {}
     skill = 3
     attack_skill = 3
     defense_skill = 3
@@ -1279,7 +1309,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Günther Lütjens"
     portrait_path = "gfx/leaders/GER/Portrait_Germany_Gunther_Lutjens_kr.png"
-    traits = 
+    traits = {}
     skill = 3
     attack_skill = 3
     defense_skill = 1

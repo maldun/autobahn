@@ -86,7 +86,7 @@ random_list = {
         set_country_flag = INC_Full_Vanguardist
         
     }
-    40 = 
+    40 = {}
     
 }
 add_ideas = {
@@ -269,7 +269,7 @@ create_corps_commander = {
 create_navy_leader = {
     name = "Ta Xuan Thu"
     portrait_path = "gfx/leaders/INC/Portrait_INC_Ta_Xuan_Thu.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -280,7 +280,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Tran Van Giang"
     portrait_path = "gfx/leaders/INC/Portrait_INC_Tran_Van_Giang.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1

@@ -40,11 +40,33 @@ set_technology = {
     tech_engineers = 1
     gw_artillery = 1
     interwar_antitank = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     steel_production_1 = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "WLL_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        
+    }
+    else = {
+        set_air_oob = "WLL_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -148,7 +170,7 @@ create_country_leader = {
 }
 create_country_leader = {
     name = "Lucie Dejardin"
-    picture = "gfx/leaders/WLL/portrait_Lucie_Dujardin.png"
+    picture = "gfx/leaders/BEL/portrait_Lucie_Dujardin.png"
     expire = "1965.1.1"
     ideology = feminist_syndicalist_subtype
     female = yes
@@ -156,34 +178,34 @@ create_country_leader = {
 }
 create_country_leader = {
     name = "Walter Dauge"
-    picture = "gfx/leaders/WLL/Portrait_Walter_Dauge.png"
+    picture = "gfx/leaders/BEL/Portrait_Walter_Dauge.png"
     expire = "1965.1.1"
     ideology = moderate_socialist_subtype
     
 }
 create_country_leader = {
     name = "Fernand Dehousse"
-    picture = "gfx/leaders/WLL/Portrait_Fernand_Dehousse.png"
+    picture = "gfx/leaders/BEL/Portrait_Fernand_Dehousse.png"
     expire = "1965.1.1"
     ideology = socdem_democratic_socialism_subtype
     
 }
 create_country_leader = {
     name = "Auguste Buisseret"
-    picture = "gfx/leaders/WLL/Portrait_August_Buisseret.png"
+    picture = "gfx/leaders/BEL/Portrait_August_Buisseret.png"
     expire = "1965.1.1"
     ideology = market_liberal_subtype
     
 }
 create_country_leader = {
     name = "Hubert Pierlot"
-    picture = "gfx/leaders/BEL/Portrait_Belgium_Hubert_Pierlot.png"
+    picture = "gfx/leaders/BEL/Portrait_Belgium_Hubert_Pierlot_KX.png"
     expire = "1965.1.1"
     ideology = christian_democracy_subtype
     
 }
 create_country_leader = {
-    name = "Adelbert"
+    name = "Adalbert"
     desc = "POLITICS_ADALBERT_I_DESC"
     picture = "gfx/leaders/BEL/Portrait_Belgium_Adalbert_I.png"
     expire = "1965.1.1"
@@ -192,13 +214,15 @@ create_country_leader = {
 }
 create_country_leader = {
     name = "Léon Degrelle"
+    desc = "POLITICS_LEON_DEGRELLE_DESC"
     picture = "gfx/leaders/BEL/Portrait_Belgium_LEON_DEGRELLE.png"
     expire = "1965.1.1"
-    ideology = paternal_autocrat_subtype
+    ideology = pataut_belgicism_subtype
     
 }
 create_country_leader = {
     name = "Léon Degrelle"
+    desc = "POLITICS_LEON_DEGRELLE_DESC"
     picture = "gfx/leaders/BEL/Portrait_Belgium_LEON_DEGRELLE.png"
     expire = "1965.1.1"
     ideology = belgicism_subtype

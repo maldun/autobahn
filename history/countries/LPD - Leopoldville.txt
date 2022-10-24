@@ -85,7 +85,7 @@ create_country_leader = {
     picture = "gfx/leaders/COG/COG_Armand_Huyghe_de_Mahenge.png"
     expire = "1965.1.1"
     ideology = moderate_authoritarianism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -94,7 +94,7 @@ create_country_leader = {
     picture = "gfx/leaders/COG/Portrait_Congo_Simon_Kimbangu.png"
     expire = "1965.1.1"
     ideology = authdem_kimbanguism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -103,6 +103,6 @@ create_country_leader = {
     picture = "gfx/leaders/COG/Portrait_COG_Emile_Janssens.png"
     expire = "1965.1.1"
     ideology = junta_subtype
-    traits = 
+    traits = {}
     
 }

@@ -42,16 +42,42 @@ set_technology = {
     tech_recon = 1
     motorised_infantry = 1
     gw_artillery = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    strategic_bomber1 = 1
-    CAS1 = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "CSA_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        aa_cannon_1 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    CSA_BBA_air_variants = yes
+    else = {
+        set_air_oob = "CSA_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -382,7 +408,7 @@ create_corps_commander = {
     desc = "CSA_BENJAMIN_KATINE_ARMY_DESC"
     id = 962
     portrait_path = "gfx/leaders/CSA/Portrait_CSA_benjamin_katine.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -411,7 +437,7 @@ create_corps_commander = {
     name = "John Tisa"
     desc = "CSA_JOHN_TISA_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/Portrait_CSA_john_tisa.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -455,7 +481,7 @@ create_corps_commander = {
     name = "Bill Aalto"
     desc = "CSA_BILL_AALTO_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/CSA_Bill_Aalto.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -467,7 +493,7 @@ create_corps_commander = {
     name = "Cecil Cole"
     desc = "CSA_CECIL_COLE_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/CSA_Cecil_Cole.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -479,7 +505,7 @@ create_corps_commander = {
     name = "David Doran"
     desc = "CSA_DAVID_DORAN_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/CSA_David_Doran.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -491,7 +517,7 @@ create_corps_commander = {
     name = "Elliot Loomis"
     desc = "CSA_CECIL_COLE_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/CSA_Elliot_Loomis.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 2
@@ -503,7 +529,7 @@ create_corps_commander = {
     name = "Eugene Nolte"
     desc = "CSA_CECIL_COLE_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/CSA_Eugene_Nolte.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -515,7 +541,7 @@ create_corps_commander = {
     name = "Henry Mucci"
     desc = "CSA_CECIL_COLE_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/CSA_Henry_Mucci.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 2
     defense_skill = 1
@@ -527,7 +553,7 @@ create_corps_commander = {
     name = "Irving Goff"
     desc = "CSA_IRVING_GOFF_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/CSA_Irving_Goff.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -553,7 +579,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Jesse Wallach"
     portrait_path = "gfx/leaders/CSA/CSA_Jesse_Wallach.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 2
     defense_skill = 1
@@ -564,7 +590,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Joe Luftig"
     portrait_path = "gfx/leaders/CSA/CSA_Joe_Luftig.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -575,7 +601,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Nathan Wolf"
     portrait_path = "gfx/leaders/CSA/CSA_Nathan_Wolf.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -586,7 +612,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Patrick Read"
     portrait_path = "gfx/leaders/CSA/CSA_Patrick_Read.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -597,7 +623,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "William Oderaka"
     portrait_path = "gfx/leaders/CSA/CSA_William_Oderaka.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -696,6 +722,24 @@ create_corps_commander = {
     logistics_skill = 1
     
 }
+create_corps_commander = {
+    name = "Ernest Hemingway "
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Ernest_Hemingway_General.png"
+    traits = {
+        war_hero
+        trait_reckless
+        media_personality
+        expert_improviser
+        naval_liason
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 3
+    
+}
 create_navy_leader = {
     name = "George Whelan Anderson Jr."
     portrait_path = "gfx/leaders/CSA/Portrait_CSA_george_anderson.png"
@@ -785,7 +829,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "William R. Furlong"
     portrait_path = "gfx/leaders/CSA/Portrait_CSA_william_furlong.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 2

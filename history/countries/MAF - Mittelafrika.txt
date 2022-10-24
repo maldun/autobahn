@@ -44,14 +44,6 @@ set_technology = {
     tech_mountaineers = 1
     motorised_infantry = 1
     gw_artillery = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
-    fighter1 = 1
-    tactical_bomber1 = 1
-    CAS1 = 1
     camo = 1
     desertinfantry_at = 1
     etax_doctrine = 1
@@ -63,6 +55,45 @@ set_technology = {
     steel_production_1 = 1
     transport_plane1 = 1
     jungletroops = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "MAF_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        aa_cannon_1 = 1
+        early_bombs = 1
+        engines_1 = 1
+        engines_2 = 1
+        iw_small_airframe = 1
+        basic_small_airframe = 1
+        iw_medium_airframe = 1
+        basic_medium_airframe = 1
+        iw_large_airframe = 1
+        basic_large_airframe = 1
+        
+    }
+    MAF_BBA_air_variants = yes
+    else = {
+        set_air_oob = "MAF_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            fighter1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            tactical_bomber1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -423,7 +454,7 @@ create_country_leader = {
     picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Wilhelm_Solf.png"
     expire = "1965.1.1"
     ideology = colonial_govt_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -432,7 +463,7 @@ create_country_leader = {
     picture = "gfx/leaders/MAF/MAF_Reinhard_Heydrich2.png"
     expire = "1965.1.1"
     ideology = autocratic_colonial_govt_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -441,7 +472,7 @@ create_country_leader = {
     picture = "gfx/leaders/MAF/MAF_Goering_Governor.png"
     expire = "1965.1.1"
     ideology = national_populist_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -450,7 +481,7 @@ create_country_leader = {
     picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Theodor_von_Hassel.png"
     expire = "1965.1.1"
     ideology = soccon_colonial_govt_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -459,7 +490,7 @@ create_country_leader = {
     picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Jules_Cousin.png"
     expire = "1965.1.1"
     ideology = soclib_colonial_govt_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -468,7 +499,7 @@ create_country_leader = {
     picture = "gfx/leaders/KEN/Portrait_Kenya_Nigel_Leaky.png"
     expire = "1965.1.1"
     ideology = marlib_colonial_govt_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -477,7 +508,7 @@ create_country_leader = {
     picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Albert_Goering.png"
     expire = "1965.1.1"
     ideology = socdem_colonial_govt_subtype
-    traits = 
+    traits = {}
     
 }
 create_field_marshal = {
@@ -1097,7 +1128,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Reinhard Heydrich"
     portrait_path = "gfx/leaders/MAF/Portrait_Mittelafrika_Reinhard_Heydrich.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 1
     defense_skill = 2

@@ -41,15 +41,43 @@ set_technology = {
     motorised_infantry = 1
     gw_artillery = 1
     marines = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    strategic_bomber1 = 1
-    CAS1 = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
     camo = 1
     etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "BBR_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        basic_small_airframe = 1
+        basic_medium_airframe = 1
+        
+    }
+    BBR_BBA_air_variants = yes
+    else = {
+        set_air_oob = "BBR_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -200,7 +228,7 @@ create_country_leader = {
     desc = "BBR_HARRY_HAYWOOD_POLITICS_DESC"
     picture = "gfx/leaders/BBR/Harry_Haywood.png"
     expire = "1965.1.1"
-    ideology = natsynd_subtype
+    ideology = william_foster_thought_subtype
     traits = {
         rabble_rouser
         
@@ -237,7 +265,7 @@ create_country_leader = {
     picture = "gfx/leaders/BBR/Asa_Philip_Abbott.png"
     expire = "1965.1.1"
     ideology = social_democrat_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -460,7 +488,7 @@ create_corps_commander = {
 create_navy_leader = {
     name = "Doris Miller"
     portrait_path = "gfx/leaders/BBR/Portrait_BBR_Doris_Dorie_Miller.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 2
     defense_skill = 1
@@ -471,7 +499,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Hugh Mulzac"
     portrait_path = "gfx/leaders/BBR/Portrait_BBR_Hugh_Mulzac.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 2
     defense_skill = 1
@@ -489,6 +517,27 @@ if = {
         GFX = GFX_portrait_HOTB_Angelo_Herndon
         traits = {
             operative_commando
+            operative_natural_orator
+            
+        }
+        bypass_recruitment = no
+        available_to_spy_master = yes
+        nationalities = {
+            CSA
+            USA
+            TEX
+            CAL
+            NEE
+            BBR
+            COR
+            
+        }
+        
+    }
+    create_operative_leader = {
+        name = "Louis Armstrong"
+        GFX = GFX_Portrait_BBR_Louis_Armstrong
+        traits = {
             operative_natural_orator
             
         }

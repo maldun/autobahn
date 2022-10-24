@@ -11,17 +11,45 @@ set_technology = {
     tech_engineers = 1
     marines = 1
     gw_artillery = 1
-    early_fighter = 1
-    cv_early_fighter = 1
-    early_bomber = 1
-    naval_bomber1 = 1
-    fighter1 = 1
     aluminum_production_1 = 1
     camo = 1
     etax_doctrine = 1
     steel_production_1 = 1
     transport_plane1 = 1
     winter_clothes_gw = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "TRM_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        aa_cannon_1 = 1
+        early_bombs = 1
+        engines_1 = 1
+        iw_small_airframe = 1
+        basic_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    TRM_BBA_air_variants = yes
+    else = {
+        set_air_oob = "TRM_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            fighter1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -156,7 +184,7 @@ country_event = {
     
 }
 country_event = {
-    id = tram.217
+    id = tram.227
     days = 1014
     random = 759
     
@@ -178,10 +206,6 @@ set_variable = {
 }
 set_variable = {
     rus_core_integration_time_to_remove = 150
-    
-}
-add_to_array = {
-    RUS_integration_array = TRM
     
 }
 add_to_array = {
@@ -216,6 +240,11 @@ add_ideas = {
 }
 diplomatic_relation = {
     country = FNG
+    relation = non_aggression_pact
+    
+}
+diplomatic_relation = {
+    country = JAP
     relation = non_aggression_pact
     
 }
@@ -286,7 +315,25 @@ add_ai_strategy = {
 }
 add_ai_strategy = {
     type = ignore_claim
+    id = "MON"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "JAP"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
     id = "YAK"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
+    id = "BRY"
     value = 1
     
 }
@@ -398,8 +445,8 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Grigory_Semyonov.png"
     id = 243910
     traits = {
+        cossack_leader
         cavalry_leader
-        cavalry_expert
         media_personality
         politically_connected
         
@@ -414,7 +461,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Sergey Baranovskiy"
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Sergey_Baranovskiy.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 1
@@ -444,8 +491,8 @@ create_corps_commander = {
     id = 505054
     portrait_path = "gfx/leaders/TRM/TRM_Ivan_Gamov.png"
     traits = {
+        cossack_leader
         cavalry_leader
-        cavalry_expert
         
     }
     skill = 2
@@ -520,8 +567,8 @@ create_corps_commander = {
     name = "Vladimir Tolstov"
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Vladimir_Tolstov.png"
     traits = {
+        cossack_leader
         cavalry_leader
-        cavalry_expert
         
     }
     id = 505056
@@ -587,7 +634,7 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/TRM/Portrait_TRM_Yakov_Slashchov.png"
     traits = {
         old_guard
-        cavalry_leader
+        cossack_leader
         
     }
     skill = 3
@@ -601,7 +648,7 @@ create_navy_leader = {
     name = "Georgiy Stark"
     id = 50002
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Georgiy_Stark.png"
-    traits = 
+    traits = {}
     skill = 3
     maneuvering_skill = 2
     defense_skill = 3
@@ -616,6 +663,7 @@ create_navy_leader = {
     traits = {
         superior_tactician
         war_hero
+        navy_media_personality
         
     }
     skill = 4
@@ -628,7 +676,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Aleksandr Gerasimov"
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Aleksandr_Gerasimov.png"
-    traits = 
+    traits = {}
     skill = 1
     maneuvering_skill = 1
     defense_skill = 1

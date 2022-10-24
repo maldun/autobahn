@@ -36,15 +36,43 @@ set_technology = {
     tech_recon = 1
     motorised_infantry = 1
     gw_artillery = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    strategic_bomber1 = 1
-    CAS1 = 1
-    cv_early_fighter = 1
-    cv_CAS1 = 1
     camo = 1
     etax_doctrine = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "NYC_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        basic_small_airframe = 1
+        basic_medium_airframe = 1
+        
+    }
+    NYC_BBA_air_variants = yes
+    else = {
+        set_air_oob = "NYC_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            strategic_bomber1 = 1
+            CAS1 = 1
+            cv_early_fighter = 1
+            cv_CAS1 = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -293,7 +321,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_Christian_Front.png"
     expire = "1965.1.1"
     ideology = fundementalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -302,7 +330,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_Commission.png"
     expire = "1965.1.1"
     ideology = crime_syndicate_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -311,7 +339,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_Lewis_Joseph_Valentine.png"
     expire = "1965.1.1"
     ideology = police_state_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -320,7 +348,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_Tammany_Hall.png"
     expire = "1965.1.1"
     ideology = clientelism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -341,7 +369,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_Orson_Welles.png"
     expire = "1965.1.1"
     ideology = social_democrat_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -350,7 +378,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_Fiorello_La_Guardia.png"
     expire = "1965.1.1"
     ideology = social_liberal_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -359,7 +387,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_John_Steinbeck.png"
     expire = "1965.1.1"
     ideology = radical_progressivism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -367,7 +395,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_Louis_Fraina.png"
     expire = "1965.1.1"
     ideology = centralized_syndicalism_subtype
-    traits = 
+    traits = {}
     
 }
 create_country_leader = {
@@ -376,7 +404,7 @@ create_country_leader = {
     picture = "gfx/leaders/NYC/Portrait_NYC_Franklin_Delano_Roosevelt_Jr.png"
     expire = "1965.1.1"
     ideology = natsynd_subtype
-    traits = 
+    traits = {}
     
 }
 add_ideas = {
@@ -407,7 +435,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
     name = "Lewis J. Valentine "
-    portrait_path = "gfx/leaders/NYC/Portrait_NYC_Lewis_Joseph_Valentine.png"
+    portrait_path = "gfx/leaders/NYC/Portrait_NYC_Lewis_Joseph_Valentine_General.png"
     traits = {
         politically_connected
         NYC_police_officer

@@ -65,11 +65,6 @@ set_technology = {
     marines = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    naval_bomber1 = 1
-    early_bomber = 1
-    cv_early_fighter = 1
-    tactical_bomber1 = 1
     transport = 1
     camelry = 1
     aluminum_production_1 = 1
@@ -81,6 +76,40 @@ set_technology = {
     r56_railway_mortar_subtech = 1
     steel_production_1 = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc = "By Blood Alone"
+        
+    }
+    set_air_oob = "NFA_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        early_bombs = 1
+        engines_1 = 1
+        engines_2 = 1
+        aircraft_construction = 1
+        range_improvements = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    NFA_BBA_air_variants = yes
+    else = {
+        set_air_oob = "NFA_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            fighter1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            tactical_bomber1 = 1
+            cv_early_fighter = 1
+            
+        }
+        
+    }
     
 }
 if = {
@@ -591,7 +620,7 @@ create_country_leader = {
     picture = "gfx/leaders/NFA/Portrait_NFA_Charles_Maurras.png"
     expire = "1965.1.1"
     ideology = maurrassism_subtype
-    traits = 
+    traits = {}
     
 }
 create_field_marshal = {
@@ -1013,7 +1042,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Emile Muselier"
     portrait_path = "gfx/leaders/NFA/Portrait_France_Emile_Muselier.png"
-    traits = 
+    traits = {}
     skill = 2
     attack_skill = 2
     defense_skill = 2
@@ -1113,7 +1142,7 @@ if = {
     }
     create_equipment_variant = {
         name = "H-35"
-        type = light_tank_chassis_2
+        type = light_tank_chassis_1
         parent_version = 0
         modules = {
             main_armament_slot = tank_small_cannon

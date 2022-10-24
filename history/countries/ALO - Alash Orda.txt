@@ -69,7 +69,14 @@ add_ideas = {
     ALO_Mirzhakip_Dulatov_for_ade
     ALO_Itgabit_Musrepov_sec_mli
     ALO_white_sun
+    ALO_cossack_garrison
     alo_poor_industry
+    
+}
+country_event = {
+    id = alash.221
+    days = 500
+    random_days = 288
     
 }
 create_country_leader = {
@@ -110,8 +117,8 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Zhumabay Shayakhmetov"
-    picture = "gfx/leaders/ALO/Portrait_ALO_Zhumabay_Shayakhmetov.png"
+    name = "Alibi Dzhangildin"
+    picture = "gfx/leaders/ALO/Portrait_ALO_Alibi_Dzhangildin.png"
     expire = "1965.1.1"
     ideology = agrarian_socialism_subtype
     
@@ -152,6 +159,7 @@ create_field_marshal = {
         old_guard
         inflexible_strategist
         offensive_doctrine
+        cossack_leader
         
     }
     skill = 3
@@ -181,7 +189,7 @@ create_corps_commander = {
     name = "Bauyrzhan Momyshuly"
     portrait_path = "gfx/leaders/ALO/Portrait_ALO_Bauyrzhan_Momyshuly.png"
     traits = {
-        cavalry_officer
+        cavalry_leader
         trickster
         
     }
@@ -195,7 +203,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Bazarbay Mamentov"
     portrait_path = "gfx/leaders/ALO/Portrait_ALO_Bazarbay_Mamentov.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -220,7 +228,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Smagul Sadwakasov"
     portrait_path = "gfx/leaders/ALO/Portrait_ALO_Sadvakasov.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -231,7 +239,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Sultanbek Khojanov"
     portrait_path = "gfx/leaders/ALO/Portrait_ALO_Sultanbek_Khojanuly_Khojanov.png"
-    traits = 
+    traits = {}
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -251,14 +259,6 @@ create_corps_commander = {
     defense_skill = 1
     planning_skill = 2
     logistics_skill = 2
-    
-}
-random_unit_leader = {
-    limit = {
-        has_id = 68666
-        
-    }
-    save_global_event_target_as = ALO_Aleksandr_Dutov
     
 }
 if = {

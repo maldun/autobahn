@@ -55,6 +55,11 @@ def update_navy(rt56_path, out_path):
     pass
 
 
+@copy_files('rt56_copy_civ.json')
+def update_civ(rt56_path, out_path):
+    pass
+
+
 @copy_files("rt56_copy_post.json")
 def update_post_steps(rt56_path, out_path):
     pass

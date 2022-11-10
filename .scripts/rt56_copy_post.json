@@ -2,6 +2,9 @@
     "interface/": {
         "countrytechtreeview.gui": []
     },
+    "common/continuous_focus/": {
+        "generic.txt": []
+    },
     "common/units/equipment/upgrades/": {
         "air_upgrades.txt": [],
         "r56e_upgrades.txt": []

@@ -322,6 +322,7 @@ if __name__ == "__main__":
     rt56_update.update_air(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_tanks(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_navy(RT56_FOLDER, OUT_FOLDER)
+    rt56_update.update_civ(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_post_steps(RT56_FOLDER, OUT_FOLDER)
     
     # add missing spirits    

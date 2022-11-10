@@ -2,7 +2,7 @@ capital = 608
 oob = "QIE"
 set_naval_oob = "QIE_naval"
 set_research_slots = 3
-set_convoys = 15
+set_convoys = 25
 set_stability = 0.5
 set_war_support = 0.4
 create_faction = Qing_faction
@@ -15,13 +15,12 @@ add_to_faction = SIK
 add_to_faction = LEP
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     tech_support = 1
     tech_engineers = 1
     tech_recon = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    early_bomber = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
@@ -31,7 +30,28 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "QIE_air_bba"
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "QIE_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -42,10 +62,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {
@@ -56,7 +73,7 @@ if = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -65,7 +82,6 @@ if = {
         coastal_defense_ships = 1
         basic_naval_mines = 1
         basic_battery = 1
-        basic_secondary_battery = 1
         basic_torpedo = 1
         
     }
@@ -73,10 +89,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -85,21 +98,6 @@ if = {
         early_heavy_cruiser = 1
         
     }
-    
-}
-add_opinion_modifier = {
-    target = CHI
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = JAP
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = FNG
-    modifier = embargo
     
 }
 set_country_flag = can_assume_national_leadership
@@ -280,15 +278,19 @@ recruit_character = QIE_cao_shijie
 recruit_character = QIE_aisin_gioro_jixing
 recruit_character = QIE_ling_bin
 recruit_character = QIE_fang_zhijian
+recruit_character = QIE_wang_lingyun
+recruit_character = QIE_du_xijun
+recruit_character = QIE_guo_jijiao
+recruit_character = QIE_wei_yisan
 recruit_character = QIE_wu_renli
 recruit_character = QIE_sa_zhenbing
 recruit_character = QIE_du_xigui
 recruit_character = QIE_aisin_gioro_zaixun
 recruit_character = QIE_li_linsi
-recruit_character = QIE_philip_z_c_diao
-recruit_character = QIE_victor_zai
+recruit_character = QIE_diao_zuoqian
+recruit_character = QIE_hu_shize
 recruit_character = QIE_zhang_lande
-recruit_character = QIE_sa_fulin
+recruit_character = QIE_sa_fumao
 recruit_character = QIE_aisin_gioro_zaizhen
 recruit_character = QIE_liu_quanxiang
 recruit_character = QIE_aisin_gioro_putong
@@ -327,87 +329,33 @@ QIE_cao_shijie = {
     set_character_flag = QIE_zhili_leader
     
 }
-random_character = {
-    limit = {
-        is_character = QIE_aisin_gioro_puyi
-        
-    }
-    save_global_event_target_as = QIE_aisin_gioro_puyi_target
+QIE_wang_lingyun = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
     
 }
-random_unit_leader = {
-    limit = {
-        is_character = QIE_jiang_baili
-        
-    }
-    save_global_event_target_as = QIE_jiang_baili_target
+QIE_du_xijun = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
     
 }
-random_character = {
-    limit = {
-        is_character = QIE_zhang_qihuang
-        
-    }
-    save_global_event_target_as = QIE_zhang_qihuang_target
+QIE_guo_jijiao = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
     
 }
-random_character = {
-    limit = {
-        is_character = QIE_wen_tsungyao
-        
-    }
-    save_global_event_target_as = QIE_wen_tsungyao_target
+QIE_wei_yisan = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
     
 }
-random_character = {
-    limit = {
-        is_character = QIE_aisin_gioro_pugong
-        
-    }
-    save_global_event_target_as = QIE_aisin_gioro_pugong_target
+QIE_ling_bin = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
     
 }
-XXA = {
-    recruit_character = QIE_wang_lingyun
-    recruit_character = QIE_du_xijun
-    recruit_character = QIE_guo_jijiao
-    recruit_character = QIE_wei_yisan
-    random_army_leader = {
-        limit = {
-            is_character = QIE_wang_lingyun
-            
-        }
-        save_global_event_target_as = QIE_wang_lingyun_target
-        
-    }
-    random_army_leader = {
-        limit = {
-            is_character = QIE_du_xijun
-            
-        }
-        save_global_event_target_as = QIE_du_xijun_target
-        
-    }
-    random_army_leader = {
-        limit = {
-            is_character = QIE_guo_jijiao
-            
-        }
-        save_global_event_target_as = QIE_guo_jijiao_target
-        
-    }
-    random_army_leader = {
-        limit = {
-            is_character = QIE_wei_yisan
-            
-        }
-        save_global_event_target_as = QIE_wei_yisan_target
-        
-    }
+QIE_fang_zhijian = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
     
 }
-set_temp_variable = {
-    coalition_partner_var = token:paternal_autocrat
-    
-}
-add_to_coalition = yes

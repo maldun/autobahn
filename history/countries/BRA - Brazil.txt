@@ -1,0 +1,422 @@
+capital = 500
+oob = "BRA"
+set_naval_oob = "BRA_naval"
+set_war_support = 0.3
+set_convoys = 40
+set_research_slots = 3
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    basic_train = 1
+    camo = 1
+    etax_doctrine = 1
+    jngdst_clothes_gw = 1
+    transport_plane1 = 1
+    jungletroops = 1
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "BRA_air_bba"
+    set_technology = {
+        iw_small_airframe = 1
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "BRA_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        CAS1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
+        
+    }
+    set_technology = {
+        gwtank_chassis = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = no
+        
+    }
+    set_technology = {
+        gwtank = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_mtg = yes
+        
+    }
+    set_technology = {
+        early_ship_hull_submarine = 1
+        basic_ship_hull_submarine = 1
+        early_ship_hull_light = 1
+        early_ship_hull_cruiser = 1
+        early_ship_hull_heavy = 1
+        basic_battery = 1
+        basic_torpedo = 1
+        basic_naval_mines = 1
+        submarine_mine_laying = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_mtg = no
+        
+    }
+    set_technology = {
+        early_submarine = 1
+        early_destroyer = 1
+        early_light_cruiser = 1
+        early_heavy_cruiser = 1
+        early_battleship = 1
+        transport = 1
+        
+    }
+    
+}
+PIR = {
+    inherit_technology = BRA
+    
+}
+SPO = {
+    inherit_technology = BRA
+    
+}
+VCR = {
+    inherit_technology = BRA
+    
+}
+BAH = {
+    inherit_technology = BRA
+    
+}
+GRP = {
+    inherit_technology = BRA
+    
+}
+GOY = {
+    inherit_technology = BRA
+    
+}
+AMA = {
+    inherit_technology = BRA
+    
+}
+country_event = {
+    id = bra.1
+    days = 1
+    
+}
+country_event = {
+    id = bra.2
+    days = 4
+    
+}
+country_event = {
+    id = bra.3
+    days = 7
+    
+}
+country_event = {
+    id = bra.6
+    days = 93
+    random_days = 3
+    
+}
+country_event = {
+    id = bra.9
+    days = 121
+    
+}
+country_event = {
+    id = bra.11
+    days = 158
+    random_days = 8
+    
+}
+country_event = {
+    id = bra.13
+    days = 160
+    random_days = 5
+    
+}
+country_event = {
+    id = bra.14
+    days = 188
+    random_days = 8
+    
+}
+country_event = {
+    id = bra.15
+    days = 160
+    random_days = 5
+    
+}
+country_event = {
+    id = bra.16
+    days = 165
+    random_days = 8
+    
+}
+country_event = {
+    id = bra.17
+    days = 188
+    random_days = 8
+    
+}
+country_event = {
+    id = bra.20
+    days = 196
+    random_days = 8
+    
+}
+country_event = {
+    id = bra.21
+    days = 210
+    random_days = 5
+    
+}
+country_event = {
+    id = bra.23
+    days = 260
+    random_days = 8
+    
+}
+country_event = {
+    id = bra.26
+    days = 285
+    random_days = 8
+    
+}
+country_event = {
+    id = bra.456
+    days = 821
+    random_days = 60
+    
+}
+country_event = {
+    id = bra.216
+    days = 720
+    
+}
+country_event = {
+    id = bra.217
+    days = 1260
+    
+}
+country_event = {
+    id = bra.219
+    days = 2460
+    
+}
+country_event = {
+    id = bra.220
+    days = 2460
+    random_days = 12
+    
+}
+country_event = {
+    id = bra.221
+    days = 1390
+    
+}
+country_event = {
+    id = bra.218
+    days = 1200
+    
+}
+country_event = {
+    id = bra.200
+    days = 922
+    
+}
+country_event = {
+    id = bra.208
+    days = 750
+    random_days = 7
+    
+}
+country_event = {
+    id = bra.222
+    days = 2700
+    random_days = 14
+    
+}
+country_event = {
+    id = bra.713
+    days = 70
+    
+}
+country_event = {
+    id = bra.25
+    days = 221
+    
+}
+country_event = {
+    id = bra.700
+    days = 134
+    random_days = 2
+    
+}
+country_event = {
+    id = bra.703
+    days = 270
+    random_days = 2
+    
+}
+country_event = {
+    id = bra.704
+    days = 2050
+    random_days = 15
+    
+}
+country_event = {
+    id = bra.705
+    days = 1130
+    random_days = 15
+    
+}
+country_event = {
+    id = bra.706
+    days = 2310
+    random_days = 5
+    
+}
+country_event = {
+    id = bra.707
+    days = 1380
+    random_days = 4
+    
+}
+country_event = {
+    id = bra.708
+    days = 865
+    random_days = 2
+    
+}
+country_event = {
+    id = bra.709
+    days = 875
+    random_days = 5
+    
+}
+country_event = {
+    id = bra.710
+    days = 875
+    
+}
+country_event = {
+    id = bra.308
+    days = 3955
+    
+}
+give_guarantee = URG
+add_to_array = {
+    URG.guarantor_array = BRA
+    
+}
+set_politics = {
+    ruling_party = social_conservative
+    last_election = "1932.11.1"
+    election_frequency = 48
+    elections_allowed = yes
+    
+}
+set_popularities = {
+    totalist = 3
+    radical_socialist = 4
+    syndicalist = 3
+    social_democrat = 13
+    social_liberal = 13
+    market_liberal = 8
+    social_conservative = 33
+    authoritarian_democrat = 7
+    paternal_autocrat = 3
+    national_populist = 13
+    
+}
+add_ideas = {
+    BRA_election_year
+    BRA_decentralisation
+    BRA_wake_of_civil_war
+    BRA_state_armies1
+    
+}
+recruit_character = BRA_patricia_rehder_galvao
+recruit_character = BRA_eugenia_alvaro_moreyra
+recruit_character = BRA_armanda_alvaro_alberto
+recruit_character = BRA_edgard_frederico_leuenroth
+recruit_character = BRA_antonio_avelino_foscolo
+recruit_character = BRA_everardo_dias
+recruit_character = BRA_candido_portinari
+recruit_character = BRA_otto_alcides_ohlweiler
+recruit_character = BRA_joao_mangabeira
+recruit_character = BRA_joao_belchior_marques_goulart
+recruit_character = BRA_elisa_kauffmann_abramovich
+recruit_character = BRA_ildo_meneghetti
+recruit_character = BRA_wilson_barbosa_martins
+recruit_character = BRA_francisco_prestes_maia
+recruit_character = BRA_gustavo_capanema_filho
+recruit_character = BRA_affonso_alves_de_camargo
+recruit_character = BRA_osvaldo_euclides_de_sousa_aranha
+recruit_character = BRA_eurico_gaspar_dutra
+recruit_character = BRA_gustavo_dodt_barroso
+recruit_character = BRA_pedro_henrique_de_orleans_braganca
+recruit_character = BRA_congresso_nacional
+recruit_character = BRA_arlindo_veiga_dos_santos
+activate_advisor = BRA_congresso_nacional_sic
+recruit_character = BRA_helder_pessoa_camara
+recruit_character = BRA_alcebiades_delamare_nogueira_da_gama
+recruit_character = BRA_antonio_gastao_de_orleans_braganca
+recruit_character = BRA_luis_da_camara_cascudo
+recruit_character = BRA_marcos_vinicius_da_cruz_e_mello_moraes
+recruit_character = BRA_caio_da_silva_prado_junior
+recruit_character = BRA_antonio_candeias_duarte
+recruit_character = BRA_joao_jorge_costa_pimenta
+recruit_character = BRA_ricardo_cipolla
+recruit_character = BRA_francisco_antonio_paulo_matarazzo_sobrinho
+recruit_character = BRA_hugo_carl_wilhelm_gerdau
+recruit_character = BRA_fernando_de_sousa_costa
+recruit_character = BRA_roberto_pisani_marinho
+recruit_character = BRA_joaquim_pedro_salgado_filho
+recruit_character = BRA_argemiro_de_assis_brasil
+recruit_character = BRA_filinto_strubing_muller
+recruit_character = BRA_adalberto_de_barros_nunes
+recruit_character = BRA_henrique_aristides_guilhem
+recruit_character = BRA_joao_valdetaro_de_amorim_e_mello
+recruit_character = BRA_jose_angelo_gomes_ribeiro
+recruit_character = BRA_lysias_augusto_rodrigues
+recruit_character = BRA_armando_figueira_trompowsky_de_almeida
+recruit_character = BRA_floriano_de_lima_brayner
+recruit_character = BRA_eduardo_gomes
+recruit_character = BRA_young_turk_clique

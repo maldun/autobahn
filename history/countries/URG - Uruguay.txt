@@ -8,7 +8,6 @@ set_technology = {
     infantry_weapons = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
@@ -16,7 +15,33 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "URG_air_bba"
+    set_technology = {
+        iw_small_airframe = 1
+        aa_lmg = 1
+        engines_1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "URG_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -30,10 +55,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {

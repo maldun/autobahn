@@ -5,10 +5,8 @@ set_research_slots = 1
 set_war_support = 0.4
 set_technology = {
     infantry_weapons = 1
-    tech_mountaineers = 1
-    gw_artillery = 1
+    tech_irregulars = 1
     camelry = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     
@@ -87,45 +85,5 @@ JBS_abd_al_rahman_ibn_rubayin = {
 }
 JBS_dulaim_ibn_barrak = {
     set_nationality = XXA
-    
-}
-random_character = {
-    limit = {
-        is_character = JBS_saud_bin_abd_al_aziz
-        
-    }
-    save_global_event_target_as = JBS_Aziz_Emir
-    
-}
-random_character = {
-    limit = {
-        is_character = JBS_abdallah_ibn_talal_al_rashid
-        
-    }
-    save_global_event_target_as = JBS_Abdallah_ibn_Talal_al_Rashid
-    
-}
-random_character = {
-    limit = {
-        is_character = JBS_abdallah_ibn_mitab_ibn_abd_al_aziz_al_rashid
-        
-    }
-    save_global_event_target_as = JBS_Abdallah_ibn_Mitab_ibn_Abd_al_Aziz
-    
-}
-random_character = {
-    limit = {
-        is_character = JBS_muhammad_ibn_talil_al_rashid
-        
-    }
-    save_global_event_target_as = JBS_Muhammad_ibn_Talil
-    
-}
-random_character = {
-    limit = {
-        is_character = JBS_saud_al_subhan
-        
-    }
-    save_global_event_target_as = JBS_Saud_al_Subhan
     
 }

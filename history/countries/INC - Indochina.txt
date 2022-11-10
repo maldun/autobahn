@@ -14,7 +14,7 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -25,17 +25,13 @@ if = {
         basic_ship_hull_cruiser = 1
         basic_battery = 1
         basic_light_battery = 1
-        basic_secondary_battery = 1
         
     }
     
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -120,14 +116,6 @@ recruit_character = INC_tran_van_don
 recruit_character = INC_truong_boi_cong
 recruit_character = INC_tran_van_tra
 recruit_character = INC_nguyen_bat_phat
-random_character = {
-    limit = {
-        is_character = INC_nguyen_son
-        
-    }
-    save_global_event_target_as = INC_nguyen_son_target
-    
-}
 division_template = {
     name = "Su doan Bo binh"
     division_names_group = INC_INF_01

@@ -8,7 +8,7 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -19,17 +19,13 @@ if = {
         basic_ship_hull_cruiser = 1
         basic_battery = 1
         basic_light_battery = 1
-        basic_secondary_battery = 1
         
     }
     
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -108,11 +104,3 @@ recruit_character = LEB_selim_takla
 recruit_character = LEB_majid_arslan
 recruit_character = LEB_charles_corm
 recruit_character = LEB_farid_shehab
-random_character = {
-    limit = {
-        is_character = LEB_bechara_el_khoury
-        
-    }
-    save_global_event_target_as = LEB_bechara_el_khoury_target
-    
-}

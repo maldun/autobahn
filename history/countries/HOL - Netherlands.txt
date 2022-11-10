@@ -15,8 +15,6 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    early_bomber = 1
     fuel_silos = 1
     fuel_refining = 1
     basic_train = 1
@@ -28,7 +26,37 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "HOL_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        early_bombs = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "HOL_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -45,7 +73,6 @@ if = {
         basic_battery = 1
         basic_torpedo = 1
         basic_depth_charges = 1
-        basic_secondary_battery = 1
         basic_cruiser_armor_scheme = 1
         mtg_transport = 1
         
@@ -54,10 +81,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -416,21 +440,5 @@ HOL_simon_spoor = {
 }
 HOL_johannes_furstner = {
     set_character_flag = HOL_leader
-    
-}
-random_character = {
-    limit = {
-        is_character = HOL_wilhelmina_van_orange_nassau
-        
-    }
-    save_global_event_target_as = HOL_wilhelmina_van_orange_nassau_target
-    
-}
-random_character = {
-    limit = {
-        is_character = HOL_juliana_van_orange_nassau
-        
-    }
-    save_global_event_target_as = HOL_juliana_van_orange_nassau_target
     
 }

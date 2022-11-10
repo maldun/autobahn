@@ -6,6 +6,14 @@
     "common/technology_tags/": {
 	"r56e_technology.txt": []
     },
+    "common/units/": {
+      "light_armor.txt": [],
+      "medium_armor.txt": [],
+      "heavy_armor.txt": [],
+      "super_heavy_armor.txt": [],
+      "modern_armor.txt": [],
+      "tank_destroyer_brigade.txt": []
+    },
     "common/units/equipment/": {
 	"tank_amphibious.txt": [],
 	"tank_heavy.txt": [],
@@ -14,6 +22,12 @@
 	"tank_modern.txt": [],
 	"tank_super_heavy.txt": [],
 	"tank_chassis.txt": []
+    },
+    "common/units/equipment/upgrades/": {
+        "land_upgrades.txt": []
+    },
+    "common/units/equipment/modules/": {
+      "00_r56_modules.txt": []
     },
     "interface/replace/": {
 	"r56_techs_tank.gfx": ["interface/","r56_techs_tank.gfx"],

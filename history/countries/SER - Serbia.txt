@@ -3,6 +3,7 @@ set_research_slots = 3
 oob = "SER"
 set_war_support = 0.4
 set_cosmetic_tag = SER_republic
+save_global_event_target_as = original_serbia
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -11,12 +12,38 @@ set_technology = {
     tech_engineers = 1
     tech_recon = 1
     gw_artillery = 1
-    early_fighter = 1
-    early_bomber = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = yes
+        
+    }
+    set_technology = {
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        engines_1 = 1
+        engines_2 = 1
+        early_bombs = 1
+        aa_lmg = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        
+    }
     
 }
 country_event = {
@@ -307,51 +334,17 @@ recruit_character = SER_dragomir_stojanovic
 recruit_character = SER_navy_army_command
 recruit_character = SER_military_reform_council
 activate_advisor = SER_milan_grol_sic
-random_army_leader = {
-    limit = {
-        is_character = SER_dragoljub_mihailovic
-        
-    }
-    save_global_event_target_as = SER_dragoljub_mihailovic_target
-    
-}
-random_character = {
-    limit = {
-        is_character = SER_petar_ii
-        
-    }
-    save_global_event_target_as = SER_petar_ii_target
-    
-}
-random_character = {
-    limit = {
-        is_character = SER_petar_bojovic
-        
-    }
-    save_global_event_target_as = SER_petar_bojovic_target
+SER_petar_bojovic = {
     retire = yes
     
 }
-random_character = {
-    limit = {
-        is_character = SER_vukasin_markovic
-        
-    }
-    save_global_event_target_as = SER_vukasin_markovic_target
-    
-}
-random_character = {
-    limit = {
-        is_character = SER_konstantin_popovic
-        
-    }
-    save_global_event_target_as = SER_konstantin_popovic_target
+SER_konstantin_popovic = {
     retire = yes
     
 }
 if = {
     limit = {
-        has_dlc = "La Resistance"
+        has_dlc_lar = yes
         
     }
     create_operative_leader = {

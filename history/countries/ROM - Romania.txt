@@ -14,7 +14,6 @@ set_technology = {
     tech_engineers = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
     fuel_silos = 1
     synth_oil_experiments = 1
     fuel_refining = 1
@@ -27,7 +26,34 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "ROM_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "ROM_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -38,10 +64,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {
@@ -52,7 +75,7 @@ if = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -70,10 +93,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {

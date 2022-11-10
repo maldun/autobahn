@@ -3,9 +3,6 @@ set_convoys = 20
 set_research_slots = 1
 set_technology = {
     infantry_weapons = 1
-    tech_mountaineers = 1
-    gw_artillery = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     
@@ -39,11 +36,3 @@ add_ideas = {
 recruit_character = TRU_hamad_bin_isa_al_khalifa
 recruit_character = TRU_shakhbut_bin_sultan_al_nahyan
 recruit_character = TRU_zayed_bin_sultan_al_nahyan
-random_character = {
-    limit = {
-        is_character = TRU_shakhbut_bin_sultan_al_nahyan
-        
-    }
-    save_global_event_target_as = TRU_shakhbut_bin_sultan_al_nahyan_target
-    
-}

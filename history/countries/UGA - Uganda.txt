@@ -2,6 +2,7 @@ capital = 548
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     camo = 1
     etax_doctrine = 1
     
@@ -26,6 +27,7 @@ set_popularities = {
     national_populist = 12
     
 }
+set_cosmetic_tag = UGA_ENG
 recruit_character = UGA_Mutesa_II
 recruit_character = UGA_Ignatius_K_Musaazi
 recruit_character = UGA_Andrew_Cohen

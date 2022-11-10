@@ -14,9 +14,6 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    early_bomber = 1
-    naval_bomber1 = 1
     fuel_silos = 1
     fuel_refining = 1
     basic_train = 1
@@ -30,7 +27,36 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "TRM_air_bba"
+    set_technology = {
+        iw_small_airframe = 1
+        aa_lmg = 1
+        engines_1 = 1
+        iw_medium_airframe = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "TRM_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        naval_bomber1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -41,10 +67,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {
@@ -55,7 +78,7 @@ if = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -69,7 +92,6 @@ if = {
         basic_light_battery = 1
         basic_torpedo = 1
         basic_depth_charges = 1
-        basic_secondary_battery = 1
         basic_naval_mines = 1
         submarine_mine_laying = 1
         mtg_transport = 1
@@ -79,10 +101,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
@@ -185,6 +204,6 @@ recruit_character = RUS_aleksey_sirodenko
 recruit_character = RUS_magomed_gasanovich
 recruit_character = RUS_roman_basilievsky
 recruit_character = RUS_dimitry_lebedev
-recruit_character = RUS_viktor_krhistenko
+recruit_character = RUS_nikolay_krhistenko
 recruit_character = RUS_arkady_udintsev
 recruit_character = RUS_TRM_council_of_theorists

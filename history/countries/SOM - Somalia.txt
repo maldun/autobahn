@@ -1,17 +1,37 @@
 capital = 559
 oob = "SOM"
 set_research_slots = 2
+set_war_support = 0.32
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     camelry = 1
     tech_support = 1
     gw_artillery = 1
-    early_fighter = 1
     camo = 1
     etax_doctrine = 1
     
 }
-set_war_support = 0.32
+if = {
+    limit = {
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "SOM_air_bba"
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "SOM_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        
+    }
+    
+}
 country_event = {
     id = som.1
     days = 1
@@ -37,7 +57,6 @@ set_popularities = {
     national_populist = 14
     
 }
-set_convoys = 30
 add_ideas = {
     SOM_iron_fist_of_warsangali
     SOM_foodplease

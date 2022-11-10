@@ -19,7 +19,7 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
@@ -29,17 +29,13 @@ if = {
         basic_depth_charges = 1
         basic_torpedo = 1
         basic_battery = 1
-        basic_secondary_battery = 1
         
     }
     
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {

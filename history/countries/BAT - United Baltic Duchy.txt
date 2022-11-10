@@ -14,9 +14,6 @@ set_technology = {
     tech_engineers = 1
     gw_artillery = 1
     interwar_antiair = 1
-    early_fighter = 1
-    early_bomber = 1
-    CAS1 = 1
     fuel_silos = 1
     synth_oil_experiments = 1
     basic_train = 1
@@ -33,7 +30,46 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_bba = yes
+        
+    }
+    set_air_oob = "BAT_air_bba"
+    set_technology = {
+        aa_lmg = 1
+        aa_cannon_1 = 1
+        engines_1 = 1
+        engines_2 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        basic_small_airframe = 1
+        iw_medium_airframe = 1
+        basic_medium_airframe = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_air_oob = "BAT_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        cv_early_fighter = 1
+        fighter1 = 1
+        CAS1 = 1
+        naval_bomber1 = 1
+        early_bomber = 1
+        tactical_bomber1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -48,10 +84,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {
@@ -64,17 +97,20 @@ if = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
         early_ship_hull_light = 1
+        basic_ship_hull_light = 1
         early_ship_hull_submarine = 1
         basic_ship_hull_submarine = 1
         basic_naval_mines = 1
         submarine_mine_laying = 1
-        basic_battery = 1
         basic_torpedo = 1
+        improved_ship_torpedo_launcher = 1
+        basic_battery = 1
+        basic_light_battery = 1
         basic_depth_charges = 1
         
     }
@@ -82,14 +118,12 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
         early_destroyer = 1
+        basic_destroyer = 1
         early_submarine = 1
         basic_submarine = 1
         
@@ -216,9 +250,6 @@ set_popularities = {
     national_populist = 3
     
 }
-recruit_character = LAT_jekabs_peterss
-recruit_character = LAT_ernests_morics
-recruit_character = LAT_pauls_kalnins
 recruit_character = BAT_inner_circle
 recruit_character = BAT_adolf_friedrich
 recruit_character = BAT_max_von_scheubner_richter
@@ -234,7 +265,6 @@ recruit_character = BAT_hans_von_manteuffel_szoege
 recruit_character = BAT_otto_goldfeld
 recruit_character = BAT_alexander_von_salza
 recruit_character = BAT_adam_friedrich_von_gernet
-recruit_character = EST_johan_pitka
 recruit_character = BAT_friedrich_von_samson_himmelstjerna
 recruit_character = BAT_axel_von_freytagh_loringhoven
 recruit_character = BAT_otto_von_kursell
@@ -262,91 +292,38 @@ BAT_adolf_constantin_pilar_von_pilchau = {
     set_character_flag = character_event_only
     
 }
-random_character = {
-    limit = {
-        is_character = LAT_jekabs_peterss
+BAT_harry_lutz = {
+    set_variable = {
+        BAT.BAT_mission_general_@LIT = THIS
         
     }
-    save_global_event_target_as = LAT_jekabs_peterss_target
     
 }
-random_character = {
-    limit = {
-        is_character = LAT_ernests_morics
+BAT_heinrich_von_behr = {
+    set_variable = {
+        BAT.BAT_mission_general_@POL = THIS
         
     }
-    save_global_event_target_as = LAT_ernests_morics_target
     
 }
-random_character = {
-    limit = {
-        is_character = LAT_pauls_kalnins
+BAT_ernst_von_nolcken = {
+    set_variable = {
+        BAT.BAT_mission_general_@WHR = THIS
         
     }
-    save_global_event_target_as = LAT_pauls_kalnins_target
     
 }
-random_character = {
-    limit = {
-        is_character = BAT_rudiger_von_der_goltz
+BAT_hans_von_manteuffel_szoege = {
+    set_variable = {
+        BAT.BAT_mission_general_@UKR = THIS
         
     }
-    save_global_event_target_as = BAT_rudiger_von_der_goltz_target
     
 }
-random_character = {
-    limit = {
-        is_character = BAT_harry_lutz
+BAT_otto_goldfeld = {
+    set_variable = {
+        BAT.BAT_mission_general_@FIN = THIS
         
     }
-    save_global_event_target_as = BAT_harry_lutz_target
-    
-}
-random_character = {
-    limit = {
-        is_character = BAT_wessel_von_loringhoven
-        
-    }
-    save_global_event_target_as = BAT_wessel_von_loringhoven_target
-    
-}
-random_character = {
-    limit = {
-        is_character = BAT_heinrich_von_behr
-        
-    }
-    save_global_event_target_as = BAT_heinrich_von_behr_target
-    
-}
-random_character = {
-    limit = {
-        is_character = BAT_ernst_von_nolcken
-        
-    }
-    save_global_event_target_as = BAT_ernst_von_nolcken_target
-    
-}
-random_character = {
-    limit = {
-        is_character = BAT_hans_von_manteuffel_szoege
-        
-    }
-    save_global_event_target_as = BAT_hans_von_manteuffel_szoege_target
-    
-}
-random_character = {
-    limit = {
-        is_character = BAT_otto_goldfeld
-        
-    }
-    save_global_event_target_as = BAT_otto_goldfeld_target
-    
-}
-random_character = {
-    limit = {
-        is_character = EST_johan_pitka
-        
-    }
-    save_global_event_target_as = EST_johan_pitka_target
     
 }

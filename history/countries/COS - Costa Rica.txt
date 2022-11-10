@@ -1,46 +1,14 @@
 capital = 316
 oob = "COS"
-set_naval_oob = "COS_naval"
 set_research_slots = 2
 set_war_support = 0
+set_convoys = 10
 set_technology = {
     infantry_weapons = 1
     gw_artillery = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
-    
-}
-if = {
-    limit = {
-        has_dlc = "Man the Guns"
-        
-    }
-    set_technology = {
-        early_ship_hull_light = 1
-        basic_naval_mines = 1
-        basic_torpedo = 1
-        basic_battery = 1
-        basic_light_battery = 1
-        basic_secondary_battery = 1
-        mtg_transport = 1
-        
-    }
-    
-}
-if = {
-    limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
-        
-    }
-    set_technology = {
-        early_destroyer = 1
-        transport = 1
-        
-    }
     
 }
 set_politics = {

@@ -5,17 +5,29 @@ set_war_support = 0.4
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
-    tech_support = 1
+    tech_irregulars = 1
     tech_mountaineers = 1
+    tech_support = 1
     tech_engineers = 1
     tech_recon = 1
     gw_artillery = 1
-    early_fighter = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
     r56_militia_tech = 1
     transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc_bba = no
+        
+    }
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        
+    }
     
 }
 set_politics = {
@@ -107,19 +119,11 @@ recruit_character = YUN_zhou_baozhong
 recruit_character = YUN_zeng_zesheng
 recruit_character = YUN_sun_yuanliang
 recruit_character = YUN_he_yingqin
-random_character = {
-    limit = {
-        is_character = YUN_long_yun
-        
-    }
-    save_global_event_target_as = YUN_long_yun_target
+YUN_zhu_peide = {
+    set_character_flag = CHI_original_unit_leader
     
 }
-random_character = {
-    limit = {
-        is_character = YUN_he_yingqin
-        
-    }
-    save_global_event_target_as = YUN_he_yingqin_target
+YUN_zhu_de = {
+    set_character_flag = CHI_original_unit_leader
     
 }

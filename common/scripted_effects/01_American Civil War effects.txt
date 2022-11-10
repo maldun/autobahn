@@ -72,9 +72,9 @@ CSA_initial_events = {
 				days = 120
 			}
 		}
-		if = {
-			limit = { AST = { has_socialist_government = yes } }
-			remove_opinion_modifier = { target = AST modifier = embargo }
+		every_other_country = {
+			limit = { NOT = { is_in_faction_with = ENT } }
+			clear_embargo_PREV = yes
 		}
 		country_event = kr.political.119 #calculate unit limits
 		country_event = { id = csa.150 days = 6 } # Initialization event
@@ -218,7 +218,90 @@ USA_release_CSA = {
 			delete_unit_template_and_units = { division_template = "Continental Cavalry" disband = yes }
 			delete_unit_template_and_units = { division_template = "Continental Line" disband = yes }
 
-			load_oob = "USA_civil_war_csa_army"
+			if = {
+				limit = { has_dlc_bba = yes }
+				load_oob = ACW_CSA_air_bba
+			}
+			else = {
+				load_oob = ACW_CSA_air_legacy
+			}
+
+			create_CSA_militia_template = yes
+			create_CSA_garrison_template = yes
+			create_CSA_mounted_militia_template = yes
+
+			395 = { #Illinois
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 33 } division_template = \"Continental Infantry\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 9450 #Chicago
+					owner = PREV
+				}
+				create_unit = {
+					division = "division_template = \"Continental Marines\" start_experience_factor = 0.7"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 9450 #Chicago
+					owner = PREV
+				}
+			}
+			261 = { #Ohio
+				create_unit = {
+					division = "division_template = \"Continental Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 6890 #Cleveland
+					owner = PREV
+				}
+			}
+			393 = { #Michigan
+				create_unit = {
+					division = "division_template = \"Continental Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 6710 #Detroit
+					owner = PREV
+				}
+			}
+			360 = { #Philadelphia
+				create_unit = {
+					division = "division_template = \"Continental Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 6845 #Philadelphia
+					owner = PREV
+				}
+			}
+			975 = { #Pittsburgh
+				create_unit = {
+					division = "division_template = \"Continental Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 11800 #Pittsburgh
+					owner = PREV
+				}
+			}
+			358 = { #New York City
+				create_unit = {
+					division = "name = \"Jersey 'Devils'\" division_template = \"Continental Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 3878 #New York City
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Bronx 'Yankees'\" division_template = \"Continental Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 3878 #New York City
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"New York 'Reds'\" division_template = \"Continental Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 3878 #New York City
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Brooklyn 'Teamsters'\" division_template = \"Continental Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 3878 #New York City
+					owner = PREV
+				}
+			}
 
 			country_event = { id = amcivwar.337 days = 1 }
 			add_ideas = CSA_red_guard_militias_1
@@ -396,51 +479,104 @@ USA_release_TEX = {
 			delete_unit_template_and_units = { division_template = "National Cavalry" disband = yes }
 			delete_unit_template_and_units = { division_template = "National Guardsmen" disband = yes }
 
-			load_oob = "USA_civil_war_aus_army"
+			if = {
+				limit = { has_dlc_bba = yes }
+				load_oob = ACW_TEX_air_bba
+			}
+			else = {
+				load_oob = ACW_TEX_air_legacy
+			}
 
-			371 = {
-				create_unit = {
-					division = "name = \"Louisiana National Guard\" division_template = \"National Guardsmen\" start_experience_factor = 1.0"
+			create_TEX_militia_template = yes
+			create_TEX_garrison_template = yes
+			create_TEX_mounted_militia_template = yes
+
+			371 = { #New Orleans
+				create_unit = { #4 'Iron Horse' Division
+					division = "division_name = { is_name_ordered = yes name_order = 4 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 1453 #Baton Rouge
+					owner = PREV
+				}
+				create_unit = { #31st 'Dixie' Division
+					division = "division_name = { is_name_ordered = yes name_order = 31 } division_template = \"National Infantry\" start_experience_factor = 0.15"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 7552 #New Orleans
-					owner = TEX
+					owner = PREV
+				}
+				create_unit = { #32 'Les Terribles' Division
+					division = "division_name = { is_name_ordered = yes name_order = 32 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 7552 #New Orleans
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Louisiana National Guard\" division_template = \"National Guardsmen\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 1453 #Baton Rouge
+					owner = PREV
 					id = 1776
 				}
 			}
-			375 = {
+			375 = { #Northern Texas
+				create_unit = { #7 'Hourglass' Division
+					division = "division_name = { is_name_ordered = yes name_order = 7 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 10337 #Houston
+					owner = PREV
+				}
+				create_unit = { #41 'First Texas' Division
+					division = "division_name = { is_name_ordered = yes name_order = 41 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 10337 #Houston
+					owner = PREV
+				}
+				create_unit = { #45 'Bushmasters' Division
+					division = "division_name = { is_name_ordered = yes name_order = 45 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 10337 #Houston
+					owner = PREV
+				}
 				create_unit = {
 					division = "name = \"Texas Volunteer Cavalry\" division_template = \"National Cavalry\" start_experience_factor = 0.3"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 10337 #Houston
-					owner = TEX
+					owner = PREV
 					id = 1776
 				}
 			}
-			if = {
-				limit = { USA = { has_country_flag = USA_long_was_president } }
-				365 = {
-					create_unit = { #5 'Red Diamond' Division
-						division = "division_name = { is_name_ordered = yes name_order = 5 } division_template = \"National Infantry\" start_experience_factor = 0.6 start_experience_factor = 1.0"
-						allow_spawning_on_enemy_provs = yes
-						prioritize_location = 12384 #Atlanta
-						owner = TEX
-					}
+			365 = { #Georgia
+				create_unit = { #5 'Red Diamond' Division
+					division = "division_name = { is_name_ordered = yes name_order = 5 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 12384 #Atlanta
+					owner = PREV
 				}
-				371 = {
-					create_unit = { #4 'Iron Horse' Division
-						division = "division_name = { is_name_ordered = yes name_order = 4 } division_template = \"National Infantry\" start_experience_factor = 0.6 start_experience_factor = 1.0"
-						allow_spawning_on_enemy_provs = yes
-						prioritize_location = 7552 #New Orleans
-						owner = TEX
-					}
+				create_unit = { #44 'American Rifles' Division
+					division = "division_name = { is_name_ordered = yes name_order = 44 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 12384 #Atlanta
+					owner = PREV
 				}
-				375 = {
-					create_unit = {#7 'Hourglass' Division
-						division = "division_name = { is_name_ordered = yes name_order = 7 } division_template = \"National Infantry\" start_experience_factor = 0.6 start_experience_factor = 1.0"
-						allow_spawning_on_enemy_provs = yes
-						prioritize_location = 10337 #Houston
-						owner = TEX
-					}
+				create_unit = { #1 'Black Horse' Division
+					division = "division_template = \"Motorized Cavalry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 12384 #Atlanta
+					owner = PREV
+				}
+			}
+			364 = { #South Carolina
+				create_unit = { #36 'Lone Star' Division
+					division = "division_name = { is_name_ordered = yes name_order = 36 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 7202 #Charleston
+					owner = PREV
+				}
+				create_unit = { #30 'Old Hickory' Division
+					division = "division_name = { is_name_ordered = yes name_order = 30 } division_template = \"National Infantry\" start_experience_factor = 0.15"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 7202 #Charleston
+					owner = PREV
 				}
 			}
 			country_event = { id = amcivwar.336 days = 1 }
@@ -589,14 +725,23 @@ USA_release_PSA = {
 			delete_unit_template_and_units = { division_template = "Volunteer Cavalry" disband = yes }
 			delete_unit_template_and_units = { division_template = "State Guard" disband = yes }
 
-			load_oob = "USA_civil_war_psa_army"
+			create_PSA_militia_template = yes
+			create_PSA_garrison_template = yes
+			create_PSA_mounted_militia_template = yes
+			if = {
+				limit = { has_dlc_bba = yes }
+				load_oob = ACW_PSA_air_bba
+			}
+			else = {
+				load_oob = ACW_PSA_air_legacy
+			}
 
 			378 = {
 				create_unit = {
 					division = "name = \"4th California National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 9713 #Sacramento
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 			}
@@ -605,21 +750,21 @@ USA_release_PSA = {
 					division = "name = \"Oregon State Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 3513 #Portland
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 				create_unit = {
 					division = "name = \"1st Oregon National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 3513 #Portland
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 				create_unit = {
 					division = "name = \"2nd Oregon National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 4328 #Salem
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 			}
@@ -628,21 +773,21 @@ USA_release_PSA = {
 					division = "name = \"Washington State Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 7386 #Olympia
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 				create_unit = {
 					division = "name = \"1st Washington National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 7315 #Seattle
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 				create_unit = {
 					division = "name = \"2nd Washington National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 7386 #Olympia
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 			}
@@ -651,14 +796,14 @@ USA_release_PSA = {
 					division = "name = \"1st California National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 9671 #San Francisco
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 				create_unit = {
 					division = "name = \"5th California National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 9671 #San Francisco
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 			}
@@ -667,15 +812,21 @@ USA_release_PSA = {
 					division = "name = \"2nd California National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 9814 #Los Angeles
-					owner = PSA
+					owner = PREV
 					id = 1776
 				}
 				create_unit = {
 					division = "name = \"3rd California National Guard\" division_template = \"State Guard\" start_experience_factor = 0.6"
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 1562 #San Diego
-					owner = PSA
+					owner = PREV
 					id = 1776
+				}
+				create_unit = {
+					division = "name = \"Western Department Reserve Force\" division_template = \"Volunteer Motorized Infantry\" start_experience_factor = 1.0"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 9814 #Los Angeles
+					owner = PREV
 				}
 			}
 
@@ -788,22 +939,6 @@ USA_release_PSA = {
 		transfer_ship = { prefer_name = "USS Marion" type = heavy_cruiser target = XXA }
 		transfer_ship = { prefer_name = "USS Marblehead" type = heavy_cruiser target = XXA }
 		transfer_ship = { prefer_name = "USS Cincinnati" type = heavy_cruiser target = XXA }
-
-		send_equipment = {
-			type = cv_fighter_equipment
-			amount = 20
-			target = XXA
-		}
-		send_equipment = {
-			type = cv_CAS_equipment
-			amount = 10
-			target = XXA
-		}
-		send_equipment = {
-			type = cv_nav_bomber_equipment
-			amount = 10
-			target = XXA
-		}
 
 		#ADD DESTROYER LEADER FROM PRODUCTION
 		transfer_ship = { prefer_name = "USS Alden" type = destroyer target = XXA }
@@ -983,8 +1118,8 @@ USA_civil_war_begins = {
 					set_country_flag = USA_aviation_companies_allowed_PSA
 				}
 
-				country_event = { id = hawaii.1 days = 1 random = 72 } # Hawaii Rebels
-				country_event = { id = amcivwar.61 days = 2 random = 72 } # Conscription
+				country_event = { id = hawaii.1 days = 1 random_days = 3 } # Hawaii Rebels
+				country_event = { id = amcivwar.61 days = 2 random_days = 3 } # Conscription
 				country_event = { id = amcivwar.62 days = 30 } # Recall the China Marines?
 				if = {
 					limit = {
@@ -1021,8 +1156,8 @@ USA_civil_war_begins = {
 					diplomatic_relation = { country = COS relation = guarantee active = no }
 				}
 				if = {
-					limit = { "PAN" = { is_guaranteed_by = USA } }
-					diplomatic_relation = { country = "PAN" relation = guarantee active = no }
+					limit = { PAN = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = PAN relation = guarantee active = no }
 				}
 				if = {
 					limit = { LEC = { is_guaranteed_by = USA } }
@@ -1045,19 +1180,19 @@ USA_civil_war_begins = {
 					diplomatic_relation = { country = DOM relation = military_access active = no }
 				}
 
-				country_event = { id = amcivwar.65 days = 40 random = 240 } # Martial Law?
-				country_event = { id = amcivwar.64 days = 90 random = 240 } # Hardtransfer_ship of the civil war
-				country_event = { id = amcivwar.66 days = 120 random = 480 } # Loyalist Terror
-				country_event = { id = amcivwar.67 days = 150 random = 480 } # Native American Code talkers
-				country_event = { id = amcivwar.69 days = 180 random = 480 } # Double V Campaign
-				country_event = { id = amcivwar.70 days = 200 random = 480 } # Militarize the WASPs?
+				country_event = { id = amcivwar.65 days = 40 random_days = 10 } # Martial Law?
+				country_event = { id = amcivwar.64 days = 90 random_days = 10 } # Hardtransfer_ship of the civil war
+				country_event = { id = amcivwar.66 days = 120 random_days = 20 } # Loyalist Terror
+				country_event = { id = amcivwar.67 days = 150 random_days = 20 } # Native American Code talkers
+				country_event = { id = amcivwar.69 days = 180 random_days = 20 } # Double V Campaign
+				country_event = { id = amcivwar.70 days = 200 random_days = 20 } # Militarize the WASPs?
 
 				news_event = { id = ustates.1000 hours = 4 } #main news event
 			}
 			CSA = {
-				country_event = { id = amcivwar.35 days = 40 random = 1896 } # Female Soldiers
-				country_event = { id = amcivwar.34 days = 60 random = 2856 } # Red Witches
-				country_event = { id = amcivwar.32 days = 120 random = 5712 } # Life During Wartime
+				country_event = { id = amcivwar.35 days = 40 random_days = 80 } # Female Soldiers
+				country_event = { id = amcivwar.34 days = 60 random_days = 120 } # Red Witches
+				country_event = { id = amcivwar.32 days = 120 random_days = 240 } # Life During Wartime
 			}
 			PSA = {
 				country_event = { id = amcivwar.62 days = 30 } # Recall the China Marines?
@@ -1070,8 +1205,8 @@ USA_civil_war_begins = {
 			}
 
 			# USA colony events
-			"LIB" = { country_event = { id = amcivwar.212 hours = 8 } }
-			"PHI" = { country_event = { id = amcivwar.226 hours = 8 } }
+			LIB = { country_event = { id = amcivwar.212 hours = 8 } }
+			PHI = { country_event = { id = amcivwar.226 hours = 8 } }
 
 			# ACW related events for non-US nations
 			PAN = {
@@ -1118,9 +1253,8 @@ USA_civil_war_begins = {
 				country_event = { id = par.10 days = 5 }
 			}
 			BRA = {
-				country_event = { id = bra.108 days = 20 random_days = 20 } #Volunteers to the ACW
 				country_event = { id = bra.203 days = 45 random_days = 180 } #Refugees from the ACW
-				country_event = { id = bra.215 days = 90 random = 270 } #Increasing German Alignment
+				country_event = { id = bra.215 days = 90 random_days = 270 } #Increasing German Alignment
 			}
 			HAI = {
 				country_event = { id = hai.15 days = 7 random_days = 3 } #Haiti breaks free
@@ -1324,7 +1458,6 @@ USA_demobilize_forces = {
 		delete_unit_template_and_units = { division_template = "Amerikavrijwilligers" }
 		delete_unit_template_and_units = { division_template = "German Militia Division" }
 		delete_unit_template_and_units = { division_template = "Irish Volunteers" }
-		delete_unit_template_and_units = { division_template = "Brazilian Volunteers" }
 		if = {
 			limit = { is_ai = no }
 			delete_unit = { id = 1776 }
@@ -2160,7 +2293,6 @@ USA_restore_deleted_factories_NEE = {
 
 ACW_navy_redistribution_CSA = {
 	hidden_effect = {
-
 		# Atlantic Battle Fleet
 		transfer_ship = { prefer_name = "USS Mississippi" type = battleship target = XXA }
 		transfer_ship = { prefer_name = "USS Idaho" type = battleship target = XXA }
@@ -2198,8 +2330,27 @@ ACW_navy_redistribution_CSA = {
 		transfer_ship = { prefer_name = "USS O8" type = submarine target = XXA }
 		transfer_ship = { prefer_name = "USS O9" type = submarine target = XXA }
 		transfer_ship = { prefer_name = "USS O10" type = submarine target = XXA }
-		PSA = {
+
 		# Pacific Fleet
+		if = {
+			limit = { country_exists = PSA }
+			PSA = {
+				transfer_ship = { prefer_name = "USS Wyoming" type = battleship target = XXA }
+				transfer_ship = { prefer_name = "USS Caldwell" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Craven" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Gwin" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Conner" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Stockton" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Manley" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Ward" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Claxton" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Hamilton" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Tarbell" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Yarnall" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Upshur" type = destroyer target = XXA }
+			}
+		}
+		else = {
 			transfer_ship = { prefer_name = "USS Wyoming" type = battleship target = XXA }
 			transfer_ship = { prefer_name = "USS Caldwell" type = destroyer target = XXA }
 			transfer_ship = { prefer_name = "USS Craven" type = destroyer target = XXA }
@@ -2214,30 +2365,13 @@ ACW_navy_redistribution_CSA = {
 			transfer_ship = { prefer_name = "USS Yarnall" type = destroyer target = XXA }
 			transfer_ship = { prefer_name = "USS Upshur" type = destroyer target = XXA }
 		}
-		if = {
-			limit = {
-				NOT = { country_exists = TEX }
-			}
 
+		if = {
+			limit = { NOT = { country_exists = TEX } }
 			transfer_ship = { prefer_name = "USS Tennessee" type = battleship target = XXA }
 			transfer_ship = { prefer_name = "USS Maryland" type = battleship target = XXA }
 
 			transfer_ship = { prefer_name = "USS Ranger" type = carrier target = XXA }
-			send_equipment = {
-				type = cv_fighter_equipment
-				amount = 24
-				target = XXA
-			}
-			send_equipment = {
-				type = cv_CAS_equipment
-				amount = 18
-				target = XXA
-			}
-			send_equipment = {
-				type = cv_nav_bomber_equipment
-				amount = 18
-				target = XXA
-			}
 
 			transfer_ship = { prefer_name = "USS Springfield" type = heavy_cruiser target = XXA }
 			transfer_ship = { prefer_name = "USS Tallahassee" type = heavy_cruiser target = XXA }
@@ -2254,173 +2388,7 @@ ACW_navy_redistribution_CSA = {
 			transfer_ship = { prefer_name = "USS Doplhin" type = submarine target = XXA }
 			transfer_ship = { prefer_name = "USS Porpoise" type = submarine target = XXA }
 			transfer_ship = { prefer_name = "USS Pike" type = submarine target = XXA }
-			PSA = {
-			# Pacific Fleet
-				transfer_ship = { prefer_name = "USS Oklahoma" type = battleship target = XXA }
-				transfer_ship = { prefer_name = "USS Omaha" type = heavy_cruiser target = XXA }
-				transfer_ship = { prefer_name = "USS Ballard" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Champlin" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Mugford" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Hazelwood" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Hart" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Ingraham" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Taylor" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Schley" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Chew" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Colhoun" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS McKean" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Fairfax" type = destroyer target = XXA }
-			}
-		}
-		CSA = {
-			if = {
-				limit = {
-					country_exists = CSA
-				}
-				annex_country = { target = XXA }
-				load_oob = ACW_CSA_naval
-			}
-			else_if = {
-				limit = {
-					NOT = { country_exists = CSA }
-				}
-				annex_country = { target = XXA }
-				load_oob = ACW_CSA_naval_alone
-			}
-		}
-		USA = {
-			if = {
-				limit = {
-					country_exists = CSA
-				}
-				destroy_ships = {
-					type = destroyer
-					count = 4
-				}
-				destroy_ships = {
-					type = ship_hull_submarine
-					count = 2
-				}
-				destroy_ships = {
-					type = ship_hull_cruiser
-					count = 1
-				}
-			}
-			else_if = {
-				limit = {
-					country_exists = CSA
-					NOT = { country_exists = PSA }
-				}
-				destroy_ships = {
-					type = destroyer
-					count = 26
-				}
-				destroy_ships = {
-					type = ship_hull_submarine
-					count = 10
-				}
-				destroy_ships = {
-					type = light_cruiser
-					count = 10
-				}
-				destroy_ships = {
-					type = ship_hull_cruiser
-					count = 5
-				}
-				destroy_ships = {
-					type = ship_hull_heavy
-					count = 1
-				}
-			}
-			else_if = {
-				limit = {
-					country_exists = CSA
-					NOT = { country_exists = TEX }
-				}
-				destroy_ships = {
-					type = destroyer
-					count = 29
-				}
-				destroy_ships = {
-					type = ship_hull_submarine
-					count = 21
-				}
-				destroy_ships = {
-					type = light_cruiser
-					count = 13
-				}
-				destroy_ships = {
-					type = ship_hull_cruiser
-					count = 9
-				}
-				destroy_ships = {
-					type = ship_hull_heavy
-					count = 2
-				}
-			}
-		}
-		PSA = {
-			if = {
-				limit = {
-					country_exists = PSA
-				}
-				destroy_ships = {
-					type = destroyer
-					count = 12
-				}
-				destroy_ships = {
-					type = light_cruiser
-					count = 3
-				}
-			}
-		}
-	}
-}
 
-ACW_navy_redistribution_TEX = {
-	hidden_effect = {
-		TEX_samuel_murray_robinson = { set_nationality = TEX }
-		TEX_david_worth_bagley = { set_nationality = TEX }
-		TEX_john_sidney_mccain_sr = { set_nationality = TEX }
-
-		# Atlantic Battle Fleet
-		transfer_ship = { prefer_name = "USS Tennessee" type = battleship target = XXA }
-		transfer_ship = { prefer_name = "USS Maryland" type = battleship target = XXA }
-
-		transfer_ship = { prefer_name = "USS Ranger" type = carrier target = XXA }
-		send_equipment = {
-			type = cv_fighter_equipment
-			amount = 24
-			target = XXA
-		}
-		send_equipment = {
-			type = cv_CAS_equipment
-			amount = 18
-			target = XXA
-		}
-		send_equipment = {
-			type = cv_nav_bomber_equipment
-			amount = 18
-			target = XXA
-		}
-
-		transfer_ship = { prefer_name = "USS Springfield" type = heavy_cruiser target = XXA }
-		transfer_ship = { prefer_name = "USS Tallahassee" type = heavy_cruiser target = XXA }
-		transfer_ship = { prefer_name = "USS Pensacola" type = heavy_cruiser target = XXA }
-		transfer_ship = { prefer_name = "USS Hartford" type = heavy_cruiser target = XXA }
-		transfer_ship = { prefer_name = "USS Nashville" type = light_cruiser target = XXA }
-
-			# Atlantic Submarine Fleet
-		transfer_ship = { prefer_name = "USS Barracuda" type = submarine target = XXA }
-		transfer_ship = { prefer_name = "USS Bass" type = submarine target = XXA }
-		transfer_ship = { prefer_name = "USS Bonita" type = submarine target = XXA }
-		transfer_ship = { prefer_name = "USS Cachalot" type = submarine target = XXA }
-		transfer_ship = { prefer_name = "USS Cuttlefish" type = submarine target = XXA }
-		transfer_ship = { prefer_name = "USS Doplhin" type = submarine target = XXA }
-		transfer_ship = { prefer_name = "USS Porpoise" type = submarine target = XXA }
-		transfer_ship = { prefer_name = "USS Pike" type = submarine target = XXA }
-
-		PSA = {
 			# Pacific Fleet
 			transfer_ship = { prefer_name = "USS Oklahoma" type = battleship target = XXA }
 			transfer_ship = { prefer_name = "USS Omaha" type = heavy_cruiser target = XXA }
@@ -2437,13 +2405,95 @@ ACW_navy_redistribution_TEX = {
 			transfer_ship = { prefer_name = "USS McKean" type = destroyer target = XXA }
 			transfer_ship = { prefer_name = "USS Fairfax" type = destroyer target = XXA }
 		}
-		if = {
-			limit = {
-				NOT = { country_exists = CSA }
+
+		CSA = {
+			annex_country = { target = XXA }
+			if = {
+				limit = { NOT = { country_exists = TEX } }
+				load_oob = ACW_CSA_naval_alone
+				if = {
+					limit = { has_dlc_bba = yes }
+					load_oob = ACW_CSA_naval_alone_air_bba
+				}
+				else = {
+					load_oob = ACW_CSA_naval_alone_air_legacy
+				}
 			}
+			else = {
+				load_oob = ACW_CSA_naval
+			}
+		}
+	}
+}
 
-				# Atlantic Battle Fleet
+ACW_navy_redistribution_TEX = {
+	hidden_effect = {
+		TEX_samuel_murray_robinson = { set_nationality = TEX }
+		TEX_david_worth_bagley = { set_nationality = TEX }
+		TEX_john_sidney_mccain_sr = { set_nationality = TEX }
 
+		# Atlantic Battle Fleet
+		transfer_ship = { prefer_name = "USS Tennessee" type = battleship target = XXA }
+		transfer_ship = { prefer_name = "USS Maryland" type = battleship target = XXA }
+
+		transfer_ship = { prefer_name = "USS Ranger" type = carrier target = XXA }
+
+		transfer_ship = { prefer_name = "USS Springfield" type = heavy_cruiser target = XXA }
+		transfer_ship = { prefer_name = "USS Tallahassee" type = heavy_cruiser target = XXA }
+		transfer_ship = { prefer_name = "USS Pensacola" type = heavy_cruiser target = XXA }
+		transfer_ship = { prefer_name = "USS Hartford" type = heavy_cruiser target = XXA }
+		transfer_ship = { prefer_name = "USS Nashville" type = light_cruiser target = XXA }
+
+		# Atlantic Submarine Fleet
+		transfer_ship = { prefer_name = "USS Barracuda" type = submarine target = XXA }
+		transfer_ship = { prefer_name = "USS Bass" type = submarine target = XXA }
+		transfer_ship = { prefer_name = "USS Bonita" type = submarine target = XXA }
+		transfer_ship = { prefer_name = "USS Cachalot" type = submarine target = XXA }
+		transfer_ship = { prefer_name = "USS Cuttlefish" type = submarine target = XXA }
+		transfer_ship = { prefer_name = "USS Doplhin" type = submarine target = XXA }
+		transfer_ship = { prefer_name = "USS Porpoise" type = submarine target = XXA }
+		transfer_ship = { prefer_name = "USS Pike" type = submarine target = XXA }
+
+		# Pacific Fleet
+		if = {
+			limit = { country_exists = PSA }
+			PSA = {
+				transfer_ship = { prefer_name = "USS Oklahoma" type = battleship target = XXA }
+				transfer_ship = { prefer_name = "USS Omaha" type = heavy_cruiser target = XXA }
+				transfer_ship = { prefer_name = "USS Ballard" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Champlin" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Mugford" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Hazelwood" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Hart" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Ingraham" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Taylor" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Schley" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Chew" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Colhoun" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS McKean" type = destroyer target = XXA }
+				transfer_ship = { prefer_name = "USS Fairfax" type = destroyer target = XXA }
+			}
+		}
+		else = {
+			transfer_ship = { prefer_name = "USS Oklahoma" type = battleship target = XXA }
+			transfer_ship = { prefer_name = "USS Omaha" type = heavy_cruiser target = XXA }
+			transfer_ship = { prefer_name = "USS Ballard" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Champlin" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Mugford" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Hazelwood" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Hart" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Ingraham" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Taylor" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Schley" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Chew" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Colhoun" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS McKean" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Fairfax" type = destroyer target = XXA }
+		}
+
+		if = {
+			limit = { NOT = { country_exists = CSA } }
+			# Atlantic Battle Fleet
 			transfer_ship = { prefer_name = "USS Mississippi" type = battleship target = XXA }
 			transfer_ship = { prefer_name = "USS Idaho" type = battleship target = XXA }
 			transfer_ship = { prefer_name = "USS California" type = battleship target = XXA }
@@ -2464,7 +2514,7 @@ ACW_navy_redistribution_TEX = {
 			transfer_ship = { prefer_name = "USS Borie" type = destroyer target = XXA }
 			transfer_ship = { prefer_name = "USS Ludlow" type = destroyer target = XXA }
 
-				# Atlantic Submarine Fleet
+			# Atlantic Submarine Fleet
 			transfer_ship = { prefer_name = "USS O1" type = submarine target = XXA }
 			transfer_ship = { prefer_name = "USS O2" type = submarine target = XXA }
 			transfer_ship = { prefer_name = "USS O3" type = submarine target = XXA }
@@ -2476,122 +2526,41 @@ ACW_navy_redistribution_TEX = {
 			transfer_ship = { prefer_name = "USS O9" type = submarine target = XXA }
 			transfer_ship = { prefer_name = "USS O10" type = submarine target = XXA }
 
-			PSA = {
-				# Pacific Fleet
-				transfer_ship = { prefer_name = "USS Wyoming" type = battleship target = XXA }
-				transfer_ship = { prefer_name = "USS Caldwell" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Craven" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Gwin" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Conner" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Stockton" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Manley" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Ward" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Claxton" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Hamilton" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Tarbell" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Yarnall" type = destroyer target = XXA }
-				transfer_ship = { prefer_name = "USS Upshur" type = destroyer target = XXA }
-			}
+			transfer_ship = { prefer_name = "USS Wyoming" type = battleship target = XXA }
+			transfer_ship = { prefer_name = "USS Caldwell" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Craven" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Gwin" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Conner" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Stockton" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Manley" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Ward" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Claxton" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Hamilton" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Tarbell" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Yarnall" type = destroyer target = XXA }
+			transfer_ship = { prefer_name = "USS Upshur" type = destroyer target = XXA }
 		}
 		TEX = {
+			annex_country = { target = XXA }
 			if = {
-				limit = {
-					country_exists = CSA
-				}
-				annex_country = { target = XXA }
-				load_oob = ACW_TEX_naval
-			}
-			else_if = {
-				limit = {
-					NOT = { country_exists = CSA }
-				}
-				annex_country = { target = XXA }
+				limit = { NOT = { country_exists = CSA } }
 				load_oob = ACW_TEX_naval_alone
-			}
-		}
-		USA = {
-			if = {
-				limit = {
-					country_exists = TEX
+				if = {
+					limit = { has_dlc_bba = yes }
+					load_oob = ACW_TEX_naval_alone_air_bba
 				}
-				destroy_ships = {
-					type = destroyer
-					count = 6
-				}
-				destroy_ships = {
-					type = ship_hull_submarine
-					count = 3
+				else = {
+					load_oob = ACW_TEX_naval_alone_air_legacy
 				}
 			}
-			else_if = {
-				limit = {
-					country_exists = TEX
-					NOT = { country_exists = PSA }
+			else = {
+				load_oob = ACW_TEX_naval
+				if = {
+					limit = { has_dlc_bba = yes }
+					load_oob = ACW_TEX_naval_air_bba
 				}
-				destroy_ships = {
-					type = destroyer
-					count = 19
-				}
-				destroy_ships = {
-					type = ship_hull_submarine
-					count = 17
-				}
-				destroy_ships = {
-					type = light_cruiser
-					count = 8
-				}
-				destroy_ships = {
-					type = ship_hull_cruiser
-					count = 5
-				}
-				destroy_ships = {
-					type = ship_hull_heavy
-					count = 2
-				}
-			}
-			else_if = {
-				limit = {
-					country_exists = TEX
-					NOT = { country_exists = CSA }
-				}
-				destroy_ships = {
-					type = destroyer
-					count = 39
-				}
-				destroy_ships = {
-					type = ship_hull_submarine
-					count = 19
-				}
-				destroy_ships = {
-					type = light_cruiser
-					count = 9
-				}
-				destroy_ships = {
-					type = ship_hull_cruiser
-					count = 6
-				}
-				destroy_ships = {
-					type = ship_hull_heavy
-					count = 3
-				}
-			}
-		}
-		PSA = {
-			if = {
-				limit = {
-					country_exists = PSA
-				}
-				destroy_ships = {
-					type = ship_hull_submarine
-					count = 7
-				}
-				destroy_ships = {
-					type = light_cruiser
-					count = 4
-				}
-				destroy_ships = {
-					type = ship_hull_cruiser
-					count = 2
+				else = {
+					load_oob = ACW_TEX_naval_air_legacy
 				}
 			}
 		}
@@ -2667,7 +2636,7 @@ USA_create_all_templates = {
 		support = {
 			artillery = { x = 0 y = 0 }
 		}
-		template_counter = 66
+		template_counter = 72
 	}
 	division_template = {
 		name = "Motorized Force"
@@ -2860,12 +2829,14 @@ create_USA_militia_template = {
 		division_template = {
 			name = "Reserve Militia"
 			division_names_group = USA_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
-				infantry = { x = 0 y = 0 }
-				infantry = { x = 0 y = 1 }
-				infantry = { x = 0 y = 2 }
-				infantry = { x = 0 y = 3 }
-				infantry = { x = 0 y = 4 }
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
 			}
 			priority = 0
 		}
@@ -2880,6 +2851,8 @@ create_USA_garrison_template = {
 		division_template = {
 			name = "Defense Force"
 			division_names_group = USA_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
@@ -2902,6 +2875,8 @@ create_USA_mounted_militia_template = {
 		division_template = {
 			name = "Loyalist Cavalry"
 			division_names_group = USA_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
 				cavalry = { x = 0 y = 0 }
 				cavalry = { x = 0 y = 1 }
@@ -2924,12 +2899,14 @@ create_CSA_militia_template = {
 		division_template = {
 			name = "Red Guard"
 			division_names_group = CSA_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
-				infantry = { x = 0 y = 0 }
-				infantry = { x = 0 y = 1 }
-				infantry = { x = 0 y = 2 }
-				infantry = { x = 0 y = 3 }
-				infantry = { x = 0 y = 4 }
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
 			}
 			priority = 0
 		}
@@ -2944,6 +2921,8 @@ create_CSA_garrison_template = {
 		division_template = {
 			name = "Continental Line"
 			division_names_group = CSA_GAR_02
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
@@ -2966,6 +2945,8 @@ create_CSA_mounted_militia_template = {
 		division_template = {
 			name = "Continental Cavalry"
 			division_names_group = USA_CAV_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
 				cavalry = { x = 0 y = 0 }
 				cavalry = { x = 0 y = 1 }
@@ -2988,12 +2969,14 @@ create_PSA_militia_template = {
 		division_template = {
 			name = "State Militia"
 			division_names_group = USA_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
-				infantry = { x = 0 y = 0 }
-				infantry = { x = 0 y = 1 }
-				infantry = { x = 0 y = 2 }
-				infantry = { x = 0 y = 3 }
-				infantry = { x = 0 y = 4 }
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
 			}
 			priority = 0
 		}
@@ -3008,6 +2991,8 @@ create_PSA_garrison_template = {
 		division_template = {
 			name = "State Guard"
 			division_names_group = USA_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
@@ -3030,6 +3015,8 @@ create_PSA_mounted_militia_template = {
 		division_template = {
 			name = "Volunteer Cavalry"
 			division_names_group = USA_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
 				cavalry = { x = 0 y = 0 }
 				cavalry = { x = 0 y = 1 }
@@ -3052,12 +3039,14 @@ create_TEX_militia_template = {
 		division_template = {
 			name = "Minutemen"
 			division_names_group = TEX_INF_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
-				infantry = { x = 0 y = 0 }
-				infantry = { x = 0 y = 1 }
-				infantry = { x = 0 y = 2 }
-				infantry = { x = 0 y = 3 }
-				infantry = { x = 0 y = 4 }
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
 			}
 			priority = 0
 		}
@@ -3072,6 +3061,8 @@ create_TEX_garrison_template = {
 		division_template = {
 			name = "National Guardsmen"
 			division_names_group = TEX_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
@@ -3094,6 +3085,8 @@ create_TEX_mounted_militia_template = {
 		division_template = {
 			name = "National Cavalry"
 			division_names_group = TEX_GAR_01
+			is_locked = yes
+			force_allow_recruiting = yes
 			regiments = {
 				cavalry = { x = 0 y = 0 }
 				cavalry = { x = 0 y = 1 }
@@ -3333,7 +3326,7 @@ USA_spawn_new_england = {
 			}
 		}
 		if = {
-			limit = { has_dlc = "La Resistance"	}
+			limit = { has_dlc_lar = yes	}
 			NEE = {
 				create_operative_leader = {
 					name = "Virginia Hall"
@@ -3559,16 +3552,6 @@ USA_starting_techs = {
 		marines = 1
 		tech_mountaineers = 1
 
-		### Air ###
-		early_fighter = 1
-		naval_bomber1 = 1
-		early_bomber = 1
-		strategic_bomber1 = 1
-		CAS1 = 1
-		cv_early_fighter = 1
-		cv_naval_bomber1 = 1
-		cv_CAS1 = 1
-
 		### Trains ###
 		basic_train = 1
 		
@@ -3581,31 +3564,54 @@ USA_starting_techs = {
 		steel_production_1 = 1
 		transport_plane1 = 1
 		### New Tech end #############
-		
 	}
 
-	### Tanks - NSB ###
+	### Planes ###
 	if = {
-		limit = { has_dlc = "No Step Back" }
+		limit = { has_dlc_bba = yes }
+		set_technology = {
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			engines_1 = 1
+			engines_2 = 1
+			aa_lmg = 1
+			early_bombs = 1
+			aircraft_construction = 1
+		}
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			cv_CAS1 = 1
+			naval_bomber1 = 1
+			CAS1 = 1
+			early_bomber = 1
+		}
+	}
+
+	### Tanks ###
+	if = {
+		limit = { has_dlc_nsb = yes }
 		set_technology = {
 			gwtank_chassis = 1
 			basic_light_tank_chassis = 1
 		}
 		add_ideas = bureau_of_ordnance_spirit
 	}
-
-	### Tanks - non NSB ###
-	if = {
-		limit = { NOT = { has_dlc = "No Step Back" } }
+	else = {
 		set_technology = {
 			gwtank = 1
 			basic_light_tank = 1
 		}
 	}
 
-	### Navy - MtG ###
+	### Navy ###
 	if = {
-		limit = { has_dlc = "Man the Guns" }
+		limit = { has_dlc_mtg = yes }
 		set_technology = {
 			early_ship_hull_light = 1
 			basic_ship_hull_light = 1
@@ -3625,9 +3631,6 @@ USA_starting_techs = {
 			basic_torpedo = 1
 			basic_battery = 1
 			basic_light_battery = 1
-			basic_secondary_battery = 1
-			improved_secondary_battery = 1
-			improved_ship_torpedo_launcher = 1
 			basic_cruiser_armor_scheme = 1
 			basic_heavy_armor_scheme = 1
 			basic_medium_battery = 1
@@ -3640,10 +3643,7 @@ USA_starting_techs = {
 			mtg_transport = 1
 		}
 	}
-
-	### Navy - non MtG ###
-	if = {
-		limit = { NOT = { has_dlc = "Man the Guns" } }
+	else = {
 		set_technology = {
 			early_destroyer = 1
 			basic_destroyer = 1
@@ -3667,7 +3667,7 @@ USA_starting_techs = {
 
 USA_starting_tank_variants = {
 	if = {
-		limit = { has_dlc = "No Step Back" }
+		limit = { has_dlc_nsb = yes }
 		create_equipment_variant = {
 			name = "M1 Combat Car"
 			type = light_tank_chassis_1
@@ -3915,7 +3915,7 @@ USA_starting_naval_variants = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 			mid_1_custom_slot = ship_medium_battery_1
 			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_medium_battery_1
 		}
 	}
 
@@ -3932,7 +3932,7 @@ USA_starting_naval_variants = {
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_2
 			fixed_ship_armor_slot = ship_armor_cruiser_2
-			front_1_custom_slot = ship_light_battery_2
+			front_1_custom_slot = ship_medium_battery_2
 			mid_1_custom_slot = ship_torpedo_2
 			mid_2_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_medium_battery_2
@@ -4135,13 +4135,196 @@ USA_starting_naval_variants = {
 	}
 }
 
+USA_starting_plane_variants = {
+	if = {
+		limit = { has_dlc_bba = yes }
+		create_equipment_variant = {
+			name = "P-6"
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_USA_early_fighter_medium"
+		}
+		create_equipment_variant = {
+			name = "P-26A"
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_USA_early_fighter_medium"
+		}
+		create_equipment_variant = {
+			name = "O2U"
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+			}
+			obsolete = yes
+			icon = "GFX_USA_cv_early_fighter_medium"
+		}
+		create_equipment_variant = {
+			name = "SBU Corsair"
+			type = cv_small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = dive_brakes_small
+			}
+			obsolete = yes
+			icon = "GFX_USA_cv_early_fighter_medium"
+		}
+		create_equipment_variant = {
+			name = "BM-2"
+			type = cv_small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_USA_cv_early_fighter_medium"
+		}
+		create_equipment_variant = {
+			name = "A-12"
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_USA_iw_medium_airframe_medium"
+		}
+		create_equipment_variant = {
+			name = "A-17"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+			}
+			icon = "GFX_USA_CAS1_medium"
+		}
+		create_equipment_variant = {
+			name = "P-35A"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+			}
+			icon = "GFX_USA_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "P-36A"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+			}
+			icon = "GFX_USA_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "B-6A"
+			type = medium_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+			obsolete = yes
+			icon = "GFX_USA_iw_large_airframe_medium"
+		}
+		create_equipment_variant = {
+			name = "B-10"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+			icon = "GFX_USA_iw_medium_airframe_medium"
+		}
+		create_equipment_variant = {
+			name = "B-18"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+			icon = "GFX_USA_iw_medium_airframe_medium"
+		}
+		create_equipment_variant = {
+			name = "P2Y"
+			type = medium_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = flying_boat_medium
+				special_type_slot_2 = lmg_defense_turret
+			}
+			obsolete = yes
+			icon = "GFX_USA_iw_large_airframe_medium"
+		}
+		create_equipment_variant = {
+			name = "PBY"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = flying_boat_medium
+				special_type_slot_2 = lmg_defense_turret
+			}
+			icon = "GFX_USA_iw_large_airframe_medium"
+		}
+		create_equipment_variant = {
+			name = "F4B"
+			type = cv_small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_USA_cv_early_fighter_medium"
+		}
+		create_equipment_variant = {
+			name = "F3F"
+			type = cv_small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+			}
+			icon = "GFX_USA_cv_early_fighter_medium"
+		}
+	}
+}
+
 ACW_whole_country_unit_desertion = {
 	custom_effect_tooltip = ACW_unit_desertion_tt
 	damage_units = {
 		region = 185
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4149,7 +4332,7 @@ ACW_whole_country_unit_desertion = {
 		region = 118
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4157,7 +4340,7 @@ ACW_whole_country_unit_desertion = {
 		region = 228
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4165,7 +4348,7 @@ ACW_whole_country_unit_desertion = {
 		region = 119
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4173,7 +4356,7 @@ ACW_whole_country_unit_desertion = {
 		region = 229
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4181,7 +4364,7 @@ ACW_whole_country_unit_desertion = {
 		region = 120
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4189,7 +4372,7 @@ ACW_whole_country_unit_desertion = {
 		region = 227
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4197,7 +4380,7 @@ ACW_whole_country_unit_desertion = {
 		region = 230
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4205,7 +4388,7 @@ ACW_whole_country_unit_desertion = {
 		region = 233
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4213,7 +4396,7 @@ ACW_whole_country_unit_desertion = {
 		region = 226
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}
@@ -4221,7 +4404,7 @@ ACW_whole_country_unit_desertion = {
 		region = 186
 		limit = { has_country_flag = tag_to_damage_units_in }
 		org_damage = 0.25
-		str_damage = 0.05
+		str_damage = 0.1
 		ratio = yes
 		army = yes
 	}

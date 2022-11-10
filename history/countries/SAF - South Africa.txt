@@ -1,12 +1,12 @@
 capital = 275
-oob = SAF
-load_oob = SAF_naval_templates
-set_naval_oob = SAF_naval
+oob = "SAF"
+set_naval_oob = "SAF_naval"
 set_convoys = 25
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.35
 set_cosmetic_tag = SAF_union
+save_global_event_target_as = original_south_africa
 set_technology = {
     infantry_weapons = 1
     tech_support = 1
@@ -14,9 +14,6 @@ set_technology = {
     tech_engineers = 1
     gw_artillery = 1
     motorised_infantry = 1
-    early_fighter = 1
-    early_bomber = 1
-    naval_bomber1 = 1
     basic_train = 1
     camo = 1
     etax_doctrine = 1
@@ -25,7 +22,41 @@ set_technology = {
 }
 if = {
     limit = {
-        has_dlc = "No Step Back"
+        has_dlc_bba = yes
+        
+    }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        engines_2 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        iw_large_airframe = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc_bba = yes
+            
+        }
+        
+    }
+    set_technology = {
+        early_fighter = 1
+        early_bomber = 1
+        naval_bomber1 = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_nsb = yes
         
     }
     set_technology = {
@@ -36,10 +67,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "No Step Back"
-            
-        }
+        has_dlc_nsb = no
         
     }
     set_technology = {
@@ -50,31 +78,24 @@ if = {
 }
 if = {
     limit = {
-        has_dlc = "Man the Guns"
+        has_dlc_mtg = yes
         
     }
     set_technology = {
+        early_ship_hull_submarine = 1
         early_ship_hull_light = 1
-        basic_naval_mines = 1
         basic_ship_hull_light = 1
         early_ship_hull_cruiser = 1
         basic_ship_hull_cruiser = 1
-        early_ship_hull_submarine = 1
-        basic_ship_hull_submarine = 1
-        early_ship_hull_heavy = 1
-        basic_ship_hull_heavy = 1
-        basic_depth_charges = 1
-        basic_torpedo = 1
+        basic_naval_mines = 1
+        submarine_mine_laying = 1
         basic_battery = 1
         basic_light_battery = 1
-        basic_secondary_battery = 1
-        improved_secondary_battery = 1
-        sonar = 1
-        improved_ship_torpedo_launcher = 1
-        basic_cruiser_armor_scheme = 1
-        basic_heavy_armor_scheme = 1
         basic_medium_battery = 1
         basic_heavy_battery = 1
+        basic_torpedo = 1
+        basic_depth_charges = 1
+        basic_cruiser_armor_scheme = 1
         mtg_transport = 1
         
     }
@@ -82,23 +103,13 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc = "Man the Guns"
-            
-        }
+        has_dlc_mtg = no
         
     }
     set_technology = {
-        early_destroyer = 1
-        basic_destroyer = 1
-        early_light_cruiser = 1
-        basic_light_cruiser = 1
         early_submarine = 1
-        basic_submarine = 1
-        early_heavy_cruiser = 1
-        basic_heavy_cruiser = 1
-        early_battleship = 1
-        basic_battleship = 1
+        early_destroyer = 1
+        early_light_cruiser = 1
         transport = 1
         
     }
@@ -533,36 +544,10 @@ SAF_union_defence_council = {
     set_character_flag = SAF_boer_character
     
 }
-random_character = {
-    limit = {
-        is_character = SAF_george_herbert_hyde_villiers
+SAF_george_herbert_hyde_villiers = {
+    set_variable = {
+        SAF_governor_general = THIS
         
     }
-    save_global_event_target_as = SAF_george_herbert_hyde_villiers_target
-    save_global_event_target_as = SAF_governor_general
-    
-}
-random_character = {
-    limit = {
-        is_character = SAF_patrick_duncan
-        
-    }
-    save_global_event_target_as = SAF_patrick_duncan_target
-    
-}
-random_character = {
-    limit = {
-        is_character = SAF_nicolaas_jacobus_de_wet
-        
-    }
-    save_global_event_target_as = SAF_nicolaas_jacobus_de_wet_target
-    
-}
-random_character = {
-    limit = {
-        is_character = SAF_ernest_george_jansen
-        
-    }
-    save_global_event_target_as = SAF_ernest_george_jansen_target
     
 }

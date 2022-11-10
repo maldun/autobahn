@@ -216,6 +216,8 @@ r56i_laws_security_order_tt:0 "§WChance of Strikes§!:§G -100%§!"
  army_chief:0 "Army Command Focus"
  navy_chief:0 "Navy Command Focus"
  air_chief:0 "Air Force Command Focus"
+ continuous_restrict_freedom:0 "Suppress Subjects"
+ continuous_restrict_freedom_desc:0 "Our colonial subjects have gotten rather silly ideas about things like "self-determination" or "national independence". It is time to disabuse them of these notions."
 ### Add KX stuff end ###########################
 #  r56i.event.16.t:0 "The [HUN.GetFactionName] absorbs the [YUG.GetAdjective] faction into a single alliance!"
 #  r56i.event.16.d:0 "\n\n World politics are shifting at a rapid pace and therefore the leaders of the [HUN.GetFactionName] and [YUG.GetLeader] recognized that it was useless to fight as separate coalitions instead of forming a united coalition fighting for the triumph of their ideology."

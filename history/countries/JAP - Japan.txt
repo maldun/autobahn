@@ -149,11 +149,6 @@ if = {
     }
     
 }
-add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = 7260
-    
-}
 country_event = {
     id = japdom.1
     days = 1
@@ -227,11 +222,6 @@ add_dynamic_modifier = {
 give_guarantee = FNG
 add_to_array = {
     FNG.guarantor_array = JAP
-    
-}
-add_opinion_modifier = {
-    target = QIE
-    modifier = embargo
     
 }
 set_politics = {

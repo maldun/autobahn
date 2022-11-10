@@ -2,6 +2,7 @@ capital = 1046
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     tech_support = 1
     tech_recon = 1
     tech_engineers = 1
@@ -73,44 +74,28 @@ if = {
     }
     
 }
-add_opinion_modifier = {
-    target = SQI
-    modifier = embargo
+QIE = {
+    embargo_ROOT = yes
     
 }
-add_opinion_modifier = {
-    target = QIE
-    modifier = embargo
+LEP = {
+    embargo_ROOT = yes
     
 }
-add_opinion_modifier = {
-    target = LEP
-    modifier = embargo
+ANQ = {
+    embargo_ROOT = yes
     
 }
-add_opinion_modifier = {
-    target = ANQ
-    modifier = embargo
+SQI = {
+    embargo_ROOT = yes
     
 }
-add_opinion_modifier = {
-    target = GER
-    modifier = embargo
+FNG = {
+    embargo_ROOT = yes
     
 }
-add_opinion_modifier = {
-    target = GEA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = MAF
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = JAP
-    modifier = embargo
+JAP = {
+    embargo_ROOT = yes
     
 }
 set_cosmetic_tag = CHI_rebel
@@ -236,16 +221,6 @@ recruit_character = CHI_chiang_wei_kuo
 recruit_character = CHI_hu_zongnan
 recruit_character = CHI_du_yuming
 recruit_character = CHI_dai_anlan
-CHI_xue_yue = {
-    set_character_flag = CHI_original_unit_leader
-    retire = yes
-    
-}
-CHI_zhang_fakui = {
-    set_character_flag = CHI_original_unit_leader
-    retire = yes
-    
-}
 recruit_character = CHI_li_zhilong
 recruit_character = CHI_chen_shaokuan
 recruit_character = CHI_liao_zhongkai
@@ -272,6 +247,32 @@ recruit_character = CHI_mao_bangchu
 recruit_character = CHI_su_yu
 recruit_character = CHI_he_zhonghan
 recruit_character = CHI_chen_jiliang
+CHI_cai_chang = {
+    set_character_flag = CHI_original_unit_leader
+    
+}
+CHI_xiao_ke = {
+    set_character_flag = CHI_original_unit_leader
+    
+}
+CHI_chiang_wei_kuo = {
+    set_character_flag = CHI_original_unit_leader
+    
+}
+CHI_hu_zongnan = {
+    set_character_flag = CHI_original_unit_leader
+    
+}
+CHI_xue_yue = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
+    
+}
+CHI_zhang_fakui = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
+    
+}
 division_template = {
     name = "Dúli Bubing Lü"
     division_names_group = CHI_INF_02
@@ -284,11 +285,6 @@ division_template = {
         infantry = {
             x = 0
             y = 1
-            
-        }
-        infantry = {
-            x = 0
-            y = 2
             
         }
         infantry = {
@@ -309,29 +305,28 @@ division_template = {
     name = "Géming Minbing Lü"
     division_names_group = CHI_MIL_01
     regiments = {
-        infantry = {
+        irregular_infantry = {
             x = 0
             y = 0
             
         }
-        infantry = {
+        irregular_infantry = {
             x = 0
             y = 1
             
         }
-        infantry = {
+        irregular_infantry = {
             x = 1
             y = 0
             
         }
-        infantry = {
+        irregular_infantry = {
             x = 1
             y = 1
             
         }
         
     }
-    template_counter = 68
     
 }
 create_equipment_variant = {

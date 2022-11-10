@@ -5,8 +5,9 @@ set_war_support = 0.4
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
-    tech_support = 1
+    tech_irregulars = 1
     tech_mountaineers = 1
+    tech_support = 1
     tech_engineers = 1
     tech_recon = 1
     gw_artillery = 1
@@ -118,3 +119,11 @@ recruit_character = YUN_zhou_baozhong
 recruit_character = YUN_zeng_zesheng
 recruit_character = YUN_sun_yuanliang
 recruit_character = YUN_he_yingqin
+YUN_zhu_peide = {
+    set_character_flag = CHI_original_unit_leader
+    
+}
+YUN_zhu_de = {
+    set_character_flag = CHI_original_unit_leader
+    
+}

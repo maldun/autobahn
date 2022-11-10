@@ -5,6 +5,7 @@ set_convoys = 15
 starting_train_buffer = 1
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     tech_support = 1
     gw_artillery = 1
     camo = 1

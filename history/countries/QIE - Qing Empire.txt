@@ -15,6 +15,7 @@ add_to_faction = SIK
 add_to_faction = LEP
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     tech_support = 1
     tech_engineers = 1
     tech_recon = 1
@@ -97,21 +98,6 @@ if = {
         early_heavy_cruiser = 1
         
     }
-    
-}
-add_opinion_modifier = {
-    target = CHI
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = JAP
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = FNG
-    modifier = embargo
     
 }
 set_country_flag = can_assume_national_leadership
@@ -344,18 +330,32 @@ QIE_cao_shijie = {
     
 }
 QIE_wang_lingyun = {
+    set_character_flag = CHI_original_unit_leader
     retire = yes
     
 }
 QIE_du_xijun = {
+    set_character_flag = CHI_original_unit_leader
     retire = yes
     
 }
 QIE_guo_jijiao = {
+    set_character_flag = CHI_original_unit_leader
     retire = yes
     
 }
 QIE_wei_yisan = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
+    
+}
+QIE_ling_bin = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
+    
+}
+QIE_fang_zhijian = {
+    set_character_flag = CHI_original_unit_leader
     retire = yes
     
 }

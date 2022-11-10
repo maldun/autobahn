@@ -3,6 +3,7 @@ set_research_slots = 2
 set_convoys = 10
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     tech_support = 1
     tech_engineers = 1
     gw_artillery = 1
@@ -24,16 +25,6 @@ if = {
 add_offsite_building = {
     type = industrial_complex
     level = 2
-    
-}
-add_opinion_modifier = {
-    target = JAP
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = FNG
-    modifier = embargo
     
 }
 set_politics = {
@@ -88,6 +79,10 @@ recruit_character = HNN_liao_yaoxiang
 recruit_character = HNN_tan_daoyuan
 recruit_character = HNN_men_bingyue
 recruit_character = HNN_chen_mingren
+HNN_tang_shengzhi = {
+    set_character_flag = CHI_original_unit_leader
+    
+}
 HNN_cheng_qian = {
     set_nationality = CHI
     

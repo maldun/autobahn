@@ -1,15 +1,14 @@
-capital = 927
+capital = 877
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
     tech_irregulars = 1
-    motorised_infantry = 1
     camo = 1
     etax_doctrine = 1
     
 }
 set_politics = {
-    ruling_party = authoritarian_democrat
+    ruling_party = market_liberal
     last_election = "1888.6.15"
     election_frequency = 48
     elections_allowed = no
@@ -21,12 +20,12 @@ set_popularities = {
     syndicalist = 0
     social_democrat = 2
     social_liberal = 6
-    market_liberal = 6
+    market_liberal = 47
     social_conservative = 12
-    authoritarian_democrat = 47
-    paternal_autocrat = 15
+    authoritarian_democrat = 15
+    paternal_autocrat = 6
     national_populist = 12
     
 }
-recruit_character = CMR_Karl_Atangana
-recruit_character = CMR_Alexander_Duala_Bell
+recruit_character = TOG_Sylvanus_Olympio
+recruit_character = TOG_Alhaji_Grunshi

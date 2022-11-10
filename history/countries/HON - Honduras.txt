@@ -127,6 +127,18 @@ HON_juan_manuel_galvez_duron = {
     set_character_flag = CEN_liberal
     
 }
+HON_jose_angel_zuniga_huete = {
+    set_character_flag = CEN_liberal
+    
+}
+HON_jose_maria_moncada_tapia = {
+    set_character_flag = CEN_liberal
+    
+}
+HON_jose_ramon_adolfo_villeda_morales = {
+    set_character_flag = CEN_liberal
+    
+}
 HON_juan_manuel_galvez_duron = {
     set_character_flag = CEN_reactionary
     

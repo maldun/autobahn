@@ -3,8 +3,7 @@
         "countrytechtreeview.gui": []
     },
     "common/continuous_focus/": {
-        "generic.txt": [],
-        "r56_generic.txt": []
+        "generic.txt": []
     },
     "common/units/equipment/upgrades/": {
         "air_upgrades.txt": [],

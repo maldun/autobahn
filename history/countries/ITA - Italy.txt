@@ -373,7 +373,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
     name = "Ettore Bastico"
-    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Ettore_Bastico.png"
+    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Ettore_Bastico_KX.png"
     traits = {
         trickster
         career_officer
@@ -389,7 +389,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Annibale Bergonzoli"
-    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Annibale_Bergonzoli.png"
+    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Annibale_Bergonzoli_KX.png"
     traits = {
         war_hero
         brilliant_strategist
@@ -476,7 +476,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Italo Gariboldi"
-    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Italo_Gariboldi.png"
+    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Italo_Gariboldi_KX.png"
     traits = {
         hill_fighter
         
@@ -630,7 +630,7 @@ create_navy_leader = {
 }
 create_navy_leader = {
     name = "Giuseppe Fioravanzo"
-    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Giuseppe_Fioravanzo.png"
+    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Giuseppe_Fioravanzo_KX.png"
     traits = {
         aviation_enthusiast
         blockade_runner

@@ -2,7 +2,6 @@ capital = 96
 oob = "LIT"
 set_convoys = 50
 set_research_slots = 3
-LIT_start_naval_variant = yes
 if = {
     limit = {
         NOT = {
@@ -62,14 +61,21 @@ if = {
         
     }
     GER_GUNERIC_BBA_air_variants = yes
-    else = {
-        set_air_oob = "LIT_air_legacy"
-        set_technology = {
-            early_fighter = 1
-            fighter1 = 1
-            CAS1 = 1
+    
+}
+if = {
+    limit = {
+        NOT = {
+            has_dlc = "By Blood Alone"
             
         }
+        
+    }
+    set_air_oob = "LIT_air_legacy"
+    set_technology = {
+        early_fighter = 1
+        fighter1 = 1
+        CAS1 = 1
         
     }
     
@@ -613,3 +619,4 @@ create_navy_leader = {
     coordination_skill = 1
     
 }
+LIT_start_naval_variant = yes

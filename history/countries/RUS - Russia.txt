@@ -320,12 +320,6 @@ add_ai_strategy = {
 }
 add_ai_strategy = {
     type = ignore_claim
-    id = "DKB"
-    value = 1
-    
-}
-add_ai_strategy = {
-    type = ignore_claim
     id = "GEO"
     value = 1
     
@@ -392,6 +386,7 @@ recruit_character = RUS_boris_savinkov
 recruit_character = RUS_anastasy_vonsyatsky
 recruit_character = RUS_kirill_romanov
 recruit_character = RUS_vladimir_romanov
+recruit_character = RUS_boris_romanov
 recruit_character = RUS_state_duma
 activate_advisor = RUS_state_duma_sic
 recruit_character = RUS_gerasim_vdovenko

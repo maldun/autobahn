@@ -28,10 +28,7 @@ if = {
 }
 if = {
     limit = {
-        NOT = {
-            has_dlc_bba = yes
-            
-        }
+        has_dlc_bba = no
         
     }
     set_technology = {

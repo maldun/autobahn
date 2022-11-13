@@ -213,7 +213,6 @@ every_country = {
             tag = IRE
             tag = AZR
             tag = GEO
-            tag = DKB
             
         }
         
@@ -406,6 +405,10 @@ every_character = {
         
     }
     set_character_flag = GER_republican_leader
+    
+}
+GER_heinz_guderian = {
+    set_nationality = POL
     
 }
 if = {

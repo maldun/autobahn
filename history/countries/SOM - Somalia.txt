@@ -12,26 +12,6 @@ set_technology = {
     etax_doctrine = 1
     
 }
-if = {
-    limit = {
-        has_dlc_bba = yes
-        
-    }
-    set_air_oob = "SOM_air_bba"
-    
-}
-if = {
-    limit = {
-        has_dlc_bba = no
-        
-    }
-    set_air_oob = "SOM_air_legacy"
-    set_technology = {
-        early_fighter = 1
-        
-    }
-    
-}
 country_event = {
     id = som.1
     days = 1

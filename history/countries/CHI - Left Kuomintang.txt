@@ -194,6 +194,36 @@ set_popularities = {
     
 }
 country_event = {
+    id = chi_flavor.2
+    days = 700
+    
+}
+country_event = {
+    id = chi_flavor.3
+    days = 397
+    
+}
+country_event = {
+    id = chi_flavor.4
+    days = 1411
+    
+}
+country_event = {
+    id = chi_flavor.5
+    days = 745
+    
+}
+country_event = {
+    id = chi_flavor.6
+    days = 1281
+    
+}
+country_event = {
+    id = chi_flavor.7
+    days = 1312
+    
+}
+country_event = {
     id = literature.17
     days = 130
     random_days = 20
@@ -204,6 +234,7 @@ recruit_character = CHI_chen_duxiu
 recruit_character = CHI_wang_jingwei
 recruit_character = CHI_song_qingling
 recruit_character = CHI_sun_fo
+recruit_character = CHI_xu_fulin
 recruit_character = CHI_lin_sen
 recruit_character = CHI_chen_guofu
 recruit_character = CHI_li_jishen
@@ -215,12 +246,11 @@ recruit_character = CHI_lin_biao
 recruit_character = CHI_wang_yaowu
 recruit_character = CHI_xu_xiangqian
 recruit_character = CHI_zhang_yunyi
-recruit_character = CHI_cai_chang
-recruit_character = CHI_xiao_ke
 recruit_character = CHI_chiang_wei_kuo
 recruit_character = CHI_hu_zongnan
 recruit_character = CHI_du_yuming
 recruit_character = CHI_dai_anlan
+recruit_character = CHI_he_zhonghan
 recruit_character = CHI_li_zhilong
 recruit_character = CHI_chen_shaokuan
 recruit_character = CHI_liao_zhongkai
@@ -232,7 +262,6 @@ recruit_character = CHI_chen_bijun
 recruit_character = CHI_zhou_fohai
 recruit_character = CHI_li_shiqun
 recruit_character = CHI_eugene_chen
-recruit_character = CHI_li_shizeng
 recruit_character = CHI_zhang_renjie
 recruit_character = CHI_zhang_guotao
 recruit_character = CHI_mao_renfang
@@ -245,16 +274,7 @@ recruit_character = CHI_deng_wenyi
 recruit_character = CHI_zhou_zhirou
 recruit_character = CHI_mao_bangchu
 recruit_character = CHI_su_yu
-recruit_character = CHI_he_zhonghan
 recruit_character = CHI_chen_jiliang
-CHI_cai_chang = {
-    set_character_flag = CHI_original_unit_leader
-    
-}
-CHI_xiao_ke = {
-    set_character_flag = CHI_original_unit_leader
-    
-}
 CHI_chiang_wei_kuo = {
     set_character_flag = CHI_original_unit_leader
     

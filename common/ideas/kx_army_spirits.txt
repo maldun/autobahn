@@ -44,23 +44,20 @@ ideas = {
         
     }
     division_command_spirit = {
-        entente_invasion_spirit = {
+        reichspakt_defense_spirit = {
             ledger = army
-            picture = long_range_patrol_spirit
+            picture = political_connections_spirit
             visible = {
-                is_in_faction_with = ENT
-                
-            }
-            equipment_bonus = {
-                floating_harbor_equipment = {
-                    build_cost_ic = -0.1
-                    instant = yes
+                is_in_faction_with = GER
+                GER = {
+                    is_faction_leader = yes
                     
                 }
                 
             }
             modifier = {
-                naval_invasion_penalty = -0.25
+                army_org_factor = 0.1
+                army_morale_factor = 0.05
                 
             }
             ai_will_do = {
@@ -108,20 +105,23 @@ ideas = {
             }
             
         }
-        reichspakt_defense_spirit = {
+        entente_invasion_spirit = {
             ledger = army
-            picture = political_connections_spirit
+            picture = long_range_patrol_spirit
             visible = {
-                is_in_faction_with = GER
-                GER = {
-                    is_faction_leader = yes
+                is_in_faction_with = ENT
+                
+            }
+            equipment_bonus = {
+                floating_harbor_equipment = {
+                    build_cost_ic = -0.1
+                    instant = yes
                     
                 }
                 
             }
             modifier = {
-                army_org_factor = 0.1
-                army_morale_factor = 0.05
+                naval_invasion_penalty = -0.25
                 
             }
             ai_will_do = {

@@ -17,15 +17,6 @@ spriteTypes = {
 #   graphics entry cannot be found with the slot's specific key.
 ###################################################
 
-
-
-######## Glow effect
-
-	spriteType = {
-		name = "GFX_equipment_module_slot_glow"
-		textureFile = "gfx/interface/equipmentdesigner/equipment_module_slot_glow.dds"
-	}
-
 ######## Fallback icons
 
 	spriteType = {
@@ -284,6 +275,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_2.dds"
 	}
 	
+	##DP Secondary Battery
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_5.dds"
+	}
+	
 	
 ######## Depth Charge
 
@@ -451,6 +458,10 @@ spriteTypes = {
 		name = "GFX_SMI_carrier_ship_engine_4"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_4.dds"
 	}
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_engine_nuclear_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_nuclear_1.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SMI_heavy_ship_engine"
@@ -476,7 +487,10 @@ spriteTypes = {
 		name = "GFX_SMI_heavy_ship_engine_4"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_4.dds"
 	}
-
+	spriteType = {
+		name = "GFX_SMI_heavy_ship_engine_nuclear_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_nuclear_1.dds"
+	}
 	spriteType = {
 		name = "GFX_SMI_sub_ship_engine"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn.dds"
@@ -501,7 +515,10 @@ spriteTypes = {
 		name = "GFX_SMI_sub_ship_engine_4"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_4.dds"
 	}
-
+	spriteType = {
+		name = "GFX_SMI_sub_ship_engine_nuclear_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_nuclear_1.dds"
+	}
 ######## Torpedo Launcher
 
 
@@ -783,7 +800,7 @@ spriteTypes = {
 	}
 
 
-######## Fuel Tank
+	######## Fuel Tank
 
 	### Category Icon & Module Icon
 
@@ -792,9 +809,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/fuel_tank_icn.dds"
 	}
 	###
-	
-	
-######## Added in BBA
+	######## Added in BBA
 
 	SpriteType = {
 		name = "GFX_SMI_dp_ship_medium_1"
@@ -852,6 +867,7 @@ spriteTypes = {
 		name = "GFX_SMI_dp_secondary_battery_4"
 		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/dp_secondary_battery_icn_4.dds"
 	}	
+	
 	
 }
 

@@ -19,7 +19,7 @@ RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/195
 
 # Set for mod in question
 KX = True
-
+    
 OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_diff"
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
@@ -323,6 +323,12 @@ if __name__ == "__main__":
     rt56_update.update_navy(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_civ(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_post_steps(RT56_FOLDER, OUT_FOLDER)
+
+    if KX is True:
+        import kx_patches as patches  
+    else:
+        import kr_patches as patches
+    patches.patch(MAIN_MOD, OUT_FOLDER)
     
     # add missing spirits
     
@@ -337,6 +343,4 @@ if __name__ == "__main__":
     maps = remove_obsolete_equipment_maps()
     country_maps = apply_equipment_table("KX_equipment.csv" if KX is True else "equipment.csv")
     apply_equipment_maps(maps, country_maps)
-    
-   
     

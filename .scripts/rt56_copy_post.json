@@ -1,6 +1,7 @@
 {
     "interface/": {
-        "countrytechtreeview.gui": []
+        "countrytechtreeview.gui": [],
+        "equipmentdesignermoduleicons.gfx": []
     },
     "common/continuous_focus/": {
         "generic.txt": []

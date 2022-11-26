@@ -18,8 +18,13 @@ KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426
 RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/1956_beta/"
 
 # Set for mod in question
+<<<<<<< HEAD
 KX = False
 
+=======
+KX = True
+    
+>>>>>>> e05d9d3 (updated scripts)
 OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_diff"
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
@@ -331,7 +336,6 @@ if __name__ == "__main__":
     # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
     rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
 
-    
     if KX is True:
         import kx_patches as patches  
     else:

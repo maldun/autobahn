@@ -1,0 +1,8 @@
+#background sprite is in frontendmainviewbg.gfx
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_autobahn_logo"
+		texturefile = "gfx/interface/autobahn_redux_logo.png"
+	}
+}

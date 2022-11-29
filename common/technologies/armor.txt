@@ -193,7 +193,7 @@ technologies = {
 				factor = 100
 				OR = {
 					tag = GER
-					tag = SOV
+					tag = RUS
 				}
 				has_war = yes
 				any_enemy_country = {
@@ -355,7 +355,7 @@ technologies = {
 				factor = 10 #you are embarassing yourself
 			}
 			modifier = {
-				tag = SOV
+				tag = RUS
 				factor = 3
 			}
 			
@@ -406,7 +406,7 @@ technologies = {
 				factor = 120
 				OR = {
 					#tag = GER
-					tag = SOV
+					tag = RUS
 				}
 				has_war = yes
 				any_enemy_country = {
@@ -798,7 +798,7 @@ technologies = {
 				factor = 130
 				OR = {
 					#tag = GER
-					tag = SOV
+					tag = RUS
 				}
 				has_war = yes
 				any_enemy_country = {
@@ -898,7 +898,7 @@ technologies = {
 				date > "1938.1.1"
 			}
 			modifier = {
-				tag = SOV
+				tag = RUS
 				factor = 2
 			}
    
@@ -956,7 +956,7 @@ technologies = {
 				factor = 140
 				OR = {
 					#tag = GER
-					tag = SOV
+					tag = RUS
 				}
 				any_enemy_country = {
 					ROOT = {
@@ -1140,7 +1140,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 			
 			modifier = {
@@ -1181,7 +1181,7 @@ technologies = {
 				factor = 150
 				OR = {
 					#tag = GER
-					tag = SOV
+					tag = RUS
 				}
 				has_war = yes
 				any_enemy_country = {
@@ -1383,7 +1383,7 @@ technologies = {
 				factor = 160
 				OR = {
 					tag = GER
-					tag = SOV
+					tag = RUS
 				}
 				any_enemy_country = {
 					ROOT = {

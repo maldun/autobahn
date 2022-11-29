@@ -318,6 +318,7 @@ if __name__ == "__main__":
     #for func in update_keys:
     #    rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
 
+    rt56_update.update_infantry(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_air(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_tanks(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_navy(RT56_FOLDER, OUT_FOLDER)
@@ -343,4 +344,9 @@ if __name__ == "__main__":
     maps = remove_obsolete_equipment_maps()
     country_maps = apply_equipment_table("KX_equipment.csv" if KX is True else "equipment.csv")
     apply_equipment_maps(maps, country_maps)
-    
+
+    # some simple post hacks
+    # Change SOV --> RUS
+    rt56_update.replace_string('SOV', 'RUS', OUT_FOLDER)
+    # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
+    rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)

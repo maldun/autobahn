@@ -6,6 +6,10 @@
     "common/continuous_focus/": {
         "generic.txt": []
     },
+    "common/unit_tags/": {
+	"00_categories.txt": [],
+	"r56_categories.txt": []
+    },
     "common/units/equipment/modules/": {
       "00_r56_modules.txt": []
     },

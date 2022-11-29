@@ -325,6 +325,13 @@ if __name__ == "__main__":
     rt56_update.update_civ(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_post_steps(RT56_FOLDER, OUT_FOLDER)
 
+    # some simple post hacks
+    # Change SOV --> RUS
+    rt56_update.replace_string('SOV', 'RUS', OUT_FOLDER)
+    # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
+    rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
+
+    
     if KX is True:
         import kx_patches as patches  
     else:
@@ -345,8 +352,4 @@ if __name__ == "__main__":
     country_maps = apply_equipment_table("KX_equipment.csv" if KX is True else "equipment.csv")
     apply_equipment_maps(maps, country_maps)
 
-    # some simple post hacks
-    # Change SOV --> RUS
-    rt56_update.replace_string('SOV', 'RUS', OUT_FOLDER)
-    # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
-    rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
+    

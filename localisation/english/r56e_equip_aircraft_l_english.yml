@@ -44,13 +44,13 @@ l_english:
  cv_CAS_equipment:0 "CV Dive Bomber"
  cv_CAS_equipment_desc:0 "Carrier Dive Bombers are designed to attack surface ships."
  cv_CAS_equipment_1:0 "Carrier Dive Bomber '36"
- cv_CAS_equipment_1_short:0 "Carrier Dive Bomber '36"
+ cv_CAS_equipment_1_short:0 "Dive Bomber CV '36"
  cv_CAS_equipment_1_desc:0 "An early close air support plane modified to launch from and land on aircraft carriers."
  cv_CAS_equipment_2:0 "Carrier Dive Bomber '40"
- cv_CAS_equipment_2_short:0 "Carrier Dive Bomber '40"
+ cv_CAS_equipment_2_short:0 "Dive Bomber CV '40"
  cv_CAS_equipment_2_desc:0 "An improved close air support plane modified to launch from and land on aircraft carriers."
  cv_CAS_equipment_3:0 "Carrier Dive Bomber '44"
- cv_CAS_equipment_3_short:0 "Carrier Dive Bomber '44"
+ cv_CAS_equipment_3_short:0 "Dive Bomber CV '44"
  cv_CAS_equipment_3_desc:0 "An advanced close air support plane modified to launch from and land on aircraft carriers."
 
 #-> Light fighters <><> 
@@ -1273,10 +1273,10 @@ l_english:
  SLO_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- SLO_jet_fighter_equipment_1:0 "Avia S-92.L"
- SLO_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- SLO_jet_fighter_equipment_2:0 "Avia S-105.L"
- SLO_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ SLO_cv_jet_fighter_equipment_1:0 "Avia S-92.L"
+ SLO_cv_jet_fighter_equipment_1_short:0 "Avia S-92.L"
+ SLO_cv_jet_fighter_equipment_2:0 "Avia S-105.L"
+ SLO_cv_jet_fighter_equipment_2_short:0 "Avia S-105.L"
  
 #-> Jet medium bomber <><>
  SLO_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -1413,10 +1413,10 @@ l_english:
  DOU_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- DOU_jet_fighter_equipment_1:0 "Avia S-92.L"
- DOU_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- DOU_jet_fighter_equipment_2:0 "Avia S-105.L"
- DOU_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ DOU_cv_jet_fighter_equipment_1:0 "Avia S-92.L"
+ DOU_cv_jet_fighter_equipment_1_short:0 "Avia S-92.L"
+ DOU_cv_jet_fighter_equipment_2:0 "Avia S-105.L"
+ DOU_cv_jet_fighter_equipment_2_short:0 "Avia S-105.L"
  
 #-> Jet medium bomber <><>
  DOU_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -1555,10 +1555,10 @@ l_english:
  RUT_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- RUT_jet_fighter_equipment_1:0 "Avia S-92.L"
- RUT_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- RUT_jet_fighter_equipment_2:0 "Avia S-105.L"
- RUT_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ RUT_cv_jet_fighter_equipment_1:0 "Avia S-92.L"
+ RUT_cv_jet_fighter_equipment_1_short:0 "Avia S-92.L"
+ RUT_cv_jet_fighter_equipment_2:0 "Avia S-105.L"
+ RUT_cv_jet_fighter_equipment_2_short:0 "Avia S-105.L"
  
 #-> Jet medium bomber <><>
  RUT_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -1696,10 +1696,10 @@ l_english:
  UKR_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- UKR_jet_fighter_equipment_1:0 "Avia S-92.L"
- UKR_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- UKR_jet_fighter_equipment_2:0 "Avia S-105.L"
- UKR_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ UKR_cv_jet_fighter_equipment_1:0 "Avia S-92.L"
+ UKR_cv_jet_fighter_equipment_1_short:0 "Avia S-92.L"
+ UKR_cv_jet_fighter_equipment_2:0 "Avia S-105.L"
+ UKR_cv_jet_fighter_equipment_2_short:0 "Avia S-105.L"
  
 #-> Jet medium bomber <><>
  UKR_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -3268,12 +3268,12 @@ l_english:
  AST_CAS_equipment_3_short:0 "Beaufighter Mk IC"
 
 #-> Carrier-based dive bombers <><>
- AST_cv_CAS_equipment_1:0 "Hawker Osprey"
- AST_cv_CAS_equipment_1_short:0 "Osprey"
- AST_cv_CAS_equipment_2:0 "Blackburn Skua"
- AST_cv_CAS_equipment_2_short:0 "Skua"
- AST_cv_CAS_equipment_3:0 "Fairey Firefly"
- AST_cv_CAS_equipment_3_short:0 "Firefly"
+ AST_cv_CAS_equipment_1:0 "Blackburn Skua"
+ AST_cv_CAS_equipment_1_short:0 "Skua"
+ AST_cv_CAS_equipment_2:0 "Fairey Firefly"
+ AST_cv_CAS_equipment_2_short:0 "Firefly"
+ AST_cv_CAS_equipment_3:0 "de Havilland Sea Mosquito"
+ AST_cv_CAS_equipment_3_short:0 "Sea Mosquito"
  
 #-> Light fighters <><> 
  AST_fighter_equipment_0:0 "Hawker Demon"
@@ -3550,8 +3550,8 @@ l_english:
 #-> Jet heavy bomber <><> 
  CAN_jet_strat_bomber_equipment_1:0 "Vickers Valiant"
  CAN_jet_strat_bomber_equipment_1_short:0 "Valiant"
- CAN_jet_strat_bomber_equipment_1:0 "Vickers Valiant B.2"
- CAN_jet_strat_bomber_equipment_1_short:0 "Valiant B.2"
+ CAN_jet_strat_bomber_equipment_2:0 "Vickers Valiant B.2"
+ CAN_jet_strat_bomber_equipment_2_short:0 "Valiant B.2"
 
 
 ###--->  NZL  <><> <><> <><>
@@ -3994,8 +3994,8 @@ l_english:
 #-> Jet heavy bomber <><>
  IND_jet_strat_bomber_equipment_1:0 "Vickers Valiant"
  IND_jet_strat_bomber_equipment_1_short:0 "Valiant"
- IND_jet_strat_bomber_equipment_1:0 "Vickers Valiant B.2"
- IND_jet_strat_bomber_equipment_1_short:0 "Valiant B.2"
+ IND_jet_strat_bomber_equipment_2:0 "Vickers Valiant B.2"
+ IND_jet_strat_bomber_equipment_2_short:0 "Valiant B.2"
  
  
 ###--->  SAF  <><> <><> <><>
@@ -4189,8 +4189,8 @@ l_english:
  FIN_fighter_bomber_equipment_3_short:0 "Pyörremyrsky"
 
 #-> Carrier-based light fighters <><>
- FIN_fighter_equipment_0:0 "Gloster Gladiator CV"
- FIN_fighter_equipment_0_short:0 "Gladiator CV"
+ FIN_cv_fighter_equipment_0:0 "Gloster Gladiator CV"
+ FIN_cv_fighter_equipment_0_short:0 "Gladiator CV"
  FIN_cv_fighter_equipment_1:0 "VL Humu M"
  FIN_cv_fighter_equipment_1_short:0 "Humu M"
  FIN_cv_fighter_equipment_2:0 "VL Myrsky M"
@@ -4840,8 +4840,8 @@ l_english:
  FRI_jet_tac_bomber_equipment_2_short:0 "Vautour II"
  
 #-> Jet heavy bomber <><>
- FRI_jet_tac_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
- FRI_jet_tac_bomber_equipment_1_short:0 "Vautour"
+ FRI_jet_strat_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
+ FRI_jet_strat_bomber_equipment_1_short:0 "Vautour"
 
 
 ###--->  GER  <><> <><> <><>
@@ -8427,8 +8427,8 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
  POL_hfighter_bomber_equipment_1_short:0 "Wilk Wsparcie"
  POL_hfighter_bomber_equipment_2:0 "PZL.54 Ryś Wsparcie"
  POL_hfighter_bomber_equipment_2_short:0 "Ryś Wsparcie"
- POL_hfighter_bomber_equipment_2:0 "PZL.65 Lis Wsparcie"
- POL_hfighter_bomber_equipment_2_short:0 "Lis Wsparcie"
+ POL_hfighter_bomber_equipment_3:0 "PZL.65 Lis Wsparcie"
+ POL_hfighter_bomber_equipment_3_short:0 "Lis Wsparcie"
  
 #-> Medium bomber <><>
  POL_tac_bomber_equipment_0:0 "LWS-6 Żubr"
@@ -8918,170 +8918,170 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
 #-> Carrier-based jet fighters <><>
 
 
-###--->  SOV  <><> <><> <><>
+###--->  RUS  <><> <><> <><>
 #-> Scout planes <><>
- SOV_scout_plane_equipment_1:0 "Neman R-10"
- SOV_scout_plane_equipment_1_short:0 "R-10"
- SOV_scout_plane_equipment_2:0 "Tupolev Tu-6"
- SOV_scout_plane_equipment_2_short:0 "Tu-6"
+ RUS_scout_plane_equipment_1:0 "Neman R-10"
+ RUS_scout_plane_equipment_1_short:0 "R-10"
+ RUS_scout_plane_equipment_2:0 "Tupolev Tu-6"
+ RUS_scout_plane_equipment_2_short:0 "Tu-6"
  
 #-> Transport planes <><>
- SOV_transport_plane_equipment_1:0 "Tupolev TB-3"
- SOV_transport_plane_equipment_1_short:0 "TB-3"
- SOV_transport_plane_equipment_2:0 "Lisunov Li-2"
- SOV_transport_plane_equipment_2_short:0 "Li-2"
+ RUS_transport_plane_equipment_1:0 "Tupolev TB-3"
+ RUS_transport_plane_equipment_1_short:0 "TB-3"
+ RUS_transport_plane_equipment_2:0 "Lisunov Li-2"
+ RUS_transport_plane_equipment_2_short:0 "Li-2"
 
 #-> Dive bombers <><>
- SOV_CAS_equipment_1:0 "Sukhoi Su-2"
- SOV_CAS_equipment_1_short:0 "Su-2"
- SOV_CAS_equipment_2:0 "Ilyushin IL-2"
- SOV_CAS_equipment_2_short:0 "IL-2"
- SOV_CAS_equipment_3:0 "Ilyushin IL-10"
- SOV_CAS_equipment_3_short:0 "IL-10"
+ RUS_CAS_equipment_1:0 "Sukhoi Su-2"
+ RUS_CAS_equipment_1_short:0 "Su-2"
+ RUS_CAS_equipment_2:0 "Ilyushin IL-2"
+ RUS_CAS_equipment_2_short:0 "IL-2"
+ RUS_CAS_equipment_3:0 "Ilyushin IL-10"
+ RUS_CAS_equipment_3_short:0 "IL-10"
  
 #-> Carrier-based dive bombers <><>
- SOV_cv_CAS_equipment_1:0 "Sukhoi Su-2A"
- SOV_cv_CAS_equipment_1_short:0 "Su-2A"
- SOV_cv_CAS_equipment_2:0 "Ilyushin Il-2A"
- SOV_cv_CAS_equipment_2_short:0 "Il-2A"
- SOV_cv_CAS_equipment_3:0 "Ilyushin IL-10A"
- SOV_cv_CAS_equipment_3_short:0 "IL-10A"
+ RUS_cv_CAS_equipment_1:0 "Sukhoi Su-2A"
+ RUS_cv_CAS_equipment_1_short:0 "Su-2A"
+ RUS_cv_CAS_equipment_2:0 "Ilyushin Il-2A"
+ RUS_cv_CAS_equipment_2_short:0 "Il-2A"
+ RUS_cv_CAS_equipment_3:0 "Ilyushin IL-10A"
+ RUS_cv_CAS_equipment_3_short:0 "IL-10A"
  
 #-> Light fighters <><>
- SOV_fighter_equipment_0:0 "Polikarpov I-15"
- SOV_fighter_equipment_0_short:0 "I-15"
- SOV_fighter_equipment_1:0 "Polikarpov I-16"
- SOV_fighter_equipment_1_short:0 "I-16"
- SOV_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3"
- SOV_fighter_equipment_2_short:0 "LaGG-3"
- SOV_fighter_equipment_3:0 "Yakolev Yak-3"
- SOV_fighter_equipment_3_short:0 "Yak-3"
+ RUS_fighter_equipment_0:0 "Polikarpov I-15"
+ RUS_fighter_equipment_0_short:0 "I-15"
+ RUS_fighter_equipment_1:0 "Polikarpov I-16"
+ RUS_fighter_equipment_1_short:0 "I-16"
+ RUS_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3"
+ RUS_fighter_equipment_2_short:0 "LaGG-3"
+ RUS_fighter_equipment_3:0 "Yakolev Yak-3"
+ RUS_fighter_equipment_3_short:0 "Yak-3"
  
 #-> Light fighter-bombers <><>
- SOV_fighter_bomber_equipment_2:0 "Gudkov K-37"
- SOV_fighter_bomber_equipment_2_short:0 "K-37"
- SOV_fighter_bomber_equipment_3:0 "Yakolev Yak-3K"
- SOV_fighter_bomber_equipment_3_short:0 "Yak-3K"
+ RUS_fighter_bomber_equipment_2:0 "Gudkov K-37"
+ RUS_fighter_bomber_equipment_2_short:0 "K-37"
+ RUS_fighter_bomber_equipment_3:0 "Yakolev Yak-3K"
+ RUS_fighter_bomber_equipment_3_short:0 "Yak-3K"
  
 #-> Carrier-based light fighters <><>
- SOV_cv_fighter_equipment_0:0 "Polikarpov I-15A"
- SOV_cv_fighter_equipment_0_short:0 "I-15A"
- SOV_cv_fighter_equipment_1:0 "Polikarpov I-16A"
- SOV_cv_fighter_equipment_1_short:0 "I-16A"
- SOV_cv_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3A"
- SOV_cv_fighter_equipment_2_short:0 "LaGG-3A"
- SOV_cv_fighter_equipment_3:0 "Yakolev Yak-3A"
- SOV_cv_fighter_equipment_3_short:0 "Yak-3A"
+ RUS_cv_fighter_equipment_0:0 "Polikarpov I-15A"
+ RUS_cv_fighter_equipment_0_short:0 "I-15A"
+ RUS_cv_fighter_equipment_1:0 "Polikarpov I-16A"
+ RUS_cv_fighter_equipment_1_short:0 "I-16A"
+ RUS_cv_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3A"
+ RUS_cv_fighter_equipment_2_short:0 "LaGG-3A"
+ RUS_cv_fighter_equipment_3:0 "Yakolev Yak-3A"
+ RUS_cv_fighter_equipment_3_short:0 "Yak-3A"
  
 #-> Torpedo bombers <><>
- SOV_nav_bomber_equipment_1:0 "Kochyerigin BSh-1"
- SOV_nav_bomber_equipment_1_short:0 "BSh-1"
- SOV_nav_bomber_equipment_2:0 "Kochyerigin LBSh"
- SOV_nav_bomber_equipment_2_short:0 "LBSh"
- SOV_nav_bomber_equipment_3:0 "Ilyushin Il-2T"
- SOV_nav_bomber_equipment_3_short:0 "Il-2T"
+ RUS_nav_bomber_equipment_1:0 "Kochyerigin BSh-1"
+ RUS_nav_bomber_equipment_1_short:0 "BSh-1"
+ RUS_nav_bomber_equipment_2:0 "Kochyerigin LBSh"
+ RUS_nav_bomber_equipment_2_short:0 "LBSh"
+ RUS_nav_bomber_equipment_3:0 "Ilyushin Il-2T"
+ RUS_nav_bomber_equipment_3_short:0 "Il-2T"
  
 #-> Carrier-based torpedo bombers <><>
- #SOV_cv_nav_bomber_equipment_1:0 "Ilyushin Il-4P"
- #SOV_cv_nav_bomber_equipment_1_short:0 "Il-4P"
- #SOV_cv_nav_bomber_equipment_2:0 "Tupolev ANT-62TP"
- #SOV_cv_nav_bomber_equipment_2_short:0 "ANT-62TP"
- #SOV_cv_nav_bomber_equipment_3:0 "Ilyushin Il-6P"
- #SOV_cv_nav_bomber_equipment_3_short:0 "Il-6P"
+ #RUS_cv_nav_bomber_equipment_1:0 "Ilyushin Il-4P"
+ #RUS_cv_nav_bomber_equipment_1_short:0 "Il-4P"
+ #RUS_cv_nav_bomber_equipment_2:0 "Tupolev ANT-62TP"
+ #RUS_cv_nav_bomber_equipment_2_short:0 "ANT-62TP"
+ #RUS_cv_nav_bomber_equipment_3:0 "Ilyushin Il-6P"
+ #RUS_cv_nav_bomber_equipment_3_short:0 "Il-6P"
  
 #-> Heavy fighters <><>
- SOV_heavy_fighter_equipment_1:0 "Petlyakov Pe-2"
- SOV_heavy_fighter_equipment_1_short:0 "Pe-2"
- SOV_heavy_fighter_equipment_2:0 "Petlyakov Pe-3"
- SOV_heavy_fighter_equipment_2_short:0 "Pe-3"
- SOV_heavy_fighter_equipment_3:0 "Polikarpov TIS"
- SOV_heavy_fighter_equipment_3_short:0 "TIS"
+ RUS_heavy_fighter_equipment_1:0 "Petlyakov Pe-2"
+ RUS_heavy_fighter_equipment_1_short:0 "Pe-2"
+ RUS_heavy_fighter_equipment_2:0 "Petlyakov Pe-3"
+ RUS_heavy_fighter_equipment_2_short:0 "Pe-3"
+ RUS_heavy_fighter_equipment_3:0 "Polikarpov TIS"
+ RUS_heavy_fighter_equipment_3_short:0 "TIS"
  
 #-> Heavy fighter-bomber <><>
- SOV_hfighter_bomber_equipment_1:0 "Petlyakov Pe-2M"
- SOV_hfighter_bomber_equipment_1_short:0 "Pe-2M"
- SOV_hfighter_bomber_equipment_2:0 "Petlyakov Pe-3M"
- SOV_hfighter_bomber_equipment_2_short:0 "Pe-3M"
- SOV_hfighter_bomber_equipment_3:0 "Polikarpov TIS-M"
- SOV_hfighter_bomber_equipment_3_short:0 "TIS-M"
+ RUS_hfighter_bomber_equipment_1:0 "Petlyakov Pe-2M"
+ RUS_hfighter_bomber_equipment_1_short:0 "Pe-2M"
+ RUS_hfighter_bomber_equipment_2:0 "Petlyakov Pe-3M"
+ RUS_hfighter_bomber_equipment_2_short:0 "Pe-3M"
+ RUS_hfighter_bomber_equipment_3:0 "Polikarpov TIS-M"
+ RUS_hfighter_bomber_equipment_3_short:0 "TIS-M"
  
 #-> Medium bomber <><>
- SOV_tac_bomber_equipment_0:0 "Ilyushin DB-3"
- SOV_tac_bomber_equipment_0_short:0 "DB-3"
- SOV_tac_bomber_equipment_1:0 "Tupolev SB-2M"
- SOV_tac_bomber_equipment_1_short:0 "SB-2M"
- SOV_tac_bomber_equipment_2:0 "Tupolev Tu-2"
- SOV_tac_bomber_equipment_2_short:0 "Tu-2"
- SOV_tac_bomber_equipment_3:0 "Tupolev Tu-8"
- SOV_tac_bomber_equipment_3_short:0 "Tu-8"
+ RUS_tac_bomber_equipment_0:0 "Ilyushin DB-3"
+ RUS_tac_bomber_equipment_0_short:0 "DB-3"
+ RUS_tac_bomber_equipment_1:0 "Tupolev SB-2M"
+ RUS_tac_bomber_equipment_1_short:0 "SB-2M"
+ RUS_tac_bomber_equipment_2:0 "Tupolev Tu-2"
+ RUS_tac_bomber_equipment_2_short:0 "Tu-2"
+ RUS_tac_bomber_equipment_3:0 "Tupolev Tu-8"
+ RUS_tac_bomber_equipment_3_short:0 "Tu-8"
  
 #-> Medium maritime bomber <><>
- SOV_med_maritime_equipment_1:0 "Tupolev SB-2F"
- SOV_med_maritime_equipment_1_short:0 "SB-2F"
- SOV_med_maritime_equipment_2:0 "Tupolev Tu-2F"
- SOV_med_maritime_equipment_2_short:0 "Tu-2F"
- SOV_med_maritime_equipment_3:0 "Tupolev Tu-8F"
- SOV_med_maritime_equipment_3_short:0 "Tu-8F"
+ RUS_med_maritime_equipment_1:0 "Tupolev SB-2F"
+ RUS_med_maritime_equipment_1_short:0 "SB-2F"
+ RUS_med_maritime_equipment_2:0 "Tupolev Tu-2F"
+ RUS_med_maritime_equipment_2_short:0 "Tu-2F"
+ RUS_med_maritime_equipment_3:0 "Tupolev Tu-8F"
+ RUS_med_maritime_equipment_3_short:0 "Tu-8F"
  
 #-> Heavy bomber <><>
- SOV_strat_bomber_equipment_1:0 "Petlyakov Pe-8"
- SOV_strat_bomber_equipment_1_short:0 "Pe-8"
- SOV_strat_bomber_equipment_2:0 "Yermolayev Yer-2"
- SOV_strat_bomber_equipment_2_short:0 "Yer-2"
- SOV_strat_bomber_equipment_3:0 "Tupolev Tu-4"
- SOV_strat_bomber_equipment_3_short:0 "Tu-4"
+ RUS_strat_bomber_equipment_1:0 "Petlyakov Pe-8"
+ RUS_strat_bomber_equipment_1_short:0 "Pe-8"
+ RUS_strat_bomber_equipment_2:0 "Yermolayev Yer-2"
+ RUS_strat_bomber_equipment_2_short:0 "Yer-2"
+ RUS_strat_bomber_equipment_3:0 "Tupolev Tu-4"
+ RUS_strat_bomber_equipment_3_short:0 "Tu-4"
  
 #-> Heavy maritime bomber <><>
- SOV_strat_maritime_equipment_1:0 "Petlyakov Pe-8F"
- SOV_strat_maritime_equipment_1_short:0 "Pe-8F"
- SOV_strat_maritime_equipment_2:0 "Yermolayev Yer-2F"
- SOV_strat_maritime_equipment_2_short:0 "Yer-2F"
- SOV_strat_maritime_equipment_3:0 "Tupolev Tu-4F"
- SOV_strat_maritime_equipment_3_short:0 "Tu-4F"
+ RUS_strat_maritime_equipment_1:0 "Petlyakov Pe-8F"
+ RUS_strat_maritime_equipment_1_short:0 "Pe-8F"
+ RUS_strat_maritime_equipment_2:0 "Yermolayev Yer-2F"
+ RUS_strat_maritime_equipment_2_short:0 "Yer-2F"
+ RUS_strat_maritime_equipment_3:0 "Tupolev Tu-4F"
+ RUS_strat_maritime_equipment_3_short:0 "Tu-4F"
  
 #-> Maritime patrol <><>
- #SOV_flying_boat_equipment_0: "Beriev MBR-2"
- #SOV_flying_boat_equipment_0_short: "MBR-2"
- SOV_flying_boat_equipment_1:0 "Ilyushin Il-4"
- SOV_flying_boat_equipment_1_short:0 "Il-4"
- SOV_flying_boat_equipment_2:0 "Tupolev ANT-62T"
- SOV_flying_boat_equipment_2_short:0 "ANT-62T"
- SOV_flying_boat_equipment_3:0 "Ilyushin Il-6"
- SOV_flying_boat_equipment_3_short:0 "Il-6"
+ #RUS_flying_boat_equipment_0: "Beriev MBR-2"
+ #RUS_flying_boat_equipment_0_short: "MBR-2"
+ RUS_flying_boat_equipment_1:0 "Ilyushin Il-4"
+ RUS_flying_boat_equipment_1_short:0 "Il-4"
+ RUS_flying_boat_equipment_2:0 "Tupolev ANT-62T"
+ RUS_flying_boat_equipment_2_short:0 "ANT-62T"
+ RUS_flying_boat_equipment_3:0 "Ilyushin Il-6"
+ RUS_flying_boat_equipment_3_short:0 "Il-6"
  
 #-> Rocket interceptor <><>
- SOV_rocket_interceptor_equipment_1:0 "Bereznyak-Isayev BI-1"
- SOV_rocket_interceptor_equipment_1_short:0 "BI-1" 
- SOV_rocket_interceptor_equipment_2:0 "Polikarpov Malyutka"
- SOV_rocket_interceptor_equipment_2_short:0 "Malyutka"
- SOV_rocket_interceptor_equipment_3:0 "Mikoyan-Guerevich I-270"
- SOV_rocket_interceptor_equipment_3_short:0 "I-270"
+ RUS_rocket_interceptor_equipment_1:0 "Bereznyak-Isayev BI-1"
+ RUS_rocket_interceptor_equipment_1_short:0 "BI-1" 
+ RUS_rocket_interceptor_equipment_2:0 "Polikarpov Malyutka"
+ RUS_rocket_interceptor_equipment_2_short:0 "Malyutka"
+ RUS_rocket_interceptor_equipment_3:0 "Mikoyan-Guerevich I-270"
+ RUS_rocket_interceptor_equipment_3_short:0 "I-270"
  
 #-> Jet fighters <><>
- SOV_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9"
- SOV_jet_fighter_equipment_1_short:0 "MiG-9"
- SOV_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15"
- SOV_jet_fighter_equipment_2_short:0 "MiG-15"
- SOV_jet_fighter_equipment_x:0 "Mikoyan-Guerevich MiG-19"
- SOV_jet_fighter_equipment_x_short:0 "MiG-19"
+ RUS_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9"
+ RUS_jet_fighter_equipment_1_short:0 "MiG-9"
+ RUS_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15"
+ RUS_jet_fighter_equipment_2_short:0 "MiG-15"
+ RUS_jet_fighter_equipment_x:0 "Mikoyan-Guerevich MiG-19"
+ RUS_jet_fighter_equipment_x_short:0 "MiG-19"
  
 #-> Carrier-based jet fighters <><>
- SOV_cv_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9A"
- SOV_cv_jet_fighter_equipment_1_short:0 "MiG-9A"
- SOV_cv_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15A"
- SOV_cv_jet_fighter_equipment_2_short:0 "MiG-15A"
- SOV_cv_jet_fighter_equipment_x:0 "Mikoyan-Guerevich MiG-19A"
- SOV_cv_jet_fighter_equipment_x_short:0 "MiG-19A" 
+ RUS_cv_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9A"
+ RUS_cv_jet_fighter_equipment_1_short:0 "MiG-9A"
+ RUS_cv_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15A"
+ RUS_cv_jet_fighter_equipment_2_short:0 "MiG-15A"
+ RUS_cv_jet_fighter_equipment_x:0 "Mikoyan-Guerevich MiG-19A"
+ RUS_cv_jet_fighter_equipment_x_short:0 "MiG-19A" 
  
 #-> Jet medium bomber <><>
- SOV_jet_tac_bomber_equipment_1:0 "Ilyushin Il-28"
- SOV_jet_tac_bomber_equipment_1_short:0 "Il-28"
- SOV_jet_tac_bomber_equipment_2:0 "Tupolev Tu-16"
- SOV_jet_tac_bomber_equipment_2_short:0 "Tu-16"
+ RUS_jet_tac_bomber_equipment_1:0 "Ilyushin Il-28"
+ RUS_jet_tac_bomber_equipment_1_short:0 "Il-28"
+ RUS_jet_tac_bomber_equipment_2:0 "Tupolev Tu-16"
+ RUS_jet_tac_bomber_equipment_2_short:0 "Tu-16"
  
 #-> Jet heavy bomber <><>
- SOV_jet_strat_bomber_equipment_1:0 "Myasishchev M-4"
- SOV_jet_strat_bomber_equipment_1_short:0 "M-4"
+ RUS_jet_strat_bomber_equipment_1:0 "Myasishchev M-4"
+ RUS_jet_strat_bomber_equipment_1_short:0 "M-4"
 
 
 ###--->  MON  <><> <><> <><>
@@ -9907,8 +9907,8 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
  SWE_hfighter_bomber_equipment_1_short:0 "B/J 26"
  SWE_hfighter_bomber_equipment_2:0 "SAAB B/J 23"
  SWE_hfighter_bomber_equipment_2_short:0 "B/J 23"
- SWE_hfighter_bomber_equipment_2:0 "SAAB B/J 24"
- SWE_hfighter_bomber_equipment_2_short:0 "B/J 24"
+ SWE_hfighter_bomber_equipment_3:0 "SAAB B/J 24"
+ SWE_hfighter_bomber_equipment_3_short:0 "B/J 24"
  
 #-> Medium bomber <><>
  SWE_tac_bomber_equipment_0:0 "SAAB B1/2"

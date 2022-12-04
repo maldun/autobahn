@@ -460,6 +460,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_rocket_launcher
+			rocket_rails
 		}
 
 		path = {
@@ -486,7 +487,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -529,7 +530,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -572,7 +573,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -622,7 +623,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -647,7 +648,7 @@ technologies = {
 		}
 
 		enable_building = {
-			building = anti_air
+			building = anti_air_building	#was misspelled
 			level = 5
 		}
 		
@@ -980,6 +981,8 @@ technologies = {
 		enable_equipment_modules = {
 			tank_high_velocity_cannon
 			tank_heavy_cannon
+			tank_medium_cannon
+			tank_buster_1
 		}
 		path = {
 			leads_to_tech = antitank1
@@ -1015,7 +1018,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1090,7 +1093,6 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_medium_cannon
 			squeezebore_adaptor
 		}
 		path = {
@@ -1124,7 +1126,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1159,7 +1161,9 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_2
+			tank_medium_cannon_2
 			tank_heavy_cannon_2
+			tank_buster_2
 		}
 		#anti_tank = {
 		#	hard_attack = 0.1
@@ -1195,7 +1199,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1295,7 +1299,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1389,7 +1393,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1463,7 +1467,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1556,7 +1560,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1645,7 +1649,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1710,7 +1714,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1799,7 +1803,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1884,7 +1888,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}

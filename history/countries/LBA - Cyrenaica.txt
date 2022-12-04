@@ -17,7 +17,7 @@ add_ideas = {
     LBA_ottoman_naval_penetration
     isolation
     limited_exports
-    extensive_conscription
+    limited_conscription
     
 }
 1009 = {

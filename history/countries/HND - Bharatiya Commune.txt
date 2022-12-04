@@ -131,18 +131,6 @@ country_event = {
 }
 add_ai_strategy = {
     type = ignore_claim
-    id = "PRF"
-    value = 1
-    
-}
-add_ai_strategy = {
-    type = ignore_claim
-    id = "RAJ"
-    value = 1
-    
-}
-add_ai_strategy = {
-    type = ignore_claim
     id = "POR"
     value = 1
     

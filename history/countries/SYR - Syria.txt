@@ -68,6 +68,10 @@ add_ideas = {
     partial_economic_mobilisation
     
 }
+680 = {
+    force_enable_resistance = SYR
+    
+}
 recruit_character = SYR_akram_al_hourani
 recruit_character = SYR_khalid_bakdash
 recruit_character = SYR_said_al_jazairi

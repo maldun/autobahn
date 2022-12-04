@@ -13,6 +13,7 @@ set_technology = {
     tech_support = 1
     tech_engineers = 1
     tech_recon = 1
+    gw_artillery = 1
     fuel_silos = 1
     fuel_refining = 1
     camo = 1
@@ -157,13 +158,7 @@ country_event = {
 }
 add_ai_strategy = {
     type = ignore_claim
-    id = "HND"
-    value = 1
-    
-}
-add_ai_strategy = {
-    type = ignore_claim
-    id = "RAJ"
+    id = "POR"
     value = 1
     
 }

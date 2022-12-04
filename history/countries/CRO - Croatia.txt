@@ -167,6 +167,8 @@ set_popularities = {
 }
 recruit_character = CRO_stjepan_radic
 recruit_character = CRO_ivo_pillar
+recruit_character = CRO_vitomir_korac
+recruit_character = CRO_vladimir_copic
 recruit_character = CRO_slavko_kvaternik
 recruit_character = CRO_mihajlo_lukic
 recruit_character = CRO_fedor_dragojlov

@@ -983,7 +983,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = GER
-					tag = SOV
+					tag = RUS
 					tag = ENG
 				}
 				factor = 3
@@ -1027,7 +1027,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = GER
-					tag = SOV
+					tag = RUS
 					tag = ENG
 				}
 				factor = 3

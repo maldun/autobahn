@@ -90,7 +90,6 @@ GER = {
     }
     
 }
-add_to_tech_sharing_group = german_research
 set_politics = {
     ruling_party = market_liberal
     last_election = "1934.5.18"
@@ -228,15 +227,15 @@ set_variable = {
     
 }
 set_variable = {
-    POL_royal_influence = 40
+    POL_royal_influence = 45
     
 }
 set_variable = {
-    POL_soc_influence = 20
+    POL_soc_influence = 10
     
 }
 set_variable = {
-    POL_rep_influence = 25
+    POL_rep_influence = 30
     
 }
 set_variable = {

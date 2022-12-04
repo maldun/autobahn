@@ -18,12 +18,15 @@ KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426
 RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/1956_beta/"
 
 # Set for mod in question
+
 KX = False
 
 OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_diff"
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
 IDEA_PATH = "common/ideas"
+INTERFACE_PATH = "interface"
+SCRIPTED_EFFECTS_PATH = "common/scripted_effects"
 HISTORY_COUNTRY_PATH = "history/countries"
 DECISION_PATH = "common/decisions"
 # RULES_PATH = 
@@ -319,11 +322,24 @@ if __name__ == "__main__":
     #for func in update_keys:
     #    rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
 
+    rt56_update.update_infantry(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_air(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_tanks(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_navy(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_civ(RT56_FOLDER, OUT_FOLDER)
     rt56_update.update_post_steps(RT56_FOLDER, OUT_FOLDER)
+
+    # some simple post hacks
+    # Change SOV --> RUS
+    rt56_update.replace_string('SOV', 'RUS', OUT_FOLDER)
+    # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
+    rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
+
+    if KX is True:
+        import kx_patches as patches  
+    else:
+        import kr_patches as patches
+    patches.patch(MAIN_MOD, OUT_FOLDER)
     
     # add missing spirits    
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
@@ -337,6 +353,4 @@ if __name__ == "__main__":
     maps = remove_obsolete_equipment_maps()
     country_maps = apply_equipment_table("KX_equipment.csv" if KX is True else "equipment.csv")
     apply_equipment_maps(maps, country_maps)
-    
-   
     

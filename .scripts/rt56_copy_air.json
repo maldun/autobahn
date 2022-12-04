@@ -13,10 +13,12 @@
     "r56e_hfighter_bomber.txt": [],
     "r56e_medium_maritime.txt": [],
     "plane_airframes.txt": [],
+    "r56e_flying_boat.txt": [],
     "single_engine_airframe.txt": [],
     "twin_engine_airframe.txt": [],
     "quad_engine_airframe.txt": [],
-    "x_plane_airframes.txt": []
+    "x_plane_airframes.txt": [],
+    "guided_missiles.txt": []
     
   },
     "common/units/equipment/upgrades/": {

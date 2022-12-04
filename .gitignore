@@ -2,3 +2,4 @@
 *~
 \#*
 .\#*
+.scripts/__pycache__/*

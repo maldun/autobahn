@@ -25,6 +25,8 @@ OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/auto
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
 IDEA_PATH = "common/ideas"
+INTERFACE_PATH = "interface"
+SCRIPTED_EFFECTS_PATH = "common/scripted_effects"
 HISTORY_COUNTRY_PATH = "history/countries"
 DECISION_PATH = "common/decisions"
 # RULES_PATH = 

@@ -2,7 +2,8 @@ capital = 41
 oob = "SPA"
 set_naval_oob = "SPA_naval"
 set_research_slots = 3
-set_war_support = 0
+set_stability = 0.6
+add_war_support = 0.5
 set_convoys = 150
 set_cosmetic_tag = SPA_kingdom
 set_technology = {
@@ -99,6 +100,8 @@ create_dynamic_country = {
     set_country_flag = SPA_is_socialist_spain
     set_cosmetic_tag = SPA_socialist
     load_focus_tree = SWF_focus
+    set_stability = 0.6
+    add_war_support = 0.5
     set_politics = {
         ruling_party = syndicalist
         
@@ -194,6 +197,7 @@ create_dynamic_country = {
     recruit_character = SWF_pavel_batov
     recruit_character = SWF_joaquin_ascaso_budria
     SPA_naval_variants = yes
+    SPA_create_templates = yes
     reserve_dynamic_country = yes
     set_country_flag = reserved_dynamic_tag
     
@@ -203,6 +207,8 @@ create_dynamic_country = {
     set_country_flag = SPA_is_carlist_spain
     set_cosmetic_tag = SPA_carlists
     load_focus_tree = SPR_focus
+    set_stability = 0.6
+    add_war_support = 0.5
     set_politics = {
         ruling_party = paternal_autocrat
         
@@ -270,6 +276,7 @@ create_dynamic_country = {
     recruit_character = SPR_juan_vigon_suero_diaz
     recruit_character = SPR_jose_enrique_varela
     SPA_naval_variants = yes
+    SPA_create_templates = yes
     reserve_dynamic_country = yes
     set_country_flag = reserved_dynamic_tag
     

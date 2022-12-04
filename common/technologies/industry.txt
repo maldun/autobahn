@@ -1227,7 +1227,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = USA
-					tag = SOV
+					tag = RUS
 				}
 				has_war = yes
 				factor = 5				
@@ -2273,7 +2273,7 @@ technologies = {
 					original_tag = GER
 					original_tag = ITA
 					original_tag = USA
-					original_tag = SOV
+					original_tag = RUS
 					rubber < 1
 				}
 				
@@ -2336,7 +2336,7 @@ technologies = {
 					original_tag = GER
 					original_tag = ITA
 					original_tag = USA
-					original_tag = SOV
+					original_tag = RUS
 					rubber < 1
 				}
 				
@@ -2397,7 +2397,7 @@ technologies = {
 					original_tag = GER
 					original_tag = ITA
 					original_tag = USA
-					original_tag = SOV
+					original_tag = RUS
 					rubber < 1
 				}
 				
@@ -2453,7 +2453,7 @@ technologies = {
 					original_tag = GER
 					original_tag = ITA
 					original_tag = USA
-					original_tag = SOV
+					original_tag = RUS
 					rubber < 1
 				}
 				

@@ -114,7 +114,6 @@ country_event = {
     days = 1
     
 }
-set_country_flag = SQI_needed
 recruit_character = SQI_fu_sinian
 recruit_character = SQI_zhang_shulin
 recruit_character = SQI_ma_shiwei

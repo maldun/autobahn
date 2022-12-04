@@ -409,6 +409,21 @@ country_event = {
     
 }
 country_event = {
+    id = nfa.394
+    days = 150
+    
+}
+country_event = {
+    id = nfa.396
+    days = 227
+    
+}
+country_event = {
+    id = nfa.398
+    days = 237
+    
+}
+country_event = {
     id = nfa.503
     days = 300
     

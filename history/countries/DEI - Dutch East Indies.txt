@@ -205,6 +205,12 @@ country_event = {
     
 }
 country_event = {
+    id = dei.13
+    days = 731
+    random_days = 88
+    
+}
+country_event = {
     id = dei_flavor.11
     days = 16
     

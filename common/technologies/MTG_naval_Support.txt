@@ -1508,7 +1508,7 @@ technologies = {
 					tag = GER
 					tag = USA
 					tag = ENG
-					tag = SOV
+					tag = RUS
 				}
 				factor = 6
 			}
@@ -1556,7 +1556,7 @@ technologies = {
 					tag = GER
 					tag = USA
 					tag = ENG
-					tag = SOV
+					tag = RUS
 				}
 				factor = 6
 			}
@@ -1592,7 +1592,7 @@ technologies = {
 					tag = GER
 					tag = USA
 					tag = ENG
-					tag = SOV
+					tag = RUS
 				}
 				factor = 6
 			}
@@ -1637,7 +1637,7 @@ technologies = {
 					tag = GER
 					tag = USA
 					tag = ENG
-					tag = SOV
+					tag = RUS
 				}
 				factor = 6
 			}
@@ -1678,7 +1678,7 @@ technologies = {
 					tag = GER
 					tag = USA
 					tag = ENG
-					tag = SOV
+					tag = RUS
 				}
 				factor = 5
 			}
@@ -2033,7 +2033,7 @@ technologies = {
 					tag = USA
 				}
 				has_war_with = GER
-				GER = { has_war_with = SOV }
+				GER = { has_war_with = RUS }
 			}
 		}
 

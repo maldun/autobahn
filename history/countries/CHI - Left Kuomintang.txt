@@ -205,7 +205,7 @@ country_event = {
 }
 country_event = {
     id = chi_flavor.4
-    days = 1411
+    days = 1777
     
 }
 country_event = {
@@ -245,18 +245,18 @@ recruit_character = CHI_ye_ting
 recruit_character = CHI_lin_biao
 recruit_character = CHI_wang_yaowu
 recruit_character = CHI_xu_xiangqian
-recruit_character = CHI_zhang_yunyi
 recruit_character = CHI_chiang_wei_kuo
 recruit_character = CHI_hu_zongnan
 recruit_character = CHI_du_yuming
 recruit_character = CHI_dai_anlan
 recruit_character = CHI_he_zhonghan
+recruit_character = CHI_zhang_zhizhong
 recruit_character = CHI_li_zhilong
 recruit_character = CHI_chen_shaokuan
 recruit_character = CHI_liao_zhongkai
 recruit_character = CHI_chen_gongbo
 recruit_character = CHI_zhou_enlai
-recruit_character = CHI_tv_song
+recruit_character = CHI_song_ziwen
 recruit_character = CHI_gu_mengyu
 recruit_character = CHI_chen_bijun
 recruit_character = CHI_zhou_fohai

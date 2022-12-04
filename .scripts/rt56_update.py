@@ -12,6 +12,17 @@ from Hoi4Converter.mappings import *
 from Hoi4Converter.converter import *
 
 
+def replace_string(str1, str2, out_dir):
+    for subdir, dirs, files in os.walk(out_dir):
+        for file in files:
+            fname = os.path.join(out_dir, subdir, file)
+            if '~' in fname:
+                continue
+            with open(fname, 'r+', encoding='utf-8') as fp:
+                txt = fp.read()
+                fp.seek(0)
+                fp.write(txt.replace(str1, str2))
+
 def copy_json(json_file, rt56_path, out_path):
     with open(json_file, 'r') as fp:
         dic = json.load(fp)
@@ -40,6 +51,10 @@ def copy_files(fname):
     return cdecorator
 
 
+@copy_files("rt56_copy_infantry.json")
+def update_infantry(rt56_path, out_path):
+    pass
+
 @copy_files("rt56_copy_air.json")
 def update_air(rt56_path, out_path):
     pass
@@ -63,3 +78,5 @@ def update_civ(rt56_path, out_path):
 @copy_files("rt56_copy_post.json")
 def update_post_steps(rt56_path, out_path):
     pass
+
+

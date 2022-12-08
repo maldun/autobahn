@@ -11,6 +11,9 @@ import Hoi4Converter
 from Hoi4Converter.mappings import *
 from Hoi4Converter.converter import *
 
+TECHNOLOGY_PATH = "common/technologies"
+AI_KEY = "ai_will_do"
+TECHNOLOGY_KEY = "technologies"
 
 def replace_string(str1, str2, out_dir):
     for subdir, dirs, files in os.walk(out_dir):
@@ -23,9 +26,51 @@ def replace_string(str1, str2, out_dir):
                 fp.seek(0)
                 fp.write(txt.replace(str1, str2))
 
-def patch_nonMTG_navy(rt56_path, out_path):
-    pass
-                
+
+def patch_nonMTG_navy(mod_path, r56_path, out_path):
+    navy_file = os.path.join(TECHNOLOGY_PATH, "naval.txt")
+    org_file = os.path.join(mod_path, navy_file)
+    r56_file = os.path.join(r56_path, navy_file)
+    out_file = os.path.join(out_path, navy_file)
+    # make temp file and replace descriptors
+    sm = "semi_modern_"
+    esm = "etat_semi_modern_"
+    adv = "advanced_"
+    with open(r56_file, 'r') as r56_fp:
+        r56_text = r56_fp.read()
+        r56_text = r56_text.replace(sm, esm)
+        with open(out_file, 'w') as tmp_fp:
+            tmp_fp.write(r56_text)
+    
+    def get_obj_and_tech_map(file):
+        obj = paradox2list(file)
+        # Get techs
+        inds = [0,1]
+        techs = get_object_from_inds(obj, inds)
+        tech_map = {tech[0]: k for k, tech in enumerate(techs)}
+        return obj, tech_map, techs
+    
+    org_obj, org_tech_map, org_techs = get_obj_and_tech_map(org_file)
+    r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
+
+    # get ai settings from main mod
+    for tech_key, ind in org_tech_map.items():
+        found, inds = has_key.search(org_techs[ind], AI_KEY)
+        mapping = [[has_key, AI_KEY], [replace, [found]]]
+        tech_r56 = r56_techs[r56_tech_map[tech_key]]
+        
+        r56_techs[r56_tech_map[tech_key]] = apply_map(tech_r56, mapping)
+        if tech_key.startswith(adv):
+            sm_tech_key = esm + tech_key[len(adv):]
+            sm_tech = r56_techs[r56_tech_map[sm_tech_key]]
+            r56_techs[r56_tech_map[sm_tech_key]] = apply_map(sm_tech, mapping)
+        
+    # set_new_object and file
+    with open(out_file, 'w') as fp:
+        new_obj = [[TECHNOLOGY_KEY,r56_techs]]
+        fp.write(list2paradox(new_obj))
+
+
 def copy_json(json_file, rt56_path, out_path):
     with open(json_file, 'r') as fp:
         dic = json.load(fp)
@@ -83,7 +128,7 @@ def update_post_steps(rt56_path, out_path):
     pass
 
 
-def update(rt56_path, out_path):
+def copy_update(rt56_path, out_path):
     update_infantry(rt56_path, out_path)
     update_air(rt56_path, out_path)
     update_tanks(rt56_path, out_path)

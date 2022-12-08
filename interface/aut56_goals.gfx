@@ -1,0 +1,15 @@
+#####-----> (original) Mod by Sig "GreatExperiment" Altre
+####-----> Reduced to only necessary gfx for autobahn
+spriteTypes = {
+
+###------> Unique continuous icons <><> <><> <><> <><> <><>
+
+	SpriteType = {
+		name = "GFX_focus_continuous_extraction"
+		texturefile = "gfx/interface/goals/generic/r56_goal_continuous_extraction.dds"
+	} 
+	SpriteType = {
+		name = "GFX_goal_SLO_slovak_birth"
+		texturefile = "gfx/interface/goals/slo/r56_goal_SLO_slovak_birth.dds"
+	}
+}

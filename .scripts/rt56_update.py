@@ -23,6 +23,9 @@ def replace_string(str1, str2, out_dir):
                 fp.seek(0)
                 fp.write(txt.replace(str1, str2))
 
+def patch_nonMTG_navy(rt56_path, out_path):
+    pass
+                
 def copy_json(json_file, rt56_path, out_path):
     with open(json_file, 'r') as fp:
         dic = json.load(fp)
@@ -80,3 +83,10 @@ def update_post_steps(rt56_path, out_path):
     pass
 
 
+def update(rt56_path, out_path):
+    update_infantry(rt56_path, out_path)
+    update_air(rt56_path, out_path)
+    update_tanks(rt56_path, out_path)
+    update_navy(rt56_path, out_path)
+    update_civ(rt56_path, out_path)
+    update_post_steps(rt56_path, out_path)

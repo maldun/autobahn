@@ -138,3 +138,28 @@ air_snippets += ["""
 air_patches += ['']
 air_snippets += [air_snippets[-1].replace('2','3')]
 air_patches += ['']
+
+#######################################################################
+# Patches for Armor tech                                              #
+#######################################################################
+
+tank_snippets = []
+tank_patches = []
+tank_snippets += ["""
+                 modifier = {
+				factor = 20
+				tag = BEL 
+				has_completed_focus = tblra_light_tank_destroyers
+			}
+                  """]
+tank_patches += ['']
+
+tank_snippets += ["""
+                   OR = {
+		          original_tag = USA
+			  original_tag = JAP
+			 }
+                  """]
+tank_patches += ["""
+                  OR = { original_tag = JAP }
+                """]

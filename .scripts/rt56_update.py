@@ -254,14 +254,24 @@ def patch_rt56_vehicles(mod_path, out_path):
     """
     patch_code(out_file, snippet2, snippet2.replace('1940', '1939'))
 
-
+def multi_patch(obj, snippets, patches):
+    for snippet, patch in zip(snippets, patches):
+        obj = patch_object(obj, snippet, patch)
+    return obj
+    
+    
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "air_techs.txt"))
 def patch_air(self, r56_techs):
     snippets = rt56_patches.air_snippets
     patches = rt56_patches.air_patches
-    for snippet, patch in zip(snippets, patches):
-        r56_techs = patch_object(r56_techs, snippet, patch)
-    
+    r56_techs = multi_patch(r56_techs, snippets, patches)
+    return r56_techs
+
+@carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "armor.txt"))
+def patch_armor(self, r56_techs):
+    snippets = rt56_patches.tank_snippets
+    patches = rt56_patches.tank_patches
+    r56_techs = multi_patch(r56_techs, snippets, patches)
     return r56_techs
 
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "bba_air_techs.txt"))
@@ -272,6 +282,7 @@ def patch_bba_air(self, r56_techs):
 def patch_ai(mod_path, r56_path, kr_path, out_path):
     patch_air(mod_path, out_path)
     patch_artillery(mod_path, out_path)
+    patch_armor(mod_path, out_path)
     patch_nonMTG_navy(mod_path, r56_path, out_path)
     patch_rt56_vehicles(mod_path, out_path)
     

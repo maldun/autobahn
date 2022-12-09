@@ -166,7 +166,7 @@ tank_patches += ["""
 
 
 #######################################################################
-# Patches for MTG NAval tech                                          #
+# Patches for MTG Naval tech                                          #
 #######################################################################
 
 mtg_naval_snippets = []
@@ -202,3 +202,61 @@ mtg_naval_snippets += ["tag = HOL"]
 mtg_naval_patches += ["tag = GEA"]
 mtg_naval_snippets += ["has_War_with = USA"]
 mtg_naval_patches += ["has_War_with = JAP"]
+
+#######################################################################
+# Patches for MTG Naval support tech                                  #
+#######################################################################
+mtg_support_snippets = []
+mtg_support_patches = []
+
+mtg_support_snippets += ["""
+                        OR = {
+				tag = ENG
+				tag = USA
+				tag = JAP
+				}"""]
+mtg_support_patches += ["is_major = yes"]
+mtg_support_snippets +=["""
+                        OR = {
+				tag = JAP
+				tag = USA
+				tag = GER
+				}"""]
+mtg_support_patches += ["is_major = yes"]
+mtg_support_snippets += ["""
+                        ai_will_do = {
+			factor = 3
+			modifier = {
+				is_historical_focus_on = yes
+				tag = JAP
+				factor = 0.25
+			}
+			modifier = {
+				tag = USA
+				factor = 3
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		        }"""]
+mtg_support_patches += ["""
+                        ai_will_do = {
+			factor = 3
+			modifier = {
+				has_war = yes
+				factor = 2
+			     }
+		        }"""]
+mtg_support_snippets += ["""
+                       OR = {
+				tag = GER
+				tag = USA
+				tag = ENG
+				tag = RUS
+				}
+                       """]
+mtg_support_patches += ["is_major = yes"]
+# Replace Rest USA entries with GEA
+mtg_support_snippets += ["tag = USA"]
+mtg_support_patches += ["tag = GEA"]

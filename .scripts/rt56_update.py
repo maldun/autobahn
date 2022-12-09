@@ -204,18 +204,6 @@ def patch_nonMTG_navy(mod_path, r56_path, out_path):
         return r56_techs
     navy_post(mod_path, out_path)
 
-
-def patch_mtg_navy(mod_path, out_path):
-    navy_file = os.path.join(TECHNOLOGY_PATH, "MTG_naval.txt")
-    out_file = os.path.join(out_path, navy_file)
-    r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
-    snippets = rt56_patches.mtg_naval_snippets
-    patches = rt56_patches.mtg_naval_patches
-    r56_techs = multi_patch(r56_techs, snippets, patches)
-    with open(out_file, 'w') as fp:
-        new_obj = [[TECHNOLOGY_KEY, r56_techs]]
-        fp.write(list2paradox(new_obj))
-    return
     
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "artillery.txt"))
 def patch_artillery(self, r56_techs):
@@ -267,7 +255,32 @@ def multi_patch(obj, snippets, patches):
     for snippet, patch in zip(snippets, patches):
         obj = patch_object(obj, snippet, patch)
     return obj
-    
+
+
+def patch_mtg_navy(out_path):
+    navy_file = os.path.join(TECHNOLOGY_PATH, "MTG_naval.txt")
+    out_file = os.path.join(out_path, navy_file)
+    r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
+    snippets = rt56_patches.mtg_naval_snippets
+    patches = rt56_patches.mtg_naval_patches
+    r56_techs = multi_patch(r56_techs, snippets, patches)
+    with open(out_file, 'w') as fp:
+        new_obj = [[TECHNOLOGY_KEY, r56_techs]]
+        fp.write(list2paradox(new_obj))
+    return
+
+def patch_mtg_support(out_path):
+    navy_file = os.path.join(TECHNOLOGY_PATH, "MTG_naval_Support.txt")
+    out_file = os.path.join(out_path, navy_file)
+    r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
+    snippets = rt56_patches.mtg_support_snippets
+    patches = rt56_patches.mtg_support_patches
+    r56_techs = multi_patch(r56_techs, snippets, patches)
+    with open(out_file, 'w') as fp:
+        new_obj = [[TECHNOLOGY_KEY, r56_techs]]
+        fp.write(list2paradox(new_obj))
+    return
+
     
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "air_techs.txt"))
 def patch_air(self, r56_techs):
@@ -288,16 +301,18 @@ def patch_bba_air(self, r56_techs):
     pass
 
 
-
-
 def patch_ai(mod_path, r56_path, kr_path, out_path):
     patch_air(mod_path, out_path)
     patch_artillery(mod_path, out_path)
     patch_armor(mod_path, out_path)
-    patch_nonMTG_navy(mod_path, r56_path, out_path)
+    
     patch_rt56_vehicles(mod_path, out_path)
     
     # Use KR tech for these
     patch_bba_air(kr_path, out_path)
-    patch_mtg_navy(kr_path, out_path)
+    patch_nonMTG_navy(kr_path, r56_path, out_path)
+
+    # Custom AI settings
+    patch_mtg_navy(out_path)
+    patch_mtg_support(out_path)
     

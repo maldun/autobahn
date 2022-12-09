@@ -163,3 +163,42 @@ tank_snippets += ["""
 tank_patches += ["""
                   OR = { original_tag = JAP }
                 """]
+
+
+#######################################################################
+# Patches for MTG NAval tech                                          #
+#######################################################################
+
+mtg_naval_snippets = []
+mtg_naval_patches = []
+mtg_naval_snippets += ["""
+                       OR = { tag = GER
+			      tag = USA
+			    }
+                       """]
+mtg_naval_patches += ["""
+                      OR = { tag = GER
+			      tag = GEA
+			    }
+                      """]
+mtg_naval_snippets += ["""
+                      OR = { tag = ENG
+			     tag = JAP
+			     tag = USA }
+                      """]
+mtg_naval_patches += ["is_major = yes"]
+mtg_naval_snippets += ["""
+                      OR = { original_tag = ENG
+			     original_tag = JAP
+			     original_tag = USA }
+                      """]
+mtg_naval_patches += ["is_major = yes"]
+mtg_naval_snippets += ["""
+                      OR = { tag = ENG
+			     tag = USA }
+                      """]
+mtg_naval_patches += ["is_major = yes"]
+mtg_naval_snippets += ["tag = HOL"]
+mtg_naval_patches += ["tag = GEA"]
+mtg_naval_snippets += ["has_War_with = USA"]
+mtg_naval_patches += ["has_War_with = JAP"]

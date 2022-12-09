@@ -323,13 +323,14 @@ if __name__ == "__main__":
     #    rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
 
     rt56_update.copy_update(RT56_FOLDER, OUT_FOLDER)
-    rt56_update.patch_ai(MAIN_MOD, RT56_FOLDER, OUT_FOLDER)
-
     # some simple post hacks
     # Change SOV --> RUS
     rt56_update.replace_string('SOV', 'RUS', OUT_FOLDER)
     # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
     rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
+
+    rt56_update.patch_ai(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER)
+    import pdb; pdb.set_trace()
 
     if KX is True:
         import kx_patches as patches  

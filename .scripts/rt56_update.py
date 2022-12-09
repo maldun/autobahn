@@ -5,12 +5,14 @@ import sys
 import pandas as pd
 import json
 import shutil
+import copy
 HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
 import Hoi4Converter
 from Hoi4Converter.mappings import *
 from Hoi4Converter.converter import *
 from Hoi4Converter.parser import parse_grammar as code2obj
+import rt56_patches
 
 TECHNOLOGY_PATH = "common/technologies"
 AI_KEY = "ai_will_do"
@@ -129,41 +131,57 @@ def _carry_over_ai_settings(mod_file, r56_file):
     return org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs
 
 
-def carry_over_ai_settings(fname):
-    def carry_decorator(post_steps):
-        def carry_func(mod_path, out_path, *args, **kwargs):
-            org_file = os.path.join(mod_path, fname)
-            out_file = os.path.join(out_path, fname)
+class CarryOverAISettings:
+    def __init__(self, filename, method):
+        self.filename = filename
+        self._post_steps = method
+
+    def post_steps(self, r56_techs, *args, **kwargs):
+        return self._post_steps(self, r56_techs, *args, **kwargs)
+
+    @staticmethod
+    def _carry_over_ai_settings(mod_file, r56_file):
+        org_obj, org_tech_map, org_techs = get_obj_and_tech_map(mod_file)
+        r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(r56_file)
+        # get ai settings from main mod
+        for tech_key, ind in org_tech_map.items():
+            found, inds = has_key.search(org_techs[ind], AI_KEY)
+            mapping = [[has_key, AI_KEY], [replace, [found]]]
+            tech_r56 = r56_techs[r56_tech_map[tech_key]]
+        
+            r56_techs[r56_tech_map[tech_key]] = apply_map(tech_r56, mapping)
+
+        return org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs
+
+    def __call__(self, mod_path, out_path, *args, **kwargs):
+        self.org_file = os.path.join(mod_path, self.filename)
+        self.out_file = os.path.join(out_path, self.filename)
             
-            (org_obj, org_tech_map, org_techs,
-             r56_obj, r56_tech_map, r56_techs) = _carry_over_ai_settings(org_file,
-                                                                         out_file)
+        (self.org_obj, self.org_tech_map, self.org_techs,
+         self.r56_obj, self.r56_tech_map, r56_techs) = \
+             self._carry_over_ai_settings(self.org_file, self.out_file)
 
-            result = post_steps(org_obj,
-                                org_tech_map,
-                                org_techs,
-                                r56_obj,
-                                r56_tech_map,
-                                r56_techs)
+        result = self.post_steps(r56_techs, *args, **kwargs)
+        if result is None:
+            pass
+        else:
+            r56_techs = result
+        # set_new_object and file
+        with open(self.out_file, 'w') as fp:
+            new_obj = [[TECHNOLOGY_KEY, r56_techs]]
+            fp.write(list2paradox(new_obj))
+        return
 
-            if result is None:
-                pass
-            else:
-                r56_techs = result
+    
+def carry_over_ai_settings(filename):
+    def carry_over_dec(method):
+        carry_obj = CarryOverAISettings(filename, method)
+        return carry_obj
+    return carry_over_dec
 
-            # set_new_object and file
-            with open(out_file, 'w') as fp:
-                new_obj = [[TECHNOLOGY_KEY, r56_techs]]
-                fp.write(list2paradox(new_obj))
-            return
 
-        return carry_func
-    return carry_decorator
-            
-            
 def patch_nonMTG_navy(mod_path, r56_path, out_path):
     navy_file = os.path.join(TECHNOLOGY_PATH, "naval.txt")
-    org_file = os.path.join(mod_path, navy_file)
     r56_file = os.path.join(r56_path, navy_file)
     out_file = os.path.join(out_path, navy_file)
     # make temp file and replace descriptors
@@ -177,30 +195,40 @@ def patch_nonMTG_navy(mod_path, r56_path, out_path):
             tmp_fp.write(r56_text)
 
     @carry_over_ai_settings(navy_file)
-    def navy_post(org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs):
-        for tech_key, ind in org_tech_map.items():
+    def navy_post(self, r56_techs):
+        for tech_key, ind in self.org_tech_map.items():
             if tech_key.startswith(adv):
-                found, inds = has_key.search(org_techs[ind], AI_KEY)
+                found, inds = has_key.search(self.org_techs[ind], AI_KEY)
                 mapping = [[has_key, AI_KEY], [replace, [found]]]
                 sm_tech_key = esm + tech_key[len(adv):]
-                sm_tech = r56_techs[r56_tech_map[sm_tech_key]]
-                r56_techs[r56_tech_map[sm_tech_key]] = apply_map(sm_tech, mapping)
+                sm_tech = r56_techs[self.r56_tech_map[sm_tech_key]]
+                r56_techs[self.r56_tech_map[sm_tech_key]] = apply_map(sm_tech, mapping)
         return r56_techs
     navy_post(mod_path, out_path)
 
+
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "artillery.txt"))
-def patch_artillery(org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs):
+def patch_artillery(self, r56_techs):
     mapping = [[has_key_and_val, ["has_war_with", ["USA"]]], [replace, ["has_war_with", ["GER"]]]]
     r56_techs = apply_map(r56_techs, mapping)
     return r56_techs
 
 
+def patch_object(r56_obj, org_code, patched_code):
+    key_val = code2obj(org_code)[0]
+    if isinstance(patched_code, str) and len(patched_code) > 0:
+        key_val_replace = code2obj(patched_code)[0]
+        mapping = [[has_key_and_val, key_val], [replace, key_val_replace]]
+    else:
+        mapping = [[has_key_and_val, key_val], [remove, key_val]]
+        
+    r56_obj = apply_map(r56_obj, mapping)
+    return r56_obj
+
+
 def patch_code(out_file, org_code, patched_code):
     r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
-    key_val = code2obj(org_code)[0]
-    key_val_replace = code2obj(patched_code)[0]
-    mapping = [[has_key_and_val, key_val], [replace, key_val_replace]]
-    r56_obj = apply_map(r56_obj, mapping)
+    r56_obj = patch_object(r56_obj, org_code, patched_code)
     with open(out_file, 'w') as fp:
         fp.write(list2paradox(r56_obj))
     
@@ -209,33 +237,44 @@ def patch_rt56_vehicles(mod_path, out_path):
     vehicle_file = os.path.join(TECHNOLOGY_PATH, "r56_vechicles.txt")
     out_file = os.path.join(out_path, vehicle_file)
     snippet = """
-                           AND = {
-                                     OR = { #We get it. Everyone else is dumb
-						original_tag = USA
-						original_tag = GER
-						original_tag = SOV
-					}
-                                date > "1939.1.1"
-                        }
+                AND = { OR = { #We get it. Everyone else is dumb
+			        original_tag = USA
+				original_tag = GER
+				original_tag = SOV }
+                                date > "1939.1.1" }
     """
     patch_code(out_file, snippet, snippet.replace('1939', '1940'))
     snippet2 = """
-            AND = {
-                    OR = {
+            AND = { OR = {
                         original_tag = FRA
                         original_tag = ENG
-                        original_tag = JAP
-                        
-                    }
-                    date > "1940.1.1"
-                    
-                }
+                        original_tag = JAP }
+                    date > "1940.1.1" }
     """
     patch_code(out_file, snippet2, snippet2.replace('1940', '1939'))
 
-    
 
-def patch_ai(mod_path, r56_path, out_path):
-    patch_nonMTG_navy(mod_path, r56_path, out_path)
+@carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "air_techs.txt"))
+def patch_air(self, r56_techs):
+    snippets = rt56_patches.air_snippets
+    patches = rt56_patches.air_patches
+    for counter, obj in enumerate(r56_techs):
+        for snippet, patch in zip(snippets, patches):
+            obj = patch_object(obj, snippet, patch)
+        r56_techs[counter] = obj
+    return r56_techs
+
+# @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "bba_air_techs.txt"))
+# def patch_bba_air(org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs):
+#     pass
+
+
+def patch_ai(mod_path, r56_path, kr_path, out_path):
+    patch_air(mod_path, out_path)
     patch_artillery(mod_path, out_path)
+    patch_nonMTG_navy(mod_path, r56_path, out_path)
     patch_rt56_vehicles(mod_path, out_path)
+    
+    # Use KR tech for these
+    #patch_bba_air(kr_path, out_path)
+    

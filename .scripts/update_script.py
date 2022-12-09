@@ -323,7 +323,7 @@ if __name__ == "__main__":
     #    rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
 
     rt56_update.copy_update(RT56_FOLDER, OUT_FOLDER)
-    rt56_update.patch_nonMTG_navy(MAIN_MOD, RT56_FOLDER, OUT_FOLDER)
+    rt56_update.patch_ai(MAIN_MOD, RT56_FOLDER, OUT_FOLDER)
 
     # some simple post hacks
     # Change SOV --> RUS

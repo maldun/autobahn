@@ -8,6 +8,7 @@ import shutil
 import copy
 HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
+
 import Hoi4Converter
 from Hoi4Converter.mappings import *
 from Hoi4Converter.converter import *
@@ -258,15 +259,14 @@ def patch_rt56_vehicles(mod_path, out_path):
 def patch_air(self, r56_techs):
     snippets = rt56_patches.air_snippets
     patches = rt56_patches.air_patches
-    for counter, obj in enumerate(r56_techs):
-        for snippet, patch in zip(snippets, patches):
-            obj = patch_object(obj, snippet, patch)
-        r56_techs[counter] = obj
+    for snippet, patch in zip(snippets, patches):
+        r56_techs = patch_object(r56_techs, snippet, patch)
+    
     return r56_techs
 
-# @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "bba_air_techs.txt"))
-# def patch_bba_air(org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs):
-#     pass
+@carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "bba_air_techs.txt"))
+def patch_bba_air(self, r56_techs):
+    pass
 
 
 def patch_ai(mod_path, r56_path, kr_path, out_path):
@@ -276,5 +276,5 @@ def patch_ai(mod_path, r56_path, kr_path, out_path):
     patch_rt56_vehicles(mod_path, out_path)
     
     # Use KR tech for these
-    #patch_bba_air(kr_path, out_path)
+    patch_bba_air(kr_path, out_path)
     

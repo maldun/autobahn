@@ -328,7 +328,6 @@ if __name__ == "__main__":
     rt56_update.replace_string('SOV', 'RUS', OUT_FOLDER)
     # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
     rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
-
     rt56_update.patch_ai(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
 
     if KX is True:
@@ -337,7 +336,8 @@ if __name__ == "__main__":
         import kr_patches as patches
     patches.patch(MAIN_MOD, OUT_FOLDER)
     
-    # add missing spirits    
+    # add missing spirits
+    
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
         filter_spirits(fname, keys)
     # update China Army Reform

@@ -130,7 +130,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
+				tag = GER
 				factor = 4
 			}
 		}
@@ -169,7 +169,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 				}
 				factor = 5
 			}
@@ -220,7 +220,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 				}
 				factor = 5
 			}
@@ -270,7 +270,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 				}
 				factor = 4
 			}
@@ -318,7 +318,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 				}
 				factor = 4
 			}
@@ -370,7 +370,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 				}
 				factor = 5
 			}
@@ -856,7 +856,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 					tag = JAP
 				}
 				factor = 3
@@ -897,7 +897,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 					tag = JAP
 				}
 				factor = 3
@@ -939,7 +939,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 					tag = JAP
 				}
 				factor = 3
@@ -1207,7 +1207,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = GER
 			}
 		}
 		
@@ -1238,7 +1238,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				tag = USA
+				tag = GER
 				factor = 2
 			}
 		}
@@ -1279,7 +1279,7 @@ technologies = {
 		on_research_complete = {
 			if = {
 				limit = {
-					tag = USA
+					tag = GER
 					has_war_with = JAP
 				}
 				play_warning_to_japan_effect = yes
@@ -1712,7 +1712,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
+				tag = GER
 			}
 			modifier = {
 				factor = 3
@@ -1798,7 +1798,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
+				tag = GER
 			}
 			modifier = {
 				factor = 3
@@ -1841,7 +1841,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
+				tag = GER
 			}
 			modifier = {
 				factor = 3
@@ -1884,7 +1884,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
+				tag = GER
 			}
 			modifier = {
 				factor = 3

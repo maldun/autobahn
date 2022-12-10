@@ -490,3 +490,56 @@ vehicle_snippet5 = """
                          factor = 2 }
                    """
 vehicle_patch5 = ""
+
+#######################################################################
+# Patches for Industry                                                #
+#######################################################################
+industry_snippets = []
+industry_patches = []
+industry_snippets +=  ["""NOT = { has_government = fascism }"""]
+industry_patches += ["""NOT = { has_government = national_populist
+                                has_government = paternal_autocrat }"""]
+industry_snippets += ["""OR = {
+					original_tag = JAP
+					original_tag = GER
+					original_tag = ITA
+					original_tag = USA
+					original_tag = RUS
+					rubber < 1
+				}"""]
+industry_patches += ["""OR = {
+					is_major = yes
+					rubber < 1
+				}"""]
+# US is busy
+industry_snippets += [""" modifier = {
+				factor = 2
+				tag = USA
+			   }"""]
+industry_patches += ['']
+us_factor_snippet = industry_snippets[-1]
+factors = ['0.25', '0.5' , '3', '3.5', '10']
+for factor in factors:
+    industry_snippets += [us_factor_snippet.replace('2', factor)]
+    industry_patches += ['']
+    industry_snippets += [us_factor_snippet.replace(
+                             'tag', 'original_tag').replace('2', factor)]
+    industry_patches += ['']
+# flip ...
+industry_snippets += [""" modifier = {
+				tag = USA
+                                factor = 0.5
+			   }"""]
+industry_patches += ['']
+# Austria goes into rubber hurr hurr
+industry_snippets += ["""OR = {
+			tag = USA
+			tag = RUS
+			}"""]
+industry_patches += ["""OR = {
+			tag = AUS
+			tag = RUS
+			}"""]
+# ENG is now in need
+industry_snippets += ['tag = ITA']
+industry_patches +=  ['tag = ENG']

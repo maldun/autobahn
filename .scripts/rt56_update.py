@@ -248,11 +248,11 @@ def patch_rt56_vehicles(mod_path, out_path):
     patch3 = rt56_patches.vehicle_patch3
     patch_code(out_file, snippet3, patch3)
     snippet4 = rt56_patches.vehicle_snippet4
-    patch_code(out_file, snippet4, snippet4.replace('USA','CSA'))
+    patch_code(out_file, snippet4, snippet4.replace('USA', 'CSA'))
     snippet5 = rt56_patches.vehicle_snippet5
     patch5 = rt56_patches.vehicle_patch5
     patch_code(out_file, snippet5, patch5)
-    patch_code(out_file, snippet5.replace("2","5"), patch5)
+    patch_code(out_file, snippet5.replace("2", "5"), patch5)
 
 def multi_patch(obj, snippets, patches):
     for snippet, patch in zip(snippets, patches):
@@ -327,14 +327,24 @@ def patch_infantry(mod_path, r56_path, out_path, KX):
         new_obj = [[TECHNOLOGY_KEY, r56_techs]]
         fp.write(list2paradox(new_obj))
     return
-    
+
+
+def patch_electrical_engineering(mod_path, out_path):
+    fname = "electronic_mechanical_engineering.txt"
+    out_file = os.path.join(out_path, TECHNOLOGY_PATH, fname)
+    with open(out_file, 'r') as fp:
+        txt = fp.read()
+        # Germany is brain now
+        txt = txt.replace("USA", "GER")
+    with open(out_file, 'w') as fp:
+        fp.write(txt)
 
 def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     patch_air(mod_path, out_path)
     patch_artillery(mod_path, out_path)
     patch_armor(mod_path, out_path)
+    patch_electrical_engineering(mod_path, out_path)
     patch_infantry(mod_path, r56_path, out_path, KX)
-    
     patch_rt56_vehicles(mod_path, out_path)
     
     # Use KR tech for these

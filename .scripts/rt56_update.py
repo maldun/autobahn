@@ -116,20 +116,20 @@ def get_obj_and_tech_map(file):
     return obj, tech_map, techs
 
 
-def _carry_over_ai_settings(mod_file, r56_file):
+# def _carry_over_ai_settings(mod_file, r56_file):
     
-    org_obj, org_tech_map, org_techs = get_obj_and_tech_map(mod_file)
-    r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(r56_file)
+#     org_obj, org_tech_map, org_techs = get_obj_and_tech_map(mod_file)
+#     r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(r56_file)
 
-    # get ai settings from main mod
-    for tech_key, ind in org_tech_map.items():
-        found, inds = has_key.search(org_techs[ind], AI_KEY)
-        mapping = [[has_key, AI_KEY], [replace, [found]]]
-        tech_r56 = r56_techs[r56_tech_map[tech_key]]
+#     # get ai settings from main mod
+#     for tech_key, ind in org_tech_map.items():
+#         found, inds = has_key.search(org_techs[ind], AI_KEY)
+#         mapping = [[has_key, AI_KEY], [replace, [found]]]
+#         tech_r56 = r56_techs[r56_tech_map[tech_key]]
         
-        r56_techs[r56_tech_map[tech_key]] = apply_map(tech_r56, mapping)
+#         r56_techs[r56_tech_map[tech_key]] = apply_map(tech_r56, mapping)
 
-    return org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs
+#     return org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs
 
 
 class CarryOverAISettings:
@@ -144,8 +144,11 @@ class CarryOverAISettings:
     def _carry_over_ai_settings(mod_file, r56_file):
         org_obj, org_tech_map, org_techs = get_obj_and_tech_map(mod_file)
         r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(r56_file)
+        if mod_file.endswith('infantry.txt'):
+            import pdb; pdb.set_trace()
         # get ai settings from main mod
         for tech_key, ind in org_tech_map.items():
+            
             found, inds = has_key.search(org_techs[ind], AI_KEY)
             mapping = [[has_key, AI_KEY], [replace, [found]]]
             tech_r56 = r56_techs[r56_tech_map[tech_key]]
@@ -179,6 +182,7 @@ def carry_over_ai_settings(filename):
         carry_obj = CarryOverAISettings(filename, method)
         return carry_obj
     return carry_over_dec
+
 
 def patch_nonMTG_navy(mod_path, r56_path, out_path):
     navy_file = os.path.join(TECHNOLOGY_PATH, "naval.txt")
@@ -303,10 +307,35 @@ def patch_bba_air(self, r56_techs):
     pass
 
 
-def patch_ai(mod_path, r56_path, kr_path, out_path):
+def patch_infantry(mod_path, r56_path, out_path, KX):
+    infantry_file = os.path.join(TECHNOLOGY_PATH, "infantry.txt")
+    r56_file = os.path.join(r56_path, infantry_file)
+    out_file = os.path.join(out_path, infantry_file)
+    # make temp file and replace descriptors
+    with open(out_file, 'r') as r56_fp:
+        r56_text = r56_fp.read()
+        r56_text = r56_text.replace('1930', '1918')
+    with open(out_file, 'w') as tmp_fp:
+        tmp_fp.write(r56_text)
+
+    r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
+    snippets = rt56_patches.infantry_snippets
+    patches = rt56_patches.infantry_patches
+    # change KX tags
+    if KX is True:
+        patches = [patch.replace("HND", "BHC") for patch in patches]
+    r56_techs = multi_patch(r56_techs, snippets, patches)
+    with open(out_file, 'w') as fp:
+        new_obj = [[TECHNOLOGY_KEY, r56_techs]]
+        fp.write(list2paradox(new_obj))
+    return
+    
+
+def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     patch_air(mod_path, out_path)
     patch_artillery(mod_path, out_path)
     patch_armor(mod_path, out_path)
+    patch_infantry(mod_path, r56_path, out_path, KX)
     
     patch_rt56_vehicles(mod_path, out_path)
     

@@ -240,22 +240,19 @@ def patch_code(out_file, org_code, patched_code):
 def patch_rt56_vehicles(mod_path, out_path):
     vehicle_file = os.path.join(TECHNOLOGY_PATH, "r56_vechicles.txt")
     out_file = os.path.join(out_path, vehicle_file)
-    snippet = """
-                AND = { OR = { #We get it. Everyone else is dumb
-			        original_tag = USA
-				original_tag = GER
-				original_tag = SOV }
-                                date > "1939.1.1" }
-    """
+    snippet = rt56_patches.vehicle_snippet1
     patch_code(out_file, snippet, snippet.replace('1939', '1940'))
-    snippet2 = """
-            AND = { OR = {
-                        original_tag = FRA
-                        original_tag = ENG
-                        original_tag = JAP }
-                    date > "1940.1.1" }
-    """
+    snippet2 = rt56_patches.vehicle_snippet2
     patch_code(out_file, snippet2, snippet2.replace('1940', '1939'))
+    snippet3 = rt56_patches.vehicle_snippet3
+    patch3 = rt56_patches.vehicle_patch3
+    patch_code(out_file, snippet3, patch3)
+    snippet4 = rt56_patches.vehicle_snippet4
+    patch_code(out_file, snippet4, snippet4.replace('USA','CSA'))
+    snippet5 = rt56_patches.vehicle_snippet5
+    patch5 = rt56_patches.vehicle_patch5
+    patch_code(out_file, snippet5, patch5)
+    patch_code(out_file, snippet5.replace("2","5"), patch5)
 
 def multi_patch(obj, snippets, patches):
     for snippet, patch in zip(snippets, patches):
@@ -324,6 +321,7 @@ def patch_infantry(mod_path, r56_path, out_path, KX):
     # change KX tags
     if KX is True:
         patches = [patch.replace("HND", "BHC") for patch in patches]
+        patches = [patch.replace("LIB", "LBA") for patch in patches]
     r56_techs = multi_patch(r56_techs, snippets, patches)
     with open(out_file, 'w') as fp:
         new_obj = [[TECHNOLOGY_KEY, r56_techs]]
@@ -347,3 +345,8 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     patch_mtg_navy(out_path)
     patch_mtg_support(out_path)
     
+    # No operations necessary:
+    # NSB armor
+    # infantry extra tech
+    # r56_techs
+    # r56e_etax.txt

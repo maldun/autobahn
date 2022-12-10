@@ -453,3 +453,40 @@ mtg_support_patches += ["is_major = yes"]
 # Replace Rest USA entries with GEA
 mtg_support_snippets += ["tag = USA"]
 mtg_support_patches += ["tag = GEA"]
+
+#######################################################################
+# Patches for R56 Vehicles                                            #
+#######################################################################
+vehicle_snippet1 = """
+                   AND = { OR = { #We get it. Everyone else is dumb
+			        original_tag = USA
+				original_tag = GER
+				original_tag = SOV }
+                                date > "1939.1.1" }
+                     """
+vehicle_snippet2 =  """
+                     AND = { OR = {
+                        original_tag = FRA
+                        original_tag = ENG
+                        original_tag = JAP }
+                        date > "1940.1.1" }
+                    """
+vehicle_snippet3 = """
+                    ai_will_do = {
+                    factor = 2
+                     modifier = { tag = USA
+                         factor = 2 }
+                     modifier = { tag = CAN
+                         factor = 2 }}
+                    """
+vehicle_patch3 = """
+                    ai_will_do = {
+                    factor = 2
+                    }
+                    """
+vehicle_snippet4 = "has_war_with = USA"
+vehicle_snippet5 = """
+                     modifier = { tag = USA
+                         factor = 2 }
+                   """
+vehicle_patch5 = ""

@@ -543,3 +543,10 @@ industry_patches += ["""OR = {
 # ENG is now in need
 industry_snippets += ['tag = ITA']
 industry_patches +=  ['tag = ENG']
+
+BUL_army_restrictions_snippet = """
+                               can_be_produced = {
+		          	NOT = {
+			    	has_idea = BUL_army_restrictions
+			        }}"""
+BUL_army_restrictions_patch = ""

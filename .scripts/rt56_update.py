@@ -16,6 +16,7 @@ from Hoi4Converter.parser import parse_grammar as code2obj
 import rt56_patches
 
 TECHNOLOGY_PATH = "common/technologies"
+EQUIPMENT_PATH = "common/units/equipment"
 AI_KEY = "ai_will_do"
 TECHNOLOGY_KEY = "technologies"
 
@@ -112,22 +113,6 @@ def get_obj_and_tech_map(file):
     techs = get_object_from_inds(obj, inds)
     tech_map = {tech[0]: k for k, tech in enumerate(techs)}
     return obj, tech_map, techs
-
-
-# def _carry_over_ai_settings(mod_file, r56_file):
-    
-#     org_obj, org_tech_map, org_techs = get_obj_and_tech_map(mod_file)
-#     r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(r56_file)
-
-#     # get ai settings from main mod
-#     for tech_key, ind in org_tech_map.items():
-#         found, inds = has_key.search(org_techs[ind], AI_KEY)
-#         mapping = [[has_key, AI_KEY], [replace, [found]]]
-#         tech_r56 = r56_techs[r56_tech_map[tech_key]]
-        
-#         r56_techs[r56_tech_map[tech_key]] = apply_map(tech_r56, mapping)
-
-#     return org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs
 
 
 class CarryOverAISettings:
@@ -228,7 +213,7 @@ def patch_object(r56_obj, org_code, patched_code):
     return r56_obj
 
 
-def patch_code(out_file, org_code, patched_code):
+def patch_tech_code(out_file, org_code, patched_code):
     r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
     r56_obj = patch_object(r56_obj, org_code, patched_code)
     with open(out_file, 'w') as fp:
@@ -239,18 +224,18 @@ def patch_rt56_vehicles(mod_path, out_path):
     vehicle_file = os.path.join(TECHNOLOGY_PATH, "r56_vechicles.txt")
     out_file = os.path.join(out_path, vehicle_file)
     snippet = rt56_patches.vehicle_snippet1
-    patch_code(out_file, snippet, snippet.replace('1939', '1940'))
+    patch_tech_code(out_file, snippet, snippet.replace('1939', '1940'))
     snippet2 = rt56_patches.vehicle_snippet2
-    patch_code(out_file, snippet2, snippet2.replace('1940', '1939'))
+    patch_tech_code(out_file, snippet2, snippet2.replace('1940', '1939'))
     snippet3 = rt56_patches.vehicle_snippet3
     patch3 = rt56_patches.vehicle_patch3
-    patch_code(out_file, snippet3, patch3)
+    patch_tech_code(out_file, snippet3, patch3)
     snippet4 = rt56_patches.vehicle_snippet4
-    patch_code(out_file, snippet4, snippet4.replace('USA', 'CSA'))
+    patch_tech_code(out_file, snippet4, snippet4.replace('USA', 'CSA'))
     snippet5 = rt56_patches.vehicle_snippet5
     patch5 = rt56_patches.vehicle_patch5
-    patch_code(out_file, snippet5, patch5)
-    patch_code(out_file, snippet5.replace("2", "5"), patch5)
+    patch_tech_code(out_file, snippet5, patch5)
+    patch_tech_code(out_file, snippet5.replace("2", "5"), patch5)
 
 def multi_patch(obj, snippets, patches):
     for snippet, patch in zip(snippets, patches):
@@ -373,3 +358,29 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     # infantry extra tech
     # r56_techs
     # r56e_etax.txt
+
+###############################################################################
+# Patches for Bugfixes                                                        #
+###############################################################################
+
+
+def patch_code(out_file, org_code, patched_code):
+    r56_obj = paradox2list(out_file)
+    r56_obj = patch_object(r56_obj, org_code, patched_code)
+    with open(out_file, 'w') as fp:
+        fp.write(list2paradox(r56_obj))
+
+def patch_missing_BUL_idea(out_path):
+    snippet = rt56_patches.BUL_army_restrictions_snippet
+    patch = rt56_patches.BUL_army_restrictions_patch
+    for root, _, files in os.walk(os.path.join(out_path, EQUIPMENT_PATH)):
+        for file in files:
+            current_file = os.path.join(root, file)
+            with open(current_file, 'r') as fp:
+                txt = fp.read()
+            if "BUL_army_restrictions" in txt:
+                patch_code(current_file, snippet, patch)
+
+
+def patch_bugs(mod_path, r56_path, kr_path, out_path, KX):
+    patch_missing_BUL_idea(out_path)

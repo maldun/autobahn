@@ -339,12 +339,27 @@ def patch_electrical_engineering(mod_path, out_path):
     with open(out_file, 'w') as fp:
         fp.write(txt)
 
+def patch_industry(mod_path, out_path):
+    industry_file = os.path.join(TECHNOLOGY_PATH, "industry.txt")
+    out_file = os.path.join(out_path, industry_file)
+    
+    r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
+    snippets = rt56_patches.industry_snippets
+    patches = rt56_patches.industry_patches
+    r56_techs = multi_patch(r56_techs, snippets, patches)
+
+    with open(out_file, 'w') as fp:
+        new_obj = [[TECHNOLOGY_KEY, r56_techs]]
+        fp.write(list2paradox(new_obj))
+    return
+
 def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     patch_air(mod_path, out_path)
     patch_artillery(mod_path, out_path)
     patch_armor(mod_path, out_path)
     patch_electrical_engineering(mod_path, out_path)
     patch_infantry(mod_path, r56_path, out_path, KX)
+    patch_industry(mod_path, out_path)
     patch_rt56_vehicles(mod_path, out_path)
     
     # Use KR tech for these

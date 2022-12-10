@@ -330,7 +330,6 @@ if __name__ == "__main__":
     rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
 
     rt56_update.patch_ai(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
-    import pdb; pdb.set_trace()
 
     if KX is True:
         import kx_patches as patches  

@@ -19,6 +19,8 @@ TECHNOLOGY_PATH = "common/technologies"
 EQUIPMENT_PATH = "common/units/equipment"
 AI_KEY = "ai_will_do"
 TECHNOLOGY_KEY = "technologies"
+SUB_TECH_KEY = 'sub_technologies'
+EMPTY_SEARCH = ([],[])
 
 
 def replace_string(str1, str2, out_dir):
@@ -381,6 +383,38 @@ def patch_missing_BUL_idea(out_path):
             if "BUL_army_restrictions" in txt:
                 patch_code(current_file, snippet, patch)
 
+def patch_missing_mtg_naval_subtechs(mod_path, out_path):
+    navy_file = os.path.join(TECHNOLOGY_PATH, "MTG_naval.txt")
+    mod_file = os.path.join(mod_path, navy_file)
+    out_file = os.path.join(out_path, navy_file)
+    mod_obj, mod_tech_map, mod_techs = get_obj_and_tech_map(mod_file)
+    r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
+
+    # remove old subtechs:
+    for tech, index in r56_tech_map.items():
+        tech_obj = r56_techs[index]
+        found = has_key.search(tech_obj, SUB_TECH_KEY)
+        if found != EMPTY_SEARCH:
+            sub_index = found[1][0][1]
+            del r56_obj[0][1][index][1][sub_index]
+            
+    has_sub_techs = {}
+    for tech, index in mod_tech_map.items():
+        tech_obj = mod_techs[index]
+        found = has_key.search(tech_obj, SUB_TECH_KEY)
+        if found != EMPTY_SEARCH:
+            has_sub_techs[tech] = found[0][0][1][0][0]
+            r56_index = r56_tech_map[tech]
+            r56_tech = r56_techs[r56_index]
+            # add subtech
+            r56_tech[1] += found[0]
+            # just to be sure ...
+            r56_obj[0][1][r56_index] = r56_tech
+            
+    with open(out_file, 'w') as fp:
+        fp.write(list2paradox(r56_obj))
+
 
 def patch_bugs(mod_path, r56_path, kr_path, out_path, KX):
     patch_missing_BUL_idea(out_path)
+    patch_missing_mtg_naval_subtechs(mod_path, out_path)

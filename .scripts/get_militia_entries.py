@@ -2,7 +2,7 @@
 #grep -Rli militia . | sort >> "/home/maldun/.local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_KX/.scripts/militia_hlp.txt"
 
 import pandas as pd
-df = pd.read_csv('KX_equipment.csv',index_col=0)
+df = pd.read_csv('equipment.csv',index_col=0)
 data_top = df.head()
 with open('militia_hlp.txt') as fp:
     lines = fp.readlines()

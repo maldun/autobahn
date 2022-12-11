@@ -12,6 +12,7 @@ set_technology = {
     gw_artillery = 1
     camo = 1
     etax_doctrine = 1
+    r56_militia_tech = 1
     transport_plane1 = 1
     
 }

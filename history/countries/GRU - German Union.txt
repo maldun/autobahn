@@ -46,6 +46,13 @@ set_technology = {
     interwar_antiair = 1
     camo = 1
     etax_doctrine = 1
+    r56_gw_railway_gun = 1
+    r56_militia_tech = 1
+    r56_railway_mortar_subtech = 1
+    shocktroops = 1
+    sniper_rifle = 1
+    steel_production_1 = 1
+    transport_plane1 = 1
     
 }
 if = {

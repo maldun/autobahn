@@ -180,13 +180,14 @@ continuous_focus_palette = {
 		icon = GFX_goal_continuous_research
 		
 		available = {
-			hidden_trigger = { has_dlc = "Together for Victory" }
+			#hidden_trigger = { has_dlc = "Together for Victory" }
+			hidden_trigger = { has_tech_sharing_feature = yes }
 		}
 
 		enabled = {
 			is_in_faction = yes
 			num_faction_members > 1
-			num_tech_sharing_groups < 1
+			#num_tech_sharing_groups < 1
 
 			custom_trigger_tooltip = {
 				tooltip = NO_OTHER_SHARING_GROUPS

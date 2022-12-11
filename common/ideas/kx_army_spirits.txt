@@ -44,49 +44,15 @@ ideas = {
         
     }
     division_command_spirit = {
-        reichspakt_defense_spirit = {
+        decentralised_logistics_spirit = {
             ledger = army
-            picture = political_connections_spirit
             visible = {
-                is_in_faction_with = GER
-                GER = {
-                    is_faction_leader = yes
-                    
-                }
+                has_country_flag = is_chinese_tag
                 
             }
             modifier = {
-                army_org_factor = 0.1
-                army_morale_factor = 0.05
-                
-            }
-            ai_will_do = {
-                factor = 2
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        international_revolution_spirit = {
-            ledger = army
-            picture = upbeat_command_spirit
-            visible = {
-                is_in_faction_with = INT
-                
-            }
-            modifier = {
-                coordination_bonus = 0.05
-                experience_loss_factor = -0.15
+                supply_combat_penalties_on_core_factor = -0.2
+                supply_node_range = 0.1
                 
             }
             ai_will_do = {
@@ -142,15 +108,49 @@ ideas = {
             }
             
         }
-        decentralised_logistics_spirit = {
+        international_revolution_spirit = {
             ledger = army
+            picture = upbeat_command_spirit
             visible = {
-                has_country_flag = is_chinese_tag
+                is_in_faction_with = INT
                 
             }
             modifier = {
-                supply_combat_penalties_on_core_factor = -0.2
-                supply_node_range = 0.1
+                coordination_bonus = 0.05
+                experience_loss_factor = -0.15
+                
+            }
+            ai_will_do = {
+                factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        reichspakt_defense_spirit = {
+            ledger = army
+            picture = political_connections_spirit
+            visible = {
+                is_in_faction_with = GER
+                GER = {
+                    is_faction_leader = yes
+                    
+                }
+                
+            }
+            modifier = {
+                army_org_factor = 0.1
+                army_morale_factor = 0.05
                 
             }
             ai_will_do = {

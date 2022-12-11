@@ -761,6 +761,10 @@ technologies = {
             ca_tech
             
         }
+        sub_technologies = {
+            panzerschiffe
+            
+        }
         
     }
     basic_ship_hull_cruiser = {
@@ -1275,6 +1279,10 @@ technologies = {
             bc_tech
             
         }
+        sub_technologies = {
+            ship_hull_super_heavy
+            
+        }
         
     }
     basic_ship_hull_heavy = {
@@ -1300,10 +1308,6 @@ technologies = {
                 y = 7
                 
             }
-            
-        }
-        sub_technologies = {
-            ship_hull_super_heavy
             
         }
         ai_will_do = {
@@ -1996,6 +2000,10 @@ technologies = {
         categories = {
             naval_equipment
             ss_tech
+            
+        }
+        sub_technologies = {
+            cruiser_submarines
             
         }
         

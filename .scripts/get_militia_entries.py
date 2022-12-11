@@ -15,6 +15,6 @@ for key in df.index:
     if key in tags:
       df.loc[key]['r56_militia_tech'] = 1.0
         
-df.to_csv('KX_equipment.csv')
+df.to_csv('equipment.csv')
 
 

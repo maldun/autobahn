@@ -50,7 +50,7 @@ country_event = {
 }
 recruit_character = OMA_said_ibn_taimur
 add_ideas = {
-    extensive_conscription
+    limited_conscription
     OMA_tribal_army
     OMA_army_of_muscat
     OMA_imamate_of_oman

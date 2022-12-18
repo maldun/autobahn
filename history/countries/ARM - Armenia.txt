@@ -101,6 +101,7 @@ recruit_character = ARM_mihran_damadian
 recruit_character = ARM_bedros_hallachian
 recruit_character = ARM_boghos_bey_dadian
 recruit_character = ARM_garegin_nzdeh
+recruit_character = ARM_michael_papadjanian
 recruit_character = ARM_grigor_jaghetyan
 recruit_character = ARM_sargis_araratyan
 recruit_character = ARM_nikol_aghbalian

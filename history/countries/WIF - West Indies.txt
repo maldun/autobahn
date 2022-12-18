@@ -161,7 +161,7 @@ country_event = {
     random_days = 300
     
 }
-CAN = {
+IMP = {
     set_autonomy = {
         target = WIF
         autonomy_state = kr_initial_wif_puppet

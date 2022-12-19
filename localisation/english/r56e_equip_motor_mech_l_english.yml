@@ -1373,3 +1373,7 @@ l_english:
  SLV_mechanized_equipment_x_short:0 "OT M.49"
  SLV_mechanized_equipment_x:0 "Oklopni Transporter M.53"
  SLV_mechanized_equipment_x_2_short:0 "OT M.53"
+
+# Added new country IMP
+ IMP_train_equipment_1:0 "Canadian Pacific 2816"
+ IMP_train_equipment_1_short:0 "Canadian Pacific 2816"

@@ -362,3 +362,8 @@ l_english:
  TUR_light_carrier_3:0 "Balıkçıl Class"
 
 #####---------------------------------------------------------------------End
+
+# Added new country IMP
+ IMP_light_carrier_1:0 "Antelope Class"
+ IMP_light_carrier_2:0 "Warrior Class"
+ IMP_light_carrier_3:0 "Bonaventure Class"

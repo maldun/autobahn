@@ -592,6 +592,20 @@ create_corps_commander = {
     logistics_skill = 1
     
 }
+create_corps_commander = {
+    name = "Constantin Sănătescu"
+    portrait_path = "gfx/leaders/ROM/Portrait_ROM_Constantin_Sanatescu.png"
+    traits = {
+        infantry_expert
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+    
+}
 create_navy_leader = {
     name = "Horia Macellariu"
     portrait_path = "gfx/leaders/ROM/Portrait_ROM_Horia_Macellariu.png"

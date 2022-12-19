@@ -171,15 +171,6 @@ technologies = {
                 date > "1939.1.6"
                 
             }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
-                
-            }
             
         }
         
@@ -260,15 +251,6 @@ technologies = {
                 date > "1942.1.1"
                 
             }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
-                
-            }
             
         }
         
@@ -343,15 +325,6 @@ technologies = {
                 date > "1942.1.1"
                 
             }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
-                
-            }
             
         }
         
@@ -401,15 +374,6 @@ technologies = {
             modifier = {
                 factor = 5
                 date > "1942.1.6"
-                
-            }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
                 
             }
             
@@ -490,15 +454,6 @@ technologies = {
             modifier = {
                 factor = 5
                 date > "1945.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
                 
             }
             
@@ -747,15 +702,6 @@ technologies = {
                 date > "1939.1.1"
                 
             }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
-                
-            }
             
         }
         categories = {
@@ -796,15 +742,6 @@ technologies = {
         }
         ai_will_do = {
             factor = 1
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
-                
-            }
             
         }
         categories = {
@@ -844,14 +781,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 2
             modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
+                factor = 5
+                has_war = yes
                 
             }
             
@@ -1140,15 +1073,6 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
-                
-            }
-            modifier = {
                 factor = 10
                 any_enemy_country = {
                     ROOT = {
@@ -1243,15 +1167,6 @@ technologies = {
                         }
                         
                     }
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
                     
                 }
                 
@@ -1354,15 +1269,6 @@ technologies = {
                 }
                 
             }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
-                    
-                }
-                
-            }
             
         }
         categories = {
@@ -1452,15 +1358,6 @@ technologies = {
                         }
                         
                     }
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 2
-                OR = {
-                    is_major = yes
-                    num_of_military_factories > 10
                     
                 }
                 

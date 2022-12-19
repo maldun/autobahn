@@ -55,4 +55,5 @@ def patch_naval_ai_equipment(kx_path, out_folder):
 
 def patch(kx_path, out_folder):
     patch_main_menu(kx_path, out_folder)
-    patch_naval_ai_equipment(kx_path, out_folder)
+    # Is removed in KX for now
+    #patch_naval_ai_equipment(kx_path, out_folder)

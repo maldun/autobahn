@@ -108,13 +108,13 @@ if = {
         basic_ship_hull_carrier = 1
         early_ship_hull_heavy = 1
         basic_ship_hull_heavy = 1
+        coastal_defense_ships = 1
+        pre_dreadnoughts = 1
         basic_naval_mines = 1
         basic_battery = 1
         basic_light_battery = 1
         basic_medium_battery = 1
         basic_heavy_battery = 1
-        basic_secondary_battery = 1
-        improved_secondary_battery = 1
         basic_depth_charges = 1
         basic_torpedo = 1
         improved_ship_torpedo_launcher = 1
@@ -292,7 +292,7 @@ add_ideas = {
     AUS_vienna_circle
     AUS_fatherland_front
     AUS_karl_habsburg
-    AUS_Albert_von_Mensdorff_Pouilly_Dietrichstein_hog_ade
+    AUS_Ernst_Streeruwitz_hog_ade
     AUS_Edmund_Glaise_von_Horstenau_for_ade
     AUS_Carl_Vaugoin_eco_sco
     AUS_Richard_Schmitz_sec_sco

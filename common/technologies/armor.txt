@@ -187,6 +187,11 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 2
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
+                factor = 2
                 is_major = yes
                 
             }
@@ -238,6 +243,21 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 3
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
+                factor = 3
+                num_of_military_factories > 20
+                
+            }
+            modifier = {
                 factor = 100
                 any_enemy_country = {
                     ROOT = {
@@ -254,12 +274,12 @@ technologies = {
             }
             modifier = {
                 factor = 0
-                can_research = improved_light_td
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = improved_light_td
+                OR = {
+                    has_tech = improved_light_td
+                    can_research = improved_light_td
+                    is_researching_technology = improved_light_tank
+                    
+                }
                 
             }
             
@@ -285,13 +305,33 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
-                can_research = improved_light_art
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = mobile_warfare
+                
+            }
+            modifier = {
+                factor = 3
+                num_of_military_factories > 20
+                
+            }
+            modifier = {
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
                 factor = 0
-                has_tech = improved_light_art
+                OR = {
+                    has_tech = improved_light_art
+                    can_research = improved_light_art
+                    is_researching_technology = improved_light_tank
+                    
+                }
                 
             }
             
@@ -315,17 +355,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1934
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                can_research = improved_light_spaa
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = improved_light_spaa
-                
-            }
+            factor = 0
             
         }
         categories = {
@@ -376,6 +406,11 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 2
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
+                factor = 2
                 is_major = yes
                 
             }
@@ -423,6 +458,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 2
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
                 factor = 120
                 any_enemy_country = {
                     ROOT = {
@@ -439,12 +479,12 @@ technologies = {
             }
             modifier = {
                 factor = 0
-                can_research = advanced_light_td
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = advanced_light_td
+                OR = {
+                    has_tech = advanced_light_td
+                    can_research = advanced_light_td
+                    is_researching_technology = advanced_light_tank
+                    
+                }
                 
             }
             
@@ -466,13 +506,18 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
-                can_research = advanced_light_art
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
                 factor = 0
-                has_tech = advanced_light_art
+                OR = {
+                    has_tech = advanced_light_art
+                    can_research = advanced_light_art
+                    is_researching_technology = advanced_light_tank
+                    
+                }
                 
             }
             
@@ -492,17 +537,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1936
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                can_research = advanced_light_spaa
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = advanced_light_spaa
-                
-            }
+            factor = 0
             
         }
         categories = {
@@ -765,8 +800,8 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
-                date < "1941.1.1"
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
@@ -813,6 +848,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 2
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
                 factor = 130
                 any_enemy_country = {
                     ROOT = {
@@ -825,11 +865,6 @@ technologies = {
                     }
                     
                 }
-                
-            }
-            modifier = {
-                factor = 0
-                date < 1941-01-01
                 
             }
             
@@ -851,8 +886,8 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
-                date < 1941-01-01
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             
@@ -872,7 +907,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 1
+            factor = 0
             
         }
         categories = {
@@ -916,11 +951,6 @@ technologies = {
         ai_will_do = {
             factor = 2
             modifier = {
-                factor = 0
-                date < "1939.1.1"
-                
-            }
-            modifier = {
                 factor = 2
                 is_major = yes
                 date > "1938.1.1"
@@ -951,6 +981,11 @@ technologies = {
                 num_of_military_factories > 20
                 
             }
+            modifier = {
+                factor = 3
+                country_has_armor_focus = yes
+                
+            }
             
         }
         categories = {
@@ -972,7 +1007,16 @@ technologies = {
         research_cost = 0.5
         start_year = 1939
         ai_will_do = {
-            factor = 1
+            factor = 2
+            modifier = {
+                factor = 2
+                OR = {
+                    tag = GER
+                    tag = AUS
+                    
+                }
+                
+            }
             modifier = {
                 factor = 140
                 any_enemy_country = {
@@ -990,17 +1034,12 @@ technologies = {
             }
             modifier = {
                 factor = 0
-                can_research = improved_medium_td
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = improved_medium_td
-                
-            }
-            modifier = {
-                factor = 0
-                date < 1939-01-01
+                OR = {
+                    has_tech = improved_medium_td
+                    can_research = improved_medium_td
+                    is_researching_technology = improved_medium_tank
+                    
+                }
                 
             }
             modifier = {
@@ -1016,6 +1055,11 @@ technologies = {
             modifier = {
                 factor = 1.1
                 date > "1942.1.1"
+                
+            }
+            modifier = {
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             
@@ -1042,17 +1086,12 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 0
-                can_research = improved_medium_art
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = improved_medium_art
-                
-            }
-            modifier = {
-                factor = 0
-                date < 1939-01-01
+                OR = {
+                    has_tech = improved_medium_art
+                    can_research = improved_medium_art
+                    is_researching_technology = improved_medium_tank
+                    
+                }
                 
             }
             modifier = {
@@ -1068,6 +1107,11 @@ technologies = {
             modifier = {
                 factor = 1.1
                 date > "1942.1.1"
+                
+            }
+            modifier = {
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             
@@ -1091,17 +1135,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1939
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                can_research = improved_medium_spaa
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = improved_medium_spaa
-                
-            }
+            factor = 0
             
         }
         categories = {
@@ -1147,12 +1181,12 @@ technologies = {
             factor = 3
             modifier = {
                 factor = 2
-                is_major = yes
+                country_has_armor_focus = yes
                 
             }
             modifier = {
-                factor = 0
-                date < "1941.1.1"
+                factor = 2
+                is_major = yes
                 
             }
             modifier = {
@@ -1199,6 +1233,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 2
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
                 factor = 150
                 any_enemy_country = {
                     ROOT = {
@@ -1215,17 +1254,12 @@ technologies = {
             }
             modifier = {
                 factor = 0
-                can_research = advanced_medium_td
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = advanced_medium_td
-                
-            }
-            modifier = {
-                factor = 0
-                date < 1941-01-01
+                OR = {
+                    has_tech = advanced_medium_td
+                    can_research = advanced_medium_td
+                    is_researching_technology = advanced_medium_tank
+                    
+                }
                 
             }
             modifier = {
@@ -1263,17 +1297,17 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 0
-                can_research = advanced_medium_art
+                OR = {
+                    has_tech = advanced_medium_art
+                    can_research = advanced_medium_art
+                    is_researching_technology = advanced_medium_tank
+                    
+                }
                 
             }
             modifier = {
-                factor = 0
-                has_tech = advanced_medium_art
-                
-            }
-            modifier = {
-                factor = 0
-                date < 1941-01-01
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
@@ -1308,17 +1342,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                can_research = advanced_medium_spaa
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = advanced_medium_spaa
-                
-            }
+            factor = 0
             
         }
         categories = {
@@ -1363,8 +1387,8 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
-                date < 1943-01-01
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
@@ -1411,6 +1435,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 2
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
                 factor = 160
                 any_enemy_country = {
                     ROOT = {
@@ -1433,11 +1462,6 @@ technologies = {
             modifier = {
                 factor = 0
                 has_tech = modern_td
-                
-            }
-            modifier = {
-                factor = 0
-                date < 1943-01-01
                 
             }
             modifier = {
@@ -1474,6 +1498,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 2
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
                 factor = 0
                 can_research = modern_art
                 
@@ -1481,11 +1510,6 @@ technologies = {
             modifier = {
                 factor = 0
                 has_tech = modern_art
-                
-            }
-            modifier = {
-                factor = 0
-                date < 1943-01-01
                 
             }
             modifier = {
@@ -1520,17 +1544,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                can_research = modern_spaa
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = modern_spaa
-                
-            }
+            factor = 0
             
         }
         categories = {
@@ -1574,8 +1588,8 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
-                date < 1945-01-01
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
@@ -1624,10 +1638,10 @@ technologies = {
         research_cost = 0.5
         start_year = 1945
         ai_will_do = {
-            factor = 1
+            factor = 2
             modifier = {
-                factor = 0
-                date < 1945-01-01
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
@@ -1666,10 +1680,10 @@ technologies = {
         research_cost = 0.5
         start_year = 1945
         ai_will_do = {
-            factor = 1
+            factor = 2
             modifier = {
-                factor = 0
-                date < 1945-01-01
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
@@ -1708,7 +1722,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1945
         ai_will_do = {
-            factor = 1
+            factor = 0
             
         }
         categories = {
@@ -1793,6 +1807,11 @@ technologies = {
         ai_will_do = {
             factor = 0.8
             modifier = {
+                factor = 2
+                country_has_armor_focus = yes
+                
+            }
+            modifier = {
                 factor = 1.2
                 date > "1937.1.1"
                 
@@ -1809,7 +1828,11 @@ technologies = {
             }
             modifier = {
                 factor = 0
-                can_research = improved_heavy_tank
+                OR = {
+                    can_research = improved_heavy_tank
+                    has_tech = improved_heavy_tank
+                    
+                }
                 
             }
             
@@ -1834,16 +1857,6 @@ technologies = {
         start_year = 1934
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = improved_heavy_td
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = improved_heavy_td
-                
-            }
             
         }
         categories = {
@@ -1866,16 +1879,6 @@ technologies = {
         start_year = 1934
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = improved_heavy_art
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = improved_heavy_art
-                
-            }
             
         }
         categories = {
@@ -1898,16 +1901,6 @@ technologies = {
         start_year = 1934
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = improved_heavy_spaa
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = improved_heavy_spaa
-                
-            }
             
         }
         categories = {
@@ -1957,8 +1950,8 @@ technologies = {
         ai_will_do = {
             factor = 0.8
             modifier = {
-                factor = 0
-                date < 1941-01-01
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
@@ -1978,7 +1971,11 @@ technologies = {
             }
             modifier = {
                 factor = 0
-                can_research = advanced_heavy_tank
+                OR = {
+                    can_research = advanced_heavy_tank
+                    has_tech = advanced_heavy_tank
+                    
+                }
                 
             }
             
@@ -1999,16 +1996,6 @@ technologies = {
         start_year = 1941
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = advanced_heavy_td
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = advanced_heavy_td
-                
-            }
             
         }
         categories = {
@@ -2027,16 +2014,6 @@ technologies = {
         start_year = 1941
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = advanced_heavy_art
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = advanced_heavy_art
-                
-            }
             
         }
         categories = {
@@ -2055,16 +2032,6 @@ technologies = {
         start_year = 1941
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = advanced_heavy_spaa
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = advanced_heavy_spaa
-                
-            }
             
         }
         categories = {
@@ -2109,8 +2076,8 @@ technologies = {
         ai_will_do = {
             factor = 0.8
             modifier = {
-                factor = 0
-                date < 1943-01-01
+                factor = 2
+                country_has_armor_focus = yes
                 
             }
             modifier = {
@@ -2146,16 +2113,6 @@ technologies = {
         start_year = 1943
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = modern_td
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = modern_td
-                
-            }
             
         }
         categories = {
@@ -2174,16 +2131,6 @@ technologies = {
         start_year = 1943
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = modern_art
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = modern_art
-                
-            }
             
         }
         categories = {
@@ -2202,16 +2149,6 @@ technologies = {
         start_year = 1943
         ai_will_do = {
             factor = 0
-            modifier = {
-                factor = 0
-                can_research = modern_spaa
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = modern_spaa
-                
-            }
             
         }
         categories = {

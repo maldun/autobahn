@@ -94,12 +94,11 @@ if = {
         cruiser_submarines = 1
         early_ship_hull_heavy = 1
         basic_ship_hull_heavy = 1
+        coastal_defense_ships = 1
         basic_naval_mines = 1
         basic_battery = 1
         basic_light_battery = 1
         basic_medium_battery = 1
-        basic_secondary_battery = 1
-        improved_secondary_battery = 1
         basic_depth_charges = 1
         basic_torpedo = 1
         improved_ship_torpedo_launcher = 1
@@ -905,7 +904,7 @@ create_corps_commander = {
     defense_skill = 1
     planning_skill = 3
     logistics_skill = 2
-    id = 6842
+    id = 68421
     
 }
 create_corps_commander = {
@@ -920,7 +919,7 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 2
     logistics_skill = 2
-    id = 6843
+    id = 68431
     
 }
 create_corps_commander = {

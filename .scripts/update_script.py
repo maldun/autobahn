@@ -216,8 +216,12 @@ def apply_equipment_table(file_name):
     maps = {}
     for fname in os.listdir(country_folder):
         tag = fname[:3]
-        vals = [[tech, [df.loc[tag, tech] if pd.isna(df.loc[tag, tech]) else int(df.loc[tag, tech])]]
+        
+        try:
+            vals = [[tech, [df.loc[tag, tech] if pd.isna(df.loc[tag, tech]) else int(df.loc[tag, tech])]]
                 for tech in techs if not pd.isna(df.loc[tag, tech])]
+        except:
+            import pdb; pdb.set_trace()
         mapping = [[has_key_and_max_level, [SET_TECH_KEY, 1]],
                    [add_multiple_values, vals]
                    ]

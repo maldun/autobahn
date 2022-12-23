@@ -4,7 +4,7 @@ import sys
 import pandas as pd
 import shutil
 HOME = os.path.expanduser("~/")
-sys.path.append(HOME + "prog/Python/hoi4_converter/")
+#sys.path.append(HOME + "prog/Python/hoi4_converter/")
 import Hoi4Converter
 from Hoi4Converter.mappings import *
 from Hoi4Converter.converter import *

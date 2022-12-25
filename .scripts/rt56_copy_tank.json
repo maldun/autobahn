@@ -29,6 +29,9 @@
     "common/units/equipment/modules/": {
       "00_r56_modules.txt": []
     },
+    "interface/": {
+	"r56_tank_modules_icons.gfx": []
+    },
     "interface/replace/": {
 	"r56_techs_tank.gfx": ["interface/","r56_techs_tank.gfx"],
 	"r56_techs_amphibious_tank.gfx": ["interface/", "r56_techs_amphibious_tank.gfx"]

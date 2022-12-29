@@ -21,6 +21,7 @@ AI_KEY = "ai_will_do"
 TECHNOLOGY_KEY = "technologies"
 SUB_TECH_KEY = 'sub_technologies'
 EMPTY_SEARCH = ([],[])
+ALLOW_KEY = "allow"
 
 
 def replace_string(str1, str2, out_dir):
@@ -412,6 +413,13 @@ def patch_missing_mtg_naval_subtechs(mod_path, out_path):
             r56_tech[1] += found[0]
             # just to be sure ...
             r56_obj[0][1][r56_index] = r56_tech
+            # activate sub-tech
+            subtech = has_sub_techs[tech]
+            sub_index = r56_tech_map[subtech]
+            r56_sub_tech = r56_obj[0][1][sub_index]
+            obj_to_remove = code2obj("allow = { always = no }")[0]
+            r56_sub_tech = apply_map(r56_sub_tech, [[has_key_and_val,obj_to_remove], [remove,obj_to_remove]])
+            r56_obj[0][1][sub_index] = r56_sub_tech
             
     with open(out_file, 'w') as fp:
         fp.write(list2paradox(r56_obj))

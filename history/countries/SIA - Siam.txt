@@ -157,13 +157,13 @@ country_event = {
 country_event = {
     id = siam.9
     days = 153
-    random = 648
+    random_hours = 648
     
 }
 country_event = {
     id = siam.12
     days = 203
-    random = 216
+    random_hours = 216
     
 }
 country_event = {

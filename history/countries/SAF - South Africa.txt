@@ -200,7 +200,7 @@ country_event = {
 country_event = {
     id = saf.169
     days = 500
-    random = 100
+    random_hours = 100
     
 }
 country_event = {
@@ -236,7 +236,7 @@ country_event = {
 country_event = {
     id = saf.170
     days = 1200
-    random = 100
+    random_hours = 100
     
 }
 country_event = {
@@ -252,7 +252,7 @@ country_event = {
 country_event = {
     id = saf.187
     days = 3804
-    random = 30
+    random_hours = 30
     
 }
 country_event = {

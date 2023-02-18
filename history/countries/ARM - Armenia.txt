@@ -1,6 +1,6 @@
 capital = 230
 set_stability = 0.35
-set_war_support = 0.8
+set_war_support = 0.6
 set_research_slots = 3
 set_technology = {
     infantry_weapons = 1
@@ -91,6 +91,7 @@ set_popularities = {
 add_ideas = {
     partial_economic_mobilisation
     limited_conscription
+    ARM_diaspora
     
 }
 recruit_character = ARM_anastas_mikoyan
@@ -102,6 +103,7 @@ recruit_character = ARM_bedros_hallachian
 recruit_character = ARM_boghos_bey_dadian
 recruit_character = ARM_garegin_nzdeh
 recruit_character = ARM_michael_papadjanian
+recruit_character = ARM_hayk_asatryan
 recruit_character = ARM_grigor_jaghetyan
 recruit_character = ARM_sargis_araratyan
 recruit_character = ARM_nikol_aghbalian

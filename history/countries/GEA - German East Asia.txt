@@ -6,6 +6,7 @@ set_convoys = 150
 set_stability = 0.6
 set_war_support = 0.3
 starting_train_buffer = 1
+add_manpower = 300000
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -207,7 +208,6 @@ add_ideas = {
     free_trade
     GEA_AOG_bonus_idea
     GEA_Protecting_GER_interest
-    YUN_GEA_tin_profits
     
 }
 add_dynamic_modifier = {

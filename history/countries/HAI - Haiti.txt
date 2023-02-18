@@ -99,7 +99,7 @@ country_event = {
 country_event = {
     id = hai_cal.14
     days = 550
-    random = 25
+    random_hours = 25
     
 }
 country_event = {

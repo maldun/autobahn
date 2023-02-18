@@ -17,7 +17,7 @@ set_technology = {
     
 }
 set_stability = 0.35
-set_war_support = 0.6
+set_war_support = 0.4
 diplomatic_relation = {
     country = RUS
     relation = non_aggression_pact
@@ -83,6 +83,7 @@ recruit_character = MON_demchugdongrub
 recruit_character = MON_roman_von_ungernsternberg
 recruit_character = MON_7th_changkya_khutukhtu
 recruit_character = MON_jodbajab
+recruit_character = MON_baiyunti
 recruit_character = MON_manlaibaatar_damdinsuren
 recruit_character = MON_altanochir
 recruit_character = MON_khatanbaatar_magsarjav

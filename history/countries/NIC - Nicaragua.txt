@@ -177,6 +177,10 @@ NIC_juan_ramon_aviles = {
     set_character_flag = CEN_liberal
     
 }
+NIC_francisco_sequeira_moreno = {
+    set_character_flag = CEN_liberal
+    
+}
 NIC_guillermo_sevilla_sacasa = {
     set_character_flag = CEN_reactionary
     

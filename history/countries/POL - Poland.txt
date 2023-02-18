@@ -426,7 +426,12 @@ country_event = {
 }
 country_event = {
     id = polandflavor.9
-    days = 1760
+    days = 1560
+    
+}
+country_event = {
+    id = polandflavor.42
+    days = 1660
     
 }
 country_event = {
@@ -524,10 +529,8 @@ recruit_character = POL_stanislaw_bukowiecki
 recruit_character = POL_boguslaw_miedzinski
 recruit_character = POL_the_sejm_sic
 recruit_character = POL_maurucy_zamoyski
-recruit_character = POL_maurucy_zamoyski_privy_council
 recruit_character = POL_janusz_radziwill
 recruit_character = POL_stanislaw_downarowicz
-recruit_character = POL_stanislaw_downarowicz_privy_council
 recruit_character = POL_wolfgang_von_kries
 recruit_character = POL_alexander_von_hohenzollern
 recruit_character = POL_august_hlond
@@ -593,14 +596,6 @@ POL_jozef_unrug = {
 }
 POL_jerzy_swirski = {
     set_nationality = UKR
-    
-}
-POL_maurucy_zamoyski_privy_council = {
-    retire = yes
-    
-}
-POL_stanislaw_downarowicz_privy_council = {
-    retire = yes
     
 }
 if = {

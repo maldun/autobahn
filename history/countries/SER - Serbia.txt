@@ -313,6 +313,7 @@ recruit_character = SER_dusan_simovic
 recruit_character = SER_milan_spasic
 recruit_character = SER_petar_bojovic
 recruit_character = SER_konstantin_popovic
+recruit_character = SER_arso_jovanovic
 recruit_character = SER_sima_markovic
 recruit_character = SER_mihailo_ilic
 recruit_character = SER_aleksandar_cincar_markovic
@@ -339,6 +340,10 @@ SER_petar_bojovic = {
     
 }
 SER_konstantin_popovic = {
+    retire = yes
+    
+}
+SER_arso_jovanovic = {
     retire = yes
     
 }

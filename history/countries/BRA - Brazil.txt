@@ -345,6 +345,7 @@ add_to_array = {
     URG.guarantor_array = BRA
     
 }
+give_military_access = URG
 set_politics = {
     ruling_party = social_conservative
     last_election = "1932.11.1"
@@ -411,7 +412,7 @@ recruit_character = BRA_roberto_pisani_marinho
 recruit_character = BRA_joaquim_pedro_salgado_filho
 recruit_character = BRA_argemiro_de_assis_brasil
 recruit_character = BRA_filinto_strubing_muller
-recruit_character = BRA_adalberto_de_barros_nunes
+recruit_character = BRA_adalberto_nunes
 recruit_character = BRA_henrique_aristides_guilhem
 recruit_character = BRA_joao_valdetaro_de_amorim_e_mello
 recruit_character = BRA_jose_angelo_gomes_ribeiro
@@ -420,3 +421,7 @@ recruit_character = BRA_armando_figueira_trompowsky_de_almeida
 recruit_character = BRA_floriano_de_lima_brayner
 recruit_character = BRA_eduardo_gomes
 recruit_character = BRA_young_turk_clique
+BRA_arlindo_veiga_dos_santos = {
+    retire = yes
+    
+}

@@ -1,6 +1,6 @@
 capital = 1083
 oob = "KUM"
-set_research_slots = 1
+set_research_slots = 2
 complete_national_focus = KUM_nasir_reign
 set_variable = {
     var = KUM_turkic_influence
@@ -31,10 +31,10 @@ set_technology = {
     r56_militia_tech = 1
     
 }
-SIK = {
+QIE = {
     set_autonomy = {
-        target = KUM
-        autonomy_state = kr_autonomous_puppet
+        target = ROOT
+        autonomy_state = kr_autonomous_governorate
         
     }
     
@@ -65,6 +65,7 @@ add_ideas = {
     KUM_keeping_peace
     
 }
+china_add_poor_army = yes
 recruit_character = KUM_nasir_shah
 recruit_character = KUM_bashir_shah
 recruit_character = KUM_yulbars_khan
@@ -86,3 +87,17 @@ recruit_character = KUM_ma_zhongjie
 recruit_character = KUM_kalibek_rakhimbekovich
 recruit_character = KUM_zhang_chunxi
 activate_advisor = KUM_khans_court_sic
+KUM_nasir_shah = {
+    set_variable = {
+        china_alignment = token:manchu_qing
+        
+    }
+    
+}
+KUM_bashir_shah = {
+    set_variable = {
+        china_alignment = token:manchu_qing
+        
+    }
+    
+}

@@ -796,43 +796,6 @@ USA_release_TEX = {
         }
         TEX_fox_conner = {
             promote_leader = yes
-            remove_high_command_role = yes
-            add_advisor_role = {
-                advisor = {
-                    slot = high_command
-                    idea_token = TEX_fox_conner_high_command
-                    ledger = army
-                    available = {
-                        not_already_hired_except_as = high_command
-                        
-                    }
-                    traits = {
-                        KR_MHC_artillery_2
-                        
-                    }
-                    cost = 100
-                    
-                }
-                
-            }
-            add_advisor_role = {
-                advisor = {
-                    slot = theorist
-                    idea_token = TEX_fox_conner_theorist
-                    ledger = army
-                    available = {
-                        not_already_hired_except_as = theorist
-                        
-                    }
-                    traits = {
-                        KR_military_theorist
-                        
-                    }
-                    cost = 100
-                    
-                }
-                
-            }
             set_nationality = TEX
             
         }
@@ -1183,77 +1146,6 @@ USA_release_PSA = {
                 
             }
             add_claim_by = PSA
-            
-        }
-        USA_hoyt_sanford_vandenberg = {
-            if = {
-                limit = {
-                    USA = {
-                        has_idea = USA_hoyt_sanford_vandenberg_air_chief
-                        
-                    }
-                    
-                }
-                remove_air_chief_role = yes
-                add_advisor_role = {
-                    advisor = {
-                        slot = air_chief
-                        idea_token = USA_hoyt_sanford_vandenberg_air_chief
-                        available = {
-                            not_already_hired_except_as = air_chief
-                            
-                        }
-                        traits = {
-                            KR_air_chief_reform_2
-                            
-                        }
-                        cost = 100
-                        
-                    }
-                    activate = yes
-                    
-                }
-                
-            }
-            else = {
-                remove_air_chief_role = yes
-                add_advisor_role = {
-                    advisor = {
-                        slot = air_chief
-                        idea_token = USA_hoyt_sanford_vandenberg_air_chief
-                        available = {
-                            not_already_hired_except_as = air_chief
-                            
-                        }
-                        traits = {
-                            KR_air_chief_reform_2
-                            
-                        }
-                        cost = 100
-                        
-                    }
-                    
-                }
-                
-            }
-            add_advisor_role = {
-                advisor = {
-                    slot = theorist
-                    idea_token = USA_hoyt_sanford_vandenberg_theorist
-                    ledger = air
-                    available = {
-                        not_already_hired_except_as = theorist
-                        
-                    }
-                    traits = {
-                        KR_air_warfare_theorist
-                        
-                    }
-                    cost = 100
-                    
-                }
-                
-            }
             
         }
         PSA_john_lesesne_dewitt = {
@@ -2194,13 +2086,13 @@ USA_civil_war_begins = {
                 
             }
             set_global_flag = USA_civil_war_begun_flag
-            log = "KR_Event_Logging;ACW START;[GetDateText];[Root.GetName];[From.GetName]"
+            log = "KR_Event_Logging;ACW START;[GetDateText]"
             if = {
                 limit = {
                     country_exists = TEX
                     
                 }
-                log = "KR_Event_Logging;AUS JOINS ACW;[GetDateText];[Root.GetName];[From.GetName]"
+                log = "KR_Event_Logging;AUS JOINS ACW;[GetDateText]"
                 
             }
             if = {
@@ -2208,7 +2100,7 @@ USA_civil_war_begins = {
                     country_exists = CSA
                     
                 }
-                log = "KR_Event_Logging;CSA JOINS ACW;[GetDateText];[Root.GetName];[From.GetName]"
+                log = "KR_Event_Logging;CSA JOINS ACW;[GetDateText]"
                 
             }
             if = {
@@ -2216,7 +2108,7 @@ USA_civil_war_begins = {
                     country_exists = PSA
                     
                 }
-                log = "KR_Event_Logging;PSA JOINS ACW;[GetDateText];[Root.GetName];[From.GetName]"
+                log = "KR_Event_Logging;PSA JOINS ACW;[GetDateText]"
                 
             }
             if = {
@@ -3162,7 +3054,7 @@ USA_civil_war_ends = {
             }
             IRE = {
                 country_event = {
-                    id = ire.209
+                    id = ireland.209
                     days = 2
                     random_days = 5
                     
@@ -3240,6 +3132,11 @@ USA_demobilize_forces = {
             division_template = "Irish Volunteers"
             
         }
+        delete_unit_template_and_units = {
+            division_template = "Cuban Volunteers"
+            disband = yes
+            
+        }
         if = {
             limit = {
                 is_ai = no
@@ -3257,8 +3154,18 @@ USA_demobilize_forces = {
                 division_template = "Continental Line"
                 
             }
-            delete_unit_template_and_units = {
-                division_template = "Continental Cavalry"
+            if = {
+                limit = {
+                    NOT = {
+                        tag = CSA
+                        
+                    }
+                    
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Continental Cavalry"
+                    
+                }
                 
             }
             delete_unit_template_and_units = {
@@ -3266,11 +3173,21 @@ USA_demobilize_forces = {
                 
             }
             delete_unit_template_and_units = {
-                division_template = "National Cavalry"
+                division_template = "National Guardsmen"
                 
             }
-            delete_unit_template_and_units = {
-                division_template = "National Guardsmen"
+            if = {
+                limit = {
+                    NOT = {
+                        tag = TEX
+                        
+                    }
+                    
+                }
+                delete_unit_template_and_units = {
+                    division_template = "National Cavalry"
+                    
+                }
                 
             }
             delete_unit_template_and_units = {
@@ -3290,15 +3207,25 @@ USA_demobilize_forces = {
                 
             }
             delete_unit_template_and_units = {
-                division_template = "Volunteer Cavalry"
-                
-            }
-            delete_unit_template_and_units = {
                 division_template = "State Militia"
                 
             }
             delete_unit_template_and_units = {
                 division_template = "State Guard"
+                
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        tag = PSA
+                        
+                    }
+                    
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Volunteer Cavalry"
+                    
+                }
                 
             }
             
@@ -3319,9 +3246,19 @@ USA_demobilize_forces = {
                 disband = yes
                 
             }
-            delete_unit_template_and_units = {
-                division_template = "Continental Cavalry"
-                disband = yes
+            if = {
+                limit = {
+                    NOT = {
+                        tag = CSA
+                        
+                    }
+                    
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Continental Cavalry"
+                    disband = yes
+                    
+                }
                 
             }
             delete_unit_template_and_units = {
@@ -3330,13 +3267,23 @@ USA_demobilize_forces = {
                 
             }
             delete_unit_template_and_units = {
-                division_template = "National Cavalry"
+                division_template = "National Guardsmen"
                 disband = yes
                 
             }
-            delete_unit_template_and_units = {
-                division_template = "National Guardsmen"
-                disband = yes
+            if = {
+                limit = {
+                    NOT = {
+                        tag = TEX
+                        
+                    }
+                    
+                }
+                delete_unit_template_and_units = {
+                    division_template = "National Cavalry"
+                    disband = yes
+                    
+                }
                 
             }
             delete_unit_template_and_units = {
@@ -3360,11 +3307,6 @@ USA_demobilize_forces = {
                 
             }
             delete_unit_template_and_units = {
-                division_template = "Volunteer Cavalry"
-                disband = yes
-                
-            }
-            delete_unit_template_and_units = {
                 division_template = "State Militia"
                 disband = yes
                 
@@ -3372,6 +3314,21 @@ USA_demobilize_forces = {
             delete_unit_template_and_units = {
                 division_template = "State Guard"
                 disband = yes
+                
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        tag = PSA
+                        
+                    }
+                    
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Volunteer Cavalry"
+                    disband = yes
+                    
+                }
                 
             }
             
@@ -8684,13 +8641,13 @@ USA_starting_techs = {
         marines = 1
         tech_mountaineers = 1
         basic_train = 1
-        transport_plane1 = 1
-        aluminum_production_1 = 1
         camo = 1
-        etax_doctrine = 1
-        steel_production_1 = 1
-        r56_gw_railway_gun = 1
+        aluminum_production_1 = 1
         r56_railway_mortar_subtech = 1
+        r56_gw_railway_gun = 1
+        steel_production_1 = 1
+        etax_doctrine = 1
+        transport_plane1 = 1
         
     }
     if = {
@@ -8708,13 +8665,13 @@ USA_starting_techs = {
             aa_lmg = 1
             early_bombs = 1
             aircraft_construction = 1
-            transport_plane1 = 1
-            aluminum_production_1 = 1
             camo = 1
-            etax_doctrine = 1
-            steel_production_1 = 1
-            r56_gw_railway_gun = 1
+            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
+            steel_production_1 = 1
+            etax_doctrine = 1
+            transport_plane1 = 1
             
         }
         
@@ -8728,13 +8685,13 @@ USA_starting_techs = {
             naval_bomber1 = 1
             CAS1 = 1
             early_bomber = 1
-            transport_plane1 = 1
-            aluminum_production_1 = 1
             camo = 1
-            etax_doctrine = 1
-            steel_production_1 = 1
-            r56_gw_railway_gun = 1
+            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
+            steel_production_1 = 1
+            etax_doctrine = 1
+            transport_plane1 = 1
             
         }
         
@@ -8747,13 +8704,13 @@ USA_starting_techs = {
         set_technology = {
             gwtank_chassis = 1
             basic_light_tank_chassis = 1
-            transport_plane1 = 1
-            aluminum_production_1 = 1
             camo = 1
-            etax_doctrine = 1
-            steel_production_1 = 1
-            r56_gw_railway_gun = 1
+            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
+            steel_production_1 = 1
+            etax_doctrine = 1
+            transport_plane1 = 1
             
         }
         add_ideas = bureau_of_ordnance_spirit
@@ -8763,13 +8720,13 @@ USA_starting_techs = {
         set_technology = {
             gwtank = 1
             basic_light_tank = 1
-            transport_plane1 = 1
-            aluminum_production_1 = 1
             camo = 1
-            etax_doctrine = 1
-            steel_production_1 = 1
-            r56_gw_railway_gun = 1
+            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
+            steel_production_1 = 1
+            etax_doctrine = 1
+            transport_plane1 = 1
             
         }
         
@@ -8804,13 +8761,13 @@ USA_starting_techs = {
             basic_naval_mines = 1
             submarine_mine_laying = 1
             mtg_transport = 1
-            transport_plane1 = 1
-            aluminum_production_1 = 1
             camo = 1
-            etax_doctrine = 1
-            steel_production_1 = 1
-            r56_gw_railway_gun = 1
+            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
+            steel_production_1 = 1
+            etax_doctrine = 1
+            transport_plane1 = 1
             
         }
         
@@ -8831,13 +8788,13 @@ USA_starting_techs = {
             early_carrier = 1
             basic_carrier = 1
             transport = 1
-            transport_plane1 = 1
-            aluminum_production_1 = 1
             camo = 1
-            etax_doctrine = 1
-            steel_production_1 = 1
-            r56_gw_railway_gun = 1
+            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
+            steel_production_1 = 1
+            etax_doctrine = 1
+            transport_plane1 = 1
             
         }
         
@@ -9430,8 +9387,7 @@ USA_starting_plane_variants = {
             name = "P-35A"
             type = small_plane_airframe_1
             modules = {
-                fixed_main_weapon_slot = light_mg_2x
-                fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+                fixed_main_weapon_slot = light_mg_4x
                 engine_type_slot = engine_2_1x
                 special_type_slot_1 = empty
                 
@@ -9494,7 +9450,7 @@ USA_starting_plane_variants = {
             type = medium_plane_airframe_0
             modules = {
                 fixed_main_weapon_slot = medium_bomb_bay
-                fixed_auxiliary_weapon_slot_1 = bomb_locks
+                fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
                 engine_type_slot = engine_2_2x
                 special_type_slot_1 = flying_boat_medium
                 special_type_slot_2 = lmg_defense_turret

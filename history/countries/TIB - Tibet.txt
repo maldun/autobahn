@@ -1,21 +1,15 @@
 capital = 322
 oob = "TIB"
 set_research_slots = 2
+set_stability = 0.3
+set_war_support = 0.2
 set_technology = {
     infantry_weapons = 1
     tech_irregulars = 1
-    tech_mountaineers = 1
-    tech_support = 1
-    tech_recon = 1
     camo = 1
     etax_doctrine = 1
     r56_guerilla_warfare = 1
     r56_militia_tech = 1
-    
-}
-add_offsite_building = {
-    type = industrial_complex
-    level = 3
     
 }
 HND = {
@@ -43,7 +37,6 @@ set_popularities = {
     
 }
 add_ideas = {
-    limited_conscription
     isolation
     limited_exports
     TIB_struggle_tibet

@@ -126,7 +126,7 @@ country_event = {
 country_event = {
     id = fop.104
     days = 600
-    random = 576
+    random_hours = 576
     
 }
 country_event = {

@@ -104,6 +104,7 @@ recruit_character = SYR_salah_al_shishakli
 recruit_character = SYR_sami_al_hinawi
 recruit_character = SYR_adib_bin_hassan
 recruit_character = SYR_aziz_ali_al_misri
+recruit_character = SYR_yusuf_al_azma
 recruit_character = SYR_fawzi_al_qawuqji
 recruit_character = SYR_anwar_bannud
 recruit_character = SYR_army_subservient_air_command
@@ -112,6 +113,10 @@ recruit_character = SYR_interbranch_cooperation
 activate_advisor = SYR_abd_al_rahman_shahbandar_sic
 SYR_raghib_nashashibi = {
     set_nationality = PAL
+    
+}
+SYR_yusuf_al_azma = {
+    retire = yes
     
 }
 division_template = {

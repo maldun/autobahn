@@ -245,7 +245,7 @@ country_event = {
 country_event = {
     id = ottpol.9
     days = 91
-    random = 24
+    random_hours = 24
     
 }
 country_event = {
@@ -605,6 +605,13 @@ recruit_character = TUR_cemil_conk
 recruit_character = TUR_ali_fuat_cebesoy
 recruit_character = TUR_mehmet_fahri_engin
 recruit_character = TUR_zeki_baraz_kolac_kilicoglu
+TUR_abdulmecid_osmanoglu = {
+    set_variable = {
+        global.TUR_ottoman_sultan = THIS
+        
+    }
+    
+}
 TUR_sevket_sureyya_aydemir = {
     retire = yes
     

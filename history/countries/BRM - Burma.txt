@@ -43,7 +43,7 @@ if = {
 }
 set_research_slots = 2
 set_convoys = 20
-set_stability = 45
+set_stability = 0.45
 set_war_support = 0.4
 set_politics = {
     ruling_party = authoritarian_democrat
@@ -73,13 +73,13 @@ country_event = {
 country_event = {
     id = burma.1
     days = 300
-    random = 240
+    random_hours = 240
     
 }
 country_event = {
     id = burma.3
     days = 450
-    random = 360
+    random_hours = 360
     
 }
 recruit_character = BRM_than_thun

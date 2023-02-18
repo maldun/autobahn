@@ -21,7 +21,7 @@ country_event = {
 country_event = {
     id = bol.7
     days = 200
-    random = 1000
+    random_hours = 1000
     
 }
 set_technology = {

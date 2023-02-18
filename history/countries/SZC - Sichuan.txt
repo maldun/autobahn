@@ -1,6 +1,6 @@
 capital = 605
 oob = "SZC"
-set_stability = 0.1
+set_stability = 0.4
 set_war_support = 0.3
 set_research_slots = 2
 set_technology = {
@@ -13,6 +13,14 @@ set_technology = {
     gw_artillery = 1
     camo = 1
     etax_doctrine = 1
+    
+}
+QIE = {
+    set_autonomy = {
+        target = ROOT
+        autonomy_state = kr_associated_governorate
+        
+    }
     
 }
 set_politics = {
@@ -41,17 +49,8 @@ add_ideas = {
     SZC_baoding_influence
     
 }
+china_add_poor_army = yes
 country_lock_all_division_template = yes
-add_offsite_building = {
-    type = industrial_complex
-    level = 2
-    
-}
-add_offsite_building = {
-    type = arms_factory
-    level = 2
-    
-}
 country_event = {
     id = sichuan.1
     hours = 2
@@ -60,13 +59,13 @@ country_event = {
 country_event = {
     id = sichuan.120
     days = 48
-    random = 432
+    random_hours = 432
     
 }
 country_event = {
     id = sichuan.125
     days = 451
-    random = 288
+    random_hours = 288
     
 }
 recruit_character = SZC_zhang_lan
@@ -101,10 +100,18 @@ recruit_character = SZC_zheng_shaoyu
 recruit_character = SZC_yue_yiqin
 recruit_character = SZC_yang_shukan
 SZC_yang_sen = {
+    set_variable = {
+        china_alignment = token:zhili
+        
+    }
     set_character_flag = SZC_armament_leader
     
 }
 SZC_liu_cunhou = {
+    set_variable = {
+        china_alignment = token:zhili
+        
+    }
     set_character_flag = SZC_armament_leader
     
 }
@@ -118,6 +125,20 @@ SZC_wang_lingji = {
 }
 SZC_he_guoguang = {
     set_character_flag = SZC_armament_leader
+    
+}
+SZC_deng_xihou = {
+    set_variable = {
+        china_alignment = token:chinese_republican
+        
+    }
+    
+}
+SZC_liu_wenhui = {
+    set_variable = {
+        china_alignment = token:chinese_republican
+        
+    }
     
 }
 SZC_liu_xiang = {
@@ -137,12 +158,20 @@ SZC_guo_xunqi = {
     
 }
 SZC_lu_chao = {
+    set_variable = {
+        china_alignment = token:chinese_republican
+        
+    }
     set_character_flag = SZC_officer_leader
     set_character_flag = CHI_original_unit_leader
     retire = yes
     
 }
 SZC_xiong_kewu = {
+    set_variable = {
+        china_alignment = token:chinese_republican
+        
+    }
     set_character_flag = SZC_officer_leader
     set_character_flag = CHI_original_unit_leader
     retire = yes

@@ -99,6 +99,7 @@ country_event = {
     days = 855
     
 }
+give_military_access = BRA
 add_ideas = URG_neutrality_idea
 recruit_character = URG_council
 recruit_character = URG_hugo_fernandes

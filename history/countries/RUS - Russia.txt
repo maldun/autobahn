@@ -1,6 +1,6 @@
 capital = 219
 set_convoys = 50
-set_stability = 0.5
+set_stability = 0.6
 set_war_support = 0.3
 set_research_slots = 4
 starting_train_buffer = 3
@@ -175,13 +175,13 @@ country_event = {
 country_event = {
     id = russia.24
     days = 385
-    random = 600
+    random_hours = 600
     
 }
 country_event = {
     id = rusd.66
     days = 365
-    random = 600
+    random_hours = 600
     
 }
 country_event = {
@@ -192,7 +192,7 @@ country_event = {
 country_event = {
     id = rusd.56
     days = 1014
-    random = 720
+    random_hours = 720
     
 }
 country_event = {

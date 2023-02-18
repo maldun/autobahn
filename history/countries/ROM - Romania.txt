@@ -137,37 +137,37 @@ country_event = {
 country_event = {
     id = romania.73
     days = 300
-    random = 100
+    random_hours = 100
     
 }
 country_event = {
     id = romania.61
     days = 250
-    random = 50
+    random_hours = 50
     
 }
 country_event = {
     id = romania.154
     days = 360
-    random = 50
+    random_hours = 50
     
 }
 country_event = {
     id = romania.155
     days = 660
-    random = 50
+    random_hours = 50
     
 }
 country_event = {
     id = romania.158
     days = 600
-    random = 50
+    random_hours = 50
     
 }
 country_event = {
     id = romania.159
     days = 200
-    random = 50
+    random_hours = 50
     
 }
 country_event = {
@@ -178,13 +178,13 @@ country_event = {
 country_event = {
     id = romania.185
     days = 400
-    random = 50
+    random_hours = 50
     
 }
 country_event = {
     id = romania.186
     days = 500
-    random = 50
+    random_hours = 50
     
 }
 country_event = {

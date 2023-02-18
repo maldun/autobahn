@@ -73,6 +73,7 @@ if = {
     set_technology = {
         early_destroyer = 1
         early_submarine = 1
+        early_heavy_cruiser = 1
         
     }
     

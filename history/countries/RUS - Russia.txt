@@ -410,7 +410,7 @@ add_to_array = {
     
 }
 add_to_array = {
-    RUS_integration_state_array = 329
+    global.RUS_integration_state_array = 329
     
 }
 country_event = {
@@ -461,11 +461,6 @@ country_event = {
 country_event = {
     id = russia.22
     days = 316
-    
-}
-country_event = {
-    id = rusd.135
-    days = 408
     
 }
 country_event = {
@@ -876,7 +871,6 @@ recalculate_backward_industry_debuff = yes
 add_ideas = {
     rus_brest_litovsk
     rus_memories_of_rev
-    rus_industry_lack
     rus_divided_staff
     rus_divided_marine
     RUS_Pavel_N_Milyukov_hog_mli

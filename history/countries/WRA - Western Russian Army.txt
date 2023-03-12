@@ -365,7 +365,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Aleksey von der Palen"
-    portrait_path = "gfx/leaders/RUS/Portrait_RUS_Alexey_Palen.png.png"
+    portrait_path = "gfx/leaders/RUS/Portrait_RUS_Alexey_Palen.png"
     id = 78712
     traits = {
         cavalry_officer
@@ -396,7 +396,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Kliment Dydorov"
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Kliment_Dydorov.png"
-    id = 78713
+    id = 78714
     traits = {
         infantry_officer
         

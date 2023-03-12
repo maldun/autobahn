@@ -196,6 +196,11 @@ country_event = {
     days = 720
     
 }
+country_event = {
+    id = ire.3102
+    days = 3644
+    
+}
 create_country_leader = {
     name = "James Gralton"
     picture = "gfx/leaders/IRE/Portrait_Ireland_James_Gralton.png"
@@ -472,6 +477,22 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 2
     logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Michael Brennan"
+    id = 8920
+    portrait_path = "gfx/leaders/IRE/Portrait_Ireland_Michael_Brennan.png"
+    traits = {
+        war_hero
+        urban_assault_specialist
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
     
 }
 create_navy_leader = {

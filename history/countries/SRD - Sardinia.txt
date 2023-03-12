@@ -20,7 +20,6 @@ if = {
         has_dlc = "By Blood Alone"
         
     }
-    set_air_oob = "SRD_air_bba"
     set_technology = {
         aa_lmg = 1
         early_bombs = 1
@@ -32,7 +31,6 @@ if = {
     }
     SRD_BBA_air_variants = yes
     else = {
-        set_air_oob = "SRD_air_legacy"
         set_technology = {
             early_fighter = 1
             naval_bomber1 = 1
@@ -154,8 +152,44 @@ set_popularities = {
     national_populist = 0
     
 }
+activate_targeted_decision = {
+    target = ITA
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = SIC
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = PAP
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = VNC
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = EMI
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = TUS
+    decision = SRD_attack_italy
+    
+}
+activate_targeted_decision = {
+    target = LOM
+    decision = SRD_attack_italy
+    
+}
 add_ideas = {
     limited_conscription
+    SRD_entente_support_1
     SRD_Giorgio_Bardanzellu_hog_ade
     SRD_Raffaele_Guariglia_for_pau
     SRD_Mario_Ascione_eco_ade
@@ -163,13 +197,37 @@ add_ideas = {
     
 }
 create_country_leader = {
+    name = "Paolo Orano"
+    picture = "gfx/leaders/SRD/Portrait_SRD_Paolo_Orano.png"
+    desc = "POLITICS_ORANO_DESC"
+    expire = "1965.1.1"
+    ideology = natsynd_subtype
+    
+}
+create_country_leader = {
+    name = "Aurelio Chessa"
+    picture = "gfx/leaders/SRD/Portrait_SRD_Aurelio_Chessa.png"
+    desc = "POLITICS_CHESSA_DESC"
+    expire = "1965.1.1"
+    ideology = anarcho_syndicalist_subtype
+    
+}
+create_country_leader = {
+    name = "Giuseppe Abozzi"
+    picture = "gfx/leaders/SRD/Portrait_SRD_Giuseppe_Abozzi.png"
+    desc = "POLITICS_ABOZZI_DESC"
+    expire = "1965.1.1"
+    ideology = moderate_socialist_subtype
+    
+}
+create_country_leader = {
     name = "Amedeo I"
     picture = "gfx/leaders/SRD/Portrait_SRD_King_Amedeo.png"
     desc = "POLITICS_AMADEO_SAVOY_DESC"
     expire = "1965.1.1"
-    ideology = social_democrat_subtype
+    ideology = sardism_subtype
     traits = {
-        warrior_prince
+        SRD_Explorer_King
         
     }
     
@@ -179,9 +237,9 @@ create_country_leader = {
     picture = "gfx/leaders/SRD/Portrait_SRD_King_Amedeo.png"
     desc = "POLITICS_AMADEO_SAVOY_DESC"
     expire = "1965.1.1"
-    ideology = social_liberal_subtype
+    ideology = soclib_sardism_subtype
     traits = {
-        warrior_prince
+        SRD_Explorer_King
         
     }
     
@@ -193,7 +251,7 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = market_liberal_subtype
     traits = {
-        warrior_prince
+        SRD_Explorer_King
         
     }
     
@@ -205,7 +263,7 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = christian_democracy_subtype
     traits = {
-        warrior_prince
+        SRD_Explorer_King
         
     }
     
@@ -215,9 +273,9 @@ create_country_leader = {
     picture = "gfx/leaders/SRD/Portrait_SRD_King_Amedeo.png"
     desc = "POLITICS_AMADEO_SAVOY_DESC"
     expire = "1965.1.1"
-    ideology = prussian_constitutionalism_subtype
+    ideology = authdem_junta_subtype
     traits = {
-        warrior_prince
+        SRD_Explorer_King
         
     }
     
@@ -227,9 +285,9 @@ create_country_leader = {
     picture = "gfx/leaders/SRD/Portrait_SRD_King_Amedeo.png"
     desc = "POLITICS_AMADEO_SAVOY_DESC"
     expire = "1965.1.1"
-    ideology = absolute_monarchy_subtype
+    ideology = pataut_national_conservative_subtype
     traits = {
-        warrior_prince
+        SRD_Explorer_King
         
     }
     
@@ -241,7 +299,7 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = national_populist_subtype
     traits = {
-        warrior_prince
+        SRD_Explorer_King
         
     }
     
@@ -277,6 +335,23 @@ create_field_marshal = {
     attack_skill = 3
     defense_skill = 4
     planning_skill = 3
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Mario Roatta"
+    portrait_path = "gfx/leaders/SRD/Portrait_SRD_Mario_Roatta.png"
+    traits = {
+        brilliant_strategist
+        harsh_leader
+        defensive_doctrine
+        infantry_leader
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 2
     logistics_skill = 2
     
 }
@@ -447,6 +522,21 @@ create_navy_leader = {
     attack_skill = 2
     defense_skill = 2
     maneuvering_skill = 3
+    coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Ferdinando di Savoia-Genova"
+    portrait_path = "gfx/leaders/SRD/Portrait_SRD_Prince_Ferdinando.png"
+    traits = {
+        superior_tactician
+        
+    }
+    id = 512
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    maneuvering_skill = 2
     coordination_skill = 3
     
 }

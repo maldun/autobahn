@@ -140,3 +140,19 @@ create_country_leader = {
     ideology = totalist_subtype
     
 }
+create_corps_commander = {
+    name = "Son Ngoc Thanh"
+    portrait_path = "gfx/leaders/CAM/Portrait_Cambodia_Son_Ngoc_Thanh.png"
+    traits = {
+        hidden_sympathies
+        jungle_rat
+        commando
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+    
+}

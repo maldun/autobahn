@@ -370,7 +370,6 @@ create_field_marshal = {
 create_corps_commander = {
     name = "Konstanty Rokossowski"
     portrait_path = "gfx/leaders/POL/Portrait_POL_Konstanty_Rokossowski.png"
-    desc = "POLITICS_KONSTANTIN_ROKOSSOVSKY_DESC"
     id = 490
     traits = {
         brilliant_strategist

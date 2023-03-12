@@ -134,11 +134,6 @@ country_event = {
     
 }
 country_event = {
-    id = arg_flavour.14
-    days = 15
-    
-}
-country_event = {
     id = argbla.8
     days = 441
     
@@ -270,14 +265,6 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Nicolas Repetto"
-    desc = "POLITICS_NICOLAS_REPETTO_DESC"
-    picture = "gfx/leaders/ARG/Portrait_Argentine_Nicolas_Repetto.png"
-    expire = "1965.1.1"
-    ideology = moderate_socialist_subtype
-    
-}
-create_country_leader = {
     name = "Pedro Pablo Ramirez"
     desc = "POLITICS_PABLO_RAMIREZ_DESC"
     picture = "gfx/leaders/ARG/Portrait_Argentine_Pablo_Ramirez.png"
@@ -297,7 +284,7 @@ create_country_leader = {
     name = "Ramón Antonio Castillo"
     picture = "gfx/leaders/ARG/Portrait_Argentine_Ramon_Castillo.png"
     expire = "1965.1.1"
-    ideology = market_liberal_subtype
+    ideology = liberal_conservative_subtype
     
 }
 create_country_leader = {
@@ -305,7 +292,7 @@ create_country_leader = {
     desc = "POLITICS_HIPOLITO_YRIGOYEN_DESC"
     picture = "gfx/leaders/ARG/Portrait_Argentine_Hipolito_Yrigoyen.png"
     expire = "1965.1.1"
-    ideology = social_liberal_subtype
+    ideology = radical_liberalism_subtype
     
 }
 create_country_leader = {
@@ -313,7 +300,15 @@ create_country_leader = {
     desc = "POLITICS_NICOLAS_REPETTO_DESC"
     picture = "gfx/leaders/ARG/Portrait_Argentine_Nicolas_Repetto.png"
     expire = "1965.1.1"
-    ideology = socdem_democratic_socialism_subtype
+    ideology = social_democrat_subtype
+    
+}
+create_country_leader = {
+    name = "Nicolas Repetto"
+    desc = "POLITICS_NICOLAS_REPETTO_DESC"
+    picture = "gfx/leaders/ARG/Portrait_Argentine_Nicolas_Repetto.png"
+    expire = "1965.1.1"
+    ideology = moderate_socialist_subtype
     
 }
 create_country_leader = {

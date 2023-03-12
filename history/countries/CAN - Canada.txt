@@ -299,6 +299,7 @@ add_to_faction = DEH
 add_to_faction = AST
 add_to_faction = SAF
 add_to_faction = ZIM
+add_to_faction = SRD
 add_opinion_modifier = {
     target = ENG
     modifier = embargo
@@ -550,6 +551,7 @@ create_field_marshal = {
         trait_cautious
         politically_connected
         organizer
+        GBR_british_exile_trait
         
     }
     skill = 4
@@ -569,6 +571,7 @@ create_field_marshal = {
         career_officer
         logistics_wizard
         thorough_planner
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -605,6 +608,7 @@ create_field_marshal = {
         panzer_leader
         trait_engineer
         organizer
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -615,12 +619,29 @@ create_field_marshal = {
     id = 9201
     
 }
+create_field_marshal = {
+    name = "Harold Alexander"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Harold_Alexander.png"
+    traits = {
+        politically_connected
+        GBR_british_exile_trait
+        
+    }
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 5
+    id = 9203
+    
+}
 create_corps_commander = {
     name = "Claude Auchinleck"
     portrait_path = "gfx/leaders/CAN/Portrait_Canada_Claude_Auchinleck.png"
     traits = {
         inflexible_strategist
         career_officer
+        GBR_british_exile_trait
         
     }
     skill = 5
@@ -669,6 +690,7 @@ create_corps_commander = {
     traits = {
         old_guard
         politically_connected
+        GBR_british_exile_trait
         
     }
     skill = 4
@@ -685,6 +707,7 @@ create_corps_commander = {
     traits = {
         trickster
         commando
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -698,7 +721,6 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Charles Foulkes"
     portrait_path = "gfx/leaders/CAN/Portrait_Canada_Charles_Foulkes_2.png"
-    gfx = "GFX_CAN_charles_foulkes"
     traits = {}
     skill = 4
     attack_skill = 4
@@ -746,6 +768,7 @@ create_corps_commander = {
     traits = {
         trickster
         jungle_rat
+        GBR_british_exile_trait
         
     }
     skill = 4
@@ -764,6 +787,7 @@ create_corps_commander = {
         politically_connected
         old_guard
         infantry_leader
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -795,6 +819,7 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/CAN/Portrait_Canada_Duke_of_Gloucester.png"
     traits = {
         politically_connected
+        GBR_british_exile_trait
         
     }
     skill = 2
@@ -808,7 +833,10 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Philip Neame"
     portrait_path = "gfx/leaders/CAN/Portrait_Canada_Philip_Neame.png"
-    traits = {}
+    traits = {
+        GBR_british_exile_trait
+        
+    }
     skill = 2
     attack_skill = 1
     defense_skill = 2
@@ -824,6 +852,7 @@ create_corps_commander = {
         organizer
         trait_cautious
         career_officer
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -837,7 +866,10 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Richard O'Connor"
     portrait_path = "gfx/leaders/CAN/Portrait_England_Richard_O_Connor.png"
-    traits = {}
+    traits = {
+        GBR_british_exile_trait
+        
+    }
     skill = 4
     attack_skill = 2
     defense_skill = 4
@@ -851,6 +883,7 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/CAN/Portrait_England_John_Dill.png"
     traits = {
         hill_fighter
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -863,9 +896,10 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Henry Pownall"
-    portrait_path = "gfx/leaders/CAN/Portrait_CAN_Henry_Pownall.png"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Henry_Pownall.png"
     traits = {
         trickster
+        GBR_british_exile_trait
         
     }
     skill = 2
@@ -873,6 +907,73 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 2
     logistics_skill = 2
+    id = 9202
+    
+}
+create_corps_commander = {
+    name = "Thomas Victor Anderson"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Thomas_Victor_Anderson.png"
+    traits = {
+        career_officer
+        inflexible_strategist
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    id = 9206
+    
+}
+create_corps_commander = {
+    name = "Christopher Vokes"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Christopher_Vokes.png"
+    traits = {
+        infantry_officer
+        harsh_leader
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+    id = 9207
+    
+}
+create_corps_commander = {
+    name = "Percival John Montague"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Percival_John_Montague.png"
+    traits = {
+        cavalry_expert
+        politically_connected
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 1
+    id = 92010
+    
+}
+create_corps_commander = {
+    name = "Frederick Browning"
+    portrait_path = "gfx/leaders/CAN/Portrait_England_Frederick_Browning.png"
+    traits = {
+        trickster
+        commando
+        paratrooper
+        GBR_british_exile_trait
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 3
+    id = 2540
     
 }
 create_navy_leader = {
@@ -911,6 +1012,7 @@ create_navy_leader = {
     portrait_path = "gfx/leaders/CAN/Portrait_Canada_Louis_Mountbatten.png"
     traits = {
         spotter
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -938,6 +1040,7 @@ create_navy_leader = {
     portrait_path = "gfx/leaders/CAN/Portrait_Canada_Roger_Backhouse.png"
     traits = {
         old_guard_navy
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -954,6 +1057,7 @@ create_navy_leader = {
     traits = {
         superior_tactician
         seawolf
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -970,6 +1074,7 @@ create_navy_leader = {
     traits = {
         old_guard_navy
         ironside
+        GBR_british_exile_trait
         
     }
     skill = 2
@@ -1001,6 +1106,7 @@ create_navy_leader = {
     portrait_path = "gfx/leaders/CAN/Portrait_England_James_Somerville.png"
     traits = {
         superior_tactician
+        GBR_british_exile_trait
         
     }
     skill = 5
@@ -1017,6 +1123,7 @@ create_navy_leader = {
     traits = {
         blockade_runner
         superior_tactician
+        GBR_british_exile_trait
         
     }
     skill = 5
@@ -1032,6 +1139,7 @@ create_navy_leader = {
     portrait_path = "gfx/leaders/CAN/Portrait_England_John_Tovey.png"
     traits = {
         superior_tactician
+        GBR_british_exile_trait
         
     }
     skill = 4
@@ -1047,6 +1155,7 @@ create_navy_leader = {
     portrait_path = "gfx/leaders/CAN/Portrait_CAN_Bernard_Rawlings.png"
     traits = {
         gentlemanly
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -1062,6 +1171,7 @@ create_navy_leader = {
     traits = {
         gunnery_expert
         fly_swatter
+        GBR_british_exile_trait
         
     }
     skill = 3
@@ -1069,6 +1179,38 @@ create_navy_leader = {
     defense_skill = 2
     maneuvering_skill = 2
     coordination_skill = 3
+    
+}
+create_navy_leader = {
+    name = "Jack Kenneth Highton"
+    portrait_path = "gfx/leaders/CAN/Portrait_England_Jack_Highton.png"
+    traits = {
+        seawolf
+        GBR_british_exile_trait
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    maneuvering_skill = 2
+    coordination_skill = 2
+    id = 270
+    
+}
+create_navy_leader = {
+    name = "Harold Tom Baillie-Grohman"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Harold_Tom_Baillie_Grohman.png"
+    traits = {
+        old_guard_navy
+        mine_sweeper
+        crisis_magician
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    maneuvering_skill = 2
+    coordination_skill = 2
     
 }
 if = {
@@ -1082,6 +1224,31 @@ if = {
         traits = {
             operative_seducer
             operative_well_groomed
+            
+        }
+        bypass_recruitment = no
+        available_to_spy_master = yes
+        nationalities = {
+            GBR
+            CAN
+            ENG
+            
+        }
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "La Resistance"
+        
+    }
+    create_operative_leader = {
+        name = "Maxwell Knight"
+        GFX = GFX_Portrait_Canada_Maxwell_Knight_Operative
+        traits = {
+            operative_infiltrator
+            operative_natural_orator
             
         }
         bypass_recruitment = no

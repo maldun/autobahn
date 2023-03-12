@@ -470,23 +470,6 @@ create_field_marshal = {
     
 }
 create_corps_commander = {
-    name = "Frederick Browning"
-    portrait_path = "gfx/leaders/ENG/Portrait_England_Frederick_Browning.png"
-    traits = {
-        trickster
-        commando
-        paratrooper
-        
-    }
-    skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 3
-    id = 2540
-    
-}
-create_corps_commander = {
     name = "Vladimir Antonov-Ovseyenko"
     id = 1958
     portrait_path = "gfx/leaders/SOV/Vladimir_Antonov-Ovseyenko.png"
@@ -507,22 +490,6 @@ create_corps_commander = {
     logistics_skill = 3
     
 }
-create_corps_commander = {
-    name = "Eric Charles Hayes"
-    portrait_path = "gfx/leaders/ENG/Portrait_England_Eric_Charles_Hayes.png"
-    traits = {
-        organizer
-        career_officer
-        
-    }
-    skill = 4
-    attack_skill = 2
-    defense_skill = 4
-    planning_skill = 4
-    logistics_skill = 3
-    id = 2550
-    
-}
 create_field_marshal = {
     name = "Ronald Forbes Adam"
     portrait_path = "gfx/leaders/ENG/Portrait_ENG_Ronald_Forbes_Adam.png"
@@ -537,23 +504,6 @@ create_field_marshal = {
     defense_skill = 5
     planning_skill = 4
     logistics_skill = 2
-    
-}
-create_corps_commander = {
-    name = "Brian Horrocks"
-    portrait_path = "gfx/leaders/ENG/Portrait_England_Brian_Horrocks.png"
-    traits = {
-        war_hero
-        organizer
-        urban_assault_specialist
-        
-    }
-    skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 2
-    id = 2560
     
 }
 create_corps_commander = {
@@ -1002,20 +952,6 @@ create_navy_leader = {
     
 }
 create_navy_leader = {
-    name = "Percy Addison"
-    portrait_path = "gfx/leaders/ENG/Portrait_England_Percy_Addison.png"
-    traits = {
-        old_guard_navy
-        
-    }
-    skill = 2
-    attack_skill = 1
-    defense_skill = 3
-    maneuvering_skill = 2
-    coordination_skill = 1
-    
-}
-create_navy_leader = {
     name = "Gerard Broadmead Roope"
     portrait_path = "gfx/leaders/ENG/Portrait_England_Gerard_Roope.png"
     traits = {
@@ -1074,21 +1010,6 @@ create_navy_leader = {
     maneuvering_skill = 3
     coordination_skill = 4
     id = 269
-    
-}
-create_navy_leader = {
-    name = "Jack Kenneth Highton"
-    portrait_path = "gfx/leaders/ENG/Portrait_England_Jack_Highton.png"
-    traits = {
-        seawolf
-        
-    }
-    skill = 2
-    attack_skill = 2
-    defense_skill = 1
-    maneuvering_skill = 2
-    coordination_skill = 2
-    id = 270
     
 }
 create_navy_leader = {
@@ -1151,6 +1072,22 @@ create_navy_leader = {
     maneuvering_skill = 3
     coordination_skill = 4
     id = 282
+    
+}
+create_navy_leader = {
+    name = "Kenneth Dewar"
+    portrait_path = "gfx/leaders/ENG/Portrait_England_Kenneth_Dewar.png"
+    traits = {
+        fleet_protector
+        gunnery_expert
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    maneuvering_skill = 3
+    coordination_skill = 4
+    id = 283
     
 }
 if = {

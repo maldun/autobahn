@@ -5,6 +5,7 @@ set_research_slots = 3
 set_convoys = 50
 set_stability = 0.55
 set_war_support = 0.1
+starting_train_buffer = 3
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -158,16 +159,6 @@ if = {
     
 }
 country_event = {
-    id = mittel.167
-    days = 1
-    
-}
-country_event = {
-    id = mittel.1
-    days = 5
-    
-}
-country_event = {
     id = mittel.125
     days = 265
     
@@ -184,35 +175,14 @@ country_event = {
     
 }
 country_event = {
-    id = mittel.176
-    days = 366
-    
-}
-country_event = {
     id = mittel.104
     days = 495
     random_days = 50
     
 }
 country_event = {
-    id = mittel.178
-    days = 731
-    
-}
-country_event = {
     id = mittel.127
     days = 996
-    
-}
-country_event = {
-    id = mittel.37
-    days = 880
-    random_days = 90
-    
-}
-country_event = {
-    id = mittel.179
-    days = 1096
     
 }
 country_event = {
@@ -222,14 +192,29 @@ country_event = {
     
 }
 country_event = {
-    id = mittel.180
-    days = 1461
-    
-}
-country_event = {
     id = mittel.129
     days = 1250
     random_days = 150
+    
+}
+country_event = {
+    id = mittel.176
+    days = 366
+    
+}
+country_event = {
+    id = mittel.178
+    days = 731
+    
+}
+country_event = {
+    id = mittel.179
+    days = 1096
+    
+}
+country_event = {
+    id = mittel.180
+    days = 1461
     
 }
 GER = {

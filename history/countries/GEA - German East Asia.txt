@@ -16,6 +16,7 @@ set_technology = {
     tech_support = 1
     tech_recon = 1
     tech_engineers = 1
+    tech_military_police = 1
     gw_artillery = 1
     interwar_antiair = 1
     fuel_silos = 1
@@ -166,8 +167,13 @@ add_offsite_building = {
     
 }
 country_event = {
-    id = Ostasien.0
-    days = 1
+    id = Ostasien.6
+    days = 160
+    
+}
+country_event = {
+    id = Ostasien.12
+    days = 184
     
 }
 GER = {
@@ -207,7 +213,7 @@ add_ideas = {
     GEA_colonial_question
     free_trade
     GEA_AOG_bonus_idea
-    GEA_Protecting_GER_interest
+    GEA_arm_of_the_german_empire
     
 }
 add_dynamic_modifier = {

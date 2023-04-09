@@ -25,55 +25,6 @@ if = {
     }
     
 }
-if = {
-    limit = {
-        has_dlc_nsb = yes
-        
-    }
-    set_technology = {
-        gwtank_chassis = 1
-        
-    }
-    
-}
-if = {
-    limit = {
-        has_dlc_nsb = no
-        
-    }
-    set_technology = {
-        gwtank = 1
-        
-    }
-    
-}
-if = {
-    limit = {
-        has_dlc_mtg = yes
-        
-    }
-    set_technology = {
-        early_ship_hull_light = 1
-        early_ship_hull_submarine = 1
-        basic_depth_charges = 1
-        basic_battery = 1
-        basic_torpedo = 1
-        
-    }
-    
-}
-if = {
-    limit = {
-        has_dlc_mtg = no
-        
-    }
-    set_technology = {
-        early_destroyer = 1
-        early_submarine = 1
-        
-    }
-    
-}
 QIE = {
     set_autonomy = {
         target = ROOT
@@ -105,14 +56,10 @@ set_popularities = {
 add_ideas = {
     SQI_Rampant_drug_trade
     SQI_flight_north
+    unequal_treaties
     
 }
 china_add_poor_army = yes
-country_event = {
-    id = shandong.1
-    days = 1
-    
-}
 recruit_character = SQI_fu_sinian
 recruit_character = SQI_zhang_shulin
 recruit_character = SQI_ma_shiwei

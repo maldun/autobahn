@@ -3,7 +3,7 @@ oob = "POL"
 set_research_slots = 3
 set_stability = 0.65
 set_war_support = 0.16
-starting_train_buffer = 1
+starting_train_buffer = 2
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -581,7 +581,6 @@ recruit_character = POL_stanislaw_magnuszewski
 recruit_character = POL_antoni_szylling
 recruit_character = POL_boleslaw_wieniawa_dlugoszowski
 recruit_character = POL_jozef_unrug
-recruit_character = POL_jerzy_swirski
 POL_edward_rydz_smigly = {
     retire = yes
     
@@ -591,11 +590,58 @@ POL_konstanty_rokossowski = {
     
 }
 POL_jozef_unrug = {
-    retire = yes
+    set_nationality = XXA
     
 }
-POL_jerzy_swirski = {
-    set_nationality = UKR
+ROOT = {
+    67 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    86 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    88 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    89 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    91 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    93 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    94 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    96 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    97 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    776 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    777 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    924 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
     
 }
 if = {

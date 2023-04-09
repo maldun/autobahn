@@ -198,133 +198,12 @@ USA_initial_events = {
     }
     
 }
-CSA_initial_events = {
-    CSA = {
-        if = {
-            limit = {
-                USA = {
-                    has_country_flag = USA_reed_was_president
-                    
-                }
-                
-            }
-            add_timed_idea = {
-                idea = CSA_righteous_nation
-                days = 120
-                
-            }
-            
-        }
-        every_other_country = {
-            limit = {
-                NOT = {
-                    is_in_faction_with = ENT
-                    
-                }
-                
-            }
-            clear_embargo_PREV = yes
-            
-        }
-        unit_limit_calculation_effect = yes
-        country_event = {
-            id = csa.150
-            days = 6
-            
-        }
-        country_event = {
-            id = amcivwar.30
-            days = 40
-            random_days = 10
-            
-        }
-        country_event = {
-            id = amcivwar.38
-            days = 70
-            random_days = 20
-            
-        }
-        country_event = {
-            id = amcivwar.36
-            days = 100
-            random_days = 20
-            
-        }
-        country_event = {
-            id = amcivwar.40
-            days = 130
-            random_days = 20
-            
-        }
-        country_event = {
-            id = amcivwar.41
-            days = 160
-            random_days = 20
-            
-        }
-        country_event = {
-            id = amcivwar.41
-            days = 245
-            random_days = 20
-            
-        }
-        
-    }
-    set_global_flag = USA_CSA_existed
-    
-}
-TEX_initial_events = {
-    TEX = {
-        if = {
-            limit = {
-                USA = {
-                    has_country_flag = USA_long_was_president
-                    
-                }
-                
-            }
-            add_timed_idea = {
-                idea = TEX_righteous_nation
-                days = 120
-                
-            }
-            
-        }
-        unit_limit_calculation_effect = yes
-        country_event = {
-            id = unionstate.150
-            days = 7
-            
-        }
-        country_event = {
-            id = amcivwar.46
-            days = 10
-            
-        }
-        country_event = {
-            id = amcivwar.48
-            days = 25
-            
-        }
-        
-    }
-    set_global_flag = USA_TEX_existed
-    
-}
-PSA_initial_events = {
-    PSA = {
-        unit_limit_calculation_effect = yes
-        country_event = {
-            id = pacificstates.150
-            days = 1
-            
-        }
-        
-    }
-    set_global_flag = USA_PSA_existed
-    
-}
 USA_release_CSA = {
+    set_global_flag = USA_CSA_existed
+    effect_tooltip = {
+        release = CSA
+        
+    }
     hidden_effect = {
         CSA = {
             add_state_core = 261
@@ -414,7 +293,7 @@ USA_release_CSA = {
             transfer_state_to = CSA
             teleport_armies = {
                 limit = {
-                    tag = USA
+                    is_ally_with = USA
                     
                 }
                 to_state_array = owned_controlled_states
@@ -422,9 +301,8 @@ USA_release_CSA = {
             }
             
         }
-        every_state = {
+        every_core_state = {
             limit = {
-                is_core_of = USA
                 NOT = {
                     is_core_of = CSA
                     is_claimed_by = CSA
@@ -474,6 +352,7 @@ USA_release_CSA = {
         CSA = {
             promote_character = CSA_jack_reed
             every_owned_state = {
+                set_demilitarized_zone = no
                 USA_remove_support_modifiers_from_state = yes
                 
             }
@@ -595,11 +474,6 @@ USA_release_CSA = {
                 }
                 
             }
-            country_event = {
-                id = amcivwar.337
-                days = 1
-                
-            }
             add_ideas = CSA_red_guard_militias_1
             if = {
                 limit = {
@@ -609,11 +483,69 @@ USA_release_CSA = {
                     }
                     
                 }
-                add_stability = -0.25
+                add_timed_idea = {
+                    idea = CSA_righteous_nation
+                    days = 120
+                    
+                }
                 
             }
-            else = {
-                add_stability = -0.35
+            every_other_country = {
+                limit = {
+                    NOT = {
+                        is_in_faction_with = ENT
+                        
+                    }
+                    
+                }
+                clear_embargo_PREV = yes
+                
+            }
+            unit_limit_calculation_effect = yes
+            country_event = {
+                id = amcivwar.337
+                days = 1
+                
+            }
+            country_event = {
+                id = csa.150
+                days = 6
+                
+            }
+            country_event = {
+                id = amcivwar.30
+                days = 40
+                random_days = 10
+                
+            }
+            country_event = {
+                id = amcivwar.38
+                days = 70
+                random_days = 20
+                
+            }
+            country_event = {
+                id = amcivwar.36
+                days = 100
+                random_days = 20
+                
+            }
+            country_event = {
+                id = amcivwar.40
+                days = 130
+                random_days = 20
+                
+            }
+            country_event = {
+                id = amcivwar.41
+                days = 160
+                random_days = 20
+                
+            }
+            country_event = {
+                id = amcivwar.41
+                days = 245
+                random_days = 20
                 
             }
             set_temp_variable = {
@@ -659,23 +591,59 @@ USA_release_CSA = {
             }
             
         }
+        if = {
+            limit = {
+                has_country_flag = USA_assassinated_long
+                
+            }
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        state = 150
+                        state = 364
+                        state = 365
+                        state = 366
+                        state = 367
+                        state = 370
+                        state = 371
+                        state = 372
+                        state = 374
+                        state = 375
+                        state = 833
+                        
+                    }
+                    
+                }
+                add_core_of = TEX
+                remove_core_of = ROOT
+                add_claim_by = ROOT
+                start_resistance = yes
+                
+            }
+            
+        }
         
     }
     
 }
 USA_release_TEX = {
+    set_global_flag = USA_TEX_existed
+    effect_tooltip = {
+        release = TEX
+        
+    }
     hidden_effect = {
         TEX = {
             add_state_core = 150
+            add_state_core = 364
+            add_state_core = 365
+            add_state_core = 366
+            add_state_core = 367
+            add_state_core = 370
             add_state_core = 371
             add_state_core = 372
             add_state_core = 374
             add_state_core = 375
-            add_state_core = 370
-            add_state_core = 367
-            add_state_core = 365
-            add_state_core = 364
-            add_state_core = 366
             add_state_core = 833
             set_cosmetic_tag = TEX_ACW
             
@@ -773,9 +741,8 @@ USA_release_TEX = {
             }
             
         }
-        every_state = {
+        every_core_state = {
             limit = {
-                is_core_of = USA
                 NOT = {
                     is_core_of = TEX
                     is_claimed_by = TEX
@@ -880,6 +847,7 @@ USA_release_TEX = {
             promote_character = TEX_george_van_horn_moseley
             promote_character = TEX_william_dudley_pelley
             every_owned_state = {
+                set_demilitarized_zone = no
                 USA_remove_support_modifiers_from_state = yes
                 
             }
@@ -1018,9 +986,40 @@ USA_release_TEX = {
                 }
                 
             }
+            if = {
+                limit = {
+                    USA = {
+                        has_country_flag = USA_long_was_president
+                        
+                    }
+                    
+                }
+                add_timed_idea = {
+                    idea = TEX_righteous_nation
+                    days = 120
+                    
+                }
+                
+            }
+            unit_limit_calculation_effect = yes
             country_event = {
                 id = amcivwar.336
                 days = 1
+                
+            }
+            country_event = {
+                id = unionstate.150
+                days = 7
+                
+            }
+            country_event = {
+                id = amcivwar.46
+                days = 10
+                
+            }
+            country_event = {
+                id = amcivwar.48
+                days = 25
                 
             }
             
@@ -1056,13 +1055,45 @@ USA_release_TEX = {
             }
             
         }
+        if = {
+            limit = {
+                has_country_flag = USA_assassinated_reed
+                
+            }
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        state = 261
+                        state = 360
+                        state = 393
+                        state = 394
+                        state = 395
+                        state = 396
+                        state = 929
+                        state = 975
+                        
+                    }
+                    
+                }
+                add_core_of = CSA
+                remove_core_of = ROOT
+                add_claim_by = ROOT
+                start_resistance = yes
+                
+            }
+            
+        }
         
     }
     
 }
 USA_release_PSA = {
+    set_global_flag = USA_PSA_existed
+    effect_tooltip = {
+        release = PSA
+        
+    }
     hidden_effect = {
-        set_global_flag = ACW_pacific_states_revolted
         set_political_party = {
             ideology = social_democrat
             popularity = 0
@@ -1100,13 +1131,13 @@ USA_release_PSA = {
             
         }
         PSA = {
-            add_state_core = 829
-            add_state_core = 798
-            add_state_core = 797
             add_state_core = 378
             add_state_core = 385
             add_state_core = 386
             add_state_core = 463
+            add_state_core = 797
+            add_state_core = 798
+            add_state_core = 829
             set_cosmetic_tag = PSA_ACW
             transfer_technology_without_doctrines = yes
             
@@ -1183,6 +1214,10 @@ USA_release_PSA = {
         }
         USA_remove_acw_templates_if_created = yes
         PSA = {
+            every_owned_state = {
+                set_demilitarized_zone = no
+                
+            }
             delete_unit_template_and_units = {
                 division_template = "State Militia"
                 disband = yes
@@ -1321,6 +1356,12 @@ USA_release_PSA = {
                     owner = PREV
                     
                 }
+                
+            }
+            unit_limit_calculation_effect = yes
+            country_event = {
+                id = pacificstates.150
+                days = 1
                 
             }
             set_temp_variable = {
@@ -2294,21 +2335,97 @@ USA_civil_war_begins = {
                 }
                 
             }
-            every_state = {
-                limit = {
-                    is_mainland_america = yes
-                    owner = {
-                        is_american_tag = yes
-                        
-                    }
-                    NOT = {
-                        is_core_of = owner
-                        
-                    }
+            USA = {
+                CSA = {
+                    enable_coring_at_fifty_compliance = yes
                     
                 }
-                add_to_array = {
-                    owner:USA_restoring_order_array = THIS
+                PSA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                TEX = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                NEE = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                
+            }
+            CSA = {
+                USA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                PSA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                TEX = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                NEE = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                
+            }
+            TEX = {
+                USA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                PSA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                CSA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                NEE = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                
+            }
+            PSA = {
+                USA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                CSA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                TEX = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                NEE = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                
+            }
+            NEE = {
+                USA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                CSA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                PSA = {
+                    enable_coring_at_fifty_compliance = yes
+                    
+                }
+                TEX = {
+                    enable_coring_at_fifty_compliance = yes
                     
                 }
                 
@@ -3416,110 +3533,6 @@ remove_ACW_claims = {
                     
                 }
                 remove_claim_by = HAW
-                
-            }
-            
-        }
-        
-    }
-    
-}
-remove_ACW_cores_on_state = {
-    hidden_effect = {
-        if = {
-            limit = {
-                has_global_flag = USA_civil_war_over_flag
-                
-            }
-            if = {
-                limit = {
-                    ROOT = {
-                        NOT = {
-                            has_idea = USA_federalist_resistance1
-                            has_idea = USA_federalist_resistance2
-                            has_idea = USA_federalist_resistance3
-                            has_idea = USA_federalist_resistance4
-                            
-                        }
-                        
-                    }
-                    
-                }
-                if = {
-                    limit = {
-                        NOT = {
-                            country_exists = USA
-                            
-                        }
-                        
-                    }
-                    remove_core_of = USA
-                    
-                }
-                if = {
-                    limit = {
-                        NOT = {
-                            country_exists = PSA
-                            
-                        }
-                        
-                    }
-                    remove_core_of = PSA
-                    
-                }
-                if = {
-                    limit = {
-                        NOT = {
-                            country_exists = NEE
-                            
-                        }
-                        
-                    }
-                    remove_core_of = NEE
-                    
-                }
-                
-            }
-            if = {
-                limit = {
-                    NOT = {
-                        country_exists = CSA
-                        
-                    }
-                    ROOT = {
-                        NOT = {
-                            has_idea = USA_socialist_resistance1
-                            has_idea = USA_socialist_resistance2
-                            has_idea = USA_socialist_resistance3
-                            has_idea = USA_socialist_resistance4
-                            
-                        }
-                        
-                    }
-                    
-                }
-                remove_core_of = CSA
-                
-            }
-            if = {
-                limit = {
-                    NOT = {
-                        country_exists = TEX
-                        
-                    }
-                    ROOT = {
-                        NOT = {
-                            has_idea = USA_longist_resistance1
-                            has_idea = USA_longist_resistance2
-                            has_idea = USA_longist_resistance3
-                            has_idea = USA_longist_resistance4
-                            
-                        }
-                        
-                    }
-                    
-                }
-                remove_core_of = TEX
                 
             }
             
@@ -8641,13 +8654,13 @@ USA_starting_techs = {
         marines = 1
         tech_mountaineers = 1
         basic_train = 1
-        camo = 1
-        aluminum_production_1 = 1
-        r56_railway_mortar_subtech = 1
-        r56_gw_railway_gun = 1
         steel_production_1 = 1
+        r56_railway_mortar_subtech = 1
         etax_doctrine = 1
         transport_plane1 = 1
+        aluminum_production_1 = 1
+        camo = 1
+        r56_gw_railway_gun = 1
         
     }
     if = {
@@ -8665,13 +8678,13 @@ USA_starting_techs = {
             aa_lmg = 1
             early_bombs = 1
             aircraft_construction = 1
-            camo = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            r56_gw_railway_gun = 1
             steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
             transport_plane1 = 1
+            aluminum_production_1 = 1
+            camo = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8685,13 +8698,13 @@ USA_starting_techs = {
             naval_bomber1 = 1
             CAS1 = 1
             early_bomber = 1
-            camo = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            r56_gw_railway_gun = 1
             steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
             transport_plane1 = 1
+            aluminum_production_1 = 1
+            camo = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8704,13 +8717,13 @@ USA_starting_techs = {
         set_technology = {
             gwtank_chassis = 1
             basic_light_tank_chassis = 1
-            camo = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            r56_gw_railway_gun = 1
             steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
             transport_plane1 = 1
+            aluminum_production_1 = 1
+            camo = 1
+            r56_gw_railway_gun = 1
             
         }
         add_ideas = bureau_of_ordnance_spirit
@@ -8720,13 +8733,13 @@ USA_starting_techs = {
         set_technology = {
             gwtank = 1
             basic_light_tank = 1
-            camo = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            r56_gw_railway_gun = 1
             steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
             transport_plane1 = 1
+            aluminum_production_1 = 1
+            camo = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8761,13 +8774,13 @@ USA_starting_techs = {
             basic_naval_mines = 1
             submarine_mine_laying = 1
             mtg_transport = 1
-            camo = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            r56_gw_railway_gun = 1
             steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
             transport_plane1 = 1
+            aluminum_production_1 = 1
+            camo = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8788,13 +8801,13 @@ USA_starting_techs = {
             early_carrier = 1
             basic_carrier = 1
             transport = 1
-            camo = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            r56_gw_railway_gun = 1
             steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
             transport_plane1 = 1
+            aluminum_production_1 = 1
+            camo = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8825,7 +8838,7 @@ USA_starting_tank_variants = {
                 tank_nsb_engine_upgrade = 4
                 
             }
-            icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
+            icon = GFX_USA_basic_light_tank_medium
             
         }
         create_equipment_variant = {
@@ -8847,7 +8860,7 @@ USA_starting_tank_variants = {
                 tank_nsb_engine_upgrade = 4
                 
             }
-            icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
+            icon = GFX_USA_basic_light_tank_medium
             
         }
         
@@ -9301,7 +9314,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_early_fighter_medium"
             
         }
         create_equipment_variant = {
@@ -9314,7 +9326,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_early_fighter_medium"
             
         }
         create_equipment_variant = {
@@ -9327,7 +9338,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_cv_early_fighter_medium"
             
         }
         create_equipment_variant = {
@@ -9340,7 +9350,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_cv_early_fighter_medium"
             
         }
         create_equipment_variant = {
@@ -9353,7 +9362,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_cv_early_fighter_medium"
             
         }
         create_equipment_variant = {
@@ -9367,7 +9375,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_iw_medium_airframe_medium"
             
         }
         create_equipment_variant = {
@@ -9380,7 +9387,6 @@ USA_starting_plane_variants = {
                 special_type_slot_1 = empty
                 
             }
-            icon = "GFX_USA_CAS1_medium"
             
         }
         create_equipment_variant = {
@@ -9392,7 +9398,7 @@ USA_starting_plane_variants = {
                 special_type_slot_1 = empty
                 
             }
-            icon = "GFX_USA_fighter1_medium"
+            obsolete = yes
             
         }
         create_equipment_variant = {
@@ -9405,7 +9411,6 @@ USA_starting_plane_variants = {
                 special_type_slot_1 = empty
                 
             }
-            icon = "GFX_USA_fighter1_medium"
             
         }
         create_equipment_variant = {
@@ -9418,7 +9423,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_iw_large_airframe_medium"
             
         }
         create_equipment_variant = {
@@ -9430,7 +9434,7 @@ USA_starting_plane_variants = {
                 special_type_slot_1 = lmg_defense_turret
                 
             }
-            icon = "GFX_USA_iw_medium_airframe_medium"
+            obsolete = yes
             
         }
         create_equipment_variant = {
@@ -9442,7 +9446,6 @@ USA_starting_plane_variants = {
                 special_type_slot_1 = lmg_defense_turret
                 
             }
-            icon = "GFX_USA_iw_medium_airframe_medium"
             
         }
         create_equipment_variant = {
@@ -9457,7 +9460,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_iw_large_airframe_medium"
             
         }
         create_equipment_variant = {
@@ -9471,7 +9473,6 @@ USA_starting_plane_variants = {
                 special_type_slot_2 = lmg_defense_turret
                 
             }
-            icon = "GFX_USA_iw_large_airframe_medium"
             
         }
         create_equipment_variant = {
@@ -9484,7 +9485,6 @@ USA_starting_plane_variants = {
                 
             }
             obsolete = yes
-            icon = "GFX_USA_cv_early_fighter_medium"
             
         }
         create_equipment_variant = {
@@ -9496,7 +9496,6 @@ USA_starting_plane_variants = {
                 special_type_slot_1 = empty
                 
             }
-            icon = "GFX_USA_cv_early_fighter_medium"
             
         }
         

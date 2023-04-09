@@ -3,7 +3,7 @@ oob = "GER"
 set_naval_oob = "GER_naval"
 set_research_slots = 4
 set_convoys = 400
-set_stability = 0.6
+set_stability = 0.8
 set_war_support = 0.3
 starting_train_buffer = 2
 add_ideas = {
@@ -218,16 +218,22 @@ every_country = {
         }
         
     }
-    if = {
+    GER_add_to_mitteleuropa = yes
+    
+}
+if = {
+    limit = {
+        has_tech_sharing_feature = yes
+        
+    }
+    every_country = {
         limit = {
-            has_dlc_tfv = yes
             is_ally_with = GER
             
         }
         add_to_tech_sharing_group = german_research
         
     }
-    GER_add_to_mitteleuropa = yes
     
 }
 country_event = {
@@ -309,8 +315,15 @@ country_event = {
     days = 1354
     
 }
+country_event = {
+    id = gerfor.36
+    days = 180
+    random_days = 30
+    
+}
 recruit_character = GER_wilhelm_ii
 recruit_character = GER_wilhelm_iii
+recruit_character = GER_wilhelm_iv
 recruit_character = GER_ernst_thalmann
 recruit_character = GER_rudolf_rocker
 recruit_character = GER_wilhelm_pieck
@@ -400,6 +413,7 @@ every_character = {
         NOT = {
             is_character = GER_wilhelm_ii
             is_character = GER_wilhelm_iii
+            is_character = GER_willi_munzenberg
             
         }
         

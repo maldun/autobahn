@@ -4,6 +4,7 @@ set_convoys = 5
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
+    tech_irregulars = 1
     tech_support = 1
     gw_artillery = 1
     camo = 1
@@ -180,6 +181,44 @@ division_template = {
         cavalry = {
             x = 1
             y = 1
+            
+        }
+        
+    }
+    
+}
+division_template = {
+    name = "Omakaitsejõud"
+    division_names_group = EST_INF_01
+    regiments = {
+        irregular_infantry = {
+            x = 0
+            y = 0
+            
+        }
+        irregular_infantry = {
+            x = 0
+            y = 1
+            
+        }
+        irregular_infantry = {
+            x = 0
+            y = 2
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 0
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 1
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 2
             
         }
         

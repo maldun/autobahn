@@ -4,6 +4,7 @@ set_research_slots = 3
 set_convoys = 50
 set_war_support = 0.1
 set_cosmetic_tag = WHR_GER
+starting_train_buffer = 2
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -11,6 +12,7 @@ set_technology = {
     tech_engineers = 1
     tech_recon = 1
     gw_artillery = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     
@@ -162,6 +164,41 @@ add_ideas = {
     WHR_weak_national_identity
     WHR_Jewish_Bund_idea
     limited_conscription
+    
+}
+ROOT = {
+    96 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    97 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    241 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    243 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    755 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    997 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    93 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    242 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     
 }
 recruit_character = WHR_usievalad_ihnatouski

@@ -5,10 +5,12 @@ set_convoys = 30
 set_research_slots = 3
 set_war_support = 0.2
 set_convoys = 10
+starting_train_buffer = 1
 set_technology = {
     infantry_weapons = 1
     tech_mountaineers = 1
     gw_artillery = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
@@ -129,6 +131,21 @@ add_ideas = {
     PER_corrupt_aristocrats
     PER_unruly_khans
     PER_illiteracy
+    
+}
+ROOT = {
+    229 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    415 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    444 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     
 }
 recruit_character = PER_ahmad_shah_qajar

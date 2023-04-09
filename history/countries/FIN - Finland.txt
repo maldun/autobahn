@@ -161,6 +161,29 @@ add_ideas = {
     limited_conscription
     
 }
+ROOT = {
+    146 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    722 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    909 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    215 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    216 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    
+}
 recruit_character = FIN_friedrich_karl_von_hessen_kassel
 recruit_character = FIN_wolfgang_von_hessen_kassel
 recruit_character = FIN_otto_wille_kuusinen

@@ -1,18 +1,17 @@
 capital = 231
 oob = "GEO"
 set_naval_oob = "GEO_naval"
-add_ideas = {
-    GEO_treaty_of_poti_idea
-    GEO_minority_problem
-    
-}
 set_stability = 0.6
+set_research_slots = 3
+set_convoys = 20
+starting_train_buffer = 2
 set_technology = {
     infantry_weapons = 1
     tech_support = 1
     tech_mountaineers = 1
     tech_engineers = 1
     gw_artillery = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
@@ -73,8 +72,12 @@ if = {
     }
     
 }
-set_research_slots = 3
-set_convoys = 20
+add_ideas = {
+    GEO_treaty_of_poti_idea
+    GEO_minority_problem
+    limited_conscription
+    
+}
 set_politics = {
     ruling_party = social_democrat
     last_election = "1935.6.6"

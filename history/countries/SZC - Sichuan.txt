@@ -47,6 +47,7 @@ add_ideas = {
     SZC_internal_divisions
     SZC_looming_agricultural_crisis
     SZC_baoding_influence
+    unequal_treaties
     
 }
 china_add_poor_army = yes

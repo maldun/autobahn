@@ -12,6 +12,7 @@ set_technology = {
     tech_engineers = 1
     tech_military_police = 1
     gw_artillery = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     sniper_rifle = 1

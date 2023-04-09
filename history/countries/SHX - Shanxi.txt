@@ -21,6 +21,7 @@ add_ideas = {
     SHX_dual_armies
     SHX_unfinished_education
     SHX_agriculture_reform
+    unequal_treaties_lesser
     
 }
 china_add_poor_army = yes
@@ -151,4 +152,3 @@ set_variable = {
     
 }
 country_lock_all_division_template = yes
-set_country_flag = SHX_debug_off

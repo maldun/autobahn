@@ -29,7 +29,7 @@ def patch_main_menu(kx_path, out_folder):
                                             ["spriteType",['"GFX_autobahn_logo"']],
                                             ["position",
                                              [['x',[1700]],
-                                              ['y',[1200]],
+                                              ['y',[1400]],
                                               ]
                                            ]
                                            ]

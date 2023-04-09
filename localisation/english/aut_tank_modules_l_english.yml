@@ -1,0 +1,7 @@
+﻿### Replace Semi-Modern --> Super-Modern
+#####---------------------------------------------------------------------Mod by Sig "GreatExperiment" Altre
+
+l_english: 
+# FIX
+ basic_medium_tank_chassis_short:0 "1934 Medium"
+

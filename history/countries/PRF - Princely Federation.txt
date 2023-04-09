@@ -363,8 +363,8 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Rajaram II of Kolhapur"
-    portrait_path = "gfx/leaders/PRF/Portrait_PRF_Rajaram_II_of_Kolhapur.png"
+    name = "Rajaram III of Kolhapur"
+    portrait_path = "gfx/leaders/PRF/Portrait_PRF_Rajaram_III_of_Kolhapur.png"
     traits = {
         politically_connected
         cavalry_leader
@@ -394,6 +394,7 @@ create_corps_commander = {
     name = "Moazzam Jah"
     portrait_path = "gfx/leaders/PRF/Portrait_PRF_Moazzam_Jah.png"
     traits = {
+        politically_connected
         cavalry_officer
         
     }
@@ -422,7 +423,7 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Tarapore"
+    name = "Ardeshir Tarapore"
     portrait_path = "gfx/leaders/PRF/Portrait_PRF_Tarapore.png"
     traits = {
         cavalry_officer
@@ -479,7 +480,7 @@ if = {
     
 }
 create_corps_commander = {
-    name = "El Edroos"
+    name = "Syed Ahmed El-Edroos"
     portrait_path = "gfx/leaders/PRF/Portrait_PRF_El_Edroos.png"
     traits = {
         brilliant_strategist
@@ -494,8 +495,8 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Chandrasekharan Nair"
-    portrait_path = "gfx/leaders/BHC/Portrait_BHC_Pratap.png"
+    name = "N. Chandrasekharan Nair"
+    portrait_path = "gfx/leaders/PRF/Portrait_PRF_Chandrasekharan_Nair.png"
     traits = {
         trickster
         

@@ -266,74 +266,6 @@ set_popularities = {
     national_populist = 0
     
 }
-set_variable = {
-    FNG.FNG_NEA_mobilization_speed = -0.5
-    
-}
-set_variable = {
-    FNG.FNG_NEA_army_org_factor = -0.2
-    
-}
-set_variable = {
-    FNG.FNG_NEA_conscription = -0.005
-    
-}
-set_variable = {
-    FNG.FNG_NEA_org_loss_when_moving = 0.25
-    
-}
-set_variable = {
-    FNG.FNG_NEA_war_support_factor = 0.15
-    
-}
-set_variable = {
-    FNG.FNG_NEA_army_attack_factor = -0.25
-    
-}
-set_variable = {
-    FNG.FNG_NEA_army_defence_factor = -0.25
-    
-}
-set_variable = {
-    FNG.FNG_NEA_special_forces_attack_factor = 0.2
-    
-}
-set_variable = {
-    FNG.FNG_NEA_special_forces_defence_factor = 0.2
-    
-}
-set_variable = {
-    FNG.FNG_NEA_land_reinforce_rate_factor = -0.05
-    
-}
-set_variable = {
-    FNG.FNG_NEA_no_supply_grace = 36
-    
-}
-set_variable = {
-    FNG.FNG_NEA_command_power_gain = -0.25
-    
-}
-set_variable = {
-    FNG.FNG_NEA_FNG_NEA_special_forces_cap = 0.05
-    
-}
-set_variable = {
-    FNG.FNG_NEA_breakthrough_factor = -0.25
-    
-}
-set_variable = {
-    FNG.FNG_NEA_resistance_target_factor = -0.2
-    
-}
-set_variable = {
-    FNG.FNG_NEA_compliance_growth = -0.8
-    
-}
-set_variable = {
-    FNG.FNG_NEA_land_doctrine_cost_factor = 0.5
-    
-}
 add_ideas = {
     limited_conscription
     FNG_Huang_Fu_hog_ade
@@ -382,7 +314,7 @@ create_country_leader = {
     name = "Ruan Zhenduo"
     picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_1.png"
     expire = "1965.1.1"
-    ideology = marlib_warlordism_subtype
+    ideology = pan_asianism_subtype
     
 }
 create_country_leader = {
@@ -406,14 +338,6 @@ create_country_leader = {
     picture = "gfx/leaders/FNG/Portrait_FNG_Zhang_Zuolin.png"
     expire = "1965.1.1"
     ideology = pataut_warlordism_subtype
-    
-}
-create_country_leader = {
-    name = "Hóngwu"
-    desc = "POLITICS_HONGWU_DESC"
-    picture = "gfx/leaders/LEC/Portrait_LEC_Hongwu.png"
-    expire = "1965.1.1"
-    ideology = natpop_warlordism_subtype
     
 }
 set_variable = {

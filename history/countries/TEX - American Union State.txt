@@ -227,6 +227,11 @@ country_event = {
     days = 120
     
 }
+country_event = {
+    id = unionstate.30006
+    days = 60
+    
+}
 set_country_flag = {
     flag = AFP_leftism
     value = 5

@@ -382,7 +382,7 @@ create_field_marshal = {
         trait_engineer
         commando
         war_hero
-        future_leader
+        biden_alpha_leader
         
     }
     skill = 7
@@ -390,6 +390,7 @@ create_field_marshal = {
     defense_skill = 6
     planning_skill = 1
     logistics_skill = 8
+    id = 99206
     
 }
 create_corps_commander = {

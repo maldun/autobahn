@@ -275,7 +275,7 @@ country_event = {
 }
 country_event = {
     id = NYC_flavor.38
-    days = 450
+    days = 185
     random_days = 140
     
 }

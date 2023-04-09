@@ -156,6 +156,11 @@ country_event = {
     
 }
 country_event = {
+    id = ire.530
+    days = 44
+    
+}
+country_event = {
     id = ire.55
     days = 113
     

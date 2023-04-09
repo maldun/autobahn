@@ -2,6 +2,7 @@ capital = 559
 oob = "SOM"
 set_research_slots = 2
 set_war_support = 0.32
+set_convoys = 10
 set_technology = {
     infantry_weapons = 1
     tech_irregulars = 1

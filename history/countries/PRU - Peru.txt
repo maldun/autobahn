@@ -3,16 +3,22 @@ oob = "PRU"
 set_naval_oob = "PRU_naval"
 set_convoys = 30
 set_research_slots = 3
-set_stability = -0.2
+set_stability = 0.25
 set_war_support = 0.35
 set_technology = {
     infantry_weapons = 1
     tech_mountaineers = 1
     gw_artillery = 1
     interwar_antiair = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 20
     
 }
 if = {
@@ -91,6 +97,11 @@ set_popularities = {
     authoritarian_democrat = 40
     paternal_autocrat = 10
     national_populist = 8
+    
+}
+activate_targeted_decision = {
+    target = CHL
+    decision = BOL_kill_CHL
     
 }
 country_event = {

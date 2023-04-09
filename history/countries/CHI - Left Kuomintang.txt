@@ -106,6 +106,7 @@ add_ideas = {
     partial_economic_mobilisation
     KR_CHI_popular_support_1
     KR_CHI_start_army
+    unequal_treaties
     
 }
 china_add_poor_army = yes

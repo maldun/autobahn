@@ -2,9 +2,10 @@ capital = 427
 oob = "PRF"
 set_naval_oob = "PRF_naval"
 set_research_slots = 3
-set_stability = 0.6
+set_stability = 0.7
 set_war_support = 0.2
 set_convoys = 20
+starting_train_buffer = 2
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -13,8 +14,10 @@ set_technology = {
     tech_support = 1
     tech_engineers = 1
     tech_recon = 1
+    gw_artillery = 1
     fuel_silos = 1
     fuel_refining = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     jngdst_clothes_gw = 1
@@ -119,6 +122,12 @@ add_ai_strategy = {
 }
 add_ai_strategy = {
     type = ignore_claim
+    id = "GER"
+    value = 1
+    
+}
+add_ai_strategy = {
+    type = ignore_claim
     id = "SIK"
     value = 1
     
@@ -153,34 +162,6 @@ set_popularities = {
     authoritarian_democrat = 40
     paternal_autocrat = 22
     national_populist = 8
-    
-}
-set_autonomy = {
-    target = MDR
-    autonomy_state = kr_default_puppet
-    
-}
-MDR = {
-    set_politics = {
-        ruling_party = social_liberal
-        last_election = "1930.11.9"
-        election_frequency = 48
-        elections_allowed = no
-        
-    }
-    set_popularities = {
-        totalist = 2
-        radical_socialist = 3
-        syndicalist = 5
-        social_democrat = 13
-        social_liberal = 41
-        market_liberal = 21
-        social_conservative = 10
-        authoritarian_democrat = 3
-        paternal_autocrat = 2
-        national_populist = 0
-        
-    }
     
 }
 add_ideas = {

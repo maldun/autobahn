@@ -5,6 +5,7 @@ set_war_support = 0.2
 set_research_slots = 3
 oob = "UKR"
 set_naval_oob = "UKR_naval"
+starting_train_buffer = 2
 save_global_event_target_as = original_ukraine
 set_technology = {
     infantry_weapons = 1
@@ -165,6 +166,37 @@ country_event = {
     days = 190
     
 }
+ROOT = {
+    73 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    80 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    89 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    91 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    218 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    234 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    1006 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = UKR_wilhelm_franz_von_habsburg
 recruit_character = UKR_leo_stefan_von_habsburg
 recruit_character = UKR_danylo_skoropadskyi
@@ -185,6 +217,7 @@ recruit_character = UKR_mykola_kapustyanskyi
 recruit_character = UKR_ivan_poltavets_ostrianytsia
 recruit_character = UKR_andriy_pokrovsky
 recruit_character = UKR_sviatoslav_shramchenko
+recruit_character = UKR_yurii_svirskyi
 recruit_character = UKR_mykola_skrypnyk
 recruit_character = UKR_panas_liubchenko
 recruit_character = UKR_yurii_kotsiubinskyi

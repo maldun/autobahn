@@ -12,6 +12,7 @@ set_technology = {
     motorised_infantry = 1
     tech_support = 1
     tech_recon = 1
+    tech_engineers = 1
     gw_artillery = 1
     interwar_antiair = 1
     fuel_silos = 1
@@ -153,6 +154,7 @@ add_ideas = HUN_financial_ties_broken
 recruit_character = HUN_bela_kun
 recruit_character = HUN_arpad_szakasits
 recruit_character = HUN_oszkar_jaszi
+recruit_character = HUN_zoltan_tildy
 recruit_character = HUN_istvan_bethlen
 recruit_character = AUS_joseph_august_von_habsburg
 recruit_character = HUN_laszlo_bardossy
@@ -194,6 +196,65 @@ recruit_character = HUN_leo_szilard
 HUN_Kalman_Daranyi_de_Pusztaszentgyorgyi_sic = yes
 AUS_joseph_august_von_habsburg = {
     set_character_flag = AUS_habsburg
+    
+}
+ROOT = {
+    SLO = {
+        enable_coring_at_eighty_compliance = yes
+        
+    }
+    TRS = {
+        enable_coring_at_eighty_compliance = yes
+        
+    }
+    45 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    70 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    71 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    73 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    76 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    82 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    83 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    84 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    784 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    789 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    875 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    1090 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     
 }
 danubia_create_plane_variants = yes

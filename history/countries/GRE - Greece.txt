@@ -13,6 +13,7 @@ set_technology = {
     gw_artillery = 1
     fuel_silos = 1
     synth_oil_experiments = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
@@ -158,6 +159,45 @@ set_popularities = {
 set_country_flag = {
     flag = gre_monarchist_sympathies
     value = 0
+    
+}
+ROOT = {
+    184 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    766 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    769 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    339 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    340 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    341 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    342 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    773 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    1089 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     
 }
 recruit_character = GRE_athanasios_klaras

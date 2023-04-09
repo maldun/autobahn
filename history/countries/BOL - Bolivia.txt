@@ -3,36 +3,22 @@ oob = "BOL"
 set_research_slots = 2
 set_stability = 0.4
 set_war_support = 0.3
-add_ideas = {
-    BOL_Trash_Army
-    BOL_Struggling_Economy
-    
-}
-country_event = {
-    id = bol.1
-    days = 1
-    
-}
-country_event = {
-    id = bol.6
-    days = 30
-    
-}
-country_event = {
-    id = bol.7
-    days = 200
-    random_hours = 1000
-    
-}
 set_technology = {
     infantry_weapons = 1
+    tech_mountaineers = 1
     tech_support = 1
     tech_engineers = 1
     gw_artillery = 1
     fuel_silos = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1
+    
+}
+add_equipment_to_stockpile = {
+    type = train_equipment
+    amount = 20
     
 }
 if = {
@@ -85,9 +71,38 @@ set_popularities = {
     national_populist = 4
     
 }
-activate_targeted_decision = {
-    target = PAR
-    decision = BOL_kill_PAR
+add_ideas = {
+    BOL_Trash_Army
+    BOL_Struggling_Economy
+    
+}
+add_timed_idea = {
+    idea = BOL_War_Rep
+    days = 730
+    
+}
+PAR = {
+    add_timed_idea = {
+        idea = BOL_War_Rep_Rec
+        days = 730
+        
+    }
+    
+}
+country_event = {
+    id = bol.1
+    days = 1
+    
+}
+country_event = {
+    id = bol.6
+    days = 30
+    
+}
+country_event = {
+    id = bol.7
+    days = 200
+    random_hours = 1000
     
 }
 activate_targeted_decision = {

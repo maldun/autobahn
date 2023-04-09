@@ -203,6 +203,25 @@ add_ideas = {
 }
 WIF_evaluate_anger = yes
 set_country_flag = WIF_can_revolt
+ROOT = {
+    309 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    695 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    1038 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    1077 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = WIF_eustace_fiennes
 recruit_character = WIF_gordon_james_lethem
 recruit_character = WIF_cyril_lionel_robert_james

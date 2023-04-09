@@ -85,10 +85,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
+            factor = 5
             modifier = {
                 factor = 2
                 is_major = yes
+                
+            }
+            modifier = {
+                factor = 0
+                num_of_military_factories < 10
                 
             }
             modifier = {
@@ -162,10 +167,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
+            factor = 5
             modifier = {
-                factor = 4
+                factor = 5
                 is_major = yes
+                
+            }
+            modifier = {
+                factor = 0
+                num_of_military_factories < 10
                 
             }
             modifier = {
@@ -230,9 +240,9 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
+            factor = 5
             modifier = {
-                factor = 4
+                factor = 5
                 is_major = yes
                 
             }
@@ -340,6 +350,11 @@ technologies = {
         }
         ai_will_do = {
             factor = 1
+            modifier = {
+                factor = 0
+                num_of_military_factories < 75
+                
+            }
             
         }
         
@@ -376,6 +391,11 @@ technologies = {
         }
         ai_will_do = {
             factor = 1
+            modifier = {
+                factor = 0
+                num_of_military_factories < 75
+                
+            }
             modifier = {
                 factor = 1.2
                 is_major = yes
@@ -440,6 +460,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 0
+                num_of_military_factories < 75
+                
+            }
+            modifier = {
                 factor = 1.2
                 is_major = yes
                 date > "1940.1.1"
@@ -503,6 +528,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 0
+                num_of_military_factories < 75
+                
+            }
+            modifier = {
                 factor = 1.2
                 is_major = yes
                 date > "1944.1.1"
@@ -559,6 +589,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 0
+                num_of_military_factories < 75
+                
+            }
+            modifier = {
                 is_major = yes
                 factor = 4
                 
@@ -596,10 +631,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
-                factor = 5
-                num_of_military_factories > 50
+                factor = 0
+                num_of_military_factories < 75
                 
             }
             modifier = {
@@ -640,10 +675,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
-                factor = 5
-                num_of_military_factories > 50
+                factor = 0
+                num_of_military_factories < 75
                 
             }
             modifier = {
@@ -684,10 +719,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
-                factor = 5
-                num_of_military_factories > 50
+                factor = 0
+                num_of_military_factories < 75
                 
             }
             modifier = {
@@ -728,10 +763,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
-                factor = 5
-                num_of_military_factories > 50
+                factor = 0
+                num_of_military_factories < 75
                 
             }
             modifier = {
@@ -771,14 +806,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
-                has_deployed_air_force_size = {
-                    size > 500
-                    type = strategic_bomber
-                    
-                }
-                factor = 4.5
+                factor = 0
+                num_of_military_factories < 100
                 
             }
             
@@ -818,13 +849,13 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                OR = {
-                    has_tech = iw_small_airframe
-                    has_tech = iw_medium_airframe
-                    has_tech = iw_large_airframe
-                    
-                }
                 factor = 5
+                has_tech = iw_small_airframe
+                
+            }
+            modifier = {
+                factor = 5
+                has_tech = basic_small_airframe
                 
             }
             
@@ -910,13 +941,13 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                OR = {
-                    has_tech = iw_small_airframe
-                    has_tech = iw_medium_airframe
-                    has_tech = iw_large_airframe
-                    
-                }
                 factor = 5
+                has_tech = iw_small_airframe
+                
+            }
+            modifier = {
+                factor = 5
+                has_tech = basic_small_airframe
                 
             }
             
@@ -951,6 +982,11 @@ technologies = {
         }
         ai_will_do = {
             factor = 1
+            modifier = {
+                factor = 5
+                has_tech = basic_small_airframe
+                
+            }
             modifier = {
                 date > "1937.1.1"
                 factor = 1.5
@@ -1003,13 +1039,13 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                OR = {
-                    has_tech = basic_small_airframe
-                    has_tech = basic_medium_airframe
-                    has_tech = basic_large_airframe
-                    
-                }
                 factor = 5
+                has_tech = basic_small_airframe
+                
+            }
+            modifier = {
+                factor = 5
+                has_tech = improved_small_airframe
                 
             }
             modifier = {
@@ -1052,13 +1088,13 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                OR = {
-                    has_tech = basic_small_airframe
-                    has_tech = basic_medium_airframe
-                    has_tech = basic_large_airframe
-                    
-                }
                 factor = 5
+                has_tech = basic_small_airframe
+                
+            }
+            modifier = {
+                factor = 5
+                has_tech = improved_small_airframe
                 
             }
             modifier = {
@@ -1098,13 +1134,13 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                OR = {
-                    has_tech = improved_small_airframe
-                    has_tech = improved_medium_airframe
-                    has_tech = improved_large_airframe
-                    
-                }
                 factor = 5
+                has_tech = improved_small_airframe
+                
+            }
+            modifier = {
+                factor = 5
+                has_tech = advanced_small_airframe
                 
             }
             modifier = {
@@ -1160,13 +1196,8 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                OR = {
-                    has_tech = iw_small_airframe
-                    has_tech = iw_medium_airframe
-                    has_tech = iw_large_airframe
-                    
-                }
                 factor = 5
+                has_tech = iw_small_airframe
                 
             }
             modifier = {
@@ -1242,6 +1273,11 @@ technologies = {
                 
             }
             modifier = {
+                factor = 5
+                has_tech = basic_small_airframe
+                
+            }
+            modifier = {
                 date > "1938.1.1"
                 factor = 1.5
                 
@@ -1299,8 +1335,8 @@ technologies = {
                 
             }
             modifier = {
-                num_of_military_factories < 10
-                factor = 0
+                factor = 15
+                has_tech = improved_small_airframe
                 
             }
             modifier = {
@@ -1356,8 +1392,8 @@ technologies = {
                 
             }
             modifier = {
-                num_of_military_factories < 10
-                factor = 0
+                factor = 15
+                has_tech = advanced_small_airframe
                 
             }
             modifier = {
@@ -1411,6 +1447,11 @@ technologies = {
                 
             }
             modifier = {
+                factor = 5
+                has_tech = basic_small_airframe
+                
+            }
+            modifier = {
                 num_of_military_factories < 10
                 factor = 0
                 
@@ -1427,11 +1468,6 @@ technologies = {
             }
             modifier = {
                 date > "1939.1.1"
-                factor = 3
-                
-            }
-            modifier = {
-                is_major = yes
                 factor = 3
                 
             }
@@ -1467,7 +1503,17 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 5
+            factor = 2
+            modifier = {
+                factor = 5
+                has_tech = basic_small_airframe
+                
+            }
+            modifier = {
+                num_of_military_factories < 10
+                factor = 0
+                
+            }
             
         }
         

@@ -289,6 +289,65 @@ add_to_array = {
     LEC_currency_ideas = token:LEC_currency_9
     
 }
+ROOT = {
+    326 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    609 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    728 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    729 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    743 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    744 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    745 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    746 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    747 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    801 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    802 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    803 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    996 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    1075 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = LEC_robert_ho_shai_lai
 recruit_character = LEC_nelson_trusler_johnson
 recruit_character = LEC_patrick_hurley
@@ -336,21 +395,21 @@ recruit_character = LEC_morris_cohen
 recruit_character = LEC_international_army_committee
 create_country_leader = {
     name = LEC_pan_hannian
-    picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_5.png"
+    picture = GFX_Portrait_Asia_Generic_new_5
     expire = "1965.1.1"
     ideology = totalist_subtype
     
 }
 create_country_leader = {
     name = LEC_yuan_zhenying
-    picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_4.png"
+    picture = GFX_Portrait_Asia_Generic_new_4
     expire = "1965.1.1"
     ideology = syndicalist_subtype
     
 }
 create_country_leader = {
     name = LEC_yun_daiying
-    picture = "gfx/leaders/Generic/Portrait_Asia_Generic_new_6.png"
+    picture = GFX_Portrait_Asia_Generic_new_6
     expire = "1965.1.1"
     ideology = radical_socialist_subtype
     

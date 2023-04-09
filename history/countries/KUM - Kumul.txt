@@ -25,7 +25,6 @@ country_event = {
 set_technology = {
     infantry_weapons = 1
     tech_irregulars = 1
-    tech_mountaineers = 1
     camo = 1
     etax_doctrine = 1
     r56_militia_tech = 1
@@ -63,13 +62,14 @@ add_ideas = {
     limited_conscription
     KUM_legacy_masqud
     KUM_keeping_peace
+    unequal_treaties_lesser
     
 }
 china_add_poor_army = yes
 recruit_character = KUM_nasir_shah
 recruit_character = KUM_bashir_shah
 recruit_character = KUM_yulbars_khan
-recruit_character = KUM_khoja_niyaz_haji
+recruit_character = KUM_hoja_niyaz_haji
 recruit_character = KUM_mahmut_muhiti
 recruit_character = KUM_khans_court
 recruit_character = KUM_liu_xizeng

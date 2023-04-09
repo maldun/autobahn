@@ -1,11 +1,39 @@
-capital = 879
+capital = 905
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
     tech_irregulars = 1
     camo = 1
+    desertinfantry_at = 1
     etax_doctrine = 1
-    r56_militia_tech = 1
+    jngdst_clothes_gw = 1
+    transport_plane1 = 1
+    
+}
+if = {
+    limit = {
+        has_dlc_mtg = yes
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_torpedo = 1
+        basic_battery = 1
+        mtg_transport = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_mtg = no
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        transport = 1
+        
+    }
     
 }
 set_politics = {
@@ -24,17 +52,14 @@ set_popularities = {
     market_liberal = 6
     social_conservative = 12
     authoritarian_democrat = 15
-    paternal_autocrat = 47
-    national_populist = 12
+    paternal_autocrat = 53
+    national_populist = 6
     
 }
-recruit_character = KTG_Kitanika_Mabumba_Mushalila
-recruit_character = KTG_Pierre_Ryckmans
-recruit_character = KTG_Charles_Tombeur
-recruit_character = KTG_Armand_Huyghe
+recruit_character = ZAN_Khalifa_II_bin_Harub_Al_Said
 division_template = {
-    name = "Division de Milice"
-    division_names_group = AFR-LN_MIL_01
+    name = "al-Milishiyai"
+    division_names_group = EGY_MIL_01
     regiments = {
         irregular_infantry = {
             x = 0
@@ -62,8 +87,8 @@ division_template = {
     
 }
 division_template = {
-    name = "Division d'Infanterie"
-    division_names_group = AFR-LN_INF_01
+    name = "al-Mushati"
+    division_names_group = EGY_INF_01
     regiments = {
         infantry = {
             x = 0
@@ -115,8 +140,8 @@ division_template = {
     
 }
 division_template = {
-    name = "Division de Cavalerie"
-    division_names_group = AFR-LN_CAV_01
+    name = "Sipahis"
+    division_names_group = EGY_CAV_01
     regiments = {
         cavalry = {
             x = 0

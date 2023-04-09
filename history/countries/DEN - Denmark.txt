@@ -269,6 +269,13 @@ country_event = {
     random_days = 20
     
 }
+ROOT = {
+    782 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = DEN_christian_af_glucksborg
 recruit_character = DEN_frederik_af_glucksborg
 recruit_character = DEN_olga_eggers

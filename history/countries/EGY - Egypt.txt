@@ -213,6 +213,27 @@ set_stability = 0.6
 set_war_support = 0.5
 starting_train_buffer = 1
 create_country_leader = {
+    name = "Shuhdi Atiya ash-Shafi"
+    picture = "gfx/leaders/EGY/Portrait_Egypt_Shuhdi_Atiya.png"
+    expire = "1965.1.1"
+    ideology = totalist_subtype
+    
+}
+create_country_leader = {
+    name = "Mohammed Yusuf al-Mudarrik"
+    picture = "gfx/leaders/Generic/Portrait_Arabia_Generic_new_4.png"
+    expire = "1965.1.1"
+    ideology = syndicalist_subtype
+    
+}
+create_country_leader = {
+    name = "Salama Moussa"
+    picture = "gfx/leaders/EGY/Portrait_Egypt_Salama_Moussa.png"
+    expire = "1965.1.1"
+    ideology = radical_socialist_subtype
+    
+}
+create_country_leader = {
     name = "Fuad I"
     desc = "POLITICS_FUAD_I_DESC"
     picture = "gfx/leaders/EGY/Portrait_Egypt_Fuad_I.png"
@@ -225,7 +246,7 @@ create_country_leader = {
     desc = "POLITICS_FUAD_I_DESC"
     picture = "gfx/leaders/EGY/Portrait_Egypt_Fuad_I.png"
     expire = "1965.1.1"
-    ideology = pharaonism_subtype
+    ideology = national_liberalism_subtype
     
 }
 create_country_leader = {
@@ -233,7 +254,7 @@ create_country_leader = {
     desc = "POLITICS_FUAD_I_DESC"
     picture = "gfx/leaders/EGY/Portrait_Egypt_Fuad_I.png"
     expire = "1965.1.1"
-    ideology = marlib_pharaonism_subtype
+    ideology = marlib_national_liberalism_subtype
     
 }
 create_country_leader = {
@@ -249,7 +270,7 @@ create_country_leader = {
     desc = "POLITICS_FUAD_I_DESC"
     picture = "gfx/leaders/EGY/Portrait_Egypt_Fuad_I.png"
     expire = "1965.1.1"
-    ideology = authoritarian_democrat_subtype
+    ideology = islamism_subtype
     
 }
 create_country_leader = {
@@ -345,7 +366,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Mahmoud Shokry"
-    portrait_path = "gfx/leaders/Generic/Portrait_Arabia_Generic_land_new_1.png"
+    portrait_path = "gfx/leaders/EGY/Portrait_EGY_Mahmoud_Shokry.png"
     traits = {
         politically_connected
         
@@ -359,7 +380,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Ahmed Abdullah Al-Mwawi"
-    portrait_path = "gfx/leaders/Generic/Portrait_Arabia_Generic_land_new_3.png"
+    portrait_path = "gfx/leaders/EGY/Portrait_EGY_Ahmed_Abdullah_Al_Mwawi.png"
     traits = {
         career_officer
         trait_engineer
@@ -439,7 +460,7 @@ create_navy_leader = {
 }
 create_navy_leader = {
     name = "Mahmoud Hamza"
-    portrait_path = "gfx/leaders/Generic/Portrait_South_America_Generic_navy_new_2.png"
+    portrait_path = "gfx/leaders/EGY/Portrait_EGY_Mahmoud_Hamza.png"
     traits = {
         old_guard_navy
         

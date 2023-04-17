@@ -88,11 +88,6 @@ set_popularities = {
     national_populist = 0
     
 }
-country_event = {
-    id = gerdom.47
-    days = 2011
-    
-}
 add_ideas = {
     do_stuff_idea
     ANT_expidition_idea

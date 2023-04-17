@@ -1,6 +1,16 @@
 equipments = {
     ship_hull_submarine = {
         year = 1922
+        can_be_produced = {
+            NOT = {
+                has_idea = BUL_army_restrictions
+                has_idea = GER_treaty_of_versailles
+                has_idea = GER_treaty_of_versailles_2
+                has_idea = GER_treaty_of_versailles_3
+                
+            }
+            
+        }
         is_archetype = yes
         is_buildable = no
         type = submarine

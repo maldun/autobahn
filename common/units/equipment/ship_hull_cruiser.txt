@@ -443,6 +443,8 @@ equipments = {
                 allowed_module_categories = {
                     ship_anti_air
                     ship_light_battery
+                    dp_light_battery
+                    ship_light_medium_battery
                     ship_medium_battery
                     
                 }
@@ -454,8 +456,11 @@ equipments = {
                     ship_torpedo
                     ship_anti_air
                     ship_light_battery
+                    dp_light_battery
+                    ship_light_medium_battery
                     ship_medium_battery
                     ship_secondaries
+                    ship_dp_secondaries
                     ship_airplane_launcher
                     
                 }
@@ -470,6 +475,8 @@ equipments = {
                     ship_airplane_launcher
                     ship_depth_charge
                     ship_light_battery
+                    dp_light_battery
+                    ship_light_medium_battery
                     ship_medium_battery
                     
                 }

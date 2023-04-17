@@ -20,6 +20,7 @@ equipments = {
                 required = yes
                 allowed_module_categories = {
                     ship_deck_space
+                    ship_airplane_launcher
                     
                 }
                 gfx = ship_deck_space_slot
@@ -260,7 +261,7 @@ equipments = {
     }
     ship_hull_carrier_4 = {
         abbreviation = "hbc"
-        year = 1944
+        year = 1948
         visual_level = 1
         archetype = ship_hull_carrier
         priority = 1000
@@ -286,6 +287,7 @@ equipments = {
                 required = no
                 allowed_module_categories = {
                     ship_secondaries
+                    ship_dp_secondaries
                     ship_deck_space
                     ship_carrier_armor
                     
@@ -296,8 +298,20 @@ equipments = {
                 required = no
                 allowed_module_categories = {
                     ship_secondaries
+                    ship_dp_secondaries
                     ship_deck_space
                     ship_carrier_armor
+                    
+                }
+                
+            }
+            mid_3_custom_slot = {
+                required = no
+                allowed_module_categories = {
+                    ship_secondaries
+                    ship_dp_secondaries
+                    ship_deck_space
+                    ship_anti_air
                     
                 }
                 
@@ -308,12 +322,13 @@ equipments = {
             front_1_custom_slot = empty
             mid_1_custom_slot = empty
             mid_2_custom_slot = empty
+            mid_3_custom_slot = empty
             
         }
         naval_range = 6000
         reliability = 0.8
         max_strength = 375
-        build_cost_ic = 4000
+        build_cost_ic = 3800
         resources = {
             steel = 4
             chromium = 2

@@ -148,15 +148,6 @@ technologies = {
             }
             
         }
-        folder = {
-            name = secret_weapons_folder
-            position = {
-                x = 6
-                y = 8
-                
-            }
-            
-        }
         categories = {
             light_air
             light_fighter
@@ -628,6 +619,7 @@ technologies = {
             heavy_air
             air_equipment
             cat_strategic_bomber
+            maritime
             
         }
         ai_will_do = {
@@ -672,6 +664,7 @@ technologies = {
             heavy_air
             air_equipment
             cat_strategic_bomber
+            maritime
             
         }
         ai_will_do = {
@@ -716,6 +709,7 @@ technologies = {
             heavy_air
             air_equipment
             cat_strategic_bomber
+            maritime
             
         }
         ai_will_do = {
@@ -760,6 +754,7 @@ technologies = {
             heavy_air
             air_equipment
             cat_strategic_bomber
+            maritime
             
         }
         ai_will_do = {
@@ -803,6 +798,7 @@ technologies = {
             heavy_air
             jet_technology
             cat_strategic_bomber
+            maritime
             
         }
         ai_will_do = {

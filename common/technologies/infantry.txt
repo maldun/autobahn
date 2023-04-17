@@ -139,7 +139,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 15
             
         }
         
@@ -147,6 +147,10 @@ technologies = {
     infantry_weapons1 = {
         enable_equipments = {
             infantry_equipment_1
+            
+        }
+        enable_equipment_modules = {
+            tank_anti_tank_rifle_gun
             
         }
         path = {
@@ -251,11 +255,23 @@ technologies = {
             soft_attack = 0.05
             
         }
+        camelry = {
+            soft_attack = 0.05
+            
+        }
         motorized = {
             soft_attack = 0.05
             
         }
         mechanized = {
+            soft_attack = 0.05
+            
+        }
+        mot_shocktroop = {
+            soft_attack = 0.05
+            
+        }
+        mech_shocktroop = {
             soft_attack = 0.05
             
         }
@@ -367,11 +383,23 @@ technologies = {
             soft_attack = 0.05
             
         }
+        camelry = {
+            soft_attack = 0.05
+            
+        }
         motorized = {
             soft_attack = 0.05
             
         }
         mechanized = {
+            soft_attack = 0.05
+            
+        }
+        mot_shocktroop = {
+            soft_attack = 0.05
+            
+        }
+        mech_shocktroop = {
             soft_attack = 0.05
             
         }
@@ -581,7 +609,15 @@ technologies = {
             
         }
         mechanized = {
-            soft_attack = 0.1
+            soft_attack = 0.05
+            
+        }
+        mot_shocktroop = {
+            soft_attack = 0.05
+            
+        }
+        mech_shocktroop = {
+            soft_attack = 0.05
             
         }
         amphibious_mechanized = {
@@ -1419,6 +1455,7 @@ technologies = {
     }
     night_vision = {
         land_night_attack = 0.15
+        air_strategic_bomber_night_penalty = -0.05
         path = {
             leads_to_tech = night_vision2
             research_cost_coeff = 1
@@ -1467,6 +1504,7 @@ technologies = {
     }
     night_vision2 = {
         land_night_attack = 0.15
+        air_strategic_bomber_night_penalty = -0.1
         path = {
             leads_to_tech = night_vision_a
             research_cost_coeff = 1
@@ -1524,6 +1562,11 @@ technologies = {
             breakthrough = 0.02
             
         }
+        camelry = {
+            defense = 0.02
+            breakthrough = 0.02
+            
+        }
         mountaineers = {
             defense = 0.03
             breakthrough = 0.03
@@ -1565,6 +1608,16 @@ technologies = {
             
         }
         mechanized = {
+            defense = 0.05
+            breakthrough = 0.05
+            
+        }
+        mot_shocktroop = {
+            defense = 0.05
+            breakthrough = 0.05
+            
+        }
+        mech_shocktroop = {
             defense = 0.05
             breakthrough = 0.05
             
@@ -1640,6 +1693,11 @@ technologies = {
             breakthrough = 0.02
             
         }
+        camelry = {
+            defense = 0.02
+            breakthrough = 0.02
+            
+        }
         mountaineers = {
             defense = 0.03
             breakthrough = 0.03
@@ -1681,6 +1739,16 @@ technologies = {
             
         }
         mechanized = {
+            defense = 0.05
+            breakthrough = 0.05
+            
+        }
+        mot_shocktroop = {
+            defense = 0.05
+            breakthrough = 0.05
+            
+        }
+        mech_shocktroop = {
             defense = 0.05
             breakthrough = 0.05
             
@@ -1761,6 +1829,11 @@ technologies = {
             breakthrough = 0.02
             
         }
+        camelry = {
+            defense = 0.02
+            breakthrough = 0.02
+            
+        }
         mountaineers = {
             defense = 0.03
             breakthrough = 0.03
@@ -1802,6 +1875,16 @@ technologies = {
             
         }
         mechanized = {
+            defense = 0.05
+            breakthrough = 0.05
+            
+        }
+        mot_shocktroop = {
+            defense = 0.05
+            breakthrough = 0.05
+            
+        }
+        mech_shocktroop = {
             defense = 0.05
             breakthrough = 0.05
             
@@ -1878,6 +1961,11 @@ technologies = {
             breakthrough = 0.02
             
         }
+        camelry = {
+            defense = 0.02
+            breakthrough = 0.02
+            
+        }
         mountaineers = {
             defense = 0.03
             breakthrough = 0.03
@@ -1919,6 +2007,16 @@ technologies = {
             
         }
         mechanized = {
+            defense = 0.05
+            breakthrough = 0.05
+            
+        }
+        mot_shocktroop = {
+            defense = 0.05
+            breakthrough = 0.05
+            
+        }
+        mech_shocktroop = {
             defense = 0.05
             breakthrough = 0.05
             
@@ -2034,11 +2132,23 @@ technologies = {
             soft_attack = 0.1
             
         }
+        camelry = {
+            soft_attack = 0.1
+            
+        }
         motorized = {
             soft_attack = 0.1
             
         }
         mechanized = {
+            soft_attack = 0.1
+            
+        }
+        mot_shocktroop = {
+            soft_attack = 0.1
+            
+        }
+        mech_shocktroop = {
             soft_attack = 0.1
             
         }
@@ -2096,11 +2206,23 @@ technologies = {
             soft_attack = 0.1
             
         }
+        camelry = {
+            soft_attack = 0.1
+            
+        }
         motorized = {
             soft_attack = 0.1
             
         }
         mechanized = {
+            soft_attack = 0.1
+            
+        }
+        mot_shocktroop = {
+            soft_attack = 0.1
+            
+        }
+        mech_shocktroop = {
             soft_attack = 0.1
             
         }
@@ -3213,6 +3335,11 @@ technologies = {
             breakthrough = 0.02
             
         }
+        camelry = {
+            defense = 0.02
+            breakthrough = 0.02
+            
+        }
         mountaineers = {
             defense = 0.03
             breakthrough = 0.03
@@ -3340,6 +3467,16 @@ technologies = {
             breakthrough = 0.05
             
         }
+        mot_shocktroop = {
+            max_organisation = 2
+            soft_attack = 0.03
+            
+        }
+        mech_shocktroop = {
+            max_organisation = 2
+            soft_attack = 0.03
+            
+        }
         path = {
             leads_to_tech = support_weapons_c
             research_cost_coeff = 1
@@ -3368,6 +3505,7 @@ technologies = {
     }
     night_vision_a = {
         land_night_attack = 0.15
+        air_strategic_bomber_night_penalty = -0.1
         research_cost = 2
         start_year = 1951
         folder = {
@@ -3396,6 +3534,11 @@ technologies = {
             
         }
         cavalry = {
+            defense = 0.02
+            breakthrough = 0.02
+            
+        }
+        camelry = {
             defense = 0.02
             breakthrough = 0.02
             
@@ -3443,6 +3586,16 @@ technologies = {
         mechanized = {
             defense = 0.05
             breakthrough = 0.05
+            
+        }
+        mot_shocktroop = {
+            max_organisation = 2
+            soft_attack = 0.03
+            
+        }
+        mech_shocktroop = {
+            max_organisation = 2
+            soft_attack = 0.03
             
         }
         research_cost = 1.5
@@ -3665,7 +3818,7 @@ technologies = {
     }
     winter_clothes_1944 = {
         category_all_infantry = {
-            acclimatization_cold_climate_gain_factor = 0.15f
+            acclimatization_cold_climate_gain_factor = 0.15
             default_morale = 0.01
             
         }

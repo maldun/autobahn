@@ -579,6 +579,24 @@ create_field_marshal = {
     logistics_skill = 4
     
 }
+create_field_marshal = {
+    name = "Peyton C. March"
+    portrait_path = "gfx/leaders/NEE/Portrait_NEE_Peyton_C_March.png"
+    traits = {
+        trait_cautious
+        infantry_leader
+        brilliant_strategist
+        career_officer
+        expert_delegator
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 5
+    
+}
 create_corps_commander = {
     name = "Merritt A. Edson"
     desc = "NEE_MERRITT_A_EDSON_ARMY_DESC"
@@ -791,21 +809,6 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Adna R. Chaffee Jr."
-    desc = "USA_ADNA_CHAFFEE_ARMY_DESC"
-    portrait_path = "gfx/leaders/NEE/Portrait_NEE_Adna_Chaffee.png"
-    traits = {
-        armor_officer
-        
-    }
-    skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
-    
-}
-create_corps_commander = {
     name = "Russell Hartle"
     portrait_path = "gfx/leaders/NEE/Portrait_NEE_Russell_P_Hartle.png"
     traits = {
@@ -834,6 +837,36 @@ create_corps_commander = {
     defense_skill = 1
     planning_skill = 2
     logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "John Basilone"
+    portrait_path = "gfx/leaders/NEE/Portrait_NEE_John_Basilone.png"
+    traits = {
+        trait_reckless
+        
+    }
+    skill = 1
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Harriet Quimby"
+    female = yes
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Harriet_Quimby.png"
+    traits = {
+        media_personality
+        air_commander
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
     
 }
 create_navy_leader = {
@@ -950,4 +983,4 @@ create_navy_leader = {
     coordination_skill = 2
     
 }
-USA_start_naval_variant = yes
+NEE_start_naval_variant = yes

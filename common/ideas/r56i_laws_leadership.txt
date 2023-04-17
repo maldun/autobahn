@@ -5,7 +5,7 @@ ideas = {
         r56i_laws_leadership_cult = {
             available = {
                 OR = {
-                    is_puppet = no
+                    is_subject = no
                     OVERLORD = {
                         has_government = national_populist
                         has_government = paternal_autocrat
@@ -14,7 +14,10 @@ ideas = {
                     
                 }
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     
                 }
                 
@@ -27,9 +30,13 @@ ideas = {
             }
             cancel_if_invalid = no
             ai_will_do = {
-                factor = 0.2
+                factor = 0
                 modifier = {
                     OR = {
+                        AND = {
+                            date > 1939-01-01
+                            
+                        }
                         AND = {
                             NOT = {
                                 is_puppet = yes
@@ -59,7 +66,7 @@ ideas = {
                         has_government = paternal_autocrat
                         
                     }
-                    factor = 5
+                    add = 1
                     
                 }
                 
@@ -70,7 +77,10 @@ ideas = {
             available = {
                 NOT = {
                     is_puppet = yes
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_government = authoritarian_democrat
                     
                 }
@@ -85,16 +95,52 @@ ideas = {
             cost = 150
             cancel_if_invalid = no
             ai_will_do = {
-                factor = 0.2
+                factor = 0
                 modifier = {
                     OR = {
-                        has_government = social_democrat
-                        has_government = social_liberal
-                        has_government = market_liberal
-                        has_government = social_conservative
+                        AND = {
+                            date > 1939-01-01
+                            
+                        }
+                        AND = {
+                            date > 1939-01-01
+                            has_government = social_democrat
+                            has_government = social_liberal
+                            has_government = market_liberal
+                            has_government = social_conservative
+                            
+                        }
+                        AND = {
+                            has_idea = GEN_Strenghten_Democracy_I
+                            NOT = {
+                                is_puppet = yes
+                                if = {
+                                    limit = {
+                                        is_puppet = yes
+                                        
+                                    }
+                                    ROOT = {
+                                        OVERLORD = {
+                                            NOT = {
+                                                has_government = social_democrat
+                                                has_government = social_liberal
+                                                has_government = market_liberal
+                                                has_government = social_conservative
+                                                
+                                            }
+                                            
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                                
+                            }
+                            
+                        }
                         
                     }
-                    factor = 5
+                    add = 1
                     
                 }
                 
@@ -131,27 +177,49 @@ ideas = {
             cost = 150
             cancel_if_invalid = yes
             ai_will_do = {
-                factor = 0.5
+                factor = 0
                 modifier = {
-                    NOT = {
-                        OR = {
-                            tag = TUR
+                    OR = {
+                        AND = {
+                            date > 1939-01-01
+                            
+                        }
+                        has_idea_with_trait = staunch_monarchist
+                        has_idea_with_trait = staunch_traditionalist
+                        has_idea_with_trait = staunch_aristocrat
+                        AND = {
+                            date > 1939-01-01
+                            has_government = authoritarian_democrat
+                            
+                        }
+                        AND = {
+                            has_idea = GEN_Strenghten_Monarchy_I
+                            NOT = {
+                                is_puppet = yes
+                                if = {
+                                    limit = {
+                                        is_puppet = yes
+                                        
+                                    }
+                                    ROOT = {
+                                        OVERLORD = {
+                                            NOT = {
+                                                has_government = authoritarian_democrat
+                                                
+                                            }
+                                            
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                                
+                            }
                             
                         }
                         
                     }
-                    factor = 2
-                    has_government = authoritarian_democrat
-                    
-                }
-                modifier = {
-                    has_war_support > 0.9
-                    factor = 0
-                    
-                }
-                modifier = {
-                    has_war = no
-                    factor = 0
+                    add = 1
                     
                 }
                 
@@ -162,7 +230,10 @@ ideas = {
             available = {
                 NOT = {
                     is_puppet = yes
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_government = national_populist
                     has_government = paternal_autocrat
                     
@@ -178,43 +249,7 @@ ideas = {
             cost = 150
             cancel_if_invalid = no
             ai_will_do = {
-                factor = 0.2
-                modifier = {
-                    OR = {
-                        AND = {
-                            NOT = {
-                                is_puppet = yes
-                                if = {
-                                    limit = {
-                                        is_puppet = yes
-                                        
-                                    }
-                                    ROOT = {
-                                        OVERLORD = {
-                                            NOT = {
-                                                has_government = radical_socialist
-                                                has_government = syndicalist
-                                                has_government = totalist
-                                                
-                                            }
-                                            
-                                        }
-                                        
-                                    }
-                                    
-                                }
-                                
-                            }
-                            
-                        }
-                        has_government = radical_socialist
-                        has_government = syndicalist
-                        has_government = totalist
-                        
-                    }
-                    factor = 5
-                    
-                }
+                factor = 0
                 
             }
             
@@ -231,6 +266,13 @@ ideas = {
                     has_government = radical_socialist
                     
                 }
+                NOT = {
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
+                    
+                }
                 
             }
             modifier = {
@@ -243,7 +285,7 @@ ideas = {
             cost = 150
             cancel_if_invalid = yes
             ai_will_do = {
-                factor = 2
+                factor = 0
                 
             }
             

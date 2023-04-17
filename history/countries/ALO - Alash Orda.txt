@@ -64,6 +64,7 @@ set_popularities = {
     national_populist = 0
     
 }
+set_country_flag = ALO_speaks_russian
 add_ideas = {
     ALO_Akhmet_Baytursinuli_hog_ade
     ALO_Vasily_Balabanov_eco_sco

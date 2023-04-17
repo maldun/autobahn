@@ -5,7 +5,10 @@ ideas = {
         r56i_laws_social_normal = {
             available = {
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_country_leader = {
                         name = "Anarchist Commune"
                         ruling_only = yes
@@ -17,21 +20,16 @@ ideas = {
                 
             }
             modifier = {
-                drift_defence_factor = 0.25
-                local_resources_factor = 0.075
-                industrial_capacity_factory = 0.075
-                stability_factor = -0.05
+                drift_defence_factor = 0.5
+                local_resources_factor = 0.05
+                industrial_capacity_factory = 0.05
+                stability_factor = 0.05
                 
             }
             cost = 175
             cancel_if_invalid = no
             ai_will_do = {
-                factor = 0.75
-                modifier = {
-                    factor = 1.5
-                    has_government = authoritarian_democrat
-                    
-                }
+                factor = 0
                 
             }
             
@@ -39,7 +37,10 @@ ideas = {
         r56i_laws_social_hierarchy = {
             available = {
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_country_leader = {
                         name = "Anarchist Commune"
                         ruling_only = yes
@@ -51,21 +52,15 @@ ideas = {
                 
             }
             modifier = {
-                max_command_power = 10
-                production_speed_arms_factory_factor = 0.08
-                production_speed_dockyard_factor = 0.08
+                max_command_power = 5
+                production_speed_arms_factory_factor = 0.05
+                production_speed_dockyard_factor = 0.05
                 stability_factor = -0.05
                 
             }
-            cost = 200
+            cost = 175
             ai_will_do = {
-                factor = 0.5
-                modifier = {
-                    factor = 2
-                    has_government = national_populist
-                    has_government = paternal_autocrat
-                    
-                }
+                factor = 0
                 
             }
             
@@ -73,30 +68,25 @@ ideas = {
         r56i_laws_social_revolutionary = {
             available = {
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     
                 }
                 
             }
             modifier = {
-                research_speed_factor = 0.04
+                research_speed_factor = 0.1
                 production_speed_nuclear_reactor_factor = 0.1
                 production_speed_rocket_site_factor = 0.1
                 stability_factor = -0.05
                 
             }
-            cost = 150
+            cost = 175
             cancel_if_invalid = no
             ai_will_do = {
-                factor = 0.75
-                modifier = {
-                    factor = 1.75
-                    has_government = social_democrat
-                    has_government = social_liberal
-                    has_government = market_liberal
-                    has_government = social_conservative
-                    
-                }
+                factor = 0
                 
             }
             
@@ -104,7 +94,10 @@ ideas = {
         r56i_laws_social_diversity = {
             available = {
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_government = national_populist
                     has_government = paternal_autocrat
                     
@@ -112,23 +105,15 @@ ideas = {
                 
             }
             modifier = {
-                MONTHLY_POPULATION = 1.25
+                MONTHLY_POPULATION = 1
                 production_speed_industrial_complex_factor = 0.05
-                production_speed_infrastructure_factor = 0.15
+                production_speed_infrastructure_factor = 0.05
                 stability_factor = -0.05
                 
             }
-            cost = 200
+            cost = 175
             ai_will_do = {
-                factor = 0.5
-                modifier = {
-                    factor = 2
-                    has_government = social_democrat
-                    has_government = social_liberal
-                    has_government = market_liberal
-                    has_government = social_conservative
-                    
-                }
+                factor = 0
                 
             }
             
@@ -142,7 +127,7 @@ ideas = {
                 
             }
             modifier = {
-                conscription = 0.006
+                conscription = 0.005
                 production_speed_bunker_factor = 0.15
                 production_speed_coastal_bunker_factor = 0.15
                 stability_factor = -0.05
@@ -151,14 +136,7 @@ ideas = {
             cost = 175
             cancel_if_invalid = no
             ai_will_do = {
-                factor = 0.5
-                modifier = {
-                    factor = 2
-                    has_government = radical_socialist
-                    has_government = syndicalist
-                    has_government = totalist
-                    
-                }
+                factor = 0
                 
             }
             

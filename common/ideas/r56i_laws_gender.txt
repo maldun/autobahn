@@ -5,7 +5,10 @@ ideas = {
         r56i_laws_gender_traditional = {
             available = {
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_country_leader = {
                         name = "Anarchist Commune"
                         ruling_only = yes
@@ -26,7 +29,7 @@ ideas = {
             cost = 75
             cancel_if_invalid = no
             ai_will_do = {
-                factor = 0.5
+                factor = 0
                 
             }
             
@@ -34,7 +37,10 @@ ideas = {
         r56i_laws_gender_limited = {
             available = {
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_country_leader = {
                         name = "Anarchist Commune"
                         ruling_only = yes
@@ -55,15 +61,7 @@ ideas = {
             cost = 75
             cancel_if_invalid = no
             ai_will_do = {
-                factor = 0.5
-                modifier = {
-                    factor = 2
-                    has_government = social_democrat
-                    has_government = social_liberal
-                    has_government = market_liberal
-                    has_government = social_conservative
-                    
-                }
+                factor = 0
                 
             }
             
@@ -71,7 +69,10 @@ ideas = {
         r56i_laws_gender_patriarchy = {
             available = {
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_country_leader = {
                         name = "Anarchist Commune"
                         ruling_only = yes
@@ -94,13 +95,7 @@ ideas = {
             }
             cancel_if_invalid = yes
             ai_will_do = {
-                factor = 0.5
-                modifier = {
-                    factor = 2
-                    has_government = national_populist
-                    has_government = paternal_autocrat
-                    
-                }
+                factor = 0
                 
             }
             
@@ -144,7 +139,10 @@ ideas = {
                     
                 }
                 NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                    hidden_trigger = {
+                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                        
+                    }
                     has_government = national_populist
                     has_government = paternal_autocrat
                     
@@ -160,14 +158,7 @@ ideas = {
             }
             cancel_if_invalid = yes
             ai_will_do = {
-                factor = 0.5
-                modifier = {
-                    factor = 2
-                    has_government = radical_socialist
-                    has_government = syndicalist
-                    has_government = totalist
-                    
-                }
+                factor = 0
                 
             }
             

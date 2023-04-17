@@ -602,11 +602,6 @@ country_event = {
     
 }
 country_event = {
-    id = gerdom.47
-    days = 2011
-    
-}
-country_event = {
     id = gerdom.64
     days = 2908
     
@@ -1177,6 +1172,24 @@ create_corps_commander = {
     defense_skill = 4
     planning_skill = 3
     logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Manfred von Richtofen"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Manfred_von_Richtofen.png"
+    traits = {
+        politically_connected
+        paratrooper
+        media_personality
+        skilled_staffer
+        air_commander
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
     
 }
 create_navy_leader = {

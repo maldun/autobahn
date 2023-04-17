@@ -456,24 +456,6 @@ create_corps_commander = {
     logistics_skill = 1
     
 }
-create_corps_commander = {
-    name = "Manfred von Richtofen"
-    portrait_path = "gfx/leaders/CGL/portrait_CGL_Manfred_von_Richtofen.png"
-    traits = {
-        politically_connected
-        paratrooper
-        media_personality
-        skilled_staffer
-        air_commander
-        
-    }
-    skill = 2
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-    
-}
 create_navy_leader = {
     name = "'Roaring' Dan Seavey"
     portrait_path = "gfx/leaders/CGL/Portrait_CGL_Roaring_Dan_Seavey.png"

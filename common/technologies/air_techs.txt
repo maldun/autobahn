@@ -246,15 +246,6 @@ technologies = {
             }
             
         }
-        folder = {
-            name = secret_weapons_folder
-            position = {
-                x = 6
-                y = 8
-                
-            }
-            
-        }
         categories = {
             light_air
             light_fighter
@@ -418,7 +409,6 @@ technologies = {
             
         }
         sub_technologies = {
-            light_air
             fighter_bomber3
             
         }
@@ -1139,7 +1129,6 @@ technologies = {
             
         }
         sub_technologies = {
-            fake_bomber
             hfighter_bomber1
             
         }

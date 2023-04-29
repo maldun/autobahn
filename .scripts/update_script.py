@@ -317,6 +317,7 @@ def filter_spirits(fname, keys):
 
         if len(missing) > 0:
             new_obj[0][1].append([key, missing])
+
     prefix = "kx_" if KX is True else "kr_"
     out_path = os.path.join(OUT_FOLDER, IDEA_PATH)
     os.makedirs(out_path, exist_ok=True)
@@ -329,6 +330,15 @@ def filter_spirits(fname, keys):
     orig_in_file = os.path.join(rt56_idea_path, rt56_fname)
     orig_out_file = os.path.join(out_path, rt56_fname)
     shutil.copy2(orig_in_file, orig_out_file)
+
+
+def patch_spirits(fname, mappings):
+    out_path = os.path.join(OUT_FOLDER, IDEA_PATH)
+    rt56_fname = fname if KX is True else KR_REV_SPIRIT_MAP[fname]
+
+    apply_maps_on_file(os.path.join(out_path, fname),
+                       os.path.join(out_path, fname),
+                       mappings)
 
 
 def update_chinese_army_reform(file="China_decisions.txt"):
@@ -382,14 +392,19 @@ if __name__ == "__main__":
 
     # add missing spirits
 
+    maps = ideology_map()
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
         filter_spirits(fname, keys)
+        patch_spirits(fname, maps)
     # update China Army Reform
     chn_fname = "China_decisions.txt" if KX is True else "01 China decisions.txt"
     update_chinese_army_reform(chn_fname)
     # create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
-    maps = ideology_map()
     # apply_ideology_map(maps)
+    # Patch Ideology
+    #import pdb
+    # pdb.set_trace()
+
     maps = remove_obsolete_equipment_maps()
     country_maps = apply_equipment_table(
         "KX_equipment.csv" if KX is True else "equipment.csv")

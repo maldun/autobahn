@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
+import Hoi4Converter
+from Hoi4Converter.mappings import *
+from Hoi4Converter.converter import *
+from Hoi4Converter.parser import parse_grammar as code2obj
+import rt56_update
 import os
 import sys
 import pandas as pd
 import shutil
 HOME = os.path.expanduser("~/")
 #sys.path.append(HOME + "prog/Python/hoi4_converter/")
-import Hoi4Converter
-from Hoi4Converter.mappings import *
-from Hoi4Converter.converter import *
 
-import rt56_update
 
 HOI4_FOLDER = HOME + ".local/share/Steam/steamapps/common/Hearts of Iron IV/"
 KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695605/"
@@ -19,14 +20,14 @@ RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/195
 
 # Set for mod in question
 KX = True
-    
+
 OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_diff"
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
 IDEA_PATH = "common/ideas"
 HISTORY_COUNTRY_PATH = "history/countries"
 DECISION_PATH = "common/decisions"
-# RULES_PATH = 
+# RULES_PATH =
 SET_TECH_KEY = "set_technology"
 HAS_TECH_KEY = "has_tech"
 SPIRIT_KEYS = {"air_spirits.txt": ("air_force_spirit",
@@ -34,35 +35,36 @@ SPIRIT_KEYS = {"air_spirits.txt": ("air_force_spirit",
                "army_spirits.txt": ("academy_spirit", "army_spirit",
                                     "division_command_spirit"),
                "navy_spirits.txt": ("naval_academy_spirit",
-                                     "navy_spirit",
-                                     "naval_command_spirit"),
+                                    "navy_spirit",
+                                    "naval_command_spirit"),
                }
 
 ideologies = {"fascism": ("national_populist", "paternal_autocrat"),
-                  "democratic": ("social_democrat", "social_liberal",
-                                 "market_liberal", "social_conservative"),
-                  "communism": ("radical_socialist", "syndicalist", "totalist"),
-                  "neutrality": ("authoritarian_democrat",)
-                  }
-
-TECH_CRITS = {"air_spirits.txt": ['available',
-                 [['OR', [['has_tech', ['air_superiority']],
-                          ['has_tech', ['formation_flying']],
-                          ['has_tech', ['force_rotation']]]]]],
-              "army_spirits.txt": ['available',
-                    [['OR', [['has_tech', ['mobile_warfare']],
-                             ['has_tech', ['superior_firepower']],
-                             ['has_tech', ['trench_warfare']],
-                             ['has_tech', ['mass_assault']],
-                             ['has_tech', ['r56_guerilla_warfare']]]]]],
-              "navy_spirits.txt": ['available',
-                        [['OR', [['has_tech', ['fleet_in_being']],
-                                ['has_tech', ['trade_interdiction']],
-                                 ['has_tech', ['base_strike']]]]]]
+              "democratic": ("social_democrat", "social_liberal",
+                             "market_liberal", "social_conservative"),
+              "communism": ("radical_socialist", "syndicalist", "totalist"),
+              "neutrality": ("authoritarian_democrat",)
               }
 
-KR_SPIRIT_MAP = {"air_spirits.txt":"01 Air Spirits.txt", "army_spirits.txt":"01 Army Spirits.txt","navy_spirits.txt": "01 Navy Spirits.txt"}
-KR_REV_SPIRIT_MAP = {val:key for key,val in KR_SPIRIT_MAP.items()}
+TECH_CRITS = {"air_spirits.txt": ['available',
+                                  [['OR', [['has_tech', ['air_superiority']],
+                                           ['has_tech', ['formation_flying']],
+                                           ['has_tech', ['force_rotation']]]]]],
+              "army_spirits.txt": ['available',
+                                   [['OR', [['has_tech', ['mobile_warfare']],
+                                            ['has_tech', ['superior_firepower']],
+                                            ['has_tech', ['trench_warfare']],
+                                            ['has_tech', ['mass_assault']],
+                                            ['has_tech', ['r56_guerilla_warfare']]]]]],
+              "navy_spirits.txt": ['available',
+                                   [['OR', [['has_tech', ['fleet_in_being']],
+                                            ['has_tech', ['trade_interdiction']],
+                                            ['has_tech', ['base_strike']]]]]]
+              }
+
+KR_SPIRIT_MAP = {"air_spirits.txt": "01 Air Spirits.txt",
+                 "army_spirits.txt": "01 Army Spirits.txt", "navy_spirits.txt": "01 Navy Spirits.txt"}
+KR_REV_SPIRIT_MAP = {val: key for key, val in KR_SPIRIT_MAP.items()}
 KR_TECH_CRITS = {}
 KR_SPIRIT_KEYS = {}
 for kx_file, kr_file in KR_SPIRIT_MAP.items():
@@ -79,25 +81,26 @@ rt56_techs = {
     "shocktroops",
     "jaegers",
     "desertinfantry_at",
-    "jngdst_clothes_gw", # jungle clothing
+    "jngdst_clothes_gw",  # jungle clothing
     "winter_clothes_gw",
     "r56_gw_railway_gun",
     "r56_railway_mortar_subtech",
     "r56_militia_tech",
-    "r56_guerilla_warfare", # Docrtine
+    "r56_guerilla_warfare",  # Docrtine
     "jungletroops",
-    }
+}
 
 country_inheritance = {"TUR": ("OTT",),
                        "USA": ("CSA",),
                        "SOV": ("RUS",),
                        }
 
+
 def ideology_map():
     maps = []
     # update fascist
     key = "has_government"
-   
+
     ideology_objs = {(key, (ikey,)): [[key, [ival]] for ival in ivals]
                      for ikey, ivals in ideologies.items()}
 
@@ -109,8 +112,9 @@ def ideology_map():
         maps.append([[has_key_and_val, ikey], [remove, ikey]])
 
     # remove traits which are obsolete
-    trait_list = ["communist_revolutionary", "democratic_reformer", "fascist_demagogue", "womens_figurehead"]
-    traits = [["has_idea_with_trait" , [trait]] for trait in trait_list]
+    trait_list = ["communist_revolutionary", "democratic_reformer",
+                  "fascist_demagogue", "womens_figurehead"]
+    traits = [["has_idea_with_trait", [trait]] for trait in trait_list]
     for ikey in traits:
         maps.append([[has_key_and_val, ikey], [remove, ikey]])
 
@@ -129,35 +133,66 @@ def ideology_map():
     #maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
 
     # Add RadSoc when anarchist Commune is there
-    val = ['has_country_leader', [['name', ['"Anarchist Commune"']], ['ruling_only', [True]]]]
+    val = ['has_country_leader', [
+        ['name', ['"Anarchist Commune"']], ['ruling_only', [True]]]]
     mapping = [[has_value, val],
-               [add_multiple, [["has_government",["radical_socialist"]]]]
+               [add_multiple, [["has_government", ["radical_socialist"]]]]
                ]
     maps.append(mapping)
     if KX is False:
         mapping = [[has_value, val],
-               [remove, val]
-               ]
+                   [remove, val]
+                   ]
         maps.append(mapping)
 
     # Remove ideas
-    ideas = ["nationalism", "internationalism","SPR_collectivized_society"]
+    ideas = ["nationalism", "internationalism", "SPR_collectivized_society"]
     ideas_items = [["has_idea", [idea]] for idea in ideas]
     for item in ideas_items:
-        maps.append([[has_key_and_val, item],[remove,item]])
-    
+        maps.append([[has_key_and_val, item], [remove, item]])
+
+    # Add additional modifiers
+    mod_cult_old = """
+                modifier = {
+                fascism_drift = 0.05
+                justify_war_goal_time = -0.25
+                political_power_cost = 0.05
+                
+            }"""
+    mod_cult = """
+    modifier = {
+		 totalist_drift = -0.02
+		 syndicalist_drift = -0.02
+		 radical_socialist_drift = -0.02
+		 social_democrat_drift = -0.02
+		 social_liberal_drift = -0.02
+		 market_liberal_drift = -0.02
+		 social_conservative_drift = -0.02
+                 justify_war_goal_time = -0.25
+                 political_power_cost = 0.05
+	       }
+    """
+    mod_cult_obj_old = code2obj(mod_cult_old)[0]
+    mod_cult_obj = code2obj(mod_cult)[0]
+    mapping = [[has_key_and_val, mod_cult_obj_old],
+               [replace, mod_cult_obj]]
+    maps.append(mapping)
+
     return maps
+
 
 def apply_ideology_map(maps):
     file_list = os.listdir(RT56_FOLDER + IDEA_PATH)
-    file_list = [fname for fname in file_list if fname.startswith("r56i_laws_")]
-    
+    file_list = [
+        fname for fname in file_list if fname.startswith("r56i_laws_")]
+
     for file in file_list:
         os.makedirs(os.path.join(OUT_FOLDER, IDEA_PATH), exist_ok=True)
 
         apply_maps_on_file(os.path.join(RT56_FOLDER, IDEA_PATH, file),
                            os.path.join(OUT_FOLDER, IDEA_PATH, file),
                            maps)
+
 
 def remove_obsolete_equipment_maps():
     maps = []
@@ -166,6 +201,7 @@ def remove_obsolete_equipment_maps():
                  [remove, key_and_val]])
 
     return maps
+
 
 def create_equipment_table(out_file):
     country_folder56 = os.path.join(RT56_FOLDER, HISTORY_COUNTRY_PATH)
@@ -183,7 +219,8 @@ def create_equipment_table(out_file):
             try:
                 obj = paradox2list(os.path.join(country_folder56, fname))
             except:
-                import pdb; pdb.set_trace()
+                import pdb
+                pdb.set_trace()
 
             found, inds = has_key(obj, SET_TECH_KEY)
             if len(found) == 0:
@@ -197,10 +234,8 @@ def create_equipment_table(out_file):
                         val = found2[0][1][0]
                         df.loc[tag, tech] = val
                     else:
-                        import pdb; pdb.set_trace()
-
-
-
+                        import pdb
+                        pdb.set_trace()
 
     for tag in sorted(rest_countries):
         # set defaults
@@ -208,30 +243,32 @@ def create_equipment_table(out_file):
         df.loc[tag, "etax_doctrine"] = 1
     df.to_csv(out_file)
 
+
 def apply_equipment_table(file_name):
-    df = pd.read_csv(file_name,header=0, index_col=0)
+    df = pd.read_csv(file_name, header=0, index_col=0)
     techs = list(df.columns)
     country_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
     file_dict = {fname[:3]: fname for fname in os.listdir(country_folder)}
     maps = {}
     for fname in os.listdir(country_folder):
         tag = fname[:3]
-        
+
         try:
             vals = [[tech, [df.loc[tag, tech] if pd.isna(df.loc[tag, tech]) else int(df.loc[tag, tech])]]
-                for tech in techs if not pd.isna(df.loc[tag, tech])]
+                    for tech in techs if not pd.isna(df.loc[tag, tech])]
         except:
-            import pdb; pdb.set_trace()
+            import pdb
+            pdb.set_trace()
         mapping = [[has_key_and_max_level, [SET_TECH_KEY, 1]],
                    [add_multiple_values, vals]
                    ]
         maps[tag] = mapping
     return maps
 
-    
+
 def apply_equipment_maps(general_maps, specific_maps):
     in_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
-    out_folder = os.path.join(OUT_FOLDER, HISTORY_COUNTRY_PATH) 
+    out_folder = os.path.join(OUT_FOLDER, HISTORY_COUNTRY_PATH)
     file_list = os.listdir(in_folder)
     #file_list = ["FRA - France.txt"]
     os.makedirs(out_folder, exist_ok=True)
@@ -241,19 +278,21 @@ def apply_equipment_maps(general_maps, specific_maps):
         maps = general_maps + [specific_maps[tag]]
         try:
             apply_maps_on_file(os.path.join(in_folder, file),
-                           os.path.join(out_folder, file),
-                           maps)
+                               os.path.join(out_folder, file),
+                               maps)
         except:
-            import pdb; pdb.set_trace()
+            import pdb
+            pdb.set_trace()
+
 
 def filter_spirits(fname, keys):
     idea_path = os.path.join(MAIN_MOD, IDEA_PATH)
     rt56_idea_path = os.path.join(RT56_FOLDER, IDEA_PATH)
     rt56_fname = fname if KX is True else KR_REV_SPIRIT_MAP[fname]
-    
+
     obj1 = paradox2list(os.path.join(rt56_idea_path, rt56_fname))
     obj2 = paradox2list(os.path.join(idea_path, fname))
-    new_obj = [["ideas",[]]]
+    new_obj = [["ideas", []]]
     tech_crit = TECH_CRITS[fname] if KX is True else KR_TECH_CRITS[fname]
 
     skeys = [None]*2
@@ -271,16 +310,17 @@ def filter_spirits(fname, keys):
             if len(ava) == 0:
                 o1[0][1] += [tech_crit]
             else:
-                import pdb; pdb.set_trace()
+                import pdb
+                pdb.set_trace()
 
             missing += o1
 
         if len(missing) > 0:
             new_obj[0][1].append([key, missing])
     prefix = "kx_" if KX is True else "kr_"
-    out_path = os.path.join(OUT_FOLDER,IDEA_PATH)
+    out_path = os.path.join(OUT_FOLDER, IDEA_PATH)
     os.makedirs(out_path, exist_ok=True)
-    out_file = os.path.join(out_path,prefix+fname)
+    out_file = os.path.join(out_path, prefix+fname)
     with open(out_file, 'w', encoding=UTF8) as file:
         content = list2paradox(new_obj)
         file.write(content)
@@ -290,6 +330,7 @@ def filter_spirits(fname, keys):
     orig_out_file = os.path.join(out_path, rt56_fname)
     shutil.copy2(orig_in_file, orig_out_file)
 
+
 def update_chinese_army_reform(file="China_decisions.txt"):
     in_folder = os.path.join(MAIN_MOD, DECISION_PATH)
     out_folder = os.path.join(OUT_FOLDER, DECISION_PATH)
@@ -297,8 +338,8 @@ def update_chinese_army_reform(file="China_decisions.txt"):
     tech_dic = {"delay": ("r56_double_envelopment",),
                 "mobile_infantry": ("r56_infiltration_assault", "r56_milita_formation"),
                 "mass_motorization": ("r56_infiltration_in_depth", "r56_nd_conscription"),
-                "mechanised_offensive":("r56_backhand_blow", "r56_peoples_army"),
-                "volkssturm":("r56_prepared_defense", "r56_breakout")
+                "mechanised_offensive": ("r56_backhand_blow", "r56_peoples_army"),
+                "volkssturm": ("r56_prepared_defense", "r56_breakout")
                 }
     maps = []
     for key, techs in tech_dic.items():
@@ -306,20 +347,22 @@ def update_chinese_army_reform(file="China_decisions.txt"):
         maps += [[[has_value, [HAS_TECH_KEY, [key]]],
                   [add_multiple, values]]]
 
-    obj = paradox2list(os.path.join(in_folder,file))
+    obj = paradox2list(os.path.join(in_folder, file))
     try:
         apply_maps_on_file(os.path.join(in_folder, file),
                            os.path.join(out_folder, file),
                            maps)
     except Exception as exc:
         print(exc)
-        import pdb; pdb.set_trace()
-    
+        import pdb
+        pdb.set_trace()
+
+
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
     # update rt56 techs
     #update_keys = [key for key in rt56_update.__dict__.keys() if key.startswith("update_")]
-    #for func in update_keys:
+    # for func in update_keys:
     #    rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
 
     rt56_update.copy_update(RT56_FOLDER, OUT_FOLDER)
@@ -332,23 +375,22 @@ if __name__ == "__main__":
     rt56_update.patch_bugs(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
 
     if KX is True:
-        import kx_patches as patches  
+        import kx_patches as patches
     else:
         import kr_patches as patches
     patches.patch(MAIN_MOD, OUT_FOLDER)
-    
+
     # add missing spirits
-    
+
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
         filter_spirits(fname, keys)
     # update China Army Reform
     chn_fname = "China_decisions.txt" if KX is True else "01 China decisions.txt"
     update_chinese_army_reform(chn_fname)
-    #create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
+    # create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     maps = ideology_map()
-    apply_ideology_map(maps)
+    # apply_ideology_map(maps)
     maps = remove_obsolete_equipment_maps()
-    country_maps = apply_equipment_table("KX_equipment.csv" if KX is True else "equipment.csv")
+    country_maps = apply_equipment_table(
+        "KX_equipment.csv" if KX is True else "equipment.csv")
     apply_equipment_maps(maps, country_maps)
-
-    

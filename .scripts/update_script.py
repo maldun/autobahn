@@ -9,13 +9,13 @@ import sys
 import pandas as pd
 import shutil
 HOME = os.path.expanduser("~/")
-#sys.path.append(HOME + "prog/Python/hoi4_converter/")
+# sys.path.append(HOME + "prog/Python/hoi4_converter/")
 
 
 HOI4_FOLDER = HOME + ".local/share/Steam/steamapps/common/Hearts of Iron IV/"
 KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695605/"
 KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426030/"
-#RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
+# RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
 RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/1956_beta/"
 
 # Set for mod in question
@@ -128,9 +128,9 @@ def ideology_map():
     vals = ["SHX", "PER"]
     for val in vals:
         maps.append([[has_key_and_val, [key, [val]]], [remove, [key, [val]]]])
-    #val = "TUR"
-    #val2 = "OTT"
-    #maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
+    # val = "TUR"
+    # val2 = "OTT"
+    # maps.append([[has_key_and_val, [key, [val]]], [add_multiple, [[key, [val2]]]]])
 
     # Add RadSoc when anarchist Commune is there
     val = ['has_country_leader', [
@@ -151,33 +151,24 @@ def ideology_map():
     for item in ideas_items:
         maps.append([[has_key_and_val, item], [remove, item]])
 
-    # Add additional modifiers
-    mod_cult_old = """
-                modifier = {
-                fascism_drift = 0.05
-                justify_war_goal_time = -0.25
-                political_power_cost = 0.05
-                
-            }"""
-    mod_cult = """
-    modifier = {
-		 totalist_drift = -0.02
-		 syndicalist_drift = -0.02
-		 radical_socialist_drift = -0.02
-		 social_democrat_drift = -0.02
-		 social_liberal_drift = -0.02
-		 market_liberal_drift = -0.02
-		 social_conservative_drift = -0.02
-                 justify_war_goal_time = -0.25
-                 political_power_cost = 0.05
-	       }
-    """
-    mod_cult_obj_old = code2obj(mod_cult_old)[0]
-    mod_cult_obj = code2obj(mod_cult)[0]
-    mapping = [[has_key_and_val, mod_cult_obj_old],
-               [replace, mod_cult_obj]]
-    maps.append(mapping)
+    return maps
 
+
+def spirit_ideology_map():
+    maps = []
+    # update fascist
+    key = "has_government"
+
+    ideology_objs = {(key, (ikey,)): [[key, [ival]] for ival in ivals]
+                     for ikey, ivals in ideologies.items()}
+
+    for ikey, ivals in ideology_objs.items():
+        # turn into list
+        ikey = list(ikey)
+        ikey[1] = list(ikey[1])
+        maps.append([[has_key_and_val, ikey], [
+                    add_multiple, [["OR", ivals]]]])
+        maps.append([[has_key_and_val, ikey], [remove, ikey]])
     return maps
 
 
@@ -270,7 +261,7 @@ def apply_equipment_maps(general_maps, specific_maps):
     in_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
     out_folder = os.path.join(OUT_FOLDER, HISTORY_COUNTRY_PATH)
     file_list = os.listdir(in_folder)
-    #file_list = ["FRA - France.txt"]
+    # file_list = ["FRA - France.txt"]
     os.makedirs(out_folder, exist_ok=True)
 
     for file in file_list:
@@ -336,6 +327,7 @@ def patch_spirits(fname, mappings):
     out_path = os.path.join(OUT_FOLDER, IDEA_PATH)
     rt56_fname = fname if KX is True else KR_REV_SPIRIT_MAP[fname]
 
+    # Change maps
     apply_maps_on_file(os.path.join(out_path, fname),
                        os.path.join(out_path, fname),
                        mappings)
@@ -371,7 +363,7 @@ def update_chinese_army_reform(file="China_decisions.txt"):
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
     # update rt56 techs
-    #update_keys = [key for key in rt56_update.__dict__.keys() if key.startswith("update_")]
+    # update_keys = [key for key in rt56_update.__dict__.keys() if key.startswith("update_")]
     # for func in update_keys:
     #    rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
 
@@ -392,7 +384,7 @@ if __name__ == "__main__":
 
     # add missing spirits
 
-    maps = ideology_map()
+    maps = spirit_ideology_map()
     for fname, keys in SPIRIT_KEYS.items() if KX is True else KR_SPIRIT_KEYS.items():
         filter_spirits(fname, keys)
         patch_spirits(fname, maps)
@@ -402,8 +394,6 @@ if __name__ == "__main__":
     # create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     # apply_ideology_map(maps)
     # Patch Ideology
-    #import pdb
-    # pdb.set_trace()
 
     maps = remove_obsolete_equipment_maps()
     country_maps = apply_equipment_table(

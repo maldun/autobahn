@@ -136,7 +136,7 @@ air_snippets += ["""
                 
             }"""]
 air_patches += ['']
-air_snippets += [air_snippets[-1].replace('2','3')]
+air_snippets += [air_snippets[-1].replace('2', '3')]
 air_patches += ['']
 
 #######################################################################
@@ -168,8 +168,8 @@ tank_patches += ["""
 #######################################################################
 # Patches for Infantry tech                                           #
 #######################################################################
-infantry_snippets =[]
-infantry_patches =[]
+infantry_snippets = []
+infantry_patches = []
 
 infantry_snippets += ["""OR = {
 				    tag = CHI
@@ -409,7 +409,7 @@ mtg_support_snippets += ["""
 				tag = JAP
 				}"""]
 mtg_support_patches += ["is_major = yes"]
-mtg_support_snippets +=["""
+mtg_support_snippets += ["""
                         OR = {
 				tag = JAP
 				tag = USA
@@ -464,7 +464,7 @@ vehicle_snippet1 = """
 				original_tag = SOV }
                                 date > "1939.1.1" }
                      """
-vehicle_snippet2 =  """
+vehicle_snippet2 = """
                      AND = { OR = {
                         original_tag = FRA
                         original_tag = ENG
@@ -496,7 +496,7 @@ vehicle_patch5 = ""
 #######################################################################
 industry_snippets = []
 industry_patches = []
-industry_snippets +=  ["""NOT = { has_government = fascism }"""]
+industry_snippets += ["""NOT = { has_government = fascism }"""]
 industry_patches += ["""NOT = { has_government = national_populist
                                 has_government = paternal_autocrat }"""]
 industry_snippets += ["""OR = {
@@ -518,12 +518,12 @@ industry_snippets += [""" modifier = {
 			   }"""]
 industry_patches += ['']
 us_factor_snippet = industry_snippets[-1]
-factors = ['0.25', '0.5' , '3', '3.5', '10']
+factors = ['0.25', '0.5', '3', '3.5', '10']
 for factor in factors:
     industry_snippets += [us_factor_snippet.replace('2', factor)]
     industry_patches += ['']
     industry_snippets += [us_factor_snippet.replace(
-                             'tag', 'original_tag').replace('2', factor)]
+        'tag', 'original_tag').replace('2', factor)]
     industry_patches += ['']
 # flip ...
 industry_snippets += [""" modifier = {
@@ -542,7 +542,7 @@ industry_patches += ["""OR = {
 			}"""]
 # ENG is now in need
 industry_snippets += ['tag = ITA']
-industry_patches +=  ['tag = ENG']
+industry_patches += ['tag = ENG']
 
 BUL_army_restrictions_snippet = """
                                can_be_produced = {

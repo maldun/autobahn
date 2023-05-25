@@ -187,6 +187,30 @@ set_popularities = {
     
 }
 create_country_leader = {
+    name = "Rosendo Dorame"
+    picture = "gfx/leaders/ARZ/Portrait_ARZ_Rosendo_Dorame.png"
+    expire = "1965.1.1"
+    ideology = syn_cowboy_communalism_subtype
+    traits = {}
+    
+}
+create_country_leader = {
+    name = "Fernando Palomares"
+    picture = "gfx/leaders/ARZ/Portrait_ARZ_Fernando_Palomares.png"
+    expire = "1965.1.1"
+    ideology = cowboy_communalism_subtype
+    traits = {}
+    
+}
+create_country_leader = {
+    name = "PLM-IWW Popular Assembly"
+    picture = "gfx/leaders/ARZ/Portrait_ARZ_PLM_IWW_Congress.png"
+    expire = "1965.1.1"
+    ideology = socdem_cowboy_communalism_subtype
+    traits = {}
+    
+}
+create_country_leader = {
     name = "Barry Goldwater"
     desc = "POLITICS_GOLDWATER_DESC"
     picture = "gfx/leaders/ARZ/Portrait_ARZ_Barry_Goldwater.png"
@@ -252,6 +276,11 @@ add_ideas = {
     ARZ_Barry_Morris_Goldwater_sec_mli
     
 }
+country_event = {
+    id = arizona.39
+    days = 150
+    
+}
 create_field_marshal = {
     name = "Harry Cornwall Wheeler"
     desc = "POLITICS_HARRY_WHEELER_DESC"
@@ -267,6 +296,7 @@ create_field_marshal = {
     defense_skill = 2
     planning_skill = 2
     logistics_skill = 4
+    id = 6420
     
 }
 create_corps_commander = {

@@ -319,7 +319,7 @@ country_event = {
 }
 country_event = {
     id = ustates.3300
-    days = 367
+    days = 267
     
 }
 country_event = {

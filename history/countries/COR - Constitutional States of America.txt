@@ -212,6 +212,11 @@ country_event = {
     
 }
 country_event = {
+    id = constate.7000
+    days = 15
+    
+}
+country_event = {
     id = constate.68
     days = 150
     
@@ -394,6 +399,7 @@ create_corps_commander = {
     traits = {
         trickster
         career_officer
+        COR_NDWL_leader
         
     }
     skill = 2
@@ -464,6 +470,7 @@ create_corps_commander = {
     traits = {
         harsh_leader
         trait_reckless
+        COR_NDWL_leader
         
     }
     skill = 1
@@ -480,6 +487,7 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/COR/COR_Sam_Green.png"
     traits = {
         inflexible_strategist
+        COR_NDWL_leader
         
     }
     skill = 1
@@ -497,6 +505,7 @@ create_corps_commander = {
     traits = {
         inflexible_strategist
         harsh_leader
+        COR_NDWL_leader
         
     }
     skill = 1
@@ -512,6 +521,7 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/COR/Portrait_COR_Arthur_Hornbui_Bell.png"
     traits = {
         harsh_leader
+        COR_NDWL_leader
         
     }
     skill = 1
@@ -522,7 +532,7 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Jeb Stuart IV"
+    name = "J.E.B. Stuart IV"
     portrait_path = "gfx/leaders/COR/Portrait_COR_JEB!.png"
     traits = {
         hidden_sympathies
@@ -763,7 +773,11 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Walter F. Bossert"
     portrait_path = "gfx/leaders/COR/Portrait_COR_Walter_F_Bossert.png"
-    traits = {}
+    traits = {
+        COR_NDWL_leader
+        politically_connected
+        
+    }
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -815,7 +829,10 @@ create_navy_leader = {
 create_navy_leader = {
     name = "John G. Crommelin"
     portrait_path = "gfx/leaders/TEX/Portrait_TEX_david_bagley.png"
-    traits = {}
+    traits = {
+        COR_NDWL_leader
+        
+    }
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -826,7 +843,10 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Mickey Cochrane"
     portrait_path = "gfx/leaders/COR/Mickey_Cochrane.png"
-    traits = {}
+    traits = {
+        COR_NDWL_leader
+        
+    }
     skill = 1
     attack_skill = 1
     defense_skill = 1

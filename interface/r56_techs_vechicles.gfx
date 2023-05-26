@@ -35,7 +35,19 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_r56_convoy_highways_medium"
-		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_convoy_highway.dds"
+		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_convoy_highway_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_convoy_highways_2_medium"
+		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_convoy_highway_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_convoy_highways_3_medium"
+		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_convoy_highway_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_convoy_highways_4_medium"
+		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_convoy_highway_4.dds"
 	}
 	SpriteType = { #USA Only focus tech FYI
 		name = "GFX_r56_USA_train_side_tanks_medium"
@@ -145,6 +157,11 @@ spriteTypes = {
 	}
 
 	#-> GER <><>
+	SpriteType = {
+		name = "GFX_GER_wartime_train_medium"
+		texturefile = "gfx/interface/technologies/GER_train_equipment_2.dds"
+	}	
+	
 	SpriteType = { #stand in
 		name = "GFX_GER_r56_mid_wartime_train_medium"
 		texturefile = "gfx/interface/technologies/r56_vechicles/tech_train_equipment_5_eng.dds"
@@ -156,7 +173,7 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_GER_r56_postwar_train_medium"
+		name = "GFX_AUS_r56_postwar_train_medium"
 		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_train_equipment_diesel_eng.dds"
 	}
 
@@ -234,7 +251,7 @@ spriteTypes = {
 	
 	#-> SOV <><>
 	SpriteType = { #stand in
-		name = "GFX_RUS_r56_postwar_train_medium"
+		name = "GFX_SOV_r56_postwar_train_medium"
 		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_train_equipment_diesel_eng.dds"
 	}
 

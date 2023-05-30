@@ -238,6 +238,10 @@ recruit_character = NOR_tryggve_gran
 recruit_character = NOR_georg_jacob_falck_bull
 recruit_character = NOR_bjorn_christopherson
 recruit_character = NOR_norwegian_army_council
+NOR_haakon_vii = {
+    set_character_flag = is_monarch
+    
+}
 every_unit_leader = {
     set_character_flag = NOR_leader
     

@@ -31,3 +31,5 @@ set_politics = {
     elections_allowed = no
     
 }
+recruit_character = PNG_sumsuma
+recruit_character = PNG_bohun

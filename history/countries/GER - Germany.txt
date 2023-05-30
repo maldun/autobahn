@@ -23,6 +23,7 @@ set_technology = {
     tech_engineers = 1
     gw_artillery = 1
     interwar_antiair = 1
+    interwar_antitank = 1
     fuel_silos = 1
     fuel_refining = 1
     basic_train = 1
@@ -44,7 +45,6 @@ if = {
     set_air_oob = "GER_air_bba"
     set_technology = {
         aa_lmg = 1
-        aa_cannon_1 = 1
         engines_1 = 1
         engines_2 = 1
         early_bombs = 1
@@ -237,11 +237,6 @@ if = {
     
 }
 country_event = {
-    id = gerdom.1
-    hours = 2
-    
-}
-country_event = {
     id = mittel.43
     days = 84
     
@@ -407,18 +402,16 @@ recruit_character = GER_kurt_student
 recruit_character = GER_hugo_sperrle
 recruit_character = GER_walter_dornberger
 recruit_character = GER_werner_heisenberg
-every_character = {
-    limit = {
-        can_be_country_leader = yes
-        NOT = {
-            is_character = GER_wilhelm_ii
-            is_character = GER_wilhelm_iii
-            is_character = GER_willi_munzenberg
-            
-        }
-        
-    }
-    set_character_flag = GER_republican_leader
+GER_wilhelm_ii = {
+    set_character_flag = is_monarch
+    
+}
+GER_wilhelm_iii = {
+    set_character_flag = is_monarch
+    
+}
+GER_wilhelm_iv = {
+    set_character_flag = is_monarch
     
 }
 GER_heinz_guderian = {

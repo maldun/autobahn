@@ -2,9 +2,12 @@ technologies = {
 
 
 	@1918 = 0
-	@1936 = 2
-	@1938 = 4
-	@1939 = 6
+	@1934 = 2
+	@1935 = 3
+	@1936 = 4
+	@1937 = 5
+	@1938 = 6
+	@1939 = 7
 	@1940 = 7
 	@1941 = 8
 	@1942 = 9
@@ -61,6 +64,7 @@ technologies = {
 			extra_ammo_storage
 			wet_ammo_storage
 			smoke_launchers
+			expanded_fuel_tank
 		}
 		enable_subunits = {
 			light_armor
@@ -326,10 +330,10 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 0.1
 
 			modifier = {
-				factor = 2
+				add = 0.4
 				is_major = yes
 				NOT = {
 					TAG = GER
@@ -340,7 +344,7 @@ technologies = {
 					original_tag = USA
 					original_tag = JAP
 				}
-				factor = 2
+				add = 3
 			}
 			modifier = {
 				not = {
@@ -390,18 +394,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 0.1
 
 			modifier = {
-				factor = 2
+				add = 0.4
 				is_major = yes
 			}
 			modifier = {
 				OR = {
 					original_tag = USA
 					original_tag = JAP
+					original_tag = ENG
 				}
-				factor = 2
+				add = 3
 			}
 			modifier = {
 				not = {
@@ -516,11 +521,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1938
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1936 }
+			position = { x = 2 y = @1937 }
 		}
 
 		ai_will_do = {
@@ -533,7 +538,7 @@ technologies = {
 					tag = JAP
 					num_of_military_factories < 50
 				}
-				date > "1938.1.1"
+				date > "1937.9.1"
 			}
 			modifier = {
 				tag = RUS
@@ -552,6 +557,11 @@ technologies = {
 			modifier = {
 				factor = 1.1
 				date > "1942.1.1"
+			}
+
+			modifier = { #Rush
+				factor = 5.0
+				tag = GER
 			}
 
 			modifier = {
@@ -603,7 +613,7 @@ technologies = {
 				}
 			}
 			modifier = {
-				date < "1941.1.1"
+				date < "1940.1.1"
 				factor = 0.3
 			}
 			modifier = {
@@ -629,6 +639,12 @@ technologies = {
 			modifier = {
 				factor = 1.1
 				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 15.0
+				tag = GER
+				has_opinion_modifier = sov_ger_treaty
 			}
 		}
 
@@ -1021,7 +1037,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1934
+		start_year = 1936
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1936 }
@@ -1077,7 +1093,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1938 }
@@ -1282,7 +1298,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1934
+		start_year = 1936
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1936 }
@@ -1336,7 +1352,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1938 }

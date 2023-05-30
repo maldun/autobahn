@@ -185,6 +185,14 @@ set_variable = {
     
 }
 ROOT = {
+    94 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    97 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     188 = {
         enable_state_integration_50_compliance = yes
         
@@ -229,3 +237,11 @@ recruit_character = LIT_kazys_ladiga
 recruit_character = LIT_edvardas_adamkavicius
 recruit_character = LIT_antanas_kaskelis
 recruit_character = LIT_povilas_julius_labanauskas
+LIT_karl_gero_von_urach = {
+    set_character_flag = is_monarch
+    
+}
+LIT_eberhard_von_urach = {
+    set_character_flag = is_monarch
+    
+}

@@ -112,13 +112,25 @@ recruit_character = PAR_nicolas_delgado
 recruit_character = PAR_leandro_aponte
 recruit_character = PAR_romildo_etcheverry
 recruit_character = PAR_paraguayan_high_command
-recruit_character = PAR_felix_pavia
+recruit_character = PAR_felix_paiva
 recruit_character = PAR_tomas_salomoni
 recruit_character = PAR_federico_chaves
-recruit_character = PAR_ricardo_odriosola
+recruit_character = PAR_ricardo_odriozola
 recruit_character = PAR_justo_pastor
 recruit_character = PAR_arnaldo_valdovinos
 recruit_character = PAR_efraim_cardozo
 recruit_character = PAR_victoriano_benitez
 recruit_character = PAR_juan_stefanich
 activate_advisor = PAR_luis_alberto_riart_sic
+PAR_carlos_pastore = {
+    retire = yes
+    
+}
+PAR_aristides_ortellado = {
+    retire = yes
+    
+}
+PAR_camilo_recalde = {
+    retire = yes
+    
+}

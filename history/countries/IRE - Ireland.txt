@@ -135,11 +135,6 @@ set_popularities = {
     
 }
 country_event = {
-    id = ireland.2
-    days = 1
-    
-}
-country_event = {
     id = ireland.53
     days = 15
     
@@ -240,4 +235,8 @@ recruit_character = IRE_herbert_c_irwin
 recruit_character = IRE_william_mcsweeney
 recruit_character = IRE_patrick_a_mulcahy
 recruit_character = IRE_cf_russell
+IRE_jorge_maria_oneill = {
+    set_character_flag = is_monarch
+    
+}
 activate_advisor = IRE_eoin_oduffy_sic

@@ -1,7 +1,7 @@
 capital = 219
 set_convoys = 50
-set_stability = 0.6
-set_war_support = 0.3
+set_stability = 0.5
+set_war_support = 0.1
 set_research_slots = 4
 starting_train_buffer = 3
 save_global_event_target_as = original_russia
@@ -42,7 +42,6 @@ if = {
     set_technology = {
         iw_small_airframe = 1
         aa_lmg = 1
-        aa_cannon_1 = 1
         early_bombs = 1
         engines_1 = 1
         engines_2 = 1
@@ -145,11 +144,6 @@ SOV = {
 }
 TRM = {
     embargo_ROOT = yes
-    
-}
-country_event = {
-    id = russia.1
-    days = 1
     
 }
 country_event = {
@@ -426,14 +420,26 @@ recruit_character = RUS_markian_popov
 recruit_character = RUS_mikhail_kedrov
 recruit_character = RUS_nestor_monastyrev
 recruit_character = RUS_aleksandr_nemits
-recruit_character = RUS_sergey_rudenko
-recruit_character = RUS_sergey_korolyov
+recruit_character = RUS_aleksandr_novikov
+recruit_character = RUS_mikhail_yangel
 recruit_character = RUS_igor_kurchatov
 recruit_character = RUS_vyacheslav_tkachov
 recruit_character = RUS_aleksandr_kazakov
 recruit_character = RUS_vsevolod_marchenko
 recruit_character = RUS_aleksandr_samoylo
 recruit_character = RUS_vyacheslav_baranov
+RUS_kirill_romanov = {
+    set_character_flag = is_monarch
+    
+}
+RUS_vladimir_romanov = {
+    set_character_flag = is_monarch
+    
+}
+RUS_boris_romanov = {
+    set_character_flag = is_monarch
+    
+}
 RUS_enable_integration = yes
 RUS_starting_plane_variants = yes
 RUS_starting_tank_variants = yes

@@ -63,4 +63,11 @@ recruit_character = SAU_muhammad_bin_abdullah_bin_aiban_al_nasiri
 recruit_character = SAU_yusuf_yasin
 recruit_character = SAU_muhammad_ibn_ibrahim_al_ash_sheikh
 recruit_character = SAU_army_council
-recruit_character = IKH_faisal_al_duwaish
+SAU_abdulaziz_ibn_saud = {
+    set_character_flag = is_monarch
+    
+}
+SAU_saud_bin_abdulaziz_al_saud = {
+    set_character_flag = is_monarch
+    
+}

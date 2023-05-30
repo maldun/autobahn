@@ -49,7 +49,6 @@ country_event = {
     random_days = 120
     
 }
-recruit_character = OMA_said_ibn_taimur
 add_ideas = {
     limited_conscription
     OMA_tribal_army
@@ -57,6 +56,11 @@ add_ideas = {
     OMA_imamate_of_oman
     
 }
+recruit_character = OMA_said_ibn_taimur
 recruit_character = OMA_suleiman_bin_himayer_al_ryami
 recruit_character = OMA_talib_bin_ali_al_hinai
 recruit_character = OMA_ali_bin_serhan
+OMA_said_ibn_taimur = {
+    set_character_flag = is_monarch
+    
+}

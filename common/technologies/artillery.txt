@@ -75,10 +75,29 @@ technologies = {
             soft_attack = 0.1
             
         }
+        light_sp_artillery_brigade = {
+            soft_attack = 0.1
+            
+        }
+        medium_sp_artillery_brigade = {
+            soft_attack = 0.1
+            
+        }
+        heavy_sp_artillery_brigade = {
+            soft_attack = 0.1
+            
+        }
+        super_heavy_sp_artillery_brigade = {
+            soft_attack = 0.1
+            
+        }
+        modern_sp_artillery_brigade = {
+            soft_attack = 0.1
+            
+        }
         enable_equipment_modules = {
             tank_medium_howitzer
             tank_small_cannon_2
-            secondary_turret_close_support_gun
             
         }
         path = {
@@ -103,20 +122,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
+            factor = 10
             modifier = {
                 factor = 2
-                date > "1937.1.1"
+                date > "1937.6.1"
                 
             }
             modifier = {
-                factor = 2
-                date > "1938.1.1"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1939.1.1"
+                factor = 0.5
+                num_of_military_factories < 50
                 
             }
             
@@ -129,7 +143,6 @@ technologies = {
             
         }
         enable_equipment_modules = {
-            tank_medium_howitzer_2
             tank_medium_cannon
             
         }
@@ -155,20 +168,20 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
-            modifier = {
-                factor = 2
-                date > "1938.1.9"
-                
-            }
+            factor = 15
             modifier = {
                 factor = 2
                 date > "1939.1.1"
                 
             }
             modifier = {
-                factor = 5
-                date > "1939.1.6"
+                factor = 10
+                has_tech = basic_medium_tank_chassis
+                
+            }
+            modifier = {
+                factor = 0.5
+                num_of_military_factories < 50
                 
             }
             
@@ -235,20 +248,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
+            factor = 20
             modifier = {
                 factor = 2
-                date > "1940.1.6"
+                date > "1940.1.1"
                 
             }
             modifier = {
-                factor = 2
-                date > "1941.1.1"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1942.1.1"
+                factor = 0.5
+                num_of_military_factories < 50
                 
             }
             
@@ -269,23 +277,23 @@ technologies = {
             
         }
         light_sp_artillery_brigade = {
-            soft_attack = 0.05
+            soft_attack = 0.1
             
         }
         medium_sp_artillery_brigade = {
-            soft_attack = 0.05
+            soft_attack = 0.1
             
         }
         heavy_sp_artillery_brigade = {
-            soft_attack = 0.05
+            soft_attack = 0.1
             
         }
         super_heavy_sp_artillery_brigade = {
-            soft_attack = 0.05
+            soft_attack = 0.1
             
         }
         modern_sp_artillery_brigade = {
-            soft_attack = 0.05
+            soft_attack = 0.1
             
         }
         enable_equipment_modules = {
@@ -314,15 +322,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
+            factor = 20
             modifier = {
                 factor = 2
-                date > "1941.1.6"
+                date > "1941.1.1"
                 
             }
             modifier = {
-                factor = 5
-                date > "1942.1.1"
+                factor = 0.5
+                num_of_military_factories < 50
                 
             }
             
@@ -360,20 +368,20 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
-            modifier = {
-                factor = 2
-                date > "1941.1.9"
-                
-            }
+            factor = 20
             modifier = {
                 factor = 2
                 date > "1942.1.1"
                 
             }
             modifier = {
-                factor = 5
-                date > "1942.1.6"
+                factor = 10
+                has_tech = advanced_medium_tank_chassis
+                
+            }
+            modifier = {
+                factor = 0.5
+                num_of_military_factories < 50
                 
             }
             
@@ -440,20 +448,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
+            factor = 20
             modifier = {
                 factor = 2
-                date > "1943.1.6"
+                date > "1943.1.1"
                 
             }
             modifier = {
-                factor = 2
-                date > "1944.1.1"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1945.1.1"
+                factor = 0.5
+                num_of_military_factories < 50
                 
             }
             
@@ -511,14 +514,14 @@ technologies = {
         folder = {
             name = r56_vechicles_folder
             position = {
-                x = 1
-                y = 2
+                x = -6
+                y = 7
                 
             }
             
         }
         ai_will_do = {
-            factor = 1
+            base = 0
             
         }
         categories = {
@@ -561,7 +564,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            base = 0
             
         }
         categories = {
@@ -604,7 +607,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            base = 0
             
         }
         categories = {
@@ -643,7 +646,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            base = 0
             
         }
         categories = {
@@ -723,7 +726,7 @@ technologies = {
             air_attack = 0.1
             
         }
-        tech_air_damage_factor = -0.02
+        tech_air_damage_factor = -0.015
         path = {
             leads_to_tech = antiair2
             research_cost_coeff = 1
@@ -741,7 +744,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 10
             
         }
         categories = {
@@ -781,12 +784,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
-            modifier = {
-                factor = 5
-                has_war = yes
-                
-            }
+            factor = 10
             
         }
         categories = {
@@ -813,7 +811,7 @@ technologies = {
             tank_heavy_cannon_2
             
         }
-        tech_air_damage_factor = -0.02
+        tech_air_damage_factor = -0.015
         path = {
             leads_to_tech = antiair4
             research_cost_coeff = 1
@@ -831,12 +829,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 5
-                has_war = yes
-                
-            }
+            factor = 10
             
         }
         categories = {
@@ -860,7 +853,7 @@ technologies = {
             air_attack = 0.1
             
         }
-        tech_air_damage_factor = -0.02
+        tech_air_damage_factor = -0.01
         path = {
             leads_to_tech = antiair5
             research_cost_coeff = 1
@@ -878,12 +871,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 5
-                has_war = yes
-                
-            }
+            factor = 10
             
         }
         categories = {
@@ -924,12 +912,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 5
-                has_war = yes
-                
-            }
+            factor = 10
             
         }
         categories = {
@@ -969,37 +952,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                date > "1937.1.1"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1938.1.1"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1939.1.1"
-                
-            }
-            modifier = {
-                factor = 10
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 30
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1071,32 +1024,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 10
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 30
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1939.1.6"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1940.1.1"
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1140,37 +1068,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                date > "1939.1.9"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1940.1.1"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1940.1.6"
-                
-            }
-            modifier = {
-                factor = 10
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 32
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1238,37 +1136,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                date > "1941.1.6"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1943.1.1"
-                
-            }
-            modifier = {
-                factor = 10
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 32
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1336,32 +1204,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                date > "1942.1.6"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1943.1.1"
-                
-            }
-            modifier = {
-                factor = 10
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 35
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1399,37 +1242,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                date > "1942.1.9"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1943.1.1"
-                
-            }
-            modifier = {
-                factor = 5
-                date > "1943.1.6"
-                
-            }
-            modifier = {
-                factor = 10
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 35
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -2203,6 +2016,10 @@ technologies = {
         
     }
     rocket_artillery_c = {
+        enable_equipment_modules = {
+            improved_rocket_rails
+            
+        }
         enable_equipments = {
             rocket_artillery_equipment_x
             
@@ -2344,7 +2161,7 @@ technologies = {
             air_attack = 0.1
             
         }
-        tech_air_damage_factor = -0.02
+        tech_air_damage_factor = -0.01
         research_cost = 1.1
         start_year = 1944
         folder = {
@@ -2380,7 +2197,7 @@ technologies = {
             air_attack = 0.1
             
         }
-        tech_air_damage_factor = -0.02
+        tech_air_damage_factor = -0.01
         path = {
             leads_to_tech = antiair_c
             research_cost_coeff = 1
@@ -2454,7 +2271,7 @@ technologies = {
             air_attack = 0.1
             
         }
-        tech_air_damage_factor = -0.02
+        tech_air_damage_factor = -0.005
         path = {
             leads_to_tech = antiair_e
             research_cost_coeff = 1
@@ -2495,7 +2312,7 @@ technologies = {
             air_attack = 0.1
             
         }
-        tech_air_damage_factor = -0.02
+        tech_air_damage_factor = -0.005
         research_cost = 1.1
         start_year = 1954
         folder = {

@@ -29,6 +29,10 @@ set_popularities = {
     
 }
 recruit_character = BRD_Mwambutsa_IV
+BRD_Mwambutsa_IV = {
+    set_character_flag = is_monarch
+    
+}
 division_template = {
     name = "Kikosi cha Wanagambo"
     division_names_group = AFR-SW_MIL_01

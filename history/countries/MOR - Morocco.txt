@@ -55,3 +55,7 @@ recruit_character = MOR_mouha_ou_hammou_zayani
 recruit_character = MOR_thani_el_glaui
 recruit_character = MOR_assou_oubasslam
 recruit_character = MOR_ibn_Zaydan
+MOR_mohammed_alaouite = {
+    set_character_flag = is_monarch
+    
+}

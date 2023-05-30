@@ -233,6 +233,10 @@ recruit_character = SIC_salvatore_todaro
 recruit_character = SIC_antonino_toscano
 recruit_character = SIC_romeo_oliva
 recruit_character = SIC_luigi_rizzo
+SIC_ferdinando_borbone = {
+    set_character_flag = is_monarch
+    
+}
 activate_targeted_decision = {
     target = THIS
     decision = SIC_declare_italian_empire

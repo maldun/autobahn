@@ -139,6 +139,7 @@ YUN_zhu_de = {
         
     }
     set_character_flag = CHI_original_unit_leader
+    retire = yes
     
 }
 YUN_zhang_bojun = {

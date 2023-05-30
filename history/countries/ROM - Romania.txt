@@ -276,6 +276,8 @@ recruit_character = ROM_leonard_mociulschi
 recruit_character = ROM_dumitru_popescu
 recruit_character = ROM_corneliu_dragalina
 recruit_character = ROM_florea_tenescu
+recruit_character = ROM_nicolae_radescu
+recruit_character = ROM_constantin_tobescu
 recruit_character = ROM_horia_macellariu
 recruit_character = ROM_gheorge_apostol
 recruit_character = ROM_virgil_madgearu
@@ -302,13 +304,42 @@ recruit_character = ROM_emanoil_ionescu
 recruit_character = ROM_ermil_gheorghiu
 recruit_character = ROM_gheorghe_jienescu
 activate_advisor = ROM_corneliu_codreanu_sic
-recruit_character = ROM_nicolae_radescu
-recruit_character = ROM_constantin_tobescu
+ROM_carol_ii = {
+    set_character_flag = is_monarch
+    
+}
+ROM_mihai_i = {
+    set_character_flag = is_monarch
+    
+}
+ROM_nicolae_i = {
+    set_character_flag = is_monarch
+    
+}
+ROM_mihail_sturdza = {
+    set_character_flag = is_monarch
+    
+}
+ROM_alexandru_cantacuzino = {
+    set_character_flag = is_regent
+    
+}
 ROM_nicolae_radescu = {
     retire = yes
     
 }
 ROM_constantin_tobescu = {
     retire = yes
+    
+}
+ROOT = {
+    80 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    713 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     
 }

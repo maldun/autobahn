@@ -88,6 +88,7 @@ recruit_character = KUM_kalibek_rakhimbekovich
 recruit_character = KUM_zhang_chunxi
 activate_advisor = KUM_khans_court_sic
 KUM_nasir_shah = {
+    set_character_flag = is_monarch
     set_variable = {
         china_alignment = token:manchu_qing
         
@@ -95,6 +96,15 @@ KUM_nasir_shah = {
     
 }
 KUM_bashir_shah = {
+    set_character_flag = is_monarch
+    set_variable = {
+        china_alignment = token:manchu_qing
+        
+    }
+    
+}
+KUM_yulbars_khan = {
+    set_character_flag = is_monarch
     set_variable = {
         china_alignment = token:manchu_qing
         

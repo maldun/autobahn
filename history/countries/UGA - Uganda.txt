@@ -31,6 +31,10 @@ set_popularities = {
 recruit_character = UGA_Mutesa_II
 recruit_character = UGA_Ignatius_K_Musaazi
 recruit_character = UGA_Andrew_Cohen
+UGA_Mutesa_II = {
+    set_character_flag = is_monarch
+    
+}
 division_template = {
     name = "Kikosi cha Wanagambo"
     division_names_group = AFR-SW_MIL_01

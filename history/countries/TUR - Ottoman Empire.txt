@@ -220,11 +220,6 @@ country_event = {
     
 }
 country_event = {
-    id = ott.1
-    days = 1
-    
-}
-country_event = {
     id = otteco.1
     days = 3
     
@@ -612,6 +607,27 @@ TUR_abdulmecid_osmanoglu = {
         global.TUR_ottoman_sultan = THIS
         
     }
+    set_character_flag = is_monarch
+    
+}
+TUR_ahmed_osmanoglu = {
+    set_character_flag = is_monarch
+    
+}
+TUR_osman_fuad_osmanoglu = {
+    set_character_flag = is_monarch
+    
+}
+TUR_omer_faruk_osmanoglu = {
+    set_character_flag = is_monarch
+    
+}
+TUR_refet_bele = {
+    set_character_flag = is_regent
+    
+}
+TUR_omer_fahrettin_turkkan = {
+    set_character_flag = is_regent
     
 }
 TUR_sevket_sureyya_aydemir = {

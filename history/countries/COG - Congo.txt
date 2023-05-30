@@ -37,6 +37,10 @@ set_popularities = {
 recruit_character = COG_Edmond_Nzeza_Nlandu
 recruit_character = COG_Pedro_VIII_Afonso
 recruit_character = COG_Simon_Kimbangu
+COG_Pedro_VIII_Afonso = {
+    set_character_flag = is_monarch
+    
+}
 division_template = {
     name = "Division ya Milice"
     division_names_group = AFR-LN_MIL_01

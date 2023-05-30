@@ -28,3 +28,7 @@ set_popularities = {
 }
 recruit_character = LAO_sisavang_phoulivong
 recruit_character = LAO_souphanouvong
+LAO_sisavang_phoulivong = {
+    set_character_flag = is_monarch
+    
+}

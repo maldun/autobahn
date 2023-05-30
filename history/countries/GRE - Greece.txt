@@ -174,19 +174,7 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
-    339 = {
-        enable_state_integration_80_compliance = yes
-        
-    }
-    340 = {
-        enable_state_integration_80_compliance = yes
-        
-    }
     341 = {
-        enable_state_integration_80_compliance = yes
-        
-    }
-    342 = {
         enable_state_integration_80_compliance = yes
         
     }
@@ -282,14 +270,17 @@ GRE_stefanos_sarafis = {
     
 }
 GRE_alexandros_glyksbourg = {
+    set_character_flag = is_monarch
     retire = yes
     
 }
 GRE_georgios_glyksbourg = {
+    set_character_flag = is_monarch
     retire = yes
     
 }
 GRE_pavlos_glyksbourg = {
+    set_character_flag = is_monarch
     retire = yes
     
 }

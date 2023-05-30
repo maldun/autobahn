@@ -2,7 +2,7 @@ capital = 427
 oob = "PRF"
 set_naval_oob = "PRF_naval"
 set_research_slots = 3
-set_stability = 0.7
+set_stability = 0.3
 set_war_support = 0.2
 set_convoys = 20
 starting_train_buffer = 2
@@ -114,36 +114,7 @@ country_event = {
     days = 41
     
 }
-add_ai_strategy = {
-    type = ignore_claim
-    id = "POR"
-    value = 1
-    
-}
-add_ai_strategy = {
-    type = ignore_claim
-    id = "GER"
-    value = 1
-    
-}
-add_ai_strategy = {
-    type = ignore_claim
-    id = "SIK"
-    value = 1
-    
-}
-add_ai_strategy = {
-    type = ignore_claim
-    id = "ETS"
-    value = 1
-    
-}
-add_ai_strategy = {
-    type = ignore_claim
-    id = "KUM"
-    value = 1
-    
-}
+india_ignore_claims_until_unification = yes
 set_politics = {
     ruling_party = authoritarian_democrat
     last_election = "1930.11.9"
@@ -169,11 +140,6 @@ add_ideas = {
     PRF_backwards_economy_1
     
 }
-promote_character = {
-    character = HYD_osman_ali_khan
-    ideology = authoritarian_democrat_subtype
-    
-}
 recruit_character = PRF_council_of_princes
 recruit_character = PRF_rajaram_iii_of_kolhapur
 recruit_character = PRF_krushna_chandra_gajapati
@@ -188,10 +154,13 @@ recruit_character = PRF_albion_rajkumar_banerjee
 recruit_character = PRF_mokshagundam_visvesvaraya
 recruit_character = PRF_kishen_pershad
 recruit_character = PRF_khan_chhatari
-recruit_character = PRF_kodandera_madappa_cariappa
 recruit_character = PRF_d_n_mukerji
 recruit_character = PRF_nathu_singh_rathore
 recruit_character = PRF_yashwantrao_martandrao_mukne
 recruit_character = PRF_jagdish_chandra_varma
 recruit_character = PRF_abdul_naeem_aziz
 recruit_character = PRF_syed_abbas_hussain
+HYD_osman_ali_khan = {
+    promote_character = authoritarian_democrat_subtype
+    
+}

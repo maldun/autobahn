@@ -29,6 +29,10 @@ set_popularities = {
     
 }
 recruit_character = BRT_Yeta_III
+BRT_Yeta_III = {
+    set_character_flag = is_monarch
+    
+}
 division_template = {
     name = "Militia Division"
     division_names_group = ENGL_MIL_02

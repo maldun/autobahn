@@ -27,3 +27,7 @@ set_popularities = {
 }
 recruit_character = GUJ_bahman_pestonji_wadia
 recruit_character = GUJ_sayajirao_gaekwad_iii
+GUJ_sayajirao_gaekwad_iii = {
+    set_character_flag = is_monarch
+    
+}

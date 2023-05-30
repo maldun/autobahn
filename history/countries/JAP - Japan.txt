@@ -151,13 +151,13 @@ if = {
     
 }
 country_event = {
-    id = japdom.1
-    days = 1
+    id = japfor.1
+    days = 7
     
 }
 country_event = {
-    id = japfor.1
-    days = 7
+    id = japdom.2
+    days = 21
     
 }
 country_event = {
@@ -371,6 +371,14 @@ recruit_character = JAP_teramoto_kumaichi
 recruit_character = JAP_nishina_yoshio
 recruit_character = JAP_obata_toshiro
 recruit_character = JAP_tokugawa_yoshitoshi
+JAP_hirohito = {
+    set_character_flag = is_monarch
+    
+}
+JAP_yasuhito = {
+    set_character_flag = is_monarch
+    
+}
 activate_targeted_decision = {
     decision = JAP_develop_chosen_tungsten_mines1
     target = JAP
@@ -399,7 +407,6 @@ if = {
             
         }
         obsolete = yes
-        icon = GFX_JAP_basic_light_tank_medium
         
     }
     create_equipment_variant = {
@@ -419,7 +426,6 @@ if = {
             tank_nsb_armor_upgrade = 2
             
         }
-        icon = GFX_JAP_basic_medium_tank_medium
         
     }
     create_equipment_variant = {
@@ -439,7 +445,6 @@ if = {
             tank_nsb_armor_upgrade = 2
             
         }
-        icon = GFX_JAP_improved_light_tank_medium
         
     }
     

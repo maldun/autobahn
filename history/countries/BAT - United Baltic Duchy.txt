@@ -36,7 +36,6 @@ if = {
     set_air_oob = "BAT_air_bba"
     set_technology = {
         aa_lmg = 1
-        aa_cannon_1 = 1
         engines_1 = 1
         engines_2 = 1
         early_bombs = 1
@@ -213,6 +212,13 @@ country_event = {
     random_days = 60
     
 }
+880 = {
+    add_dynamic_modifier = {
+        modifier = BAT_Latgale_autonomous_region
+        
+    }
+    
+}
 RUS = {
     country_event = {
         id = KRBAT.115
@@ -250,6 +256,13 @@ set_popularities = {
     national_populist = 3
     
 }
+ROOT = {
+    880 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = BAT_inner_circle
 recruit_character = BAT_adolf_friedrich
 recruit_character = BAT_max_von_scheubner_richter
@@ -284,6 +297,10 @@ recruit_character = BAT_wolf_kirstein
 recruit_character = BAT_gerhard_buschmann
 activate_advisor = BAT_rolf_von_ungern_sternberg
 activate_advisor = BAT_adolf_constantin_pilar_von_pilchau
+BAT_adolf_friedrich = {
+    set_character_flag = is_monarch
+    
+}
 BAT_rolf_von_ungern_sternberg = {
     set_character_flag = character_event_only
     

@@ -3,7 +3,7 @@ oob = "CAN"
 set_naval_oob = "CAN_naval"
 set_research_slots = 3
 set_stability = 0.8
-set_war_support = 0.1
+set_war_support = 0.4
 set_convoys = 100
 starting_train_buffer = 2
 set_country_flag = IMP_is_canada
@@ -237,8 +237,39 @@ set_variable = {
     
 }
 country_event = {
-    id = canada.1
-    days = 1
+    id = canada.4
+    days = 19
+    
+}
+country_event = {
+    id = canada.24
+    days = 74
+    
+}
+country_event = {
+    id = canada.20
+    days = 99
+    
+}
+country_event = {
+    id = canada.29
+    days = 238
+    
+}
+country_event = {
+    id = canada.72
+    days = 1096
+    random_days = 180
+    
+}
+country_event = {
+    id = canada.70
+    days = 2929
+    
+}
+country_event = {
+    id = canada.71
+    days = 3290
     
 }
 country_event = {
@@ -548,6 +579,7 @@ create_dynamic_country = {
         
     }
     GBR_george_frederick_windsor = {
+        set_character_flag = is_monarch
         set_character_flag = GBR_character
         set_character_flag = GBR_british_king
         set_variable = {
@@ -558,21 +590,25 @@ create_dynamic_country = {
         
     }
     GBR_edward_windsor = {
+        set_character_flag = is_monarch
         set_character_flag = GBR_character
         set_nationality = CAN
         
     }
     GBR_albert_windsor = {
+        set_character_flag = is_monarch
         set_character_flag = GBR_character
         set_nationality = CAN
         
     }
     GBR_henry_windsor = {
+        set_character_flag = is_monarch
         set_character_flag = GBR_character
         set_nationality = CAN
         
     }
     GBR_george_windsor = {
+        set_character_flag = is_monarch
         set_character_flag = GBR_character
         set_nationality = CAN
         

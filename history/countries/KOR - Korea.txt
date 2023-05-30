@@ -68,14 +68,6 @@ recruit_character = KOR_jo_so_ang
 recruit_character = KOR_chough_pyung_ok
 recruit_character = KOR_yi_kang
 recruit_character = KOR_yi_un
-KOR_yi_kang = {
-    retire = yes
-    
-}
-KOR_yi_un = {
-    retire = yes
-    
-}
 recruit_character = KOR_lee_beom_seok
 recruit_character = KOR_ji_cheong_cheon
 recruit_character = KOR_kim_suk_won
@@ -97,6 +89,16 @@ recruit_character = KOR_chae_byeong_deok
 recruit_character = KOR_shin_sung_mo
 recruit_character = KOR_ryu_dong_yeol
 recruit_character = KOR_jang_duk_chang
+KOR_yi_kang = {
+    set_character_flag = is_monarch
+    retire = yes
+    
+}
+KOR_yi_un = {
+    set_character_flag = is_monarch
+    retire = yes
+    
+}
 KOR_kim_wonbong = {
     set_nationality = CHI
     

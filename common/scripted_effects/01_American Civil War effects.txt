@@ -356,6 +356,14 @@ USA_release_CSA = {
                 USA_remove_support_modifiers_from_state = yes
                 
             }
+            CSA_james_kelly_parsons = {
+                add_timed_unit_leader_trait = {
+                    trait = recently_promoted
+                    days = 100
+                    
+                }
+                
+            }
             delete_unit_template_and_units = {
                 division_template = "Red Guard"
                 disband = yes
@@ -552,14 +560,7 @@ USA_release_CSA = {
                 days_to_event = 1633
                 
             }
-            add_to_temp_variable = {
-                days_to_event = 706640
-                
-            }
-            subtract_from_temp_variable = {
-                days_to_event = global.num_days
-                
-            }
+            calculate_days_since_game_start = yes
             country_event = {
                 id = csa.216
                 days = days_to_event
@@ -768,7 +769,6 @@ USA_release_TEX = {
         }
         TEX_george_smith_patton = {
             set_leader_description = TEX_george_smith_patton_TEX_commander_desc
-            promote_leader = yes
             set_nationality = TEX
             
         }
@@ -1368,16 +1368,9 @@ USA_release_PSA = {
                 days_to_event = 3110
                 
             }
-            add_to_temp_variable = {
-                days_to_event = 706640
-                
-            }
-            subtract_from_temp_variable = {
-                days_to_event = global.num_days
-                
-            }
+            calculate_days_since_game_start = yes
             country_event = {
-                id = ustates.186
+                id = ustates.187
                 days = days_to_event
                 random_days = 180
                 
@@ -8597,24 +8590,13 @@ ACW_convert_factories = {
     }
     if = {
         limit = {
-            industrial_complex > 2
-            
-        }
-        if = {
-            limit = {
-                NOT = {
-                    has_state_flag = ACW_recruited_militias
-                    
-                }
-                
-            }
-            multiply_temp_variable = {
-                state_civs = 2
+            NOT = {
+                has_state_flag = ACW_recruited_militias
                 
             }
             
         }
-        divide_temp_variable = {
+        multiply_temp_variable = {
             state_civs = 3
             
         }
@@ -8622,7 +8604,7 @@ ACW_convert_factories = {
     }
     else = {
         divide_temp_variable = {
-            state_civs = 2
+            state_civs = 4
             
         }
         
@@ -8654,13 +8636,13 @@ USA_starting_techs = {
         marines = 1
         tech_mountaineers = 1
         basic_train = 1
-        aluminum_production_1 = 1
-        r56_railway_mortar_subtech = 1
-        steel_production_1 = 1
-        camo = 1
-        r56_gw_railway_gun = 1
         transport_plane1 = 1
+        camo = 1
         etax_doctrine = 1
+        aluminum_production_1 = 1
+        steel_production_1 = 1
+        r56_railway_mortar_subtech = 1
+        r56_gw_railway_gun = 1
         
     }
     if = {
@@ -8678,13 +8660,13 @@ USA_starting_techs = {
             aa_lmg = 1
             early_bombs = 1
             aircraft_construction = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_gw_railway_gun = 1
             transport_plane1 = 1
+            camo = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
+            steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8698,13 +8680,13 @@ USA_starting_techs = {
             naval_bomber1 = 1
             CAS1 = 1
             early_bomber = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_gw_railway_gun = 1
             transport_plane1 = 1
+            camo = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
+            steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8717,13 +8699,13 @@ USA_starting_techs = {
         set_technology = {
             gwtank_chassis = 1
             basic_light_tank_chassis = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_gw_railway_gun = 1
             transport_plane1 = 1
+            camo = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
+            steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
             
         }
         add_ideas = bureau_of_ordnance_spirit
@@ -8733,13 +8715,13 @@ USA_starting_techs = {
         set_technology = {
             gwtank = 1
             basic_light_tank = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_gw_railway_gun = 1
             transport_plane1 = 1
+            camo = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
+            steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8774,13 +8756,13 @@ USA_starting_techs = {
             basic_naval_mines = 1
             submarine_mine_laying = 1
             mtg_transport = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_gw_railway_gun = 1
             transport_plane1 = 1
+            camo = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
+            steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8801,13 +8783,13 @@ USA_starting_techs = {
             early_carrier = 1
             basic_carrier = 1
             transport = 1
-            aluminum_production_1 = 1
-            r56_railway_mortar_subtech = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_gw_railway_gun = 1
             transport_plane1 = 1
+            camo = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
+            steel_production_1 = 1
+            r56_railway_mortar_subtech = 1
+            r56_gw_railway_gun = 1
             
         }
         
@@ -8838,7 +8820,7 @@ USA_starting_tank_variants = {
                 tank_nsb_engine_upgrade = 4
                 
             }
-            icon = GFX_USA_basic_light_tank_medium
+            obsolete = yes
             
         }
         create_equipment_variant = {
@@ -8860,7 +8842,25 @@ USA_starting_tank_variants = {
                 tank_nsb_engine_upgrade = 4
                 
             }
-            icon = GFX_USA_basic_light_tank_medium
+            
+        }
+        create_equipment_variant = {
+            name = "Medium M1"
+            type = medium_tank_chassis_0
+            parent_version = 0
+            modules = {
+                main_armament_slot = tank_small_cannon
+                turret_type_slot = tank_medium_two_man_tank_turret
+                suspension_type_slot = tank_torsion_bar_suspension
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_gasoline_engine
+                
+            }
+            upgrades = {
+                tank_nsb_engine_upgrade = 2
+                tank_nsb_armor_upgrade = 1
+                
+            }
             
         }
         

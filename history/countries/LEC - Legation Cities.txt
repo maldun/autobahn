@@ -171,14 +171,6 @@ TRM = {
     LEC_add_to_legation_council_observer = yes
     
 }
-QIE = {
-    LEC_add_to_legation_council_observer = yes
-    
-}
-FNG = {
-    LEC_add_to_legation_council_observer = yes
-    
-}
 country_event = {
     id = lec.1
     days = 3

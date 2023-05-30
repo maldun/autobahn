@@ -348,6 +348,21 @@ country_event = {
     days = 1380
     
 }
+ROOT = {
+    6 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    29 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    925 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = HOL_wilhelmina_van_orange_nassau
 recruit_character = HOL_juliana_van_orange_nassau
 recruit_character = HOL_david_wijnkoop
@@ -404,6 +419,10 @@ recruit_character = HOL_herman_van_voorst_tot_voorst
 recruit_character = HOL_godfried_van_voorst_tot_voorst
 recruit_character = HOL_jan_van_andel
 recruit_character = HOL_hein_ter_poorten
+recruit_character = HOL_gustav_adolf_ilgen
+recruit_character = HOL_gerardus_johannes_berenschot
+recruit_character = HOL_murk_boerstra
+recruit_character = HOL_simon_spoor
 recruit_character = HOL_johannes_furstner
 recruit_character = HOL_karel_doorman
 recruit_character = HOL_conrad_helfrich
@@ -415,10 +434,14 @@ recruit_character = HOL_alfred_de_booy
 recruit_character = HOL_ludolph_hendrik_van_oyen
 recruit_character = HOL_marius_raaijmakers
 recruit_character = HOL_floris_albert_van_heyst
-recruit_character = HOL_gustav_adolf_ilgen
-recruit_character = HOL_gerardus_johannes_berenschot
-recruit_character = HOL_murk_boerstra
-recruit_character = HOL_simon_spoor
+HOL_wilhelmina_van_orange_nassau = {
+    set_character_flag = is_monarch
+    
+}
+HOL_juliana_van_orange_nassau = {
+    set_character_flag = is_monarch
+    
+}
 HOL_gustav_adolf_ilgen = {
     set_character_flag = HOL_leader
     set_nationality = DEI

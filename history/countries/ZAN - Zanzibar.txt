@@ -57,6 +57,10 @@ set_popularities = {
     
 }
 recruit_character = ZAN_Khalifa_II_bin_Harub_Al_Said
+ZAN_Khalifa_II_bin_Harub_Al_Said = {
+    set_character_flag = is_monarch
+    
+}
 division_template = {
     name = "al-Milishiyai"
     division_names_group = EGY_MIL_01

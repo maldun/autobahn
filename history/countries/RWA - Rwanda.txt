@@ -29,6 +29,10 @@ set_popularities = {
     
 }
 recruit_character = RWA_Yuhi_V
+RWA_Yuhi_V = {
+    set_character_flag = is_monarch
+    
+}
 division_template = {
     name = "Kikosi cha Wanagambo"
     division_names_group = AFR-SW_MIL_01

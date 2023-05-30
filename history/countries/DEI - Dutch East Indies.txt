@@ -185,11 +185,6 @@ set_popularities = {
     
 }
 country_event = {
-    id = dei.1
-    hours = 4
-    
-}
-country_event = {
     id = dei.2
     days = 60
     

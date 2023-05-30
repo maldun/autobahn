@@ -318,6 +318,14 @@ recruit_character = DEN_asger_grandjean
 recruit_character = DEN_ebbe_gortz
 recruit_character = DEN_frits_aage_hammer_kjolsen
 recruit_character = DEN_carl_hammerich
+DEN_christian_af_glucksborg = {
+    set_character_flag = is_monarch
+    
+}
+DEN_frederik_af_glucksborg = {
+    set_character_flag = is_monarch
+    
+}
 every_unit_leader = {
     set_character_flag = DEN_leader
     

@@ -1,244 +1,155 @@
 ideas = {
-    r56i_laws_leadership = {
-        law = yes
-        use_list_view = yes
-        r56i_laws_leadership_cult = {
-            available = {
-                OR = {
-                    is_puppet = no
+	r56i_laws_leadership = {
+		law = yes
+		use_list_view = yes
+		r56i_laws_leadership_cult = {
+			available = { 
+			     NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } 
+			      OR = {
+                    is_subject = no
                     OVERLORD = {
                         has_government = national_populist
                         has_government = paternal_autocrat
                         
                     }
-                    
                 }
-                NOT = {
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-                    
-                }
-                
-            }
-            modifier = {
-                fascism_drift = 0.05
-                justify_war_goal_time = -0.25
+		    }
+			modifier = {
+				totalist_drift = -0.02
+				syndicalist_drift = -0.02
+				radical_socialist_drift = -0.02
+				social_democrat_drift = -0.02
+				social_liberal_drift = -0.02
+				market_liberal_drift = -0.02
+				social_conservative_drift = -0.02
+				justify_war_goal_time = -0.25
                 political_power_cost = 0.05
-                
-            }
-            cancel_if_invalid = no
-            ai_will_do = {
-                factor = 0.2
-                modifier = {
-                    OR = {
-                        AND = {
-                            NOT = {
-                                is_puppet = yes
-                                if = {
-                                    limit = {
-                                        is_puppet = yes
-                                        
-                                    }
-                                    ROOT = {
-                                        OVERLORD = {
-                                            NOT = {
-                                                has_government = national_populist
-                                                has_government = paternal_autocrat
-                                                
-                                            }
-                                            
-                                        }
-                                        
-                                    }
-                                    
-                                }
-                                
-                            }
-                            
-                        }
-                        has_government = national_populist
-                        has_government = paternal_autocrat
-                        
-                    }
-                    factor = 5
+			}
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_dictatorship_government = no
+				}
+			}
+		}
+		r56i_laws_leadership_secular = {
+			available = { NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } }
+			modifier = {
+				totalist_drift = -0.02
+				syndicalist_drift = -0.02
+				paternal_autocrat_drift = -0.02
+				national_populist_drift = -0.02
+				research_speed_factor = 0.05
+				political_power_cost = 0.05
+			}
+			cost = 150
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0.2
+				modifier = {
+					factor = 0
+					has_elected_government = no
+				}
+			}
+		}
+		r56i_laws_leadership_divine = {
+			available = { 
+			               NOT = { 
+			                  OR = {
+                                  is_puppet = yes
+								  has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+                                   
+                                  has_government = radical_socialist
+                                  has_government = syndicalist
+                                  has_government = totalist
+                                  has_government = radical_socialist
+                               }
+                             }
                     
-                }
-                
-            }
-            
-        }
-        r56i_laws_leadership_secular = {
-            available = {
-                NOT = {
-                    is_puppet = yes
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-                    has_government = authoritarian_democrat
-                    
-                }
-                
-            }
-            modifier = {
-                democratic_drift = 0.05
-                research_speed_factor = 0.05
-                political_power_cost = 0.05
-                
-            }
-            cost = 150
-            cancel_if_invalid = no
-            ai_will_do = {
-                factor = 0.2
-                modifier = {
-                    OR = {
-                        has_government = social_democrat
-                        has_government = social_liberal
-                        has_government = market_liberal
-                        has_government = social_conservative
-                        
-                    }
-                    factor = 5
-                    
-                }
-                
-            }
-            
-        }
-        r56i_laws_leadership_divine = {
-            available = {
-                NOT = {
-                    OR = {
-                        is_puppet = yes
-                        has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-                        has_government = radical_socialist
-                        has_government = syndicalist
-                        has_government = totalist
-                        has_government = radical_socialist
-                        
-                    }
-                    
-                }
-                
-            }
-            modifier = {
-                neutrality_drift = 0.05
-                war_support_factor = 0.1
-                political_power_cost = 0.05
-                
-            }
-            cost = 150
-            cancel_if_invalid = yes
-            ai_will_do = {
-                factor = 0.5
-                modifier = {
-                    NOT = {
-                        OR = {
-                            tag = TUR
-                            
-                        }
-                        
-                    }
-                    factor = 2
-                    has_government = authoritarian_democrat
-                    
-                }
-                modifier = {
-                    has_war_support > 0.9
-                    factor = 0
-                    
-                }
-                modifier = {
-                    has_war = no
-                    factor = 0
-                    
-                }
-                
-            }
-            
-        }
-        r56i_laws_leadership_people = {
-            available = {
-                NOT = {
-                    is_puppet = yes
-                    has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-                    has_government = national_populist
-                    has_government = paternal_autocrat
-                    
-                }
-                
-            }
-            modifier = {
-                communism_drift = 0.05
-                supply_consumption_factor = -0.05
-                political_power_cost = 0.05
-                
-            }
-            cost = 150
-            cancel_if_invalid = no
-            ai_will_do = {
-                factor = 0.2
-                modifier = {
-                    OR = {
-                        AND = {
-                            NOT = {
-                                is_puppet = yes
-                                if = {
-                                    limit = {
-                                        is_puppet = yes
-                                        
-                                    }
-                                    ROOT = {
-                                        OVERLORD = {
-                                            NOT = {
-                                                has_government = radical_socialist
-                                                has_government = syndicalist
-                                                has_government = totalist
-                                                
-                                            }
-                                            
-                                        }
-                                        
-                                    }
-                                    
-                                }
-                                
-                            }
-                            
-                        }
-                        has_government = radical_socialist
-                        has_government = syndicalist
-                        has_government = totalist
-                        
-                    }
-                    factor = 5
-                    
-                }
-                
-            }
-            
-        }
-        r56i_laws_leadership_communal_decision_making = {
-            picture = SPR_collectivized_society
-            available = {
-                OR = {
-                    has_government = radical_socialist
-                    
-                }
-                
-            }
-            modifier = {
-                neutrality_drift = 0.05
-                conscription_factor = 0.05
-                research_speed_factor = 0.05
-                political_power_cost = 0.05
-                
-            }
-            cost = 150
-            cancel_if_invalid = yes
-            ai_will_do = {
-                factor = 2
-                
-            }
-            
-        }
-        
-    }
-    
+                          }
+			modifier = {
+				totalist_drift = -0.02
+				syndicalist_drift = -0.02
+				radical_socialist_drift = -0.02
+				social_democrat_drift = -0.02
+				social_liberal_drift = -0.02
+				market_liberal_drift = -0.02
+				war_support_factor = 0.1
+				political_power_cost = 0.05
+			}
+			cost = 150
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_authoritarian_government = no
+				}
+				modifier = {
+					has_war_support > 0.9
+					factor = 0
+				}
+			}
+		}
+		r56i_laws_leadership_people = {
+			available = { 
+			     NOT = { 
+			             has_global_flag = NATIONAL_CHARACTERS_BLOCKED 
+			             is_puppet = yes
+					    
+			     has_government = national_populist
+				 has_government = paternal_autocrat
+				 } 
+			}
+			modifier = {
+				social_liberal_drift = -0.02
+				market_liberal_drift = -0.02
+				social_conservative_drift = -0.02
+				authoritarian_democrat_drift = -0.02
+				paternal_autocrat_drift = -0.02
+				national_populist_drift = -0.02
+				supply_consumption_factor = -0.05
+				political_power_cost = 0.05
+			}
+			cost = 150
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					OR = { has_government = social_democrat }
+					has_socialist_government = no
+				}
+			}
+		}
+		r56i_laws_leadership_communal_decision_making = {
+			picture = SPR_collectivized_society
+			available = {
+				OR = {
+					has_country_leader_ideology = eco_anarchism_subtype
+					has_country_leader_ideology = hoahaoism_subtype
+					has_country_leader_ideology = pirate_republic_subtype
+					has_country_leader_ideology = authdem_pirate_republic_subtype
+					has_country_leader_ideology = illegalism_subtype
+					has_country_leader_ideology = radsoc_anarcho_syndicalist_subtype
+					has_country_leader_ideology = anarchism_subtype
+					has_country_leader_ideology = pataut_ancap_subtype
+					has_country_leader_ideology = anarcho_syndicalist_subtype
+					has_country_leader_ideology = anarcho_bolshevism_subtype
+					has_country_leader_ideology = anarcho_pastoralism_subtype
+					has_country_leader_ideology = anarcho_totalitarianism_subtype
+				}
+			}
+			modifier = {
+				conscription_factor = 0.05
+				research_speed_factor = 0.05
+				political_power_cost = 0.05
+			}
+			cost = 150
+			cancel_if_invalid = yes
+			ai_will_do = { factor = 100 }
+		}
+	}
 }

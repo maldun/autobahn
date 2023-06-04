@@ -39,11 +39,6 @@ if = {
     
 }
 country_event = {
-    id = ecu.0
-    days = 1
-    
-}
-country_event = {
     id = ecu.18
     days = 540
     random_days = 15

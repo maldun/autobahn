@@ -105,11 +105,6 @@ activate_targeted_decision = {
     
 }
 country_event = {
-    id = pru.1
-    days = 1
-    
-}
-country_event = {
     id = pru.102
     days = 10
     random_days = 40

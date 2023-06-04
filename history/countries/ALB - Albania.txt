@@ -16,11 +16,6 @@ add_ideas = {
     ALB_illiteracy
     
 }
-country_event = {
-    id = albania.1
-    days = 1
-    
-}
 set_politics = {
     ruling_party = social_conservative
     last_election = "1932.6.12"

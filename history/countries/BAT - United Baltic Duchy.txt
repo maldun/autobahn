@@ -277,6 +277,7 @@ recruit_character = BAT_constantin_von_weiss
 recruit_character = BAT_hans_von_manteuffel_szoege
 recruit_character = BAT_otto_goldfeld
 recruit_character = BAT_alexander_von_salza
+recruit_character = BAT_archibald_von_keyserling
 recruit_character = BAT_adam_friedrich_von_gernet
 recruit_character = BAT_friedrich_von_samson_himmelstjerna
 recruit_character = BAT_axel_von_freytagh_loringhoven

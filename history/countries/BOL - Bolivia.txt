@@ -90,11 +90,6 @@ PAR = {
     
 }
 country_event = {
-    id = bol.1
-    days = 1
-    
-}
-country_event = {
     id = bol.6
     days = 30
     

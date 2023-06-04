@@ -120,11 +120,6 @@ set_popularities = {
     
 }
 country_event = {
-    id = fopintro.1
-    days = 1
-    
-}
-country_event = {
     id = fop.6
     days = 60
     

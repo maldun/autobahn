@@ -87,11 +87,6 @@ set_popularities = {
     
 }
 country_event = {
-    id = urg.1
-    days = 2
-    
-}
-country_event = {
     id = urg.20
     days = 855
     

@@ -48,11 +48,6 @@ if = {
     
 }
 country_event = {
-    id = serbia.0
-    hours = 2
-    
-}
-country_event = {
     id = serbia.2
     days = 4
     

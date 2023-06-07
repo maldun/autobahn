@@ -307,18 +307,8 @@ country_event = {
     
 }
 country_event = {
-    id = ukraine_lun.26
-    days = 820
-    
-}
-country_event = {
     id = ukraine_lun.24
     days = 850
-    
-}
-country_event = {
-    id = ukraine_lun.26
-    days = 950
     
 }
 country_event = {

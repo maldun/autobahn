@@ -178,11 +178,6 @@ set_country_flag = {
     
 }
 country_event = {
-    id = saf.1
-    days = 2
-    
-}
-country_event = {
     id = saf.108
     days = 25
     

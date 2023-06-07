@@ -236,6 +236,10 @@ set_variable = {
     CAN_liberal_support = 0
     
 }
+set_variable = {
+    country_intro_page_count = 2
+    
+}
 country_event = {
     id = canada.4
     days = 19

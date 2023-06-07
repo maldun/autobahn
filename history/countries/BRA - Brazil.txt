@@ -135,11 +135,6 @@ AMA = {
     
 }
 country_event = {
-    id = bra.1
-    days = 1
-    
-}
-country_event = {
     id = bra.2
     days = 4
     

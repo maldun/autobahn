@@ -346,7 +346,7 @@ if __name__ == "__main__":
     update_chinese_army_reform(chn_fname)
     #create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     maps = ideology_map()
-    apply_ideology_map(maps)
+    #apply_ideology_map(maps)
     maps = remove_obsolete_equipment_maps()
     country_maps = apply_equipment_table("KX_equipment.csv" if KX is True else "equipment.csv")
     apply_equipment_maps(maps, country_maps)

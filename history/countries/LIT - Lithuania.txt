@@ -44,11 +44,6 @@ if = {
     
 }
 country_event = {
-    id = LIT.1
-    hours = 2
-    
-}
-country_event = {
     id = LIT.21
     days = 350
     

@@ -116,11 +116,6 @@ if = {
     
 }
 country_event = {
-    id = bulgaria.1
-    hours = 2
-    
-}
-country_event = {
     id = bulgaria.2
     days = 7
     

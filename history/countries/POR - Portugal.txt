@@ -89,11 +89,6 @@ if = {
     
 }
 country_event = {
-    id = por.4
-    days = 1
-    
-}
-country_event = {
     id = por.300
     days = 425
     

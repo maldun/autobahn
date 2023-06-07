@@ -137,11 +137,6 @@ add_ideas = {
     
 }
 country_event = {
-    id = KRBAT.1
-    hours = 2
-    
-}
-country_event = {
     id = KRBAT.6
     days = 18
     

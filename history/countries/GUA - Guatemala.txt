@@ -65,11 +65,6 @@ add_ideas = {
     GUA_illiteracy
     
 }
-country_event = {
-    id = guatemala.1
-    days = 1
-    
-}
 set_variable = {
     var = UFC_power
     value = 50

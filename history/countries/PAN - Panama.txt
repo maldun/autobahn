@@ -10,11 +10,6 @@ set_technology = {
     
 }
 country_event = {
-    id = panama.1
-    days = 1
-    
-}
-country_event = {
     id = panama.17
     days = 500
     

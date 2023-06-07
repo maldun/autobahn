@@ -214,6 +214,10 @@ set_variable = {
 }
 OTT_calc_coalition_strength = yes
 OTT_recalc_congress_icon_frames = yes
+set_variable = {
+    country_intro_page_count = 4
+    
+}
 country_event = {
     id = ottpol.1
     days = 10

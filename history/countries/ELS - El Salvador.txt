@@ -32,8 +32,8 @@ if = {
     
 }
 country_event = {
-    id = els.1
-    days = 1
+    id = els.2
+    days = 47
     
 }
 country_event = {

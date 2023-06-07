@@ -94,11 +94,6 @@ add_ideas = {
     
 }
 country_event = {
-    id = ven.1
-    days = 2
-    
-}
-country_event = {
     id = ven.9
     days = 75
     

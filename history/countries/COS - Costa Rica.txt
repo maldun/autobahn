@@ -32,11 +32,6 @@ set_popularities = {
     
 }
 country_event = {
-    id = cos.1
-    hours = 2
-    
-}
-country_event = {
     id = cos.2
     days = 17
     

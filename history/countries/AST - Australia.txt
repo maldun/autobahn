@@ -138,11 +138,6 @@ add_ideas = {
     
 }
 country_event = {
-    id = austral.1
-    days = 1
-    
-}
-country_event = {
     id = austral.9
     days = 12
     

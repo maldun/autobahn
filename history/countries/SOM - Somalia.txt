@@ -14,11 +14,6 @@ set_technology = {
     r56_militia_tech = 1
     
 }
-country_event = {
-    id = som.1
-    days = 1
-    
-}
 set_politics = {
     ruling_party = authoritarian_democrat
     last_election = "1888.6.15"

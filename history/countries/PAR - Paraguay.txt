@@ -70,7 +70,7 @@ set_popularities = {
     
 }
 country_event = {
-    id = par.1
+    id = par.101
     days = 2
     
 }

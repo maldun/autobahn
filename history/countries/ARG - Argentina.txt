@@ -121,9 +121,8 @@ add_ideas = {
     
 }
 unlock_national_focus = ARG_Woes_of_the_Christmas_Coup
-country_event = {
-    id = argcar.1
-    days = 1
+set_variable = {
+    country_intro_page_count = 1
     
 }
 country_event = {

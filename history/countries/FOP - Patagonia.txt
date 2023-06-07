@@ -119,6 +119,10 @@ set_popularities = {
     national_populist = 0
     
 }
+set_variable = {
+    country_intro_page_count = 2
+    
+}
 country_event = {
     id = fop.6
     days = 60

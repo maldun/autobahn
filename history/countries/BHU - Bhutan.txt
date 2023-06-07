@@ -7,11 +7,6 @@ set_technology = {
     etax_doctrine = 1
     
 }
-country_event = {
-    id = bhutan.0
-    days = 1
-    
-}
 set_stability = 0.3
 set_war_support = 0.1
 set_politics = {

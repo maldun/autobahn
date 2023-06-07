@@ -100,11 +100,6 @@ add_ideas = {
     
 }
 country_event = {
-    id = gre.1
-    days = 1
-    
-}
-country_event = {
     id = gre.3
     days = 85
     

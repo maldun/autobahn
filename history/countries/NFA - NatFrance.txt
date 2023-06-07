@@ -147,6 +147,10 @@ add_equipment_to_stockpile = {
     producer = NFA
     
 }
+set_variable = {
+    country_intro_page_count = 2
+    
+}
 country_event = {
     id = nfa.401
     days = 61

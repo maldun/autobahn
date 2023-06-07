@@ -66,11 +66,6 @@ country_event = {
     
 }
 country_event = {
-    id = honduras.1
-    days = 1
-    
-}
-country_event = {
     id = honduras.2
     days = 90
     

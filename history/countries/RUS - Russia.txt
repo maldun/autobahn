@@ -146,6 +146,10 @@ TRM = {
     embargo_ROOT = yes
     
 }
+set_variable = {
+    country_intro_page_count = 2
+    
+}
 country_event = {
     id = russia.5
     days = 5

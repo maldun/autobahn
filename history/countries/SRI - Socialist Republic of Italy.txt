@@ -243,11 +243,6 @@ if = {
 }
 set_global_flag = KR_italy_balance
 country_event = {
-    id = socitaly.1
-    days = 1
-    
-}
-country_event = {
     id = socitaly.85
     days = 446
     

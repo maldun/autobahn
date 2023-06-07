@@ -268,11 +268,6 @@ set_variable = {
     
 }
 country_event = {
-    id = poland.0
-    hours = 2
-    
-}
-country_event = {
     id = poland.42
     days = 110
     

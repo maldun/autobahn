@@ -69,6 +69,10 @@ if = {
     }
     
 }
+set_variable = {
+    country_intro_page_count = 3
+    
+}
 country_event = {
     id = fengtian.124
     days = 28

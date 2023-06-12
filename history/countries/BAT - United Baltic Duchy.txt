@@ -136,6 +136,10 @@ add_ideas = {
     volunteer_only
     
 }
+set_variable = {
+    country_intro_page_count = 3
+    
+}
 country_event = {
     id = KRBAT.6
     days = 18

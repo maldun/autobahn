@@ -267,6 +267,10 @@ set_variable = {
     POL_FRA_weapons = 0
     
 }
+set_variable = {
+    country_intro_page_count = 4
+    
+}
 country_event = {
     id = poland.42
     days = 110

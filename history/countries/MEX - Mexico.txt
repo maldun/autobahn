@@ -229,6 +229,11 @@ country_event = {
     days = 140
     
 }
+country_event = {
+    id = mexico.3001
+    days = 4748
+    
+}
 add_opinion_modifier = {
     target = NIC
     modifier = NIC_revolutionary_allies

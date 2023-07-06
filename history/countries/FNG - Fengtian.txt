@@ -266,7 +266,6 @@ set_popularities = {
     national_populist = 0
     
 }
-setup_army_reform = yes
 add_ideas = {
     limited_conscription
     FNG_Huang_Fu_hog_ade

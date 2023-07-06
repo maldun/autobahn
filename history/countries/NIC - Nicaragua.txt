@@ -142,6 +142,7 @@ add_opinion_modifier = {
     modifier = NIC_holding_military
     
 }
+save_global_event_target_as = Miskitu_Coast
 country_event = {
     id = nic.1
     days = 1

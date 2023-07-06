@@ -354,11 +354,19 @@ diplomatic_relation = {
     relation = non_aggression_pact
     
 }
+set_power_balance = {
+    id = CAN_brit_exile_balance
+    left_side = CAN_canadian_side
+    right_side = CAN_exile_side
+    set_default = yes
+    
+}
 set_country_flag = cannot_have_conscription
 set_country_flag = legation_council_member
 set_country_flag = KR_british_king_base
 save_global_event_target_as = KR_entente_leader
 save_global_event_target_as = KR_king_base
+save_global_event_target_as = ENT_Prince_Albert_Target
 save_global_event_target_as = iedc_leader
 set_global_flag = CAN_king_george_V
 set_global_flag = CAN_king_busy
@@ -386,9 +394,50 @@ set_variable = {
     CAN_liberal_support = 0
     
 }
+set_variable = {
+    CAN_provinces = 11
+    
+}
+set_variable = {
+    CAN_current_provinces = 10
+    
+}
+set_variable = {
+    CAN_naval_focuses_done = 0
+    
+}
+set_variable = {
+    ENG_naval_focuses_done = 0
+    
+}
 country_event = {
     id = canada.1
     days = 1
+    
+}
+country_event = {
+    id = canada.402
+    days = 127
+    
+}
+country_event = {
+    id = canada.432
+    days = 182
+    
+}
+country_event = {
+    id = canada.424
+    days = 2699
+    
+}
+country_event = {
+    id = entente.730
+    days = 5515
+    
+}
+country_event = {
+    id = canada.83
+    days = 678
     
 }
 country_event = {
@@ -406,9 +455,70 @@ country_event = {
     days = 272
     
 }
+country_event = {
+    id = canada.430
+    days = 333
+    random_days = 20
+    
+}
+country_event = {
+    id = canada.437
+    days = 440
+    random_days = 66
+    
+}
+country_event = {
+    id = canada.438
+    days = 240
+    
+}
+country_event = {
+    id = canada.439
+    days = 440
+    random_days = 120
+    
+}
+country_event = {
+    id = entente.630
+    days = 120
+    random_days = 45
+    
+}
+country_event = {
+    id = canada.440
+    days = 800
+    random_days = 300
+    
+}
+country_event = {
+    id = canada.441
+    days = 322
+    
+}
+country_event = {
+    id = canada.442
+    days = 700
+    random_days = 400
+    
+}
+country_event = {
+    id = entente.750
+    days = 2178
+    
+}
+country_event = {
+    id = entente.781
+    days = 2428
+    
+}
+country_event = {
+    id = canada.452
+    days = 3113
+    
+}
 set_war_support = 0.4
 set_politics = {
-    ruling_party = market_liberal
+    ruling_party = social_liberal
     last_election = "1931.10.14"
     election_frequency = 60
     elections_allowed = yes
@@ -419,8 +529,8 @@ set_popularities = {
     radical_socialist = 1
     syndicalist = 1
     social_democrat = 2
-    social_liberal = 10
-    market_liberal = 42
+    social_liberal = 20
+    market_liberal = 32
     social_conservative = 30
     authoritarian_democrat = 1
     paternal_autocrat = 2
@@ -459,18 +569,32 @@ set_convoys = 250
 add_ideas = {
     CAN_anglo_french_tensions_2
     CAN_great_depression_2
-    CAN_William_Lyon_Mackenzie_King_hog_mli
-    CAN_Austen_Chamberlain_lobe_ade
-    CAN_CD_Howe_eco_mli
+    CAN_breaking_center
+    CAN_divided_nation1
+    CAN_Charles_Avery_Dunning_hog_sli
+    CAN_Douglas_Hogg_lobe_ade
+    CAN_William_Lyon_Mackenzie_King_eco_mli
     CAN_Ernest_Lapointe_sec_mli
+    CAN_Arthur_Currie_carm_sco
     
 }
+add_dynamic_modifier = {
+    modifier = CAN_brit_govt_exile_idea
+    
+}
+set_country_flag = CAN_libs_are_soclib
+set_country_flag = CAN_lib_leader_dunning
+set_country_flag = CAN_cons_leader_bennett
 create_country_leader = {
     name = "George V"
     desc = "POLITICS_GEORGE_DESC"
     picture = "gfx/leaders/CAN/Portrait_Canada_King_George.png"
     expire = "1965.1.1"
-    ideology = socdem_democratic_socialism_subtype
+    ideology = social_democrat_subtype
+    traits = {
+        CAN_fading_king
+        
+    }
     
 }
 create_country_leader = {
@@ -479,6 +603,10 @@ create_country_leader = {
     picture = "gfx/leaders/CAN/Portrait_Canada_King_George.png"
     expire = "1965.1.1"
     ideology = classical_liberalism_subtype
+    traits = {
+        CAN_fading_king
+        
+    }
     
 }
 create_country_leader = {
@@ -487,6 +615,10 @@ create_country_leader = {
     picture = "gfx/leaders/CAN/Portrait_Canada_King_George.png"
     expire = "1965.1.1"
     ideology = marlib_classical_liberalism_subtype
+    traits = {
+        CAN_fading_king
+        
+    }
     
 }
 create_country_leader = {
@@ -495,6 +627,10 @@ create_country_leader = {
     picture = "gfx/leaders/CAN/Portrait_Canada_King_George.png"
     expire = "1965.1.1"
     ideology = toryism_subtype
+    traits = {
+        CAN_fading_king
+        
+    }
     
 }
 create_country_leader = {
@@ -503,6 +639,10 @@ create_country_leader = {
     picture = "gfx/leaders/CAN/Portrait_Canada_King_George.png"
     expire = "1965.1.1"
     ideology = authdem_toryism_subtype
+    traits = {
+        CAN_fading_king
+        
+    }
     
 }
 create_country_leader = {
@@ -511,34 +651,43 @@ create_country_leader = {
     picture = "gfx/leaders/CAN/Portrait_Canada_King_George.png"
     expire = "1965.1.1"
     ideology = absolute_monarchy_subtype
+    traits = {
+        CAN_fading_king
+        
+    }
+    
+}
+create_country_leader = {
+    name = "George V"
+    desc = "POLITICS_GEORGE_DESC"
+    picture = "gfx/leaders/CAN/Portrait_Canada_King_George.png"
+    expire = "1965.1.1"
+    ideology = legionarism_subtype
+    traits = {
+        CAN_fading_king
+        
+    }
     
 }
 create_country_leader = {
     name = "Tim Buck"
     picture = "gfx/leaders/CAN/Portrait_Canada_Tim_Buck_kr.png"
     expire = "1965.1.1"
-    ideology = natsynd_subtype
+    ideology = popcom_subtype
+    
+}
+create_country_leader = {
+    name = "Roger Ernest Bray"
+    picture = "gfx/leaders/CAN/Portrait_Canada_Roger_Ernest_Bray.png"
+    expire = "1965.1.1"
+    ideology = centralized_syndicalism_subtype
     
 }
 create_country_leader = {
     name = "Richard Parmater Pettipiece"
     picture = "gfx/leaders/CAN/Portrait_Canada_Richard_Pettipiece.png"
     expire = "1965.1.1"
-    ideology = centralized_syndicalism_subtype
-    
-}
-create_country_leader = {
-    name = "Claude Jodoin"
-    picture = "gfx/leaders/CAN/Portrait_Canada_Claude_Jodoin.png"
-    expire = "1965.1.1"
     ideology = moderate_socialist_subtype
-    
-}
-create_country_leader = {
-    name = "Henry Herbert Stevens"
-    picture = "gfx/leaders/CAN/Portrait_Canada_Henry_Herbert_Stevens.png"
-    expire = "1965.1.1"
-    ideology = national_populist_subtype
     
 }
 create_field_marshal = {
@@ -602,7 +751,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
     name = "J.F.C. Fuller"
-    portrait_path = "gfx/leaders/CAN/Portrait_CAN_JFC_Fuller.png"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_JFC_Fuller.png"
     traits = {
         armor_officer
         panzer_leader
@@ -620,7 +769,7 @@ create_field_marshal = {
     
 }
 create_field_marshal = {
-    name = "Harold Alexander"
+    name = "Harold Alexander "
     portrait_path = "gfx/leaders/CAN/Portrait_Canada_Harold_Alexander.png"
     traits = {
         politically_connected
@@ -633,6 +782,42 @@ create_field_marshal = {
     planning_skill = 3
     logistics_skill = 5
     id = 9203
+    
+}
+create_field_marshal = {
+    name = "Arthur Currie"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Arthur_Currie.png"
+    traits = {
+        brilliant_strategist
+        offensive_doctrine
+        war_hero
+        infantry_officer
+        infantry_leader
+        
+    }
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 5
+    id = 9204
+    
+}
+create_field_marshal = {
+    name = "John Vereker "
+    portrait_path = "gfx/leaders/ENG/Portrait_England_John_Vereker.png"
+    traits = {
+        politically_connected
+        trait_cautious
+        GBR_british_exile_trait
+        
+    }
+    id = 2938
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
     
 }
 create_corps_commander = {
@@ -799,7 +984,7 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Georges Vanier"
+    name = "Georges Vanier "
     portrait_path = "gfx/leaders/CAN/Portrait_Canada_Georges_Vanier.png"
     traits = {
         politically_connected
@@ -959,6 +1144,23 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
+    name = "Alexander Cambridge "
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Alexander_Cambridge_Army.png"
+    traits = {
+        cavalry_expert
+        media_personality
+        politically_connected
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+    id = 92011
+    
+}
+create_corps_commander = {
     name = "Frederick Browning"
     portrait_path = "gfx/leaders/CAN/Portrait_England_Frederick_Browning.png"
     traits = {
@@ -974,6 +1176,74 @@ create_corps_commander = {
     planning_skill = 4
     logistics_skill = 3
     id = 2540
+    
+}
+create_corps_commander = {
+    name = "Miles Dempsey"
+    portrait_path = "gfx/leaders/ENG/Portrait_England_Miles_Dempsey.png"
+    traits = {
+        brilliant_strategist
+        career_officer
+        infantry_officer
+        GBR_british_exile_trait
+        
+    }
+    skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Eric Charles Hayes"
+    portrait_path = "gfx/leaders/ENG/Portrait_England_Eric_Charles_Hayes.png"
+    traits = {
+        organizer
+        career_officer
+        GBR_british_exile_trait
+        
+    }
+    skill = 4
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 3
+    id = 2550
+    
+}
+create_corps_commander = {
+    name = "Brian Horrocks"
+    portrait_path = "gfx/leaders/ENG/Portrait_England_Brian_Horrocks.png"
+    traits = {
+        war_hero
+        organizer
+        urban_assault_specialist
+        GBR_british_exile_trait
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 2
+    id = 2560
+    
+}
+every_unit_leader = {
+    limit = {
+        has_id = 2560
+        
+    }
+    set_unit_leader_flag = CAN_TRM_expedition_leader
+    
+}
+every_unit_leader = {
+    limit = {
+        has_id = 2550
+        
+    }
+    set_unit_leader_flag = CAN_TRM_expedition_leader
     
 }
 create_navy_leader = {
@@ -1152,7 +1422,7 @@ create_navy_leader = {
 }
 create_navy_leader = {
     name = "Bernard Rawlings"
-    portrait_path = "gfx/leaders/CAN/Portrait_CAN_Bernard_Rawlings.png"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Bernard_Rawlings.png"
     traits = {
         gentlemanly
         GBR_british_exile_trait
@@ -1167,7 +1437,7 @@ create_navy_leader = {
 }
 create_navy_leader = {
     name = "Charles Forbes"
-    portrait_path = "gfx/leaders/CAN/Portrait_CAN_Charles_Forbes.png"
+    portrait_path = "gfx/leaders/CAN/Portrait_Canada_Charles_Forbes.png"
     traits = {
         gunnery_expert
         fly_swatter
@@ -1211,6 +1481,21 @@ create_navy_leader = {
     defense_skill = 2
     maneuvering_skill = 2
     coordination_skill = 2
+    
+}
+create_navy_leader = {
+    name = "James D. Prentice"
+    portrait_path = "gfx/leaders/NFL/Portrait_Newfoundland_James_D_Prentice.png"
+    traits = {
+        spotter
+        
+    }
+    skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    maneuvering_skill = 3
+    coordination_skill = 2
+    id = 2171
     
 }
 if = {
@@ -1257,6 +1542,31 @@ if = {
             GBR
             CAN
             ENG
+            
+        }
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc = "La Resistance"
+        
+    }
+    create_operative_leader = {
+        name = "Ormonde Winter"
+        GFX = GFX_Portrait_Canada_Ormonde_Winter
+        traits = {
+            operative_infiltrator
+            operative_master_interrogator
+            
+        }
+        bypass_recruitment = no
+        available_to_spy_master = yes
+        nationalities = {
+            GBR
+            CAN
+            IRE
             
         }
         

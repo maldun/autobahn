@@ -99,6 +99,11 @@ country_event = {
     id = par.1
     
 }
+country_event = {
+    id = par.29
+    days = 950
+    
+}
 create_country_leader = {
     name = "Higenio Morinigo Martinez"
     picture = "gfx/leaders/PAR/Portrait_Paraguay_Hugenio_Morinigi.png"

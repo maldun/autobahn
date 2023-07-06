@@ -333,6 +333,11 @@ country_event = {
     
 }
 country_event = {
+    id = ustates.3
+    days = 35
+    
+}
+country_event = {
     id = NYC_flavor.41
     days = 179
     

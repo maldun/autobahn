@@ -4,4 +4,5 @@
 l_english: 
 # FIX
  basic_medium_tank_chassis_short:0 "1938 Medium"
-
+ expanded_fuel_tank:0 "Fuel Drum"
+ expanded_fuel_tank_desc:0 "An externally mounted fuel drum designed to extend the operational range of an armored vehicle."

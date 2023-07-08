@@ -27,7 +27,7 @@
         "land_upgrades.txt": []
     },
     "common/units/equipment/modules/": {
-      "00_r56_modules.txt": []
+      "00_tank_r56_modules.txt": []
     },
     "interface/": {
 	"r56_tank_modules_icons.gfx": []

@@ -446,6 +446,12 @@ ideas = {
                     
                 }
                 has_air_force_command = yes
+                OR = {
+                    has_government = radical_socialist
+                    has_government = syndicalist
+                    has_government = totalist
+                    
+                }
                 
             }
             visible = {

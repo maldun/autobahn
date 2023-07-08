@@ -516,6 +516,11 @@ country_event = {
     days = 3113
     
 }
+country_event = {
+    id = canada.720
+    days = 2271
+    
+}
 set_war_support = 0.4
 set_politics = {
     ruling_party = social_liberal
@@ -1228,6 +1233,22 @@ create_corps_commander = {
     planning_skill = 4
     logistics_skill = 2
     id = 2560
+    
+}
+create_corps_commander = {
+    name = "George Pearkes"
+    portrait_path = "gfx/leaders/ALA/Portrait_ALA_George_Pearkes.png"
+    traits = {
+        old_guard
+        inflexible_strategist
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    id = 2561
     
 }
 every_unit_leader = {

@@ -104,6 +104,13 @@ ideas = {
                     has_tech = r56_guerilla_warfare
                     
                 }
+                OR = {
+                    has_government = social_democrat
+                    has_government = social_liberal
+                    has_government = market_liberal
+                    has_government = social_conservative
+                    
+                }
                 
             }
             visible = {
@@ -159,6 +166,12 @@ ideas = {
                     has_tech = r56_guerilla_warfare
                     
                 }
+                OR = {
+                    has_government = radical_socialist
+                    has_government = syndicalist
+                    has_government = totalist
+                    
+                }
                 
             }
             visible = {
@@ -205,6 +218,18 @@ ideas = {
         political_loyalty_spirit = {
             ledger = army
             available = {
+                OR = {
+                    OR = {
+                        has_government = national_populist
+                        has_government = paternal_autocrat
+                        
+                    }
+                    OR = {
+                        has_government = authoritarian_democrat
+                        
+                    }
+                    
+                }
                 OR = {
                     has_tech = mobile_warfare
                     has_tech = superior_firepower
@@ -634,6 +659,13 @@ ideas = {
                     has_tech = r56_guerilla_warfare
                     
                 }
+                OR = {
+                    has_government = social_democrat
+                    has_government = social_liberal
+                    has_government = market_liberal
+                    has_government = social_conservative
+                    
+                }
                 
             }
             visible = {
@@ -696,6 +728,12 @@ ideas = {
                     has_tech = r56_guerilla_warfare
                     
                 }
+                OR = {
+                    has_government = radical_socialist
+                    has_government = syndicalist
+                    has_government = totalist
+                    
+                }
                 
             }
             visible = {
@@ -735,6 +773,25 @@ ideas = {
             ledger = army
             available = {
                 OR = {
+                    AND = {
+                        NOT = {
+                            has_country_leader_ideology = anarchism
+                            
+                        }
+                        OR = {
+                            has_government = authoritarian_democrat
+                            
+                        }
+                        
+                    }
+                    OR = {
+                        has_government = national_populist
+                        has_government = paternal_autocrat
+                        
+                    }
+                    
+                }
+                OR = {
                     has_tech = mobile_warfare
                     has_tech = superior_firepower
                     has_tech = trench_warfare
@@ -748,7 +805,7 @@ ideas = {
                 OR = {
                     AND = {
                         NOT = {
-                            tag = SPC
+                            has_country_leader_ideology = anarchism
                             
                         }
                         OR = {

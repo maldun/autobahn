@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+             name = "GFX_EMI_expanded_fuel_tank"
+             textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_fuel_drum.dds"
+             legacy_lazy_load = no
+     }
+}

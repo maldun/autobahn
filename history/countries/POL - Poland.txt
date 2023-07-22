@@ -132,32 +132,6 @@ set_variable = {
     
 }
 set_variable = {
-    POL_decrease_time = 60
-    
-}
-GER = {
-    set_variable = {
-        POL_decrease_time = 60
-        
-    }
-    
-}
-AUS = {
-    set_variable = {
-        POL_decrease_time = 60
-        
-    }
-    
-}
-set_variable = {
-    POL_buy_from_GER = 40
-    
-}
-set_variable = {
-    POL_buy_from_AUS = 45
-    
-}
-set_variable = {
     POL_BM_cost = 35
     
 }
@@ -167,18 +141,6 @@ set_variable = {
 }
 set_variable = {
     POL_CIP_cost_cheap = 30
-    
-}
-set_variable = {
-    POL_loan = 80
-    
-}
-set_variable = {
-    POL_coring_cost = 50
-    
-}
-set_variable = {
-    POL_coring_cost_small = 30
     
 }
 set_variable = {
@@ -207,14 +169,6 @@ set_variable = {
 }
 set_variable = {
     POL_railway_cost = 20
-    
-}
-set_variable = {
-    POL_GER_loan = 0
-    
-}
-set_variable = {
-    POL_AUS_loan = 0
     
 }
 set_variable = {

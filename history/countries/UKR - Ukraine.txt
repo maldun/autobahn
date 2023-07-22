@@ -5,7 +5,6 @@ set_convoys = 50
 set_research_slots = 3
 set_stability = 0.4
 set_war_support = 0.3
-save_global_event_target_as = original_ukraine
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -157,7 +156,7 @@ add_ideas = {
     free_trade
     limited_conscription
     UKR_unfinished_revolution
-    UKR_halted_industrialization_plans
+    UKR_halted_industrialisation_plans
     UKR_strong_agrarian_economy
     UKR_land_reform_debacle
     german-ukrainian_railways
@@ -313,6 +312,11 @@ country_event = {
 }
 country_event = {
     id = ukraine_lun.25
+    days = 1035
+    
+}
+country_event = {
+    id = ukraine_lun.26
     days = 1035
     
 }

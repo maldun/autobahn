@@ -70,6 +70,11 @@ country_event = {
     
 }
 country_event = {
+    id = whrmisc.10
+    days = 420
+    
+}
+country_event = {
     id = whrmisc.11
     days = 257
     

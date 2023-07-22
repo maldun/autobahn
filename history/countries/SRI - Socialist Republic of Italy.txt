@@ -242,6 +242,10 @@ if = {
     
 }
 set_global_flag = KR_italy_balance
+set_variable = {
+    country_intro_page_count = 1
+    
+}
 country_event = {
     id = socitaly.85
     days = 446

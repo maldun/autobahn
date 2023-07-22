@@ -40,7 +40,7 @@ add_ideas = {
 }
 country_event = {
     id = bhutan.78
-    days = 3
+    days = 4
     
 }
 country_event = {

@@ -126,6 +126,7 @@ technologies = {
         categories = {
             motorized_equipment
             logistics_tech
+            supply_node_tech
             
         }
         ai_will_do = {
@@ -209,6 +210,7 @@ technologies = {
         categories = {
             motorized_equipment
             logistics_tech
+            supply_node_tech
             
         }
         ai_will_do = {
@@ -292,6 +294,7 @@ technologies = {
         categories = {
             motorized_equipment
             logistics_tech
+            supply_node_tech
             
         }
         ai_will_do = {
@@ -322,6 +325,7 @@ technologies = {
         categories = {
             motorized_equipment
             logistics_tech
+            supply_node_tech
             
         }
         ai_will_do = {
@@ -347,6 +351,7 @@ technologies = {
         categories = {
             motorized_equipment
             logistics_tech
+            supply_node_tech
             
         }
         ai_will_do = {

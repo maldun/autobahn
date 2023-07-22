@@ -116,6 +116,7 @@ if = {
     }
     
 }
+activate_mission = TRM_visit_from_japan
 country_event = {
     id = tram.80
     days = 365

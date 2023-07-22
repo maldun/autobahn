@@ -105,11 +105,6 @@ if = {
     
 }
 country_event = {
-    id = prf.0
-    days = 1
-    
-}
-country_event = {
     id = prf.1
     days = 41
     

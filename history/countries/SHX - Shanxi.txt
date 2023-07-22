@@ -54,8 +54,8 @@ set_popularities = {
     
 }
 country_event = {
-    id = shx.0
-    days = 1
+    id = shx.8
+    days = 40
     
 }
 country_event = {
@@ -133,6 +133,10 @@ SHX_han_duofeng = {
 }
 SHX_liu_yufen = {
     retire = yes
+    
+}
+set_variable = {
+    country_intro_page_count = 2
     
 }
 set_variable = {

@@ -96,9 +96,8 @@ if = {
     }
     
 }
-country_event = {
-    id = mexico.1
-    days = 2
+set_variable = {
+    country_intro_page_count = 1
     
 }
 country_event = {

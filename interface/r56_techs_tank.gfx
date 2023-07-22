@@ -226,18 +226,18 @@ spriteTypes = {
 	SpriteType = { name = "GFX_AUS_super_heavy_tank_a_medium" texturefile = "gfx/interface/technologies/tank/super_heavy_tank/r56_tech_AUS_super_heavy_tank_01.dds" }
 	SpriteType = { name = "GFX_AUS_super_heavy_tank_b_medium" texturefile = "gfx/interface/technologies/tank/super_heavy_tank/r56_tech_AUS_super_heavy_tank_01.dds" }	
 
-	SpriteType = { name = "GFX_AUS_basic_light_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_basic_light_tank.dds" }
-	SpriteType = { name = "GFX_AUS_improved_light_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_imp_light_tank.dds" }
-	SpriteType = { name = "GFX_AUS_advanced_light_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_adv_light_tank.dds" }
+	SpriteType = { name = "GFX_AUS_basic_light_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_basic_light_tank.dds" }
+	SpriteType = { name = "GFX_AUS_improved_light_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_imp_light_tank.dds" }
+	SpriteType = { name = "GFX_AUS_advanced_light_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_adv_light_tank.dds" }
 	SpriteType = { name = "GFX_AUS_amphibious_tank_chassis_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_GER_amphibious_tank_02.dds" }
-	SpriteType = { name = "GFX_AUS_basic_medium_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_basic_main_tank.dds" }
-	SpriteType = { name = "GFX_AUS_improved_medium_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_imp_main_tank.dds" }
-	SpriteType = { name = "GFX_AUS_advanced_medium_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_adv_main_tank.dds" }
-	SpriteType = { name = "GFX_AUS_basic_heavy_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_basic_heavy_tank.dds" }
-	SpriteType = { name = "GFX_AUS_improved_heavy_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_imp_heavy_tank.dds" }
-	SpriteType = { name = "GFX_AUS_advanced_heavy_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_superheavy_tank.dds" }
-	SpriteType = { name = "GFX_AUS_super_heavy_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_adv_heavy_tank.dds" }
-	SpriteType = { name = "GFX_AUS_main_battle_tank_chassis_medium" texturefile = "gfx/interface/technologies/ger_main_battle_tank.dds" }
+	SpriteType = { name = "GFX_AUS_basic_medium_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_basic_main_tank.dds" }
+	SpriteType = { name = "GFX_AUS_improved_medium_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_imp_main_tank.dds" }
+	SpriteType = { name = "GFX_AUS_advanced_medium_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_adv_main_tank.dds" }
+	SpriteType = { name = "GFX_AUS_basic_heavy_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_basic_heavy_tank.dds" }
+	SpriteType = { name = "GFX_AUS_improved_heavy_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_imp_heavy_tank.dds" }
+	SpriteType = { name = "GFX_AUS_advanced_heavy_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_superheavy_tank.dds" }
+	SpriteType = { name = "GFX_AUS_super_heavy_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_adv_heavy_tank.dds" }
+	SpriteType = { name = "GFX_AUS_main_battle_tank_chassis_medium" texturefile = "gfx/interface/technologies/GER_main_battle_tank.dds" }
 	SpriteType = { name = "GFX_AUS_advanced_main_battle_tank_chassis_medium" texturefile = "gfx/interface/technologies/tank/main_battle_tank/r56_tech_GER_main_battle_tank_02.dds" }
 
 	SpriteType = { name = "GFX_BEL_gwtank_medium" texturefile = "gfx/interface/technologies/tank/light_tank/r56_tech_BEL_light_tank_00.dds" }

@@ -99,9 +99,8 @@ add_ideas = {
     GRE_legacy_of_alexander_idea
     
 }
-country_event = {
-    id = gre.2
-    days = 1
+set_variable = {
+    country_intro_page_count = 1
     
 }
 country_event = {

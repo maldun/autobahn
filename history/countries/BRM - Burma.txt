@@ -66,11 +66,6 @@ set_popularities = {
     
 }
 country_event = {
-    id = burma.0
-    days = 1
-    
-}
-country_event = {
     id = burma.1
     days = 300
     random_hours = 240

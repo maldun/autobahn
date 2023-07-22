@@ -91,11 +91,6 @@ add_ideas = {
     limited_conscription
     
 }
-country_event = {
-    id = KREST.1
-    days = 2
-    
-}
 recruit_character = EST_jaan_anvelt
 recruit_character = EST_arnold_sommerling
 recruit_character = EST_august_rei

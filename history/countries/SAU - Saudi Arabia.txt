@@ -12,11 +12,6 @@ set_technology = {
     transport_plane1 = 1
     
 }
-country_event = {
-    id = saud.1
-    days = 1
-    
-}
 set_politics = {
     ruling_party = paternal_autocrat
     last_election = "1888.6.15"
@@ -44,6 +39,7 @@ add_ideas = {
     SAU_illiterate_populace
     
 }
+activate_mission = SAU_War_of_Unification
 recruit_character = SAU_abdulaziz_ibn_saud
 recruit_character = SAU_saud_bin_abdulaziz_al_saud
 recruit_character = SAU_abdallah_bin_abdul_rahman_al_saud

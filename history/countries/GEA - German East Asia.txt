@@ -166,6 +166,10 @@ add_offsite_building = {
     level = 7
     
 }
+set_variable = {
+    country_intro_page_count = 1
+    
+}
 country_event = {
     id = Ostasien.6
     days = 160

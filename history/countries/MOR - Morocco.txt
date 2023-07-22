@@ -15,11 +15,6 @@ set_technology = {
     shocktroops = 1
     
 }
-country_event = {
-    id = mor.1
-    days = 1
-    
-}
 GER = {
     set_autonomy = {
         target = MOR

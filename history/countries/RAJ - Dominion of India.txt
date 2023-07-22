@@ -109,9 +109,8 @@ if = {
     }
     
 }
-country_event = {
-    id = delhi.1
-    hours = 2
+set_variable = {
+    country_intro_page_count = 2
     
 }
 country_event = {

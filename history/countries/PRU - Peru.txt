@@ -177,6 +177,7 @@ recruit_character = PRU_carlos_manuel_cox_roose
 recruit_character = PRU_luis_emilio_heysen_inchaustegui
 recruit_character = PRU_hildebrando_castro_pozo
 recruit_character = PRU_luciano_castillo_colonna
+recruit_character = PRU_cristobal_de_losada_y_puga
 recruit_character = PRU_manuel_arturo_odria_amoretti
 recruit_character = PRU_eloy_gaspar_ureta_montehermoso
 recruit_character = PRU_carlos_miro_quesada_laos

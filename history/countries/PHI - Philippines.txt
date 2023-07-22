@@ -73,11 +73,6 @@ set_popularities = {
     national_populist = 0
     
 }
-country_event = {
-    id = phil.0
-    days = 1
-    
-}
 recruit_character = PHI_manuel_luis_quezon
 recruit_character = PHI_manuel_roxas
 recruit_character = PHI_elpidio_quirino

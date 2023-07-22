@@ -18,8 +18,15 @@ set_variable = {
     
 }
 country_event = {
-    id = kumul.0
-    days = 1
+    id = kumul.1
+    days = 30
+    random_days = 72
+    
+}
+country_event = {
+    id = kumul.4
+    days = 90
+    random_days = 72
     
 }
 set_technology = {

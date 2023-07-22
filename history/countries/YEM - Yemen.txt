@@ -15,11 +15,6 @@ country_event = {
     days = 287
     
 }
-country_event = {
-    id = yemen.1
-    days = 1
-    
-}
 set_war_support = 0.2
 TUR = {
     set_autonomy = {

@@ -85,11 +85,6 @@ country_event = {
     
 }
 country_event = {
-    id = swiss.41
-    days = 2
-    
-}
-country_event = {
     id = swiss.71
     days = 96
     

@@ -2,10 +2,11 @@ capital = 431
 oob = "HND"
 set_naval_oob = "HND_naval"
 set_research_slots = 3
-set_stability = 0.25
+set_stability = 0.2
 set_war_support = 0.2
 set_convoys = 20
 starting_train_buffer = 2
+add_political_power = -80
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -108,11 +109,6 @@ if = {
     
 }
 country_event = {
-    id = beng.1
-    days = 1
-    
-}
-country_event = {
     id = beng.23
     days = 12
     
@@ -165,6 +161,7 @@ recruit_character = HND_jawaharlal_nehru
 recruit_character = HND_lala_lajpat_rai
 recruit_character = HND_mohandas_karamchand_gandhi
 recruit_character = HND_nirmal_kumar_bose
+recruit_character = HND_vallabhbhai_jhaverbhai_patel
 recruit_character = HND_sarojini_naidu
 recruit_character = HND_madan_mohan_malaviya
 recruit_character = HND_madhav_sadashivrao_golwalkar

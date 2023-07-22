@@ -12,11 +12,6 @@ set_technology = {
     
 }
 country_event = {
-    id = lib.1
-    days = 1
-    
-}
-country_event = {
     id = lib.2
     days = 516
     

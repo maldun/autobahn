@@ -89,6 +89,11 @@ if = {
     
 }
 country_event = {
+    id = bushwar.2
+    days = 1
+    
+}
+country_event = {
     id = por.300
     days = 425
     

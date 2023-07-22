@@ -137,9 +137,8 @@ add_ideas = {
     AST_anzac_spirit_1
     
 }
-country_event = {
-    id = austral.2
-    days = 2
+set_variable = {
+    country_intro_page_count = 1
     
 }
 country_event = {

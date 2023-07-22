@@ -177,6 +177,10 @@ set_country_flag = {
     }
     
 }
+set_variable = {
+    country_intro_page_count = 2
+    
+}
 country_event = {
     id = saf.108
     days = 25

@@ -121,11 +121,6 @@ if = {
     
 }
 country_event = {
-    id = papalstate.40
-    days = 1
-    
-}
-country_event = {
     id = papalstate.3
     days = 32
     

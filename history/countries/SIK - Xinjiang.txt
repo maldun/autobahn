@@ -48,9 +48,8 @@ add_ideas = {
     
 }
 china_add_poor_army = yes
-country_event = {
-    id = xin.0
-    days = 1
+set_variable = {
+    country_intro_page_count = 2
     
 }
 country_event = {

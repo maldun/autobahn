@@ -101,6 +101,7 @@ KOR_yi_un = {
 }
 KOR_kim_wonbong = {
     set_nationality = CHI
+    retire = yes
     
 }
 KOR_kim_hong_il = {

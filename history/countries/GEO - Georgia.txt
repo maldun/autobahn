@@ -108,8 +108,8 @@ add_to_array = {
 }
 give_military_access = GER
 country_event = {
-    id = geo.1
-    days = 1
+    id = geo.15
+    days = 5
     
 }
 country_event = {

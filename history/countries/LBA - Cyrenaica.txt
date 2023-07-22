@@ -101,8 +101,8 @@ reverse_add_opinion_modifier = {
     
 }
 country_event = {
-    id = libya.1
-    hours = 10
+    id = libya.2
+    days = 700
     
 }
 country_event = {
@@ -137,7 +137,7 @@ country_event = {
 }
 country_event = {
     id = libya.24
-    days = 700
+    days = 702
     
 }
 country_event = {

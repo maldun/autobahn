@@ -43,6 +43,12 @@ QIE = {
     }
     
 }
+declare_war_on = {
+    target = CHI
+    type = civil_war
+    
+}
+add_civil_war_target = CHI
 diplomatic_relation = {
     country = GEA
     relation = non_aggression_pact
@@ -134,6 +140,10 @@ LEP_qi_xieyuan = {
         china_alignment = token:zhili
         
     }
+    
+}
+set_variable = {
+    country_intro_page_count = 3
     
 }
 country_event = {

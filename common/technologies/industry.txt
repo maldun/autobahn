@@ -3022,20 +3022,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            factor = 5
             modifier = {
-                factor = 0.5
-                steel > 10
-                
-            }
-            modifier = {
-                factor = 0.5
-                steel > 20
-                
-            }
-            modifier = {
-                factor = 1
-                steel > 30
+                factor = 2
+                steel_mill > 1
                 
             }
             
@@ -3079,7 +3069,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            factor = 5
             modifier = {
                 factor = 0
                 steel_mill < 1
@@ -3132,7 +3122,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            factor = 5
             modifier = {
                 factor = 0
                 steel_mill < 1
@@ -3180,7 +3170,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            factor = 5
             modifier = {
                 factor = 0
                 steel_mill < 1
@@ -3229,25 +3219,19 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
-                factor = 0.5
-                aluminium > 10
+                factor = 2
+                aluminum_mill > 1
                 
             }
+            
+        }
+        ai_will_do = {
+            factor = 5
             modifier = {
-                factor = 0.5
-                aluminium > 20
-                
-            }
-            modifier = {
-                factor = 1
-                aluminium > 30
-                
-            }
-            modifier = {
-                factor = 6
-                aluminium < 5
+                factor = 2
+                aluminum_mill > 1
                 
             }
             
@@ -3291,20 +3275,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
                 factor = 0
                 aluminum_mill < 1
                 
             }
             modifier = {
-                factor = 5
+                factor = 2
                 aluminum_mill > 1
-                
-            }
-            modifier = {
-                factor = 20
-                aluminum_mill > 5
                 
             }
             
@@ -3349,20 +3328,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
                 factor = 0
                 aluminum_mill < 1
                 
             }
             modifier = {
-                factor = 5
+                factor = 2
                 aluminum_mill > 1
-                
-            }
-            modifier = {
-                factor = 20
-                aluminum_mill > 5
                 
             }
             
@@ -3406,20 +3380,15 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
                 factor = 0
                 aluminum_mill < 1
                 
             }
             modifier = {
-                factor = 5
+                factor = 2
                 aluminum_mill > 1
-                
-            }
-            modifier = {
-                factor = 20
-                aluminum_mill > 5
                 
             }
             

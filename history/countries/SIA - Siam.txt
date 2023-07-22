@@ -150,6 +150,10 @@ add_ideas = {
     SIA_bloated_bureaucracy
     
 }
+set_variable = {
+    country_intro_page_count = 2
+    
+}
 country_event = {
     id = siam.9
     days = 153

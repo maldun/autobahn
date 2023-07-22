@@ -63,11 +63,6 @@ if = {
     
 }
 country_event = {
-    id = cuba.0
-    days = 1
-    
-}
-country_event = {
     id = cuba.254
     days = 20
     

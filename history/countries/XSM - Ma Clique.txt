@@ -42,8 +42,8 @@ set_variable = {
     
 }
 country_event = {
-    id = mac.1
-    days = 1
+    id = mac.3
+    days = 16
     
 }
 country_event = {

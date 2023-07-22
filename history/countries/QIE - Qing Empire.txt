@@ -106,6 +106,10 @@ add_dynamic_modifier = {
     
 }
 QIE_recalculate_peking_commission = yes
+set_variable = {
+    country_intro_page_count = 2
+    
+}
 country_event = {
     id = qiedom.18
     days = 14

@@ -60,11 +60,6 @@ add_opinion_modifier = {
     
 }
 country_event = {
-    id = domrep.0
-    days = 1
-    
-}
-country_event = {
     id = domrep.1
     days = 20
     
@@ -72,6 +67,11 @@ country_event = {
 country_event = {
     id = domrep.3
     days = 74
+    
+}
+country_event = {
+    id = domrep.32
+    days = 916
     
 }
 set_country_flag = cannot_have_conscription

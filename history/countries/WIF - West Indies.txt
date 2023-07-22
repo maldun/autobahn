@@ -119,9 +119,13 @@ set_variable = {
     value = 21
     
 }
+set_variable = {
+    WIF_moyne_reform_count = 0
+    
+}
 country_event = {
-    id = wifpol.1
-    days = 1
+    id = wifpol.2
+    days = 22
     
 }
 country_event = {

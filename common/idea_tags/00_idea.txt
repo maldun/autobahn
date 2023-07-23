@@ -27,7 +27,8 @@ idea_categories = {
 		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
-		removal_cost = -1
+		cost = 100
+		removal_cost = 0
 
 		ledger = civilian
 	}

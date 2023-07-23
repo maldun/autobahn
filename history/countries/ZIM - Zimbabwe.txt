@@ -40,7 +40,7 @@ if = {
 }
 set_country_flag = KX_no_naval_tech_decision_enable
 add_ideas = {
-    service_by_requirement
+    limited_conscription
     ZIM_Godfrey_Huggins_hog_ade
     ZIM_Percy_Finn_for_mli
     ZIM_Jacob_Smit_eco_ade

@@ -350,7 +350,7 @@ guiTypes = {
                 
             }
             quadTextureSprite = "GFX_main_lobby_button"
-            font = "vt323_24_glow"
+            font = "hoi_24header"
             text = "FE_SINGLE_PLAYER"
             clicksound = click_default
             oversound = ui_menu_over
@@ -364,7 +364,7 @@ guiTypes = {
                 
             }
             quadTextureSprite = "GFX_main_lobby_button"
-            font = "vt323_24_glow"
+            font = "hoi_24header"
             text = "FE_MULTI_PLAYER"
             clicksound = click_default
             oversound = ui_menu_over
@@ -389,7 +389,7 @@ guiTypes = {
                 
             }
             textureFile = ""
-            font = "hoi_26mbs"
+            font = "hoi_18mbs"
             borderSize = {
                 x = 0
                 y = 0
@@ -409,7 +409,7 @@ guiTypes = {
                 
             }
             quadTextureSprite = "GFX_main_lobby_button"
-            buttonFont = "vt323_24_glow"
+            buttonFont = "hoi_24header"
             clicksound = click_default
             oversound = ui_menu_over
             text = "Settings"
@@ -424,7 +424,7 @@ guiTypes = {
             }
             quadTextureSprite = "GFX_main_lobby_button"
             buttonText = "MENU_BAR_CAREER_PROFILE"
-            buttonFont = "vt323_24_glow"
+            buttonFont = "hoi_24header"
             clicksound = click_default
             oversound = ui_menu_over
             
@@ -451,7 +451,7 @@ guiTypes = {
             }
             quadTextureSprite = "GFX_main_lobby_button"
             buttonText = "MENU_BAR_FRIENDS"
-            buttonFont = "vt323_24_glow"
+            buttonFont = "hoi_24header"
             clicksound = click_default
             oversound = ui_menu_over
             
@@ -464,7 +464,7 @@ guiTypes = {
                 
             }
             quadTextureSprite = "GFX_blank"
-            buttonFont = "vt323_24_glow"
+            buttonFont = "hoi_24header"
             clicksound = click_default
             oversound = ui_menu_over
             
@@ -477,7 +477,7 @@ guiTypes = {
                 
             }
             quadTextureSprite = "GFX_main_lobby_button"
-            buttonFont = "vt323_24_glow"
+            buttonFont = "hoi_24header"
             text = "Nudge Tool!"
             
         }
@@ -500,7 +500,7 @@ guiTypes = {
                 
             }
             quadTextureSprite = "GFX_main_lobby_button"
-            font = "vt323_24_glow"
+            font = "hoi_24header"
             text = "FE_EXIT"
             clicksound = click_default
             oversound = ui_menu_over
@@ -557,7 +557,7 @@ guiTypes = {
                     y = 0
                     
                 }
-                font = "hoi_26mbs"
+                font = "hoi_18mbs"
                 borderSize = {
                     x = 0
                     y = 0

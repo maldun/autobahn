@@ -183,6 +183,11 @@ add_opinion_modifier = {
     modifier = KR_disapproves_of_govt
     
 }
+add_opinion_modifier = {
+    target = UKR
+    modifier = embargo
+    
+}
 set_variable = {
     var = ROM.king_influence
     value = 3

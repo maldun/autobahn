@@ -338,6 +338,11 @@ country_event = {
     
 }
 country_event = {
+    id = nimatron.1101
+    days = 703436
+    
+}
+country_event = {
     id = NYC_flavor.41
     days = 179
     
@@ -1178,6 +1183,22 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 2
     logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Creighton Abrams"
+    portrait_path = "gfx/leaders/AML/creighton_abrams.png"
+    traits = {
+        cavalry_officer
+        trait_reckless
+        armor_officer
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
     
 }
 create_navy_leader = {

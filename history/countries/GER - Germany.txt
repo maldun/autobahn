@@ -621,6 +621,11 @@ country_event = {
     days = 4408
     
 }
+country_event = {
+    id = austria.3
+    days = 4108
+    
+}
 news_event = {
     id = flavornews.1
     days = 13

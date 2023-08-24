@@ -17,6 +17,9 @@
         "air_upgrades.txt": [],
         "r56e_upgrades.txt": []
     },
+    "localisation/english/": {
+	"research_l_english.yml": []
+    },
     "localisation/english/replace/": {
 	"r56_modifiers_l_english.yml": ["localisation/english/",
 					  "r56_modifiers_l_english.yml"]

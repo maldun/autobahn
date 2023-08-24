@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import rt56_patches
+from Hoi4Converter.parser import parse_grammar as code2obj
+from Hoi4Converter.converter import *
+from Hoi4Converter.mappings import *
+import Hoi4Converter
 import os
 import sys
 import pandas as pd
@@ -9,18 +14,13 @@ import copy
 HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
 
-import Hoi4Converter
-from Hoi4Converter.mappings import *
-from Hoi4Converter.converter import *
-from Hoi4Converter.parser import parse_grammar as code2obj
-import rt56_patches
 
 TECHNOLOGY_PATH = "common/technologies"
 EQUIPMENT_PATH = "common/units/equipment"
 AI_KEY = "ai_will_do"
 TECHNOLOGY_KEY = "technologies"
 SUB_TECH_KEY = 'sub_technologies'
-EMPTY_SEARCH = ([],[])
+EMPTY_SEARCH = ([], [])
 ALLOW_KEY = "allow"
 
 
@@ -30,14 +30,21 @@ def replace_string(str1, str2, out_dir):
             fname = os.path.join(out_dir, subdir, file)
             if '~' in fname:
                 continue
-            with open(fname, 'r+', encoding='utf-8') as fp:
-                txt = fp.read()
-                fp.seek(0)
-                fp.write(txt.replace(str1, str2))
+            try:
+                with open(fname, 'r+', encoding='utf-8') as fp:
+                    txt = fp.read()
+                    fp.seek(0)
+                    fp.write(txt.replace(str1, str2))
+            except UnicodeDecodeError:
+                with open(fname, 'r+', encoding='latin-1') as fp:
+                    txt = fp.read()
+                    fp.seek(0)
+                    fp.write(txt.replace(str1, str2))
 
 ###############################################################################
 # Copy Files                                                                 #
 ##############################################################################
+
 
 def copy_json(json_file, rt56_path, out_path):
     with open(json_file, 'r') as fp:
@@ -53,11 +60,12 @@ def copy_json(json_file, rt56_path, out_path):
             elif len(out_list) == 2:
                 out_file = os.path.join(out_path, out_list[0], out_list[-1])
             else:
-                import pdb; pdb.set_trace()
+                import pdb
+                pdb.set_trace()
             os.makedirs(os.path.split(out_file)[0], exist_ok=True)
             shutil.copy2(in_file, out_file)
 
-            
+
 def copy_files(fname):
     def cdecorator(func):
         def new_func(rt56_path, out_path, *args, **kwargs):
@@ -70,6 +78,7 @@ def copy_files(fname):
 @copy_files("rt56_copy_infantry.json")
 def update_infantry(rt56_path, out_path):
     pass
+
 
 @copy_files("rt56_copy_air.json")
 def update_air(rt56_path, out_path):
@@ -112,7 +121,7 @@ def copy_update(rt56_path, out_path):
 def get_obj_and_tech_map(file):
     obj = paradox2list(file)
     # Get techs
-    inds = [0,1]
+    inds = [0, 1]
     techs = get_object_from_inds(obj, inds)
     tech_map = {tech[0]: k for k, tech in enumerate(techs)}
     return obj, tech_map, techs
@@ -131,14 +140,15 @@ class CarryOverAISettings:
         org_obj, org_tech_map, org_techs = get_obj_and_tech_map(mod_file)
         r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(r56_file)
         if mod_file.endswith('infantry.txt'):
-            import pdb; pdb.set_trace()
+            import pdb
+            pdb.set_trace()
         # get ai settings from main mod
         for tech_key, ind in org_tech_map.items():
-            
+
             found, inds = has_key.search(org_techs[ind], AI_KEY)
             mapping = [[has_key, AI_KEY], [replace, [found]]]
             tech_r56 = r56_techs[r56_tech_map[tech_key]]
-        
+
             r56_techs[r56_tech_map[tech_key]] = apply_map(tech_r56, mapping)
 
         return org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs
@@ -146,10 +156,10 @@ class CarryOverAISettings:
     def __call__(self, mod_path, out_path, *args, **kwargs):
         self.org_file = os.path.join(mod_path, self.filename)
         self.out_file = os.path.join(out_path, self.filename)
-            
+
         (self.org_obj, self.org_tech_map, self.org_techs,
          self.r56_obj, self.r56_tech_map, r56_techs) = \
-             self._carry_over_ai_settings(self.org_file, self.out_file)
+            self._carry_over_ai_settings(self.org_file, self.out_file)
 
         result = self.post_steps(r56_techs, *args, **kwargs)
         if result is None:
@@ -162,7 +172,7 @@ class CarryOverAISettings:
             fp.write(list2paradox(new_obj))
         return
 
-    
+
 def carry_over_ai_settings(filename):
     def carry_over_dec(method):
         carry_obj = CarryOverAISettings(filename, method)
@@ -192,14 +202,16 @@ def patch_nonMTG_navy(mod_path, r56_path, out_path):
                 mapping = [[has_key, AI_KEY], [replace, [found]]]
                 sm_tech_key = esm + tech_key[len(adv):]
                 sm_tech = r56_techs[self.r56_tech_map[sm_tech_key]]
-                r56_techs[self.r56_tech_map[sm_tech_key]] = apply_map(sm_tech, mapping)
+                r56_techs[self.r56_tech_map[sm_tech_key]
+                          ] = apply_map(sm_tech, mapping)
         return r56_techs
     navy_post(mod_path, out_path)
 
-    
+
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "artillery.txt"))
 def patch_artillery(self, r56_techs):
-    mapping = [[has_key_and_val, ["has_war_with", ["USA"]]], [replace, ["has_war_with", ["GER"]]]]
+    mapping = [[has_key_and_val, ["has_war_with", ["USA"]]],
+               [replace, ["has_war_with", ["GER"]]]]
     r56_techs = apply_map(r56_techs, mapping)
     return r56_techs
 
@@ -211,7 +223,7 @@ def patch_object(r56_obj, org_code, patched_code):
         mapping = [[has_key_and_val, key_val], [replace, key_val_replace]]
     else:
         mapping = [[has_key_and_val, key_val], [remove, key_val]]
-        
+
     r56_obj = apply_map(r56_obj, mapping)
     return r56_obj
 
@@ -221,7 +233,7 @@ def patch_tech_code(out_file, org_code, patched_code):
     r56_obj = patch_object(r56_obj, org_code, patched_code)
     with open(out_file, 'w') as fp:
         fp.write(list2paradox(r56_obj))
-    
+
 
 def patch_rt56_vehicles(mod_path, out_path):
     vehicle_file = os.path.join(TECHNOLOGY_PATH, "r56_vechicles.txt")
@@ -239,6 +251,7 @@ def patch_rt56_vehicles(mod_path, out_path):
     patch5 = rt56_patches.vehicle_patch5
     patch_tech_code(out_file, snippet5, patch5)
     patch_tech_code(out_file, snippet5.replace("2", "5"), patch5)
+
 
 def multi_patch(obj, snippets, patches):
     for snippet, patch in zip(snippets, patches):
@@ -258,6 +271,7 @@ def patch_mtg_navy(out_path):
         fp.write(list2paradox(new_obj))
     return
 
+
 def patch_mtg_support(out_path):
     navy_file = os.path.join(TECHNOLOGY_PATH, "MTG_naval_Support.txt")
     out_file = os.path.join(out_path, navy_file)
@@ -270,7 +284,7 @@ def patch_mtg_support(out_path):
         fp.write(list2paradox(new_obj))
     return
 
-    
+
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "air_techs.txt"))
 def patch_air(self, r56_techs):
     snippets = rt56_patches.air_snippets
@@ -278,12 +292,14 @@ def patch_air(self, r56_techs):
     r56_techs = multi_patch(r56_techs, snippets, patches)
     return r56_techs
 
+
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "armor.txt"))
 def patch_armor(self, r56_techs):
     snippets = rt56_patches.tank_snippets
     patches = rt56_patches.tank_patches
     r56_techs = multi_patch(r56_techs, snippets, patches)
     return r56_techs
+
 
 @carry_over_ai_settings(os.path.join(TECHNOLOGY_PATH, "bba_air_techs.txt"))
 def patch_bba_air(self, r56_techs):
@@ -325,10 +341,11 @@ def patch_electrical_engineering(mod_path, out_path):
     with open(out_file, 'w') as fp:
         fp.write(txt)
 
+
 def patch_industry(mod_path, out_path):
     industry_file = os.path.join(TECHNOLOGY_PATH, "industry.txt")
     out_file = os.path.join(out_path, industry_file)
-    
+
     r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(out_file)
     snippets = rt56_patches.industry_snippets
     patches = rt56_patches.industry_patches
@@ -339,6 +356,7 @@ def patch_industry(mod_path, out_path):
         fp.write(list2paradox(new_obj))
     return
 
+
 def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     patch_air(mod_path, out_path)
     patch_artillery(mod_path, out_path)
@@ -347,7 +365,7 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     patch_infantry(mod_path, r56_path, out_path, KX)
     patch_industry(mod_path, out_path)
     patch_rt56_vehicles(mod_path, out_path)
-    
+
     # Use KR tech for these
     patch_bba_air(kr_path, out_path)
     patch_nonMTG_navy(kr_path, r56_path, out_path)
@@ -355,7 +373,7 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     # Custom AI settings
     patch_mtg_navy(out_path)
     patch_mtg_support(out_path)
-    
+
     # No operations necessary:
     # NSB armor
     # infantry extra tech
@@ -373,6 +391,7 @@ def patch_code(out_file, org_code, patched_code):
     with open(out_file, 'w') as fp:
         fp.write(list2paradox(r56_obj))
 
+
 def patch_missing_BUL_idea(out_path):
     snippet = rt56_patches.BUL_army_restrictions_snippet
     patch = rt56_patches.BUL_army_restrictions_patch
@@ -383,6 +402,7 @@ def patch_missing_BUL_idea(out_path):
                 txt = fp.read()
             if "BUL_army_restrictions" in txt:
                 patch_code(current_file, snippet, patch)
+
 
 def patch_missing_mtg_naval_subtechs(mod_path, out_path):
     navy_file = os.path.join(TECHNOLOGY_PATH, "MTG_naval.txt")
@@ -398,7 +418,7 @@ def patch_missing_mtg_naval_subtechs(mod_path, out_path):
         if found != EMPTY_SEARCH:
             sub_index = found[1][0][1]
             del r56_obj[0][1][index][1][sub_index]
-            
+
     has_sub_techs = {}
     for tech, index in mod_tech_map.items():
         tech_obj = mod_techs[index]
@@ -416,9 +436,10 @@ def patch_missing_mtg_naval_subtechs(mod_path, out_path):
             sub_index = r56_tech_map[subtech]
             r56_sub_tech = r56_obj[0][1][sub_index]
             obj_to_remove = code2obj("allow = { always = no }")[0]
-            r56_sub_tech = apply_map(r56_sub_tech, [[has_key_and_val,obj_to_remove], [remove,obj_to_remove]])
+            r56_sub_tech = apply_map(
+                r56_sub_tech, [[has_key_and_val, obj_to_remove], [remove, obj_to_remove]])
             r56_obj[0][1][sub_index] = r56_sub_tech
-            
+
     with open(out_file, 'w') as fp:
         fp.write(list2paradox(r56_obj))
 

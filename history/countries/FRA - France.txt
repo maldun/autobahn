@@ -248,6 +248,11 @@ country_event = {
     
 }
 country_event = {
+    id = comfrance.1002
+    days = 200
+    
+}
+country_event = {
     id = uob.363
     days = 345
     

@@ -195,7 +195,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
     name = "Salvador T. Roig"
-    portrait_path = "gfx/leaders/Generic/Portrait_South_America_Generic_land_new_1.png"
+    portrait_path = "gfx/leaders/PRI/Portrait_PRI_Salvador_Roig.png"
     traits = {
         infantry_officer
         

@@ -23,6 +23,9 @@
     "localisation/english/replace/": {
 	"r56_modifiers_l_english.yml": ["localisation/english/",
 					  "r56_modifiers_l_english.yml"]
+    },
+    "gfx/interface/buildings/": {
+        "r56_building_icon_strip.dds": []
     }
 }
     

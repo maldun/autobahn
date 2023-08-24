@@ -24,7 +24,7 @@ KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426
 RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/1956_beta/"
 
 # Set for mod in question
-KX = True
+KX = False
 
 AUTOBAHN_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn"
 AUTOBAHN_KX_FOLDER = HOME + \
@@ -38,6 +38,21 @@ INTERFACE_PATH = "interface"
 
 NAME = 'name'
 TEXTURE = "texturefile"
+
+FILE_FILTER = {"KX_goals_shine.gfx",
+               "KR_goals_shine.gfx",
+               "ministers.gfx",
+               "KR_HOTB_goals_shine.gfx",
+               "KRR_goals_shine.gfx",
+               "FA_goals_shine.gfx",
+               "KXG_goals_shine.gfx",
+               "r56_goals_shine.gfx",
+               "r56_chinese_gui.gfx",
+               "aces.gfx",
+               "medals.gfx",
+               "r56_goals_shine.gfx",
+               "KR_goals_shine.gfx"
+               }
 
 
 def get_gfx_info(item):
@@ -83,7 +98,9 @@ def create_gfx_dict_from_file(root, name):
 
 def create_gfx_dict(folder):
     for root, dirs, files in os.walk(folder):
-        files_filt = [name for name in files if name.endswith('.gfx')]
+        files_filt = [name for name in files if name.endswith(
+            '.gfx') and name not in FILE_FILTER]
+
         def hlper(name): return create_gfx_dict_from_file(root, name)
         result = map(hlper, files_filt)
 
@@ -95,7 +112,9 @@ def create_gfx_dict(folder):
 
 def write_jsons(folder, out_folder):
     for root, dirs, files in os.walk(folder):
-        files_filt = [name for name in files if name.endswith('.gfx')]
+        files_filt = [name for name in files if name.endswith(
+            '.gfx') and name not in FILE_FILTER]
+
         def hlper(name): return create_gfx_dict_from_file(root, name)
         for name in files_filt:
             out_name = name[:-len('.gfx')] + '.json'

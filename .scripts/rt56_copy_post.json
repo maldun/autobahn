@@ -1,7 +1,8 @@
 {
     "interface/": {
         "countrytechtreeview.gui": [],
-        "equipmentdesignermoduleicons.gfx": []
+        "equipmentdesignermoduleicons.gfx": [],
+        "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"]
     },
     "common/continuous_focus/": {
         "generic.txt": []
@@ -17,9 +18,15 @@
         "air_upgrades.txt": [],
         "r56e_upgrades.txt": []
     },
+    "localisation/english/": {
+	"research_l_english.yml": []
+    },
     "localisation/english/replace/": {
 	"r56_modifiers_l_english.yml": ["localisation/english/",
 					  "r56_modifiers_l_english.yml"]
+    },
+    "gfx/interface/buildings/": {
+        "r56_building_icon_strip.dds": []
     }
 }
     

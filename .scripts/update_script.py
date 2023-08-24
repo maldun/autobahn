@@ -16,7 +16,7 @@ KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695
 KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426030/"
 #RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
 RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/1956_beta/"
-
+2
 # Set for mod in question
 
 KX = False
@@ -335,9 +335,10 @@ def update_chinese_army_reform(file="China_decisions.txt"):
 if __name__ == "__main__":
     os.makedirs(OUT_FOLDER, exist_ok=True)
     # update rt56 techs
-    #update_keys = [key for key in rt56_update.__dict__.keys() if key.startswith("update_")]
-    # for func in update_keys:
-    #    rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
+    update_keys = [key for key in rt56_update.__dict__.keys()
+                   if key.startswith("update_")]
+    for func in update_keys:
+        rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
 
     rt56_update.copy_update(RT56_FOLDER, OUT_FOLDER)
     # some simple post hacks

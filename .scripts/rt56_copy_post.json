@@ -1,7 +1,8 @@
 {
     "interface/": {
         "countrytechtreeview.gui": [],
-        "equipmentdesignermoduleicons.gfx": []
+        "equipmentdesignermoduleicons.gfx": [],
+        "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"]
     },
     "common/continuous_focus/": {
         "generic.txt": []

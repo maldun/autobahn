@@ -207,6 +207,7 @@ country_event = {
     days = 2315
     
 }
+add_civil_war_target = ARG
 add_ideas = {
     partial_economic_mobilisation
     limited_conscription

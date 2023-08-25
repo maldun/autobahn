@@ -129,9 +129,16 @@ XSM_ma_lin = {
     }
     
 }
-XSM_ma_hongbin = {
+XSM_ma_hongkui = {
     set_variable = {
         china_alignment = token:zhili
+        
+    }
+    
+}
+XSM_ma_hongbin = {
+    set_variable = {
+        china_alignment = token:chinese_republican
         
     }
     

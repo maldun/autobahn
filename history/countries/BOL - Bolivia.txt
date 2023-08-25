@@ -123,6 +123,7 @@ recruit_character = BOL_carlos_salazar_mostajo
 recruit_character = BOL_angel_ayora
 recruit_character = BOL_gualberto_villarroel_lopez
 recruit_character = BOL_manuel_marzana
+recruit_character = BOL_sinforiano_bilbao_rioja
 recruit_character = BOL_walter_guevara
 recruit_character = BOL_carlos_montenegro
 recruit_character = BOL_moritz_hochschild

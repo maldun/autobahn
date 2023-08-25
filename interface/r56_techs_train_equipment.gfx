@@ -136,7 +136,7 @@ spriteTypes = {
     }
     SpriteType = {
         name = "GFX_GER_train_equipment_2_medium"
-        texturefile = "gfx/interface/teWhnologies/GER_train_equipment_2.dds"
+        texturefile = "gfx/interface/technologies/GER_train_equipment_2.dds"
         
     }
     SpriteType = {
@@ -216,12 +216,12 @@ spriteTypes = {
     }
     SpriteType = {
         name = "GFX_RUS_train_equipment_1_medium"
-        texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
+        texturefile = "gfx/interface/technologies/RUS_train_equipment_1.dds"
         
     }
     SpriteType = {
         name = "GFX_RUS_train_equipment_2_medium"
-        texturefile = "gfx/interface/technologies/SOV_train_equipment_2.dds"
+        texturefile = "gfx/interface/technologies/RUS_train_equipment_2.dds"
         
     }
     SpriteType = {
@@ -241,7 +241,7 @@ spriteTypes = {
     }
     SpriteType = {
         name = "GFX_TUR_train_equipment_1_medium"
-        texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
+        texturefile = "gfx/interface/technologies/RUS_train_equipment_1.dds"
         
     }
     SpriteType = {
@@ -282,16 +282,6 @@ spriteTypes = {
     SpriteType = {
         name = "GFX_YUG_train_equipment_5_medium"
         texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_train_equipment_diesel_eu.dds"
-        
-    }
-    SpriteType = {
-        name = "GFX_IMP_train_equipment_2_medium"
-        texturefile = "gfx/interface/technologies/USA_train_equipment_2.dds"
-        
-    }
-    SpriteType = {
-        name = "GFX_IMP_train_equipment_4_medium"
-        texturefile = "gfx/interface/technologies/r56_vechicles/tech_train_equipment_5_usa.dds"
         
     }
     

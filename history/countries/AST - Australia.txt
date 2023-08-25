@@ -299,6 +299,7 @@ AST_thomas_fannell = {
     retire = yes
     
 }
+CAN_add_starting_variants = yes
 if = {
     limit = {
         has_dlc_lar = yes

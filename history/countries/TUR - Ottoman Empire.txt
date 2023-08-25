@@ -117,6 +117,339 @@ if = {
     }
     
 }
+773 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+341 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+340 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+356 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+339 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+342 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+343 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+346 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+49 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+344 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+585 = {
+    ott_set_revolt_risk_medium = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+1001 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+1000 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+355 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+345 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+350 = {
+    ott_set_revolt_risk_medium = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+352 = {
+    ott_set_revolt_risk_medium = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+349 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+354 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+164 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+554 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+553 = {
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+677 = {
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+680 = {
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+455 = {
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+453 = {
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+754 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+679 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+676 = {
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+819 = {
+    ott_set_revolt_risk_medium = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+291 = {
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+812 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+187 = {
+    ott_set_revolt_risk_medium = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+183 = {
+    ott_set_revolt_risk_medium = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+995 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+992 = {
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+454 = {
+    ott_set_revolt_risk_high = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+184 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+1089 = {
+    set_state_flag = ott_ottomanist
+    ott_set_revolt_risk_medium = yes
+    ott_set_authority_vilayet_high = yes
+    
+}
+448 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+273 = {
+    ott_set_revolt_risk_high = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+450 = {
+    ott_set_revolt_risk_none = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+907 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+993 = {
+    ott_set_revolt_risk_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+658 = {
+    ott_set_revolt_risk_very_low = yes
+    ott_set_authority_vilayet_low = yes
+    
+}
+230 = {
+    ott_set_revolt_risk_very_high = yes
+    ott_set_authority_vilayet_medium = yes
+    
+}
+451 = {
+    ott_set_authority_vilayet_low = yes
+    ott_set_revolt_risk_very_high = yes
+    
+}
+663 = {
+    ott_set_authority_vilayet_low = yes
+    ott_set_revolt_risk_very_high = yes
+    
+}
+1009 = {
+    ott_set_authority_vilayet_low = yes
+    ott_set_revolt_risk_very_high = yes
+    
+}
+164 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+183 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+187 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+230 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+273 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+291 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+448 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+450 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+451 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+455 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+554 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+663 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+677 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+679 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+754 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+992 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+995 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
+1009 = {
+    set_state_flag = ott_unique_rebellion_event
+    
+}
 set_variable = {
     var = representatives_support
     value = 0
@@ -148,13 +481,8 @@ set_variable = {
     
 }
 set_variable = {
-    var = nat_deputies
-    value = 133
-    
-}
-set_variable = {
-    var = ind_deputies
-    value = 25
+    var = con_sup_deputies
+    value = 55
     
 }
 set_variable = {
@@ -168,11 +496,6 @@ set_variable = {
     
 }
 set_variable = {
-    var = nat_ara_opp_deputies
-    value = 86
-    
-}
-set_variable = {
     var = nat_tur_deputies
     value = 47
     
@@ -183,28 +506,13 @@ set_variable = {
     
 }
 set_variable = {
-    var = nat_tur_opp_deputies
-    value = 47
-    
-}
-set_variable = {
-    var = con_sup_deputies
-    value = 55
-    
-}
-set_variable = {
-    var = con_opp_deputies
-    value = 50
+    var = ind_deputies
+    value = 25
     
 }
 set_variable = {
     var = ind_sup_deputies
     value = 0
-    
-}
-set_variable = {
-    var = ind_opp_deputies
-    value = 25
     
 }
 set_variable = {
@@ -476,6 +784,12 @@ add_ideas = {
     ott_armed_neutrality
     
 }
+add_dynamic_modifier = {
+    modifier = vilayet_stability_dynamic_modifier
+    
+}
+ott_evaluate_stabillity_modifier = yes
+OTT_evaluate_centralisation = yes
 set_variable = {
     var = syr_integration_factor
     value = 25

@@ -39,6 +39,20 @@ INTERFACE_PATH = "interface"
 NAME = 'name'
 TEXTURE = "texturefile"
 
+FILE_FILTER = {"KX_goals_shine.gfx",
+               "KR_goals_shine.gfx",
+               "ministers.gfx",
+               "KR_HOTB_goals_shine.gfx",
+               "KRR_goals_shine.gfx",
+               "FA_goals_shine.gfx",
+               "KXG_goals_shine.gfx",
+               "r56_goals_shine.gfx",
+               "r56_chinese_gui.gfx",
+               "aces.gfx",
+               "medals.gfx",
+               "r56_goals_shine.gfx"
+               }
+
 
 def get_gfx_info(item):
     info, inds = has_key(item, NAME)
@@ -83,7 +97,9 @@ def create_gfx_dict_from_file(root, name):
 
 def create_gfx_dict(folder):
     for root, dirs, files in os.walk(folder):
-        files_filt = [name for name in files if name.endswith('.gfx')]
+        files_filt = [name for name in files if name.endswith(
+            '.gfx') and name not in FILE_FILTER]
+
         def hlper(name): return create_gfx_dict_from_file(root, name)
         result = map(hlper, files_filt)
 
@@ -95,7 +111,9 @@ def create_gfx_dict(folder):
 
 def write_jsons(folder, out_folder):
     for root, dirs, files in os.walk(folder):
-        files_filt = [name for name in files if name.endswith('.gfx')]
+        files_filt = [name for name in files if name.endswith(
+            '.gfx') and name not in FILE_FILTER]
+
         def hlper(name): return create_gfx_dict_from_file(root, name)
         for name in files_filt:
             out_name = name[:-len('.gfx')] + '.json'
@@ -136,13 +154,15 @@ def create_collection_dict(json_folder):
     return main_dic
 
 
-def create_new_gfx_dict(out_folder, main_mod_jsons, r56_jsons):
+def create_new_gfx_dict(out_folder, mod_jsons, main_mod_jsons, r56_jsons):
     main_mod_dic = create_collection_dict(main_mod_jsons)
     r56_dic = create_collection_dict(r56_jsons)
+    mod_dic = create_collection_dict(mod_jsons)
 
     main_keys = set(main_mod_dic.keys())
     r56_keys = set(r56_dic.keys())
     keys = r56_keys.difference(main_keys)
+    keys = keys.intersection(mod_dic.keys())
 
     copy_dict = {key: r56_dic[key] for key in keys}
 
@@ -233,6 +253,7 @@ if __name__ == "__main__":
     write_jsons(mod1, json_out)
     write_jsons(mod2, json_out_org)
     write_jsons(mod3, json_out_r56)
-    copy_dict = create_new_gfx_dict(OUT_FOLDER, json_out_org, json_out_r56)
+    copy_dict = create_new_gfx_dict(
+        OUT_FOLDER, json_out, json_out_org, json_out_r56)
     create_new_gfx_files(OUT_FOLDER, RT56_FOLDER, mod3, copy_dict)
     copy_gfx(RT56_FOLDER, copy_dict, OUT_FOLDER)

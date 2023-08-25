@@ -575,10 +575,6 @@ SAF_christoffel_venter = {
     set_character_flag = SAF_boer_character
     
 }
-SAF_union_defence_council = {
-    set_character_flag = SAF_boer_character
-    
-}
 SAF_william_henry_andrews = {
     set_character_flag = SAF_socialist_character
     

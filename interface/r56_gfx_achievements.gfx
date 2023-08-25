@@ -1,0 +1,88 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_r56_achievements_click_open"
+        texturefile = "gfx/interface/achievements/r56_achievements_click_open.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_achievements_click_close"
+        texturefile = "gfx/interface/achievements/r56_achievements_click_close.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_01"
+        texturefile = "gfx/interface/achievements/r56_achievements_01.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_02"
+        texturefile = "gfx/interface/achievements/r56_achievements_02.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_03"
+        texturefile = "gfx/interface/achievements/r56_achievements_03.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_04"
+        texturefile = "gfx/interface/achievements/r56_achievements_04.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_05"
+        texturefile = "gfx/interface/achievements/r56_achievements_05.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_06"
+        texturefile = "gfx/interface/achievements/r56_achievements_06.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_07"
+        texturefile = "gfx/interface/achievements/r56_achievements_07.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_08"
+        texturefile = "gfx/interface/achievements/r56_achievements_08.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_09"
+        texturefile = "gfx/interface/achievements/r56_achievements_09.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_10"
+        texturefile = "gfx/interface/achievements/r56_achievements_10.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_11"
+        texturefile = "gfx/interface/achievements/r56_achievements_11.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_12"
+        texturefile = "gfx/interface/achievements/r56_achievements_12.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_13"
+        texturefile = "gfx/interface/achievements/r56_achievements_13.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_14"
+        texturefile = "gfx/interface/achievements/r56_achievements_14.dds"
+        
+    }
+    spriteType = {
+        name = "GFX_r56_idea_achievements_15"
+        texturefile = "gfx/interface/achievements/r56_achievements_15.dds"
+        
+    }
+    
+}

@@ -332,11 +332,15 @@ ROM_constantin_tobescu = {
     
 }
 ROOT = {
-    80 = {
+    77 = {
         enable_state_integration_50_compliance = yes
         
     }
     713 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    80 = {
         enable_state_integration_80_compliance = yes
         
     }

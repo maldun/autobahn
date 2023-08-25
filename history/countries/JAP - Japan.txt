@@ -278,6 +278,20 @@ set_variable = {
     }
     
 }
+1099 = {
+    add_dynamic_modifier = {
+        modifier = JAP_korean_military_administration
+        
+    }
+    
+}
+1100 = {
+    add_dynamic_modifier = {
+        modifier = JAP_korean_military_administration
+        
+    }
+    
+}
 recruit_character = JAP_hirohito
 recruit_character = JAP_yasuhito
 recruit_character = JAP_arahata_kanson

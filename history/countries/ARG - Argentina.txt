@@ -305,6 +305,7 @@ set_popularities = {
     national_populist = 19
     
 }
+add_civil_war_target = FOP
 recruit_character = ARG_manuel_carles
 recruit_character = ARG_juan_domingo_peron
 recruit_character = ARG_pedro_pablo_ramirez

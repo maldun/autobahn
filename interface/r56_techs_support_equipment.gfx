@@ -1,10 +1,5 @@
 spriteTypes = {
     SpriteType = {
-        name = "GFX_tech_support_medium"
-        texturefile = "gfx/interface/technologies/infantry/support_equipment/r56_tech_support_equipment_01.dds"
-        
-    }
-    SpriteType = {
         name = "GFX_CHI_tech_support_medium"
         texturefile = "gfx/interface/technologies/infantry/support_equipment/r56_tech_CHI_support_equipment_01.dds"
         
@@ -217,11 +212,6 @@ spriteTypes = {
     SpriteType = {
         name = "GFX_SLV_tech_support_medium"
         texturefile = "gfx/interface/technologies/infantry/support_equipment/r56_tech_YUG_support_equipment_01.dds"
-        
-    }
-    SpriteType = {
-        name = "GFX_IMP_tech_support_medium"
-        texturefile = "gfx/interface/technologies/infantry/support_equipment/r56_tech_ENG_support_equipment_01.dds"
         
     }
     

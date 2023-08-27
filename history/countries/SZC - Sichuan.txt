@@ -42,6 +42,7 @@ add_ideas = {
     SZC_internal_divisions
     SZC_famine_danger
     partial_economic_mobilisation
+    unequal_treaties
     SZC_Liu_Xiang_hog_pau
     SZC_Yang_Hanyu_for_ade
     SZC_Lan_Yaoqu_eco_sco

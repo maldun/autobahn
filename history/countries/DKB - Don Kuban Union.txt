@@ -105,7 +105,6 @@ add_ideas = {
     DKB_Aleksandr_Grabbe_Nikitin_sec_ade
     
 }
-set_country_flag = RUS_can_integrate
 set_research_slots = 3
 set_politics = {
     ruling_party = authoritarian_democrat

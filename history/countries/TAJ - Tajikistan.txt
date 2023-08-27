@@ -10,13 +10,7 @@ set_technology = {
     transport_plane1 = 1
     
 }
-add_ideas = {
-    TAJ_Yevgenij_Mamedov_hog_ade
-    TAJ_Feda_Ronzin_for_sli
-    TAJ_Ilya_Chernyaev_eco_ade
-    TAJ_Mamtun_Kurbanov_sec_sli
-    
-}
+add_ideas = {}
 set_politics = {
     ruling_party = authoritarian_democrat
     last_election = "1930.11.9"

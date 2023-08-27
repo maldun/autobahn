@@ -63,6 +63,7 @@ add_ideas = {
     SIK_Jin_Shuzhi_eco_pau
     SIK_Yang_Feixia_sec_pau
     limited_conscription
+    unequal_treaties_lesser
     
 }
 create_country_leader = {

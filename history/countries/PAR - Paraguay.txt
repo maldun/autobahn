@@ -105,7 +105,7 @@ country_event = {
     
 }
 create_country_leader = {
-    name = "Higenio Morinigo Martinez"
+    name = "Higinio Morinigo Martinez"
     picture = "gfx/leaders/PAR/Portrait_Paraguay_Hugenio_Morinigi.png"
     expire = "1965.1.1"
     ideology = militarism_subtype

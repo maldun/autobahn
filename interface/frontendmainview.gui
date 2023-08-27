@@ -321,6 +321,15 @@ guiTypes = {
             }
             
         }
+        positionType = {
+            name = "subscription_size"
+            position = {
+                x = 1100
+                y = 928
+                
+            }
+            
+        }
         containerWindowType = {
             name = "mainmenu_panel_bottom_ghost"
             position = {
@@ -399,6 +408,15 @@ guiTypes = {
             format = centre
             maxWidth = 250
             maxHeight = 20
+            
+        }
+        positionType = {
+            name = "version_label_subscription_position"
+            position = {
+                x = 126
+                y = 344
+                
+            }
             
         }
         ButtonType = {
@@ -615,6 +633,24 @@ guiTypes = {
         origo = center
         positionType = {
             name = "position_without_social_gui"
+            position = {
+                x = 0
+                y = 155
+                
+            }
+            
+        }
+        positionType = {
+            name = "subscription_position"
+            position = {
+                x = 0
+                y = 155
+                
+            }
+            
+        }
+        positionType = {
+            name = "subscription_position_without_social_gui"
             position = {
                 x = 0
                 y = 155

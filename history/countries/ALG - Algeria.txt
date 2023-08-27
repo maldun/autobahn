@@ -96,6 +96,13 @@ create_country_leader = {
     
 }
 create_country_leader = {
+    name = "Moufdi Zakaria"
+    picture = "gfx/leaders/ALG/Portrait_Algeria_Moufdi_Zakaria.png"
+    expire = "1965.1.1"
+    ideology = social_democrat_subtype
+    
+}
+create_country_leader = {
     name = "Mohammed Saleh Bendjelloul"
     picture = "gfx/leaders/ALG/Portrait_Algeria_Mohammed_Saleh_Bendjelloul.png"
     expire = "1965.1.1"

@@ -231,7 +231,7 @@ country_event = {
     days = 4114
     
 }
-set_research_slots = 3
+set_research_slots = 4
 set_convoys = 80
 set_stability = 0.5
 set_war_support = 0.5
@@ -535,7 +535,6 @@ create_corps_commander = {
     name = "J.E.B. Stuart IV"
     portrait_path = "gfx/leaders/COR/Portrait_COR_JEB!.png"
     traits = {
-        hidden_sympathies
         commando
         career_officer
         
@@ -658,7 +657,6 @@ create_corps_commander = {
         trait_reckless
         politically_connected
         winter_expert
-        hidden_sympathies
         
     }
     skill = 3
@@ -692,7 +690,6 @@ create_corps_commander = {
     traits = {
         war_hero
         politically_connected
-        hidden_sympathies
         adaptable
         skilled_staffer
         

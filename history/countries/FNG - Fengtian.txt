@@ -53,6 +53,7 @@ if = {
 }
 set_technology = {
     basic_train = 1
+    irregular_infantry_tech = 1
     infantry_weapons = 1
     infantry_weapons1 = 1
     tech_support = 1
@@ -268,6 +269,7 @@ set_popularities = {
 }
 add_ideas = {
     limited_conscription
+    unequal_treaties_japan
     FNG_Huang_Fu_hog_ade
     FNG_Wu_Jinglian_for_ade
     FNG_Pan_Fu_eco_ade

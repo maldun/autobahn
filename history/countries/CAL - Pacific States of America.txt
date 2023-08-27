@@ -199,7 +199,7 @@ if = {
     }
     
 }
-set_research_slots = 3
+set_research_slots = 4
 set_convoys = 100
 set_stability = 0.5
 set_war_support = 0.5
@@ -355,8 +355,7 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/CAL/Portrait_CAL_lewis_brereton.png"
     traits = {
         career_officer
-        politically_connected
-        infantry_leader
+        air_commander
         
     }
     skill = 2
@@ -444,7 +443,7 @@ create_corps_commander = {
     desc = "CAL_JIMMY_DOOLITTLE_ARMY_DESC"
     portrait_path = "gfx/leaders/CAL/Portrait_CAL_Jimmy_Doolittle.png"
     traits = {
-        politically_connected
+        air_commander
         career_officer
         trickster
         

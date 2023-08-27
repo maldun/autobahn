@@ -270,7 +270,7 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Michael I"
+    name = "Mihai I"
     desc = "POLITICS_MICHAEL_I_DESC"
     picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I.png"
     expire = "1965.1.1"
@@ -282,7 +282,7 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Michael I"
+    name = "Mihai I"
     desc = "POLITICS_MICHAEL_I_DESC"
     picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I.png"
     expire = "1965.1.1"
@@ -294,7 +294,7 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Michael I"
+    name = "Mihai I"
     desc = "POLITICS_MICHAEL_I_DESC"
     picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I.png"
     expire = "1965.1.1"
@@ -306,7 +306,7 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Michael I"
+    name = "Mihai I"
     desc = "POLITICS_MICHAEL_I_DESC"
     picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I.png"
     expire = "1965.1.1"
@@ -318,7 +318,7 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Michael I"
+    name = "Mihai I"
     desc = "POLITICS_MICHAEL_I_DESC"
     picture = "gfx/leaders/ROM/Portrait_ROM_Michael_I.png"
     expire = "1965.1.1"

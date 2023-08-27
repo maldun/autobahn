@@ -190,31 +190,7 @@ add_opinion_modifier = {
     modifier = KR_outraged
     
 }
-set_country_flag = RUS_can_integrate
-set_variable = {
-    rus_core_integration_cost_compliance = 30
-    
-}
-set_variable = {
-    rus_core_integration_time_to_remove = 150
-    
-}
-add_to_array = {
-    RUS_integration_array = TRM
-    
-}
-add_to_array = {
-    RUS_integration_array = MTR
-    
-}
-add_to_array = {
-    RUS_integration_array = TTR
-    
-}
-add_to_array = {
-    RUS_integration_array = YAK
-    
-}
+RUS_enable_integration = yes
 set_country_flag = PORTRAIT_PICKER_ACTIVE
 set_convoys = 60
 set_stability = 0.4
@@ -362,7 +338,11 @@ create_country_leader = {
     picture = "gfx/leaders/RUS/Portrait_RUS_Maria_Spiridonova.png"
     expire = "1965.1.1"
     ideology = anarcho_syndicalist_subtype
-    traits = {}
+    female = yes
+    traits = {
+        RUS_valkrye_of_revolution
+        
+    }
     
 }
 create_country_leader = {

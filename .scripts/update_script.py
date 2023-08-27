@@ -303,6 +303,7 @@ def filter_spirits(fname, keys):
             else:
                 import pdb
                 pdb.set_trace()
+                continue
 
             missing += o1
 

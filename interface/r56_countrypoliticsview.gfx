@@ -149,5 +149,10 @@ spriteTypes = {
         textureFile = "gfx/interface/ideologies/colonial_govt_group.dds"
         
     }
+    spriteType = {
+		name = "GFX_idea_categories"
+		texturefile = "gfx/interface/idea_categories.dds"
+		noOfFrames = 8
+	}
     
 }

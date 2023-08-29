@@ -27,8 +27,7 @@ idea_categories = {
 		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
-		cost = 100
-		removal_cost = 0
+		removal_cost = -1
 
 		ledger = civilian
 	}
@@ -58,11 +57,11 @@ idea_categories = {
 	
 	military_staff_characters = {
 		character_slot = army_chief 
+		character_slot = army_chief 
+		character_slot = navy_chief 
 		character_slot = navy_chief 
 		character_slot = air_chief
-		character_slot = high_command
-		character_slot = high_command
-		character_slot = high_command
+		character_slot = air_chief
 
 		ledger = invalid # must be overridden
 

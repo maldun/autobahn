@@ -1,9 +1,8 @@
 ideas = {
-    army_spirit = {
-        ideological_loyalty_spirit_KR = {
-            name = ideological_loyalty_spirit
+    academy_spirit = {
+        KR_whampoa_academy_spirit = {
             on_add = {
-                log = "[GetDateText]: [Root.GetName]: add idea ideological_loyalty_spirit"
+                log = "[GetDateText]: [Root.GetName]: add idea KR_whampoa_academy_spirit"
                 
             }
             ledger = army
@@ -13,30 +12,46 @@ ideas = {
             }
             visible = {
                 OR = {
-                    has_socialist_government = yes
-                    has_government = national_populist
+                    is_ruled_by_left_kmt = yes
+                    is_ruled_by_right_kmt = yes
+                    
+                }
+                
+            }
+            available = {
+                if = {
+                    limit = {
+                        tag = CHI
+                        
+                    }
+                    has_completed_focus = CHI_reopen_whampoa
+                    
+                }
+                else_if = {
+                    limit = {
+                        tag = GXC
+                        
+                    }
+                    OR = {
+                        has_completed_focus = GXC_reopen_whampoa
+                        has_completed_focus = GXC_renovate_whampoa
+                        
+                    }
                     
                 }
                 
             }
             modifier = {
-                pocket_penalty = -0.2
-                weekly_manpower = 500
+                military_leader_cost_factor = 1
+                party_popularity_stability_factor = 0.25
+                trait_commando_xp_gain_factor = 0.15
+                trait_trickster_xp_gain_factor = 0.15
+                trait_infantry_leader_xp_gain_factor = 0.15
+                custom_modifier_tooltip = KR_whampoa_academy_spirit_tt
                 
             }
             ai_will_do = {
-                factor = 1
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
+                base = 2
                 
             }
             
@@ -44,51 +59,16 @@ ideas = {
         
     }
     division_command_spirit = {
-        decentralised_logistics_spirit = {
+        international_revolution_spirit = {
             ledger = army
+            picture = upbeat_command_spirit
             visible = {
-                has_country_flag = is_chinese_tag
+                is_in_faction_with = INT
                 
             }
             modifier = {
-                supply_combat_penalties_on_core_factor = -0.2
-                supply_node_range = 0.1
-                
-            }
-            ai_will_do = {
-                factor = 2
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        entente_invasion_spirit = {
-            ledger = army
-            picture = long_range_patrol_spirit
-            visible = {
-                is_in_faction_with = ENT
-                
-            }
-            equipment_bonus = {
-                floating_harbor_equipment = {
-                    build_cost_ic = -0.1
-                    instant = yes
-                    
-                }
-                
-            }
-            modifier = {
-                naval_invasion_penalty = -0.25
+                coordination_bonus = 0.05
+                experience_loss_factor = -0.15
                 
             }
             ai_will_do = {
@@ -141,16 +121,51 @@ ideas = {
             }
             
         }
-        international_revolution_spirit = {
+        decentralised_logistics_spirit = {
             ledger = army
-            picture = upbeat_command_spirit
             visible = {
-                is_in_faction_with = INT
+                has_country_flag = is_chinese_tag
                 
             }
             modifier = {
-                coordination_bonus = 0.05
-                experience_loss_factor = -0.15
+                supply_combat_penalties_on_core_factor = -0.2
+                supply_node_range = 0.1
+                
+            }
+            ai_will_do = {
+                factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        entente_invasion_spirit = {
+            ledger = army
+            picture = long_range_patrol_spirit
+            visible = {
+                is_in_faction_with = ENT
+                
+            }
+            equipment_bonus = {
+                floating_harbor_equipment = {
+                    build_cost_ic = -0.1
+                    instant = yes
+                    
+                }
+                
+            }
+            modifier = {
+                naval_invasion_penalty = -0.25
                 
             }
             ai_will_do = {

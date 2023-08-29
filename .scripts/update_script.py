@@ -71,6 +71,10 @@ for kx_file, kr_file in KR_SPIRIT_MAP.items():
     KR_SPIRIT_KEYS[kr_file] = SPIRIT_KEYS[kx_file]
     KR_TECH_CRITS[kr_file] = TECH_CRITS[kx_file]
 
+KX_SPIRIT_FILTER = {"ideological_loyalty_spirit_KR"}
+KR_SPIRIT_FILTER = {}
+SPIRIT_FILTER = KX_SPIRIT_FILTER if KX is True else KR_SPIRIT_FILTER
+
 rt56_techs = {
     "etax_doctrine",   # special research division
     "camo",            # Camouflagetech
@@ -294,6 +298,7 @@ def filter_spirits(fname, keys):
             skeys[k] = {o[0] for o in spirits[1]}
 
         diff = skeys[1].difference(skeys[0])
+        diff = {d for d in diff if d not in SPIRIT_FILTER}
         missing = []
         for dkey in diff:
             o1, inds = has_key(obj2, dkey)
@@ -302,8 +307,8 @@ def filter_spirits(fname, keys):
                 o1[0][1] += [tech_crit]
             else:
                 import pdb
-                pdb.set_trace()
-                continue
+                # pdb.set_trace()
+                pass
 
             missing += o1
 

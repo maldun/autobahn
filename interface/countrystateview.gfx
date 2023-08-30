@@ -638,8 +638,8 @@ spriteTypes = {
         
     }
     spriteType = {
-        name = "GFX_modifiers_RUS_invaders_must_die"
-        textureFile = "gfx/interface/state_modifiers/modifiers_RUS_invaders_must_die.dds"
+        name = "GFX_modifiers_SOV_invaders_must_die"
+        textureFile = "gfx/interface/state_modifiers/modifiers_SOV_invaders_must_die.dds"
         
     }
     spriteType = {
@@ -648,13 +648,13 @@ spriteTypes = {
         
     }
     spriteType = {
-        name = "GFX_modifiers_RUS_armored_battery"
-        textureFile = "gfx/interface/state_modifiers/modifiers_RUS_armored_battery.dds"
+        name = "GFX_modifiers_SOV_armored_battery"
+        textureFile = "gfx/interface/state_modifiers/modifiers_SOV_armored_battery.dds"
         
     }
     spriteType = {
-        name = "GFX_modifiers_RUS_defend_moscow"
-        textureFile = "gfx/interface/state_modifiers/modifiers_RUS_defend_moscow.dds"
+        name = "GFX_modifiers_SOV_defend_moscow"
+        textureFile = "gfx/interface/state_modifiers/modifiers_SOV_defend_moscow.dds"
         
     }
     spriteType = {
@@ -673,18 +673,18 @@ spriteTypes = {
         
     }
     spriteType = {
-        name = "GFX_modifiers_RUS_civilian_labor_in_defense"
-        textureFile = "gfx/interface/state_modifiers/modifiers_RUS_civilian_labor_in_defense.dds"
+        name = "GFX_modifiers_SOV_civilian_labor_in_defense"
+        textureFile = "gfx/interface/state_modifiers/modifiers_SOV_civilian_labor_in_defense.dds"
         
     }
     spriteType = {
-        name = "GFX_modifiers_RUS_factory_worker_militias"
-        textureFile = "gfx/interface/state_modifiers/modifiers_RUS_factory_worker_militias.dds"
+        name = "GFX_modifiers_SOV_factory_worker_militias"
+        textureFile = "gfx/interface/state_modifiers/modifiers_SOV_factory_worker_militias.dds"
         
     }
     spriteType = {
-        name = "GFX_modifiers_RUS_capital_of_the_tsars"
-        textureFile = "gfx/interface/state_modifiers/modifiers_RUS_capital_of_the_tsars.dds"
+        name = "GFX_modifiers_SOV_capital_of_the_tsars"
+        textureFile = "gfx/interface/state_modifiers/modifiers_SOV_capital_of_the_tsars.dds"
         
     }
     spriteType = {

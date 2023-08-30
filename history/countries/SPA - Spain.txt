@@ -441,6 +441,7 @@ recruit_character = SPA_leopoldo_saro_marin
 recruit_character = SPA_emilio_barrera_luyando
 recruit_character = SPA_manuel_goded_llopis
 recruit_character = SPA_damaso_berenguer_fuste
+recruit_character = SPA_jose_millan_astray_y_terreros
 recruit_character = SPA_manuel_vierna_belando
 recruit_character = SPA_juan_yague_blanco
 recruit_character = SPA_luis_carrero_blanco

@@ -86,12 +86,12 @@ def path_idea_tags(kx_path, out_folder):
     new_item = obj[0][1][:main_id] + [to_insert] + obj[0][1][main_id:]
     obj[0][1] = new_item
 
-    item, inds = has_key.search(obj, "slot_ledgers")
-    _, inds2 = has_key.search(obj, "theorist")
-    main_ind = inds2[0][-1]
-    new_item = obj[1][1][:main_ind] + \
-        [["high_command", ['invalid']]] + obj[1][1][main_ind:]
-    obj[1][1] = new_item
+    #item, inds = has_key.search(obj, "slot_ledgers")
+    #_, inds2 = has_key.search(obj, "theorist")
+    #main_ind = inds2[0][-1]
+    # new_item = obj[1][1][:main_ind] + \
+    #    [["high_command", ['invalid']]] + obj[1][1][main_ind:]
+    #obj[1][1] = new_item
 
     new_code = list2paradox(obj)
     with open(out_file, 'w') as fp:

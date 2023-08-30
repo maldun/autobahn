@@ -83,7 +83,7 @@ def path_idea_tags(kx_path, out_folder):
     """
     to_insert = code2obj(code)
 
-    new_item = obj[0][1][:main_id] + [to_insert] + obj[0][1][main_id:]
+    new_item = obj[0][1][:main_id+1] + to_insert + obj[0][1][main_id+1:]
     obj[0][1] = new_item
 
     item, inds = has_key.search(obj, "slot_ledgers")

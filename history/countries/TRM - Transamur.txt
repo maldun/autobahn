@@ -691,7 +691,7 @@ create_navy_leader = {
 TRM_start_naval_variant = yes
 ROOT = {
     RUS = {
-        enable_coring_at_thirty_compliance = yes
+        enable_coring_at_fifty_compliance = yes
         
     }
     

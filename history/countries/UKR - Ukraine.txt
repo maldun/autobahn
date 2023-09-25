@@ -900,7 +900,6 @@ create_dynamic_country = {
     division_template = {
         name = "Kinnohirskyi Dyvizion"
         division_names_group = UKR_MTN_02
-        is_locked = yes
         regiments = {
             artillery_brigade = {
                 x = 0
@@ -1277,7 +1276,7 @@ create_country_leader = {
     desc = "POLITICS_VOLODYMYR_VYNNYCHENKO_DESC"
     picture = "gfx/leaders/UKR/Portrait_UKR_Volodymyr_Vynnychenko.png"
     expire = "1965.1.1"
-    ideology = socdem_democratic_socialism_subtype
+    ideology = revisionist_marxism_subtype
     
 }
 create_country_leader = {

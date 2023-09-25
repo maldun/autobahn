@@ -110,11 +110,6 @@ country_event = {
     
 }
 country_event = {
-    id = finland.128
-    days = 1609
-    
-}
-country_event = {
     id = finland.129
     days = 1609
     

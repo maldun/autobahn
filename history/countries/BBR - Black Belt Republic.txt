@@ -225,7 +225,7 @@ country_event = {
 create_country_leader = {
     name = "Harry Haywood"
     desc = "BBR_HARRY_HAYWOOD_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/Harry_Haywood.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_Harry_Haywood.png"
     expire = "1965.1.1"
     ideology = william_foster_thought_subtype
     traits = {
@@ -237,7 +237,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Paul Robeson"
     desc = "BBR_PAUL_ROBESON_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/Paul_Robeson.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_Paul_Robeson.png"
     expire = "1965.1.1"
     ideology = de_leonism_subtype
     traits = {
@@ -249,7 +249,7 @@ create_country_leader = {
 create_country_leader = {
     name = "W.E.B. Dubois"
     desc = "BBR_WEB_DUBOIS_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/web_du_bois.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_WEB_Du_Bois.png"
     expire = "1965.1.1"
     ideology = radsoc_left_panafricanism_subtype
     traits = {
@@ -261,18 +261,21 @@ create_country_leader = {
 create_country_leader = {
     name = "A. Philip Randolph"
     desc = "BBR_A_PHILIP_RANDOLPH_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/Asa_Philip_Abbott.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_Asa_Philip_Abbott.png"
     expire = "1965.1.1"
     ideology = social_democrat_subtype
-    traits = {}
+    traits = {
+        hog_reformist_socialist
+        
+    }
     
 }
 create_country_leader = {
     name = "Roy Wilkins"
     desc = "BBR_ROY_WILKINS_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/Roy_Wilkins.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_Roy_Wilkins.png"
     expire = "1965.1.1"
-    ideology = centrist_subtype
+    ideology = soclib_progressive_democracy_subtype
     traits = {
         rabble_rouser
         
@@ -282,7 +285,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Charles Clinton Spaulding"
     desc = "BBR_CHARLES_CLINTON_SPAULDING_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/clinton_c_spaulding.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_Clinton_C_Spaulding.png"
     expire = "1965.1.1"
     ideology = humanistic_capitalism_subtype
     traits = {
@@ -294,7 +297,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Father Divine"
     desc = "BBR_FATHER_DIVINE_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/Father_Divine.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_Father_Divine.png"
     expire = "1965.1.1"
     ideology = christian_democracy_subtype
     traits = {
@@ -306,7 +309,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Charles Young"
     desc = "BBR_CHARLES_YOUNG_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/general_charles_young.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_Charles_Young_Military.png"
     expire = "1965.1.1"
     ideology = authdem_junta_subtype
     traits = {
@@ -318,7 +321,7 @@ create_country_leader = {
 create_country_leader = {
     name = "James R. Stewart"
     desc = "BBR_JAMES_R_STEWART_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/JamesRStewart.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_James_R_Stewart.png"
     expire = "1965.1.1"
     ideology = pataut_right_panafricanism_subtype
     traits = {
@@ -330,7 +333,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Elijah Muhammad"
     desc = "BBR_ELIJAH_MUHAMMAD_POLITICS_DESC"
-    picture = "gfx/leaders/BBR/elijah_muhammad.png"
+    picture = "gfx/leaders/BBR/Portrait_BBR_Elijah_Muhammad.png"
     expire = "1965.1.1"
     ideology = nation_of_islam_subtype
     traits = {
@@ -342,7 +345,7 @@ create_country_leader = {
 create_field_marshal = {
     name = "Charles Young"
     desc = "BBR_CHARLES_YOUNG_ARMY_DESC"
-    portrait_path = "gfx/leaders/BBR/general_charles_young.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Charles_Young_Military.png"
     traits = {
         logistics_wizard
         organizer
@@ -358,7 +361,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
     name = "Henry Ossian Flipper"
-    portrait_path = "gfx/leaders/BBR/Portrait_SNA_Henry_Ossian_Flipper.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Henry_Ossian_Flipper.png"
     traits = {
         career_officer
         cavalry_officer
@@ -374,7 +377,7 @@ create_field_marshal = {
 create_field_marshal = {
     name = "Benjamin O Davis Sr."
     desc = "USA_BENJAMIN_DAVIS_ARMY_DESC"
-    portrait_path = "gfx/leaders/BBR/Portrait_SNA_Benjamin_O_Davis_Sr.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Benjamin_O_Davis_Sr.png"
     traits = {
         career_officer
         politically_connected
@@ -391,7 +394,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
     name = "Benjamin O Davis Jr."
-    portrait_path = "gfx/leaders/BBR/Portrait_SNA_Benjamin_O_Davis_Jr.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Benjamin_O_Davis_Jr.png"
     traits = {
         politically_connected
         career_officer
@@ -407,7 +410,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Henry Johnson"
-    portrait_path = "gfx/leaders/BBR/Portrait_SNA_Henry_Johnson.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Henry_Johnson.png"
     traits = {
         war_hero
         infantry_officer
@@ -423,7 +426,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "John R. Fox"
     desc = "USA_JOHN_R_FOX_ARMY_DESC"
-    portrait_path = "gfx/leaders/BBR/Portrait_SNA_John_R_Fox.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_John_R_Fox.png"
     traits = {
         career_officer
         politically_connected
@@ -442,7 +445,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Jackie Robinson"
-    portrait_path = "gfx/leaders/BBR/Portrait_SNA_Jackie_Robinson.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Jackie_Robinson.png"
     traits = {
         armor_officer
         trait_reckless
@@ -457,8 +460,23 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
+    name = "Jack Johnson"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Jack_Johnson.png"
+    traits = {
+        offensive_doctrine
+        media_personality
+        
+    }
+    skill = 1
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
     name = "Milton Herndon"
-    portrait_path = "gfx/leaders/BBR/Portrait_SNA_Milton_Herndon.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Milton_Herndon.png"
     traits = {
         politically_connected
         
@@ -472,9 +490,23 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Thomas Page"
-    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Thomas_Page.png"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Thomas_Page.png"
     traits = {
         trait_reckless
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+    
+}
+create_corps_commander = {
+    name = "Robert Earl Jones"
+    portrait_path = "gfx/leaders/BBR/Portrait_BBR_Robert_Earl_Jones.png"
+    traits = {
+        media_personality
         
     }
     skill = 1

@@ -137,3 +137,28 @@ create_corps_commander = {
     logistics_skill = 1
     
 }
+if = {
+    limit = {
+        has_dlc = "La Resistance"
+        
+    }
+    create_operative_leader = {
+        name = "Lawrenti Beria"
+        GFX = GFX_Portrait_AZE_Lawrenti_Beria
+        traits = {
+            operative_infiltrator
+            operative_double_agent
+            
+        }
+        bypass_recruitment = no
+        available_to_spy_master = yes
+        nationalities = {
+            AZE
+            GEO
+            RUS
+            
+        }
+        
+    }
+    
+}

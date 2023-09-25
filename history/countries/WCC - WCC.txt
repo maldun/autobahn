@@ -419,6 +419,22 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
+    name = "Guy Henry"
+    portrait_path = "gfx/leaders/UOT/Portrait_UOT_Guy_Henry.png"
+    traits = {
+        career_officer
+        cavalry_officer
+        cavalry_leader
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
     name = "Keith L. Ware"
     portrait_path = "gfx/leaders/AML/Keith_Ware.png"
     traits = {

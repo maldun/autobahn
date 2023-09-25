@@ -189,7 +189,7 @@ set_popularities = {
 create_country_leader = {
     name = "George Patton"
     desc = "POLITICS_PATTON_WARLORD_DESC"
-    picture = "gfx/leaders/ATD/Portrait_George_Patton.png"
+    picture = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
     expire = "1965.1.1"
     ideology = authdem_junta_subtype
     traits = {}
@@ -198,7 +198,7 @@ create_country_leader = {
 create_country_leader = {
     name = "George Patton"
     desc = "POLITICS_PATTON_WARLORD_DESC"
-    picture = "gfx/leaders/ATD/Portrait_George_Patton.png"
+    picture = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
     expire = "1965.1.1"
     ideology = junta_subtype
     traits = {}
@@ -210,7 +210,7 @@ add_ideas = {
 }
 create_field_marshal = {
     name = "George S. Patton"
-    portrait_path = "gfx/leaders/TEX/Portrait_TEX_george_patton.png"
+    portrait_path = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
     traits = {
         trickster
         armor_officer
@@ -245,7 +245,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Frank W. Milburn"
-    portrait_path = "gfx/leaders/ATD/Frank_W_Milburn.png"
+    portrait_path = "gfx/leaders/USA/Portrait_USA_Frank_W_Milburn.png"
     traits = {}
     skill = 3
     attack_skill = 3

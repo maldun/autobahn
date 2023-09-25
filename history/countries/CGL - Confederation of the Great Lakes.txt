@@ -271,7 +271,7 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = corporatocracy_subtype
     traits = {
-        eco_industrialiser
+        eco_father_of_the_assembly_line
         sec_efficient_sociopath
         
     }

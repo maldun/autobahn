@@ -2,6 +2,8 @@ technologies = {
     early_fighter = {
         enable_equipments = {
             fighter_equipment_0
+            CAS_equipment_0
+            nav_bomber_equipment_0
             
         }
         path = {
@@ -40,6 +42,8 @@ technologies = {
     cv_early_fighter = {
         enable_equipments = {
             cv_fighter_equipment_0
+            cv_CAS_equipment_0
+            cv_nav_bomber_equipment_0
             
         }
         path = {

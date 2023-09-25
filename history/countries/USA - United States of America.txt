@@ -560,7 +560,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Huey Long"
     desc = "POLITICS_HUEY_LONG_DESC"
-    picture = "gfx/leaders/USA/Portrait_TEX_Huey_Long.png"
+    picture = "gfx/leaders/TEX/Portrait_TEX_Huey_Long.png"
     expire = "1965.1.1"
     ideology = longism_subtype
     traits = {
@@ -1148,7 +1148,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Frank W. Milburn"
-    portrait_path = "gfx/leaders/ATD/Frank_W_Milburn.png"
+    portrait_path = "gfx/leaders/USA/Portrait_USA_Frank_W_Milburn.png"
     traits = {}
     skill = 3
     attack_skill = 3

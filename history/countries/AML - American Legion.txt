@@ -266,7 +266,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
     name = "George S. Patton"
-    portrait_path = "gfx/leaders/TEX/Portrait_TEX_george_patton.png"
+    portrait_path = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
     traits = {
         trickster
         armor_officer

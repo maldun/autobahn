@@ -99,10 +99,10 @@ add_ideas = {
     POL_german_industry
     POL_austro_german_squabbles
     POL_warsaw_garrison
-    POL_Jan_Stanislaw_Jankowski_hog_sco
-    POL_Eustachy_Sapieha_for_ade
-    POL_Eugeniusz_Czarnowski_eco_mli
-    POL_Karol_Popiel_sec_sco
+    POL_Jozef_Chacinski_hog_sco
+    POL_Jozef_Targowski_for_ade
+    POL_Adam_Chadzynski_eco_sco
+    POL_Aleksander_Kakowski_sec_pau
     
 }
 country_event = {
@@ -128,12 +128,6 @@ country_event = {
     
 }
 country_event = {
-    id = poland.193
-    days = 366
-    random = 2880
-    
-}
-country_event = {
     id = poland.220
     days = 425
     random_days = 25
@@ -145,19 +139,8 @@ country_event = {
     
 }
 country_event = {
-    id = poland.42
-    days = 645
-    random_days = 2
-    
-}
-country_event = {
     id = poland.73
     days = 949
-    
-}
-country_event = {
-    id = poland.75
-    days = 1093
     
 }
 country_event = {
@@ -318,24 +301,6 @@ create_country_leader = {
     
 }
 create_field_marshal = {
-    name = "Józef Piłsudski"
-    portrait_path = "gfx/leaders/POL/Portrait_POL_Jozef_Pilsudski.png"
-    id = 19859
-    traits = {
-        war_hero
-        media_personality
-        offensive_doctrine
-        inspirational_leader
-        
-    }
-    skill = 3
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-    
-}
-create_field_marshal = {
     name = "Tadeusz Rozwadowski"
     portrait_path = "gfx/leaders/POL/Portrait_POL_Tadeusz_Rozwadowski_kr.png"
     id = 19860
@@ -361,23 +326,6 @@ create_field_marshal = {
     skill = 2
     attack_skill = 1
     defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 2
-    
-}
-create_corps_commander = {
-    name = "Konstanty Rokossowski"
-    portrait_path = "gfx/leaders/POL/Portrait_POL_Konstanty_Rokossowski.png"
-    id = 490
-    traits = {
-        brilliant_strategist
-        cavalry_leader
-        cavalry_officer
-        
-    }
-    skill = 3
-    attack_skill = 3
-    defense_skill = 2
     planning_skill = 3
     logistics_skill = 2
     

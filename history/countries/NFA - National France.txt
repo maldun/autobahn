@@ -53,8 +53,6 @@ if = {
 }
 set_technology = {
     basic_train = 1
-    gwtank = 1
-    basic_light_tank = 1
     infantry_weapons = 1
     infantry_weapons1 = 1
     tech_support = 1
@@ -273,6 +271,11 @@ country_event = {
 country_event = {
     id = nfa.411
     days = 599
+    
+}
+country_event = {
+    id = flavorfra.87
+    days = 618
     
 }
 country_event = {

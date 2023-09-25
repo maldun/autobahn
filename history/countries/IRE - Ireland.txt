@@ -127,7 +127,7 @@ set_variable = {
 }
 set_politics = {
     ruling_party = market_liberal
-    last_election = "1932.12.5"
+    last_election = "1932.5.12"
     election_frequency = 60
     elections_allowed = yes
     
@@ -206,6 +206,11 @@ country_event = {
     days = 3644
     
 }
+country_event = {
+    id = ire.374
+    days = 270
+    
+}
 create_country_leader = {
     name = "James Gralton"
     picture = "gfx/leaders/IRE/Portrait_Ireland_James_Gralton.png"
@@ -233,7 +238,7 @@ create_country_leader = {
     desc = "POLITICS_CATHAL_BRUGHA_DESC"
     picture = "gfx/leaders/IRE/Portrait_Ireland_Cathal_Brugha.png"
     expire = "1965.1.1"
-    ideology = social_democrat_subtype
+    ideology = socdem_democratic_socialism_subtype
     
 }
 create_country_leader = {

@@ -59,6 +59,7 @@ add_ideas = {
     unequal_treaties
     
 }
+country_lock_all_division_template = yes
 china_add_poor_army = yes
 recruit_character = SQI_fu_sinian
 recruit_character = SQI_zhang_shulin

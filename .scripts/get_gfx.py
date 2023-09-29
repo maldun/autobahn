@@ -26,6 +26,7 @@ RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/195
 # Set for mod in question
 KX = False
 
+
 AUTOBAHN_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn"
 AUTOBAHN_KX_FOLDER = HOME + \
     ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_KX"

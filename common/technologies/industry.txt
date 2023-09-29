@@ -3227,15 +3227,6 @@ technologies = {
             }
             
         }
-        ai_will_do = {
-            factor = 5
-            modifier = {
-                factor = 2
-                aluminum_mill > 1
-                
-            }
-            
-        }
         ai_research_weights = {
             aluminium = -2.0
             

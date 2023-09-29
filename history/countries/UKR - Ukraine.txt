@@ -301,6 +301,28 @@ country_event = {
     
 }
 country_event = {
+    id = ukraine.92
+    days = 1089
+    
+}
+country_event = {
+    id = ukraine_republican.110
+    days = 1095
+    
+}
+country_event = {
+    id = ukraine_republican.116
+    days = 806
+    random_days = 15
+    
+}
+country_event = {
+    id = ukraine_republican.147
+    days = 1340
+    random_days = 20
+    
+}
+country_event = {
     id = ukraine_lun.23
     days = 730
     
@@ -528,10 +550,6 @@ set_variable = {
     
 }
 ROOT = {
-    73 = {
-        enable_state_integration_80_compliance = yes
-        
-    }
     80 = {
         enable_state_integration_50_compliance = yes
         
@@ -544,7 +562,7 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
-    1088 = {
+    73 = {
         enable_state_integration_80_compliance = yes
         
     }
@@ -556,14 +574,14 @@ ROOT = {
         enable_state_integration_80_compliance = yes
         
     }
+    1088 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     
 }
 add_to_array = {
     UKR_claims_array = 73.id
-    
-}
-add_to_array = {
-    UKR_claims_array = 78.id
     
 }
 add_to_array = {

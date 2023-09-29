@@ -211,6 +211,7 @@ recruit_character = CHI_deng_wenyi
 recruit_character = CHI_su_yu
 recruit_character = CHI_zhang_yunyi
 recruit_character = CHI_nie_rongzhen
+recruit_character = CHI_luo_ronghuan
 recruit_character = CHI_du_yuming
 recruit_character = CHI_dai_anlan
 recruit_character = CHI_chiang_wei_kuo
@@ -712,6 +713,10 @@ CHI_nie_rongzhen = {
     
 }
 CHI_he_zhonghan = {
+    CHI_setup_hide_commander_effect = yes
+    
+}
+CHI_luo_ronghuan = {
     CHI_setup_hide_commander_effect = yes
     
 }

@@ -6,17 +6,17 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_Portrait_ADR_roc_pallares_i_rossell"
-        texturefile = "gfx/leaders/ADR/r56_portrait_ADR_Roc_Pallares_I_Rossell.dds"
+        texturefile = "gfx/leaders/ADR/r56_portrait_ADR_roc_pallares_i_rossell.dds"
         
     }
     spriteType = {
         name = "GFX_Portrait_ADR_miquel_mateu_i_pla"
-        texturefile = "gfx/leaders/ADR/r56_portrait_ADR_Miquel_Mateu_I_Pla.dds"
+        texturefile = "gfx/leaders/ADR/r56_portrait_ADR_miquel_mateu_i_pla.dds"
         
     }
     spriteType = {
         name = "GFX_Portrait_ADR_consell_sindical"
-        texturefile = "gfx/leaders/ADR/r56_portrait_ADR_Consell_Sindical.dds"
+        texturefile = "gfx/leaders/ADR/r56_portrait_ADR_consell_sindical.dds"
         
     }
     spriteType = {
@@ -166,7 +166,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_portrait_kr_generic_america_land_1
-        texturefile = "gfx/leaders/kr_generic/Portrait_america_Generic_land_new_1.dds"
+        texturefile = "gfx/leaders/kr_generic/Portrait_America_Generic_land_1.dds"
         
     }
     spriteType = {
@@ -176,7 +176,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_portrait_kr_generic_america_land_2
-        texturefile = "gfx/leaders/kr_generic/Portrait_america_Generic_land_new_2.dds"
+        texturefile = "gfx/leaders/kr_generic/Portrait_America_Generic_land_2.dds"
         
     }
     spriteType = {
@@ -186,7 +186,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_portrait_kr_generic_america_land_3
-        texturefile = "gfx/leaders/kr_generic/Portrait_america_Generic_land_new_3.dds"
+        texturefile = "gfx/leaders/kr_generic/Portrait_America_Generic_land_3.dds"
         
     }
     spriteType = {
@@ -196,7 +196,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_portrait_kr_generic_america_land_4
-        texturefile = "gfx/leaders/kr_generic/Portrait_america_Generic_land_new_4.dds"
+        texturefile = "gfx/leaders/kr_generic/Portrait_America_Generic_land_4.dds"
         
     }
     spriteType = {
@@ -206,7 +206,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_portrait_kr_generic_america_land_5
-        texturefile = "gfx/leaders/kr_generic/Portrait_america_Generic_land_new_5.dds"
+        texturefile = "gfx/leaders/kr_generic/Portrait_America_Generic_land_5.dds"
         
     }
     spriteType = {
@@ -216,7 +216,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_portrait_kr_generic_america_land_6
-        texturefile = "gfx/leaders/kr_generic/Portrait_america_Generic_land_new_6.dds"
+        texturefile = "gfx/leaders/kr_generic/Portrait_America_Generic_land_6.dds"
         
     }
     spriteType = {
@@ -486,7 +486,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_portrait_kr_generic_india_land_8
-        texturefile = "gfx/leaders/kr_generic/Portrait_India_Generic_new_8.dds"
+        texturefile = "gfx/leaders/kr_generic/Portrait_India_Generic_land_new_8.dds"
         
     }
     spriteType = {
@@ -496,7 +496,7 @@ spriteTypes = {
     }
     spriteType = {
         name = GFX_portrait_kr_generic_india_land_9
-        texturefile = "gfx/leaders/kr_generic/Portrait_India_Generic_new_9.dds"
+        texturefile = "gfx/leaders/kr_generic/Portrait_India_Generic_land_new_9.dds"
         
     }
     spriteType = {
@@ -505,72 +505,72 @@ spriteTypes = {
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_1
+        name = GFX_portrait_kr_generic_SOV_white_land_1
         texturefile = "gfx/leaders/kr_generic/Portrait_Russia_Generic_land_1.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_1_small
+        name = GFX_portrait_kr_generic_SOV_white_land_1_small
         texturefile = "gfx/interface/ideas/idea_europe_generic_land_13.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_2
+        name = GFX_portrait_kr_generic_SOV_white_land_2
         texturefile = "gfx/leaders/kr_generic/Portrait_Russia_Generic_land_2.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_2_small
+        name = GFX_portrait_kr_generic_SOV_white_land_2_small
         texturefile = "gfx/interface/ideas/idea_europe_generic_land_19.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_3
+        name = GFX_portrait_kr_generic_SOV_white_land_3
         texturefile = "gfx/leaders/kr_generic/Portrait_Russia_Generic_land_3.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_3_small
+        name = GFX_portrait_kr_generic_SOV_white_land_3_small
         texturefile = "gfx/interface/ideas/idea_europe_generic_land_5.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_4
+        name = GFX_portrait_kr_generic_SOV_white_land_4
         texturefile = "gfx/leaders/kr_generic/Portrait_Russia_Generic_land_4.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_4_small
+        name = GFX_portrait_kr_generic_SOV_white_land_4_small
         texturefile = "gfx/interface/ideas/generic/advisors/r56_generic_admiral_GER_1.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_5
+        name = GFX_portrait_kr_generic_SOV_white_land_5
         texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_5_small
+        name = GFX_portrait_kr_generic_SOV_white_land_5_small
         texturefile = "gfx/interface/ideas/generic/advisors/r56_generic_admiral_europe_1.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_6
+        name = GFX_portrait_kr_generic_SOV_white_land_6
         texturefile = "gfx/leaders/kr_generic/Portrait_Russia_Generic_land_6.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_6_small
+        name = GFX_portrait_kr_generic_SOV_white_land_6_small
         texturefile = "gfx/interface/ideas/generic/advisors/r56_generic_admiral_europe_2.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_7
+        name = GFX_portrait_kr_generic_SOV_white_land_7
         texturefile = "gfx/leaders/kr_generic/Portrait_Russia_Generic_land_7.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_kr_generic_RUS_white_land_7_small
+        name = GFX_portrait_kr_generic_SOV_white_land_7_small
         texturefile = "gfx/interface/ideas/idea_europe_generic_land_4.dds"
         
     }
@@ -910,33 +910,33 @@ spriteTypes = {
         
     }
     spriteType = {
-        name = GFX_portrait_r56_RUS_white_land_1
+        name = GFX_portrait_r56_SOV_white_land_1
         texturefile = "gfx/leaders/r56_generic/r56_generic_portrait_white_russia_1.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_r56_RUS_white_land_1_small
-        texturefile = "gfx/interface/ideas/idea_RUS_generic_land_7.dds"
+        name = GFX_portrait_r56_SOV_white_land_1_small
+        texturefile = "gfx/interface/ideas/idea_SOV_generic_land_7.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_r56_RUS_white_land_2
+        name = GFX_portrait_r56_SOV_white_land_2
         texturefile = "gfx/leaders/r56_generic/r56_generic_portrait_white_russia_2.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_r56_RUS_white_land_2_small
-        texturefile = "gfx/interface/ideas/idea_RUS_generic_land_8.dds"
+        name = GFX_portrait_r56_SOV_white_land_2_small
+        texturefile = "gfx/interface/ideas/idea_SOV_generic_land_8.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_r56_RUS_white_land_3
+        name = GFX_portrait_r56_SOV_white_land_3
         texturefile = "gfx/leaders/r56_generic/r56_generic_portrait_white_russia_3.dds"
         
     }
     spriteType = {
-        name = GFX_portrait_r56_RUS_white_land_3_small
-        texturefile = "gfx/interface/ideas/idea_RUS_generic_land_9.dds"
+        name = GFX_portrait_r56_SOV_white_land_3_small
+        texturefile = "gfx/interface/ideas/idea_SOV_generic_land_9.dds"
         
     }
     spriteType = {

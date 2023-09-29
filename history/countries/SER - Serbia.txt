@@ -279,6 +279,33 @@ set_variable = {
     
 }
 country_lock_all_division_template = yes
+ROOT = {
+    MNT = {
+        enable_coring_at_fifty_compliance = yes
+        
+    }
+    45 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    106 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    794 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    841 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    875 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = SER_vukasin_markovic
 recruit_character = SER_trifun_kaclerovic
 recruit_character = SER_zivko_topalovic

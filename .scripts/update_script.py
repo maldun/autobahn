@@ -16,7 +16,7 @@ KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695
 KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426030/"
 #RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
 RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/1956_beta/"
-2
+
 # Set for mod in question
 
 KX = False
@@ -72,6 +72,10 @@ KR_SPIRIT_KEYS = {}
 for kx_file, kr_file in KR_SPIRIT_MAP.items():
     KR_SPIRIT_KEYS[kr_file] = SPIRIT_KEYS[kx_file]
     KR_TECH_CRITS[kr_file] = TECH_CRITS[kx_file]
+
+KX_SPIRIT_FILTER = {"ideological_loyalty_spirit_KR"}
+KR_SPIRIT_FILTER = {}
+SPIRIT_FILTER = KX_SPIRIT_FILTER if KX is True else KR_SPIRIT_FILTER
 
 rt56_techs = {
     "etax_doctrine",   # special research division
@@ -273,6 +277,7 @@ def filter_spirits(fname, keys):
             skeys[k] = {o[0] for o in spirits[1]}
 
         diff = skeys[1].difference(skeys[0])
+        diff = {d for d in diff if d not in SPIRIT_FILTER}
         missing = []
         exceptions = {'KR_whampoa_academy_spirit'}
         for dkey in diff:
@@ -284,7 +289,8 @@ def filter_spirits(fname, keys):
                 pass
             else:
                 import pdb
-                pdb.set_trace()
+                # pdb.set_trace()
+                pass
 
             missing += o1
 

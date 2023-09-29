@@ -20,28 +20,28 @@ spriteTypes = {
         
     }
     SpriteType = {
-        name = "GFX_RUS_gwtank_chassis_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_RUS/light_0/sov_t18_m1927.dds"
+        name = "GFX_SOV_gwtank_chassis_medium"
+        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/light_0/sov_t18_m1927.dds"
         
     }
     SpriteType = {
-        name = "GFX_RUS_light_tank_chassis_0_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_RUS/light_0/sov_t18_m1927.dds"
+        name = "GFX_SOV_light_tank_chassis_0_medium"
+        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/light_0/sov_t18_m1927.dds"
         
     }
     SpriteType = {
-        name = "GFX_RUS_medium_tank_chassis_0_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_RUS/medium_0/sov_t12.dds"
+        name = "GFX_SOV_medium_tank_chassis_0_medium"
+        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/medium_0/sov_t12.dds"
         
     }
     SpriteType = {
-        name = "GFX_RUS_heavy_tank_chassis_0_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_RUS/heavy_0/sov_t35_m1935.dds"
+        name = "GFX_SOV_heavy_tank_chassis_0_medium"
+        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/heavy_0/sov_t35_m1935.dds"
         
     }
     SpriteType = {
-        name = "GFX_RUS_modern_tank_chassis_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_RUS/modern/sov_t54_55.dds"
+        name = "GFX_SOV_modern_tank_chassis_medium"
+        texturefile = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/modern/sov_t54_55.dds"
         
     }
     SpriteType = {

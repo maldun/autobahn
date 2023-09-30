@@ -387,7 +387,7 @@ if __name__ == "__main__":
         import kx_patches as patches
     else:
         import kr_patches as patches
-    patches.patch(MAIN_MOD, OUT_FOLDER)
+    patches.patch(MAIN_MOD, RT56_FOLDER, OUT_FOLDER)
 
     # add missing spirits
 

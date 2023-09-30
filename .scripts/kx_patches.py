@@ -98,8 +98,39 @@ def path_idea_tags(kx_path, out_folder):
         fp.write(new_code)
 
 
-def patch(kx_path, out_folder):
+def patch_infantry_equipment(kx_path, rt56_folder, out_folder):
+    equipment_path = os.path.join("common", "units", "equipment")
+    infant_file = "infantry.txt"
+    in_file, out_file = make_folder_in_out_file(equipment_path, infant_file,
+                                                kx_path, out_folder)
+
+    rt56_file = os.path.join(rt56_folder, equipment_path, infant_file)
+    rt56_obj = paradox2list(rt56_file)
+    kx_obj = paradox2list(in_file)
+
+    rt56_keys = [rt56_obj[0][1][k][0] for k in range(len(rt56_obj[0][1]))]
+    kx_keys = [kx_obj[0][1][k][0] for k in range(len(kx_obj[0][1]))]
+    new_keys = set(kx_keys).difference(rt56_keys)
+
+    new_items = [ob for ob in kx_obj[0][1] if ob[0] in new_keys]
+    rt56_obj[0][1] += new_items
+
+    new_convertables = [["mau_mau_equipment_0"], ["reservation_equipment_0"], ["simba_spears_0"],
+                        ["aztec_club_0"], ["jezail_equipment_0"]]
+
+    for ob in rt56_obj[0][1]:
+        for sub in ob[1]:
+            if sub[0] == 'can_convert_from':
+                sub[1] += new_convertables
+
+    new_code = list2paradox(rt56_obj)
+    with open(out_file, 'w') as fp:
+        fp.write(new_code)
+
+
+def patch(kx_path, rt56_path, out_folder):
     patch_main_menu(kx_path, out_folder)
     path_idea_tags(kx_path, out_folder)
+    patch_infantry_equipment(kx_path, rt56_path, out_folder)
     # Is removed in KX for now
     #patch_naval_ai_equipment(kx_path, out_folder)

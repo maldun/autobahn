@@ -147,9 +147,11 @@ class CarryOverAISettings:
 
             found, inds = has_key.search(org_techs[ind], AI_KEY)
             mapping = [[has_key, AI_KEY], [replace, [found]]]
-            tech_r56 = r56_techs[r56_tech_map[tech_key]]
-
-            r56_techs[r56_tech_map[tech_key]] = apply_map(tech_r56, mapping)
+            try:
+                tech_r56 = r56_techs[r56_tech_map[tech_key]]
+                r56_techs[r56_tech_map[tech_key]] = apply_map(tech_r56, mapping)
+            except KeyError:
+                pass
 
         return org_obj, org_tech_map, org_techs, r56_obj, r56_tech_map, r56_techs
 

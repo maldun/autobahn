@@ -1,13 +1,76 @@
 technologies = {
     @1918 = 1
     @1936 = 4
-    motorised_infantry = {
+    tech_trucks = {
+        enable_subunits = {
+            mot_anti_tank_brigade
+            mot_artillery_brigade
+            mot_anti_air_brigade
+            
+        }
         enable_equipments = {
-            motorized_equipment_1
+            motorized_equipment_0
             
         }
         enable_equipment_modules = {
             tank_wheeled_suspension
+            
+        }
+        path = {
+            leads_to_tech = motorised_infantry
+            research_cost_coeff = 1
+            
+        }
+        path = {
+            leads_to_tech = armored_car1
+            research_cost_coeff = 1
+            
+        }
+        research_cost = 2
+        start_year = 1910
+        folder = {
+            name = r56_vechicles_folder
+            position = {
+                x = -7
+                y = 1
+                
+            }
+            
+        }
+        categories = {
+            motorized_equipment
+            infantry_tech
+            
+        }
+        ai_will_do = {
+            factor = 5
+            modifier = {
+                factor = 6
+                date > "1937.1.1"
+                
+            }
+            modifier = {
+                factor = 7
+                date > "1938.1.1"
+                
+            }
+            modifier = {
+                factor = 8
+                date > "1939.1.1"
+                
+            }
+            modifier = {
+                is_major = no
+                factor = 3
+                
+            }
+            
+        }
+        
+    }
+    motorised_infantry = {
+        enable_equipments = {
+            motorized_equipment_1
             
         }
         enable_subunits = {
@@ -40,16 +103,7 @@ technologies = {
             
         }
         path = {
-            research_cost_coeff = 1
-            
-        }
-        path = {
             leads_to_tech = motorized_rocket_unit
-            research_cost_coeff = 1
-            
-        }
-        path = {
-            leads_to_tech = armored_car1
             research_cost_coeff = 1
             
         }
@@ -190,12 +244,12 @@ technologies = {
     }
     r56_convoy_highways = {
         research_cost = 1.75
-        start_year = 1940
+        start_year = 1941
         folder = {
             name = r56_vechicles_folder
             position = {
                 x = -8
-                y = 9
+                y = 10
                 
             }
             
@@ -305,12 +359,12 @@ technologies = {
     }
     r56_convoy_highways_3 = {
         research_cost = 2
-        start_year = 1946
+        start_year = 1947
         folder = {
             name = r56_vechicles_folder
             position = {
                 x = -8
-                y = 18
+                y = 19
                 
             }
             
@@ -336,12 +390,12 @@ technologies = {
     }
     r56_convoy_highways_4 = {
         research_cost = 2
-        start_year = 1949
+        start_year = 1950
         folder = {
             name = r56_vechicles_folder
             position = {
                 x = -8
-                y = 22
+                y = 24
                 
             }
             
@@ -1418,19 +1472,18 @@ technologies = {
     }
     r56_modern_military_railnetwork = {
         research_cost = 2
-        start_year = 1950
+        start_year = 1944
         folder = {
             name = r56_vechicles_folder
             position = {
                 x = -1
-                y = 24
+                y = 16
                 
             }
             
         }
-        production_speed_supply_node_factor = 0.15
-        production_speed_rail_way_factor = 0.15
-        supply_node_range = 0.15
+        production_speed_supply_node_factor = 0.1
+        production_speed_rail_way_factor = 0.1
         categories = {
             train_tech
             railway_construction_tech

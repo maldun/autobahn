@@ -208,19 +208,24 @@ technologies = {
                 
             }
             modifier = {
-                factor = 2.5
+                factor = 0
                 has_navy_size = {
                     type = carrier
-                    size > 3
+                    size < 1
                     
                 }
                 
             }
             modifier = {
-                factor = 0
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 2.5
                 has_navy_size = {
                     type = carrier
-                    size < 1
+                    size > 3
                     
                 }
                 
@@ -320,6 +325,11 @@ technologies = {
         }
         ai_will_do = {
             factor = 1
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
             modifier = {
                 factor = 1.5
                 date > "1941.6.1"
@@ -472,6 +482,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
                 factor = 1.5
                 date > "1945.1.1"
                 
@@ -560,7 +575,7 @@ technologies = {
             factor = 1
             modifier = {
                 is_major = yes
-                factor = 2
+                factor = 4
                 
             }
             
@@ -633,23 +648,13 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 2
-                num_of_military_factories > 75
-                
-            }
-            modifier = {
-                factor = 3
+                factor = 4
                 is_major = yes
                 
             }
             modifier = {
-                factor = 1.5
-                date > 1938-01-01
-                
-            }
-            modifier = {
-                factor = 2
-                date > 1940-01-01
+                factor = 100
+                num_of_military_factories > 75
                 
             }
             
@@ -694,6 +699,15 @@ technologies = {
                 
             }
             modifier = {
+                factor = 0
+                has_navy_size = {
+                    type = carrier
+                    size < 1
+                    
+                }
+                
+            }
+            modifier = {
                 factor = 2
                 has_navy_size = {
                     type = carrier
@@ -703,12 +717,8 @@ technologies = {
                 
             }
             modifier = {
-                factor = 0
-                has_navy_size = {
-                    type = carrier
-                    size < 1
-                    
-                }
+                factor = 1.5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             
@@ -764,8 +774,8 @@ technologies = {
                 
             }
             modifier = {
-                factor = 1.5
-                date > 1941-01-01
+                factor = 2
+                enemies_strength_ratio > 0.5
                 
             }
             
@@ -810,6 +820,15 @@ technologies = {
                 
             }
             modifier = {
+                factor = 0
+                has_navy_size = {
+                    type = carrier
+                    size < 1
+                    
+                }
+                
+            }
+            modifier = {
                 factor = 2
                 has_navy_size = {
                     type = carrier
@@ -819,12 +838,8 @@ technologies = {
                 
             }
             modifier = {
-                factor = 0
-                has_navy_size = {
-                    type = carrier
-                    size < 1
-                    
-                }
+                factor = 1.5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             
@@ -856,6 +871,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 2
+                num_of_military_factories > 75
+                
+            }
+            modifier = {
                 factor = 3
                 has_deployed_air_force_size = {
                     size > 500
@@ -865,23 +885,13 @@ technologies = {
                 
             }
             modifier = {
-                factor = 0
-                num_of_military_factories < 16
-                
-            }
-            modifier = {
                 factor = 2
-                num_of_military_factories > 75
+                enemies_strength_ratio > 0.5
                 
             }
             modifier = {
                 factor = 3
                 is_major = yes
-                
-            }
-            modifier = {
-                factor = 1.5
-                date > 1945-01-01
                 
             }
             
@@ -912,6 +922,15 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 0
+                has_navy_size = {
+                    type = carrier
+                    size < 1
+                    
+                }
+                
+            }
+            modifier = {
                 factor = 2
                 has_navy_size = {
                     type = carrier
@@ -921,12 +940,8 @@ technologies = {
                 
             }
             modifier = {
-                factor = 0
-                has_navy_size = {
-                    type = carrier
-                    size < 1
-                    
-                }
+                factor = 1.5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             
@@ -967,8 +982,13 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 2
+                factor = 3
                 is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             
@@ -1009,8 +1029,13 @@ technologies = {
         ai_will_do = {
             factor = 1.5
             modifier = {
-                factor = 2
+                factor = 3
                 is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             modifier = {
@@ -1055,8 +1080,13 @@ technologies = {
         ai_will_do = {
             factor = 1.5
             modifier = {
-                factor = 2
+                factor = 3
                 is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             modifier = {
@@ -1657,6 +1687,11 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 5
+                has_tech = air_superiority
+                
+            }
+            modifier = {
+                factor = 5
                 has_tech = nukes
                 
             }
@@ -1724,6 +1759,11 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 5
+                has_tech = air_superiority
+                
+            }
+            modifier = {
+                factor = 5
                 has_tech = nukes
                 
             }
@@ -1789,6 +1829,11 @@ technologies = {
         }
         ai_will_do = {
             factor = 1
+            modifier = {
+                factor = 5
+                has_tech = air_superiority
+                
+            }
             modifier = {
                 factor = 5
                 has_tech = nukes
@@ -2309,6 +2354,15 @@ technologies = {
                 
             }
             modifier = {
+                factor = 0
+                has_navy_size = {
+                    type = carrier
+                    size < 1
+                    
+                }
+                
+            }
+            modifier = {
                 factor = 2
                 has_navy_size = {
                     type = carrier
@@ -2318,12 +2372,8 @@ technologies = {
                 
             }
             modifier = {
-                factor = 0
-                has_navy_size = {
-                    type = carrier
-                    size < 1
-                    
-                }
+                factor = 1.5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             
@@ -2354,6 +2404,15 @@ technologies = {
                 
             }
             modifier = {
+                factor = 0
+                has_navy_size = {
+                    type = carrier
+                    size < 1
+                    
+                }
+                
+            }
+            modifier = {
                 factor = 2
                 has_navy_size = {
                     type = carrier
@@ -2363,12 +2422,8 @@ technologies = {
                 
             }
             modifier = {
-                factor = 0
-                has_navy_size = {
-                    type = carrier
-                    size < 1
-                    
-                }
+                factor = 1.5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             
@@ -2390,6 +2445,15 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 0
+                has_navy_size = {
+                    type = carrier
+                    size < 1
+                    
+                }
+                
+            }
+            modifier = {
                 factor = 2
                 has_navy_size = {
                     type = carrier
@@ -2399,12 +2463,8 @@ technologies = {
                 
             }
             modifier = {
-                factor = 0
-                has_navy_size = {
-                    type = carrier
-                    size < 1
-                    
-                }
+                factor = 1.5
+                enemies_naval_strength_ratio > 0.5
                 
             }
             

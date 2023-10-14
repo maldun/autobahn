@@ -248,6 +248,25 @@ equipments = {
         }
         
     }
+    light_tank_chassis_4 = {
+        abbreviation = "lt4"
+        derived_variant_name = light_tank_equipment_3
+        visual_level = 2
+        year = 1944
+        archetype = light_tank_chassis
+        parent = light_tank_chassis_3
+        priority = 2000
+        module_slots = inherit
+        build_cost_ic = 2
+        maximum_speed = 6
+        reliability = 1.5
+        armor_value = 30
+        resources = {
+            steel = 2
+            
+        }
+        
+    }
     medium_tank_chassis = {
         year = 1922
         is_archetype = yes

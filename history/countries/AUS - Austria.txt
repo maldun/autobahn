@@ -35,6 +35,7 @@ set_technology = {
     basic_train = 1
     infantry_weapons = 1
     infantry_weapons1 = 1
+    tech_trucks = 1
     motorised_infantry = 1
     tech_support = 1
     tech_recon = 1
@@ -174,11 +175,6 @@ LEC = {
     
 }
 give_guarantee = LEC
-diplomatic_relation = {
-    country = GER
-    relation = non_aggression_pact
-    
-}
 set_country_flag = legation_council_vote
 country_event = {
     id = austria.1

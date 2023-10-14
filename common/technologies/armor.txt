@@ -71,35 +71,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            base = 0
             modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1937.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1938.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1939.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
+                add = 500
+                is_eligible_for_armor_production = yes
                 
             }
             
@@ -184,42 +159,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1937.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1938.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1939.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -241,47 +181,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1934
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 3
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
-                
-            }
-            modifier = {
-                factor = 100
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 25
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    has_tech = improved_light_td
-                    can_research = improved_light_td
-                    is_researching_technology = improved_light_tank
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -303,37 +203,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1934
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
-                
-            }
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    has_tech = improved_light_art
-                    can_research = improved_light_art
-                    is_researching_technology = improved_light_tank
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -355,7 +225,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1934
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -403,42 +273,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1937.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1938.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1939.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -456,37 +291,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1936
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 120
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 27
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    has_tech = advanced_light_td
-                    can_research = advanced_light_td
-                    is_researching_technology = advanced_light_tank
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -504,22 +309,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1936
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    has_tech = advanced_light_art
-                    can_research = advanced_light_art
-                    is_researching_technology = advanced_light_tank
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -537,7 +327,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1936
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -577,23 +367,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0.5
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 0
-                NOT = {
-                    any_controlled_state = {
-                        is_coastal = yes
-                        
-                    }
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -626,23 +400,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0.5
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 0
-                NOT = {
-                    any_controlled_state = {
-                        is_coastal = yes
-                        
-                    }
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -800,37 +558,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1943.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1944.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -848,27 +576,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 130
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 27
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -886,12 +594,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -909,7 +612,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -951,41 +654,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 2
+            base = 0
             modifier = {
-                factor = 2
-                is_major = yes
-                date > "1938.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1940.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1941.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
-                
-            }
-            modifier = {
-                factor = 3
-                country_has_armor_focus = yes
+                add = 500
+                is_eligible_for_armor_production = yes
                 
             }
             
@@ -1009,61 +681,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1939
         ai_will_do = {
-            factor = 2
-            modifier = {
-                factor = 2
-                OR = {
-                    tag = GER
-                    tag = AUS
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 140
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 30
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    has_tech = improved_medium_td
-                    can_research = improved_medium_td
-                    is_researching_technology = improved_medium_tank
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1940.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1941.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1085,37 +703,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1939
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                OR = {
-                    has_tech = improved_medium_art
-                    can_research = improved_medium_art
-                    is_researching_technology = improved_medium_tank
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1940.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1941.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1137,7 +725,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1939
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -1180,40 +768,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 3
+            base = 0
             modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1943.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1944.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
+                add = 500
+                is_eligible_for_armor_production = yes
                 
             }
             
@@ -1233,52 +791,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 150
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 32
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    has_tech = advanced_medium_td
-                    can_research = advanced_medium_td
-                    is_researching_technology = advanced_medium_tank
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1943.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1944.1.1"
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1296,37 +809,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                OR = {
-                    has_tech = advanced_medium_art
-                    can_research = advanced_medium_art
-                    is_researching_technology = advanced_medium_tank
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1943.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1944.1.1"
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1344,7 +827,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -1387,35 +870,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            base = 0
             modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1944.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1945.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1946.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
+                add = 500
+                is_eligible_for_armor_production = yes
                 
             }
             
@@ -1435,52 +893,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 160
-                any_enemy_country = {
-                    ROOT = {
-                        estimated_intel_max_armor = {
-                            tag = PREV
-                            value > 35
-                            
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 0
-                can_research = modern_td
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = modern_td
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1944.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1945.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1946.1.1"
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1498,37 +911,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 0
-                can_research = modern_art
-                
-            }
-            modifier = {
-                factor = 0
-                has_tech = modern_art
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1944.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1945.1.1"
-                
-            }
-            modifier = {
-                factor = 1.1
-                date > "1946.1.1"
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1546,7 +929,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -1588,35 +971,10 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            base = 0
             modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1946.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1947.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1948.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                has_tech = mobile_warfare
-                
-            }
-            modifier = {
-                factor = 3
-                num_of_military_factories > 20
+                add = 500
+                is_eligible_for_armor_production = yes
                 
             }
             
@@ -1640,27 +998,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1945
         ai_will_do = {
-            factor = 2
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1946.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1947.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1948.1.1"
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1682,27 +1020,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1945
         ai_will_do = {
-            factor = 2
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1946.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1947.1.1"
-                
-            }
-            modifier = {
-                factor = 2
-                date > "1948.1.1"
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1724,7 +1042,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1945
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -1807,36 +1125,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0.8
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1937.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1938.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1939.1.1"
-                
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    can_research = improved_heavy_tank
-                    has_tech = improved_heavy_tank
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1858,7 +1147,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1934
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -1880,7 +1169,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1934
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -1902,7 +1191,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1934
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -1950,36 +1239,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0.8
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1942.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1943.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1944.1.1"
-                
-            }
-            modifier = {
-                factor = 0
-                OR = {
-                    can_research = advanced_heavy_tank
-                    has_tech = advanced_heavy_tank
-                    
-                }
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -1997,7 +1257,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2015,7 +1275,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2033,7 +1293,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1941
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2076,27 +1336,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0.8
-            modifier = {
-                factor = 2
-                country_has_armor_focus = yes
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1944.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1945.1.1"
-                
-            }
-            modifier = {
-                factor = 1.2
-                date > "1946.1.1"
-                
-            }
+            base = 0
             
         }
         categories = {
@@ -2114,7 +1354,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2132,7 +1372,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2150,7 +1390,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2188,7 +1428,7 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2206,7 +1446,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2224,7 +1464,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {
@@ -2242,7 +1482,7 @@ technologies = {
         research_cost = 0.5
         start_year = 1943
         ai_will_do = {
-            factor = 0
+            base = 0
             
         }
         categories = {

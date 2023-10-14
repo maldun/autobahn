@@ -103,6 +103,7 @@ set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
     tech_support = 1
+    tech_trucks = 1
     motorised_infantry = 1
     tech_recon = 1
     tech_engineers = 1
@@ -287,6 +288,11 @@ country_event = {
     days = 2591
     
 }
+country_event = {
+    id = japfor.500
+    days = 237
+    
+}
 add_ideas = {
     JAP_Inukai_Tsuyoshi_hog_sco
     JAP_Yoshizawa_Kenkichi_for_sco
@@ -295,7 +301,6 @@ add_ideas = {
     JAP_rising_sun_idea_1
     JAP_narrow_rail
     JAP_bad_land
-    JAP_no_army_focus
     FNG_mantetsu_profits
     limited_conscription
     limited_exports
@@ -328,6 +333,54 @@ LEC = {
 }
 give_guarantee = LEC
 set_country_flag = legation_council_vote
+set_country_flag = JAP_Obata_Toshiro_dead
+set_country_flag = Nagata_Tetsuzan_dead
+activate_targeted_decision = {
+    decision = JAP_develop_chosen_tungsten_mines1
+    target = JAP
+    
+}
+set_variable = {
+    JAP_land_reform_cost_1 = 50
+    
+}
+set_variable = {
+    JAP_land_reform_cost_2 = 75
+    
+}
+set_variable = {
+    JAP_land_reform_cost_3 = 100
+    
+}
+set_variable = {
+    JAP_land_reform_cost_4 = 150
+    
+}
+set_variable = {
+    JAP_land_reform_pp_1 = 20
+    
+}
+set_variable = {
+    JAP_land_reform_pp_2 = 35
+    
+}
+set_variable = {
+    JAP_land_reform_pp_3 = 50
+    
+}
+set_variable = {
+    JAP_eco_cost_1 = 75
+    
+}
+set_variable = {
+    JAP_eco_cost_2 = 125
+    
+}
+set_variable = {
+    var = JAP_Hiring_Cost
+    value = 150
+    
+}
 set_politics = {
     ruling_party = social_conservative
     last_election = "1932.2.20"
@@ -370,7 +423,7 @@ create_country_leader = {
     desc = "POLITICS_KANSON_ARAHATA_DESC"
     picture = "gfx/leaders/JAP/Portrait_JAP_Kanson_Arahata.png"
     expire = "1981.3.6"
-    ideology = totalist_subtype
+    ideology = authcom_subtype
     
 }
 create_country_leader = {
@@ -386,7 +439,7 @@ create_country_leader = {
     desc = "POLITICS_KANSON_ARAHATA_DESC"
     picture = "gfx/leaders/JAP/Portrait_JAP_Kanson_Arahata.png"
     expire = "1981.3.6"
-    ideology = radical_socialist_subtype
+    ideology = radsoc_communism_subtype
     
 }
 create_country_leader = {
@@ -394,7 +447,7 @@ create_country_leader = {
     desc = "POLITICS_HIROHITO_DESC"
     picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
     expire = "1965.1.1"
-    ideology = social_democrat_subtype
+    ideology = socdem_agrarianism_subtype
     
 }
 create_country_leader = {
@@ -402,7 +455,7 @@ create_country_leader = {
     desc = "POLITICS_HIROHITO_DESC"
     picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
     expire = "1965.1.1"
-    ideology = social_liberal_subtype
+    ideology = soclib_progressive_democracy_subtype
     
 }
 create_country_leader = {
@@ -410,7 +463,7 @@ create_country_leader = {
     desc = "POLITICS_HIROHITO_DESC"
     picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
     expire = "1965.1.1"
-    ideology = market_liberal_subtype
+    ideology = progressive_democracy_subtype
     
 }
 create_country_leader = {
@@ -426,7 +479,7 @@ create_country_leader = {
     desc = "POLITICS_HIROHITO_DESC"
     picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
     expire = "1965.1.1"
-    ideology = authoritarian_democrat_subtype
+    ideology = authdem_national_conservative_subtype
     
 }
 create_country_leader = {
@@ -442,7 +495,7 @@ create_country_leader = {
     desc = "POLITICS_HIROHITO_DESC"
     picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
     expire = "1965.1.1"
-    ideology = militarism_subtype
+    ideology = right_syndicalism_subtype
     
 }
 if = {

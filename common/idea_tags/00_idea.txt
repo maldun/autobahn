@@ -57,7 +57,7 @@ idea_categories = {
         slot = tank_manufacturer
         slot = naval_manufacturer
         slot = aircraft_manufacturer
-        slot = weapons_manufacturer
+        slot = materiel_manufacturer
         slot = industrial_concern
         ledger = civilian
         cost = 150
@@ -166,7 +166,6 @@ slot_ledgers = {
     tank_manufacturer = army
     naval_manufacturer = navy
     aircraft_manufacturer = air
-    weapons_manufacturer = army
     theorist = invalid
     mobilization_laws = civilian
     

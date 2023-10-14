@@ -1,6 +1,7 @@
 {
     "interface/": {
         "countrytechtreeview.gui": [],
+        "countrydoctrinetreeview.gui": [],
         "equipmentdesignermoduleicons.gfx": [],
         "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"]
     },

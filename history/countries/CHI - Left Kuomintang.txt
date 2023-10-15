@@ -544,7 +544,7 @@ create_corps_commander = {
     traits = {
         war_hero
         trickster
-        guerilla_fighter
+        guerilla_officer
         
     }
     skill = 1
@@ -601,7 +601,7 @@ create_corps_commander = {
     traits = {
         irregulars_officer
         trickster
-        guerilla_fighter
+        guerilla_officer
         CHI_left_kmt_officer
         
     }

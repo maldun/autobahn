@@ -293,6 +293,7 @@ create_field_marshal = {
         career_officer
         politically_connected
         infantry_leader
+        guerilla_officer
         
     }
     skill = 3
@@ -326,6 +327,7 @@ create_corps_commander = {
     traits = {
         brilliant_strategist
         politically_connected
+        guerilla_officer
         
     }
     skill = 2
@@ -340,6 +342,7 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/FIN/Portrait_FIN_Karl_Lennart_Oesch_KX.png"
     id = 326
     traits = {
+        guerilla_officer
         inflexible_strategist
         trait_cautious
         organizer
@@ -407,6 +410,7 @@ create_corps_commander = {
     traits = {
         career_officer
         skilled_staffer
+        guerilla_officer
         
     }
     skill = 3
@@ -456,6 +460,7 @@ create_corps_commander = {
         brilliant_strategist
         commando
         ranger
+        guerilla_officer
         
     }
     skill = 2

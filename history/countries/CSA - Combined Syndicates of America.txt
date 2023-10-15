@@ -371,7 +371,7 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/CSA/Portrait_CSA_milton_wolff.png"
     traits = {
         career_officer
-        infantry_officer
+        militias_officer
         trickster
         
     }
@@ -421,7 +421,10 @@ create_corps_commander = {
     desc = "CSA_BENJAMIN_KATINE_ARMY_DESC"
     id = 962
     portrait_path = "gfx/leaders/CSA/Portrait_CSA_benjamin_katine.png"
-    traits = {}
+    traits = {
+        militias_officer
+        
+    }
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -450,7 +453,10 @@ create_corps_commander = {
     name = "John Tisa"
     desc = "CSA_JOHN_TISA_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/Portrait_CSA_john_tisa.png"
-    traits = {}
+    traits = {
+        militias_officer
+        
+    }
     skill = 1
     attack_skill = 1
     defense_skill = 1
@@ -463,7 +469,7 @@ create_corps_commander = {
     desc = "CSA_OLIVER_LAW_ARMY_DESC"
     portrait_path = "gfx/leaders/CSA/Portrait_CSA_Oliver_Law.png"
     traits = {
-        trickster
+        militias_officer
         trait_reckless
         
     }

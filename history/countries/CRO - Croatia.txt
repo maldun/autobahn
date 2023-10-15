@@ -399,7 +399,7 @@ create_corps_commander = {
         old_guard
         trait_mountaineer
         trickster
-        guerilla_fighter
+        guerilla_officer
         
     }
     skill = 3

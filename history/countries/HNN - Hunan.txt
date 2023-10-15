@@ -230,7 +230,7 @@ create_corps_commander = {
         politically_connected
         trait_reckless
         career_officer
-        guerilla_fighter
+        guerilla_officer
         
     }
     skill = 1
@@ -266,7 +266,7 @@ create_corps_commander = {
     traits = {
         infantry_officer
         trickster
-        guerilla_fighter
+        guerilla_officer
         
     }
     skill = 3
@@ -283,7 +283,7 @@ create_corps_commander = {
     desc = "ARMY_TENG_DAIYUAN_ARMY_DESC"
     traits = {
         politically_connected
-        guerilla_fighter
+        guerilla_officer
         
     }
     skill = 3

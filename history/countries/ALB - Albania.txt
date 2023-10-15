@@ -246,7 +246,7 @@ create_corps_commander = {
     traits = {
         trait_reckless
         trickster
-        guerilla_fighter
+        guerilla_officer
         commando
         skirmisher
         
@@ -265,7 +265,7 @@ create_corps_commander = {
     traits = {
         trait_reckless
         trickster
-        guerilla_fighter
+        guerilla_officer
         commando
         skirmisher
         

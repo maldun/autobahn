@@ -10,6 +10,7 @@ set_technology = {
     tech_support = 1
     tech_engineers = 1
     tech_recon = 1
+    tech_trucks = 1
     gw_artillery = 1
     basic_train = 1
     camo = 1
@@ -208,6 +209,10 @@ country_event = {
     
 }
 add_civil_war_target = ARG
+ARG = {
+    embargo_ROOT = yes
+    
+}
 add_ideas = {
     partial_economic_mobilisation
     limited_conscription

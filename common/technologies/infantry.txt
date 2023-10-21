@@ -2818,7 +2818,7 @@ technologies = {
                     tag = SAF
                     tag = GEA
                     tag = PRF
-                    tag = BHC
+                    tag = HND
                     tag = MAF
                     
                 }
@@ -2872,7 +2872,7 @@ technologies = {
                     tag = SAF
                     tag = GEA
                     tag = PRF
-                    tag = BHC
+                    tag = HND
                     tag = MAF
                     
                 }
@@ -2926,7 +2926,7 @@ technologies = {
                     tag = SAF
                     tag = GEA
                     tag = PRF
-                    tag = BHC
+                    tag = HND
                     tag = MAF
                     
                 }
@@ -2980,7 +2980,7 @@ technologies = {
                     tag = SAF
                     tag = GEA
                     tag = PRF
-                    tag = BHC
+                    tag = HND
                     tag = MAF
                     
                 }
@@ -3034,7 +3034,7 @@ technologies = {
                     tag = SAF
                     tag = GEA
                     tag = PRF
-                    tag = BHC
+                    tag = HND
                     tag = MAF
                     
                 }
@@ -3083,7 +3083,7 @@ technologies = {
                     tag = SAF
                     tag = GEA
                     tag = PRF
-                    tag = BHC
+                    tag = HND
                     tag = MAF
                     
                 }
@@ -4380,7 +4380,7 @@ technologies = {
                     tag = SAF
                     tag = SYR
                     tag = OMA
-                    tag = LBA
+                    tag = LIB
                     tag = YEM
                     tag = TUR
                     tag = NFA
@@ -4432,7 +4432,7 @@ technologies = {
                     tag = SAF
                     tag = SYR
                     tag = OMA
-                    tag = LBA
+                    tag = LIB
                     tag = YEM
                     tag = TUR
                     tag = NFA
@@ -4484,7 +4484,7 @@ technologies = {
                     tag = SAF
                     tag = SYR
                     tag = OMA
-                    tag = LBA
+                    tag = LIB
                     tag = YEM
                     tag = TUR
                     tag = NFA
@@ -4566,7 +4566,7 @@ technologies = {
                     tag = SAF
                     tag = SYR
                     tag = OMA
-                    tag = LBA
+                    tag = LIB
                     tag = YEM
                     tag = TUR
                     tag = NFA
@@ -4613,7 +4613,7 @@ technologies = {
                     tag = SAF
                     tag = SYR
                     tag = OMA
-                    tag = LBA
+                    tag = LIB
                     tag = YEM
                     tag = TUR
                     tag = NFA

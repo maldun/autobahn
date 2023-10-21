@@ -11,6 +11,7 @@ set_technology = {
     marines = 1
     tech_support = 1
     tech_engineers = 1
+    tech_trucks = 1
     gw_artillery = 1
     interwar_antiair = 1
     basic_train = 1
@@ -306,6 +307,14 @@ set_popularities = {
     
 }
 add_civil_war_target = FOP
+FOP = {
+    embargo_ROOT = yes
+    
+}
+CHL = {
+    embargo_ROOT = yes
+    
+}
 recruit_character = ARG_manuel_carles
 recruit_character = ARG_juan_domingo_peron
 recruit_character = ARG_pedro_pablo_ramirez

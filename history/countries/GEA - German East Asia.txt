@@ -10,6 +10,7 @@ add_manpower = 300000
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
+    tech_trucks = 1
     motorised_infantry = 1
     tech_mountaineers = 1
     marines = 1
@@ -225,7 +226,7 @@ add_dynamic_modifier = {
     
 }
 set_variable = {
-    GEA_AOG_CITIES = -0.12
+    GEA_AOG_CITIES = -0.4
     
 }
 set_variable = {

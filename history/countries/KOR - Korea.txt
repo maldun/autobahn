@@ -2,6 +2,7 @@ capital = 525
 set_technology = {
     infantry_weapons = 1
     tech_support = 1
+    tech_trucks = 1
     gw_artillery = 1
     camo = 1
     etax_doctrine = 1

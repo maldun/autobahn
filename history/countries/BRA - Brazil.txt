@@ -10,6 +10,7 @@ set_technology = {
     infantry_weapons = 1
     tech_support = 1
     tech_engineers = 1
+    tech_trucks = 1
     gw_artillery = 1
     interwar_antiair = 1
     basic_train = 1
@@ -335,6 +336,12 @@ country_event = {
 country_event = {
     id = bra.308
     days = 3955
+    
+}
+country_event = {
+    id = bra.900
+    days = 163
+    random_days = 7
     
 }
 give_guarantee = URG

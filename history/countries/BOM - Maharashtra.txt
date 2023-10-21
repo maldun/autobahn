@@ -3,6 +3,7 @@ set_research_slots = 3
 set_war_support = 0.2
 set_technology = {
     infantry_weapons = 1
+    tech_trucks = 1
     camo = 1
     etax_doctrine = 1
     

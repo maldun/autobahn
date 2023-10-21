@@ -1905,11 +1905,6 @@ technologies = {
                 }
                 
             }
-            modifier = {
-                factor = 5
-                has_tech = nukes
-                
-            }
             
         }
         

@@ -1,11 +1,15 @@
 capital = 277
 oob = "MEX"
 set_naval_oob = "MEX_naval"
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.1
 set_convoys = 45
 starting_train_buffer = 3
 set_technology = {
     infantry_weapons = 1
     tech_mountaineers = 1
+    tech_trucks = 1
     gw_artillery = 1
     interwar_antiair = 1
     fuel_silos = 1
@@ -202,13 +206,15 @@ country_event = {
     random_days = 540
     
 }
+USA = {
+    embargo_ROOT = yes
+    
+}
 add_opinion_modifier = {
     target = NIC
     modifier = NIC_revolutionary_allies
     
 }
-set_research_slots = 3
-set_war_support = 0.1
 set_politics = {
     ruling_party = radical_socialist
     last_election = "1932.7.1"
@@ -251,6 +257,7 @@ recruit_character = MEX_manuel_avila_camacho
 recruit_character = MEX_miguel_aleman_valdes
 recruit_character = MEX_juan_andreu_almazan
 recruit_character = MEX_pablo_gonzalez_garza
+recruit_character = MEX_manuel_perez_trevino
 recruit_character = MEX_jose_antonio_urquiza
 recruit_character = MEX_aaron_saenz_garza
 recruit_character = MEX_alfonso_junco_voigt

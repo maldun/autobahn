@@ -6,6 +6,7 @@ set_technology = {
     tech_support = 1
     tech_mountaineers = 1
     tech_engineers = 1
+    tech_trucks = 1
     camo = 1
     etax_doctrine = 1
     transport_plane1 = 1

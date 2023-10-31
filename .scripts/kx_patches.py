@@ -31,8 +31,8 @@ def patch_main_menu(kx_path, out_folder):
             [add_multiple, [["iconType", [["name", ['"autobahn_logo"']],
                                           ["spriteType", ['"GFX_autobahn_logo"']],
                                           ["position",
-                                           [['x', [1700]],
-                                            ['y', [1400]],
+                                           [['x', [1425]],
+                                            ['y', [1000]],
                                             ]
                                            ]
                                           ]

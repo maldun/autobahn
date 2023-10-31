@@ -191,6 +191,7 @@ activate_targeted_decision = {
 add_ideas = {
     limited_conscription
     SRD_entente_support_1
+    SRD_entente_advisors_idea
     SRD_Giorgio_Bardanzellu_hog_ade
     SRD_Raffaele_Guariglia_for_pau
     SRD_Mario_Ascione_eco_ade

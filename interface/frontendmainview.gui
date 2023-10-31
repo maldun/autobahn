@@ -80,18 +80,18 @@ guiTypes = {
                 
             }
             
-        }
+        
         iconType = {
             name = "autobahn_logo"
             spriteType = "GFX_autobahn_logo"
             position = {
-                x = 1700
-                y = 1400
+                x = 1900
+                y = 1600
                 
             }
             
         }
-        
+        }
     }
     containerWindowType = {
         name = "mainmenu_panel_upperleft"

@@ -126,6 +126,11 @@ if = {
     }
     
 }
+country_event = {
+    id = finland.129
+    days = 1609
+    
+}
 set_politics = {
     ruling_party = authoritarian_democrat
     last_election = "1934.4.10"

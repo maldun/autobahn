@@ -185,6 +185,11 @@ country_event = {
     days = 345
     
 }
+country_event = {
+    id = uobflavour.40
+    days = 780
+    
+}
 add_opinion_modifier = {
     target = GER
     modifier = embargo

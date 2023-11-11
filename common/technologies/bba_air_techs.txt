@@ -41,10 +41,35 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 10
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.2
+                date > "1937.1.1"
+                
+            }
+            modifier = {
+                factor = 1.2
+                date > "1938.1.1"
+                
+            }
+            modifier = {
+                factor = 1.2
+                date > "1939.1.1"
+                
+            }
+            modifier = {
+                factor = 5
+                date > "1940.1.1"
                 
             }
             
@@ -89,10 +114,35 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 2
             modifier = {
-                add = 30
+                factor = 0
                 is_eligible_for_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = engines_2
+                
+            }
+            modifier = {
+                factor = 1.2
+                is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
+                is_eligible_for_heavy_aircraft_production = yes
                 
             }
             
@@ -141,10 +191,35 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 2
             modifier = {
-                add = 30
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 4
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = engines_3
+                
+            }
+            modifier = {
+                factor = 1.2
                 is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
+                is_eligible_for_heavy_aircraft_production = yes
                 
             }
             
@@ -193,10 +268,35 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 2
             modifier = {
-                add = 30
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 4
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = engines_4
+                
+            }
+            modifier = {
+                factor = 1.2
                 is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
+                is_eligible_for_heavy_aircraft_production = yes
                 
             }
             
@@ -245,10 +345,30 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 30
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 4
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.2
                 is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
+                is_eligible_for_heavy_aircraft_production = yes
                 
             }
             
@@ -287,10 +407,30 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 20
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.2
+                is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 1.2
                 is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                is_eligible_for_heavy_aircraft_production = yes
                 
             }
             
@@ -329,10 +469,30 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 20
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.2
+                is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 1.2
                 is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                is_eligible_for_heavy_aircraft_production = yes
                 
             }
             
@@ -371,10 +531,30 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 20
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.2
+                is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 1.2
                 is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                is_eligible_for_heavy_aircraft_production = yes
                 
             }
             
@@ -413,10 +593,30 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 20
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.2
+                is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 1.2
                 is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 4
+                is_eligible_for_heavy_aircraft_production = yes
                 
             }
             
@@ -454,10 +654,15 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 20
-                is_eligible_for_medium_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
                 
             }
             
@@ -495,9 +700,19 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 10
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
                 is_eligible_for_heavy_aircraft_production = yes
                 
             }
@@ -536,9 +751,19 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 10
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
                 is_eligible_for_heavy_aircraft_production = yes
                 
             }
@@ -577,9 +802,19 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 10
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
                 is_eligible_for_heavy_aircraft_production = yes
                 
             }
@@ -618,9 +853,19 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 10
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
                 is_eligible_for_heavy_aircraft_production = yes
                 
             }
@@ -658,9 +903,19 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 10
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_eligible_for_medium_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 5
                 is_eligible_for_heavy_aircraft_production = yes
                 
             }
@@ -708,11 +963,20 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                OR = {
+                    has_tech = iw_small_airframe
+                    has_tech = iw_medium_airframe
+                    has_tech = iw_large_airframe
+                    
+                }
                 
             }
             
@@ -745,11 +1009,40 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = improved_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = advanced_small_airframe
+                
+            }
+            modifier = {
+                factor = 3
+                has_tech = modern_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = improved_medium_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = advanced_medium_airframe
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = modern_medium_airframe
                 
             }
             
@@ -782,11 +1075,40 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.5
                 has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = improved_small_airframe
+                
+            }
+            modifier = {
+                factor = 3
+                has_tech = advanced_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = basic_medium_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = improved_medium_airframe
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = advanced_medium_airframe
                 
             }
             
@@ -820,7 +1142,17 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
+            modifier = {
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 5
+                has_tech = basic_medium_airframe
+                
+            }
             
         }
         
@@ -857,11 +1189,25 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 2
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.5
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                OR = {
+                    has_tech = iw_small_airframe
+                    has_tech = iw_medium_airframe
+                    has_tech = iw_large_airframe
+                    
+                }
                 
             }
             
@@ -900,11 +1246,45 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 3
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = improved_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = advanced_small_airframe
+                
+            }
+            modifier = {
+                factor = 3
+                has_tech = modern_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = improved_large_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = advanced_large_airframe
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = modern_large_airframe
                 
             }
             
@@ -938,11 +1318,33 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 3
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = advanced_small_airframe
+                    has_tech = advanced_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = modern_small_airframe
+                    has_tech = modern_large_airframe
+                    
+                }
                 
             }
             
@@ -994,11 +1396,25 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 5
+                OR = {
+                    has_tech = iw_small_airframe
+                    has_tech = iw_medium_airframe
+                    has_tech = iw_large_airframe
+                    
+                }
                 
             }
             
@@ -1036,11 +1452,45 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 3
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = improved_small_airframe
+                    has_tech = improved_medium_airframe
+                    has_tech = improved_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = advanced_small_airframe
+                    has_tech = advanced_medium_airframe
+                    has_tech = advanced_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = modern_small_airframe
+                    has_tech = modern_medium_airframe
+                    has_tech = modern_large_airframe
+                    
+                }
                 
             }
             
@@ -1077,16 +1527,55 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_improved_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
                 
             }
             modifier = {
                 factor = 3
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = basic_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.5
                 has_tech = improved_small_airframe
+                
+            }
+            modifier = {
+                factor = 3
+                has_tech = advanced_small_airframe
+                
+            }
+            modifier = {
+                factor = 3
+                has_tech = modern_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = basic_medium_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = improved_medium_airframe
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = advanced_medium_airframe
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = modern_medium_airframe
                 
             }
             
@@ -1131,16 +1620,45 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_improved_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
                 
             }
             modifier = {
                 factor = 3
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
                 has_tech = improved_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = advanced_small_airframe
+                
+            }
+            modifier = {
+                factor = 3
+                has_tech = modern_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = improved_medium_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = advanced_medium_airframe
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = modern_medium_airframe
                 
             }
             
@@ -1177,11 +1695,45 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 3
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
                 has_tech = improved_small_airframe
-                is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = advanced_small_airframe
+                
+            }
+            modifier = {
+                factor = 3
+                has_tech = modern_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = improved_medium_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = advanced_medium_airframe
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = modern_medium_airframe
                 
             }
             
@@ -1218,11 +1770,45 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 1
             modifier = {
-                add = 25
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 3
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
                 has_tech = improved_small_airframe
-                is_eligible_for_improved_light_aircraft_production = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                has_tech = advanced_small_airframe
+                
+            }
+            modifier = {
+                factor = 3
+                has_tech = modern_small_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = improved_medium_airframe
+                
+            }
+            modifier = {
+                factor = 1.2
+                has_tech = advanced_medium_airframe
+                
+            }
+            modifier = {
+                factor = 2
+                has_tech = modern_medium_airframe
                 
             }
             
@@ -1277,10 +1863,50 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 5
             modifier = {
-                add = 25
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = basic_small_airframe
+                    has_tech = basic_medium_airframe
+                    has_tech = basic_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = improved_small_airframe
+                    has_tech = improved_medium_airframe
+                    has_tech = improved_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = advanced_small_airframe
+                    has_tech = advanced_medium_airframe
+                    has_tech = advanced_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = modern_small_airframe
+                    has_tech = modern_medium_airframe
+                    has_tech = modern_large_airframe
+                    
+                }
                 
             }
             
@@ -1325,11 +1951,55 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 5
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = basic_small_airframe
+                    has_tech = basic_medium_airframe
+                    has_tech = basic_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = improved_small_airframe
+                    has_tech = improved_medium_airframe
+                    has_tech = improved_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = advanced_small_airframe
+                    has_tech = advanced_medium_airframe
+                    has_tech = advanced_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = modern_small_airframe
+                    has_tech = modern_medium_airframe
+                    has_tech = modern_large_airframe
+                    
+                }
                 
             }
             
@@ -1374,18 +2044,53 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 5
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_improved_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
                 
             }
             modifier = {
                 factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = basic_small_airframe
+                    has_tech = basic_medium_airframe
+                    has_tech = basic_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 1.5
                 OR = {
                     has_tech = improved_small_airframe
-                    is_researching_technology = improved_small_airframe
+                    has_tech = improved_medium_airframe
+                    has_tech = improved_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = advanced_small_airframe
+                    has_tech = advanced_medium_airframe
+                    has_tech = advanced_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = modern_small_airframe
+                    has_tech = modern_medium_airframe
+                    has_tech = modern_large_airframe
                     
                 }
                 
@@ -1427,18 +2132,53 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 5
             modifier = {
-                add = 25
-                has_tech = improved_small_airframe
-                is_eligible_for_improved_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
                 
             }
             modifier = {
                 factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = basic_small_airframe
+                    has_tech = basic_medium_airframe
+                    has_tech = basic_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = improved_small_airframe
+                    has_tech = improved_medium_airframe
+                    has_tech = improved_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
                 OR = {
                     has_tech = advanced_small_airframe
-                    is_researching_technology = advanced_small_airframe
+                    has_tech = advanced_medium_airframe
+                    has_tech = advanced_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = modern_small_airframe
+                    has_tech = modern_medium_airframe
+                    has_tech = modern_large_airframe
                     
                 }
                 
@@ -1478,11 +2218,55 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 5
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = basic_small_airframe
+                    has_tech = basic_medium_airframe
+                    has_tech = basic_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = improved_small_airframe
+                    has_tech = improved_medium_airframe
+                    has_tech = improved_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = advanced_small_airframe
+                    has_tech = advanced_medium_airframe
+                    has_tech = advanced_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = modern_small_airframe
+                    has_tech = modern_medium_airframe
+                    has_tech = modern_large_airframe
+                    
+                }
                 
             }
             
@@ -1523,11 +2307,50 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 5
             modifier = {
-                add = 25
-                has_tech = basic_small_airframe
-                is_eligible_for_light_aircraft_production = yes
+                factor = 0
+                is_eligible_for_light_aircraft_production = no
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = basic_small_airframe
+                    has_tech = basic_medium_airframe
+                    has_tech = basic_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 1.5
+                OR = {
+                    has_tech = improved_small_airframe
+                    has_tech = improved_medium_airframe
+                    has_tech = improved_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = advanced_small_airframe
+                    has_tech = advanced_medium_airframe
+                    has_tech = advanced_large_airframe
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 3
+                OR = {
+                    has_tech = modern_small_airframe
+                    has_tech = modern_medium_airframe
+                    has_tech = modern_large_airframe
+                    
+                }
                 
             }
             
@@ -1546,7 +2369,7 @@ technologies = {
             
         }
         ai_will_do = {
-            base = 0
+            factor = 0
             
         }
         

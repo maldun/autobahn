@@ -348,6 +348,16 @@ country_event = {
     days = 179
     
 }
+country_event = {
+    id = KX_california.1100
+    days = 512
+    
+}
+country_event = {
+    id = KX_california.1101
+    days = 1772
+    
+}
 add_opinion_modifier = {
     target = CSA
     modifier = embargo
@@ -510,7 +520,7 @@ create_country_leader = {
     desc = "POLITICS_GEORGE_NORRIS_DESC"
     picture = "gfx/leaders/USA/Portrait_George_W_Norris.png"
     expire = "1965.1.1"
-    ideology = georgism_subtype
+    ideology = socdem_radical_progressivism_subtype
     traits = {
         the_fighting_liberal
         

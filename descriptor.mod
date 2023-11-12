@@ -4,7 +4,7 @@ tags={
 	"National Focuses"
 }
 dependencies={
-	"Kaiserredux: A Kaiserreich Expansion"
+	"KaiserreduX"
 }
 name="Autobahn nach 56 Redux"
 picture="thumbnail.png"

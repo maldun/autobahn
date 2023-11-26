@@ -195,7 +195,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Italo Gariboldi"
-    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Italo_Gariboldi.png"
+    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Italo_Gariboldi_KX.png"
     traits = {
         hill_fighter
         

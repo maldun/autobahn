@@ -1,5 +1,4 @@
 capital = 162
-set_naval_oob = "SRI_naval"
 set_research_slots = 3
 add_ideas = {
     TUS_syndie_government

@@ -58,6 +58,7 @@ technologies = {
         categories = {
             naval_equipment
             ship_modules_tech
+            naval_gunnery_tech
             cat_ship_light_battery
             cat_ship_medium_battery
             cat_ship_heavy_battery
@@ -106,6 +107,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_light_battery
             mio_cat_tech_all_screen_ship_and_modules
@@ -173,6 +175,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_shell_tech
             ship_modules_tech
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_cruiser_and_modules
@@ -222,6 +225,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_light_battery
             mio_cat_tech_all_screen_ship_and_modules
@@ -289,6 +293,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_shell_tech
             ship_modules_tech
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_cruiser_and_modules
@@ -328,6 +333,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_light_battery
             mio_cat_tech_all_screen_ship_and_modules
@@ -376,6 +382,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_medium_battery
             mio_cat_tech_all_capital_ship_and_modules
@@ -423,6 +430,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_shell_tech
             mio_cat_tech_all_capital_ship_and_modules
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_cruiser_and_modules
@@ -467,6 +475,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_medium_battery
             mio_cat_tech_all_capital_ship_and_modules
@@ -519,6 +528,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_shell_tech
             mio_cat_tech_all_capital_ship_and_modules
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_cruiser_and_modules
@@ -553,6 +563,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_medium_battery
             mio_cat_tech_all_capital_ship_and_modules
@@ -608,6 +619,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_heavy_battery
             mio_cat_tech_all_capital_ship_and_modules
@@ -660,6 +672,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_heavy_battery
             mio_cat_tech_all_capital_ship_and_modules
@@ -707,6 +720,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             cat_ship_heavy_battery
             mio_cat_tech_all_capital_ship_and_modules
@@ -753,6 +767,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_shell_tech
             mio_cat_tech_all_capital_ship_and_modules
             
         }
@@ -797,6 +812,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_shell_tech
             mio_cat_tech_all_capital_ship_and_modules
             
         }
@@ -841,6 +857,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             mio_cat_tech_all_capital_ship_and_modules
             mio_cat_tech_all_screen_ship_and_modules
@@ -888,6 +905,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             mio_cat_tech_all_capital_ship_and_modules
             mio_cat_tech_all_screen_ship_and_modules
@@ -930,6 +948,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             mio_cat_tech_all_capital_ship_and_modules
             mio_cat_tech_all_screen_ship_and_modules
@@ -971,6 +990,7 @@ technologies = {
         }
         categories = {
             naval_equipment
+            naval_gunnery_tech
             ship_modules_tech
             mio_cat_tech_all_capital_ship_and_modules
             mio_cat_tech_all_screen_ship_and_modules

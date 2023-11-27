@@ -169,7 +169,7 @@ country_event = {
 IMP = {
     set_autonomy = {
         target = WIF
-        autonomy_state = kr_initial_wif_puppet
+        autonomy_state = federated_colony
         
     }
     

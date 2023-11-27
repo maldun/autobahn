@@ -85,7 +85,7 @@ if = {
 GER = {
     set_autonomy = {
         target = POL
-        autonomy_state = kr_oststaat
+        autonomy_state = oststaat
         
     }
     
@@ -536,6 +536,7 @@ recruit_character = POL_boleslaw_wieniawa_dlugoszowski
 recruit_character = POL_jozef_unrug
 POL_august_iv = {
     set_character_flag = is_monarch
+    set_character_flag = POL_geheimrat
     
 }
 POL_alexander_von_hohenzollern = {

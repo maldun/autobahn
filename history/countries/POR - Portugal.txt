@@ -186,3 +186,4 @@ POR_maria_ana_braganca = {
     set_character_flag = is_monarch
     
 }
+activate_advisor = POR_jose_hipolito_vaz_raposo_sic

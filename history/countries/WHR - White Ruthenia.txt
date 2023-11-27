@@ -134,7 +134,7 @@ set_variable = {
 GER = {
     set_autonomy = {
         target = WHR
-        autonomy_state = kr_oststaat
+        autonomy_state = oststaat
         
     }
     

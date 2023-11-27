@@ -408,6 +408,7 @@ if = {
             tank_nsb_armor_upgrade = 2
             
         }
+        design_team = mio:FRA_lorraine_dietrich_organisation
         obsolete = yes
         
     }
@@ -428,6 +429,7 @@ if = {
             tank_nsb_armor_upgrade = 2
             
         }
+        design_team = mio:FRA_lorraine_dietrich_organisation
         obsolete = yes
         
     }
@@ -448,6 +450,7 @@ if = {
             tank_nsb_armor_upgrade = 4
             
         }
+        design_team = mio:FRA_de_dion_bouton_organisation
         
     }
     create_equipment_variant = {
@@ -467,6 +470,7 @@ if = {
             tank_nsb_armor_upgrade = 2
             
         }
+        design_team = mio:FRA_de_dion_bouton_organisation
         
     }
     create_equipment_variant = {
@@ -487,6 +491,7 @@ if = {
             tank_nsb_armor_upgrade = 3
             
         }
+        design_team = mio:FRA_somua_organisation
         
     }
     create_equipment_variant = {
@@ -507,6 +512,7 @@ if = {
             tank_nsb_armor_upgrade = 4
             
         }
+        design_team = mio:FRA_famh_organisation
         
     }
     
@@ -525,6 +531,7 @@ if = {
             special_type_slot_1 = lmg_defense_turret
             
         }
+        design_team = mio:FRA_breguet_organisation
         obsolete = yes
         
     }
@@ -537,6 +544,7 @@ if = {
             special_type_slot_1 = empty
             
         }
+        design_team = mio:FRA_morane_saulnier_organisation
         obsolete = yes
         
     }
@@ -549,6 +557,7 @@ if = {
             special_type_slot_1 = empty
             
         }
+        design_team = mio:FRA_morane_saulnier_organisation
         obsolete = yes
         
     }
@@ -561,6 +570,7 @@ if = {
             special_type_slot_1 = empty
             
         }
+        design_team = mio:FRA_morane_saulnier_organisation
         obsolete = yes
         
     }
@@ -573,6 +583,7 @@ if = {
             special_type_slot_1 = lmg_defense_turret
             
         }
+        design_team = mio:FRA_levasseur_organisation
         obsolete = yes
         
     }
@@ -586,6 +597,7 @@ if = {
             special_type_slot_1 = empty
             
         }
+        design_team = mio:FRA_morane_saulnier_organisation
         
     }
     create_equipment_variant = {
@@ -597,6 +609,7 @@ if = {
             special_type_slot_1 = floats
             
         }
+        design_team = mio:FRA_levasseur_organisation
         
     }
     create_equipment_variant = {
@@ -609,6 +622,7 @@ if = {
             special_type_slot_1 = lmg_defense_turret
             
         }
+        design_team = mio:FRA_potez_organisation
         
     }
     create_equipment_variant = {
@@ -621,6 +635,7 @@ if = {
             special_type_slot_1 = lmg_defense_turret
             
         }
+        design_team = mio:FRA_potez_organisation
         
     }
     create_equipment_variant = {
@@ -633,6 +648,7 @@ if = {
             special_type_slot_1 = lmg_defense_turret
             
         }
+        design_team = mio:FRA_potez_organisation
         obsolete = yes
         
     }

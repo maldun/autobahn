@@ -1,5 +1,6 @@
 technologies = {
-    @1918 = 1
+    @1920 = 1
+    @1930 = 2
     @1936 = 4
     tech_trucks = {
         enable_subunits = {
@@ -27,7 +28,7 @@ technologies = {
             
         }
         research_cost = 2
-        start_year = 1910
+        start_year = 1920
         folder = {
             name = r56_vechicles_folder
             position = {
@@ -815,7 +816,7 @@ technologies = {
             
         }
         research_cost = 2
-        start_year = 1918
+        start_year = 1930
         folder = {
             name = r56_vechicles_folder
             position = {
@@ -1013,7 +1014,7 @@ technologies = {
             
         }
         research_cost = 1.5
-        start_year = 1910
+        start_year = 1920
         folder = {
             name = r56_vechicles_folder
             position = {
@@ -1160,7 +1161,7 @@ technologies = {
             
         }
         research_cost = 1
-        start_year = 1918
+        start_year = 1930
         sub_tech_index = 1
         categories = {
             train_tech

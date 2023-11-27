@@ -105,6 +105,10 @@ activate_targeted_decision = {
     decision = BOL_kill_CHL
     
 }
+CHL = {
+    embargo_ROOT = yes
+    
+}
 country_event = {
     id = pru.102
     days = 10

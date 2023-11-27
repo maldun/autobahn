@@ -231,7 +231,7 @@ RUS = {
 GER = {
     set_autonomy = {
         target = BAT
-        autonomy_state = kr_oststaat_autonomous
+        autonomy_state = oststaat_autonomous
         
     }
     

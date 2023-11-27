@@ -109,6 +109,10 @@ ARG = {
     embargo_ROOT = yes
     
 }
+PRU = {
+    embargo_ROOT = yes
+    
+}
 add_ideas = {
     limited_conscription
     CHL_home_of_south_american_syndicalism

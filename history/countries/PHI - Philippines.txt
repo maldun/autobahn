@@ -48,7 +48,7 @@ if = {
 USA = {
     set_autonomy = {
         target = PHI
-        autonomy_state = kr_default_puppet
+        autonomy_state = default_puppet
         
     }
     

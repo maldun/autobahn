@@ -205,7 +205,7 @@ WAL = {
 GER = {
     set_autonomy = {
         target = BEL
-        autonomy_state = kr_default_puppet
+        autonomy_state = default_puppet
         
     }
     country_event = {

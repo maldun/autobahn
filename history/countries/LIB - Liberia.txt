@@ -19,7 +19,7 @@ country_event = {
 USA = {
     set_autonomy = {
         target = LIB
-        autonomy_state = kr_default_puppet
+        autonomy_state = default_puppet
         
     }
     

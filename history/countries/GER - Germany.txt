@@ -7,9 +7,14 @@ set_stability = 0.8
 set_war_support = 0.3
 starting_train_buffer = 2
 add_ideas = {
+    GER_march_to_april
     GER_victors_of_wwi
-    GER_quenched_militarism
-    limited_conscription
+    GER_imperial_pride
+    GER_pre_black_monday
+    
+}
+set_variable = {
+    country_intro_page_count = 5
     
 }
 set_technology = {
@@ -168,23 +173,23 @@ if = {
     
 }
 set_politics = {
-    ruling_party = authoritarian_democrat
-    last_election = "1932.3.8"
+    ruling_party = social_conservative
+    last_election = "1931.4.10"
     election_frequency = 60
     elections_allowed = yes
     
 }
 set_popularities = {
     totalist = 1
-    radical_socialist = 3
+    radical_socialist = 2
     syndicalist = 2
-    social_democrat = 22
-    social_liberal = 6
-    market_liberal = 3
-    social_conservative = 12
-    authoritarian_democrat = 42
-    paternal_autocrat = 7
-    national_populist = 2
+    social_democrat = 27
+    social_liberal = 12
+    market_liberal = 1
+    social_conservative = 21
+    authoritarian_democrat = 14
+    paternal_autocrat = 3
+    national_populist = 17
     
 }
 create_faction = reichspakt
@@ -195,147 +200,376 @@ add_to_faction = BAT
 add_to_faction = WHR
 add_to_faction = UKR
 add_to_faction = POL
+add_to_faction = FIN
 add_to_faction = MOR
 add_to_faction = MAF
 add_to_faction = GEA
-every_country = {
-    limit = {
-        OR = {
-            tag = GER
-            tag = BEL
-            tag = LIT
-            tag = BAT
-            tag = WHR
-            tag = UKR
-            tag = DEN
-            tag = ICE
-            tag = SWE
-            tag = FIN
-            tag = HOL
-            tag = DEI
-            tag = POL
-            tag = IRE
-            tag = AZR
-            tag = GEO
-            
-        }
-        
-    }
-    GER_add_to_mitteleuropa = yes
+set_variable = {
+    GER_farleft_seats = 8
     
 }
-if = {
-    limit = {
-        has_tech_sharing_feature = yes
-        
-    }
-    every_country = {
-        limit = {
-            is_ally_with = GER
-            
-        }
-        add_to_tech_sharing_group = german_research
-        
-    }
+set_variable = {
+    GER_SPD_seats = 125
+    
+}
+set_variable = {
+    GER_LVP_seats = 59
+    
+}
+set_variable = {
+    GER_Guelph_seats = 6
+    
+}
+set_variable = {
+    GER_liberal_seats = 5
+    
+}
+set_variable = {
+    GER_polish_seats = 19
+    
+}
+set_variable = {
+    GER_Zentrum_seats = 99
+    
+}
+set_variable = {
+    GER_agrarian_seats = 6
+    
+}
+set_variable = {
+    GER_DkP_seats = 50
+    
+}
+set_variable = {
+    GER_DVLP_seats = 65
+    
+}
+set_variable = {
+    GER_farright_seats = 3
     
 }
 country_event = {
-    id = mittel.43
+    id = gerblack.1
+    days = 8
+    
+}
+country_event = {
+    id = gerblack.2
+    days = 29
+    
+}
+country_event = {
+    id = gerblack.3
+    days = 32
+    
+}
+country_event = {
+    id = gerblack.5
+    days = 40
+    
+}
+country_event = {
+    id = germany.6
+    days = 12
+    
+}
+country_event = {
+    id = germany.11
+    days = 70
+    random_days = 20
+    
+}
+country_event = {
+    id = germany.12
+    days = 80
+    random_days = 5
+    
+}
+country_event = {
+    id = germany.15
+    days = 45
+    random_days = 3
+    
+}
+country_event = {
+    id = germany.16
+    days = 35
+    random_days = 7
+    
+}
+country_event = {
+    id = germany.18
+    days = 111
+    
+}
+country_event = {
+    id = germany.19
+    days = 121
+    
+}
+country_event = {
+    id = germany.24
+    days = 145
+    random_days = 3
+    
+}
+country_event = {
+    id = germany.21
+    days = 50
+    random_days = 300
+    
+}
+country_event = {
+    id = germany.36
+    days = 450
+    random_days = 7
+    
+}
+country_event = {
+    id = germany.58
+    days = 1095
+    random_days = 100
+    
+}
+country_event = {
+    id = germany.59
+    days = 730
+    random_days = 100
+    
+}
+country_event = {
+    id = gerschl.14
+    days = 181
+    
+}
+country_event = {
+    id = gerschl.40
+    days = 311
+    
+}
+country_event = {
+    id = gerschl.58
+    days = 711
+    
+}
+country_event = {
+    id = gerschl.60
+    days = 720
+    random_days = 15
+    
+}
+country_event = {
+    id = gerschl.61
+    days = 365
+    random_days = 30
+    
+}
+country_event = {
+    id = gerschl.72
+    days = 900
+    random_days = 30
+    
+}
+country_event = {
+    id = gerspd.11
+    days = 450
+    random_days = 360
+    
+}
+country_event = {
+    id = gerspd.8
+    days = 550
+    random_days = 7
+    
+}
+country_event = {
+    id = germil.1
+    days = 370
+    
+}
+country_event = {
+    id = gerswr.7
+    days = 365
+    random_days = 90
+    
+}
+country_event = {
+    id = gerswr.48
+    days = 762
+    random_days = 20
+    
+}
+country_event = {
+    id = gerspd.75
+    days = 720
+    random_days = 15
+    
+}
+country_event = {
+    id = gerflavour.1
+    days = 37
+    
+}
+country_event = {
+    id = gerflavour.6
+    days = 1218
+    
+}
+country_event = {
+    id = gerflavour.7
+    days = 238
+    
+}
+country_event = {
+    id = gerflavour.11
+    days = 2189
+    
+}
+country_event = {
+    id = gerflavour.12
+    days = 3257
+    random_days = 20
+    
+}
+country_event = {
+    id = gerflavour.13
+    days = 3798
+    
+}
+country_event = {
+    id = gerflavour.16
+    days = 135
+    
+}
+country_event = {
+    id = gerflavour.17
+    days = 1065
+    
+}
+country_event = {
+    id = gerflavour.18
+    days = 895
+    
+}
+country_event = {
+    id = gerflavour.20
+    days = 430
+    random_days = 30
+    
+}
+country_event = {
+    id = gerflavour.21
+    days = 1200
+    random_days = 30
+    
+}
+country_event = {
+    id = gerflavour.27
+    days = 900
+    random_days = 120
+    
+}
+country_event = {
+    id = gerflavour.39
+    days = 720
+    random_days = 365
+    
+}
+country_event = {
+    id = gerflavour.40
+    days = 710
+    
+}
+country_event = {
+    id = gerflavour.71
+    days = 410
+    
+}
+country_event = {
+    id = gerflavour.72
+    days = 1400
+    
+}
+country_event = {
+    id = gerflavour.72
+    days = 1492
+    
+}
+country_event = {
+    id = gerflavour.72
+    days = 1766
+    
+}
+country_event = {
+    id = gerflavour.72
+    days = 1858
+    
+}
+country_event = {
+    id = gerflavour.75
+    days = 1200
+    random_days = 30
+    
+}
+country_event = {
+    id = gerflavour.78
+    days = 1000
+    
+}
+country_event = {
+    id = gerflavour.81
+    days = 1120
+    random_days = 30
+    
+}
+country_event = {
+    id = mittel.40
     days = 84
     
 }
 MAF = {
     country_event = {
-        id = mittel.43
+        id = mittel.40
         days = 84
         
     }
     
 }
 country_event = {
-    id = gerfla.1
-    days = 238
+    id = gerflavour.8
+    days = 1981
     
 }
-country_event = {
-    id = gerdom.2
-    days = 360
-    
-}
-news_event = {
-    id = gerfla.2
-    days = 400
-    
-}
-news_event = {
-    id = gerfla.3
-    days = 540
-    
-}
-country_event = {
-    id = gerfla.6
-    days = 525
-    
-}
-country_event = {
-    id = gerfla.7
-    days = 540
-    
-}
-country_event = {
-    id = gerfla.8
-    days = 1218
-    
-}
-country_event = {
-    id = gerdom.106
-    days = 731
-    random_days = 75
-    
-}
-country_event = {
-    id = gerdom.43
-    days = 896
-    
-}
-country_event = {
-    id = literature.15
-    days = 952
-    
-}
-country_event = {
-    id = gerdom.40
-    days = 1354
-    
-}
-country_event = {
-    id = gerdom.41
-    days = 1354
-    
-}
-country_event = {
-    id = gerfor.36
-    days = 180
-    random_days = 30
+MAF = {
+    country_event = {
+        id = gerflavour.8
+        days = 1981
+        
+    }
     
 }
 recruit_character = GER_wilhelm_ii
 recruit_character = GER_wilhelm_iii
 recruit_character = GER_wilhelm_iv
-recruit_character = GER_ernst_thalmann
-recruit_character = GER_rudolf_rocker
-recruit_character = GER_wilhelm_pieck
+recruit_character = GER_fritz_wolffheim
+recruit_character = GER_karl_schroder
+recruit_character = GER_karl_korsch
 recruit_character = GER_willi_munzenberg
 recruit_character = GER_kurt_schumacher
 recruit_character = GER_erich_kochweser
-recruit_character = GER_gustav_krupp
+recruit_character = GER_karl_jarres
+recruit_character = GER_hasso_von_manteuffel
+recruit_character = GER_joseph_joos
+recruit_character = GER_carlo_mierendorff
+recruit_character = GER_theodor_heuss
 recruit_character = GER_heinrich_bruning
 recruit_character = GER_franz_von_papen
 recruit_character = GER_erwin_von_witzleben
 recruit_character = GER_heinrich_class
+recruit_character = GER_max_bauer
+recruit_character = GER_roland_koster
 recruit_character = GER_gerd_von_rundstedt
 recruit_character = GER_alfred_von_vollard_bockelberg
-recruit_character = GER_august_von_mackensen
 recruit_character = GER_erich_von_manstein
 recruit_character = GER_heinz_guderian
 recruit_character = GER_walter_model
@@ -357,6 +591,9 @@ recruit_character = GER_franz_von_bayern
 recruit_character = GER_curt_haase
 recruit_character = GER_walther_von_reichenau
 recruit_character = GER_rupprecht_von_bayern
+recruit_character = GER_eugen_von_schobert
+recruit_character = GER_wilhelm_list
+recruit_character = GER_maximilian_von_weichs
 recruit_character = GER_karl_donitz
 recruit_character = GER_erich_raeder
 recruit_character = GER_lothar_von_arnauld_de_la_periere
@@ -370,11 +607,56 @@ recruit_character = GER_rolf_carls
 recruit_character = GER_gunther_lutjens
 recruit_character = GER_bernhard_rogge
 recruit_character = GER_kurt_von_schleicher
-recruit_character = GER_otto_wels
-recruit_character = GER_hans_vogel
-recruit_character = GER_paul_von_lettow_vorbeck
 recruit_character = GER_carl_friedrich_goerdeler
-activate_advisor = GER_franz_von_papen_sic
+recruit_character = GER_kuno_von_westarp
+recruit_character = GER_waldemar_pabst
+recruit_character = GER_carl_ulitzka
+recruit_character = GER_konrad_adenauer
+recruit_character = GER_adam_stegerwald
+recruit_character = GER_fritz_schaffer
+recruit_character = GER_rudolf_schwander
+recruit_character = GER_hans_vogel
+recruit_character = GER_otto_hugo
+GER_roland_koster = {
+    retire = yes
+    
+}
+GER_kuno_von_westarp = {
+    retire = yes
+    
+}
+GER_waldemar_pabst = {
+    retire = yes
+    
+}
+GER_carl_ulitzka = {
+    retire = yes
+    
+}
+GER_konrad_adenauer = {
+    retire = yes
+    
+}
+GER_adam_stegerwald = {
+    retire = yes
+    
+}
+GER_fritz_schaffer = {
+    retire = yes
+    
+}
+GER_rudolf_schwander = {
+    retire = yes
+    
+}
+GER_hans_vogel = {
+    retire = yes
+    
+}
+GER_otto_hugo = {
+    retire = yes
+    
+}
 recruit_character = GER_alfred_hugenberg
 recruit_character = GER_theodor_wolff
 recruit_character = GER_carl_siemens
@@ -391,11 +673,11 @@ recruit_character = GER_uranverein
 recruit_character = GER_hafraba
 recruit_character = GER_franz_gurtner
 recruit_character = GER_hjalmar_schacht
-recruit_character = GER_karl_helfferich
 recruit_character = GER_wilhelm_canaris
 recruit_character = GER_walther_von_brauchitsch
 recruit_character = GER_kurt_von_hammerstein_equord
 recruit_character = GER_ludwig_beck
+recruit_character = GER_georg_wetzell
 recruit_character = GER_werner_von_fritsch
 recruit_character = GER_wolfgang_wegener
 recruit_character = GER_walther_wever
@@ -405,6 +687,148 @@ recruit_character = GER_kurt_student
 recruit_character = GER_hugo_sperrle
 recruit_character = GER_walter_dornberger
 recruit_character = GER_werner_heisenberg
+recruit_character = GER_herbert_von_dirksen
+recruit_character = GER_reichskanzler_in_prussia
+recruit_character = GER_ewald_von_kleist_schmenzin
+recruit_character = GER_hermann_muller
+recruit_character = GER_walther_rathenau
+recruit_character = GER_fritz_tarnow
+recruit_character = GER_siegfried_von_roedern
+recruit_character = GER_adolf_von_batocki
+recruit_character = GER_otto_braun
+activate_advisor = GER_herbert_von_dirksen
+activate_advisor = GER_siegfried_von_roedern_adv
+recruit_character = GER_theodor_leipart
+recruit_character = GER_carl_schmitt
+recruit_character = GER_ferdinand_von_bredow
+recruit_character = GER_lothar_erdmann
+recruit_character = GER_ulrich_von_hassell
+recruit_character = GER_eduard_stadtler
+recruit_character = GER_oskar_hergt
+recruit_character = GER_adolf_von_trotha
+recruit_character = GER_martin_spahn
+recruit_character = GER_hans_schlange_schoningen
+recruit_character = GER_hermann_luninck
+recruit_character = GER_hansjoachim_rohr
+recruit_character = GER_tilo_wilmowsky
+recruit_character = GER_rudolf_hilferding
+recruit_character = GER_carl_severing
+recruit_character = GER_johannes_bell
+recruit_character = GER_albert_einstein
+recruit_character = GER_hans_zehrer
+recruit_character = GER_otto_grotewohl
+recruit_character = GER_anton_fehr
+recruit_character = GER_wissell_moellendorff
+recruit_character = GER_erich_von_bonin
+recruit_character = GER_ernst_volckheim
+recruit_character = GER_gunther_gereke
+recruit_character = GER_joachim_von_stulpnagel
+recruit_character = GER_august_winnig
+recruit_character = GER_hofgeismar_circle
+GER_carl_schmitt = {
+    retire = yes
+    
+}
+GER_ferdinand_von_bredow = {
+    retire = yes
+    
+}
+GER_lothar_erdmann = {
+    retire = yes
+    
+}
+GER_ulrich_von_hassell = {
+    retire = yes
+    
+}
+GER_eduard_stadtler = {
+    retire = yes
+    
+}
+GER_oskar_hergt = {
+    retire = yes
+    
+}
+GER_adolf_von_trotha = {
+    retire = yes
+    
+}
+GER_martin_spahn = {
+    retire = yes
+    
+}
+GER_hans_schlange_schoningen = {
+    retire = yes
+    
+}
+GER_hermann_luninck = {
+    retire = yes
+    
+}
+GER_hansjoachim_rohr = {
+    retire = yes
+    
+}
+GER_tilo_wilmowsky = {
+    retire = yes
+    
+}
+GER_rudolf_hilferding = {
+    retire = yes
+    
+}
+GER_carl_severing = {
+    retire = yes
+    
+}
+GER_johannes_bell = {
+    retire = yes
+    
+}
+GER_albert_einstein = {
+    retire = yes
+    
+}
+GER_hans_zehrer = {
+    retire = yes
+    
+}
+GER_otto_grotewohl = {
+    retire = yes
+    
+}
+GER_anton_fehr = {
+    retire = yes
+    
+}
+GER_wissell_moellendorff = {
+    retire = yes
+    
+}
+GER_erich_von_bonin = {
+    retire = yes
+    
+}
+GER_ernst_volckheim = {
+    retire = yes
+    
+}
+GER_gunther_gereke = {
+    retire = yes
+    
+}
+GER_joachim_von_stulpnagel = {
+    retire = yes
+    
+}
+GER_august_winnig = {
+    retire = yes
+    
+}
+GER_hofgeismar_circle = {
+    retire = yes
+    
+}
 GER_wilhelm_ii = {
     set_character_flag = is_monarch
     
@@ -421,6 +845,844 @@ GER_heinz_guderian = {
     set_nationality = POL
     
 }
+recruit_character = GER_bm_cardgame_money_issuance_object
+recruit_character = GER_bm_cardgame_capital_controls_object
+recruit_character = GER_bm_cardgame_employment_programme_object
+recruit_character = GER_bm_cardgame_cooperation_business_object
+recruit_character = GER_bm_cardgame_fireside_chat_object
+recruit_character = GER_bm_cardgame_eastern_assistance_object
+recruit_character = GER_bm_cardgame_price_monitoring_object
+recruit_character = GER_bm_cardgame_rathenauplan_object
+recruit_character = GER_bm_cardgame_tbplan_object
+recruit_character = GER_bm_cardgame_arbeitsdienst_object
+recruit_character = GER_bm_cardgame_land_improvement_object
+recruit_character = GER_bm_cardgame_corporate_assistance_object
+recruit_character = GER_bm_cardgame_institutional_public_works_object
+recruit_character = GER_bm_cardgame_import_tariffs_object
+recruit_character = GER_bm_cardgame_economic_planning_object
+recruit_character = GER_bm_cardgame_mitteleuropa_loans_object
+recruit_character = GER_bm_cardgame_administrative_reform_object
+recruit_character = GER_bm_cardgame_nationalisation_of_foreign_companies_object
+recruit_character = GER_bm_trade_union_collaboration_object
+recruit_character = GER_bm_cardgame_strategic_tax_hikes_object
+recruit_character = GER_bm_cardgame_price_depression_object
+recruit_character = GER_bm_cardgame_money_issuance_large_object
+recruit_character = GER_bm_cardgame_fiscal_austerity_object
+recruit_character = GER_bm_cardgame_federal_income_taxes_object
+recruit_character = GER_bm_cardgame_reichsbank_analysis_object
+recruit_character = GER_bm_cardgame_technocratic_thinking_object
+GER_bm_cardgame_money_issuance_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_capital_controls_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_employment_programme_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_cooperation_business_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_fireside_chat_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_eastern_assistance_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_price_monitoring_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_rathenauplan_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_tbplan_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_arbeitsdienst_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_land_improvement_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_corporate_assistance_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_institutional_public_works_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_import_tariffs_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_economic_planning_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_mitteleuropa_loans_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_administrative_reform_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_nationalisation_of_foreign_companies_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_trade_union_collaboration_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_strategic_tax_hikes_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_price_depression_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_money_issuance_large_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_fiscal_austerity_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_federal_income_taxes_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_reichsbank_analysis_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_technocratic_thinking_object = {
+    add_to_array = {
+        GER.GER_cardgame_object_array = THIS
+        
+    }
+    retire = yes
+    
+}
+GER_bm_cardgame_money_issuance_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_money_issuance
+        
+    }
+    set_variable = {
+        GER_card_type = 1
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        card_investment_value = 1000
+        
+    }
+    set_variable = {
+        card_stability_value = 500
+        
+    }
+    set_variable = {
+        card_debt_value = 1
+        
+    }
+    
+}
+GER_bm_cardgame_capital_controls_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_capital_controls
+        
+    }
+    set_variable = {
+        GER_card_type = 2
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        card_investment_value = 500
+        
+    }
+    set_variable = {
+        card_stability_value = 1000
+        
+    }
+    set_variable = {
+        card_debt_value = 1
+        
+    }
+    
+}
+GER_bm_cardgame_employment_programme_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_employment_programme
+        
+    }
+    set_variable = {
+        GER_card_type = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        card_investment_value = 750
+        
+    }
+    set_variable = {
+        card_stability_value = 750
+        
+    }
+    set_variable = {
+        card_debt_value = 1
+        
+    }
+    
+}
+GER_bm_cardgame_cooperation_business_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_cooperation_business
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 2
+        
+    }
+    set_variable = {
+        card_draw_value = 2
+        
+    }
+    set_variable = {
+        card_debt_value = 3
+        
+    }
+    
+}
+GER_bm_cardgame_fireside_chat_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_fireside_chat
+        
+    }
+    set_character_flag = custom_card_calculations
+    set_character_flag = custom_card_effect
+    set_variable = {
+        card_lines_for_tt = 2
+        
+    }
+    
+}
+GER_bm_cardgame_eastern_assistance_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_eastern_assistance
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 6
+        
+    }
+    set_character_flag = custom_card_calculations
+    set_character_flag = custom_card_tooltip
+    set_variable = {
+        card_investment_value = 200
+        
+    }
+    set_variable = {
+        card_stability_value = 200
+        
+    }
+    set_variable = {
+        card_debt_value = 2
+        
+    }
+    
+}
+GER_bm_cardgame_price_monitoring_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_price_monitoring
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 5
+        
+    }
+    set_character_flag = custom_card_effect
+    set_character_flag = reform_card
+    set_character_flag = remove_after_play
+    set_variable = {
+        card_debt_value = 3
+        
+    }
+    
+}
+GER_bm_cardgame_rathenauplan_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_rathenauplan
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 6
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = custom_card_calculations
+    set_variable = {
+        card_debt_value = 3
+        
+    }
+    
+}
+GER_bm_cardgame_tbplan_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_tbplan
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 6
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = custom_card_calculations
+    set_variable = {
+        card_debt_value = 3
+        
+    }
+    
+}
+GER_bm_cardgame_arbeitsdienst_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_arbeitsdienst
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        GER_card_type = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        card_investment_value = 1500
+        
+    }
+    set_variable = {
+        card_stability_value = 2000
+        
+    }
+    set_variable = {
+        card_debt_value = 3
+        
+    }
+    
+}
+GER_bm_cardgame_land_improvement_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_land_improvement
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        GER_card_type = 3
+        
+    }
+    set_variable = {
+        card_investment_value = 2000
+        
+    }
+    set_variable = {
+        card_stability_value = 1000
+        
+    }
+    set_variable = {
+        card_debt_value = 3
+        
+    }
+    
+}
+GER_bm_cardgame_corporate_assistance_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_corporate_assistance
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 2
+        
+    }
+    set_character_flag = custom_card_calculations
+    set_variable = {
+        card_draw_from_discard = 1
+        
+    }
+    set_variable = {
+        card_debt_value = 1
+        
+    }
+    
+}
+GER_bm_cardgame_institutional_public_works_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_institutional_public_works
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 6
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = reform_card
+    set_character_flag = remove_after_play
+    set_variable = {
+        card_debt_value = 5
+        
+    }
+    
+}
+GER_bm_cardgame_import_tariffs_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_import_tariffs
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        GER_card_type = 2
+        
+    }
+    set_variable = {
+        card_investment_value = 500
+        
+    }
+    set_variable = {
+        card_stability_value = 1000
+        
+    }
+    
+}
+GER_bm_cardgame_economic_planning_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_economic_planning
+        
+    }
+    set_character_flag = custom_card_effect
+    set_variable = {
+        card_lines_for_tt = 5
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = reform_card
+    set_character_flag = remove_after_play
+    set_variable = {
+        card_debt_value = 5
+        
+    }
+    
+}
+GER_bm_cardgame_mitteleuropa_loans_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_mitteleuropa_loans
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 4
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        GER_card_type = 1
+        
+    }
+    set_variable = {
+        card_investment_value = 2000
+        
+    }
+    set_variable = {
+        card_stability_value = 750
+        
+    }
+    set_variable = {
+        card_debt_value = 3
+        
+    }
+    
+}
+GER_bm_cardgame_administrative_reform_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_administrative_reform
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 4
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = custom_card_effect
+    set_variable = {
+        card_debt_value = 2
+        
+    }
+    
+}
+GER_bm_cardgame_nationalisation_of_foreign_companies_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_nationalisation_of_foreign_companies
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 4
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = custom_card_effect
+    set_variable = {
+        card_debt_value = 2
+        
+    }
+    
+}
+GER_bm_trade_union_collaboration_object = {
+    set_variable = {
+        card_id = token:GER_bm_trade_union_collaboration
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 4
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = custom_card_calculations
+    set_variable = {
+        card_debt_value = 2
+        
+    }
+    
+}
+GER_bm_cardgame_strategic_tax_hikes_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_strategic_tax_hikes
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        GER_card_type = 2
+        
+    }
+    set_variable = {
+        card_investment_value = 750
+        
+    }
+    set_variable = {
+        card_stability_value = 1250
+        
+    }
+    
+}
+GER_bm_cardgame_price_depression_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_price_depression
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        GER_card_type = 1
+        
+    }
+    set_variable = {
+        card_investment_value = 1250
+        
+    }
+    set_variable = {
+        card_stability_value = 750
+        
+    }
+    
+}
+GER_bm_cardgame_money_issuance_large_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_money_issuance_large
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        GER_card_type = 1
+        
+    }
+    set_variable = {
+        card_investment_value = 2500
+        
+    }
+    set_variable = {
+        card_stability_value = 1250
+        
+    }
+    set_variable = {
+        card_debt_value = 2
+        
+    }
+    
+}
+GER_bm_cardgame_fiscal_austerity_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_fiscal_austerity
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 3
+        
+    }
+    set_variable = {
+        card_lines_for_tt_extra = 3
+        
+    }
+    set_variable = {
+        GER_card_type = 2
+        
+    }
+    set_variable = {
+        card_investment_value = 250
+        
+    }
+    set_variable = {
+        card_stability_value = 250
+        
+    }
+    set_variable = {
+        card_debt_value = -2
+        
+    }
+    
+}
+GER_bm_cardgame_federal_income_taxes_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_federal_income_taxes
+        
+    }
+    set_variable = {
+        card_lines_for_tt = 5
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = reform_card
+    set_character_flag = remove_after_play
+    set_variable = {
+        card_debt_value = 4
+        
+    }
+    
+}
+GER_bm_cardgame_reichsbank_analysis_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_reichsbank_analysis
+        
+    }
+    set_character_flag = custom_card_tooltip
+    set_character_flag = custom_card_effect
+    set_variable = {
+        card_lines_for_tt = 2
+        
+    }
+    
+}
+GER_bm_cardgame_technocratic_thinking_object = {
+    set_variable = {
+        card_id = token:GER_bm_cardgame_technocratic_thinking
+        
+    }
+    set_character_flag = remove_after_play
+    set_character_flag = reform_card
+    set_character_flag = custom_card_effect
+    set_character_flag = custom_card_tooltip
+    set_variable = {
+        card_lines_for_tt = 5
+        
+    }
+    set_variable = {
+        card_debt_value = 2
+        
+    }
+    
+}
 if = {
     limit = {
         has_dlc_lar = yes
@@ -432,6 +1694,7 @@ if = {
         GFX = GFX_portrait_kr_hermann_giskes
         traits = {
             operative_master_interrogator
+            operative_military_background
             
         }
         bypass_recruitment = no
@@ -446,7 +1709,7 @@ if = {
         name = "Hugo Bleicher"
         GFX = GFX_portrait_kr_hugo_bleicher
         traits = {
-            operative_demolition_expert
+            operative_master_saboteur
             
         }
         bypass_recruitment = no
@@ -461,7 +1724,7 @@ if = {
         name = "Josef Jakobs"
         GFX = GFX_portrait_kr_josef_jakobs
         traits = {
-            operative_commando
+            operative_master_commando
             
         }
         bypass_recruitment = no
@@ -510,5 +1773,324 @@ PRE = {
     GER_add_plane_variants = yes
     GER_add_armour_variants = yes
     GER_add_naval_variants = yes
+    
+}
+create_economic_sphere = yes
+var:economic_sphere = {
+    set_character_name = mitteleuropa_title
+    var:desc = {
+        set_character_name = MIT_mitteleuropa_modifier_desc
+        
+    }
+    var:icon = {
+        set_character_name = "GFX_goal_GER_mitteleuropa"
+        
+    }
+    
+}
+GER_add_to_mitteleuropa = yes
+every_country = {
+    limit = {
+        OR = {
+            tag = BEL
+            tag = LIT
+            tag = BAT
+            tag = WHR
+            tag = UKR
+            tag = DEN
+            tag = ICE
+            tag = SWE
+            tag = FIN
+            tag = HOL
+            tag = POL
+            tag = IRE
+            tag = AZR
+            tag = GEO
+            tag = BUL
+            tag = AUS
+            tag = CZE
+            tag = HUN
+            tag = CRO
+            tag = GAL
+            tag = TUR
+            tag = SPA
+            
+        }
+        
+    }
+    GER_add_to_mitteleuropa = yes
+    
+}
+if = {
+    limit = {
+        has_tech_sharing_feature = yes
+        
+    }
+    every_country = {
+        limit = {
+            is_ally_with = GER
+            
+        }
+        add_to_tech_sharing_group = german_research
+        
+    }
+    
+}
+set_variable = {
+    global.MIT_small_value = 1
+    
+}
+set_variable = {
+    global.MIT_medium_value = 5
+    
+}
+set_variable = {
+    global.MIT_large_value = 10
+    
+}
+set_variable = {
+    global.MIT_huge_value = 50
+    
+}
+recruit_character = MIT_generic_industrial_projects
+recruit_character = MIT_generic_arms_industry
+recruit_character = MIT_generic_infrastructure
+recruit_character = MIT_generic_financial_bailout
+recruit_character = MIT_generic_industrial_advisors
+recruit_character = MIT_generic_arms_experts
+recruit_character = MIT_generic_cohesion_fund
+recruit_character = MIT_generic_legal_reform
+recruit_character = MIT_consultative_assembly
+recruit_character = MIT_directive_system
+recruit_character = MIT_qualified_majority
+recruit_character = MIT_assembly_approval
+recruit_character = MIT_regulation_system
+recruit_character = MIT_budget_quota
+recruit_character = MIT_enforcement_directorate
+recruit_character = MIT_enlargement_directorate
+recruit_character = MIT_common_travel_area
+recruit_character = MIT_support_local_production
+recruit_character = MIT_mitteleuropa_loans
+recruit_character = MIT_central_europe_bank
+recruit_character = MIT_europamark
+recruit_character = MIT_challenge_leadership
+MIT_generic_industrial_projects = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_generic_industrial_projects_idea
+        
+    }
+    add_to_array = {
+        global.MIT_agendas = THIS
+        
+    }
+    retire = yes
+    
+}
+MIT_generic_arms_industry = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_generic_arms_industry_idea
+        
+    }
+    add_to_array = {
+        global.MIT_agendas = THIS
+        
+    }
+    retire = yes
+    
+}
+MIT_generic_infrastructure = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_generic_infrastructure_idea
+        
+    }
+    add_to_array = {
+        global.MIT_agendas = THIS
+        
+    }
+    retire = yes
+    
+}
+MIT_generic_financial_bailout = {
+    set_variable = {
+        agenda_idea = token:MIT_generic_financial_bailout_idea
+        
+    }
+    add_to_array = {
+        global.MIT_agendas = THIS
+        
+    }
+    retire = yes
+    
+}
+MIT_generic_industrial_advisors = {
+    set_variable = {
+        agenda_idea = token:MIT_generic_industrial_advisors_idea
+        
+    }
+    add_to_array = {
+        global.MIT_agendas = THIS
+        
+    }
+    retire = yes
+    
+}
+MIT_generic_arms_experts = {
+    set_variable = {
+        agenda_idea = token:MIT_generic_arms_experts_idea
+        
+    }
+    add_to_array = {
+        global.MIT_agendas = THIS
+        
+    }
+    retire = yes
+    
+}
+MIT_generic_cohesion_fund = {
+    set_variable = {
+        agenda_idea = token:MIT_generic_cohesion_fund_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_generic_legal_reform = {
+    set_variable = {
+        agenda_idea = token:MIT_generic_legal_reform_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_directive_system = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_directive_system_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_consultative_assembly = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_consultative_assembly_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_qualified_majority = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_qualified_majority_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_assembly_approval = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_assembly_approval_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_regulation_system = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_regulation_system_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_budget_quota = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_budget_quota_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_enforcement_directorate = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_enforcement_directorate_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_enlargement_directorate = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_enlargement_directorate_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_common_travel_area = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_common_travel_area_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_support_local_production = {
+    set_variable = {
+        agenda_idea = token:MIT_support_local_production_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_mitteleuropa_loans = {
+    set_variable = {
+        agenda_idea = token:MIT_mitteleuropa_loans_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_central_europe_bank = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_central_europe_bank_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_europamark = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_variable = {
+        agenda_idea = token:MIT_europamark_idea
+        
+    }
+    retire = yes
+    
+}
+MIT_challenge_leadership = {
+    set_character_flag = MIT_has_unique_agenda_effect
+    set_character_flag = MIT_challenge_leadership
+    set_variable = {
+        agenda_idea = token:MIT_challenge_leadership_idea
+        
+    }
+    add_to_array = {
+        global.MIT_agendas = THIS
+        
+    }
+    retire = yes
     
 }

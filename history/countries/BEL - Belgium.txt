@@ -202,6 +202,11 @@ WAL = {
     }
     
 }
+country_event = {
+    id = bel.500
+    days = 952
+    
+}
 GER = {
     set_autonomy = {
         target = BEL

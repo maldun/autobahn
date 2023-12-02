@@ -216,12 +216,12 @@ spriteTypes = {
     }
     SpriteType = {
         name = "GFX_RUS_train_equipment_1_medium"
-        texturefile = "gfx/interface/technologies/RUS_train_equipment_1.dds"
+        texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
         
     }
     SpriteType = {
         name = "GFX_RUS_train_equipment_2_medium"
-        texturefile = "gfx/interface/technologies/RUS_train_equipment_2.dds"
+        texturefile = "gfx/interface/technologies/SOV_train_equipment_2.dds"
         
     }
     SpriteType = {
@@ -241,7 +241,7 @@ spriteTypes = {
     }
     SpriteType = {
         name = "GFX_TUR_train_equipment_1_medium"
-        texturefile = "gfx/interface/technologies/RUS_train_equipment_1.dds"
+        texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
         
     }
     SpriteType = {

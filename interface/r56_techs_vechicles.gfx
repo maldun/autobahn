@@ -251,7 +251,7 @@ spriteTypes = {
     }
     SpriteType = {
         name = "GFX_TUR_basic_train_medium"
-        texturefile = "gfx/interface/technologies/RUS_train_equipment_1.dds"
+        texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
         
     }
     SpriteType = {

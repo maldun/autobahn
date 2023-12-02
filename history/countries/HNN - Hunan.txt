@@ -26,7 +26,7 @@ if = {
     }
     
 }
-QIE = {
+LEP = {
     set_autonomy = {
         target = ROOT
         autonomy_state = associated_governorate

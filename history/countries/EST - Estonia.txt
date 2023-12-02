@@ -113,6 +113,13 @@ recruit_character = EST_august_tuulse
 recruit_character = EST_richard_tomberg
 recruit_character = EST_johannes_soodla
 recruit_character = EST_alfons_rebane
+ROOT = {
+    FIN = {
+        enable_coring_at_fifty_compliance = yes
+        
+    }
+    
+}
 division_template = {
     name = "Jalaväediviis"
     division_names_group = EST_INF_01

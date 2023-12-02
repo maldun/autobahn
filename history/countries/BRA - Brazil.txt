@@ -338,12 +338,6 @@ country_event = {
     days = 3955
     
 }
-country_event = {
-    id = bra.900
-    days = 163
-    random_days = 7
-    
-}
 give_guarantee = URG
 add_to_array = {
     URG.guarantor_array = BRA

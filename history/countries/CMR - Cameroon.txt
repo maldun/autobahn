@@ -30,6 +30,7 @@ set_popularities = {
 }
 recruit_character = CMR_Karl_Atangana
 recruit_character = CMR_Alexander_Duala_Bell
+recruit_character = CMR_Joseph_Bile
 division_template = {
     name = "Miliz-Division"
     division_names_group = GERM_AFR_MIL_01

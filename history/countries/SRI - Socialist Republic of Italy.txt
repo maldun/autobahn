@@ -351,6 +351,9 @@ recruit_character = SRI_bruno_pontecorvo
 recruit_character = SRI_ilio_baroni
 recruit_character = SRI_oscar_sinigaglia
 recruit_character = SRI_ada_gobetti
+recruit_character = SRI_roberto_farinacci
+recruit_character = SRI_filippo_marinetti
+recruit_character = SRI_ettore_muti
 recruit_character = SRI_randolfo_pacciardi
 recruit_character = SRI_edmondo_rossoni
 recruit_character = SRI_dardano_fenulli
@@ -364,14 +367,7 @@ recruit_character = SRI_enea_navarini
 recruit_character = SRI_pompeo_colajanni
 recruit_character = SRI_ines_donati
 recruit_character = SRI_piera_gatteschi_fondelli
-SRI_ines_donati = {
-    retire = yes
-    
-}
-SRI_piera_gatteschi_fondelli = {
-    retire = yes
-    
-}
+recruit_character = SRI_leonilde_iotti
 recruit_character = SRI_carlo_avegno
 recruit_character = SRI_inigo_campioni
 recruit_character = SRI_riccardo_paladini
@@ -386,12 +382,19 @@ recruit_character = SRI_ugo_macchieraldo
 recruit_character = SRI_amedeo_mecozzi
 recruit_character = SRI_enrico_fermi
 recruit_character = SRI_gaetano_crocco
-set_temp_variable = {
-    coalition_partner_var = token:totalist
+activate_advisor = SRI_benito_mussolini_sic
+SRI_ines_donati = {
+    retire = yes
     
 }
-add_to_coalition = yes
-activate_advisor = SRI_benito_mussolini_sic
+SRI_piera_gatteschi_fondelli = {
+    retire = yes
+    
+}
+SRI_leonilde_iotti = {
+    retire = yes
+    
+}
 ROOT = {
     ITA = {
         enable_coring_at_fifty_compliance = yes

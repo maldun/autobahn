@@ -377,6 +377,7 @@ recruit_character = SAF_zainunissa_gool
 recruit_character = SAF_william_henry_clark
 recruit_character = SAF_oswald_pirow
 recruit_character = SAF_henry_gluckman
+recruit_character = SAF_head_of_intelligence
 recruit_character = SAF_george_edwin_brink
 recruit_character = SAF_daniel_hermanus_pienaar
 recruit_character = SAF_andries_jacob_brink
@@ -449,6 +450,10 @@ SAF_andries_jacob_brink = {
     
 }
 SAF_isaac_pierre_de_villiers = {
+    set_character_flag = SAF_british_character
+    
+}
+SAF_guy_waterhouse_hallifax = {
     set_character_flag = SAF_british_character
     
 }

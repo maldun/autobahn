@@ -36,6 +36,7 @@ recruit_character = MAL_zhuang_mingli
 recruit_character = MAL_peng_zemin
 recruit_character = MAL_lai_teck
 recruit_character = MAL_onn_jaafar
+recruit_character = MAL_haji_embok_suloh
 recruit_character = MAL_burhanuddin_al_helmy
 recruit_character = MAL_mokhtaruddin_lasso
 recruit_character = MAL_ishak_haji_muhammad
@@ -59,6 +60,16 @@ promote_character = {
 promote_character = {
     character = MAL_onn_jaafar
     ideology = social_liberal_subtype
+    
+}
+promote_character = {
+    character = MAL_haji_embok_suloh
+    ideology = market_liberal_subtype
+    
+}
+promote_character = {
+    character = MAL_tunku_abdul_rahman
+    ideology = social_conservative_subtype
     
 }
 promote_character = {

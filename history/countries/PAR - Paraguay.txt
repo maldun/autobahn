@@ -94,6 +94,10 @@ set_popularities = {
     national_populist = 4
     
 }
+BOL = {
+    embargo_ROOT = yes
+    
+}
 country_event = {
     days = 2
     id = par.1

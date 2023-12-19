@@ -59,23 +59,27 @@ ideas = {
         
     }
     division_command_spirit = {
-        gekokujo_spirit = {
+        entente_invasion_spirit = {
             ledger = army
-            picture = japanese_influence_1
+            picture = long_range_patrol_spirit
             visible = {
-                tag = JAP
+                is_in_faction_with = ENT
+                
+            }
+            equipment_bonus = {
+                floating_harbor_equipment = {
+                    build_cost_ic = -0.1
+                    instant = yes
+                    
+                }
                 
             }
             modifier = {
-                pocket_penalty = -0.15
-                army_morale_factor = 0.05
-                experience_loss_factor = -0.3
-                initiative_factor = 0.1
-                terrain_penalty_reduction = 0.1
+                naval_invasion_penalty = -0.25
                 
             }
             ai_will_do = {
-                factor = 15
+                factor = 2
                 
             }
             available = {
@@ -181,27 +185,23 @@ ideas = {
             }
             
         }
-        entente_invasion_spirit = {
+        gekokujo_spirit = {
             ledger = army
-            picture = long_range_patrol_spirit
+            picture = japanese_influence_1
             visible = {
-                is_in_faction_with = ENT
-                
-            }
-            equipment_bonus = {
-                floating_harbor_equipment = {
-                    build_cost_ic = -0.1
-                    instant = yes
-                    
-                }
+                tag = JAP
                 
             }
             modifier = {
-                naval_invasion_penalty = -0.25
+                pocket_penalty = -0.15
+                army_morale_factor = 0.05
+                experience_loss_factor = -0.3
+                initiative_factor = 0.1
+                terrain_penalty_reduction = 0.1
                 
             }
             ai_will_do = {
-                factor = 2
+                factor = 15
                 
             }
             available = {

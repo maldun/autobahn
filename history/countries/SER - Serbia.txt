@@ -53,17 +53,7 @@ country_event = {
 }
 add_opinion_modifier = {
     target = BUL
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = BUL
     modifier = Balkans_hates_bulgaria
-    
-}
-add_opinion_modifier = {
-    target = TUR
-    modifier = embargo
     
 }
 set_politics = {
@@ -147,13 +137,6 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Milan Nedić"
-    picture = "gfx/leaders/SER/Portrait_SER_Milan_Nedic.png"
-    expire = "1965.1.1"
-    ideology = authoritarian_democrat_subtype
-    
-}
-create_country_leader = {
     name = "Petar Bojović"
     desc = "POLITICS_PETAR_BOJOVIC_DESC"
     picture = "gfx/leaders/SER/Portrait_SER_Petar_Bojovic.png"
@@ -162,31 +145,15 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Milan Nedić"
-    picture = "gfx/leaders/SER/Portrait_SER_Milan_Nedic.png"
-    expire = "1965.1.1"
-    ideology = paternal_autocrat_subtype
-    
-}
-create_country_leader = {
-    name = "Alexander II"
-    desc = "POLITICS_ALEXANDER_II_DESC"
-    picture = "gfx/leaders/SER/Portrait_SER_Alexander_II.png"
+    name = "Petar Živković"
+    picture = "gfx/leaders/SER/Portrait_SER_Petar_Zivkovic.png"
     expire = "1965.1.1"
     ideology = yugoslavism_subtype
     
 }
 create_country_leader = {
-    name = "Milan Nedić"
-    picture = "gfx/leaders/SER/Portrait_SER_Milan_Nedic.png"
-    expire = "1965.1.1"
-    ideology = national_populist_subtype
-    
-}
-create_country_leader = {
-    name = "Alexander II"
-    desc = "POLITICS_ALEXANDER_II_DESC"
-    picture = "gfx/leaders/SER/Portrait_SER_Alexander_II.png"
+    name = "Dragustin Keresovic"
+    picture = "gfx/leaders/SER/Portrait_SER_Dragutin_Keserovic.png"
     expire = "1965.1.1"
     ideology = natpop_yugoslavism_subtype
     

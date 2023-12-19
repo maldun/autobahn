@@ -16,21 +16,6 @@ add_ideas = {
     ITA_republic_federation
     
 }
-add_opinion_modifier = {
-    target = FRA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = ENG
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = SRI
-    modifier = embargo
-    
-}
 give_military_access = AUS
 give_military_access = SWI
 diplomatic_relation = {
@@ -101,6 +86,7 @@ if = {
         iw_large_airframe = 1
         basic_small_airframe = 1
         basic_medium_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     ITA_BBA_air_variants = yes
@@ -291,7 +277,7 @@ create_country_leader = {
     name = "Adriano Olivetti"
     picture = "gfx/leaders/ITA/Portrait_ITA_Adriano_Olivetti.png"
     expire = "1965.1.1"
-    ideology = soclib_liberal_socialism_subtype
+    ideology = soclib_utopian_technocracy_subtype
     
 }
 create_country_leader = {
@@ -408,6 +394,23 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
+    name = "Attilio Teruzzi"
+    portrait_path = "gfx/leaders/ITA/Portrait_ITA_Attilio_Teruzzi.png"
+    traits = {
+        ITA_fiamme_nere_trait
+        infantry_leader
+        adaptable
+        
+    }
+    id = 528
+    skill = 2
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
     name = "Sebastiano Visconti Prasca"
     portrait_path = "gfx/leaders/ITA/Portrait_ITA_Sebastiano_Visconti_Prasca.png"
     id = 556
@@ -420,7 +423,7 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Arnaldo Azzi "
+    name = "Arnaldo Azzi"
     portrait_path = "gfx/leaders/ITA/Portrait_ITA_Arnaldo_Azzi.png"
     traits = {
         armor_officer

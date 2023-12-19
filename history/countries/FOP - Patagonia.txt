@@ -102,6 +102,10 @@ country_event = {
     
 }
 ARG = {
+    embargo_ROOT = yes
+    
+}
+ARG = {
     country_event = {
         id = arg_flavour.1
         days = 415

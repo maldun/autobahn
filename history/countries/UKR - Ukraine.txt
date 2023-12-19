@@ -38,6 +38,7 @@ if = {
         aircraft_construction = 1
         iw_small_airframe = 1
         iw_medium_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     UKR_BBA_air_variants = yes
@@ -149,11 +150,6 @@ if = {
 }
 set_research_slots = 3
 set_cosmetic_tag = UKR_kingdom
-add_opinion_modifier = {
-    target = ROM
-    modifier = embargo
-    
-}
 country_event = {
     id = ukrpol.1
     days = 2
@@ -380,11 +376,11 @@ set_variable = {
     
 }
 set_variable = {
-    UKR_landreform_days_remove = 40
+    UKR_landreform_days_remove = 50
     
 }
 set_variable = {
-    UKR_landreform_cost = 30
+    UKR_landreform_cost = 45
     
 }
 set_variable = {

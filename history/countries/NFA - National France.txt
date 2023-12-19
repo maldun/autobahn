@@ -7,22 +7,6 @@ set_stability = 0.45
 set_war_support = 0.25
 set_major = yes
 starting_train_buffer = 2.0
-FRA = {
-    embargo_ROOT = yes
-    
-}
-ENG = {
-    embargo_ROOT = yes
-    
-}
-SRI = {
-    embargo_ROOT = yes
-    
-}
-CSA = {
-    embargo_ROOT = yes
-    
-}
 if = {
     limit = {
         NOT = {
@@ -94,6 +78,7 @@ if = {
         iw_small_airframe = 1
         iw_medium_airframe = 1
         iw_large_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     NFA_BBA_air_variants = yes
@@ -618,7 +603,7 @@ create_country_leader = {
     desc = "POLITICS_FRANCOIS_DE_LA_ROCQUE_DESC"
     picture = "gfx/leaders/NFA/Portrait_NFA_François_de_la_Rocque.png"
     expire = "1965.1.1"
-    ideology = pataut_christian_democracy_subtype
+    ideology = rocquisme_subtype
     traits = {
         NFA_Colonel
         

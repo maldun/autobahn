@@ -318,11 +318,6 @@ add_dynamic_modifier = {
     
 }
 add_opinion_modifier = {
-    target = QIE
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
     target = LEC
     modifier = LEC_member
     

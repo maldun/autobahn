@@ -27,6 +27,7 @@ if = {
         iw_small_airframe = 1
         iw_medium_airframe = 1
         iw_large_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     CAR_BBA_air_variants = yes
@@ -94,11 +95,6 @@ if = {
     
 }
 set_research_slots = 3
-add_opinion_modifier = {
-    target = POR
-    modifier = embargo
-    
-}
 set_politics = {
     ruling_party = paternal_autocrat
     last_election = "1888.6.15"

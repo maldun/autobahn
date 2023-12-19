@@ -112,6 +112,10 @@ set_popularities = {
     national_populist = 8
     
 }
+CHL = {
+    embargo_ROOT = yes
+    
+}
 country_event = {
     id = pru.1
     days = 1

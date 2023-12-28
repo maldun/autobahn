@@ -197,19 +197,28 @@ country_event = {
     random = 1560
     
 }
-add_opinion_modifier = {
-    target = GER
-    modifier = embargo
+QIE = {
+    embargo_ROOT = yes
+    JAP = {
+        embargo_PREV = yes
+        
+    }
     
 }
-add_opinion_modifier = {
-    target = GEA
-    modifier = embargo
+LEP = {
+    embargo_ROOT = yes
+    JAP = {
+        embargo_PREV = yes
+        
+    }
     
 }
-add_opinion_modifier = {
-    target = QIE
-    modifier = embargo
+GER = {
+    embargo_ROOT = yes
+    
+}
+GEA = {
+    embargo_ROOT = yes
     
 }
 set_country_flag = {

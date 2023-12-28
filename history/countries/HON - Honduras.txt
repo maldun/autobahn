@@ -49,6 +49,7 @@ if = {
         iw_small_airframe = 1
         
     }
+    HON_BBA_air_variants = yes
     else = {
         set_air_oob = "HON_air_legacy"
         set_technology = {

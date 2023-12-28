@@ -166,11 +166,6 @@ country_event = {
 set_convoys = 20
 add_opinion_modifier = {
     target = BUL
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = BUL
     modifier = Balkans_hates_bulgaria
     
 }
@@ -184,9 +179,8 @@ add_opinion_modifier = {
     modifier = KR_disapproves_of_govt
     
 }
-add_opinion_modifier = {
-    target = UKR
-    modifier = embargo
+UKR = {
+    embargo_ROOT = yes
     
 }
 set_variable = {

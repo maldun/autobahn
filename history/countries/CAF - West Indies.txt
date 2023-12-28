@@ -58,6 +58,7 @@ if = {
         aircraft_construction = 1
         iw_small_airframe = 1
         iw_medium_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     CAF_BBA_air_variants = yes
@@ -181,21 +182,6 @@ country_event = {
 country_event = {
     id = wifpol.514
     days = 861
-    
-}
-add_opinion_modifier = {
-    target = FRA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = ENG
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = SAF
-    modifier = embargo
     
 }
 set_politics = {

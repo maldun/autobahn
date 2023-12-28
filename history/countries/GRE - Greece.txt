@@ -133,17 +133,7 @@ add_ideas = {
 }
 add_opinion_modifier = {
     target = BUL
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = BUL
     modifier = Balkans_hates_bulgaria
-    
-}
-add_opinion_modifier = {
-    target = TUR
-    modifier = embargo
     
 }
 country_event = {

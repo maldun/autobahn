@@ -196,6 +196,7 @@ if = {
         iw_medium_airframe = 1
         basic_medium_airframe = 1
         iw_large_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     CAN_BBA_air_variants = yes
@@ -297,46 +298,6 @@ add_to_faction = AST
 add_to_faction = SAF
 add_to_faction = ZIM
 add_to_faction = SRD
-add_opinion_modifier = {
-    target = ENG
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = FRA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = SRI
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = BHC
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = SOV
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = PRF
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = CSA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = SAF
-    modifier = embargo
-    
-}
 add_opinion_modifier = {
     target = LEC
     modifier = LEC_member
@@ -1233,6 +1194,23 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
+    name = "Ivor Hughes"
+    portrait_path = "gfx/leaders/CAN/Portrait_England_Ivor_Hughes.png"
+    traits = {
+        war_hero
+        politically_connected
+        desert_fox
+        GBR_british_exile_trait
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
     name = "George Pearkes"
     portrait_path = "gfx/leaders/ALA/Portrait_ALA_George_Pearkes.png"
     traits = {
@@ -1611,3 +1589,4 @@ if = {
     
 }
 CAN_start_naval_variant = yes
+add_marlib_to_coalition = yes

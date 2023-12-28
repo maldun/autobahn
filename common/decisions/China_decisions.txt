@@ -10,6 +10,10 @@ chinese_unification = {
                 tag = TAN
                 
             }
+            NOT = {
+                tag = LEC
+                
+            }
             
         }
         visible = {
@@ -584,6 +588,26 @@ chinese_unification = {
                 factor = 0
                 FROM = {
                     default_attack_AI_trigger_FROM = yes
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 0
+                tag = SZC
+                has_game_rule = {
+                    rule = YUN_path
+                    option = YUN_left_KMT
+                    
+                }
+                FROM = {
+                    tag = YUN
+                    is_ai = yes
+                    NOT = {
+                        has_completed_focus = YUN_join_the_left_KMT_committee
+                        has_completed_focus = YUN_Long
+                        
+                    }
                     
                 }
                 

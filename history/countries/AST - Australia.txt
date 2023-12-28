@@ -62,6 +62,7 @@ if = {
         iw_small_airframe = 1
         iw_medium_airframe = 1
         iw_large_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     AST_BBA_air_variants = yes
@@ -249,36 +250,6 @@ set_popularities = {
     authoritarian_democrat = 25
     paternal_autocrat = 4
     national_populist = 6
-    
-}
-add_opinion_modifier = {
-    target = ENG
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = FRA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = SRI
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = CSA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = BHC
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = SAF
-    modifier = embargo
     
 }
 add_opinion_modifier = {

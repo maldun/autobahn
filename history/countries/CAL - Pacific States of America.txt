@@ -63,6 +63,7 @@ if = {
         iw_large_airframe = 1
         basic_small_airframe = 1
         basic_medium_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     CAL_BBA_air_variants = yes
@@ -204,21 +205,6 @@ set_research_slots = 4
 set_convoys = 100
 set_stability = 0.5
 set_war_support = 0.5
-add_opinion_modifier = {
-    target = CSA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = TEX
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = USA
-    modifier = embargo
-    
-}
 set_politics = {
     ruling_party = social_conservative
     last_election = "1936.11.08"

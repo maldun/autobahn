@@ -28,6 +28,7 @@ if = {
         engines_2 = 1
         iw_small_airframe = 1
         iw_medium_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     SRD_BBA_air_variants = yes
@@ -369,6 +370,21 @@ create_corps_commander = {
     attack_skill = 3
     defense_skill = 2
     planning_skill = 3
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Raffaele Cadorna Jr."
+    portrait_path = "gfx/leaders/SRD/Portrait_SRD_Raffaele_Cadorna.png"
+    traits = {
+        career_officer
+        cavalry_officer
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
     logistics_skill = 2
     
 }

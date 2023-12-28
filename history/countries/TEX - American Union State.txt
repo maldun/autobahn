@@ -62,6 +62,7 @@ if = {
         iw_large_airframe = 1
         basic_small_airframe = 1
         basic_medium_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     TEX_BBA_air_variants = yes
@@ -203,26 +204,6 @@ set_research_slots = 3
 set_convoys = 80
 set_stability = 0.5
 set_war_support = 0.5
-add_opinion_modifier = {
-    target = CAL
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = CSA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = USA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = NEE
-    modifier = embargo
-    
-}
 country_event = {
     id = unionstate.3001
     days = 120
@@ -275,7 +256,7 @@ create_country_leader = {
     desc = "POLITICS_WILLIAM_DUDLEY_PELLEY"
     picture = "gfx/leaders/TEX/Portrait_TEX_William_Dudley_Pelley.png"
     expire = "1965.1.1"
-    ideology = christian_democracy_subtype
+    ideology = pelleyism_subtype
     traits = {
         authoritarian_tendencies
         
@@ -299,7 +280,7 @@ create_country_leader = {
     desc = "POLITICS_PHILIP_FOLLETTE_DESC"
     picture = "gfx/leaders/TEX/Portrait_TEX_Philip_La_Follette.png"
     expire = "1965.1.1"
-    ideology = soclib_radical_progressivism_subtype
+    ideology = national_progressivism_subtype
     traits = {
         spirit_of_fighting_bob
         PSA_legacy_of_progressivism

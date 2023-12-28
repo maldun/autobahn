@@ -63,6 +63,10 @@ set_popularities = {
     national_populist = 1
     
 }
+GEO = {
+    embargo_ROOT = yes
+    
+}
 add_ideas = {
     ABK_Desolated_Land
     ABK_disorganized_militia

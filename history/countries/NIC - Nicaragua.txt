@@ -98,15 +98,11 @@ if = {
 }
 add_opinion_modifier = {
     target = USA
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = USA
     modifier = NIC_watching_every_move
     
 }
 USA = {
+    embargo_ROOT = yes
     add_opinion_modifier = {
         target = NIC
         modifier = NIC_revolutionary_threat
@@ -116,15 +112,11 @@ USA = {
 }
 add_opinion_modifier = {
     target = TEX
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = TEX
     modifier = NIC_watching_every_move
     
 }
 TEX = {
+    embargo_ROOT = yes
     add_opinion_modifier = {
         target = NIC
         modifier = NIC_revolutionary_threat
@@ -233,6 +225,13 @@ create_country_leader = {
     picture = "gfx/leaders/NIC/Portrait_NIC_Augusto_Cesar_Sandino.png"
     expire = "1965.1.1"
     ideology = sandinismo_subtype
+    
+}
+create_country_leader = {
+    name = "Salomón de la Selva"
+    picture = "gfx/leaders/NIC/Portrait_NIC_Salomon_de_la_Selva.png"
+    expire = "1965.1.1"
+    ideology = modernismo_nicaraguense_subtype
     
 }
 create_field_marshal = {

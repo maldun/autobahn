@@ -113,6 +113,10 @@ set_popularities = {
     national_populist = 28
     
 }
+GER = {
+    embargo_ROOT = yes
+    
+}
 set_stability = 0.5
 set_war_support = 0.4
 starting_train_buffer = 1

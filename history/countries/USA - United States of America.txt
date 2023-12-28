@@ -71,6 +71,7 @@ if = {
         iw_large_airframe = 1
         basic_small_airframe = 1
         basic_medium_airframe = 1
+        air_torpedoe_1 = 1
         
     }
     USA_BBA_air_variants = yes
@@ -358,24 +359,83 @@ country_event = {
     days = 1772
     
 }
-add_opinion_modifier = {
-    target = CSA
-    modifier = embargo
+CSA = {
+    embargo_ROOT = yes
+    TEX = {
+        embargo_PREV = yes
+        
+    }
+    COR = {
+        embargo_PREV = yes
+        
+    }
+    CAL = {
+        embargo_PREV = yes
+        
+    }
+    NEE = {
+        embargo_PREV = yes
+        
+    }
+    WCC = {
+        embargo_PREV = yes
+        
+    }
     
 }
-add_opinion_modifier = {
-    target = TEX
-    modifier = embargo
+TEX = {
+    embargo_ROOT = yes
+    CAL = {
+        embargo_PREV = yes
+        
+    }
+    COR = {
+        embargo_PREV = yes
+        
+    }
+    NEE = {
+        embargo_PREV = yes
+        
+    }
+    WCC = {
+        embargo_PREV = yes
+        
+    }
     
 }
-add_opinion_modifier = {
-    target = CAL
-    modifier = embargo
+COR = {
+    embargo_ROOT = yes
+    CAL = {
+        embargo_PREV = yes
+        
+    }
+    NEE = {
+        embargo_PREV = yes
+        
+    }
+    BBR = {
+        embargo_PREV = yes
+        
+    }
+    WCC = {
+        embargo_PREV = yes
+        
+    }
     
 }
-add_opinion_modifier = {
-    target = NIC
-    modifier = embargo
+WCC = {
+    CAL = {
+        embargo_PREV = yes
+        
+    }
+    NEE = {
+        embargo_PREV = yes
+        
+    }
+    
+}
+CAL = {
+    embargo_ROOT = yes
     
 }
 add_opinion_modifier = {

@@ -97,14 +97,12 @@ if = {
 }
 set_research_slots = 3
 set_convoys = 60
-add_opinion_modifier = {
-    target = CAR
-    modifier = embargo
+CAR = {
+    embargo_ROOT = yes
     
 }
-add_opinion_modifier = {
-    target = CNT
-    modifier = embargo
+CNT = {
+    embargo_ROOT = yes
     
 }
 country_event = {

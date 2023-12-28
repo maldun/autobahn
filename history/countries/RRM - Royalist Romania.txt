@@ -134,11 +134,6 @@ if = {
 set_convoys = 10
 add_opinion_modifier = {
     target = BUL
-    modifier = embargo
-    
-}
-add_opinion_modifier = {
-    target = BUL
     modifier = Balkans_hates_bulgaria
     
 }

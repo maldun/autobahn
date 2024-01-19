@@ -1913,6 +1913,7 @@ technologies = {
         categories = {
             naval_equipment
             cv_tech
+            mio_cat_tech_all_carrier_and_modules
             
         }
         

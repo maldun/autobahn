@@ -222,6 +222,7 @@ activate_targeted_decision = {
 }
 recruit_character = SRD_amedeo_aosta
 recruit_character = SRD_pietro_badoglio
+recruit_character = SRD_giovanni_messe
 recruit_character = SRD_giuseppe_valle
 recruit_character = SRD_pietro_pintor
 recruit_character = SRD_umberto_carignano
@@ -234,6 +235,7 @@ recruit_character = SRD_bruno_malaguti
 recruit_character = SRD_aimone_aosta
 recruit_character = SRD_domenico_cavagnari
 recruit_character = SRD_angelo_iachino
+recruit_character = SRD_giovanni_galati
 recruit_character = SRD_giorgio_bardanzellu
 recruit_character = SRD_paolo_thaon_di_revel
 recruit_character = SRD_roberto_lucifero_d_aprigliano
@@ -259,7 +261,6 @@ recruit_character = SRD_edoardo_agnelli
 recruit_character = SRD_ernesto_maria_piovella
 recruit_character = SRD_petru_rocca
 recruit_character = SRD_vittorio_ambrosio
-recruit_character = SRD_ugo_cavallero
 recruit_character = SRD_francesco_serra
 recruit_character = SRD_rino_corso_fougier
 recruit_character = SRD_giuseppe_musinu
@@ -269,6 +270,10 @@ recruit_character = SRD_angelo_parona
 recruit_character = SRD_pietro_pinna_parpaglia
 recruit_character = SRD_renato_sandalli
 SRD_amedeo_aosta = {
+    set_character_flag = is_monarch
+    
+}
+SRD_umberto_carignano = {
     set_character_flag = is_monarch
     
 }

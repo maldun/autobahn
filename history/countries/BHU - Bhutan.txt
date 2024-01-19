@@ -35,7 +35,6 @@ add_ideas = {
     BHU_Monastic_Control
     BHU_feudal_4
     closed_economy
-    limited_conscription
     isolation
     
 }

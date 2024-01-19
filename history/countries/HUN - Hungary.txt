@@ -252,6 +252,10 @@ ROOT = {
         enable_state_integration_80_compliance = yes
         
     }
+    942 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     1090 = {
         enable_state_integration_80_compliance = yes
         

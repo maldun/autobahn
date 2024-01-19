@@ -35,7 +35,7 @@ create_country_leader = {
     name = "Xie Xuehong"
     picture = "gfx/leaders/TAI/TAI_portrait_xie_xuehong.png"
     desc = "POLITICS_XIE_XUEHONG_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = authcom_subtype
     
 }
@@ -43,7 +43,7 @@ create_country_leader = {
     name = "Xie Xuehong"
     picture = "gfx/leaders/TAI/TAI_portrait_xie_xuehong.png"
     desc = "POLITICS_XIE_XUEHONG_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = agrarian_syndicalism_subtype
     
 }
@@ -51,7 +51,7 @@ create_country_leader = {
     name = "Jiang Weishui"
     picture = "gfx/leaders/TAI/TAI_portrait_jiang_weishui.png"
     desc = "POLITICS_JIANG_WEISHUI_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = radsoc_tridemism_subtype
     
 }
@@ -59,7 +59,7 @@ create_country_leader = {
     name = "Jiang Weishui"
     picture = "gfx/leaders/TAI/TAI_portrait_jiang_weishui.png"
     desc = "POLITICS_JIANG_WEISHUI_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = socdem_tridemism_subtype
     
 }
@@ -67,7 +67,7 @@ create_country_leader = {
     name = "Liao Wenkui"
     picture = "gfx/leaders/TAI/TAI_Portrait_liao_wenkui.png"
     desc = "POLITICS_LIAO_WENKUI_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = soclib_progressive_democracy_subtype
     
 }
@@ -75,7 +75,7 @@ create_country_leader = {
     name = "Liao Wenkui"
     picture = "gfx/leaders/TAI/TAI_Portrait_liao_wenkui.png"
     desc = "POLITICS_LIAO_WENKUI_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = progressive_democracy_subtype
     
 }
@@ -83,7 +83,7 @@ create_country_leader = {
     name = "Lin Xiantang"
     picture = "gfx/leaders/TAI/TAI_portrait_lin_xiantang.png"
     desc = "POLITICS_LIN_XIANTANG_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = social_conservative_subtype
     
 }
@@ -91,7 +91,7 @@ create_country_leader = {
     name = "Lin Xiantang"
     picture = "gfx/leaders/TAI/TAI_portrait_lin_xiantang.png"
     desc = "POLITICS_LIN_XIANTANG_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = authoritarian_democrat_subtype
     
 }
@@ -99,7 +99,7 @@ create_country_leader = {
     name = "Lin Xiongzheng"
     picture = "gfx/leaders/TAI/TAI_portrait_lin_xiongzheng.png"
     desc = "POLITICS_LIN_XIONGZHENG_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = corporatocracy_subtype
     
 }
@@ -107,7 +107,7 @@ create_country_leader = {
     name = "Lin Xiongzheng"
     picture = "gfx/leaders/TAI/TAI_portrait_lin_xiongzheng.png"
     desc = "POLITICS_LIN_XIONGZHENG_DESC"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = natpop_corporatocracy_subtype
     
 }

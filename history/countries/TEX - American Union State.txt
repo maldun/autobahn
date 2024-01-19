@@ -243,7 +243,7 @@ create_country_leader = {
     name = "Huey Long"
     desc = "POLITICS_HUEY_LONG_DESC"
     picture = "gfx/leaders/TEX/Portrait_TEX_Huey_Long.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = longism_subtype
     traits = {
         the_kingfish
@@ -255,7 +255,7 @@ create_country_leader = {
     name = "William Dudley Pelley"
     desc = "POLITICS_WILLIAM_DUDLEY_PELLEY"
     picture = "gfx/leaders/TEX/Portrait_TEX_William_Dudley_Pelley.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = pelleyism_subtype
     traits = {
         authoritarian_tendencies
@@ -267,7 +267,7 @@ create_country_leader = {
     name = "E. W. Marland"
     desc = "POLITICS_E_W_MARLAND"
     picture = "gfx/leaders/TEX/Portrait_TEX_E_W_Marland.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = market_liberal_subtype
     traits = {
         economic_reformer
@@ -279,7 +279,7 @@ create_country_leader = {
     name = "Philip Fox La Follette"
     desc = "POLITICS_PHILIP_FOLLETTE_DESC"
     picture = "gfx/leaders/TEX/Portrait_TEX_Philip_La_Follette.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = national_progressivism_subtype
     traits = {
         spirit_of_fighting_bob
@@ -292,7 +292,7 @@ create_country_leader = {
     name = "Tom Pendergast"
     desc = "POLITICS_TOM_PENDERGAST_DESC"
     picture = "gfx/leaders/TEX/Portrait_TEX_Tom_Pendergast.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = pataut_clientelism_subtype
     traits = {
         political_boss

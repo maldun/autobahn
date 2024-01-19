@@ -116,7 +116,7 @@ create_country_leader = {
     name = "Tomás Garrido Canabal"
     desc = "POLITICS_CANABAL_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Tomas_Garrido_Canabal.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = militant_atheism_subtype
     traits = {}
     
@@ -125,7 +125,7 @@ create_country_leader = {
     name = "Bartolomé García Correa"
     desc = "POLITICS_GARCIA_CORRERA_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Bartolomeo_Garcia_Correa.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = syndicalist_subtype
     traits = {}
     
@@ -134,7 +134,7 @@ create_country_leader = {
     name = "Felipe Carrillo Puerto"
     desc = "POLITICS_FELIPE_PUERTO_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Felipe_Puerto.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = moderate_socialist_subtype
     traits = {}
     
@@ -143,7 +143,7 @@ create_country_leader = {
     name = "Hircano Ayuso y O'Horibe"
     desc = "POLITICS_OHORIBE_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Hircano_Ayuso_y_O_Horibe.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = social_democrat_subtype
     traits = {}
     
@@ -152,7 +152,7 @@ create_country_leader = {
     name = "Miguel Alonzo Romero"
     desc = "POLITICS_ROMERO_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Miguel_Alonzo_Romero.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = social_liberal_subtype
     traits = {}
     
@@ -161,7 +161,7 @@ create_country_leader = {
     name = "Bernardino Mena Brito"
     desc = "POLITICS_BRITO_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Bernardino_Mena_Brito.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = liberal_conservative_subtype
     traits = {}
     
@@ -170,7 +170,7 @@ create_country_leader = {
     name = "Temístocles Correa Gutiérrez"
     desc = "POLITICS_CORREA_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Temistocles_Correa_Gutierrez.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = social_conservative_subtype
     traits = {}
     
@@ -179,7 +179,7 @@ create_country_leader = {
     name = "Salvador Alvarado"
     desc = "POLITICS_ALVORADO_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Salvador_Alvarado.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = authoritarian_democrat_subtype
     traits = {}
     
@@ -188,7 +188,7 @@ create_country_leader = {
     name = "Salvador Alvarado"
     desc = "POLITICS_ALVORADO_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Salvador_Alvarado.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = red_tinted_autocracy_subtype
     traits = {}
     
@@ -197,7 +197,7 @@ create_country_leader = {
     name = "Francisco May Pech"
     desc = "POLITICS_FRANSCISO_MAY_DESC"
     picture = "gfx/leaders/YUC/Portrait_Yucatan_Francisco_May_Pech.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = townerism_subtype
     traits = {}
     

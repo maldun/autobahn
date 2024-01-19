@@ -263,7 +263,7 @@ create_country_leader = {
     name = "Omar Bradley"
     desc = "USA_OMAR_BRADLEY_POLITICS_DESC"
     picture = "gfx/leaders/WCC/Portrait_WCC_gen_omar_bradley.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = authdem_junta_subtype
     traits = {
         desperate_defender
@@ -275,7 +275,7 @@ create_country_leader = {
     name = "Omar Bradley"
     desc = "USA_OMAR_BRADLEY_POLITICS_DESC"
     picture = "gfx/leaders/WCC/Portrait_WCC_gen_omar_bradley.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = junta_subtype
     traits = {
         desperate_defender

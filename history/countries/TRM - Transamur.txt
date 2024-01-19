@@ -338,7 +338,7 @@ create_country_leader = {
     name = "Vasily Blyukher"
     desc = "POLITICS_BLYUKHER_DESC"
     picture = "gfx/leaders/TRM/TRM_Vasily_Blyukher.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = red_junta_subtype
     
 }
@@ -346,7 +346,7 @@ create_country_leader = {
     name = "Aleksandr Krasnoshchyekov"
     desc = "POLITICS_KRASNOSHCHYEKOV_DESC"
     picture = "gfx/leaders/TRM/Portrait_TRM_Alexander_Krasnoshchyokov.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = radsoc_communism_subtype
     
 }
@@ -354,7 +354,7 @@ create_country_leader = {
     name = "Boris Shumyatskiy"
     desc = "POLITICS_SHUMYATSKY_DESC"
     picture = "gfx/leaders/TRM/Portrait_TRM_Boris_Shumyatsky.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = syndicalist_subtype
     
 }
@@ -362,7 +362,7 @@ create_country_leader = {
     name = "Ivan Lavrov"
     desc = "POLITICS_LAVROV_DESC"
     picture = "gfx/leaders/RUS/Portrait_RUS_Ivan_Lavrov.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = soclib_narodism_subtype
     
 }
@@ -370,7 +370,7 @@ create_country_leader = {
     name = "Evgeniy Kolosov"
     desc = "POLITICS_DERBER_DESC"
     picture = "gfx/leaders/RUS/Portrait_RUS_Evgeniy_Kolosov.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = socdem_narodism_subtype
     
 }
@@ -378,7 +378,7 @@ create_country_leader = {
     name = "Viktor Pepelyayev"
     desc = "POLITICS_PEPELYAYEV_DESC"
     picture = "gfx/leaders/TRM/Portrait_TRM_Victor_Pepelyaev.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = market_liberal_subtype
     
 }
@@ -386,7 +386,7 @@ create_country_leader = {
     name = "Spiridon Merkulov"
     desc = "POLITICS_MERKULOV_DESC"
     picture = "gfx/leaders/TRM/Portrait_TRM_Spiridon_Merkulov.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = clientelism_subtype
     
 }
@@ -394,7 +394,7 @@ create_country_leader = {
     name = "Yui Mitsue"
     desc = "POLITICS_YUI_DESC"
     picture = "gfx/leaders/RUS/Portrait_JAP_Yui_Mitsue.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = authdem_junta_subtype
     
 }
@@ -402,7 +402,7 @@ create_country_leader = {
     name = "Aleksandr Kolchak"
     desc = "POLITICS_ALEXANDR_KOLCHAK_DESC"
     picture = "gfx/leaders/TRM/Portrait_TRM_Aleksandr_Kolchak.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = junta_subtype
     traits = {
         admiral_dictator
@@ -415,7 +415,7 @@ create_country_leader = {
     name = "Sergey Voytsekhovskiy"
     desc = "POLITICS_WOJ_DESC"
     picture = "gfx/leaders/TRM/Portrait_TRM_Sergey_Wojciechowski.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = militarism_subtype
     
 }

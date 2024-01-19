@@ -33,13 +33,13 @@ ideas = {
         industrial_destruction_spirit = {
             ledger = air
             available = {
+                has_air_academy = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             visible = {
@@ -71,13 +71,13 @@ ideas = {
         dive_bombing_spirit = {
             ledger = air
             available = {
+                has_air_academy = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             visible = {
@@ -110,13 +110,13 @@ ideas = {
         material_destruction_spirit = {
             ledger = air
             available = {
+                has_air_academy = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             visible = {
@@ -148,13 +148,13 @@ ideas = {
         industry_liasons_spirit = {
             ledger = air
             available = {
+                has_air_academy = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             research_bonus = {
@@ -181,13 +181,13 @@ ideas = {
         effective_training_programs_spirit = {
             ledger = air
             available = {
+                has_air_academy = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             modifier = {
@@ -211,13 +211,13 @@ ideas = {
         branch_independence_spirit = {
             ledger = air
             available = {
+                has_air_academy = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             modifier = {
@@ -242,13 +242,13 @@ ideas = {
         air_crew_surveys_spirit = {
             ledger = air
             available = {
+                has_air_academy = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             modifier = {
@@ -273,13 +273,13 @@ ideas = {
         air_sky_soldiers_spirit = {
             ledger = air
             available = {
+                has_air_academy = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             research_bonus = {
@@ -312,13 +312,13 @@ ideas = {
         battlefield_air_interdiction_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_academy = yes
                 
             }
             modifier = {
@@ -343,13 +343,13 @@ ideas = {
         cag_night_fighting_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             visible = {
@@ -378,13 +378,13 @@ ideas = {
         veteran_air_instructors_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             modifier = {
@@ -408,13 +408,13 @@ ideas = {
         centralized_control_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             modifier = {
@@ -439,13 +439,13 @@ ideas = {
         steel_wings_steel_hearts_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 OR = {
                     has_government = radical_socialist
                     has_government = syndicalist
@@ -484,13 +484,13 @@ ideas = {
         home_defence_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             modifier = {
@@ -514,13 +514,13 @@ ideas = {
         air_power_projection_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             modifier = {
@@ -544,13 +544,13 @@ ideas = {
         massed_strike_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             visible = {
@@ -578,13 +578,13 @@ ideas = {
         continuous_strike_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             visible = {
@@ -612,13 +612,13 @@ ideas = {
         strategic_strike_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             visible = {
@@ -646,13 +646,13 @@ ideas = {
         air_glider_insertion_spirit = {
             ledger = air
             available = {
+                has_air_force_command = yes
                 OR = {
                     has_tech = air_superiority
                     has_tech = formation_flying
                     has_tech = force_rotation
                     
                 }
-                has_air_force_command = yes
                 
             }
             modifier = {

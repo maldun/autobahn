@@ -87,7 +87,7 @@ create_country_leader = {
     name = "Nigel Leakey"
     desc = "POLITICS_NIGEL_LEAKY_DESC"
     picture = "gfx/leaders/KEN/Portrait_Kenya_Nigel_Leaky.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = socdem_colonial_govt_subtype
     traits = {}
     
@@ -96,7 +96,7 @@ create_country_leader = {
     name = "Nigel Leakey"
     desc = "POLITICS_NIGEL_LEAKY_DESC"
     picture = "gfx/leaders/KEN/Portrait_Kenya_Nigel_Leaky.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = soclib_colonial_govt_subtype
     traits = {}
     
@@ -105,7 +105,7 @@ create_country_leader = {
     name = "Rea Leakey"
     desc = "POLITICS_REA_LEAKY_DESC"
     picture = "gfx/leaders/KEN/Portrait_Kenya_Rea_Leaky.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = marlib_colonial_govt_subtype
     traits = {}
     
@@ -114,7 +114,7 @@ create_country_leader = {
     name = "Rea Leakey"
     desc = "POLITICS_REA_LEAKY_DESC"
     picture = "gfx/leaders/KEN/Portrait_Kenya_Rea_Leaky.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = soccon_colonial_govt_subtype
     traits = {}
     
@@ -123,7 +123,7 @@ create_country_leader = {
     name = "Richard Meinertzhagen"
     desc = "POLITICS_LEAKY_DESC"
     picture = "gfx/leaders/KEN/KEN_Richard_Meinertzhagen.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = colonial_govt_subtype
     traits = {}
     

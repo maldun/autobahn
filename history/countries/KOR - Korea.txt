@@ -65,7 +65,7 @@ create_country_leader = {
     name = "Kim Il-Sung"
     desc = "POLITICS_KIM_DESC"
     picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Il_Sung.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = juche_subtype
     traits = {}
     
@@ -82,7 +82,7 @@ create_country_leader = {
     name = "Sin Chaeho"
     desc = "PORTRAIT_SIN_DESC"
     picture = "gfx/leaders/KOR/Portrait_KOR_Sin_Chaeho.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = anarchism_subtype
     traits = {}
     
@@ -91,7 +91,7 @@ create_country_leader = {
     name = "Lyuh Woon-hyung"
     desc = "KOR_lyuh_woon_hyung_leader_desc"
     picture = "gfx/leaders/KOR/Portrait_KOR_Lyuh_Woon_Hyung.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = social_democrat_subtype
     traits = {}
     
@@ -100,7 +100,7 @@ create_country_leader = {
     name = "Jo So-ang"
     desc = "KOR_jo_so_ang_desc"
     picture = "gfx/leaders/KOR/Portrait_KOR_Jo_So_Ang.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = centrist_subtype
     traits = {}
     
@@ -109,7 +109,7 @@ create_country_leader = {
     name = "Kim Koo"
     desc = "POLITICS_KOO_DESC"
     picture = "gfx/leaders/KOR/Portrait_KOR_Kim_Koo.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = liberal_conservative_subtype
     traits = {}
     
@@ -118,7 +118,7 @@ create_country_leader = {
     name = "Yi Un"
     desc = "Yi_UN_DESC"
     picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Un_Suit.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = social_conservative_subtype
     traits = {}
     
@@ -127,7 +127,7 @@ create_country_leader = {
     name = "Yi Un"
     desc = "Yi_Un_DESC"
     picture = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = oligarchy_subtype
     traits = {}
     
@@ -136,7 +136,7 @@ create_country_leader = {
     name = "Hong Sa-ik"
     desc = "POLITICS_HONG_DESC"
     picture = "gfx/leaders/KOR/Portrait_KOR_Hong_Sa-ik.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = junta_subtype
     traits = {}
     
@@ -145,7 +145,7 @@ create_country_leader = {
     name = "Lee Beom-seok"
     desc = "POLITICS_KOR_LEE_BEOM_SEOK_DESC"
     picture = "gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = militarism_subtype
     traits = {}
     

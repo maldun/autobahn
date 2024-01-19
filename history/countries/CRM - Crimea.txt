@@ -111,7 +111,7 @@ create_country_leader = {
     name = "Heinrich XXXIII Reuss of Köstritz"
     desc = "POLITICS_HEINRICH_REUSS_DESC"
     picture = "gfx/leaders/CRM/Portrait_CRM_Prince_Heinrich_XXXIII_Reuss_of_Kostritz.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = colonial_govt_subtype
     
 }
@@ -119,7 +119,7 @@ create_country_leader = {
     name = "Sultan Kadyr I"
     desc = "POLITICS_SULTAN_KADYR_DESC"
     picture = "gfx/leaders/CRM/Portrait_CRM_Kadyr_Giray.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = national_conservative_subtype
     
 }
@@ -127,7 +127,7 @@ create_country_leader = {
     name = "Jafer Seydamet"
     desc = "POLITICS_JAFER_SEYDAMET_DESC"
     picture = "gfx/leaders/CRM/Portrait_CRM_Jafer_Seydamet.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = marlib_national_liberalism_subtype
     
 }
@@ -135,7 +135,7 @@ create_country_leader = {
     name = "Jafer Seydamet"
     desc = "POLITICS_JAFER_SEYDAMET_DESC"
     picture = "gfx/leaders/CRM/Portrait_CRM_Jafer_Seydamet.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = national_liberalism_subtype
     
 }
@@ -143,7 +143,7 @@ create_country_leader = {
     name = "Asan Sabri Ayvazov"
     desc = "POLITICS_ASAN_SABRI_AYVAZOV_DESC"
     picture = "gfx/leaders/CRM/Portrait_CRM_Asan_Sabri_Ayvazov.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = socdem_narodism_subtype
     
 }
@@ -151,7 +151,7 @@ create_country_leader = {
     name = "Dmitriy Ulyanov"
     desc = "POLITICS_DMITRIY_ULYANOV_DESC"
     picture = "gfx/leaders/CRM/Portrait_CRM_Dmitry_Ulyanov.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = radsoc_communism_subtype
     
 }
@@ -159,7 +159,7 @@ create_country_leader = {
     name = "Dmitriy Ulyanov"
     desc = "POLITICS_DMITRIY_ULYANOV_DESC"
     picture = "gfx/leaders/CRM/Portrait_CRM_Dmitry_Ulyanov.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = authcom_subtype
     
 }
@@ -167,14 +167,14 @@ create_country_leader = {
     name = "Seraya Shapshal"
     desc = "POLITICS_SERAYA_SHAPSHAL_DESC"
     picture = "gfx/leaders/CRM/Portrait_CRM_Seraya_Shapshal.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = theocracy_subtype
     
 }
 create_country_leader = {
     name = "Mustafa Edige Kirimal"
     picture = "gfx/leaders/CRM/Portrait_CRM_Mustafa_Edige_Kirimal.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = national_populist_subtype
     
 }

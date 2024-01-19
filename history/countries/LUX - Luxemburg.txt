@@ -72,7 +72,7 @@ create_country_leader = {
     name = "Damian Kratzenberg"
     desc = "POLITICS_KRATZENBERG_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Damian_Kratzenberg.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = volkism_subtype
     
 }
@@ -80,7 +80,7 @@ create_country_leader = {
     name = "Charlotte"
     desc = "POLITICS_CHARLOTTE_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Charlotte.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = absolute_monarchy_subtype
     female = yes
     
@@ -89,7 +89,7 @@ create_country_leader = {
     name = "Charlotte"
     desc = "POLITICS_CHARLOTTE_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Charlotte.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = prussian_constitutionalism_subtype
     female = yes
     
@@ -98,7 +98,7 @@ create_country_leader = {
     name = "Charlotte"
     desc = "POLITICS_CHARLOTTE_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Charlotte.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = christian_democracy_subtype
     female = yes
     
@@ -107,7 +107,7 @@ create_country_leader = {
     name = "Charlotte"
     desc = "POLITICS_CHARLOTTE_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Charlotte.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = marlib_classical_liberalism_subtype
     female = yes
     
@@ -116,7 +116,7 @@ create_country_leader = {
     name = "Charlotte"
     desc = "POLITICS_CHARLOTTE_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Charlotte.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = radical_liberalism_subtype
     female = yes
     
@@ -125,7 +125,7 @@ create_country_leader = {
     name = "Charlotte"
     desc = "POLITICS_CHARLOTTE_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Charlotte.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = socdem_democratic_socialism_subtype
     female = yes
     
@@ -134,7 +134,7 @@ create_country_leader = {
     name = "Michel Rasquin"
     desc = "POLITICS_RASQUIN_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Michel_Rasquin.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = moderate_socialist_subtype
     
 }
@@ -142,7 +142,7 @@ create_country_leader = {
     name = "Charles Marx"
     desc = "POLITICS_CHARLES_MARX_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Charles_Marx.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = syndicalist_subtype
     
 }
@@ -150,7 +150,7 @@ create_country_leader = {
     name = "Dominique Urbany"
     desc = "POLITICS_URBANY_DESC"
     picture = "gfx/leaders/LUX/Portrait_Luxemburg_Dominique_Urbany.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = internationalism_subtype
     
 }

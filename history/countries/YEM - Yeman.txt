@@ -56,7 +56,7 @@ create_country_leader = {
     name = "Yahya al Hamid"
     desc = "POLITICS_YAHYA_HAMID_DESC"
     picture = "gfx/leaders/YEM/Portrait_YEM_imam_yaha_kr.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = absolute_monarchy_subtype
     
 }
@@ -64,7 +64,7 @@ create_country_leader = {
     name = "Yahya al Hamid"
     desc = "POLITICS_YAHYA_HAMID_DESC"
     picture = "gfx/leaders/YEM/Portrait_YEM_imam_yaha_kr.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = oligarchy_subtype
     
 }
@@ -72,7 +72,7 @@ create_country_leader = {
     name = "Ali Nassar al-Qadari"
     desc = "POLITICS_ALI_NASSAR_AL-QADARI_DESC"
     picture = "gfx/leaders/YEM/Portrait_YEM_Ali_Nasser_Al-Qardai.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = social_democrat_subtype
     
 }
@@ -80,7 +80,7 @@ create_country_leader = {
     name = "Abdul Rahman al-Eryani"
     desc = "POLITICS_ABDUL_RAHMAN_DESC"
     picture = "gfx/leaders/YEM/Portrait_YEM_Abdul_Rahman_Eryani.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = soccon_islamism_subtype
     
 }
@@ -88,7 +88,7 @@ create_country_leader = {
     name = "Ahmad Muhammad Numan"
     desc = "POLITICS_SHABAB_AL-AMR_DESC"
     picture = "gfx/leaders/YEM/Portrait_YEM_Shabab_al-Amr.png"
-    expire = "1965.1.1"
+    expire = "1.1.1"
     ideology = national_liberalism_subtype
     
 }

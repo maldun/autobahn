@@ -5,6 +5,9 @@ equipments = {
             NOT = {
                 has_idea = BUL_army_restrictions
                 has_idea = MPL_mandate
+                has_idea = GER_treaty_of_versailles
+                has_idea = GER_treaty_of_versailles_2
+                has_idea = GER_treaty_of_versailles_3
                 
             }
             
@@ -77,13 +80,31 @@ equipments = {
                 }
                 
             }
+            fixed_ship_armor_slot = {
+                required = no
+                allowed_module_categories = {
+                    ship_cruiser_armor
+                    
+                }
+                
+            }
             front_1_custom_slot = {
                 required = no
                 allowed_module_categories = {
+                    ship_anti_air
                     ship_deck_space
                     ship_carrier_armor
+                    
+                }
+                
+            }
+            mid_1_custom_slot = {
+                required = no
+                allowed_module_categories = {
                     ship_secondaries
                     ship_dp_secondaries
+                    ship_deck_space
+                    ship_carrier_armor
                     
                 }
                 
@@ -92,6 +113,11 @@ equipments = {
         }
         module_count_limit = {
             category = ship_radar
+            count < 2
+            
+        }
+        module_count_limit = {
+            category = ship_carrier_armor
             count < 2
             
         }
@@ -122,7 +148,7 @@ equipments = {
         max_strength = 250
         fuel_consumption = 87
         offensive_weapons = no
-        build_cost_ic = 2450
+        build_cost_ic = 2094
         resources = {
             steel = 3
             chromium = 1
@@ -160,6 +186,7 @@ equipments = {
             fixed_ship_radar_slot = inherit
             fixed_ship_engine_slot = inherit
             fixed_ship_secondaries_slot = inherit
+            fixed_ship_armor_slot = inherit
             front_1_custom_slot = {
                 required = no
                 allowed_module_categories = {
@@ -171,6 +198,17 @@ equipments = {
                 
             }
             mid_1_custom_slot = {
+                required = no
+                allowed_module_categories = {
+                    ship_secondaries
+                    ship_dp_secondaries
+                    ship_deck_space
+                    ship_carrier_armor
+                    
+                }
+                
+            }
+            mid_2_custom_slot = {
                 required = no
                 allowed_module_categories = {
                     ship_secondaries
@@ -215,6 +253,7 @@ equipments = {
             fixed_ship_radar_slot = inherit
             fixed_ship_engine_slot = inherit
             fixed_ship_secondaries_slot = inherit
+            fixed_ship_armor_slot = inherit
             front_1_custom_slot = {
                 required = no
                 allowed_module_categories = {
@@ -247,6 +286,17 @@ equipments = {
                 }
                 
             }
+            rear_1_custom_slot = {
+                required = no
+                allowed_module_categories = {
+                    ship_secondaries
+                    ship_dp_secondaries
+                    ship_deck_space
+                    ship_carrier_armor
+                    
+                }
+                
+            }
             
         }
         default_modules = {
@@ -268,7 +318,7 @@ equipments = {
         
     }
     ship_hull_carrier_4 = {
-        abbreviation = "hbc"
+        abbreviation = "haf"
         year = 1948
         visual_level = 1
         archetype = ship_hull_carrier
@@ -281,6 +331,7 @@ equipments = {
             fixed_ship_radar_slot = inherit
             fixed_ship_engine_slot = inherit
             fixed_ship_secondaries_slot = inherit
+            fixed_ship_armor_slot = inherit
             front_1_custom_slot = {
                 required = no
                 allowed_module_categories = {
@@ -374,10 +425,12 @@ equipments = {
                 
             }
             fixed_ship_secondaries_slot = inherit
+            fixed_ship_armor_slot = inherit
             mid_1_custom_slot = {
                 required = no
                 allowed_module_categories = {
                     ship_secondaries
+                    ship_dp_secondaries
                     ship_deck_space
                     ship_carrier_armor
                     
@@ -394,7 +447,7 @@ equipments = {
         naval_range = 4000
         reliability = 0.65
         max_strength = 325
-        naval_speed = 24
+        naval_speed = 25
         build_cost_ic = 2700
         resources = {
             steel = 4
@@ -447,7 +500,7 @@ equipments = {
         naval_range = 4000
         max_strength = 125
         reliability = 0.65
-        naval_speed = 22
+        naval_speed = 22.5
         build_cost_ic = 2700
         resources = {
             steel = 3
@@ -514,6 +567,14 @@ equipments = {
                 }
                 
             }
+            fixed_ship_armor_slot = {
+                required = no
+                allowed_module_categories = {
+                    ship_cruiser_armor
+                    
+                }
+                
+            }
             front_1_custom_slot = {
                 required = no
                 allowed_module_categories = {
@@ -546,7 +607,7 @@ equipments = {
         surface_detection = 10
         sub_detection = 5
         surface_visibility = 30
-        naval_speed = 26
+        naval_speed = 25.5
         reliability = 0.7
         naval_range = 3000
         max_strength = 250
@@ -620,6 +681,14 @@ equipments = {
                 }
                 
             }
+            fixed_ship_armor_slot = {
+                required = no
+                allowed_module_categories = {
+                    ship_cruiser_armor
+                    
+                }
+                
+            }
             front_1_custom_slot = {
                 required = no
                 allowed_module_categories = {
@@ -653,7 +722,7 @@ equipments = {
         surface_detection = 10
         sub_detection = 5
         surface_visibility = 30
-        naval_speed = 28
+        naval_speed = 26
         reliability = 0.8
         naval_range = 4000
         max_strength = 325
@@ -692,7 +761,7 @@ equipments = {
         surface_detection = 20
         sub_detection = 5
         surface_visibility = 30
-        naval_speed = 30
+        naval_speed = 27
         reliability = 0.85
         naval_range = 5000
         max_strength = 350
@@ -731,7 +800,7 @@ equipments = {
         surface_detection = 30
         sub_detection = 5
         surface_visibility = 30
-        naval_speed = 32
+        naval_speed = 28.5
         reliability = 0.9
         naval_range = 6000
         max_strength = 400

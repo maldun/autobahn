@@ -1,6 +1,14 @@
 equipments = {
     ship_hull_cruiser = {
         year = 1922
+        can_be_produced = {
+            NOT = {
+                has_idea = BUL_army_restrictions
+                has_idea = MPL_mandate
+                
+            }
+            
+        }
         is_archetype = yes
         is_buildable = no
         type = screen_ship
@@ -149,6 +157,7 @@ equipments = {
         }
         manpower = 600
         naval_supremacy_factor = 2.3
+        naval_weather_penalty_factor = 1
         
     }
     ship_hull_cruiser_1 = {
@@ -532,7 +541,7 @@ equipments = {
         surface_detection = 15
         sub_detection = 5
         surface_visibility = 15
-        naval_speed = 25
+        naval_speed = 29
         reliability = 0.8
         resources = {
             steel = 2
@@ -610,7 +619,7 @@ equipments = {
         armor_value = 7
         surface_detection = 30
         sub_detection = 10
-        naval_speed = 33
+        naval_speed = 29
         reliability = 0.9
         naval_range = 4000
         max_strength = 140
@@ -654,7 +663,7 @@ equipments = {
         armor_value = 8
         surface_detection = 40
         sub_detection = 10
-        naval_speed = 35
+        naval_speed = 30
         reliability = 0.92
         naval_range = 4500
         max_strength = 160
@@ -818,7 +827,7 @@ equipments = {
         surface_detection = 12
         sub_detection = 5
         surface_visibility = 15
-        naval_speed = 29
+        naval_speed = 27
         reliability = 0.8
         naval_range = 3000
         max_strength = 150
@@ -902,7 +911,7 @@ equipments = {
         surface_detection = 25
         sub_detection = 5
         surface_visibility = 15
-        naval_speed = 33
+        naval_speed = 30
         reliability = 0.9
         naval_range = 4500
         max_strength = 200
@@ -929,8 +938,8 @@ equipments = {
             fixed_ship_engine_slot = cruiser_ship_engine_2
             front_1_custom_slot = ship_anti_air_4
             fixed_ship_secondaries_slot = ship_secondaries_1
-            mid_1_custom_slot = dp_ship_secondaries
-            mid_2_custom_slot = dp_ship_secondaries
+            mid_1_custom_slot = dp_ship_secondaries_3
+            mid_2_custom_slot = dp_ship_secondaries_3
             rear_1_custom_slot = ship_medium_battery_4
             rear_2_custom_slot = ship_anti_air_4
             
@@ -973,8 +982,8 @@ equipments = {
             fixed_ship_engine_slot = cruiser_ship_engine_2
             front_1_custom_slot = ship_anti_air_4
             fixed_ship_secondaries_slot = ship_secondaries_1
-            mid_1_custom_slot = dp_ship_secondaries
-            mid_2_custom_slot = dp_ship_secondaries
+            mid_1_custom_slot = dp_ship_secondaries_4
+            mid_2_custom_slot = dp_ship_secondaries_4
             rear_1_custom_slot = ship_medium_battery_4
             rear_2_custom_slot = ship_anti_air_4
             
@@ -1223,7 +1232,7 @@ equipments = {
         priority = 1850
         manpower = 1800
         build_cost_ic = 3500
-        naval_speed = 23
+        naval_speed = 26
         surface_visibility = 22
         naval_range = 7500
         max_strength = 220
@@ -1269,10 +1278,17 @@ equipments = {
             rear_1_custom_slot = {
                 required = no
                 allowed_module_categories = {
-                    ship_mine_layer
                     ship_anti_air
                     ship_airplane_launcher
                     ship_torpedo
+                    
+                }
+                
+            }
+            rear_2_custom_slot = {
+                required = yes
+                allowed_module_categories = {
+                    ship_heavy_battery
                     
                 }
                 

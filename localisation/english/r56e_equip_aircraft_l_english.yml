@@ -3,6 +3,40 @@
 
 l_english:
 
+ AA_rocket_rails:0 "Air-Air Rocket Rails"
+ AA_rocket_rails_desc:0 "One hit, one kill." 
+ guided_AA_rocket_rails:0 "Guided Air-Air Rocket Rails"
+ guided_AA_rocket_rails_desc:0 "The trajectory of the guided Air-Air rockets can be modified in flight, increasing their accuracy."
+ improved_rocket_rails:0 "Improved Rocket Rails"
+ improved_rocket_rails_desc:0 "Better rockets for better pyrotechnics."
+
+ jet_engine_1x_2:0 "1x Jet Engine II"
+ jet_engine_1x_2_desc:0 "An improved jet engine. I can't say more because I spent years modding instead of trying to get an engineering degree." 
+ jet_engine_2x_2:0 "2x Jet Engine II"
+ jet_engine_2x_2_desc:0 "You know what, let's put two of those bad boys on that airframe... Yeah that will do the trick." 
+ jet_engine_3x_2:0 "3x Jet Engine II"
+ jet_engine_3x_2_desc:0 "No I changed me mind, let's go with 3 engines. I know it's imbalanced, but we can put one in the fuselage or on top, find a way, that's why I am paying you. I am expecting the first prototype in 3 weeks." 
+ jet_engine_4x_2:0 "4x Jet Engine II"
+ jet_engine_4x_2_desc:0 "Couldn't we make an even bigger airframe take off with four engines?"
+ jet_engine_6x_2:0 "6x Jet Engine II"
+ jet_engine_6x_2_desc:0 "I love jets, I love jets, get me all the jet engines you can find."
+
+ jet_engine_1x_3:0 "1x Jet Engine III"
+ jet_engine_1x_3_desc:0 "The best jet engine around." 
+ jet_engine_2x_3:0 "2x Jet Engine III"
+ jet_engine_2x_3_desc:0 "Two engines for twice the jets" 
+ jet_engine_3x_3:0 "3x Jet Engine III"
+ jet_engine_3x_3_desc:0 "50% more trust than with 2 engines"
+ jet_engine_4x_3:0 "4x Jet Engine III"
+ jet_engine_4x_3_desc:0 "Four modern jet engines"
+ jet_engine_6x_3:0 "6x Jet Engine III"
+ jet_engine_6x_3_desc:0 "The greatest number of the best engines around. More and we would have to script a sound barrier news event."
+
+ early_fighter:0 "Light Aircraft"
+ early_fighter_desc:0 "The Great War's air warfare taught countries the importance of tactical bombing, aerial reconnaissance, and air superiority, shaping the future of military aviation."
+ cv_early_fighter:0 "Naval Light Aircraft"
+ cv_early_fighter_desc:0 "Countries realized the crucial role of carrier aircraft provided mobile air bases for reconnaissance, fleet protection, and strike capabilities, fundamentally reshaping naval warfare strategies."
+
  maritime:0 "Maritime Patrol Aircrafts"
 
 #-> Transport planes <><>
@@ -16,6 +50,7 @@ l_english:
  transport_plane_equipment_2:0 "Advanced Transport Plane"
  transport_plane_equipment_2_short:0 "Transport II" 
  transport_plane_equipment_2_desc:0 "§LPlanes used to transport troops on paradrop missions.§!" 
+
 #-> Scout planes <><> 
  scout_plane:0 "Scout Plane"
  scout_plane_equipment_desc:0 "A plane developed specifically for photo-reconnaissance. Relies primarily on speed and stealth to survive and will lose in any stand-up fight."
@@ -26,31 +61,40 @@ l_english:
  scout_plane_equipment_2_desc:0 "By developing dedicated planes for aerial surveillance and long-range reconnaissance, we ensure that we gain and maintain an accurate picture of our opponent's intentions and capabilities." 
  
 #-> Dive bombers <><>
- cas:1 "Dive Bomber"
- CAS_equipment:0 "Dive Bomber"
- CAS_equipment_desc:0 "Dive Bombers are designed to provide close air support in land combat."
- CAS_equipment_1:0 "Dive Bomber '36"
- CAS_equipment_1_short:0 "Dive Bomber '36"
+ cas:1 "Close Air Support"
+ CAS_equipment:0 "Close Air Support"
+ CAS_equipment_desc:0 "Close Air Supports are designed to provide close air support in land combat."
+ CAS_equipment_0:0 "Close Air Support '30"
+ CAS_equipment_0_short:0 "CAS '30"
+ CAS_equipment_0_desc:0 "These early CAS aircraft, although less advanced compared to their later counterparts, played a vital role in providing ground support. With limited payload capacity, they were capable of conducting strafing runs and basic air support missions." 
+ CAS_equipment_1:0 "Close Air Support '36"
+ CAS_equipment_1_short:0 "CAS '36"
  CAS_equipment_1_desc:0 "Our CAS doctrine requires an aircraft capable of precision surface attack. While these aircraft carry a lesser payload than our larger Tactical Bombers, they can attack and destroy small targets of opportunity through strafing and dive-bombing."
- CAS_equipment_2:0 "Dive Bomber '40"
- CAS_equipment_2_short:0 "Dive Bomber '40"
+ CAS_equipment_2:0 "Close Air Support '40"
+ CAS_equipment_2_short:0 "CAS '40"
  CAS_equipment_2_desc:0 "Early war experiences have shown that increased speed, armor, and maneuverability are necessary for CAS aircraft survivability against enemy fighters and ground fire. This next generation of ground attack aircraft will also utilize larger bombs, cannons, and machine guns to inflict greater damage to their targets."
- CAS_equipment_3:0 "Dive Bomber '44"
- CAS_equipment_3_short:0 "Dive Bomber '44"
+ CAS_equipment_3:0 "Close Air Support '44"
+ CAS_equipment_3_short:0 "CAS '44"
  CAS_equipment_3_desc:0 "The ever-increasing capability of target AA and enemy interceptors requires further evolution of our CAS aircraft. The new design incorporates increased engine power, airframe improvements for increased diving capability and protection, and even greater payloads."
  
 #-> Carrier-based dive bombers <><>
- cv_cas:1 "Carrier Dive Bomber"
- cv_CAS_equipment:0 "CV Dive Bomber"
- cv_CAS_equipment_desc:0 "Carrier Dive Bombers are designed to attack surface ships."
- cv_CAS_equipment_1:0 "Carrier Dive Bomber '36"
- cv_CAS_equipment_1_short:0 "Dive Bomber CV '36"
+ cv_cas:1 "Close Air Support"
+ cv_CAS_equipment: "CV Close Air Support"
+ cv_CAS_equipment_short:0 "CV Close Air Support"
+ cv_CAS_equipment:0 "CV Close Air Support"
+ cv_CAS_equipment:1 "Carrier Close Air Support"
+ cv_CAS_equipment_desc:0 "Carrier Close Air Supports are designed to attack surface ships."
+ cv_CAS_equipment_0:0 "Carrier Close Air Support '30"
+ cv_CAS_equipment_0_short:0 "CAS CV '30"
+ cv_CAS_equipment_0_desc:0 "An prelim close air support plane modified to launch from and land on aircraft carriers." 
+ cv_CAS_equipment_1:0 "Carrier Close Air Support '36"
+ cv_CAS_equipment_1_short:0 "CAS CV '36"
  cv_CAS_equipment_1_desc:0 "An early close air support plane modified to launch from and land on aircraft carriers."
- cv_CAS_equipment_2:0 "Carrier Dive Bomber '40"
- cv_CAS_equipment_2_short:0 "Dive Bomber CV '40"
+ cv_CAS_equipment_2:0 "Carrier Close Air Support '40"
+ cv_CAS_equipment_2_short:0 "CAS CV '40"
  cv_CAS_equipment_2_desc:0 "An improved close air support plane modified to launch from and land on aircraft carriers."
- cv_CAS_equipment_3:0 "Carrier Dive Bomber '44"
- cv_CAS_equipment_3_short:0 "Dive Bomber CV '44"
+ cv_CAS_equipment_3:0 "Carrier Close Air Support '44"
+ cv_CAS_equipment_3_short:0 "CAS CV '44"
  cv_CAS_equipment_3_desc:0 "An advanced close air support plane modified to launch from and land on aircraft carriers."
 
 #-> Light fighters <><> 
@@ -82,8 +126,9 @@ l_english:
  fighter_bomber_equipment_3_desc:0 "An early fighter modified for ground attack role."
  
 #-> Carrier-based light fighters <><>
- cv_fighter:0 "Fighter"
+ cv_fighter:0 "Carrier Fighter"
  cv_fighter_equipment:0 "Carrier Fighter"
+ cv_fighter_equipment_short:0 "CV Fighter" 
  cv_fighter_equipment_desc:0 "Fighters are fast and nimble and can do many jobs. Everything from fighting for air superiority, protecting your bombers, and intercepting the enemy's bombers."
  cv_fighter_equipment_0:0 "Carrier Fighter '30"
  cv_fighter_equipment_0_short:0 "Fighter CV '30"
@@ -102,6 +147,9 @@ l_english:
  nav_bomber:0 "Torpedo Bomber"
  nav_bomber_equipment:0 "Torpedo Bomber"
  nav_bomber_equipment_desc:0 "Torpedo Bombers can attack enemy ships."
+ nav_bomber_equipment_0:0 "Torpedo Bomber '30"
+ nav_bomber_equipment_0_short:0 "Torpedo Bomber '30"
+ nav_bomber_equipment_0_desc:0 "Equipped with rudimentary naval bombing capabilities and basic reconnaissance capabilities, they served as a stepping stone toward more advanced naval aviation technologies." 
  nav_bomber_equipment_1:0 "Torpedo Bomber '36"
  nav_bomber_equipment_1_short:0 "Torpedo Bomber '36"
  nav_bomber_equipment_1_desc:0 "Naval aviation will be vital in the coming decade to confront new developments in naval warfare, such as the increased importance of submarines. Seaplanes with the capacity to work as dive bombers and recon vehicles will be helpful."
@@ -114,16 +162,21 @@ l_english:
  
 #-> Carrier-based torpedo bombers <><>
  cv_nav_bomber:0 "Torpedo Bomber"
- cv_nav_bomber_equipment:0 "Torpedo Bomber"
+ cv_nav_bomber_equipment:0 "Carrier Torpedo Bomber"
+ cv_nav_bomber_equipment:1 "CV Torpedo Bomber"
+ cv_nav_bomber_equipment_short:0 "CV Torpedo Bomber"
  cv_nav_bomber_equipment_desc:0 "Torpedo Bombers can perform attacks against enemy ships."
+ cv_nav_bomber_equipment_0:0 "Carrier Torpedo Bomber '30"
+ cv_nav_bomber_equipment_0_short:0 "Torpedo Bomber CV '30"
+ cv_nav_bomber_equipment_0_desc:0 "An prelim naval bomber modified to launch from and land on aircraft carriers." 
  cv_nav_bomber_equipment_1:0 "Carrier Torpedo Bomber '36"
- cv_nav_bomber_equipment_1_short:0 "Carrier Bomber '36"
+ cv_nav_bomber_equipment_1_short:0 "Torpedo Bomber CV '36"
  cv_nav_bomber_equipment_1_desc:0 "An early naval bomber modified to launch from and land on aircraft carriers."
  cv_nav_bomber_equipment_2:0 "Carrier Torpedo Bomber '40"
- cv_nav_bomber_equipment_2_short:0 "Carrier Bomber '40"
+ cv_nav_bomber_equipment_2_short:0 "Torpedo Bomber CV '40"
  cv_nav_bomber_equipment_2_desc:0 "An improved naval bomber modified to launch from and land on aircraft carriers."
  cv_nav_bomber_equipment_3:0 "Carrier Torpedo Bomber '44"
- cv_nav_bomber_equipment_3_short:0 "Carrier Bomber '44"
+ cv_nav_bomber_equipment_3_short:0 "Torpedo Bomber CV '44"
  cv_nav_bomber_equipment_3_desc:0 "An advanced naval bomber modified to launch from and land on aircraft carriers."
 
 #-> Heavy fighters <><>
@@ -259,6 +312,8 @@ l_english:
  jet_fighter_equipment_x_desc:0 "An advanced jet fighter built with the latest in technology."
  
 #-> Carrier-based jet fighters <><>
+ cv_jet_fighter:0 "CV Fighter"
+ cv_jet_fighter_equipment:0 "CV Jet Fighter"
  cv_jet_fighter_equipment_1:0 "Carrier Jet Fighter '45"
  cv_jet_fighter_equipment_1_short:0 "Jet Fighter CV '45"
  cv_jet_fighter_equipment_1_desc:0 "An early jet modified to launch from and land on aircraft carriers."
@@ -1003,8 +1058,8 @@ l_english:
 
 ###--->  CZE  <><> <><> <><>
 #-> Scout planes <><>
- CZE_scout_plane_equipment_1:0 "Aero Vodochody A.101"
- CZE_scout_plane_equipment_1_short:0 "A.101"
+ CZE_scout_plane_equipment_1:0 "Aero Vodochody A-100"
+ CZE_scout_plane_equipment_1_short:0 "A-100"
  CZE_scout_plane_equipment_2:0 "Aero Vodochody Ae 50"
  CZE_scout_plane_equipment_2_short:0 "Ae 50"
 
@@ -1012,113 +1067,121 @@ l_english:
  CZE_transport_plane_equipment_1:0 "Avia 51"
  CZE_transport_plane_equipment_1_short:0 "Avia 51" 
 
-#-> Dive bombers <><> 
- CZE_CAS_equipment_1:0 "Aero Vodochody A.104"
- CZE_CAS_equipment_1_short:0 "A.104"
+#-> Dive bombers <><>
+ CZE_CAS_equipment_0:0 "Letov Š-28"
+ CZE_CAS_equipment_0_short:0 "Š-28"
+ CZE_CAS_equipment_1:0 "Aero Vodochody A-104"
+ CZE_CAS_equipment_1_short:0 "A-104"
  CZE_CAS_equipment_2:0 "Avia B-158"
  CZE_CAS_equipment_2_short:0 "B-158"
  CZE_CAS_equipment_3:0 "Letov Š-615"
- CZE_CAS_equipment_3_short:0 "Letov Š-615"
+ CZE_CAS_equipment_3_short:0 "Š-615"
 
 #-> Carrier-based dive bombers <><>
- CZE_cv_CAS_equipment_1:0 "Aero Vodochody A.104.L"
- CZE_cv_CAS_equipment_1_short:0 "Aero A.104.L"
+ CZE_cv_CAS_equipment_1:0 "Letov Š-28"
+ CZE_cv_CAS_equipment_1_short:0 "Š-28L"
+ CZE_cv_CAS_equipment_1:0 "Aero Vodochody A-104L"
+ CZE_cv_CAS_equipment_1_short:0 "A-104L"
  CZE_cv_CAS_equipment_2:0 "Avia B-158L"
- CZE_cv_CAS_equipment_2_short:0 "Avia B-158L"
+ CZE_cv_CAS_equipment_2_short:0 "B-158L"
  CZE_cv_CAS_equipment_3:0 "Letov Š-615L"
- CZE_cv_CAS_equipment_3_short:0 "Letov Š-615L"
+ CZE_cv_CAS_equipment_3_short:0 "Š-615L"
 
 #-> Light fighters <><> 
- CZE_fighter_equipment_0:0 "Avia B-534"
- CZE_fighter_equipment_0_short:0 "B-534"
- CZE_fighter_equipment_1:0 "Aero Vodochody A.102"
- CZE_fighter_equipment_1_short:0 "A.102"
+ CZE_fighter_equipment_0:0 "Avia B-34"
+ CZE_fighter_equipment_0_short:0 "B-34"
+ CZE_fighter_equipment_1:0 "Avia B-534"
+ CZE_fighter_equipment_1_short:0 "B-534"
  CZE_fighter_equipment_2:0 "Avia B-135"
  CZE_fighter_equipment_2_short:0 "B-135"
  CZE_fighter_equipment_3:0 "Avia S-199"
  CZE_fighter_equipment_3_short:0 "S-199"
  
 #-> Light fighter-bombers <><>
- CZE_fighter_bomber_equipment_2:0 "Avia B-135.2"
- CZE_fighter_bomber_equipment_2_short:0 "Avia B-135.2"
- CZE_fighter_bomber_equipment_3:0 "Avia BS-199"
- CZE_fighter_bomber_equipment_3_short:0 "Avia BS-199"
+ CZE_fighter_bomber_equipment_2:0 "Avia B-135V"
+ CZE_fighter_bomber_equipment_2_short:0 "B-135V"
+ CZE_fighter_bomber_equipment_3:0 "Avia S-199V"
+ CZE_fighter_bomber_equipment_3_short:0 "S-199V"
  
 #-> Carrier-based light fighters <><>
- CZE_cv_fighter_equipment_0:0 "Avia B-34.L"
- CZE_cv_fighter_equipment_0_short:0 "Avia B-34.L"
- CZE_cv_fighter_equipment_1:0 "Avia B-534.L"
- CZE_cv_fighter_equipment_1_short:0 "Avia B-534.L"
- CZE_cv_fighter_equipment_2:0 "Avia B-135.L"
- CZE_cv_fighter_equipment_2_short:0 "Avia B-135.L"
+ CZE_cv_fighter_equipment_0:0 "Avia B-34L"
+ CZE_cv_fighter_equipment_0_short:0 "B-34L"
+ CZE_cv_fighter_equipment_1:0 "Avia B-534L"
+ CZE_cv_fighter_equipment_1_short:0 "B-534L"
+ CZE_cv_fighter_equipment_2:0 "Avia B-135L"
+ CZE_cv_fighter_equipment_2_short:0 "B-135L"
  CZE_cv_fighter_equipment_3:0 "Avia LS-199"
- CZE_cv_fighter_equipment_3_short:0 "Avia LS-199"
+ CZE_cv_fighter_equipment_3_short:0 "LS-199"
 
 #-> Torpedo bombers <><>
- CZE_nav_bomber_equipment_1:0 "Letov S-328V"
- CZE_nav_bomber_equipment_1_short:0 "Letov S-328V"
+ CZE_nav_bomber_equipment_1:0 "Letov Š-28V"
+ CZE_nav_bomber_equipment_1_short:0 "Š-28V"
+ CZE_nav_bomber_equipment_1:0 "Letov Š-328V"
+ CZE_nav_bomber_equipment_1_short:0 "Š-328V"
  CZE_nav_bomber_equipment_2:0 "Letov Š-655"
- CZE_nav_bomber_equipment_2_short:0 "Letov Š-655"
+ CZE_nav_bomber_equipment_2_short:0 "Š-655"
  CZE_nav_bomber_equipment_3:0 "Avia A-298"
- CZE_nav_bomber_equipment_3_short:0 "Avia A-298"
+ CZE_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Carrier-based torpedo bombers <><>
- #CZE_cv_nav_bomber_equipment_1:0 "Letov S-328V"
- #CZE_cv_nav_bomber_equipment_1_short:0 "Letov S-328V"
- #CZE_cv_nav_bomber_equipment_2:0 "Letov Š-655"
- #CZE_cv_nav_bomber_equipment_2_short:0 "Letov Š-655"
- #CZE_cv_nav_bomber_equipment_3:0 "Avia A-298"
- #CZE_cv_nav_bomber_equipment_3_short:0 "Avia A-298"
+ CZE_cv_nav_bomber_equipment_0:0 "Letov Š-28V"
+ CZE_cv_nav_bomber_equipment_0_short:0 "Š-28V"
+ CZE_cv_nav_bomber_equipment_1:0 "Letov Š-328V"
+ CZE_cv_nav_bomber_equipment_1_short:0 "S-328V"
+ CZE_cv_nav_bomber_equipment_2:0 "Letov Š-655V"
+ CZE_cv_nav_bomber_equipment_2_short:0 "Š-655V"
+ CZE_cv_nav_bomber_equipment_3:0 "Avia A-298"
+ CZE_cv_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Heavy fighters <><>
- CZE_heavy_fighter_equipment_1:0 "Avia B-734.2"
- CZE_heavy_fighter_equipment_1_short:0 "Avia B-734.2"
- CZE_heavy_fighter_equipment_2:0 "Avia B-137"
- CZE_heavy_fighter_equipment_2_short:0 "Avia B-137"
- CZE_heavy_fighter_equipment_3:0 "Aero A.300 Stihacka"
- CZE_heavy_fighter_equipment_3_short:0 "A.300 Stihacka"
+ CZE_heavy_fighter_equipment_1:0 "Avia B-36"
+ CZE_heavy_fighter_equipment_1_short:0 "B-36"
+ CZE_heavy_fighter_equipment_2:0 "Avia B-38"
+ CZE_heavy_fighter_equipment_2_short:0 "B-138"
+ CZE_heavy_fighter_equipment_3:0 "Aero A-300 Stihacka"
+ CZE_heavy_fighter_equipment_3_short:0 "A-300 Stihacka"
  
 #-> Heavy fighter-bomber <><>
- CZE_hfighter_bomber_equipment_1:0 "Avia B-734.3"
- CZE_hfighter_bomber_equipment_1_short:0 "Avia B-734.3"
- CZE_hfighter_bomber_equipment_2:0 "Avia B-137.2"
- CZE_hfighter_bomber_equipment_2_short:0 "Avia B-137.2"
- CZE_hfighter_bomber_equipment_3:0 "Aero A.300.3 Stihacka"
- CZE_hfighter_bomber_equipment_3_short:0 "A.300.3 Stihacka"
+ CZE_hfighter_bomber_equipment_1:0 "Avia B-36V"
+ CZE_hfighter_bomber_equipment_1_short:0 "B-736V"
+ CZE_hfighter_bomber_equipment_2:0 "Avia B-38V"
+ CZE_hfighter_bomber_equipment_2_short:0 "B-38"
+ CZE_hfighter_bomber_equipment_3:0 "Aero A-300V Stihacka"
+ CZE_hfighter_bomber_equipment_3_short:0 "A-300V Stihacka"
 
 #-> Medium bomber <><>
- CZE_tac_bomber_equipment_0:0 "Aero Vodochody A.100"
- CZE_tac_bomber_equipment_0_short:0 "Aero A.100"
- CZE_tac_bomber_equipment_1:0 "Aero Vodochody A.304"
- CZE_tac_bomber_equipment_1_short:0 "Aero A.304"
- CZE_tac_bomber_equipment_2:0 "Aero Vodochody A.300"
- CZE_tac_bomber_equipment_2_short:0 "Aero A.300"
+ CZE_tac_bomber_equipment_0:0 "Aero Vodochody A-101"
+ CZE_tac_bomber_equipment_0_short:0 "A-101"
+ CZE_tac_bomber_equipment_1:0 "Aero Vodochody A-304"
+ CZE_tac_bomber_equipment_1_short:0 "A-304"
+ CZE_tac_bomber_equipment_2:0 "Aero Vodochody A-300"
+ CZE_tac_bomber_equipment_2_short:0 "A-300"
  CZE_tac_bomber_equipment_3:0 "Letov Š-50"
- CZE_tac_bomber_equipment_3_short:0 "Letov Š-50"
+ CZE_tac_bomber_equipment_3_short:0 "Š-50"
  
 #-> Medium maritime bomber <><>
- CZE_med_maritime_equipment_1:0 "Aero Vodochody A.304.N"
- CZE_med_maritime_equipment_1_short:0 "Aero A.304.N"
- CZE_med_maritime_equipment_2:0 "Aero Vodochody A.300.N"
- CZE_med_maritime_equipment_2_short:0 "Aero A.300.N"
+ CZE_med_maritime_equipment_1:0 "Aero Vodochody A-304N"
+ CZE_med_maritime_equipment_1_short:0 "A-304N"
+ CZE_med_maritime_equipment_2:0 "Aero Vodochody A-300N"
+ CZE_med_maritime_equipment_2_short:0 "A-300N"
  CZE_med_maritime_equipment_3:0 "Letov Š-50N"
- CZE_med_maritime_equipment_3_short:0 "Letov Š-50N"
+ CZE_med_maritime_equipment_3_short:0 "Š-50N"
  
 #-> Heavy bomber <><>
- CZE_strat_bomber_equipment_1:0 "Aero Vodochody C.301"
- CZE_strat_bomber_equipment_1_short:0 "Aero C.301"
- CZE_strat_bomber_equipment_2:0 "Aero Vodochody C.508"
- CZE_strat_bomber_equipment_2_short:0 "Aero C.508"
- CZE_strat_bomber_equipment_3:0 "Aero Vodochody A.711"
- CZE_strat_bomber_equipment_3_short:0 "Aero A.711"
+ CZE_strat_bomber_equipment_1:0 "Aero Vodochody C-301"
+ CZE_strat_bomber_equipment_1_short:0 "C-301"
+ CZE_strat_bomber_equipment_2:0 "Aero Vodochody C-508"
+ CZE_strat_bomber_equipment_2_short:0 "C-508"
+ CZE_strat_bomber_equipment_3:0 "Aero Vodochody A-711"
+ CZE_strat_bomber_equipment_3_short:0 "A-711"
  
 #-> Heavy maritime bomber <><>
- CZE_strat_maritime_equipment_1:0 "Aero Vodochody C.301.N"
- CZE_strat_maritime_equipment_1_short:0 "Aero C.301.N"
- CZE_strat_maritime_equipment_2:0"Aero Vodochody C.508.N"
- CZE_strat_maritime_equipment_2_short:0 "Aero C.508.N"
- CZE_strat_maritime_equipment_3:0 "Aero Vodochody A.711.N"
- CZE_strat_maritime_equipment_3_short:0 "Aero A.711.N"
+ CZE_strat_maritime_equipment_1:0 "Aero Vodochody C-301.N"
+ CZE_strat_maritime_equipment_1_short:0 "C-301.N"
+ CZE_strat_maritime_equipment_2:0"Aero Vodochody C-508.N"
+ CZE_strat_maritime_equipment_2_short:0 "C-508.N"
+ CZE_strat_maritime_equipment_3:0 "Aero Vodochody A-711.N"
+ CZE_strat_maritime_equipment_3_short:0 "A-711.N"
  
 #-> Maritime patrol <><>
  CZE_flying_boat_equipment_3:0 "Avia B-141"
@@ -1131,10 +1194,10 @@ l_english:
  CZE_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- CZE_jet_fighter_equipment_1:0 "Avia S-92.L"
- CZE_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- CZE_jet_fighter_equipment_2:0 "Avia S-105.L"
- CZE_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ CZE_cv_jet_fighter_equipment_1:0 "Avia S-92L"
+ CZE_cv_jet_fighter_equipment_1_short:0 "S-92L"
+ CZE_cv_jet_fighter_equipment_2:0 "Avia S-105L"
+ CZE_cv_jet_fighter_equipment_2_short:0 "S-105L"
  
 #-> Jet medium bomber <><>
  CZE_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -1145,122 +1208,122 @@ l_english:
 
 ###--->  SLO  <><> <><> <><>
 #-> Scout planes <><>
- SLO_scout_plane_equipment_1:0 "Aero Vodochody A.101"
- SLO_scout_plane_equipment_1_short:0 "A.101"
+ SLO_scout_plane_equipment_1:0 "Aero Vodochody A-100"
+ SLO_scout_plane_equipment_1_short:0 "A-100"
  SLO_scout_plane_equipment_2:0 "Aero Vodochody Ae 50"
  SLO_scout_plane_equipment_2_short:0 "Ae 50"
- 
+
 #-> Transport planes <><>
  SLO_transport_plane_equipment_1:0 "Avia 51"
- SLO_transport_plane_equipment_1_short:0 "Avia 51"  
+ SLO_transport_plane_equipment_1_short:0 "Avia 51" 
 
 #-> Dive bombers <><> 
- SLO_CAS_equipment_1:0 "Aero Vodochody A.104"
- SLO_CAS_equipment_1_short:0 "A.104"
+ SLO_CAS_equipment_1:0 "Aero Vodochody A-104"
+ SLO_CAS_equipment_1_short:0 "A-104"
  SLO_CAS_equipment_2:0 "Avia B-158"
  SLO_CAS_equipment_2_short:0 "B-158"
  SLO_CAS_equipment_3:0 "Letov Š-615"
- SLO_CAS_equipment_3_short:0 "Letov Š-615"
+ SLO_CAS_equipment_3_short:0 "Š-615"
 
 #-> Carrier-based dive bombers <><>
- SLO_cv_CAS_equipment_1:0 "Aero Vodochody A.104.L"
- SLO_cv_CAS_equipment_1_short:0 "Aero A.104.L"
+ SLO_cv_CAS_equipment_1:0 "Aero Vodochody A-104L"
+ SLO_cv_CAS_equipment_1_short:0 "A-104L"
  SLO_cv_CAS_equipment_2:0 "Avia B-158L"
- SLO_cv_CAS_equipment_2_short:0 "Avia B-158L"
+ SLO_cv_CAS_equipment_2_short:0 "B-158L"
  SLO_cv_CAS_equipment_3:0 "Letov Š-615L"
- SLO_cv_CAS_equipment_3_short:0 "Letov Š-615L"
+ SLO_cv_CAS_equipment_3_short:0 "Š-615L"
 
 #-> Light fighters <><> 
- SLO_fighter_equipment_0:0 "Avia B-534"
- SLO_fighter_equipment_0_short:0 "B-534"
- SLO_fighter_equipment_1:0 "Aero Vodochody A.102"
- SLO_fighter_equipment_1_short:0 "A.102"
+ SLO_fighter_equipment_0:0 "Avia B-34"
+ SLO_fighter_equipment_0_short:0 "B-34"
+ SLO_fighter_equipment_1:0 "Avia B-534"
+ SLO_fighter_equipment_1_short:0 "B-534"
  SLO_fighter_equipment_2:0 "Avia B-135"
  SLO_fighter_equipment_2_short:0 "B-135"
  SLO_fighter_equipment_3:0 "Avia S-199"
  SLO_fighter_equipment_3_short:0 "S-199"
  
 #-> Light fighter-bombers <><>
- SLO_fighter_bomber_equipment_2:0 "Avia B-135.2"
- SLO_fighter_bomber_equipment_2_short:0 "Avia B-135.2"
- SLO_fighter_bomber_equipment_3:0 "Avia BS-199"
- SLO_fighter_bomber_equipment_3_short:0 "Avia BS-199"
+ SLO_fighter_bomber_equipment_2:0 "Avia B-135V"
+ SLO_fighter_bomber_equipment_2_short:0 "B-135V"
+ SLO_fighter_bomber_equipment_3:0 "Avia S-199V"
+ SLO_fighter_bomber_equipment_3_short:0 "S-199V"
  
 #-> Carrier-based light fighters <><>
- SLO_cv_fighter_equipment_0:0 "Avia B-34.L"
- SLO_cv_fighter_equipment_0_short:0 "Avia B-34.L"
- SLO_cv_fighter_equipment_1:0 "Avia B-534.L"
- SLO_cv_fighter_equipment_1_short:0 "Avia B-534.L"
- SLO_cv_fighter_equipment_2:0 "Avia B-135.L"
- SLO_cv_fighter_equipment_2_short:0 "Avia B-135.L"
+ SLO_cv_fighter_equipment_0:0 "Avia B-34L"
+ SLO_cv_fighter_equipment_0_short:0 "B-34L"
+ SLO_cv_fighter_equipment_1:0 "Avia B-534L"
+ SLO_cv_fighter_equipment_1_short:0 "B-534L"
+ SLO_cv_fighter_equipment_2:0 "Avia B-135L"
+ SLO_cv_fighter_equipment_2_short:0 "B-135L"
  SLO_cv_fighter_equipment_3:0 "Avia LS-199"
- SLO_cv_fighter_equipment_3_short:0 "Avia LS-199"
+ SLO_cv_fighter_equipment_3_short:0 "LS-199"
 
 #-> Torpedo bombers <><>
- SLO_nav_bomber_equipment_1:0 "Letov S-328V"
- SLO_nav_bomber_equipment_1_short:0 "Letov S-328V"
+ SLO_nav_bomber_equipment_1:0 "Letov Š-328V"
+ SLO_nav_bomber_equipment_1_short:0 "Š-328V"
  SLO_nav_bomber_equipment_2:0 "Letov Š-655"
- SLO_nav_bomber_equipment_2_short:0 "Letov Š-655"
+ SLO_nav_bomber_equipment_2_short:0 "Š-655"
  SLO_nav_bomber_equipment_3:0 "Avia A-298"
- SLO_nav_bomber_equipment_3_short:0 "Avia A-298"
+ SLO_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Carrier-based torpedo bombers <><>
- #SLO_cv_nav_bomber_equipment_1:0 "Letov S-328V"
- #SLO_cv_nav_bomber_equipment_1_short:0 "Letov S-328V"
- #SLO_cv_nav_bomber_equipment_2:0 "Letov Š-655"
- #SLO_cv_nav_bomber_equipment_2_short:0 "Letov Š-655"
- #SLO_cv_nav_bomber_equipment_3:0 "Avia A-298"
- #SLO_cv_nav_bomber_equipment_3_short:0 "Avia A-298"
+ SLO_cv_nav_bomber_equipment_1:0 "Letov Š-328V"
+ SLO_cv_nav_bomber_equipment_1_short:0 "S-328V"
+ SLO_cv_nav_bomber_equipment_2:0 "Letov Š-655V"
+ SLO_cv_nav_bomber_equipment_2_short:0 "Š-655V"
+ SLO_cv_nav_bomber_equipment_3:0 "Avia A-298"
+ SLO_cv_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Heavy fighters <><>
- SLO_heavy_fighter_equipment_1:0 "Avia B-734.2"
- SLO_heavy_fighter_equipment_1_short:0 "Avia B-734.2"
- SLO_heavy_fighter_equipment_2:0 "Avia B-137"
- SLO_heavy_fighter_equipment_2_short:0 "Avia B-137"
- SLO_heavy_fighter_equipment_3:0 "Aero A.300 Stihacka"
- SLO_heavy_fighter_equipment_3_short:0 "A.300 Stihacka"
+ SLO_heavy_fighter_equipment_1:0 "Avia B-36"
+ SLO_heavy_fighter_equipment_1_short:0 "B-36"
+ SLO_heavy_fighter_equipment_2:0 "Avia B-38"
+ SLO_heavy_fighter_equipment_2_short:0 "B-138"
+ SLO_heavy_fighter_equipment_3:0 "Aero A-300 Stihacka"
+ SLO_heavy_fighter_equipment_3_short:0 "A-300 Stihacka"
  
 #-> Heavy fighter-bomber <><>
- SLO_hfighter_bomber_equipment_1:0 "Avia B-734.3"
- SLO_hfighter_bomber_equipment_1_short:0 "Avia B-734.3"
- SLO_hfighter_bomber_equipment_2:0 "Avia B-137.2"
- SLO_hfighter_bomber_equipment_2_short:0 "Avia B-137.2"
- SLO_hfighter_bomber_equipment_3:0 "Aero A.300.3 Stihacka"
- SLO_hfighter_bomber_equipment_3_short:0 "A.300.3 Stihacka"
+ SLO_hfighter_bomber_equipment_1:0 "Avia B-36V"
+ SLO_hfighter_bomber_equipment_1_short:0 "B-736V"
+ SLO_hfighter_bomber_equipment_2:0 "Avia B-38V"
+ SLO_hfighter_bomber_equipment_2_short:0 "B-38"
+ SLO_hfighter_bomber_equipment_3:0 "Aero A-300V Stihacka"
+ SLO_hfighter_bomber_equipment_3_short:0 "A-300V Stihacka"
 
 #-> Medium bomber <><>
- SLO_tac_bomber_equipment_0:0 "Aero Vodochody A.100"
- SLO_tac_bomber_equipment_0_short:0 "Aero A.100"
- SLO_tac_bomber_equipment_1:0 "Aero Vodochody A.304"
- SLO_tac_bomber_equipment_1_short:0 "Aero A.304"
- SLO_tac_bomber_equipment_2:0 "Aero Vodochody A.300"
- SLO_tac_bomber_equipment_2_short:0 "Aero A.300"
+ SLO_tac_bomber_equipment_0:0 "Aero Vodochody A-101"
+ SLO_tac_bomber_equipment_0_short:0 "A-101"
+ SLO_tac_bomber_equipment_1:0 "Aero Vodochody A-304"
+ SLO_tac_bomber_equipment_1_short:0 "A-304"
+ SLO_tac_bomber_equipment_2:0 "Aero Vodochody A-300"
+ SLO_tac_bomber_equipment_2_short:0 "A-300"
  SLO_tac_bomber_equipment_3:0 "Letov Š-50"
- SLO_tac_bomber_equipment_3_short:0 "Letov Š-50"
+ SLO_tac_bomber_equipment_3_short:0 "Š-50"
  
 #-> Medium maritime bomber <><>
- SLO_med_maritime_equipment_1:0 "Aero Vodochody A.304.N"
- SLO_med_maritime_equipment_1_short:0 "Aero A.304.N"
- SLO_med_maritime_equipment_2:0 "Aero Vodochody A.300.N"
- SLO_med_maritime_equipment_2_short:0 "Aero A.300.N"
+ SLO_med_maritime_equipment_1:0 "Aero Vodochody A-304N"
+ SLO_med_maritime_equipment_1_short:0 "A-304N"
+ SLO_med_maritime_equipment_2:0 "Aero Vodochody A-300N"
+ SLO_med_maritime_equipment_2_short:0 "A-300N"
  SLO_med_maritime_equipment_3:0 "Letov Š-50N"
- SLO_med_maritime_equipment_3_short:0 "Letov Š-50N"
+ SLO_med_maritime_equipment_3_short:0 "Š-50N"
  
 #-> Heavy bomber <><>
- SLO_strat_bomber_equipment_1:0 "Aero Vodochody C.301"
- SLO_strat_bomber_equipment_1_short:0 "Aero C.301"
- SLO_strat_bomber_equipment_2:0 "Aero Vodochody C.508"
- SLO_strat_bomber_equipment_2_short:0 "Aero C.508"
- SLO_strat_bomber_equipment_3:0 "Aero Vodochody A.711"
- SLO_strat_bomber_equipment_3_short:0 "Aero A.711"
+ SLO_strat_bomber_equipment_1:0 "Aero Vodochody C-301"
+ SLO_strat_bomber_equipment_1_short:0 "C-301"
+ SLO_strat_bomber_equipment_2:0 "Aero Vodochody C-508"
+ SLO_strat_bomber_equipment_2_short:0 "C-508"
+ SLO_strat_bomber_equipment_3:0 "Aero Vodochody A-711"
+ SLO_strat_bomber_equipment_3_short:0 "A-711"
  
 #-> Heavy maritime bomber <><>
- SLO_strat_maritime_equipment_1:0 "Aero Vodochody C.301.N"
- SLO_strat_maritime_equipment_1_short:0 "Aero C.301.N"
- SLO_strat_maritime_equipment_2:0"Aero Vodochody C.508.N"
- SLO_strat_maritime_equipment_2_short:0 "Aero C.508.N"
- SLO_strat_maritime_equipment_3:0 "Aero Vodochody A.711.N"
- SLO_strat_maritime_equipment_3_short:0 "Aero A.711.N"
+ SLO_strat_maritime_equipment_1:0 "Aero Vodochody C-301.N"
+ SLO_strat_maritime_equipment_1_short:0 "C-301.N"
+ SLO_strat_maritime_equipment_2:0"Aero Vodochody C-508.N"
+ SLO_strat_maritime_equipment_2_short:0 "C-508.N"
+ SLO_strat_maritime_equipment_3:0 "Aero Vodochody A-711.N"
+ SLO_strat_maritime_equipment_3_short:0 "A-711.N"
  
 #-> Maritime patrol <><>
  SLO_flying_boat_equipment_3:0 "Avia B-141"
@@ -1273,10 +1336,10 @@ l_english:
  SLO_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- SLO_cv_jet_fighter_equipment_1:0 "Avia S-92.L"
- SLO_cv_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- SLO_cv_jet_fighter_equipment_2:0 "Avia S-105.L"
- SLO_cv_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ SLO_cv_jet_fighter_equipment_1:0 "Avia S-92L"
+ SLO_cv_jet_fighter_equipment_1_short:0 "S-92L"
+ SLO_cv_jet_fighter_equipment_2:0 "Avia S-105L"
+ SLO_cv_jet_fighter_equipment_2_short:0 "S-105L"
  
 #-> Jet medium bomber <><>
  SLO_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -1286,121 +1349,122 @@ l_english:
 
 ###--->  DOU  <><> <><> <><>
 #-> Scout planes <><>
- DOU_scout_plane_equipment_1:0 "Aero Vodochody A.101"
- DOU_scout_plane_equipment_1_short:0 "A.101"
+ DOU_scout_plane_equipment_1:0 "Aero Vodochody A-100"
+ DOU_scout_plane_equipment_1_short:0 "A-100"
  DOU_scout_plane_equipment_2:0 "Aero Vodochody Ae 50"
  DOU_scout_plane_equipment_2_short:0 "Ae 50"
- 
+
 #-> Transport planes <><>
  DOU_transport_plane_equipment_1:0 "Avia 51"
  DOU_transport_plane_equipment_1_short:0 "Avia 51" 
+
 #-> Dive bombers <><> 
- DOU_CAS_equipment_1:0 "Aero Vodochody A.104"
- DOU_CAS_equipment_1_short:0 "A.104"
+ DOU_CAS_equipment_1:0 "Aero Vodochody A-104"
+ DOU_CAS_equipment_1_short:0 "A-104"
  DOU_CAS_equipment_2:0 "Avia B-158"
  DOU_CAS_equipment_2_short:0 "B-158"
  DOU_CAS_equipment_3:0 "Letov Š-615"
- DOU_CAS_equipment_3_short:0 "Letov Š-615"
+ DOU_CAS_equipment_3_short:0 "Š-615"
 
 #-> Carrier-based dive bombers <><>
- DOU_cv_CAS_equipment_1:0 "Aero Vodochody A.104.L"
- DOU_cv_CAS_equipment_1_short:0 "Aero A.104.L"
+ DOU_cv_CAS_equipment_1:0 "Aero Vodochody A-104L"
+ DOU_cv_CAS_equipment_1_short:0 "A-104L"
  DOU_cv_CAS_equipment_2:0 "Avia B-158L"
- DOU_cv_CAS_equipment_2_short:0 "Avia B-158L"
+ DOU_cv_CAS_equipment_2_short:0 "B-158L"
  DOU_cv_CAS_equipment_3:0 "Letov Š-615L"
- DOU_cv_CAS_equipment_3_short:0 "Letov Š-615L"
+ DOU_cv_CAS_equipment_3_short:0 "Š-615L"
 
 #-> Light fighters <><> 
- DOU_fighter_equipment_0:0 "Avia B-534"
- DOU_fighter_equipment_0_short:0 "B-534"
- DOU_fighter_equipment_1:0 "Aero Vodochody A.102"
- DOU_fighter_equipment_1_short:0 "A.102"
+ DOU_fighter_equipment_0:0 "Avia B-34"
+ DOU_fighter_equipment_0_short:0 "B-34"
+ DOU_fighter_equipment_1:0 "Avia B-534"
+ DOU_fighter_equipment_1_short:0 "B-534"
  DOU_fighter_equipment_2:0 "Avia B-135"
  DOU_fighter_equipment_2_short:0 "B-135"
  DOU_fighter_equipment_3:0 "Avia S-199"
  DOU_fighter_equipment_3_short:0 "S-199"
  
 #-> Light fighter-bombers <><>
- DOU_fighter_bomber_equipment_2:0 "Avia B-135.2"
- DOU_fighter_bomber_equipment_2_short:0 "Avia B-135.2"
- DOU_fighter_bomber_equipment_3:0 "Avia BS-199"
- DOU_fighter_bomber_equipment_3_short:0 "Avia BS-199"
+ DOU_fighter_bomber_equipment_2:0 "Avia B-135V"
+ DOU_fighter_bomber_equipment_2_short:0 "B-135V"
+ DOU_fighter_bomber_equipment_3:0 "Avia S-199V"
+ DOU_fighter_bomber_equipment_3_short:0 "S-199V"
  
 #-> Carrier-based light fighters <><>
- DOU_cv_fighter_equipment_0:0 "Avia B-34.L"
- DOU_cv_fighter_equipment_0_short:0 "Avia B-34.L"
- DOU_cv_fighter_equipment_1:0 "Avia B-534.L"
- DOU_cv_fighter_equipment_1_short:0 "Avia B-534.L"
- DOU_cv_fighter_equipment_2:0 "Avia B-135.L"
- DOU_cv_fighter_equipment_2_short:0 "Avia B-135.L"
+ DOU_cv_fighter_equipment_0:0 "Avia B-34L"
+ DOU_cv_fighter_equipment_0_short:0 "B-34L"
+ DOU_cv_fighter_equipment_1:0 "Avia B-534L"
+ DOU_cv_fighter_equipment_1_short:0 "B-534L"
+ DOU_cv_fighter_equipment_2:0 "Avia B-135L"
+ DOU_cv_fighter_equipment_2_short:0 "B-135L"
  DOU_cv_fighter_equipment_3:0 "Avia LS-199"
- DOU_cv_fighter_equipment_3_short:0 "Avia LS-199"
+ DOU_cv_fighter_equipment_3_short:0 "LS-199"
 
 #-> Torpedo bombers <><>
- DOU_nav_bomber_equipment_1:0 "Letov S-328V"
- DOU_nav_bomber_equipment_1_short:0 "Letov S-328V"
+ DOU_nav_bomber_equipment_1:0 "Letov Š-328V"
+ DOU_nav_bomber_equipment_1_short:0 "Š-328V"
  DOU_nav_bomber_equipment_2:0 "Letov Š-655"
- DOU_nav_bomber_equipment_2_short:0 "Letov Š-655"
+ DOU_nav_bomber_equipment_2_short:0 "Š-655"
  DOU_nav_bomber_equipment_3:0 "Avia A-298"
- DOU_nav_bomber_equipment_3_short:0 "Avia A-298"
+ DOU_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Carrier-based torpedo bombers <><>
- #DOU_cv_nav_bomber_equipment_1:0 "Letov S-328V"
- #DOU_cv_nav_bomber_equipment_1_short:0 "Letov S-328V"
- #DOU_cv_nav_bomber_equipment_2:0 "Letov Š-655"
- #DOU_cv_nav_bomber_equipment_2_short:0 "Letov Š-655"
- #DOU_cv_nav_bomber_equipment_3:0 "Avia A-298"
- #DOU_cv_nav_bomber_equipment_3_short:0 "Avia A-298"
+ DOU_cv_nav_bomber_equipment_1:0 "Letov Š-328V"
+ DOU_cv_nav_bomber_equipment_1_short:0 "S-328V"
+ DOU_cv_nav_bomber_equipment_2:0 "Letov Š-655V"
+ DOU_cv_nav_bomber_equipment_2_short:0 "Š-655V"
+ DOU_cv_nav_bomber_equipment_3:0 "Avia A-298"
+ DOU_cv_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Heavy fighters <><>
- DOU_heavy_fighter_equipment_1:0 "Avia B-734.2"
- DOU_heavy_fighter_equipment_1_short:0 "Avia B-734.2"
- DOU_heavy_fighter_equipment_2:0 "Avia B-137"
- DOU_heavy_fighter_equipment_2_short:0 "Avia B-137"
- DOU_heavy_fighter_equipment_3:0 "Aero A.300 Stihacka"
- DOU_heavy_fighter_equipment_3_short:0 "A.300 Stihacka"
+ DOU_heavy_fighter_equipment_1:0 "Avia B-36"
+ DOU_heavy_fighter_equipment_1_short:0 "B-36"
+ DOU_heavy_fighter_equipment_2:0 "Avia B-38"
+ DOU_heavy_fighter_equipment_2_short:0 "B-138"
+ DOU_heavy_fighter_equipment_3:0 "Aero A-300 Stihacka"
+ DOU_heavy_fighter_equipment_3_short:0 "A-300 Stihacka"
  
 #-> Heavy fighter-bomber <><>
- DOU_hfighter_bomber_equipment_1:0 "Avia B-734.3"
- DOU_hfighter_bomber_equipment_1_short:0 "Avia B-734.3"
- DOU_hfighter_bomber_equipment_2:0 "Avia B-137.2"
- DOU_hfighter_bomber_equipment_2_short:0 "Avia B-137.2"
- DOU_hfighter_bomber_equipment_3:0 "Aero A.300.3 Stihacka"
- DOU_hfighter_bomber_equipment_3_short:0 "A.300.3 Stihacka"
+ DOU_hfighter_bomber_equipment_1:0 "Avia B-36V"
+ DOU_hfighter_bomber_equipment_1_short:0 "B-736V"
+ DOU_hfighter_bomber_equipment_2:0 "Avia B-38V"
+ DOU_hfighter_bomber_equipment_2_short:0 "B-38"
+ DOU_hfighter_bomber_equipment_3:0 "Aero A-300V Stihacka"
+ DOU_hfighter_bomber_equipment_3_short:0 "A-300V Stihacka"
 
 #-> Medium bomber <><>
- DOU_tac_bomber_equipment_0:0 "Aero Vodochody A.100"
- DOU_tac_bomber_equipment_0_short:0 "Aero A.100"
- DOU_tac_bomber_equipment_1:0 "Aero Vodochody A.304"
- DOU_tac_bomber_equipment_1_short:0 "Aero A.304"
- DOU_tac_bomber_equipment_2:0 "Aero Vodochody A.300"
- DOU_tac_bomber_equipment_2_short:0 "Aero A.300"
+ DOU_tac_bomber_equipment_0:0 "Aero Vodochody A-101"
+ DOU_tac_bomber_equipment_0_short:0 "A-101"
+ DOU_tac_bomber_equipment_1:0 "Aero Vodochody A-304"
+ DOU_tac_bomber_equipment_1_short:0 "A-304"
+ DOU_tac_bomber_equipment_2:0 "Aero Vodochody A-300"
+ DOU_tac_bomber_equipment_2_short:0 "A-300"
  DOU_tac_bomber_equipment_3:0 "Letov Š-50"
- DOU_tac_bomber_equipment_3_short:0 "Letov Š-50"
+ DOU_tac_bomber_equipment_3_short:0 "Š-50"
  
 #-> Medium maritime bomber <><>
- DOU_med_maritime_equipment_1:0 "Aero Vodochody A.304.N"
- DOU_med_maritime_equipment_1_short:0 "Aero A.304.N"
- DOU_med_maritime_equipment_2:0 "Aero Vodochody A.300.N"
- DOU_med_maritime_equipment_2_short:0 "Aero A.300.N"
+ DOU_med_maritime_equipment_1:0 "Aero Vodochody A-304N"
+ DOU_med_maritime_equipment_1_short:0 "A-304N"
+ DOU_med_maritime_equipment_2:0 "Aero Vodochody A-300N"
+ DOU_med_maritime_equipment_2_short:0 "A-300N"
  DOU_med_maritime_equipment_3:0 "Letov Š-50N"
- DOU_med_maritime_equipment_3_short:0 "Letov Š-50N"
+ DOU_med_maritime_equipment_3_short:0 "Š-50N"
  
 #-> Heavy bomber <><>
- DOU_strat_bomber_equipment_1:0 "Aero Vodochody C.301"
- DOU_strat_bomber_equipment_1_short:0 "Aero C.301"
- DOU_strat_bomber_equipment_2:0 "Aero Vodochody C.508"
- DOU_strat_bomber_equipment_2_short:0 "Aero C.508"
- DOU_strat_bomber_equipment_3:0 "Aero Vodochody A.711"
- DOU_strat_bomber_equipment_3_short:0 "Aero A.711"
+ DOU_strat_bomber_equipment_1:0 "Aero Vodochody C-301"
+ DOU_strat_bomber_equipment_1_short:0 "C-301"
+ DOU_strat_bomber_equipment_2:0 "Aero Vodochody C-508"
+ DOU_strat_bomber_equipment_2_short:0 "C-508"
+ DOU_strat_bomber_equipment_3:0 "Aero Vodochody A-711"
+ DOU_strat_bomber_equipment_3_short:0 "A-711"
  
 #-> Heavy maritime bomber <><>
- DOU_strat_maritime_equipment_1:0 "Aero Vodochody C.301.N"
- DOU_strat_maritime_equipment_1_short:0 "Aero C.301.N"
- DOU_strat_maritime_equipment_2:0"Aero Vodochody C.508.N"
- DOU_strat_maritime_equipment_2_short:0 "Aero C.508.N"
- DOU_strat_maritime_equipment_3:0 "Aero Vodochody A.711.N"
- DOU_strat_maritime_equipment_3_short:0 "Aero A.711.N"
+ DOU_strat_maritime_equipment_1:0 "Aero Vodochody C-301.N"
+ DOU_strat_maritime_equipment_1_short:0 "C-301.N"
+ DOU_strat_maritime_equipment_2:0"Aero Vodochody C-508.N"
+ DOU_strat_maritime_equipment_2_short:0 "C-508.N"
+ DOU_strat_maritime_equipment_3:0 "Aero Vodochody A-711.N"
+ DOU_strat_maritime_equipment_3_short:0 "A-711.N"
  
 #-> Maritime patrol <><>
  DOU_flying_boat_equipment_3:0 "Avia B-141"
@@ -1413,10 +1477,10 @@ l_english:
  DOU_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- DOU_cv_jet_fighter_equipment_1:0 "Avia S-92.L"
- DOU_cv_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- DOU_cv_jet_fighter_equipment_2:0 "Avia S-105.L"
- DOU_cv_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ DOU_cv_jet_fighter_equipment_1:0 "Avia S-92L"
+ DOU_cv_jet_fighter_equipment_1_short:0 "S-92L"
+ DOU_cv_jet_fighter_equipment_2:0 "Avia S-105L"
+ DOU_cv_jet_fighter_equipment_2_short:0 "S-105L"
  
 #-> Jet medium bomber <><>
  DOU_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -1427,122 +1491,122 @@ l_english:
 
 ###--->  RUT  <><> <><> <><>
 #-> Scout planes <><>
- RUT_scout_plane_equipment_1:0 "Aero Vodochody A.101"
- RUT_scout_plane_equipment_1_short:0 "A.101"
+ RUT_scout_plane_equipment_1:0 "Aero Vodochody A-100"
+ RUT_scout_plane_equipment_1_short:0 "A-100"
  RUT_scout_plane_equipment_2:0 "Aero Vodochody Ae 50"
  RUT_scout_plane_equipment_2_short:0 "Ae 50"
- 
+
 #-> Transport planes <><>
  RUT_transport_plane_equipment_1:0 "Avia 51"
- RUT_transport_plane_equipment_1_short:0 "Avia 51"  
+ RUT_transport_plane_equipment_1_short:0 "Avia 51" 
 
 #-> Dive bombers <><> 
- RUT_CAS_equipment_1:0 "Aero Vodochody A.104"
- RUT_CAS_equipment_1_short:0 "A.104"
+ RUT_CAS_equipment_1:0 "Aero Vodochody A-104"
+ RUT_CAS_equipment_1_short:0 "A-104"
  RUT_CAS_equipment_2:0 "Avia B-158"
  RUT_CAS_equipment_2_short:0 "B-158"
  RUT_CAS_equipment_3:0 "Letov Š-615"
- RUT_CAS_equipment_3_short:0 "Letov Š-615"
+ RUT_CAS_equipment_3_short:0 "Š-615"
 
 #-> Carrier-based dive bombers <><>
- RUT_cv_CAS_equipment_1:0 "Aero Vodochody A.104.L"
- RUT_cv_CAS_equipment_1_short:0 "Aero A.104.L"
+ RUT_cv_CAS_equipment_1:0 "Aero Vodochody A-104L"
+ RUT_cv_CAS_equipment_1_short:0 "A-104L"
  RUT_cv_CAS_equipment_2:0 "Avia B-158L"
- RUT_cv_CAS_equipment_2_short:0 "Avia B-158L"
+ RUT_cv_CAS_equipment_2_short:0 "B-158L"
  RUT_cv_CAS_equipment_3:0 "Letov Š-615L"
- RUT_cv_CAS_equipment_3_short:0 "Letov Š-615L"
+ RUT_cv_CAS_equipment_3_short:0 "Š-615L"
 
 #-> Light fighters <><> 
- RUT_fighter_equipment_0:0 "Avia B-534"
- RUT_fighter_equipment_0_short:0 "B-534"
- RUT_fighter_equipment_1:0 "Aero Vodochody A.102"
- RUT_fighter_equipment_1_short:0 "A.102"
+ RUT_fighter_equipment_0:0 "Avia B-34"
+ RUT_fighter_equipment_0_short:0 "B-34"
+ RUT_fighter_equipment_1:0 "Avia B-534"
+ RUT_fighter_equipment_1_short:0 "B-534"
  RUT_fighter_equipment_2:0 "Avia B-135"
  RUT_fighter_equipment_2_short:0 "B-135"
  RUT_fighter_equipment_3:0 "Avia S-199"
  RUT_fighter_equipment_3_short:0 "S-199"
  
 #-> Light fighter-bombers <><>
- RUT_fighter_bomber_equipment_2:0 "Avia B-135.2"
- RUT_fighter_bomber_equipment_2_short:0 "Avia B-135.2"
- RUT_fighter_bomber_equipment_3:0 "Avia BS-199"
- RUT_fighter_bomber_equipment_3_short:0 "Avia BS-199"
+ RUT_fighter_bomber_equipment_2:0 "Avia B-135V"
+ RUT_fighter_bomber_equipment_2_short:0 "B-135V"
+ RUT_fighter_bomber_equipment_3:0 "Avia S-199V"
+ RUT_fighter_bomber_equipment_3_short:0 "S-199V"
  
 #-> Carrier-based light fighters <><>
- RUT_cv_fighter_equipment_0:0 "Avia B-34.L"
- RUT_cv_fighter_equipment_0_short:0 "Avia B-34.L"
- RUT_cv_fighter_equipment_1:0 "Avia B-534.L"
- RUT_cv_fighter_equipment_1_short:0 "Avia B-534.L"
- RUT_cv_fighter_equipment_2:0 "Avia B-135.L"
- RUT_cv_fighter_equipment_2_short:0 "Avia B-135.L"
+ RUT_cv_fighter_equipment_0:0 "Avia B-34L"
+ RUT_cv_fighter_equipment_0_short:0 "B-34L"
+ RUT_cv_fighter_equipment_1:0 "Avia B-534L"
+ RUT_cv_fighter_equipment_1_short:0 "B-534L"
+ RUT_cv_fighter_equipment_2:0 "Avia B-135L"
+ RUT_cv_fighter_equipment_2_short:0 "B-135L"
  RUT_cv_fighter_equipment_3:0 "Avia LS-199"
- RUT_cv_fighter_equipment_3_short:0 "Avia LS-199"
+ RUT_cv_fighter_equipment_3_short:0 "LS-199"
 
 #-> Torpedo bombers <><>
- RUT_nav_bomber_equipment_1:0 "Letov S-328V"
- RUT_nav_bomber_equipment_1_short:0 "Letov S-328V"
+ RUT_nav_bomber_equipment_1:0 "Letov Š-328V"
+ RUT_nav_bomber_equipment_1_short:0 "Š-328V"
  RUT_nav_bomber_equipment_2:0 "Letov Š-655"
- RUT_nav_bomber_equipment_2_short:0 "Letov Š-655"
+ RUT_nav_bomber_equipment_2_short:0 "Š-655"
  RUT_nav_bomber_equipment_3:0 "Avia A-298"
- RUT_nav_bomber_equipment_3_short:0 "Avia A-298"
+ RUT_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Carrier-based torpedo bombers <><>
- #RUT_cv_nav_bomber_equipment_1:0 "Letov S-328V"
- #RUT_cv_nav_bomber_equipment_1_short:0 "Letov S-328V"
- #RUT_cv_nav_bomber_equipment_2:0 "Letov Š-655"
- #RUT_cv_nav_bomber_equipment_2_short:0 "Letov Š-655"
- #RUT_cv_nav_bomber_equipment_3:0 "Avia A-298"
- #RUT_cv_nav_bomber_equipment_3_short:0 "Avia A-298"
+ RUT_cv_nav_bomber_equipment_1:0 "Letov Š-328V"
+ RUT_cv_nav_bomber_equipment_1_short:0 "S-328V"
+ RUT_cv_nav_bomber_equipment_2:0 "Letov Š-655V"
+ RUT_cv_nav_bomber_equipment_2_short:0 "Š-655V"
+ RUT_cv_nav_bomber_equipment_3:0 "Avia A-298"
+ RUT_cv_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Heavy fighters <><>
- RUT_heavy_fighter_equipment_1:0 "Avia B-734.2"
- RUT_heavy_fighter_equipment_1_short:0 "Avia B-734.2"
- RUT_heavy_fighter_equipment_2:0 "Avia B-137"
- RUT_heavy_fighter_equipment_2_short:0 "Avia B-137"
- RUT_heavy_fighter_equipment_3:0 "Aero A.300 Stihacka"
- RUT_heavy_fighter_equipment_3_short:0 "A.300 Stihacka"
+ RUT_heavy_fighter_equipment_1:0 "Avia B-36"
+ RUT_heavy_fighter_equipment_1_short:0 "B-36"
+ RUT_heavy_fighter_equipment_2:0 "Avia B-38"
+ RUT_heavy_fighter_equipment_2_short:0 "B-138"
+ RUT_heavy_fighter_equipment_3:0 "Aero A-300 Stihacka"
+ RUT_heavy_fighter_equipment_3_short:0 "A-300 Stihacka"
  
 #-> Heavy fighter-bomber <><>
- RUT_hfighter_bomber_equipment_1:0 "Avia B-734.3"
- RUT_hfighter_bomber_equipment_1_short:0 "Avia B-734.3"
- RUT_hfighter_bomber_equipment_2:0 "Avia B-137.2"
- RUT_hfighter_bomber_equipment_2_short:0 "Avia B-137.2"
- RUT_hfighter_bomber_equipment_3:0 "Aero A.300.3 Stihacka"
- RUT_hfighter_bomber_equipment_3_short:0 "A.300.3 Stihacka" 
+ RUT_hfighter_bomber_equipment_1:0 "Avia B-36V"
+ RUT_hfighter_bomber_equipment_1_short:0 "B-736V"
+ RUT_hfighter_bomber_equipment_2:0 "Avia B-38V"
+ RUT_hfighter_bomber_equipment_2_short:0 "B-38"
+ RUT_hfighter_bomber_equipment_3:0 "Aero A-300V Stihacka"
+ RUT_hfighter_bomber_equipment_3_short:0 "A-300V Stihacka"
 
 #-> Medium bomber <><>
- RUT_tac_bomber_equipment_0:0 "Aero Vodochody A.100"
- RUT_tac_bomber_equipment_0_short:0 "Aero A.100"
- RUT_tac_bomber_equipment_1:0 "Aero Vodochody A.304"
- RUT_tac_bomber_equipment_1_short:0 "Aero A.304"
- RUT_tac_bomber_equipment_2:0 "Aero Vodochody A.300"
- RUT_tac_bomber_equipment_2_short:0 "Aero A.300"
+ RUT_tac_bomber_equipment_0:0 "Aero Vodochody A-101"
+ RUT_tac_bomber_equipment_0_short:0 "A-101"
+ RUT_tac_bomber_equipment_1:0 "Aero Vodochody A-304"
+ RUT_tac_bomber_equipment_1_short:0 "A-304"
+ RUT_tac_bomber_equipment_2:0 "Aero Vodochody A-300"
+ RUT_tac_bomber_equipment_2_short:0 "A-300"
  RUT_tac_bomber_equipment_3:0 "Letov Š-50"
- RUT_tac_bomber_equipment_3_short:0 "Letov Š-50"
+ RUT_tac_bomber_equipment_3_short:0 "Š-50"
  
 #-> Medium maritime bomber <><>
- RUT_med_maritime_equipment_1:0 "Aero Vodochody A.304.N"
- RUT_med_maritime_equipment_1_short:0 "Aero A.304.N"
- RUT_med_maritime_equipment_2:0 "Aero Vodochody A.300.N"
- RUT_med_maritime_equipment_2_short:0 "Aero A.300.N"
+ RUT_med_maritime_equipment_1:0 "Aero Vodochody A-304N"
+ RUT_med_maritime_equipment_1_short:0 "A-304N"
+ RUT_med_maritime_equipment_2:0 "Aero Vodochody A-300N"
+ RUT_med_maritime_equipment_2_short:0 "A-300N"
  RUT_med_maritime_equipment_3:0 "Letov Š-50N"
- RUT_med_maritime_equipment_3_short:0 "Letov Š-50N"
+ RUT_med_maritime_equipment_3_short:0 "Š-50N"
  
 #-> Heavy bomber <><>
- RUT_strat_bomber_equipment_1:0 "Aero Vodochody C.301"
- RUT_strat_bomber_equipment_1_short:0 "Aero C.301"
- RUT_strat_bomber_equipment_2:0 "Aero Vodochody C.508"
- RUT_strat_bomber_equipment_2_short:0 "Aero C.508"
- RUT_strat_bomber_equipment_3:0 "Aero Vodochody A.711"
- RUT_strat_bomber_equipment_3_short:0 "Aero A.711"
+ RUT_strat_bomber_equipment_1:0 "Aero Vodochody C-301"
+ RUT_strat_bomber_equipment_1_short:0 "C-301"
+ RUT_strat_bomber_equipment_2:0 "Aero Vodochody C-508"
+ RUT_strat_bomber_equipment_2_short:0 "C-508"
+ RUT_strat_bomber_equipment_3:0 "Aero Vodochody A-711"
+ RUT_strat_bomber_equipment_3_short:0 "A-711"
  
 #-> Heavy maritime bomber <><>
- RUT_strat_maritime_equipment_1:0 "Aero Vodochody C.301.N"
- RUT_strat_maritime_equipment_1_short:0 "Aero C.301.N"
- RUT_strat_maritime_equipment_2:0"Aero Vodochody C.508.N"
- RUT_strat_maritime_equipment_2_short:0 "Aero C.508.N"
- RUT_strat_maritime_equipment_3:0 "Aero Vodochody A.711.N"
- RUT_strat_maritime_equipment_3_short:0 "Aero A.711.N"
+ RUT_strat_maritime_equipment_1:0 "Aero Vodochody C-301.N"
+ RUT_strat_maritime_equipment_1_short:0 "C-301.N"
+ RUT_strat_maritime_equipment_2:0"Aero Vodochody C-508.N"
+ RUT_strat_maritime_equipment_2_short:0 "C-508.N"
+ RUT_strat_maritime_equipment_3:0 "Aero Vodochody A-711.N"
+ RUT_strat_maritime_equipment_3_short:0 "A-711.N"
  
 #-> Maritime patrol <><>
  RUT_flying_boat_equipment_3:0 "Avia B-141"
@@ -1555,10 +1619,10 @@ l_english:
  RUT_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- RUT_cv_jet_fighter_equipment_1:0 "Avia S-92.L"
- RUT_cv_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- RUT_cv_jet_fighter_equipment_2:0 "Avia S-105.L"
- RUT_cv_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ RUT_cv_jet_fighter_equipment_1:0 "Avia S-92L"
+ RUT_cv_jet_fighter_equipment_1_short:0 "S-92L"
+ RUT_cv_jet_fighter_equipment_2:0 "Avia S-105L"
+ RUT_cv_jet_fighter_equipment_2_short:0 "S-105L"
  
 #-> Jet medium bomber <><>
  RUT_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -1569,121 +1633,122 @@ l_english:
 
 ###--->  UKR  <><> <><> <><>
 #-> Scout planes <><>
- UKR_scout_plane_equipment_1:0 "Aero Vodochody A.101"
- UKR_scout_plane_equipment_1_short:0 "A.101"
+ UKR_scout_plane_equipment_1:0 "Aero Vodochody A-100"
+ UKR_scout_plane_equipment_1_short:0 "A-100"
  UKR_scout_plane_equipment_2:0 "Aero Vodochody Ae 50"
  UKR_scout_plane_equipment_2_short:0 "Ae 50"
- 
+
 #-> Transport planes <><>
  UKR_transport_plane_equipment_1:0 "Avia 51"
  UKR_transport_plane_equipment_1_short:0 "Avia 51" 
+
 #-> Dive bombers <><> 
- UKR_CAS_equipment_1:0 "Aero Vodochody A.104"
- UKR_CAS_equipment_1_short:0 "A.104"
+ UKR_CAS_equipment_1:0 "Aero Vodochody A-104"
+ UKR_CAS_equipment_1_short:0 "A-104"
  UKR_CAS_equipment_2:0 "Avia B-158"
  UKR_CAS_equipment_2_short:0 "B-158"
  UKR_CAS_equipment_3:0 "Letov Š-615"
- UKR_CAS_equipment_3_short:0 "Letov Š-615"
+ UKR_CAS_equipment_3_short:0 "Š-615"
 
 #-> Carrier-based dive bombers <><>
- UKR_cv_CAS_equipment_1:0 "Aero Vodochody A.104.L"
- UKR_cv_CAS_equipment_1_short:0 "Aero A.104.L"
+ UKR_cv_CAS_equipment_1:0 "Aero Vodochody A-104L"
+ UKR_cv_CAS_equipment_1_short:0 "A-104L"
  UKR_cv_CAS_equipment_2:0 "Avia B-158L"
- UKR_cv_CAS_equipment_2_short:0 "Avia B-158L"
+ UKR_cv_CAS_equipment_2_short:0 "B-158L"
  UKR_cv_CAS_equipment_3:0 "Letov Š-615L"
- UKR_cv_CAS_equipment_3_short:0 "Letov Š-615L"
+ UKR_cv_CAS_equipment_3_short:0 "Š-615L"
 
 #-> Light fighters <><> 
- UKR_fighter_equipment_0:0 "Avia B-534"
- UKR_fighter_equipment_0_short:0 "B-534"
- UKR_fighter_equipment_1:0 "Aero Vodochody A.102"
- UKR_fighter_equipment_1_short:0 "A.102"
+ UKR_fighter_equipment_0:0 "Avia B-34"
+ UKR_fighter_equipment_0_short:0 "B-34"
+ UKR_fighter_equipment_1:0 "Avia B-534"
+ UKR_fighter_equipment_1_short:0 "B-534"
  UKR_fighter_equipment_2:0 "Avia B-135"
  UKR_fighter_equipment_2_short:0 "B-135"
  UKR_fighter_equipment_3:0 "Avia S-199"
  UKR_fighter_equipment_3_short:0 "S-199"
  
 #-> Light fighter-bombers <><>
- UKR_fighter_bomber_equipment_2:0 "Avia B-135.2"
- UKR_fighter_bomber_equipment_2_short:0 "Avia B-135.2"
- UKR_fighter_bomber_equipment_3:0 "Avia BS-199"
- UKR_fighter_bomber_equipment_3_short:0 "Avia BS-199"
+ UKR_fighter_bomber_equipment_2:0 "Avia B-135V"
+ UKR_fighter_bomber_equipment_2_short:0 "B-135V"
+ UKR_fighter_bomber_equipment_3:0 "Avia S-199V"
+ UKR_fighter_bomber_equipment_3_short:0 "S-199V"
  
 #-> Carrier-based light fighters <><>
- UKR_cv_fighter_equipment_0:0 "Avia B-34.L"
- UKR_cv_fighter_equipment_0_short:0 "Avia B-34.L"
- UKR_cv_fighter_equipment_1:0 "Avia B-534.L"
- UKR_cv_fighter_equipment_1_short:0 "Avia B-534.L"
- UKR_cv_fighter_equipment_2:0 "Avia B-135.L"
- UKR_cv_fighter_equipment_2_short:0 "Avia B-135.L"
+ UKR_cv_fighter_equipment_0:0 "Avia B-34L"
+ UKR_cv_fighter_equipment_0_short:0 "B-34L"
+ UKR_cv_fighter_equipment_1:0 "Avia B-534L"
+ UKR_cv_fighter_equipment_1_short:0 "B-534L"
+ UKR_cv_fighter_equipment_2:0 "Avia B-135L"
+ UKR_cv_fighter_equipment_2_short:0 "B-135L"
  UKR_cv_fighter_equipment_3:0 "Avia LS-199"
- UKR_cv_fighter_equipment_3_short:0 "Avia LS-199"
+ UKR_cv_fighter_equipment_3_short:0 "LS-199"
 
 #-> Torpedo bombers <><>
- UKR_nav_bomber_equipment_1:0 "Letov S-328V"
- UKR_nav_bomber_equipment_1_short:0 "Letov S-328V"
+ UKR_nav_bomber_equipment_1:0 "Letov Š-328V"
+ UKR_nav_bomber_equipment_1_short:0 "Š-328V"
  UKR_nav_bomber_equipment_2:0 "Letov Š-655"
- UKR_nav_bomber_equipment_2_short:0 "Letov Š-655"
+ UKR_nav_bomber_equipment_2_short:0 "Š-655"
  UKR_nav_bomber_equipment_3:0 "Avia A-298"
- UKR_nav_bomber_equipment_3_short:0 "Avia A-298"
+ UKR_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Carrier-based torpedo bombers <><>
- #UKR_cv_nav_bomber_equipment_1:0 "Letov S-328V"
- #UKR_cv_nav_bomber_equipment_1_short:0 "Letov S-328V"
- #UKR_cv_nav_bomber_equipment_2:0 "Letov Š-655"
- #UKR_cv_nav_bomber_equipment_2_short:0 "Letov Š-655"
- #UKR_cv_nav_bomber_equipment_3:0 "Avia A-298"
- #UKR_cv_nav_bomber_equipment_3_short:0 "Avia A-298"
+ UKR_cv_nav_bomber_equipment_1:0 "Letov Š-328V"
+ UKR_cv_nav_bomber_equipment_1_short:0 "S-328V"
+ UKR_cv_nav_bomber_equipment_2:0 "Letov Š-655V"
+ UKR_cv_nav_bomber_equipment_2_short:0 "Š-655V"
+ UKR_cv_nav_bomber_equipment_3:0 "Avia A-298"
+ UKR_cv_nav_bomber_equipment_3_short:0 "A-298"
  
 #-> Heavy fighters <><>
- UKR_heavy_fighter_equipment_1:0 "Avia B-734.2"
- UKR_heavy_fighter_equipment_1_short:0 "Avia B-734.2"
- UKR_heavy_fighter_equipment_2:0 "Avia B-137"
- UKR_heavy_fighter_equipment_2_short:0 "Avia B-137"
- UKR_heavy_fighter_equipment_3:0 "Aero A.300 Stihacka"
- UKR_heavy_fighter_equipment_3_short:0 "A.300 Stihacka"
+ UKR_heavy_fighter_equipment_1:0 "Avia B-36"
+ UKR_heavy_fighter_equipment_1_short:0 "B-36"
+ UKR_heavy_fighter_equipment_2:0 "Avia B-38"
+ UKR_heavy_fighter_equipment_2_short:0 "B-138"
+ UKR_heavy_fighter_equipment_3:0 "Aero A-300 Stihacka"
+ UKR_heavy_fighter_equipment_3_short:0 "A-300 Stihacka"
  
 #-> Heavy fighter-bomber <><>
- UKR_hfighter_bomber_equipment_1:0 "Avia B-734.3"
- UKR_hfighter_bomber_equipment_1_short:0 "Avia B-734.3"
- UKR_hfighter_bomber_equipment_2:0 "Avia B-137.2"
- UKR_hfighter_bomber_equipment_2_short:0 "Avia B-137.2"
- UKR_hfighter_bomber_equipment_3:0 "Aero A.300.3 Stihacka"
- UKR_hfighter_bomber_equipment_3_short:0 "A.300.3 Stihacka"
- 
+ UKR_hfighter_bomber_equipment_1:0 "Avia B-36V"
+ UKR_hfighter_bomber_equipment_1_short:0 "B-736V"
+ UKR_hfighter_bomber_equipment_2:0 "Avia B-38V"
+ UKR_hfighter_bomber_equipment_2_short:0 "B-38"
+ UKR_hfighter_bomber_equipment_3:0 "Aero A-300V Stihacka"
+ UKR_hfighter_bomber_equipment_3_short:0 "A-300V Stihacka"
+
 #-> Medium bomber <><>
- UKR_tac_bomber_equipment_0:0 "Aero Vodochody A.100"
- UKR_tac_bomber_equipment_0_short:0 "Aero A.100"
- UKR_tac_bomber_equipment_1:0 "Aero Vodochody A.304"
- UKR_tac_bomber_equipment_1_short:0 "Aero A.304"
- UKR_tac_bomber_equipment_2:0 "Aero Vodochody A.300"
- UKR_tac_bomber_equipment_2_short:0 "Aero A.300"
+ UKR_tac_bomber_equipment_0:0 "Aero Vodochody A-101"
+ UKR_tac_bomber_equipment_0_short:0 "A-101"
+ UKR_tac_bomber_equipment_1:0 "Aero Vodochody A-304"
+ UKR_tac_bomber_equipment_1_short:0 "A-304"
+ UKR_tac_bomber_equipment_2:0 "Aero Vodochody A-300"
+ UKR_tac_bomber_equipment_2_short:0 "A-300"
  UKR_tac_bomber_equipment_3:0 "Letov Š-50"
- UKR_tac_bomber_equipment_3_short:0 "Letov Š-50"
+ UKR_tac_bomber_equipment_3_short:0 "Š-50"
  
 #-> Medium maritime bomber <><>
- UKR_med_maritime_equipment_1:0 "Aero Vodochody A.304.N"
- UKR_med_maritime_equipment_1_short:0 "Aero A.304.N"
- UKR_med_maritime_equipment_2:0 "Aero Vodochody A.300.N"
- UKR_med_maritime_equipment_2_short:0 "Aero A.300.N"
+ UKR_med_maritime_equipment_1:0 "Aero Vodochody A-304N"
+ UKR_med_maritime_equipment_1_short:0 "A-304N"
+ UKR_med_maritime_equipment_2:0 "Aero Vodochody A-300N"
+ UKR_med_maritime_equipment_2_short:0 "A-300N"
  UKR_med_maritime_equipment_3:0 "Letov Š-50N"
- UKR_med_maritime_equipment_3_short:0 "Letov Š-50N"
+ UKR_med_maritime_equipment_3_short:0 "Š-50N"
  
 #-> Heavy bomber <><>
- UKR_strat_bomber_equipment_1:0 "Aero Vodochody C.301"
- UKR_strat_bomber_equipment_1_short:0 "Aero C.301"
- UKR_strat_bomber_equipment_2:0 "Aero Vodochody C.508"
- UKR_strat_bomber_equipment_2_short:0 "Aero C.508"
- UKR_strat_bomber_equipment_3:0 "Aero Vodochody A.711"
- UKR_strat_bomber_equipment_3_short:0 "Aero A.711"
+ UKR_strat_bomber_equipment_1:0 "Aero Vodochody C-301"
+ UKR_strat_bomber_equipment_1_short:0 "C-301"
+ UKR_strat_bomber_equipment_2:0 "Aero Vodochody C-508"
+ UKR_strat_bomber_equipment_2_short:0 "C-508"
+ UKR_strat_bomber_equipment_3:0 "Aero Vodochody A-711"
+ UKR_strat_bomber_equipment_3_short:0 "A-711"
  
 #-> Heavy maritime bomber <><>
- UKR_strat_maritime_equipment_1:0 "Aero Vodochody C.301.N"
- UKR_strat_maritime_equipment_1_short:0 "Aero C.301.N"
- UKR_strat_maritime_equipment_2:0"Aero Vodochody C.508.N"
- UKR_strat_maritime_equipment_2_short:0 "Aero C.508.N"
- UKR_strat_maritime_equipment_3:0 "Aero Vodochody A.711.N"
- UKR_strat_maritime_equipment_3_short:0 "Aero A.711.N"
+ UKR_strat_maritime_equipment_1:0 "Aero Vodochody C-301.N"
+ UKR_strat_maritime_equipment_1_short:0 "C-301.N"
+ UKR_strat_maritime_equipment_2:0"Aero Vodochody C-508.N"
+ UKR_strat_maritime_equipment_2_short:0 "C-508.N"
+ UKR_strat_maritime_equipment_3:0 "Aero Vodochody A-711.N"
+ UKR_strat_maritime_equipment_3_short:0 "A-711.N"
  
 #-> Maritime patrol <><>
  UKR_flying_boat_equipment_3:0 "Avia B-141"
@@ -1696,10 +1761,10 @@ l_english:
  UKR_jet_fighter_equipment_2_short:0 "S-105"
  
 #-> Carrier-based jet fighters <><>
- UKR_cv_jet_fighter_equipment_1:0 "Avia S-92.L"
- UKR_cv_jet_fighter_equipment_1_short:0 "Avia S-92.L"
- UKR_cv_jet_fighter_equipment_2:0 "Avia S-105.L"
- UKR_cv_jet_fighter_equipment_2_short:0 "Avia S-105.L"
+ UKR_cv_jet_fighter_equipment_1:0 "Avia S-92L"
+ UKR_cv_jet_fighter_equipment_1_short:0 "S-92L"
+ UKR_cv_jet_fighter_equipment_2:0 "Avia S-105L"
+ UKR_cv_jet_fighter_equipment_2_short:0 "S-105L"
  
 #-> Jet medium bomber <><>
  UKR_jet_tac_bomber_equipment_1:0 "Avia B-228"
@@ -2784,8 +2849,8 @@ l_english:
  ENG_strat_maritime_equipment_3_short:0 "Lincoln III"
 
 #-> Maritime patrol <><>
- #ENG_flying_boat_equipment_0: "Short Empire"
- #ENG_flying_boat_equipment_0_short: "Empire"
+ ENG_flying_boat_equipment_0:0 "Short Singapore"
+ ENG_flying_boat_equipment_0_short:0 "Singapore"
  ENG_flying_boat_equipment_1:0 "Short Sunderland"
  ENG_flying_boat_equipment_1_short:0 "Sunderland"
  ENG_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -2930,8 +2995,8 @@ l_english:
  NIR_strat_maritime_equipment_3_short:0 "Lincoln III"
 
 #-> Maritime patrol <><>
- #NIR_flying_boat_equipment_0: "Short Empire"
- #NIR_flying_boat_equipment_0_short: "Empire"
+ NIR_flying_boat_equipment_0:0 "Short Singapore"
+ NIR_flying_boat_equipment_0_short:0 "Singapore"
  NIR_flying_boat_equipment_1:0 "Short Sunderland"
  NIR_flying_boat_equipment_1_short:0 "Sunderland"
  NIR_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -3076,8 +3141,8 @@ l_english:
  SCO_strat_maritime_equipment_3_short:0 "Lincoln III"
 
 #-> Maritime patrol <><>
- #SCO_flying_boat_equipment_0: "Short Empire"
- #SCO_flying_boat_equipment_0_short: "Empire"
+ SCO_flying_boat_equipment_0:0 "Short Singapore"
+ SCO_flying_boat_equipment_0_short:0 "Singapore"
  SCO_flying_boat_equipment_1:0 "Short Sunderland"
  SCO_flying_boat_equipment_1_short:0 "Sunderland"
  SCO_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -3222,8 +3287,8 @@ l_english:
  WLS_strat_maritime_equipment_3_short:0 "Lincoln III"
 
 #-> Maritime patrol <><>
- #WLS_flying_boat_equipment_0: "Short Empire"
- #WLS_flying_boat_equipment_0_short: "Empire"
+ WLS_flying_boat_equipment_0:0 "Short Singapore"
+ WLS_flying_boat_equipment_0_short:0 "Singapore"
  WLS_flying_boat_equipment_1:0 "Short Sunderland"
  WLS_flying_boat_equipment_1_short:0 "Sunderland"
  WLS_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -3368,8 +3433,8 @@ l_english:
  AST_strat_maritime_equipment_3_short:0 "Lincoln III"
  
 #-> Maritime patrol <><>
- #AST_flying_boat_equipment_0: "Short Empire"
- #AST_flying_boat_equipment_0_short: "Empire"
+ AST_flying_boat_equipment_0:0 "Short Singapore"
+ AST_flying_boat_equipment_0_short:0 "Singapore"
  AST_flying_boat_equipment_1:0 "Short Sunderland"
  AST_flying_boat_equipment_1_short:0 "Sunderland"
  AST_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -3516,8 +3581,8 @@ l_english:
  CAN_strat_maritime_equipment_3_short:0 "Lincoln III"
  
 #-> Maritime patrol <><>
- #CAN_flying_boat_equipment_0: "Short Empire"
- #CAN_flying_boat_equipment_0_short: "Empire"
+ CAN_flying_boat_equipment_0:0 "Short Singapore"
+ CAN_flying_boat_equipment_0_short:0 "Singapore"
  CAN_flying_boat_equipment_1:0 "Short Sunderland"
  CAN_flying_boat_equipment_1_short:0 "Sunderland"
  CAN_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -3664,8 +3729,8 @@ l_english:
  NZL_strat_maritime_equipment_3_short:0 "Lincoln III"
 
 #-> Maritime patrol <><>
- #NZL_flying_boat_equipment_0: "Short Empire"
- #NZL_flying_boat_equipment_0_short: "Empire"
+ NZL_flying_boat_equipment_0:0 "Short Singapore"
+ NZL_flying_boat_equipment_0_short:0 "Singapore"
  NZL_flying_boat_equipment_1:0 "Short Sunderland"
  NZL_flying_boat_equipment_1_short:0 "Sunderland"
  NZL_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -3812,8 +3877,8 @@ l_english:
  RAJ_strat_maritime_equipment_3_short:0 "Lincoln III"
 
 #-> Maritime patrol <><>
- #RAJ_flying_boat_equipment_0: "Short Empire"
- #RAJ_flying_boat_equipment_0_short: "Empire"
+ RAJ_flying_boat_equipment_0:0 "Short Singapore"
+ RAJ_flying_boat_equipment_0_short:0 "Singapore"
  RAJ_flying_boat_equipment_1:0 "Short Sunderland"
  RAJ_flying_boat_equipment_1_short:0 "Sunderland"
  RAJ_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -3960,8 +4025,8 @@ l_english:
  IND_strat_maritime_equipment_3_short:0 "Lincoln III"
 
 #-> Maritime patrol <><>
- #IND_flying_boat_equipment_0: "Short Empire"
- #IND_flying_boat_equipment_0_short: "Empire"
+ IND_flying_boat_equipment_0:0 "Short Singapore"
+ IND_flying_boat_equipment_0_short:0 "Singapore"
  IND_flying_boat_equipment_1:0 "Short Sunderland"
  IND_flying_boat_equipment_1_short:0 "Sunderland"
  IND_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -4108,8 +4173,8 @@ l_english:
  SAF_strat_maritime_equipment_3_short:0 "Lincoln III"
 
 #-> Maritime patrol <><>
- #SAF_flying_boat_equipment_0: "Short Empire"
- #SAF_flying_boat_equipment_0_short: "Empire"
+ SAF_flying_boat_equipment_0:0 "Short Singapore"
+ SAF_flying_boat_equipment_0_short:0 "Singapore"
  SAF_flying_boat_equipment_1:0 "Short Sunderland"
  SAF_flying_boat_equipment_1_short:0 "Sunderland"
  SAF_flying_boat_equipment_2:0 "Bristol Beaufort"
@@ -4356,8 +4421,8 @@ l_english:
  FRA_jet_tac_bomber_equipment_2_short:0 "Vautour II"
  
 #-> Jet heavy bomber <><>
- FRA_jet_tac_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
- FRA_jet_tac_bomber_equipment_1_short:0 "Vautour"
+ FRA_jet_strat_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
+ FRA_jet_strat_bomber_equipment_1_short:0 "Vautour"
 
 
 ###--->  BRI  <><> <><> <><>
@@ -4517,8 +4582,8 @@ l_english:
  BRI_jet_tac_bomber_equipment_2_short:0 "Vautour II"
  
 #-> Jet heavy bomber <><>
- BRI_jet_tac_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
- BRI_jet_tac_bomber_equipment_1_short:0 "Vautour"
+ BRI_jet_strat_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
+ BRI_jet_strat_bomber_equipment_1_short:0 "Vautour"
 
 
 ###--->  EFR  <><> <><> <><>
@@ -4678,8 +4743,8 @@ l_english:
  EFR_jet_tac_bomber_equipment_2_short:0 "Vautour II"
  
 #-> Jet heavy bomber <><>
- EFR_jet_tac_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
- EFR_jet_tac_bomber_equipment_1_short:0 "Vautour"
+ EFR_jet_strat_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
+ EFR_jet_strat_bomber_equipment_1_short:0 "Vautour"
 
 
 ###--->  FRI  <><> <><> <><>
@@ -4843,6 +4908,31 @@ l_english:
  FRI_jet_strat_bomber_equipment_1:0 "SNCASO SO.4000 Vautour"
  FRI_jet_strat_bomber_equipment_1_short:0 "Vautour"
 
+###--->  PRU  <><> <><> <><>
+#-> Light fighters <><> 
+PRU_fighter_equipment_0:0 "Caproni ca 114"
+PRU_fighter_equipment_0_short:0 "ca 114"
+PRU_fighter_equipment_1:0 "Torito NA-50A"
+PRU_fighter_equipment_1_short:0 "NA-50A"
+PRU_fighter_equipment_2:0 "Torito T-6 Texan"
+PRU_fighter_equipment_2_short:0 "T-6 Texan"
+
+#-> Dive bombers <><>
+ PRU_CAS_equipment_1:0 "Douglas 8A-3P"
+ PRU_CAS_equipment_1_short:0 "8A-3P"
+ PRU_CAS_equipment_2:0 "Douglas A-33"
+ PRU_CAS_equipment_2_short:0 "A-33"
+ PRU_CAS_equipment_3:0 "Douglas A-26 Invader"
+ PRU_CAS_equipment_3_short:0 "A-26 Invader"
+
+ #-> Heavy fighters <><>
+ 
+ PRU_heavy_fighter_equipment_2:0 "Republica P-47D Thunderbolt"
+ PRU_heavy_fighter_equipment_2_short:0 "P-47D T-bolt"
+
+#-> Medium bomber <><>
+ PRU_tac_bomber_equipment_0:0 "Caproni ca 111"
+ PRU_tac_bomber_equipment_0_short:0 "ca 111"
 
 ###--->  GER  <><> <><> <><>
 #-> Scout planes <><>
@@ -4855,8 +4945,11 @@ l_english:
  GER_transport_plane_equipment_1:0 "Junker Ju 52"
  GER_transport_plane_equipment_1_short:0 "Ju 52" 
  GER_transport_plane_equipment_2:0 "Junker Ju 252"
- GER_transport_plane_equipment_2_short:0 "Ju 252"  
+ GER_transport_plane_equipment_2_short:0 "Ju 252"
+ 
 #-> Dive bombers <><>
+ GER_CAS_equipment_0:0 "Heinkel He 45"
+ GER_CAS_equipment_0_short:0 "He 45"
  GER_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  GER_CAS_equipment_1_short:0 "Ju 87"
  GER_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -4865,6 +4958,8 @@ l_english:
  GER_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ GER_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ GER_cv_CAS_equipment_0_short:0 "He 45 C"
  GER_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  GER_cv_CAS_equipment_1_short:0 "Ju 87 C"
  GER_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -4895,8 +4990,8 @@ l_english:
  GER_cv_fighter_equipment_1_short:0 "Ar 197"
  GER_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  GER_cv_fighter_equipment_2_short:0 "Bf 109 T"
- GER_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- GER_cv_fighter_equipment_3_short:0 "BV 155"
+ GER_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ GER_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  GER_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -5028,6 +5123,8 @@ l_english:
  WGR_transport_plane_equipment_2_short:0 "Ju 252"  
  
 #-> Dive bombers <><>
+ WGR_CAS_equipment_0:0 "Heinkel He 45"
+ WGR_CAS_equipment_0_short:0 "He 45"
  WGR_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  WGR_CAS_equipment_1_short:0 "Ju 87"
  WGR_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -5036,6 +5133,8 @@ l_english:
  WGR_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ WGR_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ WGR_cv_CAS_equipment_0_short:0 "He 45 C"
  WGR_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  WGR_cv_CAS_equipment_1_short:0 "Ju 87 C"
  WGR_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -5066,8 +5165,8 @@ l_english:
  WGR_cv_fighter_equipment_1_short:0 "Ar 197"
  WGR_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  WGR_cv_fighter_equipment_2_short:0 "Bf 109 T"
- WGR_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- WGR_cv_fighter_equipment_3_short:0 "BV 155"
+ WGR_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ WGR_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  WGR_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -5198,6 +5297,8 @@ l_english:
  BAY_transport_plane_equipment_2_short:0 "Ju 252"
  
 #-> Dive bombers <><>
+ BAY_CAS_equipment_0:0 "Heinkel He 45"
+ BAY_CAS_equipment_0_short:0 "He 45"
  BAY_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  BAY_CAS_equipment_1_short:0 "Ju 87"
  BAY_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -5206,6 +5307,8 @@ l_english:
  BAY_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ BAY_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ BAY_cv_CAS_equipment_0_short:0 "He 45 C"
  BAY_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  BAY_cv_CAS_equipment_1_short:0 "Ju 87 C"
  BAY_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -5236,8 +5339,8 @@ l_english:
  BAY_cv_fighter_equipment_1_short:0 "Ar 197"
  BAY_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  BAY_cv_fighter_equipment_2_short:0 "Bf 109 T"
- BAY_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- BAY_cv_fighter_equipment_3_short:0 "BV 155"
+ BAY_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ BAY_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  BAY_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -5369,6 +5472,8 @@ l_english:
  BAD_transport_plane_equipment_2_short:0 "Ju 252"
  
 #-> Dive bombers <><>
+ BAD_CAS_equipment_0:0 "Heinkel He 45"
+ BAD_CAS_equipment_0_short:0 "He 45"
  BAD_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  BAD_CAS_equipment_1_short:0 "Ju 87"
  BAD_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -5377,6 +5482,8 @@ l_english:
  BAD_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ BAD_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ BAD_cv_CAS_equipment_0_short:0 "He 45 C"
  BAD_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  BAD_cv_CAS_equipment_1_short:0 "Ju 87 C"
  BAD_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -5407,8 +5514,8 @@ l_english:
  BAD_cv_fighter_equipment_1_short:0 "Ar 197"
  BAD_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  BAD_cv_fighter_equipment_2_short:0 "Bf 109 T"
- BAD_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- BAD_cv_fighter_equipment_3_short:0 "BV 155"
+ BAD_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ BAD_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  BAD_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -5540,6 +5647,8 @@ l_english:
  HAN_transport_plane_equipment_2_short:0 "Ju 252"
  
 #-> Dive bombers <><>
+ HAN_CAS_equipment_0:0 "Heinkel He 45"
+ HAN_CAS_equipment_0_short:0 "He 45"
  HAN_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  HAN_CAS_equipment_1_short:0 "Ju 87"
  HAN_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -5548,6 +5657,8 @@ l_english:
  HAN_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ HAN_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ HAN_cv_CAS_equipment_0_short:0 "He 45 C"
  HAN_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  HAN_cv_CAS_equipment_1_short:0 "Ju 87 C"
  HAN_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -5578,8 +5689,8 @@ l_english:
  HAN_cv_fighter_equipment_1_short:0 "Ar 197"
  HAN_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  HAN_cv_fighter_equipment_2_short:0 "Bf 109 T"
- HAN_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- HAN_cv_fighter_equipment_3_short:0 "BV 155"
+ HAN_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ HAN_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  HAN_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -5710,6 +5821,8 @@ l_english:
  PRE_transport_plane_equipment_2_short:0 "Ju 252"
 
 #-> Dive bombers <><>
+ PRE_CAS_equipment_0:0 "Heinkel He 45"
+ PRE_CAS_equipment_0_short:0 "He 45"
  PRE_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  PRE_CAS_equipment_1_short:0 "Ju 87"
  PRE_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -5718,6 +5831,8 @@ l_english:
  PRE_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ PRE_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ PRE_cv_CAS_equipment_0_short:0 "He 45 C"
  PRE_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  PRE_cv_CAS_equipment_1_short:0 "Ju 87 C"
  PRE_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -5748,8 +5863,8 @@ l_english:
  PRE_cv_fighter_equipment_1_short:0 "Ar 197"
  PRE_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  PRE_cv_fighter_equipment_2_short:0 "Bf 109 T"
- PRE_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- PRE_cv_fighter_equipment_3_short:0 "BV 155"
+ PRE_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ PRE_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  PRE_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -5880,6 +5995,8 @@ l_english:
  SAX_transport_plane_equipment_2_short:0 "Ju 252"
  
 #-> Dive bombers <><>
+ SAX_CAS_equipment_0:0 "Heinkel He 45"
+ SAX_CAS_equipment_0_short:0 "He 45"
  SAX_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  SAX_CAS_equipment_1_short:0 "Ju 87"
  SAX_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -5888,6 +6005,8 @@ l_english:
  SAX_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ SAX_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ SAX_cv_CAS_equipment_0_short:0 "He 45 C"
  SAX_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  SAX_cv_CAS_equipment_1_short:0 "Ju 87 C"
  SAX_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -5918,8 +6037,8 @@ l_english:
  SAX_cv_fighter_equipment_1_short:0 "Ar 197"
  SAX_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  SAX_cv_fighter_equipment_2_short:0 "Bf 109 T"
- SAX_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- SAX_cv_fighter_equipment_3_short:0 "BV 155"
+ SAX_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ SAX_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  SAX_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -6050,6 +6169,8 @@ l_english:
  WUR_transport_plane_equipment_2_short:0 "Ju 252"
  
 #-> Dive bombers <><>
+ WUR_CAS_equipment_0:0 "Heinkel He 45"
+ WUR_CAS_equipment_0_short:0 "He 45"
  WUR_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  WUR_CAS_equipment_1_short:0 "Ju 87"
  WUR_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -6058,6 +6179,8 @@ l_english:
  WUR_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ WUR_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ WUR_cv_CAS_equipment_0_short:0 "He 45 C"
  WUR_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  WUR_cv_CAS_equipment_1_short:0 "Ju 87 C"
  WUR_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -6088,8 +6211,8 @@ l_english:
  WUR_cv_fighter_equipment_1_short:0 "Ar 197"
  WUR_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  WUR_cv_fighter_equipment_2_short:0 "Bf 109 T"
- WUR_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- WUR_cv_fighter_equipment_3_short:0 "BV 155"
+ WUR_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ WUR_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  WUR_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -6220,6 +6343,8 @@ l_english:
  AUS_transport_plane_equipment_2_short:0 "Ju 252"
  
 #-> Dive bombers <><>
+ AUS_CAS_equipment_0:0 "Heinkel He 45"
+ AUS_CAS_equipment_0_short:0 "He 45"
  AUS_CAS_equipment_1:0 "Junkers Ju 87 Stuka"
  AUS_CAS_equipment_1_short:0 "Ju 87"
  AUS_CAS_equipment_2:0 "Junkers Ju 87 G Kanonenvogel"
@@ -6228,6 +6353,8 @@ l_english:
  AUS_CAS_equipment_3_short:0 "Hs-129"
  
 #-> Carrier-based dive bombers <><>
+ AUS_cv_CAS_equipment_0:0 "Heinkel He 45 C"
+ AUS_cv_CAS_equipment_0_short:0 "He 45 C"
  AUS_cv_CAS_equipment_1:0 "Junkers Ju 87 C"
  AUS_cv_CAS_equipment_1_short:0 "Ju 87 C"
  AUS_cv_CAS_equipment_2:0 "Junkers Ju 87 D-4"
@@ -6258,8 +6385,8 @@ l_english:
  AUS_cv_fighter_equipment_1_short:0 "Ar 197"
  AUS_cv_fighter_equipment_2:0 "Messerschmitt Bf 109 T"
  AUS_cv_fighter_equipment_2_short:0 "Bf 109 T"
- AUS_cv_fighter_equipment_3:0 "Blohm & Voss BV 155"
- AUS_cv_fighter_equipment_3_short:0 "BV 155"
+ AUS_cv_fighter_equipment_3:0 "Blohm & Voss BV 155 C-0"
+ AUS_cv_fighter_equipment_3_short:0 "BV 155 C-0"
  
 #-> Torpedo bombers <><>
  AUS_nav_bomber_equipment_1:0 "Arado Ar 195"
@@ -6806,6 +6933,8 @@ l_english:
  ITA_transport_plane_equipment_2_short:0 "Fiat G.12" 
   
 #-> Dive bombers <><>
+ ITA_CAS_equipment_0:0 "IMAM Ro.37"
+ ITA_CAS_equipment_0_short:0 "Ro.37"
  ITA_CAS_equipment_1:0 "Breda Ba.65"
  ITA_CAS_equipment_1_short:0 "Ba.65"
  ITA_CAS_equipment_2:0 "Breda Ba.88 Lince"
@@ -6814,6 +6943,8 @@ l_english:
  ITA_CAS_equipment_3_short:0 "Ba.201"
  
 #-> Carrier-based dive bombers <><>
+ ITA_cv_CAS_equipment_0:0 "IMAM Ro.37 Navale"
+ ITA_cv_CAS_equipment_0_short:0 "Ro.37N"
  ITA_cv_CAS_equipment_1:0 "Breda Ba.65bis"
  ITA_cv_CAS_equipment_1_short:0 "Ba.65bis"
  ITA_cv_CAS_equipment_2:0 "Fiat G.50N Navale Freccia"
@@ -6822,8 +6953,8 @@ l_english:
  ITA_cv_CAS_equipment_3_short:0 "Ba.201bis"
  
 #-> Light fighters <><>
- ITA_fighter_equipment_0:0 "Fiat CR.32"
- ITA_fighter_equipment_0_short:0 "CR.32"
+ ITA_fighter_equipment_0:0 "Fiat CR.30"
+ ITA_fighter_equipment_0_short:0 "CR.30"
  ITA_fighter_equipment_1:0 "Macchi C.200 Saetta"
  ITA_fighter_equipment_1_short:0 "Saetta"
  ITA_fighter_equipment_2:0 "Macchi C.202 Folgore"
@@ -6838,8 +6969,8 @@ l_english:
  ITA_fighter_bomber_equipment_3_short:0 "Centauro"
  
 #-> Carrier-based light fighters <><>
- ITA_cv_fighter_equipment_0:0 "Fiat ICR.32"
- ITA_cv_fighter_equipment_0_short:0 "ICR.32"
+ ITA_cv_fighter_equipment_0:0 "Fiat ICR.30"
+ ITA_cv_fighter_equipment_0_short:0 "ICR.30"
  ITA_cv_fighter_equipment_1:0 "Macchi IC.200"
  ITA_cv_fighter_equipment_1_short:0 "Saetta"
  ITA_cv_fighter_equipment_2:0 "Reggiane Re.2001 OR Falco II"
@@ -6848,8 +6979,8 @@ l_english:
  ITA_cv_fighter_equipment_3_short:0 "Navale Sagittario"
 
 #-> Torpedo bombers <><>
- ITA_nav_bomber_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
- ITA_nav_bomber_equipment_1_short:0 "Sparviero"
+ ITA_nav_bomber_equipment_1:0 "Caproni Ca.335 Maestrale"
+ ITA_nav_bomber_equipment_1_short:0 "Maestrale"
  ITA_nav_bomber_equipment_2:0 "Reggiane Re.2001 G/H Falco II"
  ITA_nav_bomber_equipment_2_short:0 "Falco II"
  ITA_nav_bomber_equipment_3:0 "Fiat G.55S"
@@ -6914,6 +7045,8 @@ l_english:
  ITA_strat_maritime_equipment_3_short:0 "P.133bis"
  
 #-> Maritime patrol <><>
+ ITA_flying_boat_equipment_0:0 "Savoia-Marchetti S.55"
+ ITA_flying_boat_equipment_0_short:0 "S.55"
  ITA_flying_boat_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
  ITA_flying_boat_equipment_1_short:0 "Sparviero"
  ITA_flying_boat_equipment_2:0 "Savoia-Marchetti SM.84"
@@ -6928,16 +7061,16 @@ l_english:
  ITA_jet_fighter_equipment_1_short:0 "Re.2007"
  ITA_jet_fighter_equipment_2:0 "Reggiane Re.2008"
  ITA_jet_fighter_equipment_2_short:0 "Re.2008"
- ITA_jet_fighter_equipment_x:0 "Fiat G.91"
- ITA_jet_fighter_equipment_x_short:0 "G.91"
+ ITA_jet_fighter_equipment_x:0 "Fiat G.80"
+ ITA_jet_fighter_equipment_x_short:0 "G.80"
  
 #-> Carrier-based jet fighters <><>
  ITA_cv_jet_fighter_equipment_1:0 "Reggiane IRe.2007"
  ITA_cv_jet_fighter_equipment_1_short:0 "IRe.2007"
  ITA_cv_jet_fighter_equipment_2:0 "Reggiane IRe.2008"
  ITA_cv_jet_fighter_equipment_2_short:0 "IRe.2008"
- ITA_cv_jet_fighter_equipment_x:0 "Fiat G.91 Navale"
- ITA_cv_jet_fighter_equipment_x_short:0 "IG.91"
+ ITA_cv_jet_fighter_equipment_x:0 "Fiat G.80 Navale"
+ ITA_cv_jet_fighter_equipment_x_short:0 "IG.80"
 
 #-> Jet medium bomber <><>
 
@@ -6958,8 +7091,9 @@ l_english:
  NAP_transport_plane_equipment_2:0 "G.12"
  NAP_transport_plane_equipment_2_short:0 "Fiat G.12" 
 
- 
 #-> Dive bombers <><>
+ NAP_CAS_equipment_0:0 "IMAM Ro.37"
+ NAP_CAS_equipment_0_short:0 "Ro.37"
  NAP_CAS_equipment_1:0 "Breda Ba.65"
  NAP_CAS_equipment_1_short:0 "Ba.65"
  NAP_CAS_equipment_2:0 "Breda Ba.88 Lince"
@@ -6968,6 +7102,8 @@ l_english:
  NAP_CAS_equipment_3_short:0 "Ba.201"
  
 #-> Carrier-based dive bombers <><>
+ NAP_cv_CAS_equipment_0:0 "IMAM Ro.37 Navale"
+ NAP_cv_CAS_equipment_0_short:0 "Ro.37N"
  NAP_cv_CAS_equipment_1:0 "Breda Ba.65bis"
  NAP_cv_CAS_equipment_1_short:0 "Ba.65bis"
  NAP_cv_CAS_equipment_2:0 "Fiat G.50N Navale Freccia"
@@ -6976,8 +7112,8 @@ l_english:
  NAP_cv_CAS_equipment_3_short:0 "Ba.201bis"
  
 #-> Light fighters <><>
- NAP_fighter_equipment_0:0 "Fiat CR.32"
- NAP_fighter_equipment_0_short:0 "CR.32"
+ NAP_fighter_equipment_0:0 "Fiat CR.30"
+ NAP_fighter_equipment_0_short:0 "CR.30"
  NAP_fighter_equipment_1:0 "Macchi C.200 Saetta"
  NAP_fighter_equipment_1_short:0 "Saetta"
  NAP_fighter_equipment_2:0 "Macchi C.202 Folgore"
@@ -6992,8 +7128,8 @@ l_english:
  NAP_fighter_bomber_equipment_3_short:0 "Centauro"
  
 #-> Carrier-based light fighters <><>
- NAP_cv_fighter_equipment_0:0 "Fiat ICR.32"
- NAP_cv_fighter_equipment_0_short:0 "ICR.32"
+ NAP_cv_fighter_equipment_0:0 "Fiat ICR.30"
+ NAP_cv_fighter_equipment_0_short:0 "ICR.30"
  NAP_cv_fighter_equipment_1:0 "Macchi IC.200"
  NAP_cv_fighter_equipment_1_short:0 "Saetta"
  NAP_cv_fighter_equipment_2:0 "Reggiane Re.2001 OR Falco II"
@@ -7002,8 +7138,8 @@ l_english:
  NAP_cv_fighter_equipment_3_short:0 "Navale Sagittario"
  
 #-> Torpedo bombers <><>
- NAP_nav_bomber_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
- NAP_nav_bomber_equipment_1_short:0 "Sparviero"
+ NAP_nav_bomber_equipment_1:0 "Caproni Ca.335 Maestrale"
+ NAP_nav_bomber_equipment_1_short:0 "Maestrale"
  NAP_nav_bomber_equipment_2:0 "Reggiane Re.2001 G/H Falco II"
  NAP_nav_bomber_equipment_2_short:0 "Falco II"
  NAP_nav_bomber_equipment_3:0 "Fiat G.55S"
@@ -7068,6 +7204,8 @@ l_english:
  NAP_strat_maritime_equipment_3_short:0 "P.133bis"
  
 #-> Maritime patrol <><>
+ NAP_flying_boat_equipment_0:0 "Savoia-Marchetti S.55"
+ NAP_flying_boat_equipment_0_short:0 "S.55"
  NAP_flying_boat_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
  NAP_flying_boat_equipment_1_short:0 "Sparviero"
  NAP_flying_boat_equipment_2:0 "Savoia-Marchetti SM.84"
@@ -7082,16 +7220,16 @@ l_english:
  NAP_jet_fighter_equipment_1_short:0 "Re.2007"
  NAP_jet_fighter_equipment_2:0 "Reggiane Re.2008"
  NAP_jet_fighter_equipment_2_short:0 "Re.2008"
- NAP_jet_fighter_equipment_x:0 "Fiat G.91"
- NAP_jet_fighter_equipment_x_short:0 "G.91"
+ NAP_jet_fighter_equipment_x:0 "Fiat G.80"
+ NAP_jet_fighter_equipment_x_short:0 "G.80"
  
 #-> Carrier-based jet fighters <><>
  NAP_cv_jet_fighter_equipment_1:0 "Reggiane IRe.2007"
  NAP_cv_jet_fighter_equipment_1_short:0 "IRe.2007"
  NAP_cv_jet_fighter_equipment_2:0 "Reggiane IRe.2008"
  NAP_cv_jet_fighter_equipment_2_short:0 "IRe.2008"
- NAP_cv_jet_fighter_equipment_x:0 "Fiat G.91 Navale"
- NAP_cv_jet_fighter_equipment_x_short:0 "IG.91"
+ NAP_cv_jet_fighter_equipment_x:0 "Fiat G.80 Navale"
+ NAP_cv_jet_fighter_equipment_x_short:0 "IG.80"
 
 #-> Jet medium bomber <><>
 
@@ -7112,8 +7250,9 @@ l_english:
  SAD_transport_plane_equipment_2:0 "G.12"
  SAD_transport_plane_equipment_2_short:0 "Fiat G.12" 
 
- 
 #-> Dive bombers <><>
+ SAD_CAS_equipment_0:0 "IMAM Ro.37"
+ SAD_CAS_equipment_0_short:0 "Ro.37"
  SAD_CAS_equipment_1:0 "Breda Ba.65"
  SAD_CAS_equipment_1_short:0 "Ba.65"
  SAD_CAS_equipment_2:0 "Breda Ba.88 Lince"
@@ -7122,6 +7261,8 @@ l_english:
  SAD_CAS_equipment_3_short:0 "Ba.201"
  
 #-> Carrier-based dive bombers <><>
+ SAD_cv_CAS_equipment_0:0 "IMAM Ro.37 Navale"
+ SAD_cv_CAS_equipment_0_short:0 "Ro.37N"
  SAD_cv_CAS_equipment_1:0 "Breda Ba.65bis"
  SAD_cv_CAS_equipment_1_short:0 "Ba.65bis"
  SAD_cv_CAS_equipment_2:0 "Fiat G.50N Navale Freccia"
@@ -7130,8 +7271,8 @@ l_english:
  SAD_cv_CAS_equipment_3_short:0 "Ba.201bis"
  
 #-> Light fighters <><>
- SAD_fighter_equipment_0:0 "Fiat CR.32"
- SAD_fighter_equipment_0_short:0 "CR.32"
+ SAD_fighter_equipment_0:0 "Fiat CR.30"
+ SAD_fighter_equipment_0_short:0 "CR.30"
  SAD_fighter_equipment_1:0 "Macchi C.200 Saetta"
  SAD_fighter_equipment_1_short:0 "Saetta"
  SAD_fighter_equipment_2:0 "Macchi C.202 Folgore"
@@ -7146,8 +7287,8 @@ l_english:
  SAD_fighter_bomber_equipment_3_short:0 "Centauro"
  
 #-> Carrier-based light fighters <><>
- SAD_cv_fighter_equipment_0:0 "Fiat ICR.32"
- SAD_cv_fighter_equipment_0_short:0 "ICR.32"
+ SAD_cv_fighter_equipment_0:0 "Fiat ICR.30"
+ SAD_cv_fighter_equipment_0_short:0 "ICR.30"
  SAD_cv_fighter_equipment_1:0 "Macchi IC.200"
  SAD_cv_fighter_equipment_1_short:0 "Saetta"
  SAD_cv_fighter_equipment_2:0 "Reggiane Re.2001 OR Falco II"
@@ -7156,8 +7297,8 @@ l_english:
  SAD_cv_fighter_equipment_3_short:0 "Navale Sagittario"
 
 #-> Torpedo bombers <><>
- SAD_nav_bomber_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
- SAD_nav_bomber_equipment_1_short:0 "Sparviero"
+ SAD_nav_bomber_equipment_1:0 "Caproni Ca.335 Maestrale"
+ SAD_nav_bomber_equipment_1_short:0 "Maestrale"
  SAD_nav_bomber_equipment_2:0 "Reggiane Re.2001 G/H Falco II"
  SAD_nav_bomber_equipment_2_short:0 "Falco II"
  SAD_nav_bomber_equipment_3:0 "Fiat G.55S"
@@ -7222,6 +7363,8 @@ l_english:
  SAD_strat_maritime_equipment_3_short:0 "P.133bis"
  
 #-> Maritime patrol <><>
+ SAD_flying_boat_equipment_0:0 "Savoia-Marchetti S.55"
+ SAD_flying_boat_equipment_0_short:0 "S.55"
  SAD_flying_boat_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
  SAD_flying_boat_equipment_1_short:0 "Sparviero"
  SAD_flying_boat_equipment_2:0 "Savoia-Marchetti SM.84"
@@ -7236,16 +7379,16 @@ l_english:
  SAD_jet_fighter_equipment_1_short:0 "Re.2007"
  SAD_jet_fighter_equipment_2:0 "Reggiane Re.2008"
  SAD_jet_fighter_equipment_2_short:0 "Re.2008"
- SAD_jet_fighter_equipment_x:0 "Fiat G.91"
- SAD_jet_fighter_equipment_x_short:0 "G.91"
+ SAD_jet_fighter_equipment_x:0 "Fiat G.80"
+ SAD_jet_fighter_equipment_x_short:0 "G.80"
  
 #-> Carrier-based jet fighters <><>
  SAD_cv_jet_fighter_equipment_1:0 "Reggiane IRe.2007"
  SAD_cv_jet_fighter_equipment_1_short:0 "IRe.2007"
  SAD_cv_jet_fighter_equipment_2:0 "Reggiane IRe.2008"
  SAD_cv_jet_fighter_equipment_2_short:0 "IRe.2008"
- SAD_cv_jet_fighter_equipment_x:0 "Fiat G.91 Navale"
- SAD_cv_jet_fighter_equipment_x_short:0 "IG.91"
+ SAD_cv_jet_fighter_equipment_x:0 "Fiat G.80 Navale"
+ SAD_cv_jet_fighter_equipment_x_short:0 "IG.80"
 
 #-> Jet medium bomber <><>
 
@@ -7267,8 +7410,9 @@ l_english:
  SIC_transport_plane_equipment_2:0 "G.12"
  SIC_transport_plane_equipment_2_short:0 "Fiat G.12" 
 
- 
 #-> Dive bombers <><>
+ SIC_CAS_equipment_0:0 "IMAM Ro.37"
+ SIC_CAS_equipment_0_short:0 "Ro.37"
  SIC_CAS_equipment_1:0 "Breda Ba.65"
  SIC_CAS_equipment_1_short:0 "Ba.65"
  SIC_CAS_equipment_2:0 "Breda Ba.88 Lince"
@@ -7277,6 +7421,8 @@ l_english:
  SIC_CAS_equipment_3_short:0 "Ba.201"
  
 #-> Carrier-based dive bombers <><>
+ SIC_cv_CAS_equipment_0:0 "IMAM Ro.37 Navale"
+ SIC_cv_CAS_equipment_0_short:0 "Ro.37N"
  SIC_cv_CAS_equipment_1:0 "Breda Ba.65bis"
  SIC_cv_CAS_equipment_1_short:0 "Ba.65bis"
  SIC_cv_CAS_equipment_2:0 "Fiat G.50N Navale Freccia"
@@ -7285,8 +7431,8 @@ l_english:
  SIC_cv_CAS_equipment_3_short:0 "Ba.201bis"
  
 #-> Light fighters <><>
- SIC_fighter_equipment_0:0 "Fiat CR.32"
- SIC_fighter_equipment_0_short:0 "CR.32"
+ SIC_fighter_equipment_0:0 "Fiat CR.30"
+ SIC_fighter_equipment_0_short:0 "CR.30"
  SIC_fighter_equipment_1:0 "Macchi C.200 Saetta"
  SIC_fighter_equipment_1_short:0 "Saetta"
  SIC_fighter_equipment_2:0 "Macchi C.202 Folgore"
@@ -7301,8 +7447,8 @@ l_english:
  SIC_fighter_bomber_equipment_3_short:0 "Centauro"
  
 #-> Carrier-based light fighters <><>
- SIC_cv_fighter_equipment_0:0 "Fiat ICR.32"
- SIC_cv_fighter_equipment_0_short:0 "ICR.32"
+ SIC_cv_fighter_equipment_0:0 "Fiat ICR.30"
+ SIC_cv_fighter_equipment_0_short:0 "ICR.30"
  SIC_cv_fighter_equipment_1:0 "Macchi IC.200"
  SIC_cv_fighter_equipment_1_short:0 "Saetta"
  SIC_cv_fighter_equipment_2:0 "Reggiane Re.2001 OR Falco II"
@@ -7311,8 +7457,8 @@ l_english:
  SIC_cv_fighter_equipment_3_short:0 "Navale Sagittario"
  
 #-> Torpedo bombers <><>
- SIC_nav_bomber_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
- SIC_nav_bomber_equipment_1_short:0 "Sparviero"
+ SIC_nav_bomber_equipment_1:0 "Caproni Ca.335 Maestrale"
+ SIC_nav_bomber_equipment_1_short:0 "Maestrale"
  SIC_nav_bomber_equipment_2:0 "Reggiane Re.2001 G/H Falco II"
  SIC_nav_bomber_equipment_2_short:0 "Falco II"
  SIC_nav_bomber_equipment_3:0 "Fiat G.55S"
@@ -7377,6 +7523,8 @@ l_english:
  SIC_strat_maritime_equipment_3_short:0 "P.133bis"
  
 #-> Maritime patrol <><>
+ SIC_flying_boat_equipment_0:0 "Savoia-Marchetti S.55"
+ SIC_flying_boat_equipment_0_short:0 "S.55"
  SIC_flying_boat_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
  SIC_flying_boat_equipment_1_short:0 "Sparviero"
  SIC_flying_boat_equipment_2:0 "Savoia-Marchetti SM.84"
@@ -7391,16 +7539,16 @@ l_english:
  SIC_jet_fighter_equipment_1_short:0 "Re.2007"
  SIC_jet_fighter_equipment_2:0 "Reggiane Re.2008"
  SIC_jet_fighter_equipment_2_short:0 "Re.2008"
- SIC_jet_fighter_equipment_x:0 "Fiat G.91"
- SIC_jet_fighter_equipment_x_short:0 "G.91"
+ SIC_jet_fighter_equipment_x:0 "Fiat G.80"
+ SIC_jet_fighter_equipment_x_short:0 "G.80"
  
 #-> Carrier-based jet fighters <><>
  SIC_cv_jet_fighter_equipment_1:0 "Reggiane IRe.2007"
  SIC_cv_jet_fighter_equipment_1_short:0 "IRe.2007"
  SIC_cv_jet_fighter_equipment_2:0 "Reggiane IRe.2008"
  SIC_cv_jet_fighter_equipment_2_short:0 "IRe.2008"
- SIC_cv_jet_fighter_equipment_x:0 "Fiat G.91 Navale"
- SIC_cv_jet_fighter_equipment_x_short:0 "IG.91"
+ SIC_cv_jet_fighter_equipment_x:0 "Fiat G.80 Navale"
+ SIC_cv_jet_fighter_equipment_x_short:0 "IG.80"
 
 #-> Jet medium bomber <><>
 
@@ -7421,8 +7569,9 @@ l_english:
  VNZ_transport_plane_equipment_2:0 "G.12"
  VNZ_transport_plane_equipment_2_short:0 "Fiat G.12" 
 
- 
 #-> Dive bombers <><>
+ VNZ_CAS_equipment_0:0 "IMAM Ro.37"
+ VNZ_CAS_equipment_0_short:0 "Ro.37"
  VNZ_CAS_equipment_1:0 "Breda Ba.65"
  VNZ_CAS_equipment_1_short:0 "Ba.65"
  VNZ_CAS_equipment_2:0 "Breda Ba.88 Lince"
@@ -7431,6 +7580,8 @@ l_english:
  VNZ_CAS_equipment_3_short:0 "Ba.201"
  
 #-> Carrier-based dive bombers <><>
+ VNZ_cv_CAS_equipment_0:0 "IMAM Ro.37 Navale"
+ VNZ_cv_CAS_equipment_0_short:0 "Ro.37N"
  VNZ_cv_CAS_equipment_1:0 "Breda Ba.65bis"
  VNZ_cv_CAS_equipment_1_short:0 "Ba.65bis"
  VNZ_cv_CAS_equipment_2:0 "Fiat G.50N Navale Freccia"
@@ -7439,8 +7590,8 @@ l_english:
  VNZ_cv_CAS_equipment_3_short:0 "Ba.201bis"
  
 #-> Light fighters <><>
- VNZ_fighter_equipment_0:0 "Fiat CR.32"
- VNZ_fighter_equipment_0_short:0 "CR.32"
+ VNZ_fighter_equipment_0:0 "Fiat CR.30"
+ VNZ_fighter_equipment_0_short:0 "CR.30"
  VNZ_fighter_equipment_1:0 "Macchi C.200 Saetta"
  VNZ_fighter_equipment_1_short:0 "Saetta"
  VNZ_fighter_equipment_2:0 "Macchi C.202 Folgore"
@@ -7455,8 +7606,8 @@ l_english:
  VNZ_fighter_bomber_equipment_3_short:0 "Centauro"
  
 #-> Carrier-based light fighters <><>
- VNZ_cv_fighter_equipment_0:0 "Fiat ICR.32"
- VNZ_cv_fighter_equipment_0_short:0 "ICR.32"
+ VNZ_cv_fighter_equipment_0:0 "Fiat ICR.30"
+ VNZ_cv_fighter_equipment_0_short:0 "ICR.30"
  VNZ_cv_fighter_equipment_1:0 "Macchi IC.200"
  VNZ_cv_fighter_equipment_1_short:0 "Saetta"
  VNZ_cv_fighter_equipment_2:0 "Reggiane Re.2001 OR Falco II"
@@ -7465,8 +7616,8 @@ l_english:
  VNZ_cv_fighter_equipment_3_short:0 "Navale Sagittario"
  
 #-> Torpedo bombers <><>
- VNZ_nav_bomber_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
- VNZ_nav_bomber_equipment_1_short:0 "Sparviero"
+ VNZ_nav_bomber_equipment_1:0 "Caproni Ca.335 Maestrale"
+ VNZ_nav_bomber_equipment_1_short:0 "Maestrale"
  VNZ_nav_bomber_equipment_2:0 "Reggiane Re.2001 G/H Falco II"
  VNZ_nav_bomber_equipment_2_short:0 "Falco II"
  VNZ_nav_bomber_equipment_3:0 "Fiat G.55S"
@@ -7531,6 +7682,8 @@ l_english:
  VNZ_strat_maritime_equipment_3_short:0 "P.133bis"
  
 #-> Maritime patrol <><>
+ VNZ_flying_boat_equipment_0:0 "Savoia-Marchetti S.55"
+ VNZ_flying_boat_equipment_0_short:0 "S.55"
  VNZ_flying_boat_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
  VNZ_flying_boat_equipment_1_short:0 "Sparviero"
  VNZ_flying_boat_equipment_2:0 "Savoia-Marchetti SM.84"
@@ -7545,16 +7698,16 @@ l_english:
  VNZ_jet_fighter_equipment_1_short:0 "Re.2007"
  VNZ_jet_fighter_equipment_2:0 "Reggiane Re.2008"
  VNZ_jet_fighter_equipment_2_short:0 "Re.2008"
- VNZ_jet_fighter_equipment_x:0 "Fiat G.91"
- VNZ_jet_fighter_equipment_x_short:0 "G.91"
+ VNZ_jet_fighter_equipment_x:0 "Fiat G.80"
+ VNZ_jet_fighter_equipment_x_short:0 "G.80"
  
 #-> Carrier-based jet fighters <><>
  VNZ_cv_jet_fighter_equipment_1:0 "Reggiane IRe.2007"
  VNZ_cv_jet_fighter_equipment_1_short:0 "IRe.2007"
  VNZ_cv_jet_fighter_equipment_2:0 "Reggiane IRe.2008"
  VNZ_cv_jet_fighter_equipment_2_short:0 "IRe.2008"
- VNZ_cv_jet_fighter_equipment_x:0 "Fiat G.91 Navale"
- VNZ_cv_jet_fighter_equipment_x_short:0 "IG.91"
+ VNZ_cv_jet_fighter_equipment_x:0 "Fiat G.80 Navale"
+ VNZ_cv_jet_fighter_equipment_x_short:0 "IG.80"
 
 #-> Jet medium bomber <><>
 
@@ -7576,6 +7729,8 @@ l_english:
  ERI_transport_plane_equipment_2_short:0 "Fiat G.12" 
 
 #-> Dive bombers <><>
+ ERI_CAS_equipment_0:0 "IMAM Ro.37"
+ ERI_CAS_equipment_0_short:0 "Ro.37"
  ERI_CAS_equipment_1:0 "Breda Ba.65"
  ERI_CAS_equipment_1_short:0 "Ba.65"
  ERI_CAS_equipment_2:0 "Breda Ba.88 Lince"
@@ -7584,6 +7739,8 @@ l_english:
  ERI_CAS_equipment_3_short:0 "Ba.201"
  
 #-> Carrier-based dive bombers <><>
+ ERI_cv_CAS_equipment_0:0 "IMAM Ro.37 Navale"
+ ERI_cv_CAS_equipment_0_short:0 "Ro.37N"
  ERI_cv_CAS_equipment_1:0 "Breda Ba.65bis"
  ERI_cv_CAS_equipment_1_short:0 "Ba.65bis"
  ERI_cv_CAS_equipment_2:0 "Fiat G.50N Navale Freccia"
@@ -7592,8 +7749,8 @@ l_english:
  ERI_cv_CAS_equipment_3_short:0 "Ba.201bis"
  
 #-> Light fighters <><>
- ERI_fighter_equipment_0:0 "Fiat CR.32"
- ERI_fighter_equipment_0_short:0 "CR.32"
+ ERI_fighter_equipment_0:0 "Fiat CR.30"
+ ERI_fighter_equipment_0_short:0 "CR.30"
  ERI_fighter_equipment_1:0 "Macchi C.200 Saetta"
  ERI_fighter_equipment_1_short:0 "Saetta"
  ERI_fighter_equipment_2:0 "Macchi C.202 Folgore"
@@ -7608,8 +7765,8 @@ l_english:
  ERI_fighter_bomber_equipment_3_short:0 "Centauro"
  
 #-> Carrier-based light fighters <><>
- ERI_cv_fighter_equipment_0:0 "Fiat ICR.32"
- ERI_cv_fighter_equipment_0_short:0 "ICR.32"
+ ERI_cv_fighter_equipment_0:0 "Fiat ICR.30"
+ ERI_cv_fighter_equipment_0_short:0 "ICR.30"
  ERI_cv_fighter_equipment_1:0 "Macchi IC.200"
  ERI_cv_fighter_equipment_1_short:0 "Saetta"
  ERI_cv_fighter_equipment_2:0 "Reggiane Re.2001 OR Falco II"
@@ -7618,8 +7775,8 @@ l_english:
  ERI_cv_fighter_equipment_3_short:0 "Navale Sagittario"
  
 #-> Torpedo bombers <><>
- ERI_nav_bomber_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
- ERI_nav_bomber_equipment_1_short:0 "Sparviero"
+ ERI_nav_bomber_equipment_1:0 "Caproni Ca.335 Maestrale"
+ ERI_nav_bomber_equipment_1_short:0 "Maestrale"
  ERI_nav_bomber_equipment_2:0 "Reggiane Re.2001 G/H Falco II"
  ERI_nav_bomber_equipment_2_short:0 "Falco II"
  ERI_nav_bomber_equipment_3:0 "Fiat G.55S"
@@ -7684,6 +7841,8 @@ l_english:
  ERI_strat_maritime_equipment_3_short:0 "P.133bis"
  
 #-> Maritime patrol <><>
+ ERI_flying_boat_equipment_0:0 "Savoia-Marchetti S.55"
+ ERI_flying_boat_equipment_0_short:0 "S.55"
  ERI_flying_boat_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
  ERI_flying_boat_equipment_1_short:0 "Sparviero"
  ERI_flying_boat_equipment_2:0 "Savoia-Marchetti SM.84"
@@ -7698,16 +7857,16 @@ l_english:
  ERI_jet_fighter_equipment_1_short:0 "Re.2007"
  ERI_jet_fighter_equipment_2:0 "Reggiane Re.2008"
  ERI_jet_fighter_equipment_2_short:0 "Re.2008"
- ERI_jet_fighter_equipment_x:0 "Fiat G.91"
- ERI_jet_fighter_equipment_x_short:0 "G.91"
+ ERI_jet_fighter_equipment_x:0 "Fiat G.80"
+ ERI_jet_fighter_equipment_x_short:0 "G.80"
  
 #-> Carrier-based jet fighters <><>
  ERI_cv_jet_fighter_equipment_1:0 "Reggiane IRe.2007"
  ERI_cv_jet_fighter_equipment_1_short:0 "IRe.2007"
  ERI_cv_jet_fighter_equipment_2:0 "Reggiane IRe.2008"
  ERI_cv_jet_fighter_equipment_2_short:0 "IRe.2008"
- ERI_cv_jet_fighter_equipment_x:0 "Fiat G.91 Navale"
- ERI_cv_jet_fighter_equipment_x_short:0 "IG.91"
+ ERI_cv_jet_fighter_equipment_x:0 "Fiat G.80 Navale"
+ ERI_cv_jet_fighter_equipment_x_short:0 "IG.80"
 
 #-> Jet medium bomber <><>
 
@@ -7747,8 +7906,8 @@ l_english:
  LBA_cv_CAS_equipment_3_short:0 "Ba.201bis"
  
 #-> Light fighters <><>
- LBA_fighter_equipment_0:0 "Fiat CR.32"
- LBA_fighter_equipment_0_short:0 "CR.32"
+ LBA_fighter_equipment_0:0 "Fiat CR.30"
+ LBA_fighter_equipment_0_short:0 "CR.30"
  LBA_fighter_equipment_1:0 "Macchi C.200 Saetta"
  LBA_fighter_equipment_1_short:0 "Saetta"
  LBA_fighter_equipment_2:0 "Macchi C.202 Folgore"
@@ -7763,8 +7922,8 @@ l_english:
  LBA_fighter_bomber_equipment_3_short:0 "Centauro"
  
 #-> Carrier-based light fighters <><>
- LBA_cv_fighter_equipment_0:0 "Fiat ICR.32"
- LBA_cv_fighter_equipment_0_short:0 "ICR.32"
+ LBA_cv_fighter_equipment_0:0 "Fiat ICR.30"
+ LBA_cv_fighter_equipment_0_short:0 "ICR.30"
  LBA_cv_fighter_equipment_1:0 "Macchi IC.200"
  LBA_cv_fighter_equipment_1_short:0 "Saetta"
  LBA_cv_fighter_equipment_2:0 "Reggiane Re.2001 OR Falco II"
@@ -7773,8 +7932,8 @@ l_english:
  LBA_cv_fighter_equipment_3_short:0 "Navale Sagittario"
  
 #-> Torpedo bombers <><>
- LBA_nav_bomber_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
- LBA_nav_bomber_equipment_1_short:0 "Sparviero"
+ LBA_nav_bomber_equipment_1:0 "Caproni Ca.335 Maestrale"
+ LBA_nav_bomber_equipment_1_short:0 "Maestrale"
  LBA_nav_bomber_equipment_2:0 "Reggiane Re.2001 G/H Falco II"
  LBA_nav_bomber_equipment_2_short:0 "Falco II"
  LBA_nav_bomber_equipment_3:0 "Fiat G.55S"
@@ -7839,6 +7998,8 @@ l_english:
  LBA_strat_maritime_equipment_3_short:0 "P.133bis"
  
 #-> Maritime patrol <><>
+ LBA_flying_boat_equipment_0:0 "Savoia-Marchetti S.55"
+ LBA_flying_boat_equipment_0_short:0 "S.55"
  LBA_flying_boat_equipment_1:0 "Savoia-Marchetti SM.79 Sparviero"
  LBA_flying_boat_equipment_1_short:0 "Sparviero"
  LBA_flying_boat_equipment_2:0 "Savoia-Marchetti SM.84"
@@ -7853,16 +8014,16 @@ l_english:
  LBA_jet_fighter_equipment_1_short:0 "Re.2007"
  LBA_jet_fighter_equipment_2:0 "Reggiane Re.2008"
  LBA_jet_fighter_equipment_2_short:0 "Re.2008"
- LBA_jet_fighter_equipment_x:0 "Fiat G.91"
- LBA_jet_fighter_equipment_x_short:0 "G.91"
+ LBA_jet_fighter_equipment_x:0 "Fiat G.80"
+ LBA_jet_fighter_equipment_x_short:0 "G.80"
  
 #-> Carrier-based jet fighters <><>
  LBA_cv_jet_fighter_equipment_1:0 "Reggiane IRe.2007"
  LBA_cv_jet_fighter_equipment_1_short:0 "IRe.2007"
  LBA_cv_jet_fighter_equipment_2:0 "Reggiane IRe.2008"
  LBA_cv_jet_fighter_equipment_2_short:0 "IRe.2008"
- LBA_cv_jet_fighter_equipment_x:0 "Fiat G.91 Navale"
- LBA_cv_jet_fighter_equipment_x_short:0 "IG.91"
+ LBA_cv_jet_fighter_equipment_x:0 "Fiat G.80 Navale"
+ LBA_cv_jet_fighter_equipment_x_short:0 "IG.80"
 
 #-> Jet medium bomber <><>
 
@@ -7883,6 +8044,7 @@ l_english:
  JAP_transport_plane_equipment_1_short:0 "Ki-56"
  JAP_transport_plane_equipment_2:0 "Mitsubishi Ki-57"
  JAP_transport_plane_equipment_2_short:0 "Ki-57"
+ 
 #-> Dive bombers <><>
  JAP_CAS_equipment_1:0 "Kawasaki Ki-32"
  JAP_CAS_equipment_1_short:0 "Ki-32"
@@ -8004,16 +8166,16 @@ l_english:
 #-> Jet fighters <><>
  JAP_jet_fighter_equipment_1:0 "Nakajima Kikka"
  JAP_jet_fighter_equipment_1_short:0 "Kikka"
- JAP_jet_fighter_equipment_2:0 "Kyushu J7W Shinden-Kai"
- JAP_jet_fighter_equipment_2_short:0 "J7W Shinden-Kai"
+ JAP_jet_fighter_equipment_2:0 "Mansyū Ki-98-II"
+ JAP_jet_fighter_equipment_2_short:0 "Ki-98-II"
  JAP_jet_fighter_equipment_x:0 "Kawasaki Ki-222 Senkō"
  JAP_jet_fighter_equipment_x_short:0 "Ki-222 Senkō"
 
 #-> Carrier-based jet fighters <><>
  JAP_cv_jet_fighter_equipment_1:0 "Nakajima Kikka-Kai"
  JAP_cv_jet_fighter_equipment_1_short:0 "Kikka-Kai"
- JAP_cv_jet_fighter_equipment_2:0 "Kyushu J7W Shinden-Kai"
- JAP_cv_jet_fighter_equipment_2_short:0 "J7W Shinden-Kai"
+ JAP_cv_jet_fighter_equipment_2:0 "Mansyū Ki-98-II-Kai"
+ JAP_cv_jet_fighter_equipment_2_short:0 "Ki-98-II-Kai"
  JAP_cv_jet_fighter_equipment_x:0 "Kawasaki Ki-222 Senkō-Kai"
  JAP_cv_jet_fighter_equipment_x_short:0 "Ki-222 Senkō"
 
@@ -8171,16 +8333,16 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
 #-> Jet fighters <><>
  MAN_jet_fighter_equipment_1:0 "Nakajima Kikka"
  MAN_jet_fighter_equipment_1_short:0 "Kikka"
- MAN_jet_fighter_equipment_2:0 "Kyushu J7W Shinden-Kai"
- MAN_jet_fighter_equipment_2_short:0 "J7W Shinden-Kai"
+ MAN_jet_fighter_equipment_2:0 "Mansyū Ki-98-II"
+ MAN_jet_fighter_equipment_2_short:0 "Ki-98-II"
  MAN_jet_fighter_equipment_x:0 "Nakajima Ki-201 Karyu"
  MAN_jet_fighter_equipment_x_short:0 "Ki-201 Karyu"
 
 #-> Carrier-based jet fighters <><>
  MAN_cv_jet_fighter_equipment_1:0 "Nakajima Kikka-Kai"
  MAN_cv_jet_fighter_equipment_1_short:0 "Kikka-Kai"
- MAN_cv_jet_fighter_equipment_2:0 "Kyushu J7W Shinden-Kai"
- MAN_cv_jet_fighter_equipment_2_short:0 "J7W Shinden-Kai"
+ MAN_cv_jet_fighter_equipment_2:0 "Mansyū Ki-98-II-Kai"
+ MAN_cv_jet_fighter_equipment_2_short:0 "Ki-98-II-Kai"
  MAN_cv_jet_fighter_equipment_x:0 "Nakajima Ki-201 Karyu-Kai"
  MAN_cv_jet_fighter_equipment_x_short:0 "Ki-201 Karyu-Kai"
 
@@ -8325,16 +8487,16 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
 #-> Jet fighters <><>
  SIA_jet_fighter_equipment_1:0 "Nakajima Kikka"
  SIA_jet_fighter_equipment_1_short:0 "Kikka"
- SIA_jet_fighter_equipment_2:0 "Kyushu J7W Shinden-Kai"
- SIA_jet_fighter_equipment_2_short:0 "J7W Shinden-Kai"
+ SIA_jet_fighter_equipment_2:0 "Mansyū Ki-98-II"
+ SIA_jet_fighter_equipment_2_short:0 "Ki-98-II"
  SIA_jet_fighter_equipment_x:0 "Nakajima Ki-201 Karyu"
  SIA_jet_fighter_equipment_x_short:0 "Ki-201 Karyu"
 
 #-> Carrier-based jet fighters <><>
  SIA_cv_jet_fighter_equipment_1:0 "Nakajima Kikka-Kai"
  SIA_cv_jet_fighter_equipment_1_short:0 "Kikka-Kai"
- SIA_cv_jet_fighter_equipment_2:0 "Kyushu J7W Shinden-Kai"
- SIA_cv_jet_fighter_equipment_2_short:0 "J7W Shinden-Kai"
+ SIA_cv_jet_fighter_equipment_2:0 "Mansyū Ki-98-II-Kai"
+ SIA_cv_jet_fighter_equipment_2_short:0 "Ki-98-II-Kai"
  SIA_cv_jet_fighter_equipment_x:0 "Nakajima Ki-201 Karyu-Kai"
  SIA_cv_jet_fighter_equipment_x_short:0 "Ki-201 Karyu-Kai"
 
@@ -8918,170 +9080,174 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
 #-> Carrier-based jet fighters <><>
 
 
-###--->  RUS  <><> <><> <><>
+###--->  SOV  <><> <><> <><>
 #-> Scout planes <><>
- RUS_scout_plane_equipment_1:0 "Neman R-10"
- RUS_scout_plane_equipment_1_short:0 "R-10"
- RUS_scout_plane_equipment_2:0 "Tupolev Tu-6"
- RUS_scout_plane_equipment_2_short:0 "Tu-6"
+ SOV_scout_plane_equipment_1:0 "Neman R-10"
+ SOV_scout_plane_equipment_1_short:0 "R-10"
+ SOV_scout_plane_equipment_2:0 "Tupolev Tu-6"
+ SOV_scout_plane_equipment_2_short:0 "Tu-6"
  
 #-> Transport planes <><>
- RUS_transport_plane_equipment_1:0 "Tupolev TB-3"
- RUS_transport_plane_equipment_1_short:0 "TB-3"
- RUS_transport_plane_equipment_2:0 "Lisunov Li-2"
- RUS_transport_plane_equipment_2_short:0 "Li-2"
+ SOV_transport_plane_equipment_1:0 "Lisunov Li-2"
+ SOV_transport_plane_equipment_1_short:0 "Li-2"
+ SOV_transport_plane_equipment_2:0 "Lisunov Li-2T"
+ SOV_transport_plane_equipment_2_short:0 "Li-2T"
 
 #-> Dive bombers <><>
- RUS_CAS_equipment_1:0 "Sukhoi Su-2"
- RUS_CAS_equipment_1_short:0 "Su-2"
- RUS_CAS_equipment_2:0 "Ilyushin IL-2"
- RUS_CAS_equipment_2_short:0 "IL-2"
- RUS_CAS_equipment_3:0 "Ilyushin IL-10"
- RUS_CAS_equipment_3_short:0 "IL-10"
+ SOV_CAS_equipment_0:0 "Polikarpov R-5"
+ SOV_CAS_equipment_0_short:0 "R-5"
+ SOV_CAS_equipment_1:0 "Sukhoi Su-2"
+ SOV_CAS_equipment_1_short:0 "Su-2"
+ SOV_CAS_equipment_2:0 "Ilyushin IL-2"
+ SOV_CAS_equipment_2_short:0 "IL-2"
+ SOV_CAS_equipment_3:0 "Ilyushin IL-10"
+ SOV_CAS_equipment_3_short:0 "IL-10"
  
 #-> Carrier-based dive bombers <><>
- RUS_cv_CAS_equipment_1:0 "Sukhoi Su-2A"
- RUS_cv_CAS_equipment_1_short:0 "Su-2A"
- RUS_cv_CAS_equipment_2:0 "Ilyushin Il-2A"
- RUS_cv_CAS_equipment_2_short:0 "Il-2A"
- RUS_cv_CAS_equipment_3:0 "Ilyushin IL-10A"
- RUS_cv_CAS_equipment_3_short:0 "IL-10A"
+ SOV_cv_CAS_equipment_0:0 "Polikarpov R-5A"
+ SOV_cv_CAS_equipment_0_short:0 "R-5A"
+ SOV_cv_CAS_equipment_1:0 "Sukhoi Su-2A"
+ SOV_cv_CAS_equipment_1_short:0 "Su-2A"
+ SOV_cv_CAS_equipment_2:0 "Ilyushin Il-2A"
+ SOV_cv_CAS_equipment_2_short:0 "Il-2A"
+ SOV_cv_CAS_equipment_3:0 "Ilyushin IL-10A"
+ SOV_cv_CAS_equipment_3_short:0 "IL-10A"
  
 #-> Light fighters <><>
- RUS_fighter_equipment_0:0 "Polikarpov I-15"
- RUS_fighter_equipment_0_short:0 "I-15"
- RUS_fighter_equipment_1:0 "Polikarpov I-16"
- RUS_fighter_equipment_1_short:0 "I-16"
- RUS_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3"
- RUS_fighter_equipment_2_short:0 "LaGG-3"
- RUS_fighter_equipment_3:0 "Yakolev Yak-3"
- RUS_fighter_equipment_3_short:0 "Yak-3"
+ SOV_fighter_equipment_0:0 "Polikarpov I-5"
+ SOV_fighter_equipment_0_short:0 "I-5"
+ SOV_fighter_equipment_1:0 "Polikarpov I-16"
+ SOV_fighter_equipment_1_short:0 "I-16"
+ SOV_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3"
+ SOV_fighter_equipment_2_short:0 "LaGG-3"
+ SOV_fighter_equipment_3:0 "Yakolev Yak-3"
+ SOV_fighter_equipment_3_short:0 "Yak-3"
  
 #-> Light fighter-bombers <><>
- RUS_fighter_bomber_equipment_2:0 "Gudkov K-37"
- RUS_fighter_bomber_equipment_2_short:0 "K-37"
- RUS_fighter_bomber_equipment_3:0 "Yakolev Yak-3K"
- RUS_fighter_bomber_equipment_3_short:0 "Yak-3K"
+ SOV_fighter_bomber_equipment_2:0 "Gudkov K-37"
+ SOV_fighter_bomber_equipment_2_short:0 "K-37"
+ SOV_fighter_bomber_equipment_3:0 "Yakolev Yak-3K"
+ SOV_fighter_bomber_equipment_3_short:0 "Yak-3K"
  
 #-> Carrier-based light fighters <><>
- RUS_cv_fighter_equipment_0:0 "Polikarpov I-15A"
- RUS_cv_fighter_equipment_0_short:0 "I-15A"
- RUS_cv_fighter_equipment_1:0 "Polikarpov I-16A"
- RUS_cv_fighter_equipment_1_short:0 "I-16A"
- RUS_cv_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3A"
- RUS_cv_fighter_equipment_2_short:0 "LaGG-3A"
- RUS_cv_fighter_equipment_3:0 "Yakolev Yak-3A"
- RUS_cv_fighter_equipment_3_short:0 "Yak-3A"
+ SOV_cv_fighter_equipment_0:0 "Polikarpov I-15A"
+ SOV_cv_fighter_equipment_0_short:0 "I-15A"
+ SOV_cv_fighter_equipment_1:0 "Polikarpov I-16A"
+ SOV_cv_fighter_equipment_1_short:0 "I-16A"
+ SOV_cv_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3A"
+ SOV_cv_fighter_equipment_2_short:0 "LaGG-3A"
+ SOV_cv_fighter_equipment_3:0 "Yakolev Yak-3A"
+ SOV_cv_fighter_equipment_3_short:0 "Yak-3A"
  
 #-> Torpedo bombers <><>
- RUS_nav_bomber_equipment_1:0 "Kochyerigin BSh-1"
- RUS_nav_bomber_equipment_1_short:0 "BSh-1"
- RUS_nav_bomber_equipment_2:0 "Kochyerigin LBSh"
- RUS_nav_bomber_equipment_2_short:0 "LBSh"
- RUS_nav_bomber_equipment_3:0 "Ilyushin Il-2T"
- RUS_nav_bomber_equipment_3_short:0 "Il-2T"
+ SOV_nav_bomber_equipment_1:0 "Kochyerigin BSh-1"
+ SOV_nav_bomber_equipment_1_short:0 "BSh-1"
+ SOV_nav_bomber_equipment_2:0 "Kochyerigin LBSh"
+ SOV_nav_bomber_equipment_2_short:0 "LBSh"
+ SOV_nav_bomber_equipment_3:0 "Ilyushin Il-2T"
+ SOV_nav_bomber_equipment_3_short:0 "Il-2T"
  
 #-> Carrier-based torpedo bombers <><>
- #RUS_cv_nav_bomber_equipment_1:0 "Ilyushin Il-4P"
- #RUS_cv_nav_bomber_equipment_1_short:0 "Il-4P"
- #RUS_cv_nav_bomber_equipment_2:0 "Tupolev ANT-62TP"
- #RUS_cv_nav_bomber_equipment_2_short:0 "ANT-62TP"
- #RUS_cv_nav_bomber_equipment_3:0 "Ilyushin Il-6P"
- #RUS_cv_nav_bomber_equipment_3_short:0 "Il-6P"
+ #SOV_cv_nav_bomber_equipment_1:0 "Ilyushin Il-4P"
+ #SOV_cv_nav_bomber_equipment_1_short:0 "Il-4P"
+ #SOV_cv_nav_bomber_equipment_2:0 "Tupolev ANT-62TP"
+ #SOV_cv_nav_bomber_equipment_2_short:0 "ANT-62TP"
+ #SOV_cv_nav_bomber_equipment_3:0 "Ilyushin Il-6P"
+ #SOV_cv_nav_bomber_equipment_3_short:0 "Il-6P"
  
 #-> Heavy fighters <><>
- RUS_heavy_fighter_equipment_1:0 "Petlyakov Pe-2"
- RUS_heavy_fighter_equipment_1_short:0 "Pe-2"
- RUS_heavy_fighter_equipment_2:0 "Petlyakov Pe-3"
- RUS_heavy_fighter_equipment_2_short:0 "Pe-3"
- RUS_heavy_fighter_equipment_3:0 "Polikarpov TIS"
- RUS_heavy_fighter_equipment_3_short:0 "TIS"
+ SOV_heavy_fighter_equipment_1:0 "Petlyakov Pe-2"
+ SOV_heavy_fighter_equipment_1_short:0 "Pe-2"
+ SOV_heavy_fighter_equipment_2:0 "Petlyakov Pe-3"
+ SOV_heavy_fighter_equipment_2_short:0 "Pe-3"
+ SOV_heavy_fighter_equipment_3:0 "Polikarpov TIS"
+ SOV_heavy_fighter_equipment_3_short:0 "TIS"
  
 #-> Heavy fighter-bomber <><>
- RUS_hfighter_bomber_equipment_1:0 "Petlyakov Pe-2M"
- RUS_hfighter_bomber_equipment_1_short:0 "Pe-2M"
- RUS_hfighter_bomber_equipment_2:0 "Petlyakov Pe-3M"
- RUS_hfighter_bomber_equipment_2_short:0 "Pe-3M"
- RUS_hfighter_bomber_equipment_3:0 "Polikarpov TIS-M"
- RUS_hfighter_bomber_equipment_3_short:0 "TIS-M"
+ SOV_hfighter_bomber_equipment_1:0 "Petlyakov Pe-2M"
+ SOV_hfighter_bomber_equipment_1_short:0 "Pe-2M"
+ SOV_hfighter_bomber_equipment_2:0 "Petlyakov Pe-3M"
+ SOV_hfighter_bomber_equipment_2_short:0 "Pe-3M"
+ SOV_hfighter_bomber_equipment_3:0 "Polikarpov TIS-M"
+ SOV_hfighter_bomber_equipment_3_short:0 "TIS-M"
  
 #-> Medium bomber <><>
- RUS_tac_bomber_equipment_0:0 "Ilyushin DB-3"
- RUS_tac_bomber_equipment_0_short:0 "DB-3"
- RUS_tac_bomber_equipment_1:0 "Tupolev SB-2M"
- RUS_tac_bomber_equipment_1_short:0 "SB-2M"
- RUS_tac_bomber_equipment_2:0 "Tupolev Tu-2"
- RUS_tac_bomber_equipment_2_short:0 "Tu-2"
- RUS_tac_bomber_equipment_3:0 "Tupolev Tu-8"
- RUS_tac_bomber_equipment_3_short:0 "Tu-8"
+ SOV_tac_bomber_equipment_0:0 "Ilyushin DB-3"
+ SOV_tac_bomber_equipment_0_short:0 "DB-3"
+ SOV_tac_bomber_equipment_1:0 "Tupolev SB-2M"
+ SOV_tac_bomber_equipment_1_short:0 "SB-2M"
+ SOV_tac_bomber_equipment_2:0 "Tupolev Tu-2"
+ SOV_tac_bomber_equipment_2_short:0 "Tu-2"
+ SOV_tac_bomber_equipment_3:0 "Tupolev Tu-8"
+ SOV_tac_bomber_equipment_3_short:0 "Tu-8"
  
 #-> Medium maritime bomber <><>
- RUS_med_maritime_equipment_1:0 "Tupolev SB-2F"
- RUS_med_maritime_equipment_1_short:0 "SB-2F"
- RUS_med_maritime_equipment_2:0 "Tupolev Tu-2F"
- RUS_med_maritime_equipment_2_short:0 "Tu-2F"
- RUS_med_maritime_equipment_3:0 "Tupolev Tu-8F"
- RUS_med_maritime_equipment_3_short:0 "Tu-8F"
+ SOV_med_maritime_equipment_1:0 "Tupolev SB-2F"
+ SOV_med_maritime_equipment_1_short:0 "SB-2F"
+ SOV_med_maritime_equipment_2:0 "Tupolev Tu-2F"
+ SOV_med_maritime_equipment_2_short:0 "Tu-2F"
+ SOV_med_maritime_equipment_3:0 "Tupolev Tu-8F"
+ SOV_med_maritime_equipment_3_short:0 "Tu-8F"
  
 #-> Heavy bomber <><>
- RUS_strat_bomber_equipment_1:0 "Petlyakov Pe-8"
- RUS_strat_bomber_equipment_1_short:0 "Pe-8"
- RUS_strat_bomber_equipment_2:0 "Yermolayev Yer-2"
- RUS_strat_bomber_equipment_2_short:0 "Yer-2"
- RUS_strat_bomber_equipment_3:0 "Tupolev Tu-4"
- RUS_strat_bomber_equipment_3_short:0 "Tu-4"
+ SOV_strat_bomber_equipment_1:0 "Petlyakov Pe-8"
+ SOV_strat_bomber_equipment_1_short:0 "Pe-8"
+ SOV_strat_bomber_equipment_2:0 "Yermolayev Yer-2"
+ SOV_strat_bomber_equipment_2_short:0 "Yer-2"
+ SOV_strat_bomber_equipment_3:0 "Tupolev Tu-4"
+ SOV_strat_bomber_equipment_3_short:0 "Tu-4"
  
 #-> Heavy maritime bomber <><>
- RUS_strat_maritime_equipment_1:0 "Petlyakov Pe-8F"
- RUS_strat_maritime_equipment_1_short:0 "Pe-8F"
- RUS_strat_maritime_equipment_2:0 "Yermolayev Yer-2F"
- RUS_strat_maritime_equipment_2_short:0 "Yer-2F"
- RUS_strat_maritime_equipment_3:0 "Tupolev Tu-4F"
- RUS_strat_maritime_equipment_3_short:0 "Tu-4F"
+ SOV_strat_maritime_equipment_1:0 "Petlyakov Pe-8F"
+ SOV_strat_maritime_equipment_1_short:0 "Pe-8F"
+ SOV_strat_maritime_equipment_2:0 "Yermolayev Yer-2F"
+ SOV_strat_maritime_equipment_2_short:0 "Yer-2F"
+ SOV_strat_maritime_equipment_3:0 "Tupolev Tu-4F"
+ SOV_strat_maritime_equipment_3_short:0 "Tu-4F"
  
 #-> Maritime patrol <><>
- #RUS_flying_boat_equipment_0: "Beriev MBR-2"
- #RUS_flying_boat_equipment_0_short: "MBR-2"
- RUS_flying_boat_equipment_1:0 "Ilyushin Il-4"
- RUS_flying_boat_equipment_1_short:0 "Il-4"
- RUS_flying_boat_equipment_2:0 "Tupolev ANT-62T"
- RUS_flying_boat_equipment_2_short:0 "ANT-62T"
- RUS_flying_boat_equipment_3:0 "Ilyushin Il-6"
- RUS_flying_boat_equipment_3_short:0 "Il-6"
+ #SOV_flying_boat_equipment_0: "Beriev MBR-2"
+ #SOV_flying_boat_equipment_0_short: "MBR-2"
+ SOV_flying_boat_equipment_1:0 "Ilyushin Il-4"
+ SOV_flying_boat_equipment_1_short:0 "Il-4"
+ SOV_flying_boat_equipment_2:0 "Tupolev ANT-62T"
+ SOV_flying_boat_equipment_2_short:0 "ANT-62T"
+ SOV_flying_boat_equipment_3:0 "Ilyushin Il-6"
+ SOV_flying_boat_equipment_3_short:0 "Il-6"
  
 #-> Rocket interceptor <><>
- RUS_rocket_interceptor_equipment_1:0 "Bereznyak-Isayev BI-1"
- RUS_rocket_interceptor_equipment_1_short:0 "BI-1" 
- RUS_rocket_interceptor_equipment_2:0 "Polikarpov Malyutka"
- RUS_rocket_interceptor_equipment_2_short:0 "Malyutka"
- RUS_rocket_interceptor_equipment_3:0 "Mikoyan-Guerevich I-270"
- RUS_rocket_interceptor_equipment_3_short:0 "I-270"
+ SOV_rocket_interceptor_equipment_1:0 "Bereznyak-Isayev BI-1"
+ SOV_rocket_interceptor_equipment_1_short:0 "BI-1" 
+ SOV_rocket_interceptor_equipment_2:0 "Polikarpov Malyutka"
+ SOV_rocket_interceptor_equipment_2_short:0 "Malyutka"
+ SOV_rocket_interceptor_equipment_3:0 "Mikoyan-Guerevich I-270"
+ SOV_rocket_interceptor_equipment_3_short:0 "I-270"
  
 #-> Jet fighters <><>
- RUS_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9"
- RUS_jet_fighter_equipment_1_short:0 "MiG-9"
- RUS_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15"
- RUS_jet_fighter_equipment_2_short:0 "MiG-15"
- RUS_jet_fighter_equipment_x:0 "Mikoyan-Guerevich MiG-19"
- RUS_jet_fighter_equipment_x_short:0 "MiG-19"
+ SOV_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9"
+ SOV_jet_fighter_equipment_1_short:0 "MiG-9"
+ SOV_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15"
+ SOV_jet_fighter_equipment_2_short:0 "MiG-15"
+ SOV_jet_fighter_equipment_x:0 "Mikoyan-Guerevich MiG-19"
+ SOV_jet_fighter_equipment_x_short:0 "MiG-19"
  
 #-> Carrier-based jet fighters <><>
- RUS_cv_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9A"
- RUS_cv_jet_fighter_equipment_1_short:0 "MiG-9A"
- RUS_cv_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15A"
- RUS_cv_jet_fighter_equipment_2_short:0 "MiG-15A"
- RUS_cv_jet_fighter_equipment_x:0 "Mikoyan-Guerevich MiG-19A"
- RUS_cv_jet_fighter_equipment_x_short:0 "MiG-19A" 
+ SOV_cv_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9A"
+ SOV_cv_jet_fighter_equipment_1_short:0 "MiG-9A"
+ SOV_cv_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15A"
+ SOV_cv_jet_fighter_equipment_2_short:0 "MiG-15A"
+ SOV_cv_jet_fighter_equipment_x:0 "Mikoyan-Guerevich MiG-19A"
+ SOV_cv_jet_fighter_equipment_x_short:0 "MiG-19A" 
  
 #-> Jet medium bomber <><>
- RUS_jet_tac_bomber_equipment_1:0 "Ilyushin Il-28"
- RUS_jet_tac_bomber_equipment_1_short:0 "Il-28"
- RUS_jet_tac_bomber_equipment_2:0 "Tupolev Tu-16"
- RUS_jet_tac_bomber_equipment_2_short:0 "Tu-16"
+ SOV_jet_tac_bomber_equipment_1:0 "Ilyushin Il-28"
+ SOV_jet_tac_bomber_equipment_1_short:0 "Il-28"
+ SOV_jet_tac_bomber_equipment_2:0 "Tupolev Tu-16"
+ SOV_jet_tac_bomber_equipment_2_short:0 "Tu-16"
  
 #-> Jet heavy bomber <><>
- RUS_jet_strat_bomber_equipment_1:0 "Myasishchev M-4"
- RUS_jet_strat_bomber_equipment_1_short:0 "M-4"
+ SOV_jet_strat_bomber_equipment_1:0 "Myasishchev M-4"
+ SOV_jet_strat_bomber_equipment_1_short:0 "M-4"
 
 
 ###--->  MON  <><> <><> <><>
@@ -9098,6 +9264,8 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
  MON_transport_plane_equipment_2_short:0 "Li-2"
 
 #-> Dive bombers <><>
+ MON_CAS_equipment_0:0 "Polikarpov R-5"
+ MON_CAS_equipment_0_short:0 "R-5"
  MON_CAS_equipment_1:0 "Sukhoi Su-2"
  MON_CAS_equipment_1_short:0 "Su-2"
  MON_CAS_equipment_2:0 "Ilyushin IL-2"
@@ -9106,6 +9274,8 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
  MON_CAS_equipment_3_short:0 "IL-10"
  
 #-> Carrier-based dive bombers <><>
+ MON_cv_CAS_equipment_0:0 "Polikarpov R-5A"
+ MON_cv_CAS_equipment_0_short:0 "R-5A"
  MON_cv_CAS_equipment_1:0 "Sukhoi Su-2A"
  MON_cv_CAS_equipment_1_short:0 "Su-2A"
  MON_cv_CAS_equipment_2:0 "Ilyushin Il-2A"
@@ -9264,6 +9434,8 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
  TAN_transport_plane_equipment_2_short:0 "Li-2"
 
 #-> Dive bombers <><>
+ TAN_CAS_equipment_0:0 "Polikarpov R-5"
+ TAN_CAS_equipment_0_short:0 "R-5"
  TAN_CAS_equipment_1:0 "Sukhoi Su-2"
  TAN_CAS_equipment_1_short:0 "Su-2"
  TAN_CAS_equipment_2:0 "Ilyushin IL-2"
@@ -9272,6 +9444,8 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
  TAN_CAS_equipment_3_short:0 "IL-10"
  
 #-> Carrier-based dive bombers <><>
+ TAN_cv_CAS_equipment_0:0 "Polikarpov R-5A"
+ TAN_cv_CAS_equipment_0_short:0 "R-5A"
  TAN_cv_CAS_equipment_1:0 "Sukhoi Su-2A"
  TAN_cv_CAS_equipment_1_short:0 "Su-2A"
  TAN_cv_CAS_equipment_2:0 "Ilyushin Il-2A"
@@ -10027,7 +10201,7 @@ JAP_jet_strat_bomber_equipment_1:0 "Kawanishi K-200"
  USA_cv_CAS_equipment_3_short:0 "Helldiver"
  
 #-> Light fighters <><> 
- USA_fighter_equipment_0:0 "Curtiss P-1 Hawk"
+ USA_fighter_equipment_0:0 "Curtiss P-6 Hawk"
  USA_fighter_equipment_0_short:0 "Hawk"
  USA_fighter_equipment_1:0 "Curtiss P-36 Hawk"
  USA_fighter_equipment_1_short:0 "Hawk"

@@ -11,11 +11,7 @@
 	"00_categories.txt": [],
 	"r56_categories.txt": []
     },
-    "common/units/equipment/modules/": {
-      "00_r56_plane_modules.txt": []
-    },
     "common/units/equipment/upgrades/": {
-        "air_upgrades.txt": [],
         "r56e_upgrades.txt": []
     },
     "localisation/english/": {
@@ -23,7 +19,12 @@
     },
     "localisation/english/replace/": {
 	"r56_modifiers_l_english.yml": ["localisation/english/",
-					  "r56_modifiers_l_english.yml"]
+					"r56_modifiers_l_english.yml"],
+	"r56e_technology_l_english.yml": ["localisation/english/",
+					  "r56e_technology_l_english.yml"],
+	"r56e_buildings_l_english.yml": ["localisation/english/",
+					  "r56e_buildings_l_english.yml"],
+	
     },
     "gfx/interface/buildings/": {
         "r56_building_icon_strip.dds": []

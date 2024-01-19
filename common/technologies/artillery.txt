@@ -302,6 +302,7 @@ technologies = {
         }
         enable_equipment_modules = {
             tank_medium_howitzer_2
+            tank_medium_cannon_2
             
         }
         path = {
@@ -345,10 +346,6 @@ technologies = {
     artillery4 = {
         enable_equipments = {
             artillery_equipment_3
-            
-        }
-        enable_equipment_modules = {
-            tank_medium_cannon_2
             
         }
         path = {
@@ -739,6 +736,10 @@ technologies = {
             
         }
         tech_air_damage_factor = -0.015
+        enable_equipment_modules = {
+            tank_high_velocity_cannon
+            
+        }
         path = {
             leads_to_tech = antiair2
             research_cost_coeff = 1
@@ -823,6 +824,7 @@ technologies = {
         }
         enable_equipment_modules = {
             tank_heavy_cannon_2
+            tank_high_velocity_cannon_2
             
         }
         tech_air_damage_factor = -0.015
@@ -906,7 +908,6 @@ technologies = {
         static_anti_air_damage_factor = 0.1
         enable_equipment_modules = {
             ship_anti_air_4
-            tank_heavy_cannon_3
             tank_anti_air_cannon_3
             auto_loader
             
@@ -1245,6 +1246,7 @@ technologies = {
             tank_high_velocity_cannon_3
             tank_heavy_cannon_3
             auto_loader
+            tank_medium_cannon_3
             
         }
         path = {
@@ -1492,6 +1494,12 @@ technologies = {
     antitank_c = {
         enable_equipments = {
             anti_tank_equipment_x
+            
+        }
+        enable_equipment_modules = {
+            tank_heavy_cannon_4
+            tank_high_velocity_cannon_4
+            tank_medium_cannon_4
             
         }
         path = {
@@ -1803,6 +1811,10 @@ technologies = {
             }
             
         }
+        enable_equipment_modules = {
+            tank_medium_cannon_3
+            
+        }
         categories = {
             artillery
             standard_artillery_tech
@@ -1896,6 +1908,10 @@ technologies = {
         }
         mot_artillery_brigade = {
             soft_attack = 0.1
+            
+        }
+        enable_equipment_modules = {
+            tank_medium_cannon_4
             
         }
         path = {
@@ -2187,6 +2203,11 @@ technologies = {
             research_cost_coeff = 1
             
         }
+        enable_equipment_modules = {
+            tank_heavy_cannon_3
+            tank_high_velocity_cannon_3
+            
+        }
         anti_air = {
             air_attack = 0.1
             
@@ -2310,6 +2331,10 @@ technologies = {
         }
         mot_anti_air_brigade = {
             air_attack = 0.1
+            
+        }
+        enable_equipment_modules = {
+            tank_high_velocity_cannon_4
             
         }
         tech_air_damage_factor = -0.005

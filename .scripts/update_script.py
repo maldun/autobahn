@@ -11,9 +11,9 @@ HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
 
 
-HOI4_FOLDER = HOME + ".local/share/Steam/steamapps/common/Hearts of Iron IV/"
-KR_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/1521695605/"
-KX_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/2076426030/"
+HOI4_FOLDER = HOME + "SSD/SteamLibrary/steamapps/common/Hearts of Iron IV/"
+KR_FOLDER = HOME + "SSD/SteamLibrary/steamapps/workshop/content/394360/1521695605/"
+KX_FOLDER = HOME + "SSD/SteamLibrary/steamapps/workshop/content/394360/2076426030/"
 #RT56_FOLDER = HOME + ".local/share/Steam/steamapps/workshop/content/394360/820260968/"
 RT56_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/1956_beta/"
 

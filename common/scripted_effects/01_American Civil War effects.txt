@@ -8493,9 +8493,9 @@ USA_starting_techs = {
         basic_train = 1
         steel_production_1 = 1
         aluminum_production_1 = 1
+        r56_railway_mortar_subtech = 1
         transport_plane1 = 1
         etax_doctrine = 1
-        r56_railway_mortar_subtech = 1
         r56_gw_railway_gun = 1
         camo = 1
         
@@ -8518,9 +8518,9 @@ USA_starting_techs = {
             air_torpedoe_1 = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             etax_doctrine = 1
-            r56_railway_mortar_subtech = 1
             r56_gw_railway_gun = 1
             camo = 1
             
@@ -8538,9 +8538,9 @@ USA_starting_techs = {
             early_bomber = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             etax_doctrine = 1
-            r56_railway_mortar_subtech = 1
             r56_gw_railway_gun = 1
             camo = 1
             
@@ -8558,9 +8558,9 @@ USA_starting_techs = {
             engine_tech_1 = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             etax_doctrine = 1
-            r56_railway_mortar_subtech = 1
             r56_gw_railway_gun = 1
             camo = 1
             
@@ -8574,9 +8574,9 @@ USA_starting_techs = {
             basic_light_tank = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             etax_doctrine = 1
-            r56_railway_mortar_subtech = 1
             r56_gw_railway_gun = 1
             camo = 1
             
@@ -8615,9 +8615,9 @@ USA_starting_techs = {
             mtg_transport = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             etax_doctrine = 1
-            r56_railway_mortar_subtech = 1
             r56_gw_railway_gun = 1
             camo = 1
             
@@ -8642,9 +8642,9 @@ USA_starting_techs = {
             transport = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             etax_doctrine = 1
-            r56_railway_mortar_subtech = 1
             r56_gw_railway_gun = 1
             camo = 1
             

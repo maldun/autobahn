@@ -37,6 +37,11 @@ l_english:
   standard_artillery_tech:0 "Line Artillery Technologies"
   anti_air_tech:0 "Anti-aircraft Artillery Technologies" 
   amphibious_armor_tech:0 "Amphibious Armor Technologies"
+  railway_construction_tech:0 "Railway Construction Technologies"
+  r56_rdf:0 "Radio Direction Finding"
+  cat_shocktroops_doctrine:0 "Shock Troop Doctrine"
+  category_shocktroops:0 "§YAll Shock Troops§!"
+ 
 
 ### Extra Special Forced Tech Categories
  r56_desert_infantry_tech:0 "Desert Infantry"
@@ -100,20 +105,6 @@ l_english:
  
  
 ###------> Infantry   <><> <><> <><> <><> <><>
- anti_tank_infantry_weapons:0 "Portable Anti-Tank Weapons"
- infantry_at_a:0 "Infantry Anti-Tank III"
- infantry_at_a_desc:0 "Aim steady, don't dare breathe. Fire - and then run like hell."
- infantry_at_b:0 "Infantry Anti-Tank IV"
- infantry_at_b_desc:0 "Aim steady, don't dare breathe. Fire - and then run like hell."
- infantry_at_c:0 "Infantry Anti-Tank V"
- infantry_at_c_desc:0 "Aim steady, don't dare breathe. Fire - and then run like hell."
-#-<><><>
- advanced_infantry_weapons_a:0 "Advanced Infantry Equipment"
- advanced_infantry_weapons_a_desc:0 "The guns, thank God, the guns..."
- advanced_infantry_weapons_c:0 "Semi-Modern Infantry Equipment"
- advanced_infantry_weapons_c_desc:0 "The guns, thank God, the guns..."
- advanced_infantry_weapons_d:0 "Modern Infantry Equipment"
- advanced_infantry_weapons_d_desc:0 "The guns, thank God, the guns..."
 #-<><><>
  paratroopers_a:0 "Paratroopers IV"
  paratroopers_a_desc:0 "What goes up must come down."
@@ -135,14 +126,7 @@ l_english:
  mountaineers_b_desc:0 "'One more hill'? Yeah, that's the name of the mountain we need to climb."
  mountaineers_c:0 "Mountain Infantry VI"
  mountaineers_c_desc:0 "'One more hill'? Yeah, that's the name of the mountain we need to climb."
-#-<><><>
- support_weapons_a:0 "Support Weapons V"
- support_weapons_a_desc:0 "We've managed to put together an even better kit, much to the relief of our troops on the front lines."
- support_weapons_b:0 "Support Weapons VI"
- support_weapons_b_desc:0 "We've managed to put together an even better kit, much to the relief of our troops on the front lines."
- support_weapons_c:0 "Support Weapons VII"
- support_weapons_c_desc:0 "We've managed to put together an even better kit, much to the relief of our troops on the front lines."
- 
+
 #-<><><>
  night_vision_a:0 "Night Vision III"
  night_vision_a_desc:0 "The ability to see the enemy while they cannot is paramount. This new technology helps us toward that goal."
@@ -406,7 +390,7 @@ l_english:
  etax_cost_plus:0 "Cost Plus"
  etax_cost_plus_desc:0 "As long as the money keeps flowing through thick and thin, our businesses will continue to deliver."
  etax_production_in_depth:0 "Supply Chain"
- etax_production_in_depth_desc:0 "We can pull from a vast array of sources to build our goods and equipment, and the sheer depth of it is such that the enemy can't hope to cut us off."
+ etax_production_in_depth_desc:0 "By making sure we reuse materials localy we can keep our production going, even if not all materials make it to the factory."
 
  etax_unity:0 "Common Cause"
  etax_unity_desc:0 "Everyone fights for the same purpose, which keeps our forces going for longer and harder than any would expect."
@@ -460,9 +444,6 @@ l_english:
 
  shocktroop:0"Shock Troops"
  shocktroop_desc:0"Shock Troops can smash into Enemy lines to achieve a breakthrough. This is almost essential to any form of Deep-Battle and can significantly contribute to throwing the defenders into disarray."
-
- flamethrower:0"Flamethrower Support"
- flamethrower_desc:0"Flamethrowers can be of great help in close combat. It can be very costly to clear Houses and Fortifications with regular Infantry Units. The Flamethrower will significantly aid in such tasks and close-range combat against soft Units in general."
 
  jaegers:0"Jaeger Infantry I"
  jaegers_desc:0"Jaegers are forces that specialize in surviving the cold and the wilderness of the boreal forest. Usually, these troops are native to their territory and take longer to train. \n \n§GThis unit type does not count toward the Special Forces cap but instead requires 5 Support Equipment per Battalion§!"
@@ -551,6 +532,9 @@ l_english:
  bed_spring_skirt_4:0 "Modern Armour Skirts"
  bed_spring_skirt_4_short:0 "Mod. Armour Skirts"
  bed_spring_skirt_4_desc:0 "We will improve armor by replacing the metal plates with even lighter materials, removing the extra weight from the previous upgrade."
+ oscillating_turret_tech: "Oscillating Turret"
+ oscillating_turret_tech_desc: "The oscillating turret allows the entire turret to be raised and lowered with the gun, allowing for the gun to be fitted higher as connected machinery will move along with it, creating the possibility to fit larger guns and to aim at a larger range of inclination."
+ modern_light_tank_chassis: "1944 Light"
  
  sniper_rifle:0 "Sniper Team"
  sniper_rifle_desc:0 "Adding a sniper unit in each platoon will effectively increase the unit's recon ability and attack."
@@ -560,7 +544,7 @@ l_english:
  sniper_rifle_3_desc:0 "Our Sniper Teams' extensive experience and feedback have enabled us to produce even better equipment."
  sniper_rifle_4:0 "Modern Sniper Team"
  sniper_rifle_4_desc:0 "Our teams have the very best equipment and employ nothing less than modern equipment."
- 
+
  flamethrower:0 "Flamethrower"
  flamethrower_desc:0 "Developing flamethrowers will allow our troops to be more effective in urban warfare and against forts. But running with a tank full of fuel on your back and ready to explode can have catastrophic consequences."
  flamethrower_squad:0 "Flamethrower Squad"

@@ -11,11 +11,7 @@
 	"00_categories.txt": [],
 	"r56_categories.txt": []
     },
-    "common/units/equipment/modules/": {
-      "00_r56_plane_modules.txt": []
-    },
     "common/units/equipment/upgrades/": {
-        "air_upgrades.txt": [],
         "r56e_upgrades.txt": []
     },
     "localisation/english/": {

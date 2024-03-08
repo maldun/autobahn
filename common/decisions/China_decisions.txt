@@ -317,6 +317,11 @@ chinese_unification = {
                     has_country_flag = YUN_larp
                     
                 }
+                AND = {
+                    tag = TAN
+                    has_cosmetic_tag = MON_YUA
+                    
+                }
                 
             }
             

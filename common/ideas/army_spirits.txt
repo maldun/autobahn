@@ -494,6 +494,38 @@ ideas = {
             }
             
         }
+        NOR_flexible_officers_academy_spirit = {
+            ledger = army
+            available = {
+                has_military_academy = yes
+                has_completed_focus = NOR_officers_academy
+                
+            }
+            visible = {
+                NOR_AAT = yes
+                
+            }
+            modifier = {
+                army_leader_start_level = 2
+                promote_cost_factor = -0.3
+                reassignment_duration_factor = -0.3
+                skill_bonus_factor = 0.1
+                
+            }
+            ai_will_do = {
+                base = 1
+                modifier = {
+                    factor = 0
+                    NOT = {
+                        has_dlc = "No Step Back"
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
         
     }
     army_spirit = {
@@ -690,7 +722,9 @@ ideas = {
                 
             }
             modifier = {
-                army_advisor_cost_factor = -0.75
+                experience_gain_army_factor = 0.25
+                army_advisor_cost_factor = -0.25
+                reassignment_duration_factor = -0.25
                 
             }
             ai_will_do = {
@@ -1063,8 +1097,8 @@ ideas = {
             }
             modifier = {
                 experience_gain_infantry_combat_factor = 0.05
-                special_forces_cap = 0.1
-                special_forces_training_time_factor = 0.2
+                special_forces_cap = 0.05
+                special_forces_training_time_factor = 0.1
                 special_forces_out_of_supply_factor = -0.1
                 
             }
@@ -1465,10 +1499,13 @@ ideas = {
             }
             modifier = {
                 tactic_guerrilla_tactics_preferred_weight_factor = 1
-                supply_consumption_factor = -0.05
-                experience_gain_infantry_combat_factor = 0.05
+                tactic_double_envelopment_preferred_weight_factor = 1
+                out_of_supply_factor = -0.1
+                experience_gain_militia_combat_factor = 0.1
+                equipment_capture_factor = 0.1
+                recon_factor_while_entrenched = 0.1
+                no_supply_grace = 24
                 pocket_penalty = -0.1
-                boost_resistance_factor = 0.1
                 
             }
             ai_will_do = {

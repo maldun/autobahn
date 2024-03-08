@@ -59,24 +59,23 @@ ideas = {
         
     }
     division_command_spirit = {
-        reichspakt_defense_spirit = {
+        gekokujo_spirit = {
             ledger = army
-            picture = political_connections_spirit
+            picture = japanese_influence_1
             visible = {
-                is_in_faction_with = GER
-                GER = {
-                    is_faction_leader = yes
-                    
-                }
+                tag = JAP
                 
             }
             modifier = {
-                army_org_factor = 0.1
+                pocket_penalty = -0.15
                 army_morale_factor = 0.05
+                experience_loss_factor = -0.3
+                initiative_factor = 0.1
+                terrain_penalty_reduction = 0.1
                 
             }
             ai_will_do = {
-                factor = 2
+                factor = 15
                 
             }
             available = {
@@ -120,23 +119,24 @@ ideas = {
             }
             
         }
-        gekokujo_spirit = {
+        reichspakt_defense_spirit = {
             ledger = army
-            picture = japanese_influence_1
+            picture = political_connections_spirit
             visible = {
-                tag = JAP
+                is_in_faction_with = GER
+                GER = {
+                    is_faction_leader = yes
+                    
+                }
                 
             }
             modifier = {
-                pocket_penalty = -0.15
+                army_org_factor = 0.1
                 army_morale_factor = 0.05
-                experience_loss_factor = -0.3
-                initiative_factor = 0.1
-                terrain_penalty_reduction = 0.1
                 
             }
             ai_will_do = {
-                factor = 15
+                factor = 2
                 
             }
             available = {

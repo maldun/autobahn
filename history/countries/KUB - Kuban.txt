@@ -431,6 +431,20 @@ create_field_marshal = {
     id = 622
     
 }
+create_navy_leader = {
+    name = "Grigory Shchedrin"
+    portrait_path = "gfx/leaders/KUB/Portrait_KUB_Grigory_Shchedrin.png"
+    traits = {
+        seawolf
+        
+    }
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    maneuvering_skill = 1
+    coordination_skill = 1
+    
+}
 every_unit_leader = {
     limit = {
         OR = {

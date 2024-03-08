@@ -216,11 +216,6 @@ country_event = {
     
 }
 country_event = {
-    id = csa.90002
-    days = 180
-    
-}
-country_event = {
     id = csa.257
     days = 3322
     

@@ -531,6 +531,11 @@ country_event = {
     days = 1860
     
 }
+country_event = {
+    id = miscnee.193
+    days = 410
+    
+}
 create_field_marshal = {
     name = "John J. Pershing "
     portrait_path = "gfx/leaders/NEE/Portrait_NEE_John_Pershing.png"

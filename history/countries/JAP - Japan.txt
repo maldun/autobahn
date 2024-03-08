@@ -312,11 +312,6 @@ add_dynamic_modifier = {
     scope = FNG
     
 }
-add_dynamic_modifier = {
-    modifier = TRM_japanese_profits_modifier
-    scope = TRM
-    
-}
 add_opinion_modifier = {
     target = LEC
     modifier = LEC_member
@@ -327,6 +322,12 @@ LEC = {
     
 }
 give_guarantee = LEC
+diplomatic_relation = {
+    country = TRM
+    relation = docking_rights
+    active = yes
+    
+}
 set_country_flag = legation_council_vote
 set_country_flag = JAP_Obata_Toshiro_dead
 set_country_flag = Nagata_Tetsuzan_dead
@@ -1084,6 +1085,22 @@ create_corps_commander = {
     id = 1502
     
 }
+create_corps_commander = {
+    name = "Oi Shigemoto"
+    portrait_path = "gfx/leaders/JAP/Portrait_JAP_Oi_Shigemoto.png"
+    traits = {
+        infantry_officer
+        infantry_leader
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 4
+    id = 1514
+    
+}
 create_navy_leader = {
     name = "Yamamoto Isoroku"
     portrait_path = "gfx/leaders/JAP/Portrait_JAP_Isoroku_Yamamoto.png"
@@ -1227,6 +1244,14 @@ create_navy_leader = {
     defense_skill = 3
     maneuvering_skill = 2
     coordination_skill = 3
+    
+}
+random_unit_leader = {
+    limit = {
+        has_id = 1514
+        
+    }
+    set_nationality = TRM
     
 }
 JAP_start_naval_variant = yes

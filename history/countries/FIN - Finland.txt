@@ -161,6 +161,11 @@ country_event = {
     days = 354
     
 }
+country_event = {
+    id = finland.172
+    days = 411
+    
+}
 set_cosmetic_tag = FIN_kingdom
 add_opinion_modifier = {
     target = RUS

@@ -341,6 +341,11 @@ chinese_unification = {
                     days = 1
                     
                 }
+                add_timed_idea = {
+                    idea = unite_china_justification_idea
+                    days = 150
+                    
+                }
                 
             }
             else_if = {
@@ -356,6 +361,33 @@ chinese_unification = {
                 country_event = {
                     id = kumul.200
                     days = 1
+                    
+                }
+                add_timed_idea = {
+                    idea = unite_china_justification_idea
+                    days = 150
+                    
+                }
+                
+            }
+            else_if = {
+                limit = {
+                    tag = HNN
+                    has_country_leader = {
+                        name = "Tang Shengzhi"
+                        ruling_only = yes
+                        
+                    }
+                    
+                }
+                set_cosmetic_tag = HNN_Budina
+                set_capital = {
+                    state = 608
+                    
+                }
+                add_timed_idea = {
+                    idea = unite_china_justification_idea
+                    days = 150
                     
                 }
                 
@@ -924,6 +956,10 @@ chinese_unification = {
                     china_is_potential_government = yes
                     
                 }
+                
+            }
+            NOT = {
+                has_completed_focus = LEP_AOG_supremacy
                 
             }
             

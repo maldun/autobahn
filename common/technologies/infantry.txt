@@ -1121,6 +1121,13 @@ technologies = {
             research_cost_coeff = 1
             
         }
+        allow_branch = {
+            not = {
+                has_dlc = "Arms Against Tyranny"
+                
+            }
+            
+        }
         research_cost = 2
         start_year = 1938
         folder = {
@@ -2857,7 +2864,7 @@ technologies = {
     jungletroops2 = {
         jungletroop = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -2911,7 +2918,7 @@ technologies = {
     jungletroops3 = {
         jungletroop = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -2965,7 +2972,7 @@ technologies = {
     jungletroops4 = {
         jungletroop = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -3019,7 +3026,7 @@ technologies = {
     jungletroops5 = {
         jungletroop = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -3073,7 +3080,7 @@ technologies = {
     jungletroops6 = {
         jungletroop = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -3494,12 +3501,10 @@ technologies = {
             
         }
         mot_shocktroop = {
-            max_organisation = 2
             soft_attack = 0.03
             
         }
         mech_shocktroop = {
-            max_organisation = 2
             soft_attack = 0.03
             
         }
@@ -3615,12 +3620,10 @@ technologies = {
             
         }
         mot_shocktroop = {
-            max_organisation = 2
             soft_attack = 0.03
             
         }
         mech_shocktroop = {
-            max_organisation = 2
             soft_attack = 0.03
             
         }
@@ -3696,8 +3699,7 @@ technologies = {
             
         }
         category_all_infantry = {
-            acclimatization_cold_climate_gain_factor = 0.15
-            default_morale = 0.01
+            acclimatization_cold_climate_gain_factor = 0.05
             
         }
         modifier = {
@@ -3747,8 +3749,7 @@ technologies = {
             
         }
         category_all_infantry = {
-            acclimatization_cold_climate_gain_factor = 0.15
-            default_morale = 0.01
+            acclimatization_cold_climate_gain_factor = 0.05
             
         }
         modifier = {
@@ -3798,8 +3799,7 @@ technologies = {
             
         }
         category_all_infantry = {
-            acclimatization_cold_climate_gain_factor = 0.15
-            default_morale = 0.01
+            acclimatization_cold_climate_gain_factor = 0.05
             
         }
         modifier = {
@@ -3844,8 +3844,7 @@ technologies = {
     }
     winter_clothes_1944 = {
         category_all_infantry = {
-            acclimatization_cold_climate_gain_factor = 0.15
-            default_morale = 0.01
+            acclimatization_cold_climate_gain_factor = 0.05
             
         }
         modifier = {
@@ -3949,7 +3948,7 @@ technologies = {
         jaeger = {
             acclimatization_cold_climate_gain_factor = 0.2
             soft_attack = 0.02
-            default_morale = 0.02
+            defense = 0.02
             
         }
         path = {
@@ -3993,7 +3992,7 @@ technologies = {
         jaeger = {
             acclimatization_cold_climate_gain_factor = 0.2
             soft_attack = 0.02
-            default_morale = 0.02
+            defense = 0.02
             
         }
         path = {
@@ -4037,7 +4036,7 @@ technologies = {
         jaeger = {
             acclimatization_cold_climate_gain_factor = 0.2
             soft_attack = 0.02
-            default_morale = 0.02
+            defense = 0.02
             
         }
         path = {
@@ -4081,7 +4080,7 @@ technologies = {
         jaeger = {
             acclimatization_cold_climate_gain_factor = 0.2
             soft_attack = 0.02
-            default_morale = 0.02
+            defense = 0.02
             
         }
         path = {
@@ -4125,7 +4124,7 @@ technologies = {
         jaeger = {
             acclimatization_cold_climate_gain_factor = 0.2
             soft_attack = 0.02
-            default_morale = 0.02
+            defense = 0.02
             
         }
         research_cost = 2.0
@@ -4177,8 +4176,7 @@ technologies = {
             
         }
         category_all_infantry = {
-            acclimatization_hot_climate_gain_factor = 0.15
-            default_morale = 0.01
+            acclimatization_hot_climate_gain_factor = 0.05
             
         }
         modifier = {
@@ -4224,8 +4222,7 @@ technologies = {
             
         }
         category_all_infantry = {
-            acclimatization_hot_climate_gain_factor = 0.15
-            default_morale = 0.01
+            acclimatization_hot_climate_gain_factor = 0.05
             
         }
         modifier = {
@@ -4271,8 +4268,7 @@ technologies = {
             
         }
         category_all_infantry = {
-            acclimatization_hot_climate_gain_factor = 0.15
-            default_morale = 0.01
+            acclimatization_hot_climate_gain_factor = 0.05
             
         }
         modifier = {
@@ -4313,8 +4309,7 @@ technologies = {
     }
     jngdst_clothes_1944 = {
         category_all_infantry = {
-            acclimatization_hot_climate_gain_factor = 0.15
-            default_morale = 0.01
+            acclimatization_hot_climate_gain_factor = 0.05
             
         }
         modifier = {
@@ -4421,7 +4416,7 @@ technologies = {
     desertinfantry_at2 = {
         desertinfantry = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -4473,7 +4468,7 @@ technologies = {
     desertinfantry_at3 = {
         desertinfantry = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -4525,7 +4520,7 @@ technologies = {
     desertinfantry_at4 = {
         desertinfantry = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -4555,7 +4550,7 @@ technologies = {
     desertinfantry_at5 = {
         desertinfantry = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -4607,7 +4602,7 @@ technologies = {
     desertinfantry_at6 = {
         desertinfantry = {
             acclimatization_hot_climate_gain_factor = 0.2
-            default_morale = 0.02
+            defense = 0.02
             soft_attack = 0.02
             
         }
@@ -4658,13 +4653,13 @@ technologies = {
             
         }
         category_all_infantry = {
-            default_morale = 0.02
+            ap_attack = 0.02
             breakthrough = 0.02
             hard_attack = 0.02
             
         }
         category_support_battalions = {
-            default_morale = 0.02
+            ap_attack = 0.02
             breakthrough = 0.02
             hard_attack = 0.02
             
@@ -4694,13 +4689,13 @@ technologies = {
     }
     camo1942 = {
         category_all_infantry = {
-            default_morale = 0.02
+            ap_attack = 0.02
             breakthrough = 0.02
             hard_attack = 0.02
             
         }
         category_support_battalions = {
-            default_morale = 0.02
+            ap_attack = 0.02
             breakthrough = 0.02
             hard_attack = 0.02
             
@@ -4735,13 +4730,13 @@ technologies = {
     }
     camo1948 = {
         category_all_infantry = {
-            default_morale = 0.02
+            ap_attack = 0.02
             breakthrough = 0.02
             hard_attack = 0.02
             
         }
         category_support_battalions = {
-            default_morale = 0.02
+            ap_attack = 0.02
             breakthrough = 0.02
             hard_attack = 0.02
             
@@ -4776,13 +4771,13 @@ technologies = {
     }
     camo1955 = {
         category_all_infantry = {
-            default_morale = 0.02
+            ap_attack = 0.02
             breakthrough = 0.02
             hard_attack = 0.02
             
         }
         category_support_battalions = {
-            default_morale = 0.02
+            ap_attack = 0.02
             breakthrough = 0.02
             hard_attack = 0.02
             

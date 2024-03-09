@@ -41,9 +41,9 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 1
+            factor = 5
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -54,22 +54,22 @@ technologies = {
             }
             modifier = {
                 factor = 1.2
-                date > "1937.1.1"
+                date > 1937-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1938.1.1"
+                date > 1938-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1939.1.1"
+                date > 1939-01-01
                 
             }
             modifier = {
                 factor = 5
-                date > "1940.1.1"
+                date > 1940-01-01
                 
             }
             
@@ -193,7 +193,7 @@ technologies = {
         ai_will_do = {
             factor = 2
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -270,7 +270,7 @@ technologies = {
         ai_will_do = {
             factor = 2
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -347,7 +347,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -409,7 +409,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -471,7 +471,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -533,7 +533,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -595,7 +595,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -656,7 +656,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -702,7 +702,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -753,7 +753,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -804,7 +804,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -855,7 +855,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -905,7 +905,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1011,7 +1011,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1077,7 +1077,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1144,12 +1144,12 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
             modifier = {
-                factor = 5
+                factor = 3
                 has_tech = basic_medium_airframe
                 
             }
@@ -1191,7 +1191,7 @@ technologies = {
         ai_will_do = {
             factor = 2
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1248,7 +1248,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1320,7 +1320,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1398,7 +1398,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1454,7 +1454,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1529,7 +1529,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1622,7 +1622,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1697,7 +1697,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1772,7 +1772,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1865,7 +1865,7 @@ technologies = {
         ai_will_do = {
             factor = 5
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -1953,7 +1953,7 @@ technologies = {
         ai_will_do = {
             factor = 5
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -2046,7 +2046,7 @@ technologies = {
         ai_will_do = {
             factor = 5
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -2134,7 +2134,7 @@ technologies = {
         ai_will_do = {
             factor = 5
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -2220,7 +2220,7 @@ technologies = {
         ai_will_do = {
             factor = 5
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }
@@ -2309,7 +2309,7 @@ technologies = {
         ai_will_do = {
             factor = 5
             modifier = {
-                factor = 0
+                factor = 0.1
                 is_eligible_for_light_aircraft_production = no
                 
             }

@@ -1403,7 +1403,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 2
+                factor = 5
                 is_major = yes
                 
             }
@@ -1459,7 +1459,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 3
+                factor = 10
                 is_major = yes
                 
             }
@@ -1534,7 +1534,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 3
+                factor = 50
                 is_major = yes
                 
             }
@@ -1627,7 +1627,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 3
+                factor = 5
                 is_major = yes
                 
             }
@@ -1702,7 +1702,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 3
+                factor = 5
                 is_major = yes
                 
             }
@@ -1777,7 +1777,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 3
+                factor = 5
                 is_major = yes
                 
             }
@@ -1958,7 +1958,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 2
+                factor = 5
                 is_major = yes
                 
             }
@@ -2051,7 +2051,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 2
+                factor = 100
                 is_major = yes
                 
             }
@@ -2139,7 +2139,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 2
+                factor = 5
                 is_major = yes
                 
             }

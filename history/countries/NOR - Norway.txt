@@ -1,7 +1,7 @@
 capital = 110
 set_research_slots = 3
 set_stability = 0.9
-set_war_support = 0.1
+set_war_support = 0.15
 set_convoys = 500
 starting_train_buffer = 2
 oob = "NOR"

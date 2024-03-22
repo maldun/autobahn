@@ -28,6 +28,10 @@
     },
     "gfx/interface/buildings/": {
         "r56_building_icon_strip.dds": []
+    },
+        "common/defines/": {
+        "r56_defines.lua": [],
+        "r56_spm_defines.lua": []
     }
 }
     

@@ -245,6 +245,7 @@ recruit_character = FOP_candido_testa
 recruit_character = FOP_alvaro_yunque
 recruit_character = FOP_rodolfo_gonzalez_pacheco
 recruit_character = FOP_roberto_noble
+recruit_character = FOP_consejo_del_reino
 recruit_character = FOP_geronimo_arnedo_alvarez
 recruit_character = FOP_diego_abad_de_santillan
 recruit_character = FOP_antonio_de_tomaso
@@ -255,6 +256,10 @@ FOP_jacques_antoine_bernard = {
 }
 every_character = {
     limit = {
+        NOT = {
+            is_character = FOP_consejo_del_reino
+            
+        }
         OR = {
             is_advisor = yes
             is_unit_leader = yes

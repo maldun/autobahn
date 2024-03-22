@@ -2350,6 +2350,11 @@ USA_civil_war_begins = {
                     days = 30
                     
                 }
+                country_event = {
+                    id = amcivwar.63
+                    days = 6
+                    
+                }
                 if = {
                     limit = {
                         NOT = {
@@ -8492,11 +8497,11 @@ USA_starting_techs = {
         tech_mountaineers = 1
         basic_train = 1
         steel_production_1 = 1
-        aluminum_production_1 = 1
         r56_railway_mortar_subtech = 1
+        aluminum_production_1 = 1
         transport_plane1 = 1
-        etax_doctrine = 1
         r56_gw_railway_gun = 1
+        etax_doctrine = 1
         camo = 1
         
     }
@@ -8517,11 +8522,11 @@ USA_starting_techs = {
             aircraft_construction = 1
             air_torpedoe_1 = 1
             steel_production_1 = 1
-            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            aluminum_production_1 = 1
             transport_plane1 = 1
-            etax_doctrine = 1
             r56_gw_railway_gun = 1
+            etax_doctrine = 1
             camo = 1
             
         }
@@ -8537,11 +8542,11 @@ USA_starting_techs = {
             CAS1 = 1
             early_bomber = 1
             steel_production_1 = 1
-            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            aluminum_production_1 = 1
             transport_plane1 = 1
-            etax_doctrine = 1
             r56_gw_railway_gun = 1
+            etax_doctrine = 1
             camo = 1
             
         }
@@ -8557,11 +8562,11 @@ USA_starting_techs = {
             basic_light_tank_chassis = 1
             engine_tech_1 = 1
             steel_production_1 = 1
-            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            aluminum_production_1 = 1
             transport_plane1 = 1
-            etax_doctrine = 1
             r56_gw_railway_gun = 1
+            etax_doctrine = 1
             camo = 1
             
         }
@@ -8573,11 +8578,11 @@ USA_starting_techs = {
             gwtank = 1
             basic_light_tank = 1
             steel_production_1 = 1
-            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            aluminum_production_1 = 1
             transport_plane1 = 1
-            etax_doctrine = 1
             r56_gw_railway_gun = 1
+            etax_doctrine = 1
             camo = 1
             
         }
@@ -8614,11 +8619,11 @@ USA_starting_techs = {
             submarine_mine_laying = 1
             mtg_transport = 1
             steel_production_1 = 1
-            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            aluminum_production_1 = 1
             transport_plane1 = 1
-            etax_doctrine = 1
             r56_gw_railway_gun = 1
+            etax_doctrine = 1
             camo = 1
             
         }
@@ -8641,11 +8646,11 @@ USA_starting_techs = {
             basic_carrier = 1
             transport = 1
             steel_production_1 = 1
-            aluminum_production_1 = 1
             r56_railway_mortar_subtech = 1
+            aluminum_production_1 = 1
             transport_plane1 = 1
-            etax_doctrine = 1
             r56_gw_railway_gun = 1
+            etax_doctrine = 1
             camo = 1
             
         }
@@ -9166,6 +9171,7 @@ USA_starting_plane_variants = {
             type = small_plane_airframe_0
             modules = {
                 fixed_main_weapon_slot = light_mg_2x
+                fixed_auxiliary_weapon_slot_1 = light_mg_2x
                 engine_type_slot = engine_1_1x
                 special_type_slot_1 = empty
                 
@@ -9178,6 +9184,7 @@ USA_starting_plane_variants = {
             type = small_plane_airframe_0
             modules = {
                 fixed_main_weapon_slot = light_mg_2x
+                fixed_auxiliary_weapon_slot_1 = light_mg_2x
                 engine_type_slot = engine_1_1x
                 special_type_slot_1 = empty
                 
@@ -9250,6 +9257,7 @@ USA_starting_plane_variants = {
             type = small_plane_airframe_1
             modules = {
                 fixed_main_weapon_slot = light_mg_4x
+                fixed_auxiliary_weapon_slot_1 = light_mg_4x
                 engine_type_slot = engine_2_1x
                 special_type_slot_1 = empty
                 

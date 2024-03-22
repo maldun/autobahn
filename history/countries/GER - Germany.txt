@@ -400,6 +400,18 @@ country_event = {
     
 }
 country_event = {
+    id = gerswr.96
+    days = 1100
+    random_days = 90
+    
+}
+country_event = {
+    id = gerswr.99
+    days = 3600
+    random_days = 30
+    
+}
+country_event = {
     id = gerspd.75
     days = 720
     random_days = 15
@@ -555,12 +567,12 @@ recruit_character = GER_fritz_wolffheim
 recruit_character = GER_karl_schroder
 recruit_character = GER_karl_korsch
 recruit_character = GER_willi_munzenberg
+recruit_character = GER_carlo_mierendorff
 recruit_character = GER_kurt_schumacher
 recruit_character = GER_erich_kochweser
 recruit_character = GER_karl_jarres
 recruit_character = GER_hasso_von_manteuffel
 recruit_character = GER_joseph_joos
-recruit_character = GER_carlo_mierendorff
 recruit_character = GER_theodor_heuss
 recruit_character = GER_heinrich_bruning
 recruit_character = GER_franz_von_papen
@@ -708,6 +720,7 @@ recruit_character = GER_eduard_stadtler
 recruit_character = GER_oskar_hergt
 recruit_character = GER_adolf_von_trotha
 recruit_character = GER_martin_spahn
+recruit_character = GER_gottfried_treviranus
 recruit_character = GER_hans_schlange_schoningen
 recruit_character = GER_hermann_luninck
 recruit_character = GER_hansjoachim_rohr
@@ -755,6 +768,10 @@ GER_adolf_von_trotha = {
     
 }
 GER_martin_spahn = {
+    retire = yes
+    
+}
+GER_gottfried_treviranus = {
     retire = yes
     
 }

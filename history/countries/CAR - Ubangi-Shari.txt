@@ -30,6 +30,8 @@ set_popularities = {
 }
 recruit_character = CAR_Ben_Aissa
 recruit_character = CAR_Barthelemy_Boganda
+recruit_character = CAR_Jane_Vialle
+recruit_character = CAR_Antoine_Darlan
 division_template = {
     name = "Miliz-Division"
     division_names_group = GERM_AFR_MIL_01

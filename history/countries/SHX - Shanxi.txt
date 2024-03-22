@@ -89,6 +89,7 @@ recruit_character = SHX_wang_jingguo
 recruit_character = SHX_yang_aiyuan
 recruit_character = SHX_li_fuying
 recruit_character = SHX_feng_anbang
+recruit_character = SHX_deng_xiaoping
 recruit_character = SHX_jia_jingde
 recruit_character = SHX_yu_xinqing
 recruit_character = SHX_chih_kung_jen
@@ -119,6 +120,11 @@ SHX_feng_yuxiang = {
     
 }
 SHX_feng_anbang = {
+    set_character_flag = CHI_original_unit_leader
+    retire = yes
+    
+}
+SHX_deng_xiaoping = {
     set_character_flag = CHI_original_unit_leader
     retire = yes
     

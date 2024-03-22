@@ -147,22 +147,22 @@ technologies = {
             }
             modifier = {
                 factor = 1.2
-                date > "1937.1.1"
+                date > 1937-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1938.1.1"
+                date > 1938-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1939.1.1"
+                date > 1939-01-01
                 
             }
             modifier = {
                 factor = 5
-                date > "1940.1.1"
+                date > 1940-01-01
                 
             }
             
@@ -282,22 +282,22 @@ technologies = {
             }
             modifier = {
                 factor = 1.2
-                date > "1941.1.1"
+                date > 1941-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1942.1.1"
+                date > 1942-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1943.1.1"
+                date > 1943-01-01
                 
             }
             modifier = {
                 factor = 5
-                date > "1944.1.1"
+                date > 1944-01-01
                 
             }
             
@@ -341,7 +341,7 @@ technologies = {
             }
             modifier = {
                 factor = 1.5
-                date > "1941.6.1"
+                date > 1941-06-01
                 
             }
             modifier = {
@@ -446,22 +446,22 @@ technologies = {
             }
             modifier = {
                 factor = 1.2
-                date > "1945.1.1"
+                date > 1945-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1946.1.1"
+                date > 1946-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1947.1.1"
+                date > 1947-01-01
                 
             }
             modifier = {
                 factor = 5
-                date > "1948.1.1"
+                date > 1948-01-01
                 
             }
             
@@ -500,7 +500,7 @@ technologies = {
             }
             modifier = {
                 factor = 1.5
-                date > "1945.1.1"
+                date > 1945-01-01
                 
             }
             modifier = {
@@ -1387,7 +1387,7 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1936.1.1"
+                date > 1936-01-01
                 
             }
             modifier = {
@@ -1402,13 +1402,13 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1938.1.1"
+                date > 1938-01-01
                 
             }
             modifier = {
                 factor = 5
                 is_major = yes
-                date > "1940.1.1"
+                date > 1940-01-01
                 
             }
             
@@ -1478,7 +1478,7 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1940.1.1"
+                date > 1940-01-01
                 
             }
             modifier = {
@@ -1493,13 +1493,13 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1941.1.1"
+                date > 1941-01-01
                 
             }
             modifier = {
                 factor = 5
                 is_major = yes
-                date > "1944.1.1"
+                date > 1944-01-01
                 
             }
             
@@ -1569,7 +1569,7 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1944.1.1"
+                date > 1944-01-01
                 
             }
             modifier = {
@@ -1584,7 +1584,7 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1945.1.1"
+                date > 1945-01-01
                 
             }
             
@@ -2618,6 +2618,49 @@ technologies = {
                 has_tech = tactical_bomber2
                 has_tech = CAS2
                 factor = 3
+                
+            }
+            
+        }
+        
+    }
+    transport_plane2 = {
+        enable_equipments = {
+            transport_plane_equipment_2
+            
+        }
+        research_cost = 2
+        start_year = 1940
+        folder = {
+            name = air_techs_folder
+            position = {
+                x = 8
+                y = 6
+                
+            }
+            
+        }
+        categories = {
+            medium_air
+            air_equipment
+            heavy_air
+            
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                is_major = yes
+                factor = 2
+                
+            }
+            modifier = {
+                has_war = no
+                factor = 0.5
+                
+            }
+            modifier = {
+                has_tech = paratroopers2
+                factor = 2
                 
             }
             

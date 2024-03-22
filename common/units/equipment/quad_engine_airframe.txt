@@ -60,7 +60,7 @@ equipments = {
             transport_plane_equipment_1
             
         }
-        build_cost_ic = 190
+        build_cost_ic = 40
         air_range = 1400
         maximum_speed = 450
         air_agility = 15

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import rt56_patches
+import pyparsing
 from Hoi4Converter.parser import parse_grammar as code2obj
 from Hoi4Converter.converter import *
 from Hoi4Converter.mappings import *
@@ -388,10 +389,16 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
 
 
 def patch_code(out_file, org_code, patched_code):
-    r56_obj = paradox2list(out_file)
-    r56_obj = patch_object(r56_obj, org_code, patched_code)
-    with open(out_file, 'w') as fp:
-        fp.write(list2paradox(r56_obj))
+    try:
+        r56_obj = paradox2list(out_file)
+        r56_obj = patch_object(r56_obj, org_code, patched_code)
+        with open(out_file, 'w') as fp:
+            fp.write(list2paradox(r56_obj))
+    except pyparsing.exceptions.ParseException as excp:
+        if "found end of text" in str(excp):
+            print(f"Warning File {out_file} empty!")
+        else:
+            raise excp
 
 
 def patch_missing_BUL_idea(out_path):

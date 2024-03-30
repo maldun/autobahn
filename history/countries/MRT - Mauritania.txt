@@ -29,3 +29,7 @@ set_popularities = {
     national_populist = 12
     
 }
+recruit_character = MRT_horma_ould_babana
+recruit_character = MRT_sidi_el_mokhtar_n_diaye
+recruit_character = MRT_merebbi_rebbu
+recruit_character = MRT_ahmed_al_hiba

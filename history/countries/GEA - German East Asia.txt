@@ -188,7 +188,7 @@ GER = {
         
     }
     add_opinion_modifier = {
-        target = MAF
+        target = GEA
         modifier = colonial_master
         
     }

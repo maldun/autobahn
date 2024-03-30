@@ -247,6 +247,11 @@ country_event = {
     days = 2805
     
 }
+country_event = {
+    id = japdom.410
+    days = 330
+    
+}
 add_ideas = {
     JAP_narrow_rail
     JAP_bad_land

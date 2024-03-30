@@ -134,25 +134,6 @@ country_event = {
     days = 720
     
 }
-set_country_flag = ITA_CONQ
-set_country_flag = LOM_CONQ
-set_country_flag = VNC_CONQ
-set_country_flag = EMI_CONQ
-set_country_flag = TUS_CONQ
-set_country_flag = SRD_CONQ
-set_country_flag = PAP_CONQ
-set_country_flag = MLT_CONQ
-set_country_flag = TRIESTE_CONQ
-set_country_flag = ISTRIA_CONQ
-set_country_flag = GORIZIA_CONQ
-set_country_flag = FIUME_CONQ
-set_country_flag = AUS_TRENT_CONQ
-set_country_flag = CRO_DALMATIA_CONQ
-set_country_flag = KOTOR_CONQ
-set_country_flag = NICE_CONQ
-set_country_flag = SAVOY_CONQ
-set_country_flag = CORSICA_CONQ
-set_country_flag = TICINO_CONQ
 add_ideas = {
     SIC_shipyard_profits
     SIC_pretty_much_feudalism
@@ -241,6 +222,7 @@ recruit_character = SIC_fulco_ruffo_di_calabria
 recruit_character = SIC_royal_armed_forces_command
 recruit_character = SIC_alessandro_pirzio_biroli
 recruit_character = SIC_antonio_gualano
+recruit_character = SIC_ubaldo_soddu
 recruit_character = SIC_giuseppe_izzo
 recruit_character = SIC_carlo_geloso
 recruit_character = SIC_achille_lauro
@@ -285,6 +267,17 @@ activate_targeted_decision = {
 activate_targeted_decision = {
     target = THIS
     decision = SIC_form_italian_confed
+    
+}
+ROOT = {
+    every_state = {
+        limit = {
+            is_italy_or_potential_claim = yes
+            
+        }
+        occupy_state = yes
+        
+    }
     
 }
 ITA_create_early_armor_variants = yes

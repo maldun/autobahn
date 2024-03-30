@@ -494,7 +494,7 @@ country_event = {
 }
 ROOT = {
     116 = {
-        occupy_state_annexation = yes
+        occupy_state = yes
         
     }
     

@@ -516,15 +516,15 @@ CHI_zhou_zhirou = {
     
 }
 CHI_li_jishen = {
-    set_character_flag = CHI_RF_military_loyalist_flag
+    set_character_flag = CHI_RCF_military_loyalist_flag
     
 }
 CHI_zhang_fakui = {
-    set_character_flag = CHI_RF_military_loyalist_flag
+    set_character_flag = CHI_RCF_military_loyalist_flag
     
 }
 CHI_xue_yue = {
-    set_character_flag = CHI_RF_military_loyalist_flag
+    set_character_flag = CHI_RCF_military_loyalist_flag
     
 }
 CHI_li_zhilong = {

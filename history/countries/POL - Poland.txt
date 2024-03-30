@@ -608,7 +608,7 @@ ROOT = {
 }
 if = {
     limit = {
-        has_dlc = "La Resistance"
+        has_dlc_lar = yes
         
     }
     create_operative_leader = {

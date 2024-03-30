@@ -2334,6 +2334,51 @@ USA_civil_war_begins = {
             }
             USA = {
                 country_event = {
+                    id = amcivwar.803
+                    days = 1185
+                    random_days = 100
+                    
+                }
+                
+            }
+            CSA = {
+                country_event = {
+                    id = amcivwar.803
+                    days = 1185
+                    random_days = 100
+                    
+                }
+                
+            }
+            NEE = {
+                country_event = {
+                    id = amcivwar.803
+                    days = 1185
+                    random_days = 100
+                    
+                }
+                
+            }
+            PSA = {
+                country_event = {
+                    id = amcivwar.803
+                    days = 1185
+                    random_days = 100
+                    
+                }
+                
+            }
+            TEX = {
+                country_event = {
+                    id = amcivwar.803
+                    days = 1185
+                    random_days = 100
+                    
+                }
+                
+            }
+            USA = {
+                country_event = {
                     id = hawaii.1
                     days = 1
                     random_days = 3
@@ -2758,6 +2803,11 @@ USA_civil_war_begins = {
                         decision = MEX_reconquista_decision
                         
                     }
+                    activate_targeted_decision = {
+                        target = THIS
+                        decision = MEX_reconquista_complete_decision
+                        
+                    }
                     
                 }
                 
@@ -2852,7 +2902,7 @@ USA_civil_war_begins = {
                 
             }
             IRE = {
-                IRE_activate_ACW_decisions = yes
+                IRE_ACW_start_effect = yes
                 
             }
             
@@ -2983,7 +3033,6 @@ USA_civil_war_ends = {
                         is_american_tag = yes
                         
                     }
-                    has_state_flag = ACW_factories_converted
                     arms_factory > 2
                     
                 }
@@ -3026,15 +3075,6 @@ USA_civil_war_ends = {
                 }
                 
             }
-            IRE = {
-                country_event = {
-                    id = ireland.209
-                    days = 2
-                    random_days = 5
-                    
-                }
-                
-            }
             BRA = {
                 country_event = {
                     id = bra.204
@@ -3051,7 +3091,7 @@ USA_civil_war_ends = {
                 
             }
             IRE = {
-                IRE_teardown_ACW_decisions = yes
+                IRE_ACW_end_effect = yes
                 
             }
             CUB = {
@@ -6630,7 +6670,7 @@ USA_create_all_templates = {
             }
             
         }
-        template_counter = 81
+        template_counter = 91
         
     }
     division_template = {
@@ -8208,36 +8248,6 @@ ACW_spawn_militia_divisions = {
         }
         
     }
-    if = {
-        limit = {
-            has_state_flag = ACW_factories_converted
-            
-        }
-        multiply_temp_variable = {
-            units_to_spawn = 2
-            
-        }
-        divide_temp_variable = {
-            units_to_spawn = 3
-            
-        }
-        
-    }
-    else_if = {
-        limit = {
-            industrial_complex > 2
-            
-        }
-        multiply_temp_variable = {
-            units_to_spawn = 4
-            
-        }
-        divide_temp_variable = {
-            units_to_spawn = 3
-            
-        }
-        
-    }
     round_temp_variable = units_to_spawn
     set_temp_variable = {
         total_units_to_spawn = units_to_spawn
@@ -8441,47 +8451,6 @@ ACW_spawn_militia_divisions = {
     }
     
 }
-ACW_convert_factories = {
-    set_state_flag = ACW_factories_converted
-    set_temp_variable = {
-        state_civs = THIS.building_level@industrial_complex
-        
-    }
-    if = {
-        limit = {
-            NOT = {
-                has_state_flag = ACW_recruited_militias
-                
-            }
-            
-        }
-        divide_temp_variable = {
-            state_civs = 3
-            
-        }
-        
-    }
-    else = {
-        divide_temp_variable = {
-            state_civs = 4
-            
-        }
-        
-    }
-    round_temp_variable = state_civs
-    remove_building = {
-        type = industrial_complex
-        level = state_civs
-        
-    }
-    add_building_construction = {
-        type = arms_factory
-        level = state_civs
-        instant_build = yes
-        
-    }
-    
-}
 USA_starting_techs = {
     set_technology = {
         electronic_mechanical_engineering = 1
@@ -8496,13 +8465,13 @@ USA_starting_techs = {
         marines = 1
         tech_mountaineers = 1
         basic_train = 1
-        steel_production_1 = 1
-        r56_railway_mortar_subtech = 1
         aluminum_production_1 = 1
+        steel_production_1 = 1
+        camo = 1
+        r56_railway_mortar_subtech = 1
         transport_plane1 = 1
         r56_gw_railway_gun = 1
         etax_doctrine = 1
-        camo = 1
         
     }
     if = {
@@ -8521,13 +8490,13 @@ USA_starting_techs = {
             early_bombs = 1
             aircraft_construction = 1
             air_torpedoe_1 = 1
-            steel_production_1 = 1
-            r56_railway_mortar_subtech = 1
             aluminum_production_1 = 1
+            steel_production_1 = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
-            camo = 1
             
         }
         
@@ -8541,13 +8510,13 @@ USA_starting_techs = {
             naval_bomber1 = 1
             CAS1 = 1
             early_bomber = 1
-            steel_production_1 = 1
-            r56_railway_mortar_subtech = 1
             aluminum_production_1 = 1
+            steel_production_1 = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
-            camo = 1
             
         }
         
@@ -8561,13 +8530,13 @@ USA_starting_techs = {
             gwtank_chassis = 1
             basic_light_tank_chassis = 1
             engine_tech_1 = 1
-            steel_production_1 = 1
-            r56_railway_mortar_subtech = 1
             aluminum_production_1 = 1
+            steel_production_1 = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
-            camo = 1
             
         }
         add_ideas = bureau_of_ordnance_spirit
@@ -8577,13 +8546,13 @@ USA_starting_techs = {
         set_technology = {
             gwtank = 1
             basic_light_tank = 1
-            steel_production_1 = 1
-            r56_railway_mortar_subtech = 1
             aluminum_production_1 = 1
+            steel_production_1 = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
-            camo = 1
             
         }
         
@@ -8618,13 +8587,13 @@ USA_starting_techs = {
             basic_naval_mines = 1
             submarine_mine_laying = 1
             mtg_transport = 1
-            steel_production_1 = 1
-            r56_railway_mortar_subtech = 1
             aluminum_production_1 = 1
+            steel_production_1 = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
-            camo = 1
             
         }
         
@@ -8645,13 +8614,13 @@ USA_starting_techs = {
             early_carrier = 1
             basic_carrier = 1
             transport = 1
-            steel_production_1 = 1
-            r56_railway_mortar_subtech = 1
             aluminum_production_1 = 1
+            steel_production_1 = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
-            camo = 1
             
         }
         

@@ -1,7 +1,6 @@
 {
     "interface/": {
         "countrytechtreeview.gui": [],
-        "countrydoctrinetreeview.gui": [],
         "equipmentdesignermoduleicons.gfx": [],
         "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"]
     },
@@ -26,9 +25,6 @@
 	"r56e_buildings_l_english.yml": ["localisation/english/",
 					  "r56e_buildings_l_english.yml"]
 	
-    },
-    "gfx/interface/buildings/": {
-        "r56_building_icon_strip.dds": []
     }
 }
     

@@ -213,7 +213,7 @@ create_country_leader = {
 create_country_leader = {
     name = "George Dern"
     desc = "POLITICS_INNSMOUTH_DESC"
-    picture = "gfx/leaders/DSR/George_Dern.png"
+    picture = "gfx/leaders/DSR/Portrait_DSR_George_Dern.png"
     expire = "1.1.1"
     ideology = social_democrat_subtype
     traits = {}
@@ -222,7 +222,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Henry H. Blood"
     desc = "POLITICS_THEREWILLBEBLOOD_DESC"
-    picture = "gfx/leaders/DSR/Henry_Blood.png"
+    picture = "gfx/leaders/DSR/Portrait_DSR_Henry_Blood.png"
     expire = "1.1.1"
     ideology = social_liberal_subtype
     traits = {}
@@ -231,7 +231,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Ezra Benson"
     desc = "POLITICS_EZRABENSON_DESC"
-    picture = "gfx/leaders/DSR/Ezra_Benson.png"
+    picture = "gfx/leaders/DSR/Portrait_DSR_Ezra_Benson.png"
     expire = "1.1.1"
     ideology = market_liberal_subtype
     traits = {}
@@ -240,7 +240,7 @@ create_country_leader = {
 create_country_leader = {
     name = "George W. Romney"
     desc = "POLITICS_ROMNEY_DESC"
-    picture = "gfx/leaders/DSR/George_Romney.png"
+    picture = "gfx/leaders/DSR/Portrait_DSR_George_Romney.png"
     expire = "1.1.1"
     ideology = social_conservative_subtype
     traits = {}
@@ -249,7 +249,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Heber J. Grant "
     desc = "POLITICS_HEBER_DESC"
-    picture = "gfx/leaders/DSR/Portrait_DSR_Heber_Grant_hat.png"
+    picture = "gfx/leaders/DSR/Portrait_DSR_Heber_Grant_Hat.png"
     expire = "1.1.1"
     ideology = autdem_christian_democracy_subtype
     traits = {
@@ -261,7 +261,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Heber J. Grant"
     desc = "POLITICS_HEBER_DESC"
-    picture = "gfx/leaders/DSR/Heber_Grant.png"
+    picture = "gfx/leaders/DSR/Portrait_DSR_Heber_Grant.png"
     expire = "1.1.1"
     ideology = theocracy_subtype
     traits = {
@@ -273,7 +273,7 @@ create_country_leader = {
 create_country_leader = {
     name = "J. Reuben Clark"
     desc = "POLITICS_REUBENCLARK_DESC"
-    picture = "gfx/leaders/DSR/Reuben_Clark.png"
+    picture = "gfx/leaders/DSR/Portrait_DSR_Reuben_Clark.png"
     expire = "1.1.1"
     ideology = fundementalism_subtype
     traits = {}
@@ -297,7 +297,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Hugh B. Brown"
-    portrait_path = "gfx/leaders/DSR/Hugh_Brown.png"
+    portrait_path = "gfx/leaders/DSR/Portrait_DSR_Hugh_Brown.png"
     traits = {
         old_guard
         cavalry_officer
@@ -313,7 +313,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "DeWitt Clinton Ramsey"
-    portrait_path = "gfx/leaders/DSR/DeWitt_Clinton_Ramsey.png"
+    portrait_path = "gfx/leaders/DSR/Portrait_DSR_DeWitt_Clinton_Ramsey.png"
     traits = {}
     skill = 1
     attack_skill = 2
@@ -324,7 +324,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "George Edward Wahlen"
-    portrait_path = "gfx/leaders/DSR/George_Wahlen.png"
+    portrait_path = "gfx/leaders/DSR/Portrait_DSR_George_Wahlen.png"
     traits = {
         trait_reckless
         naval_invader
@@ -340,11 +340,15 @@ create_corps_commander = {
 }
 create_navy_leader = {
     name = "Mervyn S. Bennion"
-    portrait_path = "gfx/leaders/DSR/Mervyn_Bennion.png"
+    portrait_path = "gfx/leaders/DSR/Portrait_DSR_Mervyn_Bennion.png"
     traits = {
         ironside
         
     }
     skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    maneuvering_skill = 2
+    coordination_skill = 2
     
 }

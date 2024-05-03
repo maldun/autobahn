@@ -138,7 +138,7 @@ country_event = {
 create_country_leader = {
     name = "Grigol Orjonikidze"
     desc = "POLITICS_GRIGOL_DESC"
-    picture = "gfx/leaders/GEO/Portrait_Georgia_Grigol_Ordzhonikikdze.png"
+    picture = "gfx/leaders/GEO/Portrait_GEO_Grigol_Ordzhonikikdze.png"
     expire = "1.1.1"
     ideology = authcom_subtype
     traits = {}
@@ -164,7 +164,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Noe Zhordania"
     desc = "POLITICS_NOE_ZHORDANIA_DESC"
-    picture = "gfx/leaders/GEO/Portrait_Noe_Zhordania.png"
+    picture = "gfx/leaders/GEO/Portrait_GEO_Noe_Zhordania.png"
     expire = "1.1.1"
     ideology = revisionist_marxism_subtype
     
@@ -280,7 +280,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Sergo Goglidze"
-    portrait_path = "gfx/leaders/GEO/Portrait_Sergo_Goglidze.png"
+    portrait_path = "gfx/leaders/GEO/Portrait_GEO_Sergo_Goglidze.png"
     traits = {
         career_officer
         

@@ -414,6 +414,12 @@ country_event = {
     
 }
 country_event = {
+    id = entente.352
+    days = 253
+    random_days = 30
+    
+}
+country_event = {
     id = canada.430
     days = 333
     random_days = 20

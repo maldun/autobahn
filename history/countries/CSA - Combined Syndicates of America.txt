@@ -220,6 +220,11 @@ country_event = {
     days = 3322
     
 }
+country_event = {
+    id = csa.6011
+    days = 1680
+    
+}
 set_politics = {
     ruling_party = syndicalist
     last_election = "1936.11.08"
@@ -434,7 +439,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Alvah Bessie"
     desc = "CSA_ALVAH_BESSIE_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/CSA_alvah_bessie.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Alvah_Bessie.png"
     traits = {
         trickster
         inflexible_strategist
@@ -450,7 +455,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Bill Aalto"
     desc = "CSA_BILL_AALTO_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/CSA_Bill_Aalto.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Bill_Aalto.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -462,7 +467,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Cecil Cole"
     desc = "CSA_CECIL_COLE_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/CSA_Cecil_Cole.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Cecil_Cole.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -474,7 +479,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "David Doran"
     desc = "CSA_DAVID_DORAN_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/CSA_David_Doran.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_David_Doran.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -485,8 +490,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Elliot Loomis"
-    desc = "CSA_CECIL_COLE_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/CSA_Elliot_Loomis.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Elliot_Loomis.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -497,8 +501,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Eugene Nolte"
-    desc = "CSA_CECIL_COLE_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/CSA_Eugene_Nolte.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Eugene_Nolte.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -509,8 +512,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Henry Mucci"
-    desc = "CSA_CECIL_COLE_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/CSA_Henry_Mucci.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Henry_Mucci.png"
     traits = {}
     skill = 1
     attack_skill = 2
@@ -522,7 +524,7 @@ create_corps_commander = {
 create_corps_commander = {
     name = "Irving Goff"
     desc = "CSA_IRVING_GOFF_ARMY_DESC"
-    portrait_path = "gfx/leaders/CSA/CSA_Irving_Goff.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Irving_Goff.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -533,7 +535,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Jack Shulman"
-    portrait_path = "gfx/leaders/CSA/CSA_Jack_Shulman.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Jack_Shulman.png"
     traits = {
         offensive_doctrine
         
@@ -548,7 +550,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Jesse Wallach"
-    portrait_path = "gfx/leaders/CSA/CSA_Jesse_Wallach.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Jesse_Wallach.png"
     traits = {}
     skill = 1
     attack_skill = 2
@@ -559,7 +561,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Joe Luftig"
-    portrait_path = "gfx/leaders/CSA/CSA_Joe_Luftig.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Joe_Luftig.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -570,7 +572,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Nathan Wolf"
-    portrait_path = "gfx/leaders/CSA/CSA_Nathan_Wolf.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Nathan_Wolf.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -581,7 +583,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Patrick Read"
-    portrait_path = "gfx/leaders/CSA/CSA_Patrick_Read.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Patrick_Read.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -592,7 +594,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "William Oderaka"
-    portrait_path = "gfx/leaders/CSA/CSA_William_Oderaka.png"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_William_Oderaka.png"
     traits = {}
     skill = 1
     attack_skill = 1
@@ -708,6 +710,22 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 1
     logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Robert Hale Merriman"
+    portrait_path = "gfx/leaders/CSA/Portrait_CSA_Robert_Hale_Merriman.png"
+    traits = {
+        militias_officer
+        trait_reckless
+        
+    }
+    id = 67845
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
     
 }
 create_corps_commander = {

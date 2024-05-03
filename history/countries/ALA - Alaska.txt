@@ -315,7 +315,7 @@ create_country_leader = {
     desc = "POLITICS_PEARKES_DESC"
     picture = "gfx/leaders/ALA/Portrait_ALA_George_Pearkes.png"
     expire = "1.1.1"
-    ideology = authdem_junta_subtype
+    ideology = colonial_govt_subtype
     traits = {}
     
 }
@@ -502,7 +502,7 @@ create_corps_commander = {
 }
 create_navy_leader = {
     name = "Thomas C. Kincaid"
-    portrait_path = "gfx/leaders/ALA/Portrait_Alaska_Thomas_Kinkaid.png"
+    portrait_path = "gfx/leaders/NEE/Portrait_NEE_thomas_kinkaid.png"
     traits = {
         air_controller
         

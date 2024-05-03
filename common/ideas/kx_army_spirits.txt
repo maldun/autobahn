@@ -59,6 +59,42 @@ ideas = {
         
     }
     division_command_spirit = {
+        entente_invasion_spirit = {
+            ledger = army
+            picture = long_range_patrol_spirit
+            visible = {
+                is_in_faction_with = ENT
+                
+            }
+            equipment_bonus = {
+                floating_harbor_equipment = {
+                    build_cost_ic = -0.1
+                    instant = yes
+                    
+                }
+                
+            }
+            modifier = {
+                naval_invasion_penalty = -0.25
+                
+            }
+            ai_will_do = {
+                factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
         gekokujo_spirit = {
             ledger = army
             picture = japanese_influence_1
@@ -76,34 +112,6 @@ ideas = {
             }
             ai_will_do = {
                 factor = 15
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        decentralised_logistics_spirit = {
-            ledger = army
-            visible = {
-                has_country_flag = is_chinese_tag
-                
-            }
-            modifier = {
-                supply_combat_penalties_on_core_factor = -0.2
-                supply_node_range = 0.1
-                
-            }
-            ai_will_do = {
-                factor = 2
                 
             }
             available = {
@@ -181,23 +189,15 @@ ideas = {
             }
             
         }
-        entente_invasion_spirit = {
+        decentralised_logistics_spirit = {
             ledger = army
-            picture = long_range_patrol_spirit
             visible = {
-                is_in_faction_with = ENT
-                
-            }
-            equipment_bonus = {
-                floating_harbor_equipment = {
-                    build_cost_ic = -0.1
-                    instant = yes
-                    
-                }
+                has_country_flag = is_chinese_tag
                 
             }
             modifier = {
-                naval_invasion_penalty = -0.25
+                supply_combat_penalties_on_core_factor = -0.2
+                supply_node_range = 0.1
                 
             }
             ai_will_do = {

@@ -125,7 +125,7 @@ YUN_tang_jiyao = {
         china_alignment = token:federalists
         
     }
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     
 }
 YUN_zhu_peide = {
@@ -133,7 +133,7 @@ YUN_zhu_peide = {
         china_alignment = token:right_kuomintang
         
     }
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     
 }
 YUN_zhu_de = {
@@ -141,7 +141,7 @@ YUN_zhu_de = {
         china_alignment = token:left_kuomintang
         
     }
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
@@ -150,7 +150,7 @@ YUN_chen_yi = {
         china_alignment = token:left_kuomintang
         
     }
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }

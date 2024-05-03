@@ -193,6 +193,12 @@ country_event = {
     days = 1821
     
 }
+country_event = {
+    id = austral.400
+    days = 1461
+    random_days = 150
+    
+}
 set_politics = {
     ruling_party = authoritarian_democrat
     last_election = "1933.3.7"
@@ -308,8 +314,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Nancy Wake"
-        GFX = GFX_portrait_kr_nancy_wake
+        name = AST_nancy_grace_augusta_wake
+        GFX = GFX_portrait_AST_nancy_grace_augusta_wake
         traits = {
             operative_escape_artist
             
@@ -325,8 +331,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Dick Ellis"
-        GFX = GFX_portrait_kr_dick_ellis
+        name = AST_charles_howard_ellis
+        GFX = GFX_portrait_AST_charles_howard_ellis
         traits = {
             operative_linguist
             

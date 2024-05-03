@@ -1712,8 +1712,8 @@ if = {
     }
     create_intelligence_agency = yes
     create_operative_leader = {
-        name = "Hermann Giskes"
-        GFX = GFX_portrait_kr_hermann_giskes
+        name = GER_hermann_giskes
+        GFX = GFX_portrait_GER_hermann_giskes_operative
         traits = {
             operative_master_interrogator
             operative_military_background
@@ -1728,8 +1728,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Hugo Bleicher"
-        GFX = GFX_portrait_kr_hugo_bleicher
+        name = GER_hugo_bleicher
+        GFX = GFX_portrait_GER_hugo_bleicher_operative
         traits = {
             operative_master_saboteur
             
@@ -1743,8 +1743,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Josef Jakobs"
-        GFX = GFX_portrait_kr_josef_jakobs
+        name = GER_josef_jakobs
+        GFX = GFX_portrait_GER_josef_jakobs_operative
         traits = {
             operative_master_commando
             
@@ -1843,19 +1843,12 @@ every_country = {
     GER_add_to_mitteleuropa = yes
     
 }
-if = {
+every_country = {
     limit = {
-        has_tech_sharing_feature = yes
+        is_ally_with = GER
         
     }
-    every_country = {
-        limit = {
-            is_ally_with = GER
-            
-        }
-        add_to_tech_sharing_group = german_research
-        
-    }
+    add_to_tech_sharing_group = german_research
     
 }
 set_variable = {

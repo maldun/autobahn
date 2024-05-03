@@ -30,5 +30,5 @@ set_popularities = {
     national_populist = 1
     
 }
-recruit_character = KAC_sao_shwe_thaik
-recruit_character = KAC_sao_yang_wen_pin
+recruit_character = SHA_sao_shwe_thaik
+recruit_character = SHA_sao_yang_wen_pin

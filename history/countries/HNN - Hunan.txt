@@ -99,7 +99,7 @@ HNN_tang_shengzhi = {
         china_alignment = token:federalists
         
     }
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     
 }
 HNN_cheng_qian = {

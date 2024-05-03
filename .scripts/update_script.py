@@ -64,7 +64,7 @@ TECH_CRITS = {"air_spirits.txt": ['available',
                                             ['has_tech', ['base_strike']]]]]]
               }
 
-KR_SPIRIT_MAP = {"air_spirits.txt": "01 Air Spirits.txt",
+KR_SPIRIT_MAP = {"air_spirits.txt": "04 Air Spirits.txt",
                  "army_spirits.txt": "01 Army Spirits.txt", "navy_spirits.txt": "01 Navy Spirits.txt"}
 KR_REV_SPIRIT_MAP = {val: key for key, val in KR_SPIRIT_MAP.items()}
 KR_TECH_CRITS = {}

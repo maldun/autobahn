@@ -201,7 +201,7 @@ if = {
     }
     
 }
-create_faction = Entente
+create_faction = entente
 add_to_faction = NFA
 add_to_faction = RAJ
 add_to_faction = AST
@@ -290,6 +290,12 @@ country_event = {
 country_event = {
     id = entf.7
     days = 272
+    
+}
+country_event = {
+    id = entente.352
+    days = 253
+    random_days = 30
     
 }
 set_politics = {
@@ -394,8 +400,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Wilfred Dunderdale"
-        GFX = GFX_portrait_kr_wilfred_dunderdale
+        name = CAN_wilfred_dunderdale
+        GFX = GFX_portrait_CAN_wilfred_dunderdale_operative
         traits = {
             operative_seducer
             operative_well_groomed
@@ -411,8 +417,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "T. E. Lawrence"
-        GFX = GFX_portrait_kr_te_lawrence
+        name = GBR_thomas_edward_lawrence
+        GFX = GFX_portrait_GBR_thomas_edward_lawrence_operative
         traits = {
             operative_infiltrator
             

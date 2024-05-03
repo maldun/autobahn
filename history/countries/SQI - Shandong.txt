@@ -102,7 +102,7 @@ recruit_character = SQI_vincent_schmidt
 recruit_character = SQI_antonio_riva
 SQI_qu_yingguang = {
     set_variable = {
-        china_alignment = token:manchu_qing
+        china_alignment = token:zhili
         
     }
     
@@ -116,43 +116,43 @@ SQI_zhang_zongchang = {
 }
 SQI_zhang_tianran = {
     set_variable = {
-        china_alignment = token:manchu_qing
+        china_alignment = token:zhili
         
     }
     
 }
 SQI_liu_zhennian = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
 SQI_lu_yongxiang = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
 SQI_xu_yuanquan = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
 SQI_li_lijiu = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
 SQI_xue_dian = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
 SQI_zhang_huaizhi = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
 SQI_zhao_hong_wenguo = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }

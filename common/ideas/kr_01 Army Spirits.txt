@@ -8,6 +8,7 @@ ideas = {
             ledger = army
             allowed = {
                 has_dlc_nsb = yes
+                is_chinese_tag = yes
                 
             }
             visible = {

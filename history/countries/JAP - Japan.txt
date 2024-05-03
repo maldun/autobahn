@@ -286,19 +286,12 @@ set_popularities = {
     
 }
 create_faction = co_prosperity_sphere
-if = {
+every_country = {
     limit = {
-        has_tech_sharing_feature = yes
+        is_ally_with = JAP
         
     }
-    every_country = {
-        limit = {
-            is_ally_with = JAP
-            
-        }
-        add_to_tech_sharing_group = japan_research
-        
-    }
+    add_to_tech_sharing_group = japan_research
     
 }
 recruit_character = JAP_hirohito

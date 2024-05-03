@@ -7,6 +7,7 @@ set_stability = 0.6
 set_war_support = 0.7
 starting_train_buffer = 1
 add_ideas = {
+    SRI_italy_balance_idea
     SRI_dannunzian_coalition
     SRI_fmc_idea_starter
     

@@ -120,12 +120,12 @@ SHX_feng_yuxiang = {
     
 }
 SHX_feng_anbang = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
 SHX_deng_xiaoping = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }

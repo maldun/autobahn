@@ -330,10 +330,14 @@ ROOT = {
         enable_coring_at_fifty_compliance = yes
         
     }
-    
-}
-950 = {
-    enable_state_integration_80_compliance = yes
+    ZIM = {
+        enable_coring_at_fifty_compliance = yes
+        
+    }
+    950 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     
 }
 recruit_character = SAF_george_herbert_hyde_villiers

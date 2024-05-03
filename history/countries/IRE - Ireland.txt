@@ -158,7 +158,7 @@ set_variable = {
     
 }
 set_variable = {
-    country_intro_page_count = 3
+    country_intro_page_count = 4
     
 }
 news_event = {
@@ -244,7 +244,7 @@ country_event = {
     
 }
 country_event = {
-    id = ireland.3002
+    id = ireland.3001
     days = 456
     
 }
@@ -254,7 +254,7 @@ country_event = {
     
 }
 country_event = {
-    id = ireland.3003
+    id = ireland.3002
     days = 468
     
 }
@@ -294,7 +294,7 @@ country_event = {
     
 }
 country_event = {
-    id = ireland.3004
+    id = ireland.3003
     days = 659
     
 }
@@ -325,7 +325,7 @@ country_event = {
     
 }
 country_event = {
-    id = ireland.3005
+    id = ireland.3004
     days = 756
     
 }
@@ -335,7 +335,7 @@ country_event = {
     
 }
 country_event = {
-    id = ireland.3006
+    id = ireland.3005
     days = 775
     
 }
@@ -345,7 +345,7 @@ country_event = {
     
 }
 country_event = {
-    id = ireland.2508
+    id = ireland.2520
     days = 1244
     
 }
@@ -360,7 +360,7 @@ country_event = {
     
 }
 country_event = {
-    id = ireland.2508
+    id = ireland.2520
     days = 1974
     
 }
@@ -553,41 +553,41 @@ set_variable = {
     
 }
 set_variable = {
-    IRE_ulster_loyalist_fear = 10
+    IRE_loyalist_fear = 10
     
 }
 country_event = {
-    id = ireland.4500
+    id = ireland.5500
     days = 5
     
 }
 country_event = {
-    id = ireland.4501
+    id = ireland.5550
     days = 6
     
 }
 country_event = {
-    id = ireland.4502
+    id = ireland.5600
     days = 7
     
 }
 country_event = {
-    id = ireland.4503
+    id = ireland.5650
     days = 8
     
 }
 country_event = {
-    id = ireland.4504
+    id = ireland.5700
     days = 9
     
 }
 country_event = {
-    id = ireland.4505
+    id = ireland.5750
     days = 10
     
 }
 country_event = {
-    id = ireland.4506
+    id = ireland.5800
     days = 11
     
 }

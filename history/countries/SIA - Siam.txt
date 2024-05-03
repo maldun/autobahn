@@ -407,8 +407,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Jumkad Plangkoon"
-        GFX = GFX_portrait_kr_jumkad_plangkoon
+        name = SIA_jumkad_plangkoon
+        GFX = GFX_portrait_SIA_jumkad_plangkoon_operative
         traits = {
             operative_well_groomed
             
@@ -422,8 +422,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Puey Ungphakorn"
-        GFX = GFX_portrait_kr_puey_ungphakorn
+        name = SIA_puey_ungphakorn
+        GFX = GFX_portrait_SIA_puey_ungphakorn_operative
         traits = {
             operative_linguist
             

@@ -144,7 +144,7 @@ XSM_ma_hongbin = {
     
 }
 XSM_ma_jiyuan = {
-    set_character_flag = CHI_original_unit_leader
+    set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }

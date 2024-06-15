@@ -230,7 +230,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Joseph McCarthy"
     desc = "POLITICS_MCCARTHY_DESC"
-    picture = "gfx/leaders/CGL/Joe_McCarthy.png"
+    picture = "gfx/leaders/CGL/Portrait_CGL_Joe_McCarthy.png"
     expire = "1.1.1"
     ideology = social_conservative_subtype
     traits = {
@@ -268,7 +268,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Henry Ford"
     desc = "POLITICS_FORD_DESC"
-    picture = "gfx/leaders/CGL/Henry_Ford.png"
+    picture = "gfx/leaders/CGL/Portrait_CGL_Henry_Ford.png"
     expire = "1.1.1"
     ideology = right_technocracy_subtype
     traits = {
@@ -279,9 +279,8 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Clare E. Hoffman"
-    desc = "POLITICS_CLARE_HOFFMAN_DESC"
-    picture = "gfx/leaders/CGL/Portrait_CGL_Clare_E_Hoffman.png"
+    name = "George E. Deatherage"
+    picture = "gfx/leaders/CGL/Portrait_CGL_George_E_Deatherage.png"
     expire = "1.1.1"
     ideology = klan_nationalism_subtype
     traits = {}
@@ -297,7 +296,7 @@ add_ideas = {
 }
 create_field_marshal = {
     name = "Leslie McNair"
-    portrait_path = "gfx/leaders/CGL/Lesley_J_McNair.png"
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Lesley_J_McNair.png"
     traits = {
         panzer_leader
         combined_arms_expert
@@ -320,7 +319,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
     name = "Peyton C. March"
-    portrait_path = "gfx/leaders/CGL/Peyton_C_March.png"
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Peyton_C_March.png"
     traits = {
         trait_cautious
         infantry_officer
@@ -341,7 +340,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
     name = "Hanford MacNider "
-    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Hanford_MacNider_general.png"
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Hanford_MacNider_General.png"
     traits = {
         trait_reckless
         media_personality
@@ -361,7 +360,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
     name = "Henry Aurand"
-    portrait_path = "gfx/leaders/CGL/Henry_Aurand.png"
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Henry_Aurand.png"
     traits = {
         naval_liason
         naval_invader
@@ -377,7 +376,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Samuel Dashiell Hammett "
-    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Samuel_Dashiell_Hammett_general.png"
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Samuel_Dashiell_Hammett_General.png"
     traits = {}
     skill = 2
     attack_skill = 1
@@ -388,7 +387,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Vernon E. Prichard"
-    portrait_path = "gfx/leaders/CGL/Vernon_E_Prichard.png"
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Vernon_E_Prichard.png"
     traits = {
         armor_officer
         war_hero
@@ -404,7 +403,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Joseph McCarthy "
-    portrait_path = "gfx/leaders/CGL/Joe_McCarthy_general.png"
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Joe_McCarthy_General.png"
     traits = {
         trait_reckless
         naval_invader
@@ -423,7 +422,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Edward S. Michael"
-    portrait_path = "gfx/leaders/CGL/Edward_S_Michael.png"
+    portrait_path = "gfx/leaders/CGL/Portrait_CGL_Edward_S_Michael.png"
     traits = {
         trait_reckless
         commando
@@ -465,6 +464,10 @@ create_navy_leader = {
         
     }
     skill = 2
+    attack_skill = 3
+    defense_skill = 2
+    maneuvering_skill = 3
+    coordination_skill = 2
     
 }
 if = {

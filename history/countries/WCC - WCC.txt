@@ -283,6 +283,13 @@ create_country_leader = {
     }
     
 }
+create_country_leader = {
+    name = "John Galen Locke"
+    picture = "gfx/leaders/WCC/Portrait_WCC_John_Galen_Locke.png"
+    expire = "1.1.1"
+    ideology = klan_nationalism_subtype
+    
+}
 add_ideas = {
     WCC_Dwight_D_Eisenhower_hog_ade
     WCC_Patrick_J_Hurley_for_ade
@@ -423,7 +430,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Keith L. Ware"
-    portrait_path = "gfx/leaders/AML/Keith_Ware.png"
+    portrait_path = "gfx/leaders/AML/Portrait_AML_Keith_Ware.png"
     traits = {
         fortress_buster
         commando

@@ -370,7 +370,7 @@ technologies = {
             factor = 3
             modifier = {
                 factor = 10
-                date > "1939.1.1"
+                date > "1938.6.1"
                 
             }
             modifier = {
@@ -379,7 +379,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 0
+                factor = 0.5
                 tag = RUS
                 OR = {
                     date < "1944.1.1"
@@ -3730,10 +3730,11 @@ technologies = {
                     original_tag = CAN
                     original_tag = SWE
                     original_tag = FIN
+                    original_tag = SMI
+                    original_tag = GRL
                     original_tag = ICE
+                    original_tag = QBC
                     original_tag = RUS
-                    original_tag = BAT
-                    original_tag = TRM
                     
                 }
                 
@@ -3780,10 +3781,11 @@ technologies = {
                     original_tag = CAN
                     original_tag = SWE
                     original_tag = FIN
+                    original_tag = SMI
+                    original_tag = GRL
                     original_tag = ICE
+                    original_tag = QBC
                     original_tag = RUS
-                    original_tag = BAT
-                    original_tag = TRM
                     
                 }
                 
@@ -3830,10 +3832,11 @@ technologies = {
                     original_tag = CAN
                     original_tag = SWE
                     original_tag = FIN
+                    original_tag = SMI
+                    original_tag = GRL
                     original_tag = ICE
+                    original_tag = QBC
                     original_tag = RUS
-                    original_tag = BAT
-                    original_tag = TRM
                     
                 }
                 
@@ -3875,10 +3878,11 @@ technologies = {
                     original_tag = CAN
                     original_tag = SWE
                     original_tag = FIN
+                    original_tag = SMI
+                    original_tag = GRL
                     original_tag = ICE
+                    original_tag = QBC
                     original_tag = RUS
-                    original_tag = BAT
-                    original_tag = TRM
                     
                 }
                 
@@ -4206,7 +4210,10 @@ technologies = {
                 OR = {
                     original_tag = SWE
                     original_tag = FIN
+                    original_tag = SMI
+                    original_tag = GRL
                     original_tag = ICE
+                    original_tag = QBC
                     
                 }
                 
@@ -4252,7 +4259,10 @@ technologies = {
                 OR = {
                     original_tag = SWE
                     original_tag = FIN
+                    original_tag = SMI
+                    original_tag = GRL
                     original_tag = ICE
+                    original_tag = QBC
                     
                 }
                 
@@ -4298,7 +4308,10 @@ technologies = {
                 OR = {
                     original_tag = SWE
                     original_tag = FIN
+                    original_tag = SMI
+                    original_tag = GRL
                     original_tag = ICE
+                    original_tag = QBC
                     
                 }
                 
@@ -4339,7 +4352,10 @@ technologies = {
                 OR = {
                     original_tag = SWE
                     original_tag = FIN
+                    original_tag = SMI
+                    original_tag = GRL
                     original_tag = ICE
+                    original_tag = QBC
                     
                 }
                 

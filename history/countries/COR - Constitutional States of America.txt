@@ -224,6 +224,16 @@ country_event = {
     
 }
 country_event = {
+    id = constate.11094
+    days = 250
+    
+}
+country_event = {
+    id = constate.11094
+    days = 450
+    
+}
+country_event = {
     id = constate.4091
     days = 4114
     
@@ -332,6 +342,7 @@ create_country_leader = {
 }
 create_country_leader = {
     name = "James K. Vardaman"
+    desc = "POLITICS_VARDAMAN_DESC"
     picture = "gfx/leaders/COR/Portrait_COR_James_K_Vardaman.png"
     expire = "1.1.1"
     ideology = vardamanism_subtype
@@ -351,6 +362,7 @@ create_country_leader = {
 }
 create_country_leader = {
     name = "George W. Christians"
+    desc = "POLITICS_GEORGE_CHRISTIANS_DESC"
     picture = "gfx/leaders/FSA/Portrait_FSA_George_W_Christians.png"
     expire = "1.1.1"
     ideology = fitzhughism_subtype

@@ -230,7 +230,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
     name = "Jonathan Wainwright"
-    portrait_path = "gfx/leaders/AML/Portrait_USA_gen_Jonathan_Wainwright.png"
+    portrait_path = "gfx/leaders/USA/Portrait_USA_gen_Jonathan_Wainwright.png"
     traits = {
         trait_reckless
         skirmisher
@@ -247,7 +247,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Walter Bedell Smith"
-    portrait_path = "gfx/leaders/AML/walter_bedell_smith.png"
+    portrait_path = "gfx/leaders/WCC/Portrait_WCC_Walter_Bedell_Smith.png"
     traits = {}
     skill = 3
     attack_skill = 2

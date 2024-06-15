@@ -1152,7 +1152,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "William Joseph 'Wild Bill' Donovan"
-    portrait_path = "gfx/leaders/ENC/William_Joseph_Wild_Bill_Donovan.png"
+    portrait_path = "gfx/leaders/ENC/Portrait_ENC_William_Joseph_Wild_Bill_Donovan.png"
     traits = {
         media_personality
         war_hero
@@ -1168,6 +1168,7 @@ create_corps_commander = {
     defense_skill = 3
     planning_skill = 3
     logistics_skill = 4
+    id = 9929
     
 }
 create_corps_commander = {
@@ -1187,7 +1188,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Stafford LeRoy Irwin"
-    portrait_path = "gfx/leaders/ENC/Stafford_LeRoy_Irwin.png"
+    portrait_path = "gfx/leaders/ENC/Portrait_ENC_Stafford_LeRoy_Irwin.png"
     traits = {
         artillery_officer
         artillery_specialist
@@ -1202,7 +1203,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Joseph May Swing"
-    portrait_path = "gfx/leaders/ENC/Joseph_Swing.png"
+    portrait_path = "gfx/leaders/ENC/Portrait_ENC_Joseph_Swing.png"
     traits = {
         career_officer
         artillery_officer

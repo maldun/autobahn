@@ -938,7 +938,7 @@ create_navy_leader = {
 create_navy_leader = {
     name = "Harold Rainsford Stark"
     desc = "NEE_HAROLD_STARK_NAVY_DESC"
-    portrait_path = "gfx/leaders/NEE/Portrait_NEE_harold_rainsford_stark.png"
+    portrait_path = "gfx/leaders/NEE/Portrait_NEE_Harold_Rainsford_Stark.png"
     traits = {
         spotter
         blockade_runner

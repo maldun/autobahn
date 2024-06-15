@@ -1501,11 +1501,11 @@ ideas = {
                 tactic_guerrilla_tactics_preferred_weight_factor = 1
                 tactic_double_envelopment_preferred_weight_factor = 1
                 out_of_supply_factor = -0.1
-                experience_gain_militia_combat_factor = 0.1
                 equipment_capture_factor = 0.1
                 recon_factor_while_entrenched = 0.1
                 no_supply_grace = 24
                 pocket_penalty = -0.1
+                cas_damage_reduction = 0.1
                 
             }
             ai_will_do = {

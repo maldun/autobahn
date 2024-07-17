@@ -623,8 +623,8 @@ if = {
     }
     create_intelligence_agency = yes
     create_operative_leader = {
-        name = "Gilbert Renault"
-        GFX = GFX_portrait_kr_gilbert_renault
+        name = NFA_gilbert_renault
+        GFX = GFX_portrait_NFA_gilbert_renault_operative
         traits = {
             operative_commando
             

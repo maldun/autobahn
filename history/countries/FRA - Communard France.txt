@@ -238,15 +238,7 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
-    8 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
     28 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
-    34 = {
         enable_state_integration_50_compliance = yes
         
     }
@@ -254,20 +246,12 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
-    741 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
-    760 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
     943 = {
         enable_state_integration_50_compliance = yes
         
     }
-    948 = {
-        enable_state_integration_50_compliance = yes
+    760 = {
+        enable_state_integration_80_compliance = yes
         
     }
     
@@ -361,8 +345,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Odette Sansom"
-        GFX = GFX_portrait_kr_odette_sansom
+        name = FRA_odette_sansom
+        GFX = GFX_portrait_FRA_odette_sansom_operative
         traits = {
             operative_tough
             
@@ -378,8 +362,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Richard Sorge"
-        GFX = GFX_portrait_kr_richard_sorge
+        name = FRA_richard_sorge
+        GFX = GFX_portrait_FRA_richard_sorge_operative
         traits = {
             operative_efficient
             operative_seducer

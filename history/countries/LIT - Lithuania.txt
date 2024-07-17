@@ -184,6 +184,11 @@ set_variable = {
     LIT_LAF_threat = 25
     
 }
+activate_targeted_decision = {
+    decision = LIT_form_litbel
+    target = WHR
+    
+}
 ROOT = {
     94 = {
         enable_state_integration_80_compliance = yes
@@ -223,7 +228,7 @@ recruit_character = LIT_antanas_gustaitis
 recruit_character = LIT_augustinas_povilaitis
 recruit_character = LIT_jonas_vailokaitis
 recruit_character = LIT_juozas_paknys
-recruit_character = LIT_gabriele_petkevicaite-bite
+recruit_character = LIT_gabriele_petkevicaite_bite
 recruit_character = LIT_herbert_tillmanns
 recruit_character = LIT_jonas_pyragius
 recruit_character = LIT_silvestras_zukauskas
@@ -239,9 +244,33 @@ recruit_character = LIT_antanas_kaskelis
 recruit_character = LIT_povilas_julius_labanauskas
 LIT_karl_gero_von_urach = {
     set_character_flag = is_monarch
+    set_character_flag = LIT_unpopular_monarch
     
 }
 LIT_eberhard_von_urach = {
     set_character_flag = is_monarch
+    
+}
+if = {
+    limit = {
+        has_dlc_lar = yes
+        
+    }
+    create_operative_leader = {
+        name = LIT_marcele_kubiliute
+        GFX = GFX_portrait_LIT_marcele_kubiliute_operative
+        traits = {
+            operative_escape_artist
+            
+        }
+        bypass_recruitment = no
+        available_to_spy_master = yes
+        female = yes
+        nationalities = {
+            LIT
+            
+        }
+        
+    }
     
 }

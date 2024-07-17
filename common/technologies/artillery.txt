@@ -524,15 +524,17 @@ technologies = {
             
         }
         artillery_brigade = {
+            breakthrough = 0.05
             mountain = {
-                movement = 0.15
+                attack = 0.1
                 
             }
             
         }
         anti_tank_brigade = {
+            hard_attack = 0.05
             mountain = {
-                movement = 0.15
+                attack = 0.1
                 
             }
             

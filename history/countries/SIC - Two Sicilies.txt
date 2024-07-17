@@ -135,6 +135,8 @@ country_event = {
     
 }
 add_ideas = {
+    limited_conscription
+    SIC_italy_balance_idea
     SIC_shipyard_profits
     SIC_pretty_much_feudalism
     

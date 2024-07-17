@@ -104,6 +104,7 @@ recruit_character = EST_hengo_tulnola
 recruit_character = EST_aleksander_tonisson
 recruit_character = EST_jaan_kruus
 recruit_character = EST_johan_laidoner
+recruit_character = EST_johannes_orasmaa
 recruit_character = EST_johan_pitka
 recruit_character = EST_karl_liidemann
 recruit_character = EST_leo_sepp
@@ -115,7 +116,7 @@ recruit_character = EST_johannes_soodla
 recruit_character = EST_alfons_rebane
 ROOT = {
     FIN = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     

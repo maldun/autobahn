@@ -169,7 +169,7 @@ recruit_character = ELS_mauro_espinola_castro
 recruit_character = ELS_humberto_alejandro_aberle
 recruit_character = ELS_juan_ramon_munes
 recruit_character = ELS_abel_cuenca
-recruit_character = ELS_graciela_amaya_de_arcia
+recruit_character = ELS_graciela_amaya_de_garcia
 recruit_character = ELS_modesto_ramirez
 recruit_character = ELS_hector_escobar_serrano
 recruit_character = ELS_julio_enrique_avila
@@ -196,7 +196,7 @@ ELS_miguel_marmol = {
     set_character_flag = CEN_socialist
     
 }
-ELS_graciela_amaya_de_arcia = {
+ELS_graciela_amaya_de_garcia = {
     set_character_flag = CEN_socialist
     
 }
@@ -213,6 +213,10 @@ ELS_jose_ascencio_menendez = {
     
 }
 ELS_alberto_gomez_zarate = {
+    set_character_flag = CEN_liberal
+    
+}
+ELS_fidel_rodriguez_quintanilla = {
     set_character_flag = CEN_liberal
     
 }

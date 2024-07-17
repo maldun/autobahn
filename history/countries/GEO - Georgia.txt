@@ -118,6 +118,7 @@ country_event = {
     days = 510
     
 }
+recruit_character = GEO_sasha_gegechkori
 recruit_character = GEO_leo_shengelaia
 recruit_character = GEO_noe_zhordania
 recruit_character = GEO_evgeni_gegechkori

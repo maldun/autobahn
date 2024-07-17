@@ -33,6 +33,28 @@ if = {
     }
     
 }
+if = {
+    limit = {
+        has_dlc_mtg = yes
+        
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        
+    }
+    
+}
+if = {
+    limit = {
+        has_dlc_mtg = no
+        
+    }
+    set_technology = {
+        early_destroyer = 1
+        
+    }
+    
+}
 activate_targeted_decision = {
     decision = CEN_unite_central_america
     target = THIS
@@ -46,16 +68,16 @@ set_politics = {
     
 }
 set_popularities = {
-    totalist = 1
-    syndicalist = 3
-    radical_socialist = 15
+    totalist = 2
+    syndicalist = 2
+    radical_socialist = 10
     social_democrat = 12
-    social_liberal = 1
-    market_liberal = 1
-    social_conservative = 18
+    social_liberal = 3
+    market_liberal = 3
+    social_conservative = 14
     authoritarian_democrat = 30
-    paternal_autocrat = 19
-    national_populist = 0
+    paternal_autocrat = 20
+    national_populist = 4
     
 }
 add_ideas = {
@@ -85,6 +107,9 @@ recruit_character = GUA_jose_maria_orellana
 recruit_character = GUA_jorge_ubico_castaneda
 recruit_character = GUA_jacobo_arbenz
 recruit_character = GUA_miguel_garcia_granados_solis
+recruit_character = GUA_antonio_obando_sanchez
+recruit_character = GUA_manuel_bautista_grajeda
+recruit_character = GUA_adrian_recinos
 recruit_character = GUA_carlos_enrique_diaz_de_leon
 recruit_character = GUA_jacinto_rodriguez_diaz
 recruit_character = GUA_carlos_federico_mora
@@ -102,23 +127,10 @@ recruit_character = GUA_jorge_toriello_garrido
 recruit_character = GUA_carlos_aldana_sandoval
 recruit_character = GUA_arturo_ramirez
 recruit_character = GUA_mauro_de_leon
-GUA_juan_jose_arevalo_bermejo = {
-    retire = yes
-    
-}
-GUA_jacobo_arbenz = {
-    retire = yes
-    
-}
+recruit_character = GUA_roderico_anzueto_valencia
+recruit_character = GUA_jose_manuel_fortuny
+activate_advisor = GUA_jorge_ubico_castaneda_sic
 GUA_silverio_ortiz = {
-    set_character_flag = CEN_socialist
-    
-}
-GUA_juan_jose_arevalo_bermejo = {
-    set_character_flag = CEN_socialist
-    
-}
-GUA_jacobo_arbenz = {
     set_character_flag = CEN_socialist
     
 }
@@ -139,10 +151,6 @@ GUA_juan_jose_arevalo_bermejo = {
     
 }
 GUA_julio_domingo_bianchi_smout = {
-    set_character_flag = CEN_liberal
-    
-}
-GUA_jacobo_arbenz = {
     set_character_flag = CEN_liberal
     
 }
@@ -171,6 +179,10 @@ GUA_juan_federico_ponce_vaides = {
     
 }
 GUA_buenaventura_pineda = {
+    set_character_flag = CEN_reactionary
+    
+}
+GUA_eduardo_villagran_ariza = {
     set_character_flag = CEN_reactionary
     
 }

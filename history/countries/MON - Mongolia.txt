@@ -1,12 +1,17 @@
 capital = 330
 oob = "MON"
+set_stability = 0.65
+set_war_support = 0.6
 set_research_slots = 2
+starting_train_buffer = 1
 set_technology = {
     infantry_weapons = 1
+    infantry_weapons1 = 1
     tech_mountaineers = 1
     tech_support = 1
     tech_engineers = 1
     gw_artillery = 1
+    basic_train = 1
     camo = 1
     etax_doctrine = 1
     r56_guerilla_warfare = 1
@@ -16,8 +21,6 @@ set_technology = {
     jungletroops = 1
     
 }
-set_stability = 0.35
-set_war_support = 0.4
 diplomatic_relation = {
     country = RUS
     relation = non_aggression_pact
@@ -37,6 +40,8 @@ set_politics = {
     last_election = "1888.6.15"
     election_frequency = 48
     elections_allowed = no
+    name = MON_paternal_autocrat_party_sternberg
+    long_name = MON_paternal_autocrat_party_sternberg_long
     
 }
 set_popularities = {
@@ -79,7 +84,7 @@ recruit_character = MON_jamsrangiin_tseveen
 recruit_character = MON_dambyn_chagdarjav
 recruit_character = MON_unenbayan
 recruit_character = MON_demchugdongrub
-recruit_character = MON_roman_von_ungernsternberg
+recruit_character = MON_roman_von_ungern_sternberg
 recruit_character = MON_7th_changkya_khutukhtu
 recruit_character = MON_jodbajab
 recruit_character = MON_baiyunti

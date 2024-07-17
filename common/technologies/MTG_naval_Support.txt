@@ -171,6 +171,15 @@ technologies = {
                 factor = 10
                 
             }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
+                
+            }
             
         }
         categories = {
@@ -424,6 +433,15 @@ technologies = {
             modifier = {
                 has_war = yes
                 factor = 7
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -761,6 +779,15 @@ technologies = {
                 is_major = yes
                 has_war = yes
                 factor = 5
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -1114,6 +1141,15 @@ technologies = {
                 factor = 2
                 
             }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
+                
+            }
             
         }
         categories = {
@@ -1252,6 +1288,15 @@ technologies = {
             modifier = {
                 tag = JAP
                 factor = 5
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -1419,8 +1464,28 @@ technologies = {
         ai_will_do = {
             factor = 3
             modifier = {
+                is_historical_focus_on = yes
+                tag = JAP
+                factor = 0.25
+                
+            }
+            modifier = {
+                tag = GEA
+                factor = 3
+                
+            }
+            modifier = {
                 has_war = yes
                 factor = 2
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -1574,6 +1639,15 @@ technologies = {
             modifier = {
                 tag = JAP
                 factor = 5
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -1814,7 +1888,11 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                is_major = yes
+                OR = {
+                    tag = GEA
+                    tag = ENG
+                    
+                }
                 factor = 6
                 
             }
@@ -1826,6 +1904,15 @@ technologies = {
             modifier = {
                 is_major = no
                 factor = 2
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             

@@ -2,6 +2,7 @@ capital = 806
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     camo = 1
     etax_doctrine = 1
     r56_militia_tech = 1
@@ -27,7 +28,6 @@ set_popularities = {
     national_populist = 0
     
 }
-set_convoys = 10
 recruit_character = GNA_elhadj_abdoulaye_diallo
 recruit_character = GNA_koumandian_keita
 recruit_character = GNA_albert_liurette
@@ -40,3 +40,56 @@ recruit_character = GNA_barry_diawadou
 recruit_character = GNA_tierno_abdourahmani
 recruit_character = GNA_karamoko_dalen
 recruit_character = GNA_reymond_sarif_easmon
+division_template = {
+    name = "Guinean Militia"
+    division_names_group = FREN_MIL_01
+    regiments = {
+        irregular_infantry = {
+            x = 0
+            y = 0
+            
+        }
+        irregular_infantry = {
+            x = 0
+            y = 1
+            
+        }
+        irregular_infantry = {
+            x = 0
+            y = 2
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 0
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 1
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 2
+            
+        }
+        irregular_infantry = {
+            x = 2
+            y = 0
+            
+        }
+        irregular_infantry = {
+            x = 2
+            y = 1
+            
+        }
+        irregular_infantry = {
+            x = 2
+            y = 2
+            
+        }
+        
+    }
+    
+}

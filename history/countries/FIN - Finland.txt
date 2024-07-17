@@ -4,7 +4,7 @@ set_naval_oob = "FIN_naval"
 set_convoys = 20
 set_research_slots = 3
 set_war_support = 0.4
-set_cosmetic_tag = FIN_kingdom
+set_cosmetic_tag = FIN_monarchy
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -132,7 +132,7 @@ add_ideas = {
 }
 ROOT = {
     EST = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     146 = {

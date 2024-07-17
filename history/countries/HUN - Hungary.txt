@@ -201,11 +201,11 @@ AUS_joseph_august_von_habsburg = {
 }
 ROOT = {
     SLO = {
-        enable_coring_at_eighty_compliance = yes
+        enable_country_integration_80_compliance = yes
         
     }
     TRS = {
-        enable_coring_at_eighty_compliance = yes
+        enable_country_integration_80_compliance = yes
         
     }
     45 = {

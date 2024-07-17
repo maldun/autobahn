@@ -282,7 +282,7 @@ set_variable = {
 country_lock_all_division_template = yes
 ROOT = {
     MNT = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     45 = {
@@ -356,6 +356,7 @@ recruit_character = SER_dobrica_matkovic
 recruit_character = SER_petar_kosic
 recruit_character = SER_dragomir_stojanovic
 recruit_character = SER_navy_army_command
+recruit_character = SER_zdenko_ulepic
 recruit_character = SER_military_reform_council
 activate_advisor = SER_milan_grol_sic
 SER_petar_ii = {
@@ -378,14 +379,18 @@ SER_arso_jovanovic = {
     retire = yes
     
 }
+SER_zdenko_ulepic = {
+    retire = yes
+    
+}
 if = {
     limit = {
         has_dlc_lar = yes
         
     }
     create_operative_leader = {
-        name = "Duško Popov"
-        GFX = GFX_portrait_kr_dusko_popov
+        name = SER_dusko_popov
+        GFX = GFX_portrait_SER_dusko_popov_operative
         traits = {
             operative_seducer
             operative_infiltrator

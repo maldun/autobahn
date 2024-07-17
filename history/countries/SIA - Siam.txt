@@ -370,35 +370,120 @@ SIA_bunchai_sawathasuk = {
     set_character_flag = SIA_royalist
     
 }
-749 = {
+add_to_array = {
+    SIA_coreable_array = 72.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 670.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 749.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 750.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 751.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 756.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 825.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 826.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 830.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 831.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 882.id
+    
+}
+add_to_array = {
+    SIA_coreable_array = 999.id
+    
+}
+add_to_array = {
+    SIA_municipal_reform_already_passed = 749.id
+    
+}
+add_to_array = {
+    SIA_municipal_reform_already_passed = 751.id
+    
+}
+add_to_array = {
+    SIA_municipal_reform_already_passed = 825.id
+    
+}
+add_to_array = {
+    SIA_municipal_reform_already_passed = 830.id
+    
+}
+add_to_array = {
+    SIA_municipal_reform_already_passed = 831.id
+    
+}
+add_to_array = {
+    SIA_municipal_reform_already_passed = 882.id
+    
+}
+for_each_scope_loop = {
+    array = SIA_municipal_reform_already_passed
     set_state_flag = SIA_municipal_reform_implemented
     
 }
-825 = {
-    set_state_flag = SIA_municipal_reform_implemented
-    set_state_flag = SIA_legal_reform_implemented
-    set_state_flag = SIA_civil_service_expansion_implemented
-    
-}
-830 = {
-    set_state_flag = SIA_municipal_reform_implemented
-    set_state_flag = SIA_legal_reform_implemented
-    set_state_flag = SIA_civil_service_expansion_implemented
-    
-}
-831 = {
-    set_state_flag = SIA_municipal_reform_implemented
-    
-}
-882 = {
-    set_state_flag = SIA_municipal_reform_implemented
-    set_state_flag = SIA_legal_reform_implemented
-    
-}
-999 = {
-    set_state_flag = SIA_municipal_reform_implemented
-    set_state_flag = SIA_legal_reform_implemented
-    set_state_flag = SIA_civil_service_expansion_implemented
+ROOT = {
+    751 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    756 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    825 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    830 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    882 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    999 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    749 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    750 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    831 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     
 }
 if = {
@@ -407,8 +492,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Jumkad Plangkoon"
-        GFX = GFX_portrait_kr_jumkad_plangkoon
+        name = SIA_jumkad_plangkoon
+        GFX = GFX_portrait_SIA_jumkad_plangkoon_operative
         traits = {
             operative_well_groomed
             
@@ -422,8 +507,8 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Puey Ungphakorn"
-        GFX = GFX_portrait_kr_puey_ungphakorn
+        name = SIA_puey_ungphakorn
+        GFX = GFX_portrait_SIA_puey_ungphakorn_operative
         traits = {
             operative_linguist
             

@@ -2720,19 +2720,10 @@ USA_civil_war_begins = {
                 }
                 
             }
-            BOL = {
-                country_event = {
-                    id = bol.21
-                    days = 10
-                    random_days = 5
-                    
-                }
-                
-            }
             NIC = {
                 country_event = {
                     id = nic.41
-                    days = 7
+                    days = 3
                     
                 }
                 
@@ -8145,26 +8136,7 @@ USA_spawn_new_england = {
                 
             }
             NEE = {
-                create_operative_leader = {
-                    name = "Virginia Hall"
-                    GFX = GFX_portrait_kr_virginia_hall
-                    traits = {
-                        operative_demolition_expert
-                        
-                    }
-                    bypass_recruitment = no
-                    available_to_spy_master = yes
-                    female = yes
-                    nationalities = {
-                        NEE
-                        USA
-                        CSA
-                        TEX
-                        PSA
-                        
-                    }
-                    
-                }
+                USA_create_virginia_hall_operative = yes
                 
             }
             
@@ -8466,12 +8438,12 @@ USA_starting_techs = {
         tech_mountaineers = 1
         basic_train = 1
         aluminum_production_1 = 1
-        steel_production_1 = 1
-        camo = 1
-        r56_railway_mortar_subtech = 1
         transport_plane1 = 1
+        steel_production_1 = 1
         r56_gw_railway_gun = 1
         etax_doctrine = 1
+        camo = 1
+        r56_railway_mortar_subtech = 1
         
     }
     if = {
@@ -8491,12 +8463,12 @@ USA_starting_techs = {
             aircraft_construction = 1
             air_torpedoe_1 = 1
             aluminum_production_1 = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
+            steel_production_1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             
         }
         
@@ -8511,12 +8483,12 @@ USA_starting_techs = {
             CAS1 = 1
             early_bomber = 1
             aluminum_production_1 = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
+            steel_production_1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             
         }
         
@@ -8531,12 +8503,12 @@ USA_starting_techs = {
             basic_light_tank_chassis = 1
             engine_tech_1 = 1
             aluminum_production_1 = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
+            steel_production_1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             
         }
         add_ideas = bureau_of_ordnance_spirit
@@ -8547,12 +8519,12 @@ USA_starting_techs = {
             gwtank = 1
             basic_light_tank = 1
             aluminum_production_1 = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
+            steel_production_1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             
         }
         
@@ -8588,12 +8560,12 @@ USA_starting_techs = {
             submarine_mine_laying = 1
             mtg_transport = 1
             aluminum_production_1 = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
+            steel_production_1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             
         }
         
@@ -8615,12 +8587,12 @@ USA_starting_techs = {
             basic_carrier = 1
             transport = 1
             aluminum_production_1 = 1
-            steel_production_1 = 1
-            camo = 1
-            r56_railway_mortar_subtech = 1
             transport_plane1 = 1
+            steel_production_1 = 1
             r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
+            r56_railway_mortar_subtech = 1
             
         }
         

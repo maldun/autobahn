@@ -20,6 +20,10 @@ add_ideas = {
     ZIM_segregation_3
     
 }
+set_variable = {
+    ZIM_segregation_idea = token:ZIM_segregation_3
+    
+}
 set_popularities = {
     totalist = 0
     radical_socialist = 0

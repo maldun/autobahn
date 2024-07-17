@@ -212,6 +212,16 @@ country_event = {
     random_days = 60
     
 }
+country_event = {
+    id = KRBAT.124
+    days = 958
+    
+}
+country_event = {
+    id = KRBAT.125
+    days = 1827
+    
+}
 880 = {
     add_dynamic_modifier = {
         modifier = BAT_Latgale_autonomous_region

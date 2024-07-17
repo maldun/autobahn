@@ -116,7 +116,7 @@ recruit_character = EST_johannes_soodla
 recruit_character = EST_alfons_rebane
 ROOT = {
     FIN = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     

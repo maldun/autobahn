@@ -207,7 +207,7 @@ recruit_character = RUS_arkady_udintsev
 recruit_character = RUS_TRM_council_of_theorists
 ROOT = {
     RUS = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     

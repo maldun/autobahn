@@ -61,6 +61,15 @@ technologies = {
                 factor = 0.2
                 
             }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
+                
+            }
             
         }
         categories = {
@@ -124,6 +133,15 @@ technologies = {
                 factor = 0.2
                 
             }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
+                
+            }
             
         }
         categories = {
@@ -171,6 +189,15 @@ technologies = {
                 factor = 4
                 has_tech_bonus = {
                     category = dd_tech
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
                     
                 }
                 
@@ -319,6 +346,15 @@ technologies = {
                 tag = ENG
                 
             }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
+                
+            }
             
         }
         categories = {
@@ -361,8 +397,12 @@ technologies = {
         ai_will_do = {
             factor = 4
             modifier = {
-                factor = 2
-                has_war_with = GER
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             modifier = {
@@ -379,6 +419,15 @@ technologies = {
                     
                 }
                 factor = 0.2
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -446,6 +495,11 @@ technologies = {
                     
                 }
                 factor = 0.2
+                
+            }
+            modifier = {
+                factor = 0.5
+                original_tag = GER
                 
             }
             
@@ -639,6 +693,15 @@ technologies = {
                     
                 }
                 factor = 0.2
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -1086,6 +1149,15 @@ technologies = {
                 factor = 0.2
                 
             }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
+                
+            }
             
         }
         categories = {
@@ -1132,6 +1204,15 @@ technologies = {
             modifier = {
                 factor = 3
                 is_major = yes
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -1183,6 +1264,15 @@ technologies = {
             modifier = {
                 factor = 2
                 is_major = yes
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             
@@ -1387,6 +1477,15 @@ technologies = {
                 factor = 0.2
                 
             }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
+                
+            }
             
         }
         categories = {
@@ -1457,6 +1556,15 @@ technologies = {
             modifier = {
                 factor = 5
                 tag = USA
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
+                    
+                }
                 
             }
             modifier = {
@@ -1730,6 +1838,15 @@ technologies = {
                 factor = 4
                 has_tech_bonus = {
                     category = cv_tech
+                    
+                }
+                
+            }
+            modifier = {
+                factor = 0.2
+                OR = {
+                    original_tag = RUS
+                    original_tag = GER
                     
                 }
                 

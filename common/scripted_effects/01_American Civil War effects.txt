@@ -2720,19 +2720,10 @@ USA_civil_war_begins = {
                 }
                 
             }
-            BOL = {
-                country_event = {
-                    id = bol.21
-                    days = 10
-                    random_days = 5
-                    
-                }
-                
-            }
             NIC = {
                 country_event = {
                     id = nic.41
-                    days = 7
+                    days = 3
                     
                 }
                 
@@ -8446,12 +8437,12 @@ USA_starting_techs = {
         marines = 1
         tech_mountaineers = 1
         basic_train = 1
-        transport_plane1 = 1
-        r56_gw_railway_gun = 1
         aluminum_production_1 = 1
+        transport_plane1 = 1
         steel_production_1 = 1
-        camo = 1
+        r56_gw_railway_gun = 1
         etax_doctrine = 1
+        camo = 1
         r56_railway_mortar_subtech = 1
         
     }
@@ -8471,12 +8462,12 @@ USA_starting_techs = {
             early_bombs = 1
             aircraft_construction = 1
             air_torpedoe_1 = 1
-            transport_plane1 = 1
-            r56_gw_railway_gun = 1
             aluminum_production_1 = 1
+            transport_plane1 = 1
             steel_production_1 = 1
-            camo = 1
+            r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
             r56_railway_mortar_subtech = 1
             
         }
@@ -8491,12 +8482,12 @@ USA_starting_techs = {
             naval_bomber1 = 1
             CAS1 = 1
             early_bomber = 1
-            transport_plane1 = 1
-            r56_gw_railway_gun = 1
             aluminum_production_1 = 1
+            transport_plane1 = 1
             steel_production_1 = 1
-            camo = 1
+            r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
             r56_railway_mortar_subtech = 1
             
         }
@@ -8511,12 +8502,12 @@ USA_starting_techs = {
             gwtank_chassis = 1
             basic_light_tank_chassis = 1
             engine_tech_1 = 1
-            transport_plane1 = 1
-            r56_gw_railway_gun = 1
             aluminum_production_1 = 1
+            transport_plane1 = 1
             steel_production_1 = 1
-            camo = 1
+            r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
             r56_railway_mortar_subtech = 1
             
         }
@@ -8527,12 +8518,12 @@ USA_starting_techs = {
         set_technology = {
             gwtank = 1
             basic_light_tank = 1
-            transport_plane1 = 1
-            r56_gw_railway_gun = 1
             aluminum_production_1 = 1
+            transport_plane1 = 1
             steel_production_1 = 1
-            camo = 1
+            r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
             r56_railway_mortar_subtech = 1
             
         }
@@ -8568,12 +8559,12 @@ USA_starting_techs = {
             basic_naval_mines = 1
             submarine_mine_laying = 1
             mtg_transport = 1
-            transport_plane1 = 1
-            r56_gw_railway_gun = 1
             aluminum_production_1 = 1
+            transport_plane1 = 1
             steel_production_1 = 1
-            camo = 1
+            r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
             r56_railway_mortar_subtech = 1
             
         }
@@ -8595,12 +8586,12 @@ USA_starting_techs = {
             early_carrier = 1
             basic_carrier = 1
             transport = 1
-            transport_plane1 = 1
-            r56_gw_railway_gun = 1
             aluminum_production_1 = 1
+            transport_plane1 = 1
             steel_production_1 = 1
-            camo = 1
+            r56_gw_railway_gun = 1
             etax_doctrine = 1
+            camo = 1
             r56_railway_mortar_subtech = 1
             
         }

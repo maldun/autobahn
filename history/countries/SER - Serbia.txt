@@ -282,7 +282,7 @@ set_variable = {
 country_lock_all_division_template = yes
 ROOT = {
     MNT = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     45 = {

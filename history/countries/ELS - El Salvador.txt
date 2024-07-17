@@ -216,6 +216,10 @@ ELS_alberto_gomez_zarate = {
     set_character_flag = CEN_liberal
     
 }
+ELS_fidel_rodriguez_quintanilla = {
+    set_character_flag = CEN_liberal
+    
+}
 ELS_salvador_pena_trejo = {
     set_character_flag = CEN_reactionary
     

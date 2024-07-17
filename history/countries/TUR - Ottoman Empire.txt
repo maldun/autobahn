@@ -185,7 +185,7 @@ set_variable = {
 }
 set_variable = {
     var = coalition_stability
-    value = 1
+    value = 0.25
     
 }
 OTT_calc_coalition_strength = yes
@@ -370,7 +370,7 @@ LBA = {
 }
 TRK = {
     country_event = {
-        id = ott.0
+        id = ottfla.0
         days = 348
         
     }
@@ -378,7 +378,7 @@ TRK = {
 }
 BUK = {
     country_event = {
-        id = ott.0
+        id = ottfla.0
         days = 348
         
     }
@@ -386,15 +386,7 @@ BUK = {
 }
 KHI = {
     country_event = {
-        id = ott.0
-        days = 348
-        
-    }
-    
-}
-EGY = {
-    country_event = {
-        id = ott.0
+        id = ottfla.0
         days = 348
         
     }
@@ -402,7 +394,7 @@ EGY = {
 }
 SAU = {
     country_event = {
-        id = ott.0
+        id = ottfla.0
         days = 348
         
     }
@@ -410,7 +402,7 @@ SAU = {
 }
 AFG = {
     country_event = {
-        id = ott.0
+        id = ottfla.0
         days = 348
         
     }
@@ -418,7 +410,7 @@ AFG = {
 }
 AZR = {
     country_event = {
-        id = ott.0
+        id = ottfla.0
         days = 348
         
     }
@@ -426,7 +418,7 @@ AZR = {
 }
 OMA = {
     country_event = {
-        id = ott.0
+        id = ottfla.0
         days = 348
         
     }
@@ -434,7 +426,7 @@ OMA = {
 }
 YEM = {
     country_event = {
-        id = ott.0
+        id = ottfla.0
         days = 348
         
     }

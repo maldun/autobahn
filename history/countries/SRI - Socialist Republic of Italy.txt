@@ -407,35 +407,35 @@ SRI_leonilde_iotti = {
 }
 ROOT = {
     ITA = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     LOM = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     VNC = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     TUS = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     EMI = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     PAP = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     SIC = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     SRD = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     italy_enable_claim_integration = yes

@@ -277,8 +277,7 @@ add_ideas = {
 }
 recruit_character = ITA_costanzo_ciano
 recruit_character = ITA_gian_galeazzo_ciano
-recruit_character = ITA_pietro_ferdinando
-recruit_character = ITA_adriano_visconti
+recruit_character = ITA_arturo_michelini
 recruit_character = ITA_emilio_de_bono
 recruit_character = ITA_giovanni_gronchi
 recruit_character = ITA_luigi_einaudi
@@ -286,6 +285,8 @@ recruit_character = ITA_marcello_soleri
 recruit_character = ITA_ivanoe_bonomi
 recruit_character = ITA_ferruccio_parri
 recruit_character = ITA_giacomo_matteotti
+recruit_character = ITA_marcello_visconti_di_modrone
+recruit_character = ITA_pietro_ferdinando
 recruit_character = ITA_federico_comandini
 recruit_character = ITA_giovanni_uberti
 recruit_character = ITA_augusto_de_marsanich
@@ -309,7 +310,6 @@ recruit_character = ITA_mario_stoppani
 recruit_character = ITA_marziale_cerutti
 recruit_character = ITA_pietro_piacentini
 recruit_character = ITA_ezio_maria_gray
-activate_advisor = ITA_giacomo_matteotti_sic
 recruit_character = ITA_rodolfo_graziani
 recruit_character = ITA_ettore_bastico
 recruit_character = ITA_annibale_bergonzoli
@@ -324,6 +324,7 @@ recruit_character = ITA_alberto_da_zara
 recruit_character = ITA_gino_pavesi
 recruit_character = ITA_raffaele_de_courten
 recruit_character = ITA_carlo_bergamini
+activate_advisor = ITA_giacomo_matteotti_sic
 ITA_pietro_ferdinando = {
     set_character_flag = is_monarch
     
@@ -380,6 +381,8 @@ ITA = {
                 has_character_flag = is_monarch
                 is_character = ITA_ferruccio_parri
                 is_character = ITA_alessandro_pavolini
+                is_character = ITA_costanzo_ciano
+                is_character = ITA_gian_galeazzo_ciano
                 
             }
             
@@ -408,35 +411,35 @@ ITA = {
 }
 ROOT = {
     SRI = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     LOM = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     VNC = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     TUS = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     EMI = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     PAP = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     SIC = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     SRD = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     italy_enable_claim_integration = yes

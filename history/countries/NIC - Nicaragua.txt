@@ -4,6 +4,7 @@ set_convoys = 20
 set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
+    tech_militias = 1
     tech_trucks = 1
     gw_artillery = 1
     camo = 1
@@ -136,6 +137,14 @@ NIC_federico_davidson_blanco = {
     retire = yes
     
 }
+NIC_abelardo_cuadra = {
+    retire = yes
+    
+}
+NIC_emiliano_chamorro_vargas = {
+    retire = yes
+    
+}
 NIC_jose_pedro_zepeda = {
     set_character_flag = CEN_socialist
     
@@ -152,7 +161,35 @@ NIC_pedro_altamirano = {
     set_character_flag = CEN_socialist
     
 }
+NIC_juan_pablo_umanzor = {
+    set_character_flag = CEN_socialist
+    
+}
+NIC_jose_leon_diaz = {
+    set_character_flag = CEN_socialist
+    
+}
+NIC_celestino_zeledon = {
+    set_character_flag = CEN_socialist
+    
+}
+NIC_pedro_antonio_irias = {
+    set_character_flag = CEN_socialist
+    
+}
+NIC_ramon_telles = {
+    set_character_flag = CEN_liberal
+    
+}
+NIC_juan_escamilla = {
+    set_character_flag = CEN_liberal
+    
+}
 NIC_hernan_robleto = {
+    set_character_flag = CEN_liberal
+    
+}
+NIC_carlos_alberto_brenes_jarquin = {
     set_character_flag = CEN_liberal
     
 }
@@ -168,7 +205,19 @@ NIC_francisco_sequeira_moreno = {
     set_character_flag = CEN_liberal
     
 }
+NIC_ramon_telles = {
+    set_character_flag = CEN_reactionary
+    
+}
+NIC_juan_escamilla = {
+    set_character_flag = CEN_reactionary
+    
+}
 NIC_guillermo_sevilla_sacasa = {
+    set_character_flag = CEN_reactionary
+    
+}
+NIC_carlos_alberto_brenes_jarquin = {
     set_character_flag = CEN_reactionary
     
 }

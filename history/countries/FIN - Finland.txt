@@ -132,7 +132,7 @@ add_ideas = {
 }
 ROOT = {
     EST = {
-        enable_coring_at_fifty_compliance = yes
+        enable_country_integration_50_compliance = yes
         
     }
     146 = {

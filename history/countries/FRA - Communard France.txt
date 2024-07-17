@@ -238,15 +238,7 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
-    8 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
     28 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
-    34 = {
         enable_state_integration_50_compliance = yes
         
     }
@@ -254,20 +246,12 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
-    741 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
-    760 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
     943 = {
         enable_state_integration_50_compliance = yes
         
     }
-    948 = {
-        enable_state_integration_50_compliance = yes
+    760 = {
+        enable_state_integration_80_compliance = yes
         
     }
     

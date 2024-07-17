@@ -14,6 +14,11 @@ set_technology = {
     etax_doctrine = 1
     
 }
+country_event = {
+    id = shandong.2
+    days = 21
+    
+}
 if = {
     limit = {
         has_dlc_bba = no
@@ -105,6 +110,7 @@ SQI_qu_yingguang = {
         china_alignment = token:zhili
         
     }
+    set_character_flag = CHN_original_unit_leader
     
 }
 SQI_zhang_zongchang = {
@@ -112,6 +118,7 @@ SQI_zhang_zongchang = {
         china_alignment = token:fengtian
         
     }
+    set_character_flag = CHN_original_unit_leader
     
 }
 SQI_zhang_tianran = {
@@ -123,7 +130,6 @@ SQI_zhang_tianran = {
 }
 SQI_liu_zhennian = {
     set_character_flag = CHN_original_unit_leader
-    retire = yes
     
 }
 SQI_lu_yongxiang = {
@@ -131,7 +137,7 @@ SQI_lu_yongxiang = {
     retire = yes
     
 }
-SQI_xu_yuanquan = {
+SQI_lu_jin = {
     set_character_flag = CHN_original_unit_leader
     retire = yes
     
@@ -149,6 +155,59 @@ SQI_xue_dian = {
 SQI_zhang_huaizhi = {
     set_character_flag = CHN_original_unit_leader
     retire = yes
+    
+}
+SQI_xu_yuanquan = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_li_jinglin = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_wu_huawen = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_jin_yune = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_ma_liang = {
+    set_character_flag = CHN_original_unit_leader
+    retire = yes
+    
+}
+SQI_boris_annenkov = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_zhang_jingyao = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_sun_dianying = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_chu_yupu = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_li_zaolin = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_qu_tongfeng = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_junnosuke_date = {
+    set_character_flag = CHN_original_unit_leader
+    
+}
+SQI_hakuro_kohinata = {
+    set_character_flag = CHN_original_unit_leader
     
 }
 SQI_zhao_hong_wenguo = {

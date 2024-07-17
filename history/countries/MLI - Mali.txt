@@ -1,6 +1,8 @@
 capital = 556
+set_research_slots = 2
 set_technology = {
     infantry_weapons = 1
+    tech_irregulars = 1
     camo = 1
     desertinfantry_at = 1
     etax_doctrine = 1
@@ -8,7 +10,6 @@ set_technology = {
     r56_militia_tech = 1
     
 }
-set_research_slots = 2
 set_politics = {
     ruling_party = social_liberal
     last_election = "1888.6.15"
@@ -35,3 +36,99 @@ recruit_character = MLI_mamby_sidibe
 recruit_character = MLI_emile_belime
 recruit_character = MLI_hamallah_bin_muhammad_al_tishiti
 recruit_character = MLI_noukoun_kone
+division_template = {
+    name = "Malian Militia"
+    division_names_group = FREN_MIL_01
+    regiments = {
+        irregular_infantry = {
+            x = 0
+            y = 0
+            
+        }
+        irregular_infantry = {
+            x = 0
+            y = 1
+            
+        }
+        irregular_infantry = {
+            x = 0
+            y = 2
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 0
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 1
+            
+        }
+        irregular_infantry = {
+            x = 1
+            y = 2
+            
+        }
+        irregular_infantry = {
+            x = 2
+            y = 0
+            
+        }
+        irregular_infantry = {
+            x = 2
+            y = 1
+            
+        }
+        irregular_infantry = {
+            x = 2
+            y = 2
+            
+        }
+        
+    }
+    
+}
+division_template = {
+    name = "Tuareg Cavalry"
+    division_names_group = FREN_CAV_01
+    regiments = {
+        cavalry = {
+            x = 0
+            y = 0
+            
+        }
+        cavalry = {
+            x = 0
+            y = 1
+            
+        }
+        cavalry = {
+            x = 0
+            y = 2
+            
+        }
+        cavalry = {
+            x = 1
+            y = 0
+            
+        }
+        cavalry = {
+            x = 1
+            y = 1
+            
+        }
+        cavalry = {
+            x = 1
+            y = 2
+            
+        }
+        cavalry = {
+            x = 2
+            y = 0
+            
+        }
+        
+    }
+    
+}

@@ -294,22 +294,6 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
-    name = "Pierre de la Font-Chabert"
-    portrait_path = "gfx/leaders/Generic/Portrait_France_Generic_land_3.png"
-    traits = {
-        trait_reckless
-        cavalry_officer
-        cavalry_leader
-        
-    }
-    skill = 1
-    attack_skill = 2
-    defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
-    
-}
-create_corps_commander = {
     name = "Henry Martin"
     portrait_path = "gfx/leaders/FRP/Portrait_FRP_Martin.png"
     traits = {
@@ -341,15 +325,5 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 3
     logistics_skill = 2
-    
-}
-create_navy_leader = {
-    name = "Jean de Laborde"
-    portrait_path = "gfx/leaders/Generic/Portrait_France_Generic_navy_1.png"
-    traits = {
-        spotter
-        
-    }
-    skill = 4
     
 }

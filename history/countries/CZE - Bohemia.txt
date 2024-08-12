@@ -321,6 +321,23 @@ create_corps_commander = {
     
 }
 add_manpower = 100000
+create_operative_leader = {
+    name = "Klement Stármík"
+    GFX = GFX_Portrait_CZE_Klement_Starmik
+    traits = {
+        operative_infiltrator
+        
+    }
+    bypass_recruitment = yes
+    available_to_spy_master = no
+    nationalities = {
+        CZE
+        ENG
+        USA
+        
+    }
+    
+}
 country_event = {
     id = bdeczeflavor.131
     days = 130

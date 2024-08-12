@@ -121,7 +121,6 @@ add_ideas = {
     CHI_Liao_Zhongkai_hog_rso
     
 }
-country_lock_all_division_template = yes
 country_event = {
     id = CHI.midgame.815
     days = 1305

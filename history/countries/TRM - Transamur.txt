@@ -432,15 +432,14 @@ create_field_marshal = {
     traits = {
         offensive_doctrine
         politically_connected
-        infantry_leader
-        infantry_expert
+        brilliant_strategist
         old_guard
         
     }
-    skill = 4
+    skill = 3
     attack_skill = 3
     defense_skill = 2
-    planning_skill = 2
+    planning_skill = 3
     logistics_skill = 2
     
 }
@@ -484,17 +483,16 @@ create_corps_commander = {
     id = 505059
     portrait_path = "gfx/leaders/TRM/Portrait_TRM_Sergey_Wojciechowski.png"
     traits = {
-        war_hero
-        harsh_leader
-        organizer
+        artillery_officer
+        infantry_leader
         ranger
         
     }
     skill = 3
-    attack_skill = 4
-    defense_skill = 3
+    attack_skill = 3
+    defense_skill = 2
     planning_skill = 2
-    logistics_skill = 1
+    logistics_skill = 3
     
 }
 create_corps_commander = {
@@ -502,16 +500,17 @@ create_corps_commander = {
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Anatoliy_Pepelyaev.png"
     id = 505060
     traits = {
-        career_officer
-        old_guard
-        skilled_staffer
+        war_hero
+        infantry_leader
+        infantry_expert
+        organizer
         
     }
-    skill = 3
+    skill = 4
     attack_skill = 4
-    defense_skill = 2
+    defense_skill = 3
     planning_skill = 2
-    logistics_skill = 2
+    logistics_skill = 4
     
 }
 create_corps_commander = {
@@ -522,14 +521,14 @@ create_corps_commander = {
     traits = {
         brilliant_strategist
         winter_specialist
-        winter_expert
         cavalry_leader
+        combined_arms_expert
         
     }
-    skill = 3
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 2
+    skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 4
     logistics_skill = 4
     
 }
@@ -598,14 +597,15 @@ create_corps_commander = {
     id = 50004
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Mikhail_Khanzhin.png"
     traits = {
-        old_guard
+        artillery_specialist
+        infantry_leader
         
     }
-    skill = 1
-    attack_skill = 1
+    skill = 3
+    attack_skill = 3
     defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
     
 }
 create_corps_commander = {
@@ -736,16 +736,17 @@ create_navy_leader = {
     id = 50001
     portrait_path = "gfx/leaders/TRM/Portrait_TRM_Aleksandr_Kolchak.png"
     traits = {
+        arctic_water_expert
         superior_tactician
-        war_hero
+        spotter
         navy_media_personality
         
     }
-    skill = 4
-    maneuvering_skill = 3
-    defense_skill = 3
+    skill = 5
     attack_skill = 4
-    coordination_skill = 3
+    defense_skill = 3
+    maneuvering_skill = 4
+    coordination_skill = 5
     
 }
 create_navy_leader = {

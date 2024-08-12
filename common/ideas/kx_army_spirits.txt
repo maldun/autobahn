@@ -59,6 +59,35 @@ ideas = {
         
     }
     division_command_spirit = {
+        international_revolution_spirit = {
+            ledger = army
+            picture = upbeat_command_spirit
+            visible = {
+                is_in_faction_with = INT
+                
+            }
+            modifier = {
+                coordination_bonus = 0.05
+                experience_loss_factor = -0.15
+                
+            }
+            ai_will_do = {
+                factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
         gekokujo_spirit = {
             ledger = army
             picture = japanese_influence_1
@@ -93,7 +122,7 @@ ideas = {
         }
         reichspakt_defense_spirit = {
             ledger = army
-            picture = political_connections_spirit
+            picture = GER_imperial_pride_guns
             visible = {
                 is_in_faction_with = GER
                 GER = {
@@ -105,42 +134,6 @@ ideas = {
             modifier = {
                 army_org_factor = 0.1
                 army_morale_factor = 0.05
-                
-            }
-            ai_will_do = {
-                factor = 2
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        entente_invasion_spirit = {
-            ledger = army
-            picture = long_range_patrol_spirit
-            visible = {
-                is_in_faction_with = ENT
-                
-            }
-            equipment_bonus = {
-                floating_harbor_equipment = {
-                    build_cost_ic = -0.1
-                    instant = yes
-                    
-                }
-                
-            }
-            modifier = {
-                naval_invasion_penalty = -0.25
                 
             }
             ai_will_do = {
@@ -188,16 +181,23 @@ ideas = {
             }
             
         }
-        international_revolution_spirit = {
+        entente_invasion_spirit = {
             ledger = army
-            picture = upbeat_command_spirit
+            picture = long_range_patrol_spirit
             visible = {
-                is_in_faction_with = INT
+                is_in_faction_with = ENT
+                
+            }
+            equipment_bonus = {
+                floating_harbor_equipment = {
+                    build_cost_ic = -0.1
+                    instant = yes
+                    
+                }
                 
             }
             modifier = {
-                coordination_bonus = 0.05
-                experience_loss_factor = -0.15
+                naval_invasion_penalty = -0.25
                 
             }
             ai_will_do = {

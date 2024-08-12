@@ -167,17 +167,17 @@ set_popularities = {
     
 }
 create_country_leader = {
-    name = "Jeffery Hamm"
-    picture = "gfx/leaders/WAL/Portrait_Wales_Jeffrey_Hamm.png"
+    name = "John Strachey"
+    picture = "gfx/leaders/ENG/Portrait_England_John_Strachey.png"
     expire = "1.1.1"
-    ideology = british_maximism_subtype
+    ideology = tot_reformed_natsynd_subtype
     
 }
 create_country_leader = {
-    name = "Tom Mann"
-    picture = "gfx/leaders/ENG/Portrait_England_Tom_Mann.png"
+    name = "Sylvia Pankhurst"
+    picture = "gfx/leaders/ENG/Portrait_England_Sylvia_Pankhurst.png"
     expire = "1.1.1"
-    ideology = syndicalist_subtype
+    ideology = feminist_syndicalist_subtype
     
 }
 create_country_leader = {
@@ -226,16 +226,18 @@ create_country_leader = {
     
 }
 create_country_leader = {
-    name = "Anthony Ludovici"
-    picture = "gfx/leaders/ENG/Portrait_England_Anthony_Ludovici.png"
+    name = "Archibald Maule Ramsay"
+    picture = "gfx/leaders/BRG/Portrait_BRG_Archibald_Ramsay_Civilian.png"
     expire = "1.1.1"
     ideology = neo_feudalism_subtype
+    traits = {}
     
 }
 create_country_leader = {
-    name = "Archibald Ramsay"
-    picture = "gfx/leaders/ENG/Portrait_England_Archibald_Ramsay.png"
+    name = "William Joyce"
+    picture = "gfx/leaders/BRG/Portrait_BRG_William_Joyce.png"
     expire = "1.1.1"
-    ideology = national_populist_subtype
+    ideology = legionarism_subtype
+    traits = {}
     
 }

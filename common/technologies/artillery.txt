@@ -77,23 +77,23 @@ technologies = {
             
         }
         light_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         medium_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         heavy_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         super_heavy_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         modern_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         enable_equipment_modules = {
@@ -205,23 +205,23 @@ technologies = {
             
         }
         light_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         medium_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         heavy_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         super_heavy_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         modern_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         path = {
@@ -281,23 +281,23 @@ technologies = {
             
         }
         light_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         medium_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         heavy_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         super_heavy_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         modern_sp_artillery_brigade = {
-            soft_attack = 0.1
+            soft_attack = 0.05
             
         }
         enable_equipment_modules = {
@@ -951,7 +951,6 @@ technologies = {
         enable_equipment_modules = {
             tank_high_velocity_cannon
             tank_heavy_cannon
-            tank_medium_cannon
             tank_buster_1
             
         }
@@ -986,46 +985,47 @@ technologies = {
     antitank1 = {
         anti_tank = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         mot_anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         light_tank_destroyer_brigade = {
             hard_attack = 0.15
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         medium_tank_destroyer_brigade = {
             hard_attack = 0.15
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         heavy_tank_destroyer_brigade = {
             hard_attack = 0.15
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         super_heavy_tank_destroyer_brigade = {
             hard_attack = 0.15
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         modern_tank_destroyer_brigade = {
             hard_attack = 0.15
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         enable_equipment_modules = {
             squeezebore_adaptor
+            tank_medium_cannon
             
         }
         path = {
@@ -1057,18 +1057,11 @@ technologies = {
         
     }
     antitank2 = {
-        mot_anti_tank_brigade = {
-            hard_attack = 0.2
-            ap_attack = 0.2
-            
-        }
         enable_equipments = {
             anti_tank_equipment_2
             
         }
         enable_equipment_modules = {
-            tank_high_velocity_cannon_2
-            tank_medium_cannon_2
             tank_heavy_cannon_2
             tank_buster_2
             
@@ -1102,44 +1095,49 @@ technologies = {
         
     }
     antitank3 = {
+        enable_equipment_modules = {
+            tank_high_velocity_cannon_2
+            tank_medium_cannon_2
+            
+        }
         anti_tank = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         mot_anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         light_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         medium_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         super_heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         modern_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         path = {
@@ -1173,42 +1171,42 @@ technologies = {
     antitank4 = {
         anti_tank = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         mot_anti_tank_brigade = {
             hard_attack = 0.05
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         light_tank_destroyer_brigade = {
             hard_attack = 0.05
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         medium_tank_destroyer_brigade = {
             hard_attack = 0.05
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         heavy_tank_destroyer_brigade = {
             hard_attack = 0.05
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         super_heavy_tank_destroyer_brigade = {
             hard_attack = 0.05
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         modern_tank_destroyer_brigade = {
             hard_attack = 0.05
-            ap_attack = 0.1
+            ap_attack = 0.05
             
         }
         path = {
@@ -1248,7 +1246,7 @@ technologies = {
             tank_high_velocity_cannon_3
             tank_heavy_cannon_3
             auto_loader
-            tank_medium_cannon_3
+            r56_tank_medium_cannon_3
             
         }
         path = {
@@ -1282,37 +1280,37 @@ technologies = {
     antitank_a = {
         anti_tank = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         mot_anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         light_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         medium_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         super_heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         path = {
@@ -1389,37 +1387,37 @@ technologies = {
     antitank_b = {
         anti_tank = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         mot_anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         light_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         medium_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         super_heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         path = {
@@ -1499,9 +1497,9 @@ technologies = {
             
         }
         enable_equipment_modules = {
-            tank_heavy_cannon_4
-            tank_high_velocity_cannon_4
-            tank_medium_cannon_4
+            r56_tank_heavy_cannon_4
+            r56_tank_high_velocity_cannon_4
+            r56_tank_medium_cannon_4
             
         }
         path = {
@@ -1578,37 +1576,37 @@ technologies = {
     antitank_d = {
         anti_tank = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         mot_anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         light_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         medium_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         super_heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         path = {
@@ -1685,37 +1683,37 @@ technologies = {
     antitank_e = {
         anti_tank = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         mot_anti_tank_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         light_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         medium_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         super_heavy_tank_destroyer_brigade = {
             hard_attack = 0.1
-            ap_attack = 0.2
+            ap_attack = 0.05
             
         }
         research_cost = 1
@@ -1797,6 +1795,26 @@ technologies = {
             soft_attack = 0.1
             
         }
+        light_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        medium_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        heavy_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        super_heavy_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        modern_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
         path = {
             leads_to_tech = artillery_b
             research_cost_coeff = 1
@@ -1814,7 +1832,7 @@ technologies = {
             
         }
         enable_equipment_modules = {
-            tank_medium_cannon_3
+            r56_tank_medium_cannon_3
             
         }
         categories = {
@@ -1871,6 +1889,26 @@ technologies = {
             soft_attack = 0.1
             
         }
+        light_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        medium_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        heavy_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        super_heavy_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        modern_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
         path = {
             leads_to_tech = artillery_d
             research_cost_coeff = 1
@@ -1912,8 +1950,28 @@ technologies = {
             soft_attack = 0.1
             
         }
+        light_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        medium_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        heavy_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        super_heavy_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        modern_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
         enable_equipment_modules = {
-            tank_medium_cannon_4
+            r56_tank_medium_cannon_4
             
         }
         path = {
@@ -1955,6 +2013,26 @@ technologies = {
         }
         mot_artillery_brigade = {
             soft_attack = 0.1
+            
+        }
+        light_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        medium_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        heavy_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        super_heavy_sp_artillery_brigade = {
+            soft_attack = 0.05
+            
+        }
+        modern_sp_artillery_brigade = {
+            soft_attack = 0.05
             
         }
         research_cost = 1
@@ -2336,7 +2414,7 @@ technologies = {
             
         }
         enable_equipment_modules = {
-            tank_high_velocity_cannon_4
+            r56_tank_high_velocity_cannon_4
             
         }
         tech_air_damage_factor = -0.005

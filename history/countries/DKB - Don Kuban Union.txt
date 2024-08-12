@@ -175,10 +175,10 @@ create_field_marshal = {
     name = "Pyotr Krasnov"
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Petr_Krasnov.png"
     traits = {
+        cossack_leader
         old_guard
         offensive_doctrine
         war_hero
-        cossack_leader
         cavalry_officer
         urban_assault_specialist
         politically_connected
@@ -193,13 +193,13 @@ create_field_marshal = {
     
 }
 create_field_marshal = {
-    name = "Afrikan Bogaewsky"
+    name = "Afrikan Bogaevskiy "
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Bogaevskiy.png"
     traits = {
+        cossack_leader
         career_officer
         defensive_doctrine
         politically_connected
-        cossack_leader
         trickster
         
     }
@@ -216,10 +216,10 @@ create_corps_commander = {
     id = 418
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Fyodor_Abramov.png"
     traits = {
+        cossack_leader
         old_guard
         artillery_officer
         cavalry_leader
-        cossack_leader
         
     }
     skill = 2
@@ -236,7 +236,6 @@ create_corps_commander = {
     traits = {
         old_guard
         artillery_officer
-        cavalry_leader
         cavalry_leader
         
     }
@@ -257,10 +256,10 @@ create_corps_commander = {
         
     }
     id = 42023
-    skill = 2
+    skill = 3
     attack_skill = 2
-    defense_skill = 1
-    planning_skill = 2
+    defense_skill = 3
+    planning_skill = 3
     logistics_skill = 2
     
 }
@@ -305,8 +304,6 @@ create_corps_commander = {
     traits = {
         organisational_leader
         politically_connected
-        media_personality
-        war_hero
         offensive_doctrine
         roa_general
         
@@ -323,7 +320,6 @@ create_corps_commander = {
     name = "Bronislav Kaminski"
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Bronislav_Kaminski.png"
     traits = {
-        media_personality
         harsh_leader
         roa_general
         
@@ -340,9 +336,9 @@ create_corps_commander = {
     name = "Adrian Guselschikov"
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Adrian_Guselschikov.png"
     traits = {
+        cossack_leader
         old_guard
         cavalry_leader
-        cossack_leader
         
     }
     skill = 2
@@ -357,9 +353,8 @@ create_corps_commander = {
     id = 420
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Ivan_Polyakov.png"
     traits = {
-        cavalry_leader
         cossack_leader
-        old_guard
+        cavalry_leader
         
     }
     skill = 1
@@ -373,9 +368,9 @@ create_corps_commander = {
     name = "Konstantin Mamantov"
     portrait_path = "gfx/leaders/RUS/Portrait_RUS_Konstantin_Mamontov.png"
     traits = {
+        cossack_leader
         old_guard
         cavalry_leader
-        cossack_leader
         
     }
     skill = 2
@@ -389,9 +384,9 @@ create_corps_commander = {
     name = "Semyon Krasnov"
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Semyon_Krasnov.png"
     traits = {
+        cossack_leader
         old_guard
         cavalry_leader
-        cossack_leader
         politically_connected
         
     }
@@ -420,11 +415,64 @@ create_corps_commander = {
     
 }
 create_corps_commander = {
+    name = "Mikhail Skorodumov"
+    portrait_path = "gfx/leaders/DKB/Portrait_DKB_Mikhail_Skorodumov.png"
+    traits = {
+        old_guard
+        cavalry_officer
+        roa_general
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 4
+    id = 42026
+    
+}
+create_corps_commander = {
+    name = "Mikhail Meandrov"
+    portrait_path = "gfx/leaders/DKB/Portrait_DKB_Mikhail_Meandrov.png"
+    traits = {
+        politically_connected
+        inflexible_strategist
+        roa_general
+        
+    }
+    skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 4
+    id = 420271
+    
+}
+create_field_marshal = {
+    name = "Sergei Bunyachenko"
+    portrait_path = "gfx/leaders/DKB/Portrait_DKB_Sergei_Bunyachenko.png"
+    traits = {
+        inspirational_leader
+        hidden_sympathies
+        war_hero
+        logistics_wizard
+        roa_general
+        
+    }
+    skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 5
+    logistics_skill = 5
+    id = 420272
+    
+}
+create_corps_commander = {
     name = "Timofey Domanov"
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Timofey_Domanov.png"
     traits = {
-        cavalry_officer
         cossack_leader
+        cavalry_officer
         
     }
     id = 42030
@@ -467,6 +515,21 @@ create_corps_commander = {
     logistics_skill = 1
     
 }
+create_corps_commander = {
+    name = "Vyacheslav Baranov"
+    id = 17900
+    portrait_path = "gfx/leaders/RUS/Portrait_RUS_Vyacheslav_Baranov.png"
+    traits = {
+        air_commander
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+    
+}
 create_navy_leader = {
     name = "Ivan Kononov"
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Ivan_Kononov.png"
@@ -482,3 +545,27 @@ create_navy_leader = {
     
 }
 DKB_start_naval_variant = yes
+random_unit_leader = {
+    limit = {
+        has_id = 420272
+        
+    }
+    set_nationality = XXA
+    
+}
+random_unit_leader = {
+    limit = {
+        has_id = 420271
+        
+    }
+    set_nationality = XXA
+    
+}
+random_unit_leader = {
+    limit = {
+        has_id = 42026
+        
+    }
+    set_nationality = XXA
+    
+}

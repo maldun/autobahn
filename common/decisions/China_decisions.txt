@@ -319,7 +319,13 @@ chinese_unification = {
                 }
                 AND = {
                     tag = TAN
-                    has_cosmetic_tag = MON_YUA
+                    OR = {
+                        has_cosmetic_tag = MON_YUA
+                        has_cosmetic_tag = TAN_CHAGATAI
+                        has_cosmetic_tag = TAN_MIDDLE_MONGOL
+                        has_cosmetic_tag = TAN_MOGHULISTAN
+                        
+                    }
                     
                 }
                 

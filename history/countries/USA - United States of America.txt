@@ -1481,11 +1481,12 @@ if = {
         
     }
     create_operative_leader = {
-        name = "William J. Donovan"
-        GFX = GFX_portrait_william_donovan
+        name = "Sterling Hayden"
+        GFX = GFX_portrait_HOTB_sterling_hayden
         traits = {
-            operative_natural_orator
+            operative_infiltrator
             operative_tough
+            operative_well_groomed
             
         }
         bypass_recruitment = no
@@ -1503,12 +1504,11 @@ if = {
         
     }
     create_operative_leader = {
-        name = "Sterling Hayden"
-        GFX = GFX_portrait_HOTB_sterling_hayden
+        name = "Mitchell WerBell III"
+        GFX = GFX_Portrait_USA_Mitchell_WerBell_III
         traits = {
-            operative_infiltrator
+            operative_commando
             operative_tough
-            operative_well_groomed
             
         }
         bypass_recruitment = no

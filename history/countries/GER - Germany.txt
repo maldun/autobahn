@@ -708,6 +708,7 @@ create_field_marshal = {
     name = "Hans von Seeckt"
     portrait_path = "gfx/leaders/GER/Portrait_Germany_Hans_von_Seeckt.png"
     traits = {
+        old_guard
         trickster
         war_hero
         brilliant_strategist
@@ -759,11 +760,11 @@ create_field_marshal = {
     desc = "GER_rupprecht_von_bayern_commander_desc"
     portrait_path = "gfx/leaders/GER/Portrait_Germany_Rupprecht_Bayern_kr.png"
     traits = {
+        old_guard
         trait_cautious
         inflexible_strategist
         defensive_doctrine
         organizer
-        thorough_planner
         GER_bayerische_armee_commander_trait
         
     }
@@ -793,6 +794,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
     name = "Kurt von Schleicher"
+    desc = "GER_kurt_von_schleicher_commander_desc"
     portrait_path = "gfx/leaders/GER/Portrait_Germany_Kurt_von_Schleicher.png"
     traits = {
         infantry_officer
@@ -830,6 +832,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
     name = "Heinz Guderian"
+    desc = "GER_heinz_guderian_commander_desc"
     portrait_path = "gfx/leaders/GER/Portrait_Germany_Heinz_Guderian_kr.png"
     traits = {
         trickster
@@ -935,6 +938,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Helmuth von Pannwitz"
+    desc = "GER_helmuth_von_Pannwitz_commander_desc"
     portrait_path = "gfx/leaders/DKB/Portrait_DKB_Helmuth_von_Pannwitz.png"
     traits = {
         cavalry_leader
@@ -951,6 +955,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Wilhelm Keitel "
+    desc = "GER_wilhelm_keitel_commander_desc"
     portrait_path = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Keitel.png"
     traits = {
         infantry_officer
@@ -1668,6 +1673,38 @@ create_corps_commander = {
     attack_skill = 3
     defense_skill = 2
     planning_skill = 2
+    logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Oskar von Hindenburg"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Oskar_von_Hindenburg.png"
+    traits = {
+        politically_connected
+        GER_schleicher_clique_member_trait
+        
+    }
+    skill = 1
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 2
+    
+}
+create_corps_commander = {
+    name = "Walter Nicolai"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Walter_Nicolai.png"
+    traits = {
+        career_officer
+        organizer
+        harsh_leader
+        GER_schleicher_clique_member_trait
+        
+    }
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 3
     logistics_skill = 3
     
 }

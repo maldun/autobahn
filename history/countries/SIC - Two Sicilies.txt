@@ -149,6 +149,12 @@ set_convoys = 50
 set_stability = 0.55
 set_war_support = 0.2
 starting_train_buffer = 1
+give_military_access = PAP
+give_guarantee = PAP
+add_to_array = {
+    PAP.guarantor_array = SIC
+    
+}
 country_event = {
     id = sic.1
     days = 1

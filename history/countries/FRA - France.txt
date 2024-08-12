@@ -260,6 +260,11 @@ country_event = {
     
 }
 country_event = {
+    id = comfrance.1012
+    days = 478
+    
+}
+country_event = {
     id = uob.363
     days = 345
     
@@ -545,6 +550,23 @@ create_corps_commander = {
     defense_skill = 1
     planning_skill = 1
     logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Mélinée Manouchian"
+    portrait_path = "gfx/leaders/FRA/Portrait_FRA_Melinee_Manouchian.png"
+    traits = {
+        urban_assault_specialist
+        hill_fighter
+        commando
+        
+    }
+    id = 5772
+    skill = 2
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
     
 }
 create_corps_commander = {

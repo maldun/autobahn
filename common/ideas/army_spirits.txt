@@ -932,7 +932,6 @@ ideas = {
                 unit_medium_armor_design_cost_factor = -1
                 unit_modern_armor_design_cost_factor = -1
                 unit_heavy_armor_design_cost_factor = -1
-                unit_super_heavy_armor_design_cost_factor = -1
                 unit_motorized_design_cost_factor = -1
                 unit_mechanized_design_cost_factor = -1
                 

@@ -8,7 +8,6 @@
     },
     "common/units/": {
       "super_heavy_armor.txt": [],
-      "super_heavy_armor_support.txt": [],
       "tank_destroyer_brigade.txt": []
     },
     "common/units/equipment/": {

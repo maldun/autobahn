@@ -115,6 +115,11 @@ set_variable = {
     
 }
 country_event = {
+    id = delhi.1
+    days = 18
+    
+}
+country_event = {
     id = delhi.156
     days = 188
     
@@ -154,12 +159,6 @@ country_event = {
     days = 3758
     
 }
-country_event = {
-    id = entf.3
-    days = 18
-    
-}
-india_ignore_claims_until_unification = yes
 add_ideas = {
     RAJ_princely_power
     RAJ_backwards_economy_1
@@ -192,7 +191,6 @@ set_popularities = {
 }
 recruit_character = RAJ_ganga_singh
 recruit_character = RAJ_baghat_singh
-recruit_character = RAJ_manabendra_nath_roy
 recruit_character = RAJ_muhammad_ali_jinnah
 recruit_character = RAJ_v_k_krishna_menon
 recruit_character = RAJ_balasaheb_gangadhar_kher
@@ -201,7 +199,6 @@ recruit_character = RAJ_sikander_hayat_khan
 recruit_character = RAJ_jehangir_ratanji_dadabhoy_tata
 recruit_character = RAJ_atul_chandra_chatterjee
 recruit_character = RAJ_malik_khizar_hayat_tiwana
-recruit_character = RAJ_ranbir_singh
 recruit_character = RAJ_philip_walhouse_chetwode
 recruit_character = RAJ_archibald_wavell
 recruit_character = RAJ_thomas_wynford_rees

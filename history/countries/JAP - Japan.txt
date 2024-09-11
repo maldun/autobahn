@@ -213,11 +213,6 @@ news_event = {
     
 }
 country_event = {
-    id = literature.12
-    days = 2160
-    
-}
-country_event = {
     id = japdom.58
     days = 2591
     
@@ -250,6 +245,11 @@ country_event = {
 country_event = {
     id = japdom.410
     days = 330
+    
+}
+country_event = {
+    id = japdom.411
+    days = 2160
     
 }
 add_ideas = {
@@ -373,7 +373,6 @@ recruit_character = JAP_maeda_yonezo
 recruit_character = JAP_hatoyama_ichiro
 recruit_character = JAP_yoshizawa_kenkichi
 recruit_character = JAP_abe_isoo
-recruit_character = JAP_katayama_testu
 recruit_character = JAP_hiranuma_kiichiro
 recruit_character = JAP_konoe_fumimaro
 recruit_character = JAP_kuhara_furanosuke

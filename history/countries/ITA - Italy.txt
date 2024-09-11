@@ -220,6 +220,7 @@ VNC = {
     }
     
 }
+set_country_flag = italian_unifier
 add_ai_strategy = {
     type = ignore_claim
     id = "PAP"
@@ -325,6 +326,10 @@ recruit_character = ITA_gino_pavesi
 recruit_character = ITA_raffaele_de_courten
 recruit_character = ITA_carlo_bergamini
 activate_advisor = ITA_giacomo_matteotti_sic
+ITA_marcello_visconti_di_modrone = {
+    set_character_flag = is_monarch
+    
+}
 ITA_pietro_ferdinando = {
     set_character_flag = is_monarch
     
@@ -377,6 +382,7 @@ ITA = {
                 is_unit_leader = yes
                 
             }
+            can_be_country_leader = no
             NOT = {
                 has_character_flag = is_monarch
                 is_character = ITA_ferruccio_parri
@@ -410,39 +416,7 @@ ITA = {
     
 }
 ROOT = {
-    SRI = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    LOM = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    VNC = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    TUS = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    EMI = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    PAP = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    SIC = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    SRD = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    italy_enable_claim_integration = yes
+    italy_enable_integration = yes
     
 }
 ITA_create_early_armor_variants = yes

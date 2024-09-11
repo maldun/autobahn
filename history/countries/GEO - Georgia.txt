@@ -79,6 +79,14 @@ add_ideas = {
     limited_conscription
     
 }
+GER = {
+    set_autonomy = {
+        target = GEO
+        autonomy_state = oststaat_autonomous
+        
+    }
+    
+}
 set_politics = {
     ruling_party = social_democrat
     last_election = "1935.6.6"
@@ -99,15 +107,6 @@ set_popularities = {
     national_populist = 0
     
 }
-GER = {
-    give_guarantee = GEO
-    
-}
-add_to_array = {
-    GEO.guarantor_array = GER
-    
-}
-give_military_access = GER
 country_event = {
     id = geo.15
     days = 5

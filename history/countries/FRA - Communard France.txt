@@ -216,12 +216,6 @@ country_event = {
     
 }
 country_event = {
-    id = literature.10
-    days = 3468
-    random_hours = 2160
-    
-}
-country_event = {
     id = comfrance.155
     days = 3712
     random_hours = 192
@@ -238,7 +232,15 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
+    17 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
     28 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    29 = {
         enable_state_integration_50_compliance = yes
         
     }
@@ -250,7 +252,27 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
+    980 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    8 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    34 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    741 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
     760 = {
+        enable_state_integration_80_compliance = yes
+        
+    }
+    948 = {
         enable_state_integration_80_compliance = yes
         
     }

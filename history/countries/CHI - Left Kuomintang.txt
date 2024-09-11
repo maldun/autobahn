@@ -204,6 +204,7 @@ recruit_character = CHI_huang_qixiang
 recruit_character = CHI_xiao_jinguang
 recruit_character = CHI_zhang_fakui
 recruit_character = CHI_chen_geng
+recruit_character = CHI_peng_xuefeng
 recruit_character = CHI_xu_xiangqian
 recruit_character = CHI_lin_biao
 recruit_character = CHI_wang_yaowu
@@ -216,6 +217,7 @@ recruit_character = CHI_luo_ronghuan
 recruit_character = CHI_du_yuming
 recruit_character = CHI_dai_anlan
 recruit_character = CHI_chiang_wei_kuo
+recruit_character = CHI_wang_lingyun
 recruit_character = CHI_cai_yuanpei
 recruit_character = CHI_shi_cuntong
 recruit_character = CHI_wang_faqin
@@ -345,7 +347,7 @@ CHI_song_ziwen = {
 }
 CHI_assorted_leaders = {
     set_variable = {
-        china_alignment = token:chinese_republican
+        china_alignment = token:chinese_southern_republican
         
     }
     
@@ -567,18 +569,14 @@ CHI_mao_bangchu = {
     set_character_flag = CHI_CRS_military_loyalist_flag
     
 }
-CHI_dai_chunfeng = {
-    set_nationality = LEP
-    
-}
 CHI_chen_shaokuan = {
     set_character_flag = CHN_original_unit_leader
     set_nationality = LEP
     
 }
-CHI_chen_jiliang = {
+CHI_peng_xuefeng = {
     set_character_flag = CHN_original_unit_leader
-    set_nationality = LEP
+    set_nationality = ANQ
     
 }
 CHI_deng_yanda = {
@@ -591,6 +589,10 @@ CHI_ye_ting = {
 }
 CHI_li_jishen = {
     set_character_flag = CHN_original_unit_leader
+    
+}
+CHI_dai_chunfeng = {
+    CHI_setup_hide_political_advisor_effect = yes
     
 }
 CHI_dong_biwu = {
@@ -738,6 +740,10 @@ CHI_dai_anlan = {
     
 }
 CHI_chiang_wei_kuo = {
+    CHI_setup_hide_commander_effect = yes
+    
+}
+CHI_wang_lingyun = {
     CHI_setup_hide_commander_effect = yes
     
 }

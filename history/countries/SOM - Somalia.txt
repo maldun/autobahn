@@ -40,6 +40,21 @@ add_ideas = {
     limited_conscription
     
 }
+ROOT = {
+    268 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    892 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    906 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = SOM_aden_abdulle_osman_daar
 recruit_character = SOM_haji_bashir_ismail_yusuf
 recruit_character = SOM_abdirashid_ali_shermarke

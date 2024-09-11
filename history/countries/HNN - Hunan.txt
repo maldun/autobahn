@@ -125,6 +125,7 @@ recruit_character = HNN_tan_daoyuan
 recruit_character = HNN_lu_dangping
 recruit_character = HNN_lu_diping
 recruit_character = HNN_zhao_yusong
+recruit_character = HNN_zuo_shunsheng
 HNN_zhao_hengti = {
     set_variable = {
         china_alignment = token:federalists
@@ -312,7 +313,7 @@ HNN_li_shizhang = {
 }
 HNN_tang_xiangming = {
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     set_character_flag = HNN_zhili_loyalist_flag
@@ -359,9 +360,13 @@ HNN_zhao_yusong = {
     set_character_flag = HNN_zhili_loyalist_flag
     
 }
+HNN_zuo_shunsheng = {
+    set_character_flag = HNN_zhili_loyalist_flag
+    
+}
 HNN_assorted_leaders = {
     set_variable = {
-        china_alignment = token:chinese_republican
+        china_alignment = token:chinese_southern_republican
         
     }
     

@@ -1,5 +1,9 @@
 capital = 743
 oob = "LEC"
+set_research_slots = 3
+set_convoys = 250
+set_stability = 0.6
+set_war_support = 0.1
 set_technology = {
     infantry_weapons = 1
     infantry_weapons1 = 1
@@ -43,10 +47,6 @@ if = {
     }
     
 }
-set_research_slots = 3
-set_convoys = 247
-set_stability = 0.57
-set_war_support = 0.1
 set_politics = {
     ruling_party = market_liberal
     last_election = "1930.11.9"
@@ -99,6 +99,7 @@ set_country_flag = {
 }
 set_country_flag = cannot_have_conscription
 AUS = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council = yes
     add_to_array = {
         LEC.guarantor_array = THIS
@@ -107,6 +108,7 @@ AUS = {
     
 }
 BEL = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council = yes
     add_to_array = {
         LEC.guarantor_array = THIS
@@ -115,6 +117,7 @@ BEL = {
     
 }
 JAP = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council = yes
     add_to_array = {
         LEC.guarantor_array = THIS
@@ -128,6 +131,7 @@ JAP = {
     
 }
 USA = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council = yes
     add_to_array = {
         LEC.guarantor_array = THIS
@@ -137,6 +141,7 @@ USA = {
     
 }
 GER = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council = yes
     add_to_array = {
         LEC.guarantor_array = THIS
@@ -145,6 +150,7 @@ GER = {
     
 }
 GEA = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council_observer = yes
     give_guarantee = LEC
     add_to_array = {
@@ -154,6 +160,7 @@ GEA = {
     
 }
 AST = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council_observer = yes
     give_guarantee = LEC
     add_to_array = {
@@ -164,10 +171,12 @@ AST = {
     
 }
 RUS = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council_observer = yes
     
 }
 TRM = {
+    set_country_flag = fantastic_day_for_capitalism_disallowed_tag
     LEC_add_to_legation_council_observer = yes
     
 }

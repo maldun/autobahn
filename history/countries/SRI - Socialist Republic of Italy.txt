@@ -58,6 +58,7 @@ diplomatic_relation = {
     relation = non_aggression_pact
     
 }
+set_country_flag = italian_unifier
 add_ai_strategy = {
     type = ignore_claim
     id = "ITA"
@@ -406,39 +407,7 @@ SRI_leonilde_iotti = {
     
 }
 ROOT = {
-    ITA = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    LOM = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    VNC = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    TUS = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    EMI = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    PAP = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    SIC = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    SRD = {
-        enable_country_integration_50_compliance = yes
-        
-    }
-    italy_enable_claim_integration = yes
+    italy_enable_integration = yes
     
 }
 ITA_create_early_armor_variants = yes

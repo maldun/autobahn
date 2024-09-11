@@ -117,7 +117,7 @@ recruit_character = SHX_shen_dexie
 recruit_character = SHX_chang_yansheng
 SHX_feng_yuxiang = {
     set_variable = {
-        china_alignment = token:chinese_republican
+        china_alignment = token:chinese_southern_republican
         
     }
     

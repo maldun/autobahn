@@ -58,6 +58,13 @@ country_event = {
     days = 13
     
 }
+ROOT = {
+    KUM = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = SIK_fan_yaonan
 recruit_character = SIK_ma_shaowu
 recruit_character = SIK_yang_zengxin
@@ -65,6 +72,9 @@ recruit_character = SIK_long_xielin
 recruit_character = SIK_sheng_shicai
 recruit_character = SIK_jin_shuren
 recruit_character = SIK_burhan_shahidi
+recruit_character = SIK_niu_shi
+recruit_character = SIK_yang_feixia
+recruit_character = SIK_zhang_peiyuan
 recruit_character = SIK_li_rong
 recruit_character = SIK_qiu_zongjun
 recruit_character = SIK_jin_shuxin
@@ -79,26 +89,9 @@ recruit_character = SIK_yan_yushan
 recruit_character = SIK_yibulayin
 recruit_character = SIK_huashengmu
 recruit_character = SIK_alen_zheniskhanovich
-recruit_character = SIK_zhang_peiyuan
-recruit_character = SIK_zhou_wuxue
 recruit_character = SIK_lu_liping
 recruit_character = SIK_li_xiaotian
-recruit_character = SIK_niu_shi
 recruit_character = SIK_li_hairu
 recruit_character = SIK_sheng_shiqi
 recruit_character = SIK_jiang_deyu
 recruit_character = SIK_chen_yufeng
-SIK_fan_yaonan = {
-    set_variable = {
-        china_alignment = token:zhili
-        
-    }
-    
-}
-SIK_sheng_shicai = {
-    set_variable = {
-        china_alignment = token:chinese_republican
-        
-    }
-    
-}

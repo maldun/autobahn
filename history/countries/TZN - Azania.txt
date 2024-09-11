@@ -53,6 +53,25 @@ set_popularities = {
     national_populist = 12
     
 }
+ROOT = {
+    RWA = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    BRD = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    KEN = {
+        enable_country_integration_80_compliance = yes
+        
+    }
+    UGA = {
+        enable_country_integration_80_compliance = yes
+        
+    }
+    
+}
 recruit_character = TZN_Muhamed_Husan
 division_template = {
     name = "Askari Division"

@@ -57,6 +57,21 @@ set_popularities = {
     
 }
 add_ideas = MNT_independent_montenegro
+ROOT = {
+    MNT = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    105 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    841 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = MNT_blazo_jovanovic
 recruit_character = MNT_sekula_drljevic
 recruit_character = MNT_krsto_popovic

@@ -146,7 +146,7 @@ country_event = {
     
 }
 country_event = {
-    id = literature.1
+    id = austria.5
     days = 761
     
 }
@@ -221,9 +221,9 @@ add_ideas = {
 recruit_character = AUS_karl_von_habsburg
 recruit_character = AUS_otto_von_habsburg
 recruit_character = AUS_alfred_klahr
-recruit_character = AUS_pierre_ramus
 recruit_character = AUS_friedrich_adler
 recruit_character = AUS_karl_renner
+recruit_character = AUS_gustav_stolper
 recruit_character = AUS_wilhelm_miklas
 recruit_character = AUS_franz_dinghofer
 recruit_character = AUS_eugen_von_habsburg

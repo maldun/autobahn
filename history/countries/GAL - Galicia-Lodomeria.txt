@@ -93,7 +93,6 @@ set_popularities = {
     national_populist = 1
     
 }
-recruit_character = AUS_karl_albrecht_von_habsburg
 recruit_character = GAL_stanislaw_szeptycki
 recruit_character = GAL_franciszek_kleeberg
 recruit_character = GAL_tadeusz_kutrzeba
@@ -235,8 +234,14 @@ GAL_yevhen_petrushevych = {
     set_character_flag = GAL_ukrainian_character
     
 }
-AUS_karl_albrecht_von_habsburg = {
-    set_character_flag = AUS_habsburg
+AUS = {
+    recruit_character = AUS_karl_albrecht_von_habsburg
+    AUS_karl_albrecht_von_habsburg = {
+        set_character_flag = AUS_habsburg
+        set_nationality = GAL
+        promote_character = social_conservative_subtype
+        
+    }
     
 }
 danubia_create_plane_variants = yes

@@ -107,7 +107,7 @@ recruit_character = SQI_vincent_schmidt
 recruit_character = SQI_antonio_riva
 SQI_qu_yingguang = {
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     set_character_flag = CHN_original_unit_leader
@@ -123,7 +123,7 @@ SQI_zhang_zongchang = {
 }
 SQI_zhang_tianran = {
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     

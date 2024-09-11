@@ -281,6 +281,10 @@ set_variable = {
 }
 country_lock_all_division_template = yes
 ROOT = {
+    SER = {
+        enable_country_integration_50_compliance = yes
+        
+    }
     MNT = {
         enable_country_integration_50_compliance = yes
         
@@ -289,7 +293,27 @@ ROOT = {
         enable_state_integration_50_compliance = yes
         
     }
+    105 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
     106 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    107 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    108 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    765 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    767 = {
         enable_state_integration_50_compliance = yes
         
     }

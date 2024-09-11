@@ -73,6 +73,13 @@ add_ideas = {
     
 }
 china_add_poor_army = yes
+ROOT = {
+    SIK = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = KUM_nasir_shah
 recruit_character = KUM_bashir_shah
 recruit_character = KUM_yulbars_khan
@@ -97,7 +104,7 @@ activate_advisor = KUM_khans_court_sic
 KUM_nasir_shah = {
     set_character_flag = is_monarch
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     
@@ -105,7 +112,7 @@ KUM_nasir_shah = {
 KUM_bashir_shah = {
     set_character_flag = is_monarch
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     
@@ -113,7 +120,7 @@ KUM_bashir_shah = {
 KUM_yulbars_khan = {
     set_character_flag = is_monarch
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     

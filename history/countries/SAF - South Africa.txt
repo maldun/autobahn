@@ -219,7 +219,7 @@ country_event = {
     
 }
 country_event = {
-    id = entf.2
+    id = saf.500
     days = 628
     
 }

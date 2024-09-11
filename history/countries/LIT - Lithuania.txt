@@ -1,7 +1,7 @@
 capital = 96
 oob = "LIT"
 set_research_slots = 3
-set_war_support = 0.1
+set_war_support = 0.13
 set_convoys = 10
 set_cosmetic_tag = LIT_monarchy
 starting_train_buffer = 2
@@ -190,16 +190,20 @@ activate_targeted_decision = {
     
 }
 ROOT = {
+    96 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    188 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
     94 = {
         enable_state_integration_80_compliance = yes
         
     }
     97 = {
         enable_state_integration_80_compliance = yes
-        
-    }
-    188 = {
-        enable_state_integration_50_compliance = yes
         
     }
     

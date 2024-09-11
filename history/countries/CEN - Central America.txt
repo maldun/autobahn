@@ -1,0 +1,45 @@
+capital = 317
+set_convoys = 20
+set_research_slots = 3
+set_stability = 0.47
+set_war_support = 0.35
+set_technology = {
+    tech_militias = 1
+    camo = 1
+    etax_doctrine = 1
+    
+}
+set_politics = {
+    ruling_party = radical_socialist
+    last_election = "1888.6.15"
+    election_frequency = 48
+    elections_allowed = no
+    
+}
+set_popularities = {
+    totalist = 17
+    syndicalist = 23
+    radical_socialist = 32
+    social_democrat = 24
+    social_liberal = 3
+    market_liberal = 1
+    social_conservative = 0
+    authoritarian_democrat = 0
+    paternal_autocrat = 0
+    national_populist = 0
+    
+}
+ROOT = {
+    COS = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    PAN = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    
+}
+recruit_character = CEN_democratic_council
+recruit_character = CEN_military_council
+recruit_character = CEN_revolutionary_council

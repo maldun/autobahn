@@ -110,7 +110,6 @@ country_event = {
     days = 41
     
 }
-india_ignore_claims_until_unification = yes
 set_politics = {
     ruling_party = authoritarian_democrat
     last_election = "1930.11.9"

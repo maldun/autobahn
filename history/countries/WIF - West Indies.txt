@@ -209,15 +209,31 @@ add_ideas = {
 WIF_evaluate_anger = yes
 set_country_flag = WIF_can_revolt
 ROOT = {
-    309 = {
-        enable_state_integration_50_compliance = yes
+    JAM = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    TRI = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    GYA = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    SUR = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    PUE = {
+        enable_country_integration_50_compliance = yes
+        
+    }
+    ANT = {
+        enable_country_integration_50_compliance = yes
         
     }
     695 = {
-        enable_state_integration_50_compliance = yes
-        
-    }
-    1038 = {
         enable_state_integration_50_compliance = yes
         
     }

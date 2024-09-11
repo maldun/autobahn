@@ -1,4 +1,4 @@
-version="0.7.10"
+version="0.7.12"
 tags={
 	"Technologies"
 	"National Focuses"

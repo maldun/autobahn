@@ -106,6 +106,25 @@ activate_targeted_decision = {
     decision = BOL_kill_CHL
     
 }
+ROOT = {
+    506 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    688 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    873 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    1027 = {
+        enable_state_integration_50_compliance = yes
+        
+    }
+    
+}
 recruit_character = BOL_bernardino_bilbao_rioja
 recruit_character = BOL_german_busch_becerra
 recruit_character = BOL_carlos_quintanilla_quiroga

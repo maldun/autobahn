@@ -3,12 +3,13 @@ oob = "QIE"
 set_naval_oob = "QIE_naval"
 set_research_slots = 2
 set_convoys = 25
-set_stability = 0.5
-set_war_support = 0.4
+set_stability = 0.65
+set_war_support = 0.55
 starting_train_buffer = 2
 set_cosmetic_tag = QIE_government_qing
 set_technology = {
     infantry_weapons = 1
+    tech_trucks = 1
     tech_irregulars = 1
     tech_support = 1
     tech_engineers = 1
@@ -87,15 +88,14 @@ set_popularities = {
     social_liberal = 5
     market_liberal = 15
     social_conservative = 10
-    authoritarian_democrat = 48
+    authoritarian_democrat = 43
     paternal_autocrat = 10
-    national_populist = 2
+    national_populist = 7
     
 }
 add_ideas = {
-    QIE_fractured_empire
+    QIE_legitimacy_of_the_monarchy
     QIE_big_debt
-    QIE_leadership_crisis
     QIE_stalled_80_division_reform_plan
     QIE_court_of_the_jade_marshal
     unequal_treaties
@@ -118,14 +118,14 @@ country_event = {
     
 }
 country_event = {
-    id = qiedom.4
-    days = 31
-    random_hours = 72
+    id = qieflavor.11
+    days = 1096
+    random_hours = 1440
     
 }
 country_event = {
-    id = qieflavor.11
-    days = 1096
+    id = qieflavor.60
+    days = 795
     random_hours = 1440
     
 }
@@ -149,27 +149,29 @@ activate_targeted_decision = {
     target = GER
     
 }
+recruit_character = QIE_assorted_leaders
 recruit_character = QIE_aisin_gioro_puyi
 recruit_character = QIE_aisin_gioro_pugong
-recruit_character = QIE_zhang_guotao
-recruit_character = QIE_li_dazhao
-recruit_character = QIE_liu_kanyuan
-recruit_character = QIE_james_yen
-recruit_character = QIE_li_huang
-recruit_character = QIE_huang_boqiao
-recruit_character = QIE_aisin_gioro_pujie
-recruit_character = QIE_wu_xianzi
 recruit_character = QIE_wellington_koo
 recruit_character = QIE_hu_shih
 recruit_character = QIE_yan_huiqing
 recruit_character = QIE_wu_peifu
+recruit_character = QIE_zhang_guotao
+recruit_character = QIE_li_dazhao
+recruit_character = QIE_liu_kanyuan
+recruit_character = QIE_huang_boqiao
+recruit_character = QIE_wen_tsungyao
 recruit_character = QIE_cao_kun
+recruit_character = QIE_james_yen
+recruit_character = QIE_li_huang
+recruit_character = QIE_aisin_gioro_pujie
+recruit_character = QIE_wu_xianzi
 recruit_character = QIE_kang_tongbi
 recruit_character = QIE_zeng_qi
-recruit_character = QIE_wen_tsungyao
 activate_advisor = QIE_wu_peifu_sic
 activate_advisor = QIE_cao_kun
 recruit_character = QIE_jiang_baili
+recruit_character = QIE_peng_shouxin
 recruit_character = QIE_wang_huaiqing
 recruit_character = QIE_aisin_gioro_zaitao
 recruit_character = QIE_cai_chengxun
@@ -185,16 +187,18 @@ recruit_character = QIE_yu_xuezhong
 recruit_character = QIE_liu_zhenhua
 recruit_character = QIE_xing_shilian
 recruit_character = QIE_aisin_gioro_jixing
-recruit_character = QIE_wang_lingyun
-recruit_character = QIE_du_xijun
-recruit_character = QIE_guo_jijiao
 recruit_character = QIE_wei_yisan
-recruit_character = QIE_gobulo_runqi
+recruit_character = QIE_ha_hanzhang
+recruit_character = QIE_qin_dechun
+recruit_character = QIE_du_xijun
+recruit_character = QIE_li_shuchun
+recruit_character = QIE_guo_jijiao
 recruit_character = QIE_zhang_yinwu
+recruit_character = QIE_tong_jixu
+recruit_character = QIE_yang_shuzhuang
 recruit_character = QIE_wu_yulin
 recruit_character = QIE_sa_zhenbing
 recruit_character = QIE_du_xigui
-recruit_character = QIE_aisin_gioro_zaixun
 recruit_character = QIE_bai_jianwu
 recruit_character = QIE_wang_kemin
 recruit_character = QIE_wang_chonghui
@@ -203,9 +207,15 @@ recruit_character = QIE_gao_lingwei
 recruit_character = QIE_tang_zhongming
 recruit_character = QIE_lei_haizong
 recruit_character = QIE_liang_shuming
-recruit_character = QIE_peng_shouxin
 recruit_character = QIE_wang_yujia
 recruit_character = QIE_xiong_bingqi
+recruit_character = QIE_peng_yunyi
+recruit_character = QIE_bian_shoujing
+recruit_character = QIE_yuan_naikuan
+recruit_character = QIE_liu_chongyou
+recruit_character = QIE_xu_qin
+recruit_character = QIE_zhang_shaozeng
+recruit_character = QIE_huang_fu
 recruit_character = QIE_aisin_gioro_zaizhen
 recruit_character = QIE_aisin_gioro_xiankui
 recruit_character = QIE_baokang
@@ -216,45 +226,64 @@ recruit_character = QIE_wang_guanyi
 recruit_character = QIE_ren_yunge
 recruit_character = QIE_shi_bangfan
 recruit_character = QIE_liu_muqun
+recruit_character = QIE_tianjin_school
+recruit_character = QIE_baoding_clique
+recruit_character = QIE_cradle_of_the_chinese_eliteheer
+recruit_character = QIE_qianlong_clique
 QIE_aisin_gioro_puyi = {
     set_character_flag = is_monarch
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     
 }
 QIE_wu_peifu = {
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     
 }
 QIE_wellington_koo = {
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     
 }
 QIE_hu_shih = {
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
         
     }
     
 }
 QIE_yan_huiqing = {
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
+        
+    }
+    
+}
+QIE_gao_lingwei = {
+    set_variable = {
+        china_alignment = token:northern_zhili
         
     }
     
 }
 QIE_jiang_baili = {
     set_variable = {
-        china_alignment = token:zhili
+        china_alignment = token:northern_zhili
+        
+    }
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_wang_chengbin = {
+    set_variable = {
+        china_alignment = token:northern_zhili
         
     }
     set_character_flag = QIE_zhili_leader
@@ -269,10 +298,6 @@ QIE_zhang_qihuang = {
     
 }
 QIE_xiao_yaonan = {
-    set_character_flag = QIE_zhili_leader
-    
-}
-QIE_yu_xuezhong = {
     set_character_flag = QIE_zhili_leader
     
 }
@@ -296,23 +321,43 @@ QIE_li_bingzhi = {
     set_character_flag = QIE_zhili_leader
     
 }
-QIE_wang_lingyun = {
-    set_character_flag = CHN_original_unit_leader
-    retire = yes
+QIE_wei_yisan = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_peng_shouxin = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_xiong_bingqi = {
+    set_character_flag = QIE_zhili_leader
+    
+}
+QIE_lu_xiangting = {
+    set_character_flag = QIE_zhili_leader
     
 }
 QIE_du_xijun = {
     set_character_flag = CHN_original_unit_leader
+    set_character_flag = QIE_zhili_leader
     retire = yes
     
 }
 QIE_guo_jijiao = {
     set_character_flag = CHN_original_unit_leader
+    set_character_flag = QIE_zhili_leader
     retire = yes
     
 }
-QIE_wei_yisan = {
+QIE_qin_dechun = {
     set_character_flag = CHN_original_unit_leader
+    set_character_flag = QIE_zhili_leader
+    retire = yes
+    
+}
+QIE_li_shuchun = {
+    set_character_flag = CHN_original_unit_leader
+    set_character_flag = QIE_zhili_leader
     retire = yes
     
 }
@@ -321,12 +366,16 @@ QIE_zhang_yinwu = {
     retire = yes
     
 }
-QIE_gobulo_runqi = {
+QIE_tong_jixu = {
     set_character_flag = CHN_original_unit_leader
     retire = yes
     
 }
 QIE_tang_zhongming = {
+    retire = yes
+    
+}
+QIE_lei_haizong = {
     retire = yes
     
 }
@@ -356,5 +405,15 @@ QIE_zheng_xiaoxu = {
 }
 QIE_guo_zeyun = {
     retire = yes
+    
+}
+promote_character = {
+    character = QIE_aisin_gioro_puyi
+    ideology = social_conservative_subtype
+    
+}
+promote_character = {
+    character = QIE_aisin_gioro_puyi
+    ideology = social_democrat_subtype
     
 }

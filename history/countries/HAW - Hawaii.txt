@@ -372,6 +372,20 @@ create_corps_commander = {
     logistics_skill = 3
     
 }
+create_corps_commander = {
+    name = "Clarence Tinker"
+    portrait_path = "gfx/leaders/HAW/Portrait_HAW_Clarence_Tinker.png"
+    traits = {
+        air_commander
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+    
+}
 create_navy_leader = {
     name = "Luke McNamee"
     portrait_path = "gfx/leaders/HAW/Portrait_HAW_Luke_McNamee.png"

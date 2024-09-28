@@ -12,6 +12,7 @@ chinese_unification = {
             }
             NOT = {
                 tag = LEC
+                tag = MON
                 
             }
             

@@ -288,7 +288,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
     name = "Federico Smith"
-    portrait_path = "gfx/leaders/Generic/Portrait_South_America_Generic_land_new_2.png"
+    portrait_path = "gfx/leaders/PAR/Portrait_PAR_Federico_Smith.png"
     traits = {
         cavalry_officer
         old_guard
@@ -346,5 +346,19 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 2
     logistics_skill = 1
+    
+}
+create_navy_leader = {
+    name = "José Bozzano"
+    portrait_path = "gfx/leaders/PAR/Portrait_PAR_Jose_Bozzano.png"
+    traits = {
+        chief_engineer
+        
+    }
+    skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    maneuvering_skill = 2
+    coordination_skill = 2
     
 }

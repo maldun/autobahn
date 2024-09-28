@@ -572,6 +572,11 @@ country_event = {
     
 }
 country_event = {
+    id = gerfla.200
+    days = 160
+    
+}
+country_event = {
     id = austria.3
     days = 4108
     
@@ -584,12 +589,6 @@ news_event = {
 news_event = {
     id = flavornews.2
     days = 214
-    
-}
-create_import = {
-    resource = oil
-    factories = 3
-    exporter = ROM
     
 }
 create_import = {
@@ -1247,17 +1246,16 @@ create_corps_commander = {
     name = "Franz von Bayern"
     portrait_path = "gfx/leaders/GER/Portrait_Germany_Franz_Bayern_kr.png"
     traits = {
-        trait_engineer
-        fortress_buster
-        hill_fighter
+        infantry_leader
+        war_hero
         GER_bayerische_armee_commander_trait
         
     }
-    skill = 2
-    attack_skill = 1
-    defense_skill = 2
+    skill = 3
+    attack_skill = 3
+    defense_skill = 3
     planning_skill = 2
-    logistics_skill = 2
+    logistics_skill = 1
     
 }
 create_corps_commander = {
@@ -1706,6 +1704,22 @@ create_corps_commander = {
     defense_skill = 2
     planning_skill = 3
     logistics_skill = 3
+    
+}
+create_corps_commander = {
+    name = "Hyazinth Graf Strachwitz"
+    portrait_path = "gfx/leaders/GER/Portrait_Germany_Hyacinth_Graf_Strachwitz.png"
+    traits = {
+        panzer_leader
+        armor_officer
+        career_officer
+        
+    }
+    skill = 2
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
     
 }
 create_navy_leader = {

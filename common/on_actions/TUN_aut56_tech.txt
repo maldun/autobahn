@@ -1,0 +1,17 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            TUN = {
+                set_technology = {
+                    r56_militia_tech = 1
+                    popup = no
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

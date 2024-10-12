@@ -2333,4 +2333,6 @@ equipments = {
 			rubber = 2
 		}
 	}
+
+	
 }

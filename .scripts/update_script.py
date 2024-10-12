@@ -283,7 +283,7 @@ def create_tech_on_action(out_folder,tag,specific_maps):
     curr = output
     for ind in inds[0]: curr = curr[ind]
     #breakpoint()
-    curr[1] = apply_map(found,specific_maps[tag])[0][1][1:]
+    curr[1] = apply_map(found,specific_maps[tag])[0][1][1:] + [["popup",["no"]]]
     with open(os.path.join(out_folder,tag+"_aut56_tech.txt"),'w') as fp:
         fp.write(list2paradox(output))
     
@@ -403,20 +403,20 @@ if __name__ == "__main__":
     for func in update_keys:
         rt56_update.__dict__[func](RT56_FOLDER, OUT_FOLDER)
 
-    rt56_update.copy_update(RT56_FOLDER, OUT_FOLDER)
-    # some simple post hacks
-    # Change SOV --> RUS
-    rt56_update.replace_string('SOV', 'RUS', OUT_FOLDER)
-    # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
-    rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
-    rt56_update.patch_ai(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
-    rt56_update.patch_bugs(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
-    
-    if KX is True:
-        import kx_patches as patches
-    else:
-        import kr_patches as patches
-    patches.patch(MAIN_MOD, RT56_FOLDER, OUT_FOLDER)
+#     rt56_update.copy_update(RT56_FOLDER, OUT_FOLDER)
+#     # some simple post hacks
+#     # Change SOV --> RUS
+#     rt56_update.replace_string('SOV', 'RUS', OUT_FOLDER)
+#     # Change r56_tech_RUS --> r56_tech_SOV to get gfx_files back on track
+#     rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
+#     rt56_update.patch_ai(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
+#     rt56_update.patch_bugs(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
+#     
+#     if KX is True:
+#         import kx_patches as patches
+#     else:
+#         import kr_patches as patches
+#     patches.patch(MAIN_MOD, RT56_FOLDER, OUT_FOLDER)
     
     # add missing spirits
     

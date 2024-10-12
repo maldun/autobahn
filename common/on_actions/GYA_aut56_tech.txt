@@ -1,0 +1,19 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            GYA = {
+                set_technology = {
+                    camo = 1
+                    etax_doctrine = 1
+                    transport_plane1 = 1
+                    popup = no
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

@@ -130,8 +130,8 @@ spriteTypes = {
 	SpriteType = { name = "GFX_SIK_amphibious_tank_3_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_SIK_amphibious_tank_02.dds" }
 	SpriteType = { name = "GFX_SIK_amphibious_tank_4_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_SIK_amphibious_tank_02.dds" }
 
-	SpriteType = { name = "GFX_RUS_amphibious_tank_3_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_SOV_amphibious_tank_02.dds" }
-	SpriteType = { name = "GFX_RUS_amphibious_tank_4_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_SOV_amphibious_tank_02.dds" }
+	SpriteType = { name = "GFX_SOV_amphibious_tank_3_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_SOV_amphibious_tank_02.dds" }
+	SpriteType = { name = "GFX_SOV_amphibious_tank_4_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_SOV_amphibious_tank_02.dds" }
 
 	SpriteType = { name = "GFX_MON_amphibious_tank_3_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_SOV_amphibious_tank_02.dds" }
 	SpriteType = { name = "GFX_MON_amphibious_tank_4_medium" texturefile = "gfx/interface/technologies/tank/amphibious_tank/r56_tech_SOV_amphibious_tank_02.dds" }

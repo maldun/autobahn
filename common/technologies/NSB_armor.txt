@@ -280,7 +280,7 @@ technologies = {
 				factor = 10 #you are embarassing yourself
 			}
 			modifier = {
-				tag = RUS
+				tag = SOV
 				factor = 3
 			}
 
@@ -617,7 +617,7 @@ technologies = {
 				add = 75
 			}
 			modifier = {
-				tag = RUS
+				tag = SOV
 				factor = 1.5
 			}
 			modifier = {
@@ -707,7 +707,7 @@ technologies = {
 
 			modifier = {
 				factor = 3
-				tag = RUS
+				tag = SOV
 			}
 
 			modifier = {

@@ -1,0 +1,19 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            AZE = {
+                set_technology = {
+                    camo = 1
+                    jngdst_clothes_gw = 1
+                    r56_guerilla_warfare = 1
+                    popup = no
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

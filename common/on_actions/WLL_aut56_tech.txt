@@ -1,0 +1,20 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            WLL = {
+                set_technology = {
+                    camo = 1
+                    etax_doctrine = 1
+                    steel_production_1 = 1
+                    transport_plane1 = 1
+                    popup = no
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

@@ -3,6 +3,7 @@ import rt56_update
 from Hoi4Converter.converter import *
 from Hoi4Converter.mappings import *
 import Hoi4Converter
+from Hoi4Converter.parser import parse_grammar as code2obj
 import os
 import sys
 import pandas as pd
@@ -24,9 +25,11 @@ KX = False
 OUT_FOLDER = HOME + ".local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_diff"
 MAIN_MOD = KX_FOLDER if KX is True else KR_FOLDER
 
+
 IDEA_PATH = "common/ideas"
 INTERFACE_PATH = "interface"
 SCRIPTED_EFFECTS_PATH = "common/scripted_effects"
+ON_ACTION_PATH = "common/on_actions"
 HISTORY_COUNTRY_PATH = "history/countries"
 DECISION_PATH = "common/decisions"
 # RULES_PATH =
@@ -240,21 +243,48 @@ def apply_equipment_table(file_name):
     return maps
 
 
+ON_ACTION_TEMPLATE="""
+on_actions = {
+    on_startup = {
+        effect = {
+        __TAG__ = 
+              {
+              set_technology = {}
+              }
+        }
+    }
+}
+"""
+
+def create_tech_on_action(out_folder,tag,specific_maps):
+    on_action = ON_ACTION_TEMPLATE.replace("__TAG__",tag.upper())
+    output = code2obj(on_action)
+    found, inds = has_key.search(output,"set_technology")
+    curr = output
+    for ind in inds[0]: curr = curr[ind]
+    #breakpoint()
+    curr[1] = apply_map(found,specific_maps[tag])[0][1][1:] + [["popup",["no"]]]
+    with open(os.path.join(out_folder,tag+"_aut56_tech.txt"),'w') as fp:
+        fp.write(list2paradox(output))
+    
+
 def apply_equipment_maps(general_maps, specific_maps):
     in_folder = os.path.join(MAIN_MOD, HISTORY_COUNTRY_PATH)
-    out_folder = os.path.join(OUT_FOLDER, HISTORY_COUNTRY_PATH)
+    out_folder = os.path.join(OUT_FOLDER, ON_ACTION_PATH)
     file_list = os.listdir(in_folder)
     #file_list = ["FRA - France.txt"]
     os.makedirs(out_folder, exist_ok=True)
+    on_action = [[""]]
 
     for file in file_list:
         tag = file[:3]
         maps = general_maps + [specific_maps[tag]]
         try:
-            apply_maps_on_file(os.path.join(in_folder, file),
-                               os.path.join(out_folder, file),
-                               maps)
-        except:
+            # apply_maps_on_file(os.path.join(in_folder, file),
+            #                    os.path.join(out_folder, file),
+            #                    maps)
+            create_tech_on_action(out_folder,tag,specific_maps)
+        except Exception as excp:
             import pdb
             pdb.set_trace()
 
@@ -354,11 +384,12 @@ if __name__ == "__main__":
     rt56_update.replace_string('r56_tech_RUS', 'r56_tech_SOV', OUT_FOLDER)
     rt56_update.patch_ai(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
     rt56_update.patch_bugs(MAIN_MOD, RT56_FOLDER, KR_FOLDER, OUT_FOLDER, KX)
-
+    
     if KX is True:
         import kx_patches as patches
     else:
         import kr_patches as patches
+
     patches.patch(MAIN_MOD, OUT_FOLDER)
 
     # add missing spirits

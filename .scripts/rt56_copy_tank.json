@@ -8,7 +8,6 @@
     },
     "common/units/": {
       "super_heavy_armor.txt": [],
-      "super_heavy_armor_support.txt": [],
       "tank_destroyer_brigade.txt": []
     },
     "common/units/equipment/": {
@@ -28,7 +27,8 @@
     },
     "interface/": {
 	"r56_techs_tank.gfx": ["interface/","r56_techs_tank.gfx"],
-	"r56_techs_amphibious_tank.gfx": ["interface/", "r56_techs_amphibious_tank.gfx"]
+	"r56_techs_amphibious_tank.gfx": ["interface/", "r56_techs_amphibious_tank.gfx"],
+	"r56_techs_motor_mech.gfx": ["interface/","r56_techs_motor_mech.gfx"]
     },
     "localisation/english/replace/": {
 	"r56e_equip_tank_l_english.yml": ["localisation/english/",

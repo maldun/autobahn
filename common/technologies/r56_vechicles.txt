@@ -182,8 +182,8 @@ technologies = {
             
         }
         supply_node_range = 0.05
+        truck_attrition_factor = -0.05
         repair_speed_supply_node_factor = 0.05
-        repair_speed_rail_way_factor = 0.05
         categories = {
             motorized_equipment
             logistics_tech
@@ -206,7 +206,6 @@ technologies = {
                 factor = 4
                 AND = {
                     OR = {
-                        original_tag = USA
                         original_tag = GER
                         original_tag = RUS
                         
@@ -225,12 +224,13 @@ technologies = {
                 factor = 4
                 AND = {
                     OR = {
+                        original_tag = USA
                         original_tag = FRA
                         original_tag = ENG
                         original_tag = JAP
                         
                     }
-                    date > "1939.1.1"
+                    date > "1940.1.1"
                     
                 }
                 
@@ -1306,10 +1306,6 @@ technologies = {
             train_tech
             
         }
-        modern_armor = {
-            maximum_speed = 0.1
-            
-        }
         ai_will_do = {
             factor = 0
             modifier = {
@@ -1355,6 +1351,7 @@ technologies = {
         }
         production_speed_supply_node_factor = 0.1
         production_speed_rail_way_factor = 0.1
+        repair_speed_rail_way_factor = 0.05
         categories = {
             train_tech
             railway_construction_tech
@@ -1395,6 +1392,7 @@ technologies = {
         }
         production_speed_supply_node_factor = 0.1
         production_speed_rail_way_factor = 0.1
+        repair_speed_rail_way_factor = 0.05
         categories = {
             train_tech
             railway_construction_tech
@@ -1440,6 +1438,7 @@ technologies = {
         }
         production_speed_supply_node_factor = 0.1
         production_speed_rail_way_factor = 0.1
+        repair_speed_rail_way_factor = 0.05
         categories = {
             train_tech
             railway_construction_tech
@@ -1480,6 +1479,7 @@ technologies = {
         }
         production_speed_supply_node_factor = 0.1
         production_speed_rail_way_factor = 0.1
+        repair_speed_rail_way_factor = 0.05
         categories = {
             train_tech
             railway_construction_tech

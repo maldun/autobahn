@@ -1,0 +1,20 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            SUD = {
+                set_technology = {
+                    camo = 1
+                    desertinfantry_at = 1
+                    etax_doctrine = 1
+                    jngdst_clothes_gw = 1
+                    popup = no
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

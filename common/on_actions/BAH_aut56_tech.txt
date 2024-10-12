@@ -1,0 +1,21 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            BAH = {
+                set_technology = {
+                    camo = 1
+                    etax_doctrine = 1
+                    jngdst_clothes_gw = 1
+                    transport_plane1 = 1
+                    jungletroops = 1
+                    popup = no
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

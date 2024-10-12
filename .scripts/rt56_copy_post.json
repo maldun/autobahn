@@ -2,7 +2,16 @@
     "interface/": {
         "countrytechtreeview.gui": [],
         "equipmentdesignermoduleicons.gfx": [],
-        "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"]
+        "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"],
+        "construction_speed_ui.gfx": [],
+        "construction_speed_ui.gui": [],
+        "r56_special_projects.gfx": [],
+        "r56_techs_electronics.gfx": [],
+        "r56_techs_vechicles.gfx": [],
+        "r56e_countrystateview.gfx": [],
+        "countryconstructionsview.gui": [],
+        "r56_goals.gfx": [],
+        "r56_goals_shine.gfx": []
     },
     "common/continuous_focus/": {
         "generic.txt": []
@@ -15,7 +24,9 @@
         "r56e_upgrades.txt": []
     },
     "localisation/english/": {
-	"research_l_english.yml": []
+	"research_l_english.yml": [],
+	"r56e_buildings_l_english.yml": [],
+	"r56_special_projects_l_english.yml": []
     },
     "localisation/english/replace/": {
 	"r56_modifiers_l_english.yml": ["localisation/english/",
@@ -36,5 +47,6 @@
         "r56_defines.lua": [],
         "r56_spm_defines.lua": []
     }
+    
 }
     

@@ -3,10 +3,26 @@
     "r56e_etax.txt": [],
     "electronic_mechanical_engineering.txt": [],
     "industry.txt": [],
-    "r56_techs.txt": []
+    "r56_techs.txt": [],
+    "r56_special_projects_techs.txt": []
+    
   },
   "common/buildings/": {
     "00_buildings.txt": [],
     "r56e_buildings.txt": []
-  }
+  },
+   "common/special_projects/project_tags/": {
+    "r56_tags.txt": []
+  },
+    "common/special_projects/projects/": {
+    "land_projects.txt": [],
+    "nuclear_projects.txt": [],
+    "r56_air_projects.txt": [],
+    "r56_land_projects.txt": [],
+    "r56_naval_projects.txt": [],
+    "r56_rdf_projects.txt": []
+  },
+    "common/special_projects/scientist_traits/": {
+    "00_r56_traits.txt": []
+  },
 }

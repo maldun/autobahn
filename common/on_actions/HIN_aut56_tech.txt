@@ -1,0 +1,19 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            HIN = {
+                set_technology = {
+                    camo = 1
+                    etax_doctrine = 1
+                    r56_guerilla_warfare = 1
+                    popup = no
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

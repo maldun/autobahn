@@ -1437,25 +1437,25 @@ USA_release_PSA = {
         }
         transfer_ship = {
             prefer_name = "USS Omaha"
-            type = heavy_cruiser
+            type = light_cruiser
             target = XXA
             
         }
         transfer_ship = {
             prefer_name = "USS Milwaukee"
-            type = heavy_cruiser
+            type = light_cruiser
             target = XXA
             
         }
         transfer_ship = {
             prefer_name = "USS Raleigh"
-            type = heavy_cruiser
+            type = light_cruiser
             target = XXA
             
         }
         transfer_ship = {
             prefer_name = "USS Detroit"
-            type = heavy_cruiser
+            type = light_cruiser
             target = XXA
             
         }
@@ -1911,13 +1911,13 @@ USA_release_PSA = {
         }
         transfer_ship = {
             prefer_name = "USS Marblehead"
-            type = heavy_cruiser
+            type = light_cruiser
             target = XXA
             
         }
         transfer_ship = {
             prefer_name = "USS Cincinnati"
-            type = heavy_cruiser
+            type = light_cruiser
             target = XXA
             
         }
@@ -3345,18 +3345,6 @@ USA_demobilize_forces = {
 remove_ACW_claims = {
     hidden_effect = {
         every_state = {
-            limit = {
-                OR = {
-                    is_claimed_by = USA
-                    is_claimed_by = CSA
-                    is_claimed_by = PSA
-                    is_claimed_by = TEX
-                    is_claimed_by = NEE
-                    is_claimed_by = HAW
-                    
-                }
-                
-            }
             if = {
                 limit = {
                     NOT = {
@@ -5255,7 +5243,7 @@ ACW_navy_redistribution_CSA = {
         }
         transfer_ship = {
             prefer_name = "USS Trenton"
-            type = heavy_cruiser
+            type = light_cruiser
             target = XXA
             
         }
@@ -5808,18 +5796,6 @@ ACW_navy_redistribution_CSA = {
 }
 ACW_navy_redistribution_TEX = {
     hidden_effect = {
-        TEX_samuel_murray_robinson = {
-            set_nationality = TEX
-            
-        }
-        TEX_david_worth_bagley = {
-            set_nationality = TEX
-            
-        }
-        TEX_john_sidney_mccain_sr = {
-            set_nationality = TEX
-            
-        }
         transfer_ship = {
             prefer_name = "USS Tennessee"
             type = battleship
@@ -6348,6 +6324,18 @@ ACW_navy_redistribution_TEX = {
             
         }
         TEX = {
+            TEX_samuel_murray_robinson = {
+                set_nationality = TEX
+                
+            }
+            TEX_david_worth_bagley = {
+                set_nationality = TEX
+                
+            }
+            TEX_john_sidney_mccain_sr = {
+                set_nationality = TEX
+                
+            }
             annex_country = {
                 target = XXA
                 
@@ -6399,64 +6387,10 @@ ACW_navy_redistribution_TEX = {
 }
 ACW_navy_redistribution_USA = {
     hidden_effect = {
-        transfer_ship = {
-            prefer_name = "USS Lancaster"
-            type = heavy_cruiser
-            target = XXA
-            
-        }
-        transfer_ship = {
-            prefer_name = "USS Des Moines"
-            type = heavy_cruiser
-            target = XXA
-            
-        }
-        transfer_ship = {
-            prefer_name = "USS Pennsylvania"
-            type = battleship
-            target = XXA
-            
-        }
-        transfer_ship = {
-            prefer_name = "USS Talbot"
-            type = destroyer
-            target = XXA
-            
-        }
-        transfer_ship = {
-            prefer_name = "USS Waters"
-            type = destroyer
-            target = XXA
-            
-        }
-        transfer_ship = {
-            prefer_name = "USS Dent"
-            type = destroyer
-            target = XXA
-            
-        }
-        transfer_ship = {
-            prefer_name = "USS Dorsey"
-            type = destroyer
-            target = XXA
-            
-        }
-        transfer_ship = {
-            prefer_name = "USS Lea"
-            type = destroyer
-            target = XXA
-            
-        }
-        transfer_ship = {
-            prefer_name = "USS Lamberton"
-            type = destroyer
-            target = XXA
-            
-        }
         PSA = {
             transfer_ship = {
                 prefer_name = "USS Raleigh"
-                type = heavy_cruiser
+                type = light_cruiser
                 target = XXA
                 
             }
@@ -8437,13 +8371,13 @@ USA_starting_techs = {
         marines = 1
         tech_mountaineers = 1
         basic_train = 1
+        transport_plane1 = 1
         r56_gw_railway_gun = 1
         r56_railway_mortar_subtech = 1
-        aluminum_production_1 = 1
-        steel_production_1 = 1
-        transport_plane1 = 1
         etax_doctrine = 1
+        aluminum_production_1 = 1
         camo = 1
+        steel_production_1 = 1
         
     }
     if = {
@@ -8462,13 +8396,13 @@ USA_starting_techs = {
             early_bombs = 1
             aircraft_construction = 1
             air_torpedoe_1 = 1
+            transport_plane1 = 1
             r56_gw_railway_gun = 1
             r56_railway_mortar_subtech = 1
-            aluminum_production_1 = 1
-            steel_production_1 = 1
-            transport_plane1 = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
             camo = 1
+            steel_production_1 = 1
             
         }
         
@@ -8482,13 +8416,13 @@ USA_starting_techs = {
             naval_bomber1 = 1
             CAS1 = 1
             early_bomber = 1
+            transport_plane1 = 1
             r56_gw_railway_gun = 1
             r56_railway_mortar_subtech = 1
-            aluminum_production_1 = 1
-            steel_production_1 = 1
-            transport_plane1 = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
             camo = 1
+            steel_production_1 = 1
             
         }
         
@@ -8502,13 +8436,13 @@ USA_starting_techs = {
             gwtank_chassis = 1
             basic_light_tank_chassis = 1
             engine_tech_1 = 1
+            transport_plane1 = 1
             r56_gw_railway_gun = 1
             r56_railway_mortar_subtech = 1
-            aluminum_production_1 = 1
-            steel_production_1 = 1
-            transport_plane1 = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
             camo = 1
+            steel_production_1 = 1
             
         }
         add_ideas = bureau_of_ordnance_spirit
@@ -8518,13 +8452,13 @@ USA_starting_techs = {
         set_technology = {
             gwtank = 1
             basic_light_tank = 1
+            transport_plane1 = 1
             r56_gw_railway_gun = 1
             r56_railway_mortar_subtech = 1
-            aluminum_production_1 = 1
-            steel_production_1 = 1
-            transport_plane1 = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
             camo = 1
+            steel_production_1 = 1
             
         }
         
@@ -8559,13 +8493,13 @@ USA_starting_techs = {
             basic_naval_mines = 1
             submarine_mine_laying = 1
             mtg_transport = 1
+            transport_plane1 = 1
             r56_gw_railway_gun = 1
             r56_railway_mortar_subtech = 1
-            aluminum_production_1 = 1
-            steel_production_1 = 1
-            transport_plane1 = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
             camo = 1
+            steel_production_1 = 1
             
         }
         
@@ -8586,13 +8520,13 @@ USA_starting_techs = {
             early_carrier = 1
             basic_carrier = 1
             transport = 1
+            transport_plane1 = 1
             r56_gw_railway_gun = 1
             r56_railway_mortar_subtech = 1
-            aluminum_production_1 = 1
-            steel_production_1 = 1
-            transport_plane1 = 1
             etax_doctrine = 1
+            aluminum_production_1 = 1
             camo = 1
+            steel_production_1 = 1
             
         }
         

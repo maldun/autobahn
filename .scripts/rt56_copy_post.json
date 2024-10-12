@@ -21,7 +21,10 @@
 	"r56_modifiers_l_english.yml": ["localisation/english/",
 					"r56_modifiers_l_english.yml"],
 	"r56e_technology_l_english.yml": ["localisation/english/",
-					  "r56e_technology_l_english.yml"],
+					  "r56e_technology_l_english.yml"]
+	
+    },
+    "localisation/english/": {
 	"r56e_buildings_l_english.yml": ["localisation/english/",
 					  "r56e_buildings_l_english.yml"]
 	

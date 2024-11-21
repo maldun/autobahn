@@ -138,6 +138,7 @@ class CarryOverAISettings:
 
     @staticmethod
     def _carry_over_ai_settings(mod_file, r56_file):
+        
         org_obj, org_tech_map, org_techs = get_obj_and_tech_map(mod_file)
         r56_obj, r56_tech_map, r56_techs = get_obj_and_tech_map(r56_file)
         if mod_file.endswith('infantry.txt'):

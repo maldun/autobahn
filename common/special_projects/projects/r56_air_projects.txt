@@ -68,7 +68,7 @@ sp_air_r56_helicopter = {
 
 	allowed = {
 		NOT = {
-			has_dlc = "Gotterdammerung"	
+			has_dlc_gtd = yes	
 		}
 	}
 

@@ -273,7 +273,7 @@ sp_commercial_nuclear_reactor = {
 		resources = { steel=6 tungsten=4 chromium=7 }
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		has_dlc_gtd = yes
 	}
 	available = { 
 		FROM = {
@@ -417,7 +417,7 @@ sp_nuclear_engines = {
 		sp_nuclear_reactor	#changed from commercial reactor since there was just 8 months between these technologies IRL, and commercial reactor requires Gotterdamerung
 	}
 	allowed = {
-		#has_dlc = "Gotterdammerung"	#DLC in vanilla, but we had these modules before them
+		#has_dlc_gtd = yes	#DLC in vanilla, but we had these modules before them
 	}
 	available = { 
 		
@@ -691,7 +691,7 @@ sp_thermo_nuclear_bomb = {
 		sp_nuclear_bomb
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		has_dlc_gtd = yes
 	}
 	available = { 
 		
@@ -794,7 +794,7 @@ sp_nuclear_warheads = {
 		sp_rockets_medium_range_ballistic_missile
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		has_dlc_gtd = yes
 	}
 	available = {
 	}

@@ -1,0 +1,83 @@
+spriteTypes = {
+
+spriteType = {
+             name = "GFX_SMI_sub_ship_aip_engine_1"
+             textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_aip_engine_1.dds"
+    }
+    spriteType = {
+            name = "GFX_SMI_sub_ship_aip_engine_2"
+            textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_aip_engine_2.dds"
+    }
+    spriteType = {
+            name = "GFX_SMI_sub_ship_aip_engine_3"
+            textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_aip_engine_3.dds"
+    }
+
+    SpriteType = {
+             name = "GFX_floating_airfield_bs_medium"
+             texturefile = "gfx/interface/technologies/floating_airfield.dds"
+     }
+
+     SpriteType = {
+             name = "GFX_floating_airfield_ti_medium"
+             texturefile = "gfx/interface/technologies/floating_airfield.dds"
+     }
+
+     SpriteType = {
+             name = "GFX_floating_airfield_medium"
+             texturefile = "gfx/interface/technologies/floating_airfield.dds"
+     }
+
+
+
+######## Submarine Rockets
+
+     ### Category Icomn
+
+     spriteType = {
+             name = "GFX_SMI_ship_rocket"
+            textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_missile_launcher.dds"
+     }
+
+     spriteType = {
+             name = "GFX_SMI_ship_nuclear_rocket"
+             textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_slbm_launcher.dds"
+     }
+
+     ###
+
+     spriteType = {
+            name = "GFX_SMI_sub_missile_launcher"
+            textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_missile_launcher.dds"
+     }
+
+             spriteType = {
+             name = "GFX_SMI_slbm_launcher"
+             textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_slbm_launcher.dds"
+     }
+
+      spriteType = {
+         name = "GFX_sp_naval_anechoic_tiles"
+         texturefile = "gfx/interface/special_project/project_icons/sp_naval_anechoic_tiles.dds"
+       }
+       
+      ### Category Icon
+     spriteType = {
+             name = "GFX_SMI_ship_sub_coating"
+             textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_anechoic_tile_1.dds"
+     }
+
+     ###
+
+     spriteType = {
+             name = "GFX_SMI_ship_sub_anechoic_tile_1"
+             textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_anechoic_tile_1.dds"
+     }
+
+
+}
+
+
+
+
+

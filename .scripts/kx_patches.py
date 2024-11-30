@@ -161,6 +161,6 @@ def patch(kx_path, rt56_path, out_folder):
     patch_main_menu(kx_path, out_folder)
     path_idea_tags(kx_path, out_folder)
     patch_infantry_equipment(kx_path, rt56_path, out_folder)
-    patch_airships_techtree(kx_path,rt56_path,out_folder)
+    #patch_airships_techtree(kx_path,rt56_path,out_folder)
     # Is removed in KX for now
     #patch_naval_ai_equipment(kx_path, out_folder)

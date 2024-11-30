@@ -127,10 +127,40 @@ def patch_infantry_equipment(kx_path, rt56_folder, out_folder):
     with open(out_file, 'w') as fp:
         fp.write(new_code)
 
+def patch_airships_techtree(kx_path, rt56_folder, out_folder):
+    interface_path = INTERFACE_FOLDER
+    snippet = """
+    gridboxtype = {
+				name = "airships1_tree"
+				position = { x = 1075 y = 32 }
+				size = { width = 200 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+    """
+    obj = code2obj(snippet)
+    fname = "countrytechtreeview.gui"
+    in_file, out_file = make_folder_in_out_file(interface_path, fname, rt56_folder, out_folder)
+    with open(in_file,'r') as f:
+        text = f.read()
+    text = text.replace("%%","%")
+    for k in range(10):
+        text = text.replace(str(k) + "K",str(k))
+    techtree = code2obj(text)
+    _, inds = has_key_and_val.search(techtree,["name",['"early_fighter_tree"']])
+    inds = inds[0]
+    liste = techtree[inds[0]][inds[1]][inds[2]][inds[3]][inds[4]][inds[5]]
+    liste = liste[:inds[6]+1] + obj + liste[inds[6]+1:]
+    techtree[inds[0]][inds[1]][inds[2]][inds[3]][inds[4]][inds[5]] = liste
+    new_code = list2paradox(techtree)
+    with open(out_file, 'w') as fp:
+        fp.write(new_code)
+    
 
 def patch(kx_path, rt56_path, out_folder):
     patch_main_menu(kx_path, out_folder)
     path_idea_tags(kx_path, out_folder)
     patch_infantry_equipment(kx_path, rt56_path, out_folder)
+    patch_airships_techtree(kx_path,rt56_path,out_folder)
     # Is removed in KX for now
     #patch_naval_ai_equipment(kx_path, out_folder)

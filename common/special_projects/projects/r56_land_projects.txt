@@ -42,7 +42,7 @@ sp_r56_tank_optical_rangefinder = {
 		}
 		enable_equipment_modules = {
 			limit = {
-				has_dlc_nsb = yes
+				has_dlc = "No Step Back"
 			}
 			r56_tank_optical_rangefinder
 		}
@@ -111,7 +111,7 @@ sp_r56_advance_tank_optical_rangefinder = {
 		}
 		enable_equipment_modules = {
 			limit = {
-				has_dlc_nsb = yes
+				has_dlc = "No Step Back"
 			}
 			r56_tank_advanced_rangefinder
 		}

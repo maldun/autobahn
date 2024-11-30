@@ -4,7 +4,8 @@
       "infantry.txt": [],
       "r56_vechicles.txt": [],
       "r56_techs.txt": [],
-      "infantry_extra_tech.txt": []
+      "infantry_extra_tech.txt": [],
+      "support.txt": []
   },
   "common/units/": {
       "r56e_armored_car.txt": [],

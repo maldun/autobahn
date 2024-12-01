@@ -7,7 +7,6 @@ on_actions = {
                     etax_doctrine = 1
                     r56_militia_tech = 1
                     sniper_rifle = 1
-                    transport_plane1 = 1
                     popup = no
                     
                 }

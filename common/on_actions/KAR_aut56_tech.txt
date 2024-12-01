@@ -5,7 +5,6 @@ on_actions = {
                 set_technology = {
                     camo = 1
                     etax_doctrine = 1
-                    transport_plane1 = 1
                     winter_clothes_gw = 1
                     popup = no
                     

@@ -1,5 +1,5 @@
 technologies = {
-airships1= {
+	airships1= {
 
 		enable_equipments = {
 			heavy_airship_equipment_0
@@ -21,7 +21,8 @@ airships1= {
 			factor = 0
 		}
 	}
-	airship_airframes = {
+	
+airship_airframes = {
 
 		enable_equipments = {
 			large_airship_airframe_0

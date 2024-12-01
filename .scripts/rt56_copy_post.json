@@ -2,10 +2,36 @@
     "interface/": {
         "countrytechtreeview.gui": [],
         "equipmentdesignermoduleicons.gfx": [],
-        "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"]
+        "equipmentupgradedesignerwindow.gui": [],
+        "construction_speed_ui.gfx": [],
+        "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"],
+        "r56_special_projects.gfx": [],
+        "r56_techs_electronics.gfx": [],
+        "r56_techs_vechicles.gfx": [],
+        "r56e_countrystateview.gfx": [],
+        "countrystateview.gui": [],
+        "countrystateview.gfx": [],
+        "countryconstructionsview.gui": [],
+        "r56_goals.gfx": [],
+        "r56_goals_shine.gfx": []
     },
     "common/continuous_focus/": {
         "generic.txt": []
+    },
+    "common/operation_phases/": {
+      "lar_assassinate_officers.txt": []
+    },
+    "events/": {
+      "Generic.txt": [],
+      "LaR_agent_events.txt": [],
+      "r56_spying_event.txt": []
+    },
+    "common/intelligence_agency_upgrades/": {
+        "intelligence_agency_upgrades.txt": ["common/intelligence_agency_upgrades/","KR_intelligence_agency_upgrades.txt"]
+    },
+    "common/operations/": {
+        "r56_operations.txt": [],
+        "00_operations.txt": []
     },
     "common/unit_tags/": {
 	"00_categories.txt": [],
@@ -15,18 +41,18 @@
         "r56e_upgrades.txt": []
     },
     "localisation/english/": {
-	"research_l_english.yml": []
+	"research_l_english.yml": [],
+	"r56_operations_l_english.yml": [],
+	"r56_spying_l_english.yml": [],
+	"wtt_events_l_english.yml": [],
+	"r56e_buildings_l_english.yml": ["localisation/english/",
+					  "r56e_buildings_l_english.yml"]
     },
     "localisation/english/replace/": {
 	"r56_modifiers_l_english.yml": ["localisation/english/",
 					"r56_modifiers_l_english.yml"],
 	"r56e_technology_l_english.yml": ["localisation/english/",
 					  "r56e_technology_l_english.yml"]
-	
-    },
-    "localisation/english/": {
-	"r56e_buildings_l_english.yml": ["localisation/english/",
-					  "r56e_buildings_l_english.yml"]
 	
     }
 }

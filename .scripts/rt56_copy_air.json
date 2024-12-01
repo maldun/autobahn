@@ -17,8 +17,7 @@
     "single_engine_airframe.txt": [],
     "twin_engine_airframe.txt": [],
     "quad_engine_airframe.txt": [],
-    "x_plane_airframes.txt": [],
-    "guided_missiles.txt": []
+    "x_plane_airframes.txt": []
     
   },
     "common/units/equipment/modules/": {

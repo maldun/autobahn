@@ -4,7 +4,6 @@ on_actions = {
             MAC = {
                 set_technology = {
                     camo = 1
-                    transport_plane1 = 1
                     popup = no
                     
                 }

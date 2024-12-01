@@ -2,52 +2,6 @@ technologies = {
     @transport_plane_x = 1
     @mothership_x_bba = 3
     @mothership_x = 3
-    bba_early_transport_plane = {
-        enable_equipments = {
-            transport_plane_equipment_1
-            
-        }
-        path = {
-            leads_to_tech = bba_improved_transport_plane
-            research_cost_coeff = 1
-            
-        }
-        research_cost = 2
-        start_year = 1933
-        folder = {
-            name = bba_air_techs_folder
-            position = {
-                x = @transport_plane_x
-                y = 2
-                
-            }
-            
-        }
-        categories = {
-            air_equipment
-            transport_planes_cat
-            
-        }
-        special_project_specialization = {
-            specialization_air
-            
-        }
-        ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0.1
-                is_eligible_for_light_aircraft_production = no
-                
-            }
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            
-        }
-        
-    }
     bba_improved_transport_plane = {
         enable_equipments = {
             transport_plane_equipment_2
@@ -163,10 +117,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             light_fighter
@@ -246,10 +196,6 @@ technologies = {
                 y = 4
                 
             }
-            
-        }
-        special_project_specialization = {
-            specialization_air
             
         }
         categories = {

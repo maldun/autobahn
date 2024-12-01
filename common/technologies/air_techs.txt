@@ -20,10 +20,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             transport_planes_cat
@@ -74,10 +70,6 @@ technologies = {
             transport_planes_cat
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         ai_will_do = {
             factor = 1
             modifier = {
@@ -112,10 +104,6 @@ technologies = {
         categories = {
             air_equipment
             transport_planes_cat
-            
-        }
-        special_project_specialization = {
-            specialization_air
             
         }
         ai_will_do = {

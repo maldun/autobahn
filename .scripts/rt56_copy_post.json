@@ -3,7 +3,17 @@
         "countrytechtreeview.gui": [],
         "equipmentdesignermoduleicons.gfx": [],
         "equipmentupgradedesignerwindow.gui": [],
-        "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"]
+        "construction_speed_ui.gfx": [],
+        "officer_corp_spirits.gfx": ["interface/","r56_officer_corp_spirits.gfx"],
+        "r56_special_projects.gfx": [],
+        "r56_techs_electronics.gfx": [],
+        "r56_techs_vechicles.gfx": [],
+        "r56e_countrystateview.gfx": [],
+        "countrystateview.gui": [],
+        "countrystateview.gfx": [],
+        "countryconstructionsview.gui": [],
+        "r56_goals.gfx": [],
+        "r56_goals_shine.gfx": []
     },
     "common/continuous_focus/": {
         "generic.txt": []

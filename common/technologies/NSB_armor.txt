@@ -287,7 +287,7 @@ technologies = {
 				factor = 10 #you are embarassing yourself
 			}
 			modifier = {
-				tag = SOV
+				tag = RUS
 				factor = 3
 			}
 
@@ -629,7 +629,7 @@ technologies = {
 				add = 75
 			}
 			modifier = {
-				tag = SOV
+				tag = RUS
 				factor = 1.5
 			}
 			modifier = {
@@ -720,7 +720,7 @@ technologies = {
 
 			modifier = {
 				factor = 3
-				tag = SOV
+				tag = RUS
 			}
 
 			modifier = {
@@ -857,7 +857,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -903,7 +905,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -1048,7 +1052,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 		}
 		special_project_specialization = { specialization_land }
 	}
@@ -1107,7 +1113,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 		}
 		special_project_specialization = { specialization_land }
 	}

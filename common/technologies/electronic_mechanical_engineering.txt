@@ -664,7 +664,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 				}
 				factor = 5
 			}
@@ -724,7 +724,7 @@ technologies = {
 	#		modifier = {
 	#			OR = {
 	#				tag = ENG
-	#				tag = USA
+	#				tag = GER
 	#			}
 	#			factor = 5
 	#		}
@@ -818,7 +818,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 				}
 				factor = 4
 			}
@@ -875,7 +875,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 				}
 				factor = 5
 			}
@@ -1406,7 +1406,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -1444,7 +1444,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
+				tag = GER
 			}
 			modifier = {
 				factor = 3
@@ -1492,7 +1492,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -1530,7 +1530,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
+				tag = GER
 			}
 			modifier = {
 				factor = 3
@@ -1573,7 +1573,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
+				tag = GER
 			}
 			modifier = {
 				factor = 3
@@ -1616,7 +1616,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
+				tag = GER
 			}
 			modifier = {
 				factor = 3
@@ -1666,7 +1666,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -1709,7 +1709,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -1752,7 +1752,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -1791,7 +1791,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -1830,7 +1830,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -1869,7 +1869,7 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -1901,7 +1901,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 					tag = JAP
 				}
 				factor = 3
@@ -1942,7 +1942,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 					tag = JAP
 				}
 				factor = 3
@@ -1984,7 +1984,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
+					tag = GER
 					tag = JAP
 				}
 				factor = 3
@@ -2163,7 +2163,7 @@ technologies = {
 		special_project_speed_factor = 0.01
 		production_speed_facility_factor = 0.01
 		
-		research_cost = 1.1
+		research_cost = 1.25
 		start_year = 1939
 		folder = {
 			name = electronics_folder
@@ -2191,6 +2191,7 @@ technologies = {
 		
 		categories = {
 			electronics
+			construction_tech
 		}
 
 		special_project_specialization = { specialization_nuclear specialization_air }
@@ -2621,7 +2622,7 @@ technologies = {
 
 			modifier = {
 				factor = 4
-				tag = USA
+				tag = GER
 			}
 		}
 		
@@ -2647,10 +2648,10 @@ technologies = {
 							original_tag = GER
 							original_tag = ITA
 							original_tag = JAP
-							original_tag = SOV
+							original_tag = RUS
 							original_tag = ENG
 							original_tag = FRA
-							original_tag = USA
+							original_tag = GER
 						}
 					}
 					ROOT = { #Yes im making this play for ROOT of ROOT. Sue me.
@@ -2716,7 +2717,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				tag = USA
+				tag = GER
 				factor = 2
 			}
 		}
@@ -2784,7 +2785,7 @@ technologies = {
 		on_research_complete = {
 			if = {
 				limit = {
-					tag = USA
+					tag = GER
 					has_war_with = JAP
 				}
 				play_warning_to_japan_effect = yes

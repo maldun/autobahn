@@ -6,7 +6,6 @@ on_actions = {
                     camo = 1
                     etax_doctrine = 1
                     sniper_rifle = 1
-                    transport_plane1 = 1
                     popup = no
                     
                 }

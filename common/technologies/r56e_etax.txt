@@ -203,7 +203,7 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					original_tag = SOV
+					original_tag = RUS
 					original_tag = GER
 				}
 				factor = 0
@@ -1876,7 +1876,8 @@ technologies = {
 		research_cost = 3.0
 		start_year = 1943
 		
-		research_speed_factor = 0.05
+		#research_speed_factor = 0.05
+		special_project_speed_factor = 0.03
 		
 		folder = {
 			name = etax_folder

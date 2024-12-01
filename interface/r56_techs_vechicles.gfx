@@ -253,16 +253,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_train_equipment_diesel_eu.dds"
 	}
 
-	#-> SOV <><>
+	#-> RUS <><>
 	SpriteType = { #stand in
-		name = "GFX_SOV_r56_postwar_train_medium"
+		name = "GFX_RUS_r56_postwar_train_medium"
 		texturefile = "gfx/interface/technologies/r56_vechicles/r56_tech_train_equipment_diesel_eng.dds"
 	}
 
 	#-> TUR <><>
 	SpriteType = { #stand in
 		name = "GFX_TUR_basic_train_medium"
-		texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/RUS_train_equipment_1.dds"
 	}
 
 	SpriteType = { #what they used

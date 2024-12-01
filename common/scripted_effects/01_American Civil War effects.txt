@@ -8374,10 +8374,10 @@ USA_starting_techs = {
         camo = 1
         steel_production_1 = 1
         aluminum_production_1 = 1
-        r56_gw_railway_gun = 1
-        transport_plane1 = 1
-        r56_railway_mortar_subtech = 1
         etax_doctrine = 1
+        r56_gw_railway_gun = 1
+        r56_railway_mortar_subtech = 1
+        transport_plane1 = 1
         
     }
     if = {
@@ -8400,10 +8400,10 @@ USA_starting_techs = {
             camo = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
-            r56_gw_railway_gun = 1
-            transport_plane1 = 1
-            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
+            r56_gw_railway_gun = 1
+            r56_railway_mortar_subtech = 1
+            transport_plane1 = 1
             
         }
         
@@ -8421,10 +8421,10 @@ USA_starting_techs = {
             camo = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
-            r56_gw_railway_gun = 1
-            transport_plane1 = 1
-            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
+            r56_gw_railway_gun = 1
+            r56_railway_mortar_subtech = 1
+            transport_plane1 = 1
             
         }
         
@@ -8441,10 +8441,10 @@ USA_starting_techs = {
             camo = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
-            r56_gw_railway_gun = 1
-            transport_plane1 = 1
-            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
+            r56_gw_railway_gun = 1
+            r56_railway_mortar_subtech = 1
+            transport_plane1 = 1
             
         }
         add_ideas = bureau_of_ordnance_spirit
@@ -8457,10 +8457,10 @@ USA_starting_techs = {
             camo = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
-            r56_gw_railway_gun = 1
-            transport_plane1 = 1
-            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
+            r56_gw_railway_gun = 1
+            r56_railway_mortar_subtech = 1
+            transport_plane1 = 1
             
         }
         
@@ -8496,10 +8496,10 @@ USA_starting_techs = {
             camo = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
-            r56_gw_railway_gun = 1
-            transport_plane1 = 1
-            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
+            r56_gw_railway_gun = 1
+            r56_railway_mortar_subtech = 1
+            transport_plane1 = 1
             
         }
         
@@ -8516,17 +8516,16 @@ USA_starting_techs = {
             basic_heavy_cruiser = 1
             early_battleship = 1
             basic_battleship = 1
-            heavy_battleship = 1
             early_carrier = 1
             basic_carrier = 1
             transport = 1
             camo = 1
             steel_production_1 = 1
             aluminum_production_1 = 1
-            r56_gw_railway_gun = 1
-            transport_plane1 = 1
-            r56_railway_mortar_subtech = 1
             etax_doctrine = 1
+            r56_gw_railway_gun = 1
+            r56_railway_mortar_subtech = 1
+            transport_plane1 = 1
             
         }
         

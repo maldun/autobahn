@@ -1,12 +1,13 @@
 sub_units = {
 	
-		heli_tech = {
+heli_tech = {
 		sprite = light_plane
 		priority = 2
 		active = yes
-		type = { cas air_transport }
-		need = { helicopter_equipment = 1 }
+		type = cas 
+		need = { kx_helicopter_equipment = 1 }
 		categories = { category_cas }
 		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
 	}
 }

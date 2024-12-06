@@ -13,7 +13,8 @@
         "countrystateview.gfx": [],
         "countryconstructionsview.gui": [],
         "r56_goals.gfx": [],
-        "r56_goals_shine.gfx": []
+        "r56_goals_shine.gfx": [],
+        "r56_plane_modules_icons.gfx": []
     },
     "common/continuous_focus/": {
         "generic.txt": []
@@ -57,7 +58,8 @@
       "r56_spying_l_english.yml": [],
 	  "wtt_events_l_english.yml": [],
       "r56e_buildings_l_english.yml": ["localisation/english/",
-					  "r56e_buildings_l_english.yml"]
+					  "r56e_buildings_l_english.yml"],
+        "plane_designer_l_english.yml": ["localisation/english/","r56_plane_designer_l_english.yml"]
     },
     "gfx/interface/buildings/": {
         "r56_building_icon_strip.dds": []

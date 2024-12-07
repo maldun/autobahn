@@ -45,7 +45,11 @@
 	"r56_modifiers_l_english.yml": ["localisation/english/",
 					"r56_modifiers_l_english.yml"],
 	"r56e_technology_l_english.yml": ["localisation/english/",
-					  "r56e_technology_l_english.yml"]
+					  "r56e_technology_l_english.yml"],
+    "r56e_upgrades_l_english.yml": ["localisation/english/",
+					  "r56e_upgrades_l_english.yml"],
+    "r56e_unit_l_english.yml": ["localisation/english/",
+					  "r56e_unit_l_english.yml"]
 	
     },
     "localisation/english/": {
@@ -71,6 +75,18 @@
         "common/defines/": {
         "r56_defines.lua": [],
         "r56_spm_defines.lua": []
+        },
+    "common/special_projects/projects/": {
+      "air_projects.txt": [],
+      "land_projects.txt": [],
+      "nuclear_projects.txt": [],
+      "r56_air_projects.txt": [],
+      "r56_land_projects.txt": [],
+      "r56_naval_projects.txt": [],
+      "r56_rdf_projects.txt": []
+    },
+    "common/special_projects/project_tags/": {
+      "r56_tags.txt": []
     }
     
 }

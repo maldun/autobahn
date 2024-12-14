@@ -13,6 +13,7 @@ script_enum_advisor_slot_type = {
     navy_chief
     air_chief
     political_advisor
+    second_in_command
     
 }
 script_enum_equipment_stat = {
@@ -629,23 +630,6 @@ script_enum_equipment_bonus_type = {
     amphibious_tank_equipment_1
     amphibious_tank_equipment_2
     supersonic_fighter_equipment_1
-    tractor_equipment
-    scalping_equipment
-    beringia_equipment_0
-    simba_spears_0
-    aztec_club_0
-    kx_helicopter_equipment
-    helicopter_1
-    mau_mau_equipment_0
-    reservation_equipment_0
-    jezail_equipment_0
-    railgun_equipment
-    railgun_equipment_1
-    tractor_equipment_1
-    bob_semple_tank_0
-    heavy_airship_equipment_0
-    large_airship_airframe_0
-    large_plane_maritime_patrol_plane_airframeairship_airframe_0
     anti_air_equipment_x
     anti_tank_equipment_x
     armored_car_equipment_3
@@ -766,5 +750,18 @@ script_enum_equipment_bonus_type = {
     super_heavy_tank_aa_equipment_x_2
     amphibious_tank_equipment_3
     amphibious_tank_equipment_4
+    
+}
+script_enum_china_alignment_type = {
+    northern_zhili
+    southern_zhili
+    manchu_qing
+    fengtian
+    beiyang
+    federalists
+    left_kuomintang
+    right_kuomintang
+    chinese_southern_republican
+    geacps
     
 }

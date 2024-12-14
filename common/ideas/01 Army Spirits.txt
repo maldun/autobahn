@@ -345,7 +345,6 @@ ideas = {
 			ledger = army
 			available = { 
 				has_military_academy = yes 
-				has_completed_focus = NOR_officers_academy
 			}
 			visible = { 
 				NOR_AAT = yes 
@@ -602,6 +601,7 @@ ideas = {
 				 
 			}
 			modifier = {
+				political_power_factor = 0.05
 				offensive_war_stability_factor = 0.1
 				mobilization_laws_cost_factor = -0.25
 			}

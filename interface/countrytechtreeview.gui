@@ -3340,19 +3340,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 
-			instantTextBoxType = {
-				name = "airtech_year7"
-				position = { x = 30 y = 318 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1950"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
 			containerWindowType = {
 				name = "airtech_year_left"
 				position = { x=2000 y=0 }
@@ -5011,7 +4998,7 @@ guiTypes = {
 			iconType = {
 				name = "MIO_icon"
 				spriteType = "GFX_design_team_icon"
-				position = { x = 4 y = 2 }
+				position = { x = 8 y = 5 }
 				alwaystransparent = yes
 				Orientation = "CENTER"
 			}

@@ -16,6 +16,7 @@ HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
 
 
+COMMON_PATH = "common/"
 TECHNOLOGY_PATH = "common/technologies"
 EQUIPMENT_PATH = "common/units/equipment"
 AI_KEY = "ai_will_do"
@@ -453,7 +454,29 @@ def patch_missing_mtg_naval_subtechs(mod_path, out_path):
     with open(out_file, 'w') as fp:
         fp.write(list2paradox(r56_obj))
 
+def patch_script_enum(mod_path, r56_path, out_path):
+    fname = "script_enums.txt"
+    r56_file = os.path.join(r56_path,COMMON_PATH,fname)
+    mod_file = os.path.join(mod_path,COMMON_PATH,fname)
+    out_file = os.path.join(out_path,COMMON_PATH,fname)
+    mod_objs = paradox2list(mod_file)
+    r56_objs = paradox2list(r56_file)
+    for i, obj in enumerate(mod_objs):
+        key = obj[0]
+        for j, r56_obj in enumerate(r56_objs):
+            key2 = r56_obj[0]
+            if key == key2:
+                for item in r56_obj[1]:
+                    if not item in obj[1]:
+                        obj[1].append(item)
+                        
+        mod_objs[i] = obj
+    code = list2paradox(mod_objs)
+    with open(out_file,'w') as fp:
+        fp.write(code)
+    
 
 def patch_bugs(mod_path, r56_path, kr_path, out_path, KX):
     patch_missing_BUL_idea(out_path)
     patch_missing_mtg_naval_subtechs(mod_path, out_path)
+    patch_script_enum(mod_path, r56_path, out_path)

@@ -301,6 +301,7 @@ ideas = {
                     has_tech = trench_warfare
                     has_tech = mass_assault
                     has_tech = r56_guerilla_warfare
+                    has_country_flag = r56_SAU_allow_inventive_leadership_spirit
                     
                 }
                 
@@ -498,7 +499,6 @@ ideas = {
             ledger = army
             available = {
                 has_military_academy = yes
-                has_completed_focus = NOR_officers_academy
                 
             }
             visible = {
@@ -869,6 +869,7 @@ ideas = {
                 
             }
             modifier = {
+                political_power_factor = 0.05
                 offensive_war_stability_factor = 0.1
                 mobilization_laws_cost_factor = -0.25
                 

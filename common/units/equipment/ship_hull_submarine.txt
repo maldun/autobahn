@@ -315,6 +315,7 @@ equipments = {
                     ship_airplane_launcher
                     ship_mine_layer_sub
                     ship_extra_fuel_tank
+                    ship_light_battery_sub
                     
                 }
                 

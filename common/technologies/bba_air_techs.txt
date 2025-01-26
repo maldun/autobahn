@@ -452,10 +452,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             light_fighter
@@ -468,6 +464,10 @@ technologies = {
             mio_cat_all_cas_and_modules
             mio_cat_all_naval_bomber_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -816,13 +816,13 @@ technologies = {
             }
             
         }
+        is_special_project_tech = yes
         enable_equipments = {
             medium_plane_airframe_4
             medium_plane_fighter_airframe_4
             medium_plane_scout_plane_airframe_4
             
         }
-        is_special_project_tech = yes
         research_cost = 2
         start_year = 1945
         folder = {
@@ -832,11 +832,6 @@ technologies = {
                 y = 12
                 
             }
-            
-        }
-        path = {
-            leads_to_tech = bba_strategic_airlifter
-            research_cost_coeff = 1
             
         }
         categories = {
@@ -1578,10 +1573,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -1590,6 +1581,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1660,10 +1655,6 @@ technologies = {
             research_cost_coeff = 1
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -1672,6 +1663,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1721,10 +1716,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -1732,6 +1723,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1799,10 +1794,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -1811,6 +1802,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1896,10 +1891,6 @@ technologies = {
             research_cost_coeff = 1
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -1908,6 +1899,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1975,10 +1970,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -1987,6 +1978,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2054,10 +2049,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -2066,6 +2057,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2149,10 +2144,6 @@ technologies = {
             research_cost_coeff = 1
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -2163,6 +2154,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2241,10 +2236,6 @@ technologies = {
             research_cost_coeff = 1
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -2255,6 +2246,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2338,10 +2333,6 @@ technologies = {
             research_cost_coeff = 1
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -2352,6 +2343,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2430,8 +2425,8 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
+        path = {
+            research_cost_coeff = 1
             
         }
         categories = {
@@ -2444,6 +2439,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2521,10 +2520,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -2534,6 +2529,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2614,10 +2613,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             plane_modules_tech
@@ -2627,6 +2622,10 @@ technologies = {
             mio_cat_all_medium_aircraft_and_modules
             mio_cat_all_heavy_aircraft_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2693,67 +2692,6 @@ technologies = {
         }
         ai_will_do = {
             factor = 0
-            
-        }
-        
-    }
-    sp_centrifugal_jet_tech = {
-        allow_branch = {
-            has_dlc = "Gotterdammerung"
-            
-        }
-        allow = {
-            ROOT = {
-                is_special_project_completed = sp:sp_air_jet_engine
-                
-            }
-            
-        }
-        is_special_project_tech = yes
-        research_cost = 2
-        start_year = 1945
-        folder = {
-            name = bba_air_techs_folder
-            position = {
-                x = 0
-                y = 12
-                
-            }
-            
-        }
-        folder = {
-            name = air_techs_folder
-            position = {
-                x = 4
-                y = 12
-                
-            }
-            
-        }
-        categories = {
-            jet_technology
-            cat_air_engine
-            helicopter_tech
-            
-        }
-        category_helicopter_support_companies = {
-            fuel_consumption = -0.05
-            maximum_speed = 0.1
-            defense = 0.05
-            breakthrough = 0.05
-            
-        }
-        special_project_specialization = {
-            specialization_air
-            
-        }
-        ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 4
-                is_major = yes
-                
-            }
             
         }
         

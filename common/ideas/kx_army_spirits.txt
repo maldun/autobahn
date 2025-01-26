@@ -59,20 +59,23 @@ ideas = {
         
     }
     division_command_spirit = {
-        international_revolution_spirit = {
+        gekokujo_spirit = {
             ledger = army
-            picture = upbeat_command_spirit
+            picture = japanese_influence_1
             visible = {
-                is_in_faction_with = INT
+                tag = JAP
                 
             }
             modifier = {
-                coordination_bonus = 0.05
-                experience_loss_factor = -0.15
+                pocket_penalty = -0.15
+                army_morale_factor = 0.05
+                experience_loss_factor = -0.3
+                initiative_factor = 0.1
+                terrain_penalty_reduction = 0.1
                 
             }
             ai_will_do = {
-                factor = 2
+                factor = 15
                 
             }
             available = {
@@ -106,38 +109,6 @@ ideas = {
             }
             ai_will_do = {
                 factor = 2
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        gekokujo_spirit = {
-            ledger = army
-            picture = japanese_influence_1
-            visible = {
-                tag = JAP
-                
-            }
-            modifier = {
-                pocket_penalty = -0.15
-                army_morale_factor = 0.05
-                experience_loss_factor = -0.3
-                initiative_factor = 0.1
-                terrain_penalty_reduction = 0.1
-                
-            }
-            ai_will_do = {
-                factor = 15
                 
             }
             available = {
@@ -198,6 +169,35 @@ ideas = {
             }
             modifier = {
                 naval_invasion_penalty = -0.25
+                
+            }
+            ai_will_do = {
+                factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        international_revolution_spirit = {
+            ledger = army
+            picture = upbeat_command_spirit
+            visible = {
+                is_in_faction_with = INT
+                
+            }
+            modifier = {
+                coordination_bonus = 0.05
+                experience_loss_factor = -0.15
                 
             }
             ai_will_do = {

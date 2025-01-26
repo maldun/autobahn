@@ -61,13 +61,13 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             transport_planes_cat
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -97,13 +97,13 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             air_equipment
             transport_planes_cat
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -140,16 +140,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             light_fighter
             air_equipment
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -186,15 +186,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             naval_air
             air_equipment
             mio_cat_all_light_fighter_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -256,16 +256,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             light_fighter
             air_equipment
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -320,15 +320,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             naval_air
             air_equipment
             mio_cat_all_light_fighter_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -398,16 +398,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             light_fighter
             air_equipment
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -466,15 +466,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             naval_air
             air_equipment
             mio_cat_all_light_fighter_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -532,14 +532,14 @@ technologies = {
         }
         research_cost = 0.8
         start_year = 1940
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             fighter_bomber
             air_equipment
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -574,16 +574,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             light_fighter
             air_equipment
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -637,15 +637,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             naval_air
             air_equipment
             mio_cat_all_light_fighter_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -689,14 +689,14 @@ technologies = {
         }
         research_cost = 0.8
         start_year = 1944
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             fighter_bomber
             air_equipment
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -718,10 +718,6 @@ technologies = {
             }
             
         }
-        enable_equipments = {
-            jet_fighter_equipment_1
-            
-        }
         on_research_complete = {
             custom_effect_tooltip = {
                 localization_key = SP_UNLOCK_PROJECT
@@ -730,18 +726,17 @@ technologies = {
             }
             
         }
+        enable_equipments = {
+            jet_fighter_equipment_1
+            
+        }
         path = {
             leads_to_tech = jet_fighter2
             research_cost_coeff = 1
             
         }
         path = {
-            leads_to_tech = sp_centrifugal_jet_tech
             research_cost_coeff = 1
-            
-        }
-        dependencies = {
-            jet_engines = 1
             
         }
         is_special_project_tech = yes
@@ -756,15 +751,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             jet_technology
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -815,11 +810,6 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
-        is_special_project_tech = yes
         categories = {
             light_air
             jet_technology
@@ -827,6 +817,11 @@ technologies = {
             mio_cat_all_light_aircraft_and_modules
             
         }
+        special_project_specialization = {
+            specialization_air
+            
+        }
+        is_special_project_tech = yes
         sub_technologies = {
             cv_jet_fighter2
             
@@ -890,16 +885,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             cas_bomber
             air_equipment
             mio_cat_all_cas_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -939,14 +934,14 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             mio_cat_all_cas_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1008,16 +1003,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             cas_bomber
             air_equipment
             mio_cat_all_cas_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1071,14 +1066,14 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             mio_cat_all_cas_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1135,16 +1130,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             light_air
             cas_bomber
             air_equipment
             mio_cat_all_cas_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1193,14 +1188,14 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             mio_cat_all_cas_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1257,16 +1252,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             naval_bomber
             air_equipment
             mio_cat_all_naval_bomber_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1310,16 +1305,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             naval_bomber
             mio_cat_all_naval_bomber_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1367,16 +1362,16 @@ technologies = {
             cv_naval_bomber3
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             naval_bomber
             air_equipment
             mio_cat_all_naval_bomber_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1425,15 +1420,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             tactical_bomber
             air_equipment
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1463,15 +1458,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             air_equipment
             cat_heavy_fighter
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -1480,34 +1475,6 @@ technologies = {
         }
         ai_will_do = {
             factor = 1
-            
-        }
-        
-    }
-    hfighter_bomber1 = {
-        enable_equipments = {
-            hfighter_bomber_equipment_1
-            
-        }
-        research_cost = 0.8
-        start_year = 1936
-        special_project_specialization = {
-            specialization_air
-            
-        }
-        categories = {
-            medium_air
-            air_equipment
-            cat_heavy_fighter
-            
-        }
-        ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
             
         }
         
@@ -1533,15 +1500,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             air_equipment
             cat_heavy_fighter
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -1550,35 +1517,6 @@ technologies = {
         }
         ai_will_do = {
             factor = 1
-            
-        }
-        
-    }
-    hfighter_bomber2 = {
-        enable_equipments = {
-            hfighter_bomber_equipment_2
-            
-        }
-        research_cost = 0.8
-        start_year = 1940
-        special_project_specialization = {
-            specialization_air
-            
-        }
-        categories = {
-            medium_air
-            air_equipment
-            cat_heavy_fighter
-            mio_cat_all_medium_aircraft_and_modules
-            
-        }
-        ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
             
         }
         
@@ -1599,15 +1537,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             air_equipment
             cat_heavy_fighter
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -1620,6 +1558,63 @@ technologies = {
         }
         
     }
+    hfighter_bomber1 = {
+        enable_equipments = {
+            hfighter_bomber_equipment_1
+            
+        }
+        research_cost = 0.8
+        start_year = 1936
+        categories = {
+            medium_air
+            air_equipment
+            cat_heavy_fighter
+            
+        }
+        special_project_specialization = {
+            specialization_air
+            
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            
+        }
+        
+    }
+    hfighter_bomber2 = {
+        enable_equipments = {
+            hfighter_bomber_equipment_2
+            
+        }
+        research_cost = 0.8
+        start_year = 1940
+        categories = {
+            medium_air
+            air_equipment
+            cat_heavy_fighter
+            mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
+            
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            
+        }
+        
+    }
     hfighter_bomber3 = {
         enable_equipments = {
             hfighter_bomber_equipment_3
@@ -1627,15 +1622,15 @@ technologies = {
         }
         research_cost = 0.8
         start_year = 1944
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             air_equipment
             cat_heavy_fighter
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1670,15 +1665,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             tactical_bomber
             air_equipment
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -1725,16 +1720,16 @@ technologies = {
         }
         research_cost = 0.8
         start_year = 1936
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             tactical_bomber
             air_equipment
             naval_air
             maritime
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1764,9 +1759,6 @@ technologies = {
                 PROJECT = sp_air_jet_engine
                 
             }
-            
-        }
-        on_research_complete = {
             if = {
                 limit = {
                     has_dlc = "Gotterdammerung"
@@ -1792,15 +1784,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             tactical_bomber
             air_equipment
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -1847,16 +1839,16 @@ technologies = {
         }
         research_cost = 0.8
         start_year = 1940
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             tactical_bomber
             air_equipment
             naval_air
             maritime
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1891,15 +1883,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             tactical_bomber
             air_equipment
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -1940,16 +1932,16 @@ technologies = {
         }
         research_cost = 0.8
         start_year = 1944
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             tactical_bomber
             air_equipment
             naval_air
             maritime
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -1988,10 +1980,6 @@ technologies = {
             research_cost_coeff = 1
             
         }
-        dependencies = {
-            jet_engines = 1
-            
-        }
         research_cost = 2
         start_year = 1945
         folder = {
@@ -2003,15 +1991,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             jet_technology
             tactical_bomber
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         is_special_project_tech = yes
@@ -2054,15 +2042,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             jet_technology
             tactical_bomber
             mio_cat_all_medium_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         is_special_project_tech = yes
@@ -2093,15 +2081,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             heavy_air
             air_equipment
             cat_strategic_bomber
             mio_cat_all_heavy_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -2209,14 +2197,14 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             heavy_air
             air_equipment
             cat_strategic_bomber
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -2246,15 +2234,15 @@ technologies = {
         }
         research_cost = 0.8
         start_year = 1940
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             maritime
             heavy_air
             air_equipment
             naval_air
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2289,15 +2277,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             heavy_air
             air_equipment
             cat_strategic_bomber
             mio_cat_all_heavy_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         sub_technologies = {
@@ -2345,6 +2333,13 @@ technologies = {
         
     }
     jet_strategic_bomber1 = {
+        allow = {
+            ROOT = {
+                is_special_project_completed = sp:sp_air_axial_jet_engine
+                
+            }
+            
+        }
         enable_equipments = {
             jet_strat_bomber_equipment_1
             
@@ -2356,10 +2351,6 @@ technologies = {
         }
         research_cost = 2
         start_year = 1950
-        dependencies = {
-            jet_engines = 1
-            
-        }
         folder = {
             name = air_techs_folder
             position = {
@@ -2369,15 +2360,15 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             heavy_air
             jet_technology
             cat_strategic_bomber
             mio_cat_all_heavy_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         is_special_project_tech = yes
@@ -2470,13 +2461,13 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             maritime
             air_equipment
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2523,13 +2514,13 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             maritime
             air_equipment
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2622,16 +2613,16 @@ technologies = {
         }
         research_cost = 1.0
         start_year = 1945
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             jet_technology
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2652,16 +2643,16 @@ technologies = {
         }
         research_cost = 1.0
         start_year = 1950
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             jet_technology
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2700,16 +2691,16 @@ technologies = {
         }
         research_cost = 1.0
         start_year = 1955
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             jet_technology
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2744,7 +2735,7 @@ technologies = {
     jet_tactical_bomber_a = {
         allow = {
             ROOT = {
-                is_special_project_completed = sp:sp_air_jet_engine
+                is_special_project_completed = sp:sp_air_axial_jet_engine
                 
             }
             
@@ -2764,16 +2755,16 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             jet_technology
             tactical_bomber
             mio_cat_all_light_fighter_and_modules
             mio_cat_all_light_aircraft_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         is_special_project_tech = yes
@@ -2840,14 +2831,14 @@ technologies = {
         }
         research_cost = 1.0
         start_year = 1936
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             mio_cat_all_naval_bomber_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2895,14 +2886,14 @@ technologies = {
         }
         research_cost = 1.0
         start_year = 1940
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             mio_cat_all_naval_bomber_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -2950,14 +2941,14 @@ technologies = {
         }
         research_cost = 1.0
         start_year = 1944
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             naval_air
             air_equipment
             mio_cat_all_naval_bomber_and_modules
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {
@@ -3014,14 +3005,14 @@ technologies = {
             }
             
         }
-        special_project_specialization = {
-            specialization_air
-            
-        }
         categories = {
             medium_air
             air_equipment
             cat_scout_plane
+            
+        }
+        special_project_specialization = {
+            specialization_air
             
         }
         ai_will_do = {

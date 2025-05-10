@@ -56,12 +56,9 @@
     "localisation/english/replace/": {
 	"r56_modifiers_l_english.yml": ["localisation/english/",
 					"r56_modifiers_l_english.yml"],
-	"r56e_technology_l_english.yml": ["localisation/english/",
-					  "r56e_technology_l_english.yml"],
     "r56e_upgrades_l_english.yml": ["localisation/english/",
 					  "r56e_upgrades_l_english.yml"],
     "r56e_unit_l_english.yml": ["localisation/english/",
-
 					  "r56e_unit_l_english.yml"],
     "r56e_equipment_l_english.yml": ["localisation/english/",
 					  "r56e_equipment_l_english.yml.yml"],
@@ -80,6 +77,8 @@
       "r56e_equip_tank_l_english.yml": ["localisation/english/",
 					  "r56e_equip_tankl_english.yml"],
 					  
+     "tank_modules_l_english.yml": ["localisation/english/",
+					  "tank_modules_l_english.yml"]
      "tank_modules_l_english.yml": ["localisation/english/",
 					  "tank_modules_l_english.yml"]
     },

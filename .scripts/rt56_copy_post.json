@@ -64,6 +64,19 @@
 					  "r56e_equipment_l_english.yml.yml"],
      "r56e_land_doctrine_l_english.yml": ["localisation/english/",
 					  "r56e_land_doctrine_l_english.yml"],
+      "r56e_equip_aircraft_l_english.yml": ["localisation/english/",
+					  "r56e_equip_aircraft_l_english.yml"],
+      "r56e_equip_artillery_l_english.yml": ["localisation/english/",
+					  "r56e_equip_artillery_l_english.yml"],
+      "r56e_equip_infantry_l_english.yml": ["localisation/english/",
+					  "r56e_equip_infantry_l_english.yml"],
+      "r56e_equip_motor_mech_l_english.yml": ["localisation/english/",
+					  "r56e_equip_motor_mech_l_english.yml"],
+            "r56e_equip_naval_l_english.yml": ["localisation/english/",
+					  "r56e_equip_naval_english.yml"],
+      "r56e_equip_tank_l_english.yml": ["localisation/english/",
+					  "r56e_equip_tankl_english.yml"],
+					  
      "tank_modules_l_english.yml": ["localisation/english/",
 					  "tank_modules_l_english.yml"]
 	

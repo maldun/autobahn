@@ -319,7 +319,8 @@ script_enum_equipment_bonus_type = {
     torpedo_cruiser
     ship_hull_cruiser_modern_aa
     ship_hull_torpedo_cruiser
-    ship_hull_cruiser_panzerschiff
+    armoured_cruiser
+    ship_hull_armoured_cruiser
     ship_hull_cruiser_coastal_defense_ship
     ship_hull_heavy
     ship_hull_pre_dreadnought
@@ -658,6 +659,7 @@ script_enum_equipment_bonus_type = {
     carrier_5
     light_cruiser_5
     heavy_cruiser_5
+    ship_hull_cruiser_panzerschiff
     ship_hull_heavy_5
     battleship_5
     ship_hull_light_5
@@ -750,18 +752,5 @@ script_enum_equipment_bonus_type = {
     super_heavy_tank_aa_equipment_x_2
     amphibious_tank_equipment_3
     amphibious_tank_equipment_4
-    
-}
-script_enum_china_alignment_type = {
-    northern_zhili
-    southern_zhili
-    manchu_qing
-    fengtian
-    beiyang
-    federalists
-    left_kuomintang
-    right_kuomintang
-    chinese_southern_republican
-    geacps
     
 }

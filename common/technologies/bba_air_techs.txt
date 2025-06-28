@@ -25,6 +25,7 @@ technologies = {
         }
         categories = {
             air_equipment
+            medium_air
             transport_planes_cat
             
         }
@@ -66,6 +67,7 @@ technologies = {
         }
         categories = {
             air_equipment
+            medium_air
             transport_planes_cat
             
         }

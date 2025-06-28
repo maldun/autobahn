@@ -460,6 +460,7 @@ technologies = {
             naval_equipment
             dd_tech
             asw_tech
+            ship_modules_tech
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_destroyer_and_modules
             
@@ -536,6 +537,7 @@ technologies = {
             naval_equipment
             dd_tech
             asw_tech
+            ship_modules_tech
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_destroyer_and_modules
             
@@ -607,6 +609,7 @@ technologies = {
             naval_equipment
             dd_tech
             asw_tech
+            ship_modules_tech
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_destroyer_and_modules
             
@@ -673,6 +676,7 @@ technologies = {
             naval_equipment
             dd_tech
             asw_tech
+            ship_modules_tech
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_destroyer_and_modules
             
@@ -697,7 +701,7 @@ technologies = {
             research_cost_coeff = 1
             
         }
-        research_cost = 1
+        research_cost = 1.5
         start_year = 1922
         folder = {
             name = mtgnavalfolder
@@ -750,6 +754,7 @@ technologies = {
             naval_equipment
             dd_tech
             asw_tech
+            ship_modules_tech
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_destroyer_and_modules
             
@@ -813,6 +818,7 @@ technologies = {
             naval_equipment
             dd_tech
             asw_tech
+            ship_modules_tech
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_destroyer_and_modules
             
@@ -846,6 +852,14 @@ technologies = {
         }
         allow_branch = {
             has_dlc = "Man the Guns"
+            
+        }
+        on_research_complete = {
+            custom_effect_tooltip = {
+                localization_key = SP_UNLOCK_PROJECT
+                PROJECT = sp_naval_torpedo_cruiser
+                
+            }
             
         }
         research_cost = 1.5
@@ -898,10 +912,6 @@ technologies = {
         }
         special_project_specialization = {
             specialization_naval
-            
-        }
-        sub_technologies = {
-            panzerschiffe
             
         }
         
@@ -1158,6 +1168,7 @@ technologies = {
             naval_equipment
             cl_tech
             ca_tech
+            ship_modules_tech
             mio_cat_tech_all_capital_ship_and_modules
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_cruiser_and_modules
@@ -1224,9 +1235,11 @@ technologies = {
             
         }
         categories = {
+            naval_armor
             naval_equipment
             cl_tech
             ca_tech
+            ship_modules_tech
             mio_cat_tech_all_capital_ship_and_modules
             mio_cat_tech_all_screen_ship_and_modules
             mio_cat_tech_all_cruiser_and_modules
@@ -1285,6 +1298,7 @@ technologies = {
             
         }
         categories = {
+            naval_armor
             naval_equipment
             cl_tech
             ca_tech
@@ -1607,6 +1621,21 @@ technologies = {
             research_cost_coeff = 1
             
         }
+        on_research_complete = {
+            if = {
+                limit = {
+                    has_dlc = "Gotterdammerung"
+                    
+                }
+                custom_effect_tooltip = {
+                    localization_key = SP_UNLOCK_PROJECT
+                    PROJECT = sp_naval_modern_battleship
+                    
+                }
+                
+            }
+            
+        }
         research_cost = 1.5
         start_year = 1944
         folder = {
@@ -1652,6 +1681,7 @@ technologies = {
             
         }
         categories = {
+            naval_armor
             naval_equipment
             bb_tech
             bc_tech
@@ -1713,6 +1743,7 @@ technologies = {
             
         }
         categories = {
+            naval_armor
             naval_equipment
             bb_tech
             bc_tech
@@ -1767,6 +1798,7 @@ technologies = {
             
         }
         categories = {
+            naval_armor
             naval_equipment
             bb_tech
             bc_tech
@@ -2207,6 +2239,19 @@ technologies = {
             research_cost_coeff = 1
             
         }
+        on_research_complete = {
+            custom_effect_tooltip = {
+                localization_key = SP_UNLOCK_PROJECT
+                PROJECT = sp_naval_cruiser_submarine
+                
+            }
+            custom_effect_tooltip = {
+                localization_key = SP_UNLOCK_PROJECT
+                PROJECT = sp_naval_midget_submarine
+                
+            }
+            
+        }
         research_cost = 1.5
         start_year = 1922
         folder = {
@@ -2558,6 +2603,7 @@ technologies = {
         categories = {
             naval_equipment
             ss_tech
+            ship_modules_tech
             mio_cat_tech_all_submarine_and_modules
             
         }
@@ -2628,6 +2674,7 @@ technologies = {
         categories = {
             naval_equipment
             ss_tech
+            ship_modules_tech
             mio_cat_tech_all_submarine_and_modules
             
         }
@@ -2692,6 +2739,7 @@ technologies = {
         categories = {
             naval_equipment
             ss_tech
+            ship_modules_tech
             mio_cat_tech_all_submarine_and_modules
             
         }
@@ -2708,6 +2756,10 @@ technologies = {
         }
         research_cost = 1
         start_year = 1936
+        allow = {
+            always = no
+            
+        }
         
     }
     torpedo_cruiser_mtg = {

@@ -3,10 +3,10 @@ on_actions = {
         effect = {
             SWI = {
                 set_technology = {
-                    aluminum_production_1 = 1
+                    aluminum+AF8-production+AF8-1 = 1
                     camo = 1
-                    etax_doctrine = 1
-                    winter_clothes_gw = 1
+                    etax+AF8-doctrine = 1
+                    winter+AF8-clothes+AF8-gw = 1
                     popup = no
                     
                 }

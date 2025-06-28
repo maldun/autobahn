@@ -4,8 +4,8 @@ on_actions = {
             AMA = {
                 set_technology = {
                     camo = 1
-                    etax_doctrine = 1
-                    jngdst_clothes_gw = 1
+                    etax+AF8-doctrine = 1
+                    jngdst+AF8-clothes+AF8-gw = 1
                     jungletroops = 1
                     popup = no
                     

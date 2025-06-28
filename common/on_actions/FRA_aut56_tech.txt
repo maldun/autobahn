@@ -3,12 +3,12 @@ on_actions = {
         effect = {
             FRA = {
                 set_technology = {
-                    aluminum_production_1 = 1
+                    aluminum+AF8-production+AF8-1 = 1
                     camo = 1
-                    etax_doctrine = 1
-                    r56_gw_railway_gun = 1
-                    r56_railway_mortar_subtech = 1
-                    steel_production_1 = 1
+                    etax+AF8-doctrine = 1
+                    r56+AF8-gw+AF8-railway+AF8-gun = 1
+                    r56+AF8-railway+AF8-mortar+AF8-subtech = 1
+                    steel+AF8-production+AF8-1 = 1
                     popup = no
                     
                 }

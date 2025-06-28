@@ -398,7 +398,7 @@ if __name__ == "__main__":
         filter_spirits(fname, keys)
     # update China Army Reform
     chn_fname = "China_decisions.txt" if KX is True else "01 China decisions.txt"
-    update_chinese_army_reform(chn_fname)
+    #update_chinese_army_reform(chn_fname)
     # create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     maps = ideology_map()
     # apply_ideology_map(maps)

@@ -79,8 +79,6 @@
 					  
      "tank_modules_l_english.yml": ["localisation/english/",
 					  "tank_modules_l_english.yml"]
-     "tank_modules_l_english.yml": ["localisation/english/",
-					  "tank_modules_l_english.yml"]
     },
     "common/special_projects/projects/": {
       "air_projects.txt": [],

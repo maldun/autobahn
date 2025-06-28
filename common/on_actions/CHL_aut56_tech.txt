@@ -4,8 +4,8 @@ on_actions = {
             CHL = {
                 set_technology = {
                     camo = 1
-                    etax_doctrine = 1
-                    steel_production_1 = 1
+                    etax+AF8-doctrine = 1
+                    steel+AF8-production+AF8-1 = 1
                     popup = no
                     
                 }

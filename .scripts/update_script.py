@@ -105,6 +105,8 @@ country_inheritance = {"TUR": ("OTT",),
                        }
 
 
+country_exceptions = ["AAA"]
+
 def ideology_map():
     maps = []
     # update fascist
@@ -234,6 +236,8 @@ def apply_equipment_table(file_name):
     maps = {}
     for fname in os.listdir(country_folder):
         tag = fname[:3]
+        if tag in country_exceptions:
+            continue
         vals = [[tech, [df.loc[tag, tech] if pd.isna(df.loc[tag, tech]) else int(df.loc[tag, tech])]]
                 for tech in techs if not pd.isna(df.loc[tag, tech])]
         mapping = [[has_key_and_max_level, [SET_TECH_KEY, 1]],
@@ -278,6 +282,8 @@ def apply_equipment_maps(general_maps, specific_maps):
 
     for file in file_list:
         tag = file[:3]
+        if tag in country_exceptions:
+            continue
         maps = general_maps + [specific_maps[tag]]
         try:
             # apply_maps_on_file(os.path.join(in_folder, file),

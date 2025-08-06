@@ -105,6 +105,8 @@ country_inheritance = {"TUR": ("OTT",),
                        }
 
 
+country_exceptions = ["AAA"]
+
 def ideology_map():
     maps = []
     # update fascist
@@ -234,6 +236,8 @@ def apply_equipment_table(file_name):
     maps = {}
     for fname in os.listdir(country_folder):
         tag = fname[:3]
+        if tag in country_exceptions:
+            continue
         vals = [[tech, [df.loc[tag, tech] if pd.isna(df.loc[tag, tech]) else int(df.loc[tag, tech])]]
                 for tech in techs if not pd.isna(df.loc[tag, tech])]
         mapping = [[has_key_and_max_level, [SET_TECH_KEY, 1]],
@@ -262,7 +266,6 @@ def create_tech_on_action(out_folder,tag,specific_maps):
     found, inds = has_key.search(output,"set_technology")
     curr = output
     for ind in inds[0]: curr = curr[ind]
-    #breakpoint()
     curr[1] = apply_map(found,specific_maps[tag])[0][1][1:] + [["popup",["no"]]]
     with open(os.path.join(out_folder,tag+"_aut56_tech.txt"),'w') as fp:
         fp.write(list2paradox(output))
@@ -278,6 +281,8 @@ def apply_equipment_maps(general_maps, specific_maps):
 
     for file in file_list:
         tag = file[:3]
+        if tag in country_exceptions:
+            continue
         maps = general_maps + [specific_maps[tag]]
         try:
             # apply_maps_on_file(os.path.join(in_folder, file),
@@ -398,7 +403,7 @@ if __name__ == "__main__":
         filter_spirits(fname, keys)
     # update China Army Reform
     chn_fname = "China_decisions.txt" if KX is True else "01 China decisions.txt"
-    update_chinese_army_reform(chn_fname)
+    #update_chinese_army_reform(chn_fname)
     # create_equipment_table(os.path.join(OUT_FOLDER,"equipment.csv"))
     maps = ideology_map()
     # apply_ideology_map(maps)

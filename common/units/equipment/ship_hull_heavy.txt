@@ -627,7 +627,6 @@ equipments = {
                 required = yes
                 allowed_module_categories = {
                     ship_heavy_armor
-                    ship_super_heavy_armor
                     
                 }
                 
@@ -1223,7 +1222,7 @@ equipments = {
             fixed_ship_armor_slot = {
                 required = yes
                 allowed_module_categories = {
-                    ship_super_heavy_armor
+                    ship_heavy_armor
                     
                 }
                 
@@ -1374,7 +1373,7 @@ equipments = {
             fixed_ship_armor_slot = {
                 required = yes
                 allowed_module_categories = {
-                    ship_super_heavy_armor
+                    ship_heavy_armor
                     
                 }
                 

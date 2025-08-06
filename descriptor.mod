@@ -1,4 +1,4 @@
-version="0.9.2"
+version="0.9.4"
 tags={
 	"Technologies"
 	"National Focuses"
@@ -23,6 +23,6 @@ dependencies={
 }
 name="Autobahn nach 56"
 picture="thumbnail.png"
-supported_version="1.15.*"
+supported_version="1.16.*"
 path="/home/maldun/.local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn"
 remote_file_id="2823622716"

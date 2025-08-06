@@ -8,10 +8,9 @@
     },
     "common/units/": {
       "super_heavy_armor.txt": [],
-      "tank_destroyer_brigade.txt": []
+      "light_armor.txt": []
     },
     "common/units/equipment/": {
-	"tank_amphibious.txt": [],
 	"x_tank_chassis.txt": [],
 	"tank_chassis.txt": []
     },

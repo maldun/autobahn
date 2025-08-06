@@ -4,7 +4,7 @@ on_actions = {
             MYS = {
                 set_technology = {
                     camo = 1
-                    etax+AF8-doctrine = 1
+                    etax_doctrine = 1
                     popup = no
                     
                 }

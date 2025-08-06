@@ -4,8 +4,8 @@ on_actions = {
             IRE = {
                 set_technology = {
                     camo = 1
-                    etax+AF8-doctrine = 1
-                    sniper+AF8-rifle = 1
+                    etax_doctrine = 1
+                    sniper_rifle = 1
                     popup = no
                     
                 }

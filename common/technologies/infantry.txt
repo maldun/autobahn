@@ -882,6 +882,11 @@ technologies = {
             soft_attack = 0.05
             
         }
+        marine_commando = {
+            max_organisation = 5
+            soft_attack = 0.05
+            
+        }
         path = {
             leads_to_tech = marines3
             research_cost_coeff = 1
@@ -921,6 +926,10 @@ technologies = {
     }
     marines3 = {
         marine = {
+            max_organisation = 5
+            
+        }
+        marine_commando = {
             max_organisation = 5
             
         }
@@ -1407,6 +1416,166 @@ technologies = {
             jungle = {
                 attack = 0.05
                 movement = 0.1
+                
+            }
+            
+        }
+        
+    }
+    jungle_training_tech = {
+        research_cost = 1
+        allow = {
+            always = no
+            
+        }
+        marine = {
+            jungle = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        mountaineers = {
+            jungle = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        paratrooper = {
+            jungle = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        infantry = {
+            jungle = {
+                attack = 0.03
+                movement = 0.05
+                
+            }
+            
+        }
+        
+    }
+    desert_training_tech = {
+        research_cost = 1
+        allow = {
+            always = no
+            
+        }
+        marine = {
+            desert = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        mountaineers = {
+            desert = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        paratrooper = {
+            desert = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        infantry = {
+            desert = {
+                attack = 0.03
+                movement = 0.05
+                
+            }
+            
+        }
+        
+    }
+    hills_training_tech = {
+        research_cost = 1
+        allow = {
+            always = no
+            
+        }
+        marine = {
+            hills = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        mountaineers = {
+            hills = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        paratrooper = {
+            hills = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        infantry = {
+            hills = {
+                attack = 0.03
+                movement = 0.05
+                
+            }
+            
+        }
+        
+    }
+    urban_training_tech = {
+        research_cost = 1
+        allow = {
+            always = no
+            
+        }
+        marine = {
+            urban = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        mountaineers = {
+            urban = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        paratrooper = {
+            urban = {
+                attack = 0.05
+                movement = 0.1
+                
+            }
+            
+        }
+        infantry = {
+            urban = {
+                attack = 0.03
+                movement = 0.05
                 
             }
             
@@ -2389,6 +2558,10 @@ technologies = {
             max_organisation = 5
             
         }
+        marine_commando = {
+            max_organisation = 5
+            
+        }
         path = {
             leads_to_tech = marines_b
             research_cost_coeff = 1
@@ -2417,6 +2590,10 @@ technologies = {
             max_organisation = 5
             
         }
+        marine_commando = {
+            max_organisation = 5
+            
+        }
         path = {
             leads_to_tech = marines_c
             research_cost_coeff = 1
@@ -2442,6 +2619,10 @@ technologies = {
     }
     marines_c = {
         marine = {
+            max_organisation = 5
+            
+        }
+        marine_commando = {
             max_organisation = 5
             
         }
@@ -4819,6 +5000,14 @@ technologies = {
         }
         ai_will_do = {
             factor = 0
+            
+        }
+        
+    }
+    revolutionary_mass_assault = {
+        conscription = 0.02
+        infantry = {
+            combat_width = -0.2
             
         }
         

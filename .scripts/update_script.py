@@ -266,7 +266,6 @@ def create_tech_on_action(out_folder,tag,specific_maps):
     found, inds = has_key.search(output,"set_technology")
     curr = output
     for ind in inds[0]: curr = curr[ind]
-    #breakpoint()
     curr[1] = apply_map(found,specific_maps[tag])[0][1][1:] + [["popup",["no"]]]
     with open(os.path.join(out_folder,tag+"_aut56_tech.txt"),'w') as fp:
         fp.write(list2paradox(output))

@@ -3550,7 +3550,7 @@ technologies = {
                     original_tag = SMI
                     original_tag = GRL
                     original_tag = ICE
-                    original_tag = QBC
+                    original_tag = QUE
                     original_tag = RUS
                     
                 }
@@ -3601,7 +3601,7 @@ technologies = {
                     original_tag = SMI
                     original_tag = GRL
                     original_tag = ICE
-                    original_tag = QBC
+                    original_tag = QUE
                     original_tag = RUS
                     
                 }
@@ -3652,7 +3652,7 @@ technologies = {
                     original_tag = SMI
                     original_tag = GRL
                     original_tag = ICE
-                    original_tag = QBC
+                    original_tag = QUE
                     original_tag = RUS
                     
                 }
@@ -3698,7 +3698,7 @@ technologies = {
                     original_tag = SMI
                     original_tag = GRL
                     original_tag = ICE
-                    original_tag = QBC
+                    original_tag = QUE
                     original_tag = RUS
                     
                 }
@@ -4030,7 +4030,7 @@ technologies = {
                     original_tag = SMI
                     original_tag = GRL
                     original_tag = ICE
-                    original_tag = QBC
+                    original_tag = QUE
                     
                 }
                 
@@ -4079,7 +4079,7 @@ technologies = {
                     original_tag = SMI
                     original_tag = GRL
                     original_tag = ICE
-                    original_tag = QBC
+                    original_tag = QUE
                     
                 }
                 
@@ -4128,7 +4128,7 @@ technologies = {
                     original_tag = SMI
                     original_tag = GRL
                     original_tag = ICE
-                    original_tag = QBC
+                    original_tag = QUE
                     
                 }
                 
@@ -4172,7 +4172,7 @@ technologies = {
                     original_tag = SMI
                     original_tag = GRL
                     original_tag = ICE
-                    original_tag = QBC
+                    original_tag = QUE
                     
                 }
                 

@@ -157,6 +157,13 @@ def patch_airships_techtree(kx_path, rt56_folder, out_folder):
         fp.write(new_code)
     
 
+def patch_countrystateview(kx_path, out_folder):
+    """
+    Normally copy is enough 
+    """
+    fname = os.path.join(INTERFACE_FOLDER,"countrystateview.gui")
+    shutil.copy2(os.path.join(kx_path,fname),os.path.join(out_folder,fname))
+
 def patch(kx_path, rt56_path, out_folder):
     patch_main_menu(kx_path, out_folder)
     path_idea_tags(kx_path, out_folder)
@@ -164,3 +171,4 @@ def patch(kx_path, rt56_path, out_folder):
     #patch_airships_techtree(kx_path,rt56_path,out_folder)
     # Is removed in KX for now
     #patch_naval_ai_equipment(kx_path, out_folder)
+    patch_countrystateview(kx_path, out_folder)

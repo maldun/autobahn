@@ -5,6 +5,7 @@ tags={
 }
 dependencies={
 	"KaiserreduX"
+	"Kaiserredux Enhanced AI"
 }
 name="Autobahn nach 56 Redux"
 picture="thumbnail.png"

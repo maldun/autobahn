@@ -372,7 +372,7 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
 
     # Use KR tech for these
     patch_bba_air(kr_path, out_path)
-    patch_nonMTG_navy(kr_path, r56_path, out_path)
+    #patch_nonMTG_navy(kr_path, r56_path, out_path)
 
     # Custom AI settings
     patch_mtg_navy(out_path)

@@ -119,11 +119,3 @@ sub_units = {
 		same_support_type = military_police # blocks adding other MP types to template
 	}
 }
-otorbike_equipment = 20
-		}
-
-		same_support_type = military_police # blocks adding other MP types to template
-	}
-}
-}
-}

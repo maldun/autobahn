@@ -288,6 +288,17 @@ technologies = {
             factor = 2
             modifier = {
                 factor = 5
+                OR = {
+                    tag = CHI
+                    tag = PRC
+                    tag = XSM
+                    tag = SIK
+                    tag = GXC
+                    tag = SHX
+                    tag = SIC
+                    tag = YUN
+                    
+                }
                 
             }
             modifier = {
@@ -1085,6 +1096,140 @@ technologies = {
         }
         
     }
+    rangers_tech = {
+        allow_branch = {
+            has_dlc = "No Compromise, No Surrender"
+            
+        }
+        enable_subunits = {
+            ranger_battalion
+            
+        }
+        on_research_complete_limit = {
+            NOT = {
+                has_template_containing_unit = ranger_battalion
+                
+            }
+            
+        }
+        on_research_complete = {
+            hidden_effect = {
+                load_oob = "unlock_rangers"
+                
+            }
+            custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+            
+        }
+        path = {
+            leads_to_tech = rangers_tech2
+            research_cost_coeff = 1
+            
+        }
+        research_cost = 2
+        start_year = 1936
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 22
+                y = @1936
+                
+            }
+            
+        }
+        categories = {
+            infantry_tech
+            rangers_tech_cat
+            cat_special_forces_generic
+            
+        }
+        ai_will_do = {
+            factor = 0.7
+            modifier = {
+                factor = 2
+                original_tag = USA
+                
+            }
+            modifier = {
+                factor = 5
+                tag = JAP
+                
+            }
+            modifier = {
+                factor = 5
+                tag = BRA
+                
+            }
+            modifier = {
+                factor = 2
+                tag = ENG
+                
+            }
+            
+        }
+        
+    }
+    rangers_tech2 = {
+        ranger_battalion = {
+            max_organisation = 5
+            soft_attack = 0.05
+            
+        }
+        path = {
+            leads_to_tech = rangers_tech3
+            research_cost_coeff = 1
+            
+        }
+        research_cost = 1.5
+        start_year = 1939
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 22
+                y = @1939
+                
+            }
+            
+        }
+        categories = {
+            infantry_tech
+            rangers_tech_cat
+            cat_special_forces_generic
+            
+        }
+        ai_will_do = {
+            factor = 0.7
+            
+        }
+        
+    }
+    rangers_tech3 = {
+        ranger_battalion = {
+            max_organisation = 5
+            
+        }
+        research_cost = 1.5
+        start_year = 1943
+        folder = {
+            name = infantry_folder
+            position = {
+                x = 22
+                y = @1943
+                
+            }
+            
+        }
+        categories = {
+            infantry_tech
+            rangers_tech_cat
+            cat_special_forces_generic
+            
+        }
+        ai_will_do = {
+            factor = 0.7
+            
+        }
+        
+    }
     tech_special_forces = {
         category_special_forces = {
             acclimatization_hot_climate_gain_factor = 0.05
@@ -1113,7 +1258,7 @@ technologies = {
         folder = {
             name = infantry_folder
             position = {
-                x = 24
+                x = 26
                 y = @1938
                 
             }
@@ -1153,7 +1298,7 @@ technologies = {
         folder = {
             name = infantry_folder
             position = {
-                x = 23
+                x = 25
                 y = @1940
                 
             }
@@ -1189,7 +1334,7 @@ technologies = {
         folder = {
             name = infantry_folder
             position = {
-                x = 25
+                x = 27
                 y = @1940
                 
             }
@@ -1226,7 +1371,7 @@ technologies = {
         folder = {
             name = infantry_folder
             position = {
-                x = 23
+                x = 25
                 y = @1943
                 
             }
@@ -1262,7 +1407,7 @@ technologies = {
         folder = {
             name = infantry_folder
             position = {
-                x = 25
+                x = 27
                 y = @1943
                 
             }
@@ -1300,7 +1445,7 @@ technologies = {
         folder = {
             name = infantry_folder
             position = {
-                x = 24
+                x = 26
                 y = @1946
                 
             }
@@ -1338,7 +1483,7 @@ technologies = {
         folder = {
             name = infantry_folder
             position = {
-                x = 24
+                x = 26
                 y = @1950
                 
             }
@@ -1371,7 +1516,7 @@ technologies = {
         folder = {
             name = infantry_folder
             position = {
-                x = 24
+                x = 26
                 y = @1954
                 
             }
@@ -1788,6 +1933,17 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 15
+                OR = {
+                    tag = CHI
+                    tag = PRC
+                    tag = XSM
+                    tag = SIK
+                    tag = GXC
+                    tag = SHX
+                    tag = SIC
+                    tag = YUN
+                    
+                }
                 
             }
             modifier = {
@@ -1867,6 +2023,17 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 5
+                OR = {
+                    tag = CHI
+                    tag = PRC
+                    tag = XSM
+                    tag = SIK
+                    tag = GXC
+                    tag = SHX
+                    tag = SIC
+                    tag = YUN
+                    
+                }
                 
             }
             modifier = {
@@ -3548,7 +3715,7 @@ technologies = {
                     original_tag = SWE
                     original_tag = FIN
                     original_tag = SMI
-                    original_tag = GRL
+                    original_tag = GRN
                     original_tag = ICE
                     original_tag = QUE
                     original_tag = RUS
@@ -3599,7 +3766,7 @@ technologies = {
                     original_tag = SWE
                     original_tag = FIN
                     original_tag = SMI
-                    original_tag = GRL
+                    original_tag = GRN
                     original_tag = ICE
                     original_tag = QUE
                     original_tag = RUS
@@ -3650,7 +3817,7 @@ technologies = {
                     original_tag = SWE
                     original_tag = FIN
                     original_tag = SMI
-                    original_tag = GRL
+                    original_tag = GRN
                     original_tag = ICE
                     original_tag = QUE
                     original_tag = RUS
@@ -3696,7 +3863,7 @@ technologies = {
                     original_tag = SWE
                     original_tag = FIN
                     original_tag = SMI
-                    original_tag = GRL
+                    original_tag = GRN
                     original_tag = ICE
                     original_tag = QUE
                     original_tag = RUS
@@ -4028,7 +4195,7 @@ technologies = {
                     original_tag = SWE
                     original_tag = FIN
                     original_tag = SMI
-                    original_tag = GRL
+                    original_tag = GRN
                     original_tag = ICE
                     original_tag = QUE
                     
@@ -4077,7 +4244,7 @@ technologies = {
                     original_tag = SWE
                     original_tag = FIN
                     original_tag = SMI
-                    original_tag = GRL
+                    original_tag = GRN
                     original_tag = ICE
                     original_tag = QUE
                     
@@ -4126,7 +4293,7 @@ technologies = {
                     original_tag = SWE
                     original_tag = FIN
                     original_tag = SMI
-                    original_tag = GRL
+                    original_tag = GRN
                     original_tag = ICE
                     original_tag = QUE
                     
@@ -4170,7 +4337,7 @@ technologies = {
                     original_tag = SWE
                     original_tag = FIN
                     original_tag = SMI
-                    original_tag = GRL
+                    original_tag = GRN
                     original_tag = ICE
                     original_tag = QUE
                     
@@ -4996,6 +5163,30 @@ technologies = {
         }
         mot_anti_air_brigade = {
             air_attack = 0.1
+            
+        }
+        ai_will_do = {
+            factor = 0
+            
+        }
+        
+    }
+    PHI_battalion_combat_teams = {
+        allow = {
+            always = no
+            
+        }
+        research_cost = 1
+        category_all_infantry = {
+            hard_attack = 0.15
+            soft_attack = 0.15
+            ap_attack = 0.15
+            
+        }
+        category_cavalry = {
+            hard_attack = 0.1
+            soft_attack = 0.1
+            ap_attack = 0.1
             
         }
         ai_will_do = {

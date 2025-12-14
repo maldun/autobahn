@@ -341,6 +341,7 @@ technologies = {
         industrial_capacity_factory = 0.15
         industrial_capacity_dockyard = 0.1
         global_building_slots_factor = 0.2
+        energy_gain_factor = 0.2
         path = {
             leads_to_tech = concentrated_industry4
             research_cost_coeff = 1
@@ -381,6 +382,7 @@ technologies = {
         industrial_capacity_factory = 0.15
         industrial_capacity_dockyard = 0.1
         global_building_slots_factor = 0.2
+        energy_gain_factor = 0.2
         path = {
             leads_to_tech = concentrated_industry5
             research_cost_coeff = 1
@@ -584,6 +586,7 @@ technologies = {
         production_factory_start_efficiency_factor = 0.05
         industry_air_damage_factor = -0.1
         global_building_slots_factor = 0.2
+        energy_gain_factor = 0.15
         path = {
             leads_to_tech = dispersed_industry4
             research_cost_coeff = 1
@@ -627,6 +630,7 @@ technologies = {
         production_factory_start_efficiency_factor = 0.05
         industry_air_damage_factor = -0.1
         global_building_slots_factor = 0.2
+        energy_gain_factor = 0.15
         path = {
             leads_to_tech = dispersed_industry5
             research_cost_coeff = 1
@@ -1464,6 +1468,7 @@ technologies = {
     }
     excavation1 = {
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         path = {
             research_cost_coeff = 1
             
@@ -1575,6 +1580,7 @@ technologies = {
     }
     excavation2 = {
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         path = {
             research_cost_coeff = 1
             
@@ -1699,6 +1705,7 @@ technologies = {
             
         }
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         path = {
             research_cost_coeff = 1
             
@@ -1802,6 +1809,7 @@ technologies = {
     }
     excavation4 = {
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         path = {
             research_cost_coeff = 1
             
@@ -1897,6 +1905,7 @@ technologies = {
     }
     excavation5 = {
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         path = {
             research_cost_coeff = 1
             
@@ -1906,6 +1915,7 @@ technologies = {
         categories = {
             industry
             construction_tech
+            excavation_tech
             
         }
         folder = {
@@ -1986,11 +1996,13 @@ technologies = {
     }
     excavation_a = {
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         research_cost = 3
         start_year = 1945
         categories = {
             industry
             construction_tech
+            excavation_tech
             
         }
         folder = {
@@ -2071,11 +2083,13 @@ technologies = {
     }
     excavation_b = {
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         research_cost = 3
         start_year = 1948
         categories = {
             industry
             construction_tech
+            excavation_tech
             
         }
         folder = {
@@ -2156,11 +2170,13 @@ technologies = {
     }
     excavation_c = {
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         research_cost = 3
         start_year = 1951
         categories = {
             industry
             construction_tech
+            excavation_tech
             
         }
         folder = {
@@ -2236,11 +2252,13 @@ technologies = {
     }
     excavation_d = {
         local_resources_factor = 0.1
+        local_resources_coal_factor = 0.05
         research_cost = 3
         start_year = 1954
         categories = {
             industry
             construction_tech
+            excavation_tech
             
         }
         folder = {

@@ -87,7 +87,7 @@ equipments = {
             
         }
         manpower = 200
-        naval_supremacy_factor = 0.8
+        naval_dominance_factor = 9
         naval_weather_penalty_factor = 1
         
     }
@@ -97,6 +97,7 @@ equipments = {
         archetype = ship_hull_submarine
         priority = 2500
         module_slots = inherit
+        naval_dominance_factor = 9
         
     }
     ship_hull_submarine_2 = {
@@ -130,6 +131,7 @@ equipments = {
         reliability = 0.7
         naval_range = 4500
         reliability = 0.7
+        naval_dominance_factor = 11
         max_strength = 20
         build_cost_ic = 350
         resources = {
@@ -183,6 +185,7 @@ equipments = {
         naval_speed = 18
         reliability = 0.75
         naval_range = 5500
+        naval_dominance_factor = 13
         max_strength = 30
         build_cost_ic = 420
         resources = {
@@ -236,6 +239,7 @@ equipments = {
         naval_speed = 18
         reliability = 0.8
         naval_range = 6500
+        naval_dominance_factor = 15
         max_strength = 35
         build_cost_ic = 550
         resources = {
@@ -289,6 +293,7 @@ equipments = {
         naval_speed = 20
         reliability = 0.8
         naval_range = 7000
+        naval_dominance_factor = 17
         max_strength = 38
         build_cost_ic = 650
         resources = {
@@ -354,6 +359,7 @@ equipments = {
         sub_visibility = 22
         naval_speed = 16
         reliability = 0.75
+        naval_dominance_factor = 10
         naval_range = 5500
         max_strength = 30
         build_cost_ic = 490
@@ -421,6 +427,7 @@ equipments = {
         naval_speed = 18
         reliability = 0.75
         naval_range = 6500
+        naval_dominance_factor = 12
         max_strength = 40
         build_cost_ic = 650
         resources = {
@@ -450,6 +457,7 @@ equipments = {
         naval_range = 500
         max_strength = 5
         manpower = 100
+        naval_dominance_factor = 7
         build_cost_ic = 150
         resources = {
             steel = 1
@@ -526,12 +534,70 @@ equipments = {
         naval_speed = 20
         reliability = 0.75
         naval_range = 10000
+        naval_dominance_factor = 14
         manpower = 400
         max_strength = 50
         build_cost_ic = 1150
         resources = {
             steel = 3
             chromium = 2
+            
+        }
+        
+    }
+    ship_hull_carrier_submarine = {
+        abbreviation = "hefnx"
+        year = 1944
+        archetype = ship_hull_submarine
+        type = {
+            submarine
+            carrier
+            
+        }
+        priority = 2650
+        module_slots = {
+            fixed_ship_torpedo_slot = inherit
+            fixed_ship_engine_slot = inherit
+            front_1_custom_slot = {
+                required = no
+                allowed_module_categories = {
+                    ship_torpedo_sub
+                    ship_mine_layer_sub
+                    ship_extra_fuel_tank
+                    
+                }
+                
+            }
+            mid_1_custom_slot = {
+                required = no
+                allowed_module_categories = {
+                    ship_radar
+                    ship_sub_snorkel
+                    ship_sub_coating
+                    
+                }
+                
+            }
+            rear_1_custom_slot = {
+                required = yes
+                allowed_module_categories = {
+                    ship_submarine_deck_space
+                    
+                }
+                
+            }
+            
+        }
+        sub_visibility = 20
+        naval_speed = 18
+        reliability = 0.75
+        naval_range = 6500
+        max_strength = 50
+        manpower = 350
+        naval_dominance_factor = 14
+        build_cost_ic = 850
+        resources = {
+            steel = 3
             
         }
         

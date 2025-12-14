@@ -17,6 +17,7 @@ sys.path.append(HOME + "prog/Python/hoi4_converter/")
 
 
 COMMON_PATH = "common/"
+INTERFACE_PATH = "interface"
 TECHNOLOGY_PATH = "common/technologies"
 EQUIPMENT_PATH = "common/units/equipment"
 AI_KEY = "ai_will_do"
@@ -372,7 +373,7 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
 
     # Use KR tech for these
     patch_bba_air(kr_path, out_path)
-    patch_nonMTG_navy(kr_path, r56_path, out_path)
+    #patch_nonMTG_navy(kr_path, r56_path, out_path)
 
     # Custom AI settings
     patch_mtg_navy(out_path)
@@ -473,9 +474,37 @@ def patch_script_enum(mod_path, r56_path, out_path):
     code = list2paradox(mod_objs)
     with open(out_file,'w') as fp:
         fp.write(code)
+
+def remove_mtg_view(mod_path, r56_path, out_path):
+    fname = "countrytechtreeview.gui"
+    r56_file = os.path.join(r56_path,INTERFACE_PATH,fname)
+    out_file = os.path.join(out_path,INTERFACE_PATH,fname)
+    # BS signs and a typo
+    with open(r56_file,'r') as fp:
+        text = fp.read()
+        text = text.replace('%%','%')
+        text = text.replace("275K","275")
+    with open(out_file,'w') as fp:
+        fp.write(text)
+                            
+    int_obj = paradox2list(out_file)
+    key_val = ["name",['"naval_folder"']]
+    found, inds = has_key_and_val.search(int_obj,key_val)
+    obj = int_obj
+    for ind in inds[0][:-1]:
+        obj = obj[ind]
+    key_val2 = ['containerWindowType',obj]
     
+    mapping = [[has_key_and_val, key_val2], [remove, key_val2]]
+    int_obj = apply_map(int_obj, mapping)
+    code = list2paradox(int_obj)
+    with open(out_file,'w') as fp:
+        fp.write(code)
+    
+
 
 def patch_bugs(mod_path, r56_path, kr_path, out_path, KX):
     patch_missing_BUL_idea(out_path)
     patch_missing_mtg_naval_subtechs(mod_path, out_path)
     patch_script_enum(mod_path, r56_path, out_path)
+    remove_mtg_view(mod_path,r56_path, out_path)

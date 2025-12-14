@@ -5,11 +5,11 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -37,11 +37,11 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -69,11 +69,11 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -101,11 +101,11 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 OR = {
@@ -164,11 +164,11 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 OR = {
@@ -237,11 +237,11 @@ ideas = {
                     
                 }
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -296,11 +296,11 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     has_country_flag = r56_SAU_allow_inventive_leadership_spirit
                     
                 }
@@ -332,17 +332,17 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
-                has_tech = mobile_warfare
+                has_doctrine = new_mobile_warfare
                 
             }
             modifier = {
@@ -376,19 +376,19 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
                 OR = {
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
                     
                 }
                 
@@ -420,19 +420,19 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
                 OR = {
-                    has_tech = trench_warfare
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = grand_battleplan
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -462,17 +462,17 @@ ideas = {
             available = {
                 has_military_academy = yes
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
-                has_tech = mass_assault
+                has_doctrine = mass_assault
                 
             }
             modifier = {
@@ -534,11 +534,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -567,11 +567,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -602,11 +602,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -664,11 +664,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -697,11 +697,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 OR = {
@@ -768,11 +768,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 OR = {
@@ -839,11 +839,11 @@ ideas = {
                     
                 }
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -913,17 +913,17 @@ ideas = {
         }
         mobile_warfare_army_spirit = {
             visible = {
-                has_tech = mobile_warfare
+                has_doctrine = new_mobile_warfare
                 
             }
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -959,17 +959,17 @@ ideas = {
         }
         superior_firepower_army_spirit = {
             visible = {
-                has_tech = superior_firepower
+                has_doctrine = superior_firepower
                 
             }
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -1006,17 +1006,17 @@ ideas = {
         }
         grand_battleplan_army_spirit = {
             visible = {
-                has_tech = trench_warfare
+                has_doctrine = grand_battleplan
                 
             }
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -1054,17 +1054,17 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
-                has_tech = mass_assault
+                has_doctrine = mass_assault
                 
             }
             modifier = {
@@ -1095,16 +1095,16 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
                     
                 }
                 
             }
             visible = {
                 OR = {
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
                     
                 }
                 
@@ -1138,11 +1138,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -1177,17 +1177,17 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
                 NOT = {
-                    has_tech = mobile_warfare
+                    has_doctrine = new_mobile_warfare
                     
                 }
                 
@@ -1217,11 +1217,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -1250,11 +1250,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -1288,11 +1288,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -1321,11 +1321,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -1354,7 +1354,7 @@ ideas = {
         maneuver_warfare_spirit = {
             visible = {
                 OR = {
-                    has_tech = mobile_warfare
+                    has_doctrine = new_mobile_warfare
                     has_country_flag = autorize_maneuver_warfare_spirit
                     
                 }
@@ -1384,17 +1384,17 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
-                has_tech = superior_firepower
+                has_doctrine = superior_firepower
                 
             }
             modifier = {
@@ -1420,17 +1420,17 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
-                has_tech = trench_warfare
+                has_doctrine = grand_battleplan
                 
             }
             modifier = {
@@ -1458,11 +1458,11 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
@@ -1470,7 +1470,7 @@ ideas = {
             visible = {
                 OR = {
                     has_country_flag = autorize_operational_reserve_spirit
-                    has_tech = mass_assault
+                    has_doctrine = mass_assault
                     
                 }
                 
@@ -1498,17 +1498,17 @@ ideas = {
             ledger = army
             available = {
                 OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
+                    has_doctrine = new_mobile_warfare
+                    has_doctrine = superior_firepower
+                    has_doctrine = grand_battleplan
+                    has_doctrine = mass_assault
+                    has_doctrine = r56_guerilla_warfare
                     
                 }
                 
             }
             visible = {
-                has_tech = r56_guerilla_warfare
+                has_doctrine = r56_guerilla_warfare
                 
             }
             modifier = {

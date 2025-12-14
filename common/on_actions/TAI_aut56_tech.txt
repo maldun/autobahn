@@ -5,7 +5,6 @@ on_actions = {
                 set_technology = {
                     camo = 1
                     etax_doctrine = 1
-                    r56_guerilla_warfare = 1
                     r56_militia_tech = 1
                     steel_production_1 = 1
                     popup = no

@@ -5,9 +5,9 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -35,15 +35,15 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
             }
             visible = {
-                has_tech = air_superiority
+                has_doctrine = new_strategic_destruction
                 
             }
             research_bonus = {
@@ -73,15 +73,15 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
             }
             visible = {
-                has_tech = formation_flying
+                has_doctrine = new_battlefield_support
                 
             }
             research_bonus = {
@@ -112,15 +112,15 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
             }
             visible = {
-                has_tech = force_rotation
+                has_doctrine = new_operational_integrity
                 
             }
             research_bonus = {
@@ -150,9 +150,9 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -183,9 +183,9 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -213,9 +213,9 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -244,9 +244,9 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -275,9 +275,9 @@ ideas = {
             available = {
                 has_air_academy = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -314,9 +314,9 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -345,9 +345,9 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -380,9 +380,9 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -410,9 +410,9 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -441,9 +441,9 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 OR = {
@@ -486,9 +486,9 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -516,9 +516,9 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
@@ -546,15 +546,15 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
             }
             visible = {
-                has_tech = force_rotation
+                has_doctrine = new_operational_integrity
                 
             }
             modifier = {
@@ -580,15 +580,15 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
             }
             visible = {
-                has_tech = formation_flying
+                has_doctrine = new_battlefield_support
                 
             }
             modifier = {
@@ -614,15 +614,15 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 
             }
             visible = {
-                has_tech = air_superiority
+                has_doctrine = new_strategic_destruction
                 
             }
             modifier = {
@@ -648,9 +648,9 @@ ideas = {
             available = {
                 has_air_force_command = yes
                 OR = {
-                    has_tech = air_superiority
-                    has_tech = formation_flying
-                    has_tech = force_rotation
+                    has_doctrine = new_strategic_destruction
+                    has_doctrine = new_battlefield_support
+                    has_doctrine = new_operational_integrity
                     
                 }
                 

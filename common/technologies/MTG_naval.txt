@@ -1962,6 +1962,21 @@ technologies = {
             research_cost_coeff = 1
             
         }
+        on_research_complete = {
+            if = {
+                limit = {
+                    has_dlc = "No Compromise, No Surrender"
+                    
+                }
+                custom_effect_tooltip = {
+                    localization_key = SP_UNLOCK_PROJECT
+                    PROJECT = sp_naval_escort_carrier
+                    
+                }
+                
+            }
+            
+        }
         research_cost = 1.5
         start_year = 1936
         folder = {
@@ -3027,6 +3042,70 @@ technologies = {
         underway_replenishment_convoy_cost = -0.2
         research_cost = 1
         start_year = 1940
+        allow = {
+            always = no
+            
+        }
+        
+    }
+    sp_naval_support_ships_pick_a = {
+        research_cost = 1
+        start_year = 1940
+        naval_general_support_value_factor = 0.25
+        naval_general_support_factor = -0.1
+        allow = {
+            always = no
+            
+        }
+        
+    }
+    sp_naval_support_ships_pick_b = {
+        research_cost = 1
+        start_year = 1940
+        naval_general_support_value_factor = 0.05
+        allow = {
+            always = no
+            
+        }
+        
+    }
+    sp_naval_support_ships_pick_c = {
+        research_cost = 1
+        start_year = 1940
+        naval_general_support_factor = 0.25
+        naval_general_support_value_factor = -0.15
+        allow = {
+            always = no
+            
+        }
+        
+    }
+    sp_naval_repair_ships_pick_a = {
+        research_cost = 1
+        start_year = 1940
+        naval_repair_support_value_factor = 0.25
+        naval_repair_support_factor = -0.1
+        allow = {
+            always = no
+            
+        }
+        
+    }
+    sp_naval_repair_ships_pick_b = {
+        research_cost = 1
+        start_year = 1940
+        naval_repair_support_value_factor = 0.05
+        allow = {
+            always = no
+            
+        }
+        
+    }
+    sp_naval_repair_ships_pick_c = {
+        research_cost = 1
+        start_year = 1940
+        naval_repair_support_factor = 0.25
+        naval_repair_support_value_factor = -0.15
         allow = {
             always = no
             

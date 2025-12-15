@@ -477,13 +477,15 @@ def patch_script_enum(mod_path, r56_path, out_path):
 
 def remove_mtg_view(mod_path, r56_path, out_path):
     fname = "countrytechtreeview.gui"
+    PLACEHOLDER = "AUT_PLACEHOLDER"
+    KK = "275K"
     r56_file = os.path.join(r56_path,INTERFACE_PATH,fname)
     out_file = os.path.join(out_path,INTERFACE_PATH,fname)
     # BS signs and a typo
     with open(r56_file,'r') as fp:
         text = fp.read()
         text = text.replace('%%','%')
-        text = text.replace("275K","275")
+        text = text.replace(KK,"275")
     with open(out_file,'w') as fp:
         fp.write(text)
                             
@@ -498,6 +500,8 @@ def remove_mtg_view(mod_path, r56_path, out_path):
     mapping = [[has_key_and_val, key_val2], [remove, key_val2]]
     int_obj = apply_map(int_obj, mapping)
     code = list2paradox(int_obj)
+    # the percent files have to go back in order to work.
+    code = code.replace('%','%%') 
     with open(out_file,'w') as fp:
         fp.write(code)
     

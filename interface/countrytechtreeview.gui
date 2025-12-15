@@ -59,8 +59,8 @@ guiTypes = {
             
         }
         size = {
-            width = 100%
-            height = 100%
+            width = 100%%
+            height = 100%%
             
         }
         fade_time = 400
@@ -78,8 +78,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -113,8 +113,8 @@ guiTypes = {
                     width = 2800
                     height = 2175
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -792,8 +792,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -826,8 +826,8 @@ guiTypes = {
                     width = 2800
                     height = 1000
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -1108,8 +1108,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -1143,8 +1143,8 @@ guiTypes = {
                     width = 1920
                     height = 1020
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -1448,8 +1448,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -1481,8 +1481,8 @@ guiTypes = {
                     width = 3250
                     height = 1200
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -1513,7 +1513,7 @@ guiTypes = {
                     }
                     size = {
                         width = 80
-                        height = 100%
+                        height = 100%%
                         
                     }
                     orientation = upper_left
@@ -1774,13 +1774,13 @@ guiTypes = {
                 containerWindowType = {
                     name = "armour_subtitles"
                     position = {
-                        x = 20%
+                        x = 20%%
                         y = 140
                         
                     }
                     size = {
                         width = 80
-                        height = 100%
+                        height = 100%%
                         
                     }
                     orientation = upper_left
@@ -1875,13 +1875,13 @@ guiTypes = {
             gridboxtype = {
                 name = "gwtank_tree"
                 position = {
-                    x = 10%
+                    x = 10%%
                     y = 172
                     
                 }
                 size = {
-                    width = 80%
-                    height = 80%
+                    width = 80%%
+                    height = 80%%
                     
                 }
                 slotsize = {
@@ -1902,8 +1902,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -1937,8 +1937,8 @@ guiTypes = {
                     width = 1600
                     height = 1290
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -1969,7 +1969,7 @@ guiTypes = {
                     }
                     size = {
                         width = 80
-                        height = 100%
+                        height = 100%%
                         
                     }
                     orientation = upper_left
@@ -2152,7 +2152,7 @@ guiTypes = {
                     }
                     size = {
                         width = 80
-                        height = 100%
+                        height = 100%%
                         
                     }
                     orientation = upper_right
@@ -2337,7 +2337,7 @@ guiTypes = {
                 }
                 size = {
                     width = 600
-                    height = 80%
+                    height = 80%%
                     
                 }
                 orientation = upper_left
@@ -2436,8 +2436,8 @@ guiTypes = {
                     
                 }
                 size = {
-                    width = 80%
-                    height = 80%
+                    width = 80%%
+                    height = 80%%
                     
                 }
                 slotsize = {
@@ -2456,8 +2456,8 @@ guiTypes = {
                     
                 }
                 size = {
-                    width = 80%
-                    height = 80%
+                    width = 80%%
+                    height = 80%%
                     
                 }
                 slotsize = {
@@ -2476,8 +2476,8 @@ guiTypes = {
                     
                 }
                 size = {
-                    width = 80%
-                    height = 80%
+                    width = 80%%
+                    height = 80%%
                     
                 }
                 slotsize = {
@@ -2498,8 +2498,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -2533,8 +2533,8 @@ guiTypes = {
                     width = 1239
                     height = 1900
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -2565,7 +2565,7 @@ guiTypes = {
                     }
                     size = {
                         width = 600
-                        height = 80%
+                        height = 80%%
                         
                     }
                     orientation = center_up
@@ -2917,7 +2917,7 @@ guiTypes = {
                     }
                     size = {
                         width = 130
-                        height = 100%
+                        height = 100%%
                         
                     }
                     orientation = upper_left
@@ -3180,13 +3180,13 @@ guiTypes = {
             gridboxtype = {
                 name = "gw_artillery_tree"
                 position = {
-                    x = 10%
+                    x = 10%%
                     y = 172
                     
                 }
                 size = {
-                    width = 80%
-                    height = 80%
+                    width = 80%%
+                    height = 80%%
                     
                 }
                 slotsize = {
@@ -3207,8 +3207,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -3466,8 +3466,8 @@ guiTypes = {
                     width = 1700
                     height = 1300
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -3590,8 +3590,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -3845,8 +3845,8 @@ guiTypes = {
                     width = 1700
                     height = 1300
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -3989,8 +3989,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -4023,8 +4023,8 @@ guiTypes = {
                     width = 2800
                     height = 1300
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -4057,7 +4057,7 @@ guiTypes = {
                 }
                 size = {
                     width = 130
-                    height = 100%
+                    height = 100%%
                     
                 }
                 orientation = upper_left
@@ -4219,7 +4219,7 @@ guiTypes = {
                 }
                 size = {
                     width = 130
-                    height = 100%
+                    height = 100%%
                     
                 }
                 orientation = upper_left
@@ -4924,8 +4924,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -4959,8 +4959,8 @@ guiTypes = {
                     width = 2275
                     height = 1300
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -5098,7 +5098,7 @@ guiTypes = {
                 }
                 size = {
                     width = 200
-                    height = 100%
+                    height = 100%%
                     
                 }
                 orientation = upper_left
@@ -5507,8 +5507,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -5541,8 +5541,8 @@ guiTypes = {
                     width = 1350
                     height = 1250
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -5566,7 +5566,7 @@ guiTypes = {
                     }
                     size = {
                         width = 130
-                        height = 100%
+                        height = 100%%
                         
                     }
                     orientation = upper_left
@@ -6068,8 +6068,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -6103,8 +6103,8 @@ guiTypes = {
                     width = 724
                     height = 1500
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -6141,7 +6141,7 @@ guiTypes = {
                 }
                 size = {
                     width = 130
-                    height = 100%
+                    height = 100%%
                     
                 }
                 orientation = upper_left
@@ -6492,7 +6492,7 @@ guiTypes = {
                 }
                 size = {
                     width = 130
-                    height = 100%
+                    height = 100%%
                     
                 }
                 orientation = upper_left
@@ -7036,8 +7036,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             margin = {
@@ -7070,8 +7070,8 @@ guiTypes = {
                     width = 710
                     height = 1100
                     min = {
-                        width = 100%
-                        height = 100%
+                        width = 100%%
+                        height = 100%%
                         
                     }
                     
@@ -7155,7 +7155,7 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
+                width = 100%%
                 height = 30
                 
             }
@@ -10735,8 +10735,8 @@ guiTypes = {
                         
                     }
                     size = {
-                        x = 100%
-                        y = 100%
+                        x = 100%%
+                        y = 100%%
                         
                     }
                     
@@ -11246,8 +11246,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             slotsize = {
@@ -11322,8 +11322,8 @@ guiTypes = {
                 
             }
             size = {
-                width = 100%
-                height = 100%
+                width = 100%%
+                height = 100%%
                 
             }
             slotsize = {

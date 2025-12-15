@@ -2345,7 +2345,7 @@ guiTypes = {
                 instantTextBoxType = {
                     name = "armour_subtitle_heavy"
                     position = {
-                        x = 275K
+                        x = 275
                         y = 55
                         
                     }

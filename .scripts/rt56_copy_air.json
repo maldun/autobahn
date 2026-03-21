@@ -4,7 +4,7 @@
     "bba_air_techs.txt": []
   },
   "common/units/": {
-      "air.txt": []
+      "r56e_air.txt": []
   },
   "common/units/equipment/": {
     "r56e_fighter_bomber.txt": [],

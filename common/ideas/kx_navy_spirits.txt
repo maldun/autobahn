@@ -7,10 +7,6 @@ ideas = {
             }
             ledger = navy
             allowed = {
-                has_dlc = "No Step Back"
-                
-            }
-            visible = {
                 tag = JAP
                 
             }

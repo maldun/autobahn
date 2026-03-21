@@ -771,6 +771,7 @@ equipments = {
         fuel_consumption = 70
         reliability = 0.95
         build_cost_ic = 3800
+        naval_dominance_factor = 425
         resources = {
             steel = 1
             chromium = 1

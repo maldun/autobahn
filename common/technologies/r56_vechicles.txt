@@ -1115,7 +1115,7 @@ technologies = {
             name = r56_vechicles_folder
             position = {
                 x = 4
-                y = 8
+                y = 6
                 
             }
             
@@ -1178,7 +1178,7 @@ technologies = {
             name = r56_vechicles_folder
             position = {
                 x = 4
-                y = 4
+                y = 1
                 
             }
             

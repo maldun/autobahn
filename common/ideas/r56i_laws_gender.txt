@@ -10,39 +10,166 @@ ideas = {
 			            }
 			modifier = {
 				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.05
-				conscription_factor = -0.05	
-				female_random_operative_chance = -1
-			}
-			cost = 75
-			cancel_if_invalid = no
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					tag = GEA
-					tag = BAT
+				industrial_capacity_dockyard = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_facility_factor = -0.075
+				conscription_factor = -0.075
+				hidden_modifier = { #Needs to hide for non DLC plebs
+					female_random_operative_chance = -1
+					female_random_scientist_chance = -1
 				}
 			}
+			cost = 100
+			cancel_if_invalid = no
+           ai_will_do = {
+				factor = 0
+				# long list of political power things that should be taken first. If the idea impacts stability, checking for > 0.5 could be useful. I (Waffle) may have overdesigned it a bit, but this is just a reliable proof of concept, adaptable to more specific situations
+				modifier = {
+					has_political_power > 150
+
+					amount_taken_ideas = { # have 3 political advisors 
+					    amount > 2
+					    slots = {
+					        political_advisor
+					    }
+					}
+					amount_taken_ideas = { # have 3 high command members
+					    amount > 2
+					    slots = {
+					        high_command
+					    }
+					}
+					# have an army chief (because some countries have restrictions on it, no requirement for air chief and navy chief in this prototype, if you add navy chief requirement, demand that the number of dockyards be > 0
+					amount_taken_ideas = { 
+					    amount > 0
+					    slots = {
+					        army_chief
+					    }
+					}
+					amount_taken_ideas = {
+					    amount > 0
+					    slots = {
+					        industrial_concern
+					    }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Arms Against Tyranny"
+							}
+						}
+						amount_taken_ideas = { # might cause problems with some manufacturers not being available (for example Ethiopia)
+						    amount > 0
+						    slots = {
+						        tank_manufacturer
+						    }
+						}
+						amount_taken_ideas = {
+						    amount > 0
+						    slots = {
+						        aircraft_manufacturer
+						    }
+						}
+						amount_taken_ideas = {
+						    amount > 0
+						    slots = {
+						        materiel_manufacturer
+						    }
+						}
+					}
+					# you will change gender law through effect or if the law becomes unavailable
+					NOT = { 
+						OR = {
+							has_idea = r56i_laws_gender_patriarchy
+							has_idea = r56i_laws_gender_limited
+							has_idea = r56i_laws_gender_equality
+						}
+					}
+					add = 1
+				}
+		 	}
 		}
+		
 		r56i_laws_gender_limited = {
 			available = { NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } }
 			modifier = {
 				industrial_capacity_factory = -0.05
-				weekly_manpower = 50
-				conscription_factor = 0.05
-				female_random_operative_chance = 3
-				
+				industrial_capacity_dockyard = -0.05
+				production_speed_facility_factor = 0.075
+				#production_factory_start_efficiency_factor = -0.05	#can start production at 0 efficiency, nerf stat above further if needed
+				weekly_manpower = 100 #Silly, but better for small nations who need the raw MP
+				conscription_factor = 0.075
+				#female_random_operative_chance = 3
 			}
-			cost = 75
+			cost = 100
 			cancel_if_invalid = no
 			ai_will_do = {
-				factor = 1
+				factor = 0
+				# long list of political power things that should be taken first. If the idea impacts stability, checking for > 0.5 could be useful. I (Waffle) may have overdesigned it a bit, but this is just a reliable proof of concept, adaptable to more specific situations
 				modifier = {
-					factor = 0
-					has_elected_government = no
+					has_political_power > 150
+
+					amount_taken_ideas = { # have 3 political advisors 
+					    amount > 2
+					    slots = {
+					        political_advisor
+					    }
+					}
+					amount_taken_ideas = { # have 3 high command members
+					    amount > 2
+					    slots = {
+					        high_command
+					    }
+					}
+					# have an army chief (because some countries have restrictions on it, no requirement for air chief and navy chief in this prototype, if you add navy chief requirement, demand that the number of dockyards be > 0
+					amount_taken_ideas = { 
+					    amount > 0
+					    slots = {
+					        army_chief
+					    }
+					}
+					amount_taken_ideas = {
+					    amount > 0
+					    slots = {
+					        industrial_concern
+					    }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Arms Against Tyranny"
+							}
+						}
+						amount_taken_ideas = { # might cause problems with some manufacturers not being available (for example Ethiopia)
+						    amount > 0
+						    slots = {
+						        tank_manufacturer
+						    }
+						}
+						amount_taken_ideas = {
+						    amount > 0
+						    slots = {
+						        aircraft_manufacturer
+						    }
+						}
+						amount_taken_ideas = {
+						    amount > 0
+						    slots = {
+						        materiel_manufacturer
+						    }
+						}
+					}
+					# you will change gender law through effect or if the law becomes unavailable
+					NOT = { 
+						OR = {
+							has_idea = r56i_laws_gender_patriarchy
+							has_idea = r56i_laws_gender_limited
+							has_idea = r56i_laws_gender_equality
+						}
+					}
+					add = 1
 				}
-			}
+		 	}
 		}
 		r56i_laws_gender_patriarchy = {
 			available = { 
@@ -53,22 +180,87 @@ ideas = {
 						}
 			modifier = {
 				industrial_capacity_factory = 0.075
-				production_factory_max_efficiency_factor = 0.05
-				conscription_factor = -0.1
-				female_random_operative_chance = -2
-				
-			}
-			cancel_if_invalid = yes
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					has_dictatorship_government = no
-					tag = GEA
-					tag = BAT
-					is_chinese_tag = yes
+				industrial_capacity_dockyard = 0.075
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_facility_factor = -0.15
+				conscription_factor = -0.15
+				hidden_modifier = { #Needs to hide for non DLC plebs
+					female_random_operative_chance = -2
+					female_random_scientist_chance = -2
 				}
 			}
+			
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 0
+				# long list of political power things that should be taken first. If the idea impacts stability, checking for > 0.5 could be useful. I (Waffle) may have overdesigned it a bit, but this is just a reliable proof of concept, adaptable to more specific situations
+				modifier = {
+					has_political_power > 150
+
+					amount_taken_ideas = { # have 3 political advisors 
+					    amount > 2
+					    slots = {
+					        political_advisor
+					    }
+					}
+					amount_taken_ideas = { # have 3 high command members
+					    amount > 2
+					    slots = {
+					        high_command
+					    }
+					}
+					amount_taken_ideas = { # have an army chief (because some countries have restrictions on it, no requirement for air chief and navy chief in this prototype, if you add navy chief requirement, demand that the number of dockyards be > 0
+					    amount > 0
+					    slots = {
+					        army_chief
+					    }
+					}
+					amount_taken_ideas = {
+					    amount > 0
+					    slots = {
+					        industrial_concern
+					    }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Arms Against Tyranny"
+							}
+
+						}
+						amount_taken_ideas = { # might cause problems with some manufacturers not being available (for example Ethiopia)
+						    amount > 0
+						    slots = {
+						        tank_manufacturer
+						    }
+						}
+						amount_taken_ideas = {
+						    amount > 0
+						    slots = {
+						        aircraft_manufacturer
+						    }
+						}
+						amount_taken_ideas = {
+						    amount > 0
+						    slots = {
+						        materiel_manufacturer
+						    }
+						}
+					}
+					NOT = { # you will change gender law through effect or if the law becomes unavailable
+						OR = {
+							has_idea = r56i_laws_gender_traditional
+							#has_idea = r56i_laws_gender_patriarchy
+							has_idea = r56i_laws_gender_limited
+							has_idea = r56i_laws_gender_equality
+						}
+						
+					}
+				
+					add = 1
+				}
+		 	}
+			cost = 175
 		}
 		r56i_laws_gender_equality = {
 			available = { 
@@ -78,19 +270,86 @@ ideas = {
 			                      } 
 						}
 			modifier = {
-				industrial_capacity_factory = -0.1
-				conscription_factor = 0.15
-				weekly_manpower = 150
-				female_random_operative_chance = 5
-			}
-			cancel_if_invalid = yes
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_socialist_government = no }
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+				production_speed_facility_factor = 0.15
+				#production_factory_start_efficiency_factor = -0.10	#can start production at 0 efficiency, nerf stat above further if needed
+				conscription_factor = 0.15 #from 0.10, 0.15
+				weekly_manpower = 200 #Silly, but better for small nations who need the raw MP
+				hidden_modifier = { #Needs to hide for non DLC plebs
+					female_random_operative_chance = 0.5
+					female_random_scientist_chance = 0.5
 				}
 			}
+			cost = 175
+			#cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 0
+				# long list of political power things that should be taken first. If the idea impacts stability, checking for > 0.5 could be useful. I (Waffle) may have overdesigned it a bit, but this is just a reliable proof of concept, adaptable to more specific situations
+				modifier = {
+					has_political_power > 150
+
+					amount_taken_ideas = { # have 3 political advisors 
+					    amount > 2
+					    slots = {
+					        political_advisor
+					    }
+					}
+					amount_taken_ideas = { # have 3 high command members
+					    amount > 2
+					    slots = {
+					        high_command
+					    }
+					}
+					# have an army chief (because some countries have restrictions on it, no requirement for air chief and navy chief in this prototype, if you add navy chief requirement, demand that the number of dockyards be > 0
+					amount_taken_ideas = { 
+					    amount > 0
+					    slots = {
+					        army_chief
+					    }
+					}
+					amount_taken_ideas = {
+					    amount > 0
+					    slots = {
+					        industrial_concern
+					    }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Arms Against Tyranny"
+							}
+						}
+						amount_taken_ideas = { # might cause problems with some manufacturers not being available (for example Ethiopia)
+						    amount > 0
+						    slots = {
+						        tank_manufacturer
+						    }
+						}
+						amount_taken_ideas = {
+						    amount > 0
+						    slots = {
+						        aircraft_manufacturer
+						    }
+						}
+						amount_taken_ideas = {
+						    amount > 0
+						    slots = {
+						        materiel_manufacturer
+						    }
+						}
+					}
+					# you will change gender law through effect or if the law becomes unavailable
+					NOT = { 
+						OR = {
+							has_idea = r56i_laws_gender_patriarchy
+							has_idea = r56i_laws_gender_limited
+							has_idea = r56i_laws_gender_equality
+						}
+					}
+					add = 1
+				}
+		 	}
 		}
 	}
 }

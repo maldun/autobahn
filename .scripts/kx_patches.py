@@ -12,7 +12,7 @@ HOME = os.path.expanduser("~/")
 sys.path.append(HOME + "prog/Python/hoi4_converter/")
 
 INTERFACE_FOLDER = "interface"
-
+COMMON_FOLDER = "common"
 
 def make_folder_in_out_file(folder_name, filename, in_path, out_path):
     os.makedirs(os.path.join(out_path, folder_name), exist_ok=True)
@@ -43,7 +43,7 @@ def patch_main_menu(kx_path, out_folder):
 
 
 def patch_naval_ai_equipment(kx_path, out_folder):
-    ai_equipment_folder = os.path.join("common", "ai_equipment")
+    ai_equipment_folder = os.path.join(COMMON_FOLDER, "ai_equipment")
     naval_path = "generic_naval.txt"
     in_file, out_file = make_folder_in_out_file(ai_equipment_folder, naval_path,
                                                 kx_path, out_folder)
@@ -57,7 +57,7 @@ def patch_naval_ai_equipment(kx_path, out_folder):
 
 
 def path_idea_tags(kx_path, out_folder):
-    idea_tag_path = os.path.join("common", "idea_tags")
+    idea_tag_path = os.path.join(COMMON_FOLDER, "idea_tags")
     idea_tag_file = "00_idea.txt"
     in_file, out_file = make_folder_in_out_file(idea_tag_path, idea_tag_file,
                                                 kx_path, out_folder)
@@ -99,7 +99,7 @@ def path_idea_tags(kx_path, out_folder):
 
 
 def patch_infantry_equipment(kx_path, rt56_folder, out_folder):
-    equipment_path = os.path.join("common", "units", "equipment")
+    equipment_path = os.path.join(COMMON_FOLDER, "units", "equipment")
     infant_file = "infantry.txt"
     in_file, out_file = make_folder_in_out_file(equipment_path, infant_file,
                                                 kx_path, out_folder)
@@ -157,12 +157,54 @@ def patch_airships_techtree(kx_path, rt56_folder, out_folder):
         fp.write(new_code)
     
 
+def patch_combat_tactics(kx_path, rt56_path, out_folder):
+    """
+    Merges combat tactics
+    """
+    fname = os.path.join(COMMON_FOLDER,"combat_tactics.txt")
+    rt56_fname = os.path.join(rt56_path,fname)
+    kx_fname = os.path.join(kx_path,fname)
+    out_fname = os.path.join(out_folder,fname)
+    
+    with open(rt56_fname,'r') as fp: rt56_code = fp.read()
+    with open(kx_fname,'r') as fp: kx_code = fp.read()
+    rt56_tactics = code2obj(rt56_code)
+    kx_tactics = code2obj(kx_code)
+    
+
+    
+    tactic_names_rt56 = [tactic[0] for tactic in rt56_tactics]
+    tactic_names_kx = [tactic[0] for tactic in kx_tactics]
+    uniqe_kx_tactic_names = set(tactic_names_kx) - set(tactic_names_rt56)
+    unique_kx_tactics = [tactic for tactic in kx_tactics if tactic[0] in uniqe_kx_tactic_names]
+    
+    # kx specific settings
+    # add countertactic
+    overwrites = {'tactic_banzai_charge':None,'tactic_basic_attack':None}
+    BASIC_NAME = 'tactic_basic_attack'
+    BANZAI_NAME = "tactic_banzai_charge"
+    for tactic in kx_tactics:
+        tname = tactic[0]
+        if  tname in overwrites:
+            overwrites[tname] = tactic
+    for ind, tactic in enumerate(rt56_tactics):
+        tname = tactic[0]
+        if  tname in overwrites:
+            rt56_tactics[ind] = overwrites[tname]
+            
+    all_tactics = rt56_tactics + unique_kx_tactics
+    new_code = list2paradox(all_tactics)
+    with open(out_fname, 'w') as fp:
+        fp.write(new_code)
+    
+
 def patch_countrystateview(kx_path, out_folder):
     """
     Normally copy is enough 
     """
     fname = os.path.join(INTERFACE_FOLDER,"countrystateview.gui")
     shutil.copy2(os.path.join(kx_path,fname),os.path.join(out_folder,fname))
+    
 
 def patch(kx_path, rt56_path, out_folder):
     patch_main_menu(kx_path, out_folder)
@@ -172,3 +214,4 @@ def patch(kx_path, rt56_path, out_folder):
     # Is removed in KX for now
     #patch_naval_ai_equipment(kx_path, out_folder)
     patch_countrystateview(kx_path, out_folder)
+    patch_combat_tactics(kx_path, rt56_path, out_folder)

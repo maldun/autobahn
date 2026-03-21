@@ -18,6 +18,7 @@ sys.path.append(HOME + "prog/Python/hoi4_converter/")
 
 COMMON_PATH = "common/"
 INTERFACE_PATH = "interface"
+IDEA_PATH = "common/ideas"
 TECHNOLOGY_PATH = "common/technologies"
 EQUIPMENT_PATH = "common/units/equipment"
 AI_KEY = "ai_will_do"
@@ -504,11 +505,20 @@ def remove_mtg_view(mod_path, r56_path, out_path):
     code = code.replace('%','%%') 
     with open(out_file,'w') as fp:
         fp.write(code)
-    
-
+        
+def patch_army_spirits(out_path):
+    fname = "army_spirits.txt"
+    r56_file = os.path.join(out_path,IDEA_PATH,fname)
+    with open(r56_file,'r') as fp:
+        text = fp.read()
+    text = text.replace("has_country_flag = r56_SAU_allow_inventive_leadership_spirit",'\n')
+    text = text.replace("has_completed_focus = NOR_officers_academy",'\n')
+    with open(r56_file,'w') as fp:
+        fp.write(text)
 
 def patch_bugs(mod_path, r56_path, kr_path, out_path, KX):
     patch_missing_BUL_idea(out_path)
     patch_missing_mtg_naval_subtechs(mod_path, out_path)
     patch_script_enum(mod_path, r56_path, out_path)
     remove_mtg_view(mod_path,r56_path, out_path)
+    patch_army_spirits(out_path)

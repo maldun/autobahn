@@ -3,18 +3,20 @@ ideas = {
 		use_list_view = yes
 		law = yes
 		r56i_laws_war_historical = {
+		cost = 125
 			available = { 
 			               NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } 
 			               threat > 0.25
 						}
 			modifier = {
-				attrition = -0.05
-				max_dig_in = 5
+				attrition = -0.05				
+				out_of_supply_factor = -0.10
+				max_dig_in_factor = 0.1
 				justify_war_goal_time = 0.25
 				political_power_cost = 0.05
 			}
 			cancel_if_invalid = no
-			ai_will_do = { factor = 0.75 }
+			ai_will_do = { factor = 0.5 }
 		}
 		r56i_laws_war_ideological = {
 			cost = 125
@@ -41,12 +43,14 @@ ideas = {
 			}
 		}
 		r56i_laws_war_brinkmanship = {
+
 			available = { 
 			                NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } 
 			                threat > 0.05    
 						}
 			modifier = {
 				army_speed_factor = 0.01
+				trade_opinion_factor = 0.25
 				generate_wargoal_tension = -0.25
 				justify_war_goal_time = -0.25
 				political_power_cost = 0.05
@@ -65,15 +69,18 @@ ideas = {
 			               threat > 0.25
 			               NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } 
 						}
-			cost = 100
+			cost = 125
 			modifier = {
 				army_org_factor = 0.01
 				send_volunteer_factor = 0.2
 				send_volunteer_size = 2
 				political_power_cost = 0.05
+				send_volunteer_divisions_required = -0.25
+				lend_lease_tension = -0.25
+				send_volunteers_tension = -0.25
 			}
 			cancel_if_invalid = no
-			ai_will_do = { factor = 0.5 }
+			ai_will_do = { factor = 0 }
 		}
 	}
 }

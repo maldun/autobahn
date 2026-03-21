@@ -170,19 +170,19 @@ technologies = {
                 
             }
             modifier = {
-                factor = 3
+                factor = 0
                 has_navy_size = {
                     type = carrier
-                    size > 3
+                    size < 1
                     
                 }
                 
             }
             modifier = {
-                factor = 0
+                factor = 3
                 has_navy_size = {
                     type = carrier
-                    size < 1
+                    size > 0
                     
                 }
                 
@@ -239,22 +239,22 @@ technologies = {
             }
             modifier = {
                 factor = 1.2
-                date > "1937.1.1"
+                date > 1937-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1938.1.1"
+                date > 1938-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1939.1.1"
+                date > 1939-01-01
                 
             }
             modifier = {
                 factor = 5
-                date > "1940.1.1"
+                date > 1940-01-01
                 
             }
             
@@ -385,22 +385,22 @@ technologies = {
             }
             modifier = {
                 factor = 1.2
-                date > "1941.1.1"
+                date > 1941-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1942.1.1"
+                date > 1942-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1943.1.1"
+                date > 1943-01-01
                 
             }
             modifier = {
                 factor = 5
-                date > "1944.1.1"
+                date > 1944-01-01
                 
             }
             
@@ -442,16 +442,6 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 2
-                is_major = yes
-                
-            }
-            modifier = {
-                factor = 1.5
-                date > "1941.6.1"
-                
-            }
-            modifier = {
                 factor = 0
                 OR = {
                     has_tech = fighter3
@@ -461,19 +451,29 @@ technologies = {
                 
             }
             modifier = {
-                factor = 2.5
+                factor = 0
                 has_navy_size = {
                     type = carrier
-                    size > 3
+                    size < 1
                     
                 }
                 
             }
             modifier = {
-                factor = 0
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
+                factor = 1.5
+                date > 1941-06-01
+                
+            }
+            modifier = {
+                factor = 2.5
                 has_navy_size = {
                     type = carrier
-                    size < 1
+                    size > 3
                     
                 }
                 
@@ -561,22 +561,22 @@ technologies = {
             }
             modifier = {
                 factor = 1.2
-                date > "1945.1.1"
+                date > 1945-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1946.1.1"
+                date > 1946-01-01
                 
             }
             modifier = {
                 factor = 1.2
-                date > "1947.1.1"
+                date > 1947-01-01
                 
             }
             modifier = {
                 factor = 5
-                date > "1948.1.1"
+                date > 1948-01-01
                 
             }
             
@@ -613,13 +613,22 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 0
+                has_navy_size = {
+                    type = carrier
+                    size < 1
+                    
+                }
+                
+            }
+            modifier = {
                 factor = 2
                 is_major = yes
                 
             }
             modifier = {
                 factor = 1.5
-                date > "1945.1.1"
+                date > 1945-01-01
                 
             }
             modifier = {
@@ -627,15 +636,6 @@ technologies = {
                 has_navy_size = {
                     type = carrier
                     size > 3
-                    
-                }
-                
-            }
-            modifier = {
-                factor = 0
-                has_navy_size = {
-                    type = carrier
-                    size < 1
                     
                 }
                 
@@ -731,13 +731,8 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 4
                 is_major = yes
-                factor = 2
-                
-            }
-            modifier = {
-                tag = GER
-                factor = 2
                 
             }
             
@@ -862,7 +857,7 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 4
+                factor = 2
                 is_major = yes
                 
             }
@@ -933,6 +928,11 @@ technologies = {
                     size > 0
                     
                 }
+                
+            }
+            modifier = {
+                factor = 2
+                is_major = yes
                 
             }
             modifier = {
@@ -1068,6 +1068,11 @@ technologies = {
                 
             }
             modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
                 factor = 1.5
                 enemies_naval_strength_ratio > 0.5
                 
@@ -1126,7 +1131,7 @@ technologies = {
                 
             }
             modifier = {
-                factor = 3
+                factor = 2
                 is_major = yes
                 
             }
@@ -1181,6 +1186,11 @@ technologies = {
                 
             }
             modifier = {
+                factor = 2
+                is_major = yes
+                
+            }
+            modifier = {
                 factor = 1.5
                 enemies_naval_strength_ratio > 0.5
                 
@@ -1229,12 +1239,12 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                factor = 3
+                factor = 5
                 is_major = yes
                 
             }
             modifier = {
-                factor = 5
+                factor = 3
                 enemies_naval_strength_ratio > 0.5
                 
             }
@@ -1282,12 +1292,12 @@ technologies = {
         ai_will_do = {
             factor = 1.5
             modifier = {
-                factor = 3
+                factor = 5
                 is_major = yes
                 
             }
             modifier = {
-                factor = 5
+                factor = 3
                 enemies_naval_strength_ratio > 0.5
                 
             }
@@ -1339,12 +1349,12 @@ technologies = {
         ai_will_do = {
             factor = 1.5
             modifier = {
-                factor = 3
+                factor = 5
                 is_major = yes
                 
             }
             modifier = {
-                factor = 5
+                factor = 3
                 enemies_naval_strength_ratio > 0.5
                 
             }
@@ -1647,7 +1657,7 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1936.1.1"
+                date > 1936-01-01
                 
             }
             modifier = {
@@ -1662,13 +1672,13 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1938.1.1"
+                date > 1938-01-01
                 
             }
             modifier = {
                 factor = 5
                 is_major = yes
-                date > "1940.1.1"
+                date > 1940-01-01
                 
             }
             
@@ -1766,7 +1776,7 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1940.1.1"
+                date > 1940-01-01
                 
             }
             modifier = {
@@ -1781,13 +1791,13 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1941.1.1"
+                date > 1941-01-01
                 
             }
             modifier = {
                 factor = 5
                 is_major = yes
-                date > "1944.1.1"
+                date > 1944-01-01
                 
             }
             
@@ -1865,7 +1875,7 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1944.1.1"
+                date > 1944-01-01
                 
             }
             modifier = {
@@ -1880,7 +1890,7 @@ technologies = {
             modifier = {
                 factor = 1.2
                 is_major = yes
-                date > "1945.1.1"
+                date > 1945-01-01
                 
             }
             
@@ -1968,8 +1978,8 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
-                is_major = yes
                 factor = 4
+                is_major = yes
                 
             }
             
@@ -2062,12 +2072,12 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 5
-                has_tech = air_superiority
+                has_doctrine = new_strategic_destruction
                 
             }
             modifier = {
                 factor = 5
-                has_tech = nukes
+                is_special_project_completed = sp:sp_nuclear_bomb
                 
             }
             
@@ -2177,12 +2187,12 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 5
-                has_tech = air_superiority
+                has_doctrine = new_strategic_destruction
                 
             }
             modifier = {
                 factor = 5
-                has_tech = nukes
+                is_special_project_completed = sp:sp_nuclear_bomb
                 
             }
             
@@ -2258,12 +2268,12 @@ technologies = {
             factor = 1
             modifier = {
                 factor = 5
-                has_tech = air_superiority
+                has_doctrine = new_strategic_destruction
                 
             }
             modifier = {
                 factor = 5
-                has_tech = nukes
+                is_special_project_completed = sp:sp_nuclear_bomb
                 
             }
             
@@ -2337,12 +2347,12 @@ technologies = {
         ai_will_do = {
             factor = 1
             modifier = {
+                factor = 4.5
                 has_deployed_air_force_size = {
                     size > 500
                     type = strategic_bomber
                     
                 }
-                factor = 4.5
                 
             }
             
@@ -2833,6 +2843,11 @@ technologies = {
                 
             }
             modifier = {
+                factor = 2.5
+                is_major = yes
+                
+            }
+            modifier = {
                 factor = 1.5
                 enemies_naval_strength_ratio > 0.5
                 
@@ -2885,6 +2900,11 @@ technologies = {
                     size > 0
                     
                 }
+                
+            }
+            modifier = {
+                factor = 2.5
+                is_major = yes
                 
             }
             modifier = {

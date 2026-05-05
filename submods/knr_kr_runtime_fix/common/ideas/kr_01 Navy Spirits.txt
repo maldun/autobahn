@@ -1,0 +1,5 @@
+ideas = {
+    # Intentionally empty override.
+    # Autobahn's KR navy spirits file still references several 1.17-era naval subdoctrines
+    # that no longer exist in the current KNR doctrine tree.
+}

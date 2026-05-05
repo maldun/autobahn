@@ -1,0 +1,53 @@
+ai_air_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = naval_strike_tactics
+		has_tech = direct_ground_support
+		has_tech = low_echelon_support
+	}
+}
+
+ai_air_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = multialtitude_flying
+		has_tech = hunt_and_destroy
+		has_tech = operational_destruction
+	}
+}
+
+ai_land_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = transfer_of_command
+		has_tech = mobile_defence
+		has_tech = grand_assault
+		has_tech = defence_in_depth
+	}
+}
+
+ai_land_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = ms_battle
+		has_tech = sup_mechanized_offensive
+		has_tech = branch_interoperation
+		has_tech = infiltration_assault
+		has_tech = vast_offensives
+		has_tech = large_front_offensive
+	}
+}
+
+# Autobahn still expects academy/command helpers that are no longer guaranteed
+# to exist in the active scripted-trigger winner.
+has_naval_academy = {
+	always = yes
+}
+
+has_air_academy = {
+	always = yes
+}
+
+has_air_force_command = {
+	always = yes
+}
+
+has_USA_sanction_idea = {
+	always = no
+}

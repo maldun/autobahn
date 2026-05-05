@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # turkey Events
 ###########################
 
@@ -1401,8 +1401,8 @@ country_event = {
 			limit = {
 				FROM = { has_government = fascism }
 				NOT = { has_government = fascism }
-				fascism > 0.1
-				NOT = { fascism > 0.2 }
+				party_popularity@fascism > 0.1
+				NOT = { party_popularity@fascism > 0.2 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_fascism_tt
@@ -1412,8 +1412,8 @@ country_event = {
 			limit = {
 				FROM = { has_government = fascism }
 				NOT = { has_government = fascism }
-				fascism > 0.2
-				NOT = { fascism > 0.3 }
+				party_popularity@fascism > 0.2
+				NOT = { party_popularity@fascism > 0.3 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_fascism_tt
@@ -1423,8 +1423,8 @@ country_event = {
 			limit = {
 				FROM = { has_government = fascism }
 				NOT = { has_government = fascism }
-				fascism > 0.3
-				NOT = { fascism > 0.4 }
+				party_popularity@fascism > 0.3
+				NOT = { party_popularity@fascism > 0.4 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_fascism_tt
@@ -1434,7 +1434,7 @@ country_event = {
 			limit = {
 				FROM = { has_government = fascism }
 				NOT = { has_government = fascism }
-				fascism > 0.4
+				party_popularity@fascism > 0.4
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_fascism_tt
@@ -1443,8 +1443,8 @@ country_event = {
 		if = {
 			limit = {
 				FROM = { has_government = communism }
-				communism > 0.1
-				NOT = { communism > 0.2 }
+				party_popularity@communism > 0.1
+				NOT = { party_popularity@communism > 0.2 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_communism_tt
@@ -1454,8 +1454,8 @@ country_event = {
 			limit = {
 				FROM = { has_government = communism }
 				NOT = { has_government = communism }
-				communism > 0.2
-				NOT = { communism > 0.3 }
+				party_popularity@communism > 0.2
+				NOT = { party_popularity@communism > 0.3 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_communism_tt
@@ -1465,8 +1465,8 @@ country_event = {
 			limit = {
 				FROM = { has_government = communism }
 				NOT = { has_government = communism }
-				communism > 0.3
-				NOT = { communism > 0.4 }
+				party_popularity@communism > 0.3
+				NOT = { party_popularity@communism > 0.4 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_communism_tt
@@ -1476,7 +1476,7 @@ country_event = {
 			limit = {
 				FROM = { has_government = communism }
 				NOT = { has_government = communism }
-				communism > 0.4
+				party_popularity@communism > 0.4
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_communism_tt
@@ -1486,8 +1486,8 @@ country_event = {
 			limit = {
 				FROM = { has_government = democratic }
 				NOT = { has_government = democratic }
-				democratic > 0.1
-				NOT = { democratic > 0.2 }
+				party_popularity@democratic > 0.1
+				NOT = { party_popularity@democratic > 0.2 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1497,8 +1497,8 @@ country_event = {
 			limit = {
 				FROM = { has_government = democratic }
 				NOT = { has_government = democratic }
-				democratic > 0.2
-				NOT = { democratic > 0.3 }
+				party_popularity@democratic > 0.2
+				NOT = { party_popularity@democratic > 0.3 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1508,8 +1508,8 @@ country_event = {
 			limit = {
 				FROM = { has_government = democratic }
 				NOT = { has_government = democratic }
-				democratic > 0.3
-				NOT = { democratic > 0.4 }
+				party_popularity@democratic > 0.3
+				NOT = { party_popularity@democratic > 0.4 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1519,7 +1519,7 @@ country_event = {
 			limit = {
 				FROM = { has_government = democratic }
 				NOT = { has_government = democratic }
-				democratic > 0.4
+				party_popularity@democratic > 0.4
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1876,3 +1876,4 @@ country_event = {
 	}
 
 }
+

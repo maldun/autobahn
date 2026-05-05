@@ -1,0 +1,28 @@
+replace_path="common/ideas/01 Army Spirits.txt"
+replace_path="common/ideas/kr_01 Army Spirits.txt"
+replace_path="common/doctrines/subdoctrines/land/KR_subdoctrines.txt"
+replace_path="common/unit_leader/01_vnr_naval_traits.txt"
+replace_path="common/decisions/BM_supplyhealth_decisions.txt"
+replace_path="common/ai_strategy/00_production.txt"
+replace_path="common/operations/00_operations.txt"
+replace_path="common/scripted_effects/00_transfer_technology_effects.txt"
+replace_path="common/scripted_effects/01_American Tech effects.txt"
+replace_path="common/ideas/kr_01 Navy Spirits.txt"
+replace_path="common/military_industrial_organization/organizations/00_generic_organization.txt"
+replace_path="common/decisions/categories/BM_supplyhealth_categories.txt"
+replace_path="events/BM_supplyhealth_events.txt"
+replace_path="events/Generic.txt"
+name="KNR KR Runtime Fix"
+version="0.2.0"
+tags={
+	"Fixes"
+	"Gameplay"
+}
+dependencies={
+	"Kaiserreich"
+	"Autobahn nach 56"
+	"Kaiserreich Naval Rework"
+	"Autobahn nach 56 and Kaiserreich Naval Rework Compatch"
+}
+supported_version="1.18.*"
+path="D:/Downloads/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/knr_kr_runtime_fix"

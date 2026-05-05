@@ -1,0 +1,3 @@
+# Intentionally empty override.
+# The active "Kaiserreich: Expanded Doctrines" workshop file is built for 1.17-era doctrine syntax
+# and currently hard-errors on 1.18.x, so this suppresses that extra add-on layer at runtime.

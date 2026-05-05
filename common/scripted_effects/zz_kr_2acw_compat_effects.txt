@@ -1,0 +1,860 @@
+# Restores current KR 2ACW startup/cleanup seams that Autobahn's older ACW
+# effects fork replaced with stale namespaces and obsolete state iteration.
+
+USA_initial_events = {
+	if = {
+		limit = { NOT = { has_global_flag = USA_leadup_to_the_war } }
+		set_global_flag = USA_leadup_to_the_war
+		USA = {
+			country_event = { id = american_civil_war_events.311 hours = 8 } #MacArthur's Warning
+			country_event = { id = american_civil_war_events.300 days = 3 } #New England riots
+			country_event = { id = american_civil_war_events.312 days = 25 } #Deadline Running Out
+			news_event = { id = american_civil_war_events.4 hours = 8 }
+		}
+		if = {
+			limit = { country_exists = WCA }
+			WCA = {
+				country_event = { id = american_civil_war_events.718 hours = 14 } #Siege of New York City
+				country_event = { id = american_civil_war_events.312 days = 25 } #Deadline Running Out
+			}
+		}
+		if = {
+			limit = { country_exists = ACC }
+			ACC = {
+				country_event = { id = american_civil_war_events.312 days = 25 } #Deadline Running Out
+			}
+		}
+		if = {
+			limit = { country_exists = APG }
+			APG = {
+				country_event = { id = american_civil_war_events.312 days = 25 } #Deadline Running Out
+			}
+		}
+		every_collection_element = {
+			input = collection:all_mainland_american_states
+			if = {
+				limit = { is_controlled_by = USA }
+				USA = { activate_targeted_decision = { decision = ACW_recruit_in_state target = PREV } }
+			}
+			else_if = {
+				limit = { is_controlled_by = WCA }
+				WCA = { activate_targeted_decision = { decision = ACW_recruit_in_state target = PREV } }
+			}
+			else_if = {
+				limit = { is_controlled_by = APG }
+				APG = { activate_targeted_decision = { decision = ACW_recruit_in_state target = PREV } }
+			}
+			else_if = {
+				limit = { is_controlled_by = ACC }
+				ACC = { activate_targeted_decision = { decision = ACW_recruit_in_state target = PREV } }
+			}
+		}
+		LEC = {
+			country_event = { id = legation_cities_american_events.9 days = 4 }
+		}
+		USA = {
+			if = {
+				limit = { has_country_flag = USA_ACW_austerity_rejected }
+				if = {
+					limit = { NOT = { has_country_flag = USA_ACW_borah_complete_success } }
+
+					country_event = { id = american_civil_war_events.320 days = 5 } #Minnesota
+					country_event = { id = american_civil_war_events.326 days = 9 } #New York/New Jersey
+					country_event = { id = american_civil_war_events.330 days = 12 } #Iowa
+					country_event = { id = american_civil_war_events.332 days = 15 } #Missouri
+					country_event = { id = american_civil_war_events.333 days = 20 } #Kentucky
+
+					APG = { set_cosmetic_tag = APG_compromise_rebels }
+					if = {
+						limit = { has_country_flag = USA_ACW_borah_south_pact }
+						every_owned_state = {
+							limit = {
+								OR = {
+									state = 150 #Louisiana
+									state = 371 #New Orleans
+									state = 372 #Arkansas
+									state = 374 #Oklahoma
+									state = 375 #Northern Texas
+									state = 833 #Southern Texas
+								}
+							}
+							add_core_of = APG
+							remove_core_of = PREV
+							add_claim_by = PREV
+							if = {
+								limit = { is_controlled_by = PREV }
+								start_state_integration_resistance = yes
+							}
+						}
+					}
+					else = {
+						every_owned_state = {
+							limit = {
+								OR = {
+									state = 364 #South Carolina
+									state = 365 #Georgia
+									state = 366 #Florida
+									state = 367 #Alabama
+									state = 370 #Mississippi
+								}
+							}
+							add_core_of = APG
+							remove_core_of = PREV
+							add_claim_by = PREV
+							if = {
+								limit = { is_controlled_by = PREV }
+								start_state_integration_resistance = yes
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { NOT = { has_government = paternal_autocrat } }
+				country_event = { id = american_civil_war_events.301 days = 5 } #Minnesota
+				country_event = { id = american_civil_war_events.302 days = 7 } #North Carolina
+				country_event = { id = american_civil_war_events.303 days = 9 } #Tennessee
+				country_event = { id = american_civil_war_events.304 days = 12 } #New York/New Jersey
+				country_event = { id = american_civil_war_events.306 days = 18 } #Southern Texas
+				country_event = { id = american_civil_war_events.307 days = 20 } #Iowa
+			}
+		}
+	}
+}
+
+USA_release_WCA = {
+	set_global_flag = USA_WCA_existed
+	effect_tooltip = { release = WCA }
+	hidden_effect = {
+		WCA = {
+			add_state_core = 261 #Ohio
+			add_state_core = 358 #New York City
+			add_state_core = 360 #Philadelphia
+			add_state_core = 393 #Michigan
+			add_state_core = 394 #Wisconsin
+			add_state_core = 395 #Illinois
+			add_state_core = 396 #Indiana
+			add_state_core = 929 #West Virginia
+			add_state_core = 975 #Pittsburg
+			set_cosmetic_tag = WCA_ACW
+		}
+
+		USA = {
+			delete_units = { division_template = "Infantry Division" disband = yes }
+			delete_units = { division_template = "National Guard Infantry Division" disband = yes }
+			delete_units = { division_template = "Cavalry Division" disband = yes }
+			delete_units = { division_template = "National Guard Cavalry Division" disband = yes }
+			delete_units = { division_template = "Armored Cavalry Division" disband = yes }
+			delete_units = { division_template = "Marine Division" disband = yes }
+			USA_spawn_starting_civil_war_divisions = yes
+			if = {
+				limit = { USA_has_blue_america_cosmetic_tag = yes }
+				set_cosmetic_tag = USA_ACW
+			}
+			else = {
+				set_cosmetic_tag = USA_ACW_macarthur
+			}
+			WCA = { transfer_technology_without_doctrines = yes }
+			if = {
+				limit = { has_country_flag = USA_ACW_austerity_rejected }
+				WCA = {
+					add_political_power = 100
+					add_manpower = 150000
+					add_war_support = 0.10
+					add_stability = 0.15
+				}
+				send_equipment_fraction = { target = WCA value = 0.4 }
+			}
+			else = {
+				send_equipment_fraction = { target = WCA value = 0.2 }
+			}
+			set_political_party = { ideology = totalist popularity = 0 }
+			set_political_party = { ideology = syndicalist popularity = 0 }
+			set_political_party = { ideology = radical_socialist popularity = 0 }
+			every_other_country = {
+				limit = { has_socialist_government = yes }
+				embargo_PREV = yes
+			}
+		}
+
+		every_owned_state = {
+			limit = { is_core_of = WCA }
+			transfer_state_to = WCA
+			teleport_armies = {
+				limit = { is_ally_with = USA }
+				to_state_array = owned_controlled_states
+			}
+		}
+
+		every_core_state = {
+			limit = {
+				NOT = {
+					is_core_of = WCA
+					is_claimed_by = WCA
+					state = 630 #Johnston Atoll
+					state = 631 #Midway Island
+					state = 632 #Wake Island
+					state = 638 #Guam
+					state = 685 #Panama Canal
+					state = 686 #Puerto Rico
+					state = 726 #Samoa
+					state = 727 #Line Islands
+				}
+			}
+			add_claim_by = WCA
+		}
+
+		WCA_herbert_charles_heitke = {
+			set_leader_description = WCA_herbert_charles_heitke_WCA_commander_desc
+			set_nationality = WCA
+		}
+		WCA_smedley_butler = {
+			set_leader_description = WCA_smedley_butler_WCA_commander_desc
+			promote_leader = yes
+			set_nationality = WCA
+		}
+
+		WCA_jack_reed = { set_nationality = WCA }
+		WCA_norman_thomas = { set_nationality = WCA }
+		WCA = {
+			add_civil_war_target = USA
+			promote_character = WCA_jack_reed
+			promote_character = WCA_norman_thomas
+			every_owned_state = {
+				set_demilitarized_zone = no
+				USA_remove_support_modifiers_from_state = yes
+			}
+			WCA_james_kelly_parsons = {
+				add_timed_unit_leader_trait = { trait = recently_promoted days = 100 }
+			}
+
+			WCA_john_whiteside_parsons = { set_nationality = PREV }
+			WCA_julius_robert_oppenheimer = { set_nationality = PREV }
+			WCA_karl_probst = { set_nationality = PREV }
+			WCA_peyton_marshall_magruder = { set_nationality = PREV }
+
+			set_temp_variable = { coalition_partner_var = token:totalist }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:radical_socialist }
+			add_to_coalition = yes
+
+			if = {
+				limit = { has_dlc_bba = yes }
+				load_oob = ACW_WCA_air_bba
+			}
+			else = {
+				load_oob = ACW_WCA_air_legacy
+			}
+
+			add_ideas = WCA_red_guard_militias_1
+			WCA_spawn_starting_civil_war_divisions = yes
+			WCA_add_extra_units_based_on_strength = yes
+			unit_limit_calculation_effect = yes
+
+			every_other_country = {
+				limit = { NOT = { is_in_faction_with = ENT } }
+				clear_embargo_PREV = yes
+			}
+
+			country_event = { id = america_workers_congress_events.150 days = 6 } # Initialization event
+			country_event = { id = american_civil_war_events.30 days = 40 random_days = 10 } # Dealing with the Rich
+			country_event = { id = american_civil_war_events.38 days = 70 random_days = 20 } # Revolutionary Propaganda
+			country_event = { id = american_civil_war_events.36 days = 100 random_days = 20 } # Internal Conflicts
+			country_event = { id = american_civil_war_events.40 days = 130 random_days = 20 } # Protecting against Saboteurs
+			country_event = { id = american_civil_war_events.41 days = 160 random_days = 20 } # Red Terror
+			country_event = { id = american_civil_war_events.41 days = 245 random_days = 20 } # Winter Resource Allocation Program
+
+			set_temp_variable = { days_to_event = 1633 }
+			calculate_days_since_game_start = yes
+			country_event = { id = america_workers_congress_events.216 days = days_to_event random_days = 180 } #Smedley Butler Passes Away
+		}
+
+		every_owned_state = {
+			limit = {
+				is_owned_by = USA
+				is_new_england = yes
+			}
+			set_demilitarized_zone = yes
+		}
+		359 = { set_demilitarized_zone = yes } #New Jersey
+		391 = { set_demilitarized_zone = yes } #Minnesota
+		392 = { set_demilitarized_zone = yes } #Iowa
+		if = {
+			limit = {
+				has_country_flag = USA_ACW_austerity_rejected
+				NOT = { has_country_flag = USA_ACW_borah_complete_success }
+			}
+			369 = { set_demilitarized_zone = yes } #Kentucky
+			373 = { set_demilitarized_zone = yes } #Missouri
+		}
+
+		#Inherit MIO levels and funds
+		if = {
+			limit = { has_dlc_aat = yes }
+			set_temp_variable = { USA_mio_transfer_originator = USA }
+			set_temp_variable = { USA_mio_transfer_target = WCA }
+			USA_transfer_mio_size_and_funds = yes
+		}
+	}
+}
+
+USA_release_APG = {
+	set_global_flag = USA_APG_existed
+	effect_tooltip = { release = APG }
+	hidden_effect = {
+		APG = {
+			add_state_core = 150 #Louisiana
+			add_state_core = 364 #South Carolina
+			add_state_core = 365 #Georgia
+			add_state_core = 366 #Florida
+			add_state_core = 367 #Alabama
+			add_state_core = 370 #Mississippi
+			add_state_core = 371 #New Orleans
+			add_state_core = 372 #Arkansas
+			add_state_core = 374 #Oklahoma
+			add_state_core = 375 #Northern Texas
+			add_state_core = 833 #Southern Texas
+			set_cosmetic_tag = APG_ACW
+		}
+
+		USA = {
+			APG = { transfer_technology_without_doctrines = yes }
+			send_equipment_fraction = { target = APG value = 0.312 } #31,2% of the remaining 80% = ~25%
+			set_political_party = { ideology = authoritarian_democrat popularity = 0 }
+			set_political_party = { ideology = national_populist popularity = 0 }
+			set_political_party = { ideology = syndicalist popularity = 0 }
+		}
+
+		every_owned_state = {
+			limit = { is_core_of = APG }
+			transfer_state_to = APG
+			teleport_armies = {
+				limit = { tag = USA }
+				to_state_array = owned_controlled_states
+			}
+		}
+
+		every_core_state = {
+			limit = {
+				NOT = {
+					is_core_of = APG
+					is_claimed_by = APG
+					state = 630 #Johnston Atoll
+					state = 631 #Midway Island
+					state = 632 #Wake Island
+					state = 638 #Guam
+					state = 685 #Panama Canal
+					state = 686 #Puerto Rico
+					state = 726 #Samoa
+					state = 727 #Line Islands
+				}
+			}
+			add_claim_by = APG
+		}
+
+		APG_fox_conner = {
+			promote_leader = yes
+			set_nationality = APG
+		}
+		APG_george_smith_patton = {
+			set_leader_description = APG_george_smith_patton_APG_commander_desc
+			set_nationality = APG
+		}
+		APG_george_van_horn_moseley = {
+			set_leader_description = APG_george_van_horn_moseley_theorist_desc
+			promote_leader = yes
+			set_nationality = APG
+			promote_character = paternal_autocrat_subtype
+		}
+
+		set_global_flag = ACW_southern_vps_changed
+		set_victory_points = { province = 1453 value = 25 } #Baton Rouge
+		set_victory_points = { province = 12401 value = 10 } #Shreveport
+		set_victory_points = { province = 12735 value = 15 } #Birmingham
+		set_victory_points = { province = 492 value = 15 } #Montgomery
+		set_victory_points = { province = 4565 value = 15 } #Jackson
+		set_victory_points = { province = 10407 value = 15 } #Tallahassee
+		set_victory_points = { province = 7480 value = 10 } #Montgomery
+		set_victory_points = { province = 11975 value = 10 } #Savannah
+		set_victory_points = { province = 12489 value = 10 } #Little Rock
+		set_victory_points = { province = 4464 value = 10 } #Biloxi
+		set_victory_points = { province = 4507 value = 5 } #Lafayette
+
+		APG_huey_long = {
+			set_nationality = APG
+			promote_character = authoritarian_democrat_subtype
+			promote_character = national_populist_subtype
+		}
+		APG = {
+			add_civil_war_target = USA
+			add_civil_war_target = WCA
+			APG_emory_scott_land = { set_nationality = PREV }
+			APG_john_walter_christie = { set_nationality = PREV }
+			APG_robert_hutchings_goddard = { set_nationality = PREV }
+
+			every_owned_state = {
+				set_demilitarized_zone = no
+				USA_remove_support_modifiers_from_state = yes
+			}
+
+			set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
+			add_to_coalition = yes
+
+			every_other_country = {
+				limit = { has_socialist_government = yes }
+				embargo_PREV = yes
+			}
+
+			if = {
+				limit = { has_dlc_bba = yes }
+				load_oob = ACW_APG_air_bba
+			}
+			else = {
+				load_oob = ACW_APG_air_legacy
+			}
+
+			APG_spawn_starting_civil_war_divisions = yes
+			APG_add_extra_units_from_strength = yes
+			unit_limit_calculation_effect = yes
+
+			if = {
+				limit = { USA = { has_country_flag = USA_long_was_president } }
+				add_timed_idea = {
+					idea = APG_righteous_nation
+					days = 120
+				}
+			}
+
+			country_event = { id = america_peoples_government_events.150 days = 7 } #Initial Events
+			country_event = { id = american_civil_war_events.46 days = 10 } # Appeal to Reason
+		}
+
+		363 = { set_demilitarized_zone = yes } #North Carolina
+		368 = { set_demilitarized_zone = yes } #Tennessee
+		833 = { set_demilitarized_zone = yes } #South Texas
+
+		#Inherit MIO levels and funds
+		if = {
+			limit = { has_dlc_aat = yes }
+			set_temp_variable = { USA_mio_transfer_originator = USA }
+			set_temp_variable = { USA_mio_transfer_target = APG }
+			USA_transfer_mio_size_and_funds = yes
+		}
+	}
+}
+
+USA_civil_war_begins = {
+	hidden_effect = {
+		if = {
+			limit = { NOT = { has_global_flag = USA_civil_war_begun_flag } }
+			set_global_flag = USA_civil_war_begun_flag
+			log = "KR_Event_Logging;ACW START"
+			if = {
+				limit = { country_exists = APG }
+				log = "KR_Event_Logging;AUS JOINS ACW"
+			}
+			if = {
+				limit = { country_exists = WCA }
+				log = "KR_Event_Logging;WCA JOINS ACW"
+			}
+			if = {
+				limit = { country_exists = ACC }
+				log = "KR_Event_Logging;ACC JOINS ACW"
+			}
+
+			#declarations of war
+			if = {
+				limit = { country_exists = WCA }
+				WCA = { declare_war_on = { target = USA type = civil_war } }
+			}
+			if = {
+				limit = { country_exists = APG }
+				APG = { declare_war_on = { target = USA type = civil_war } }
+			}
+			if = {
+				limit = {
+					country_exists = WCA
+					country_exists = APG
+				}
+				WCA = { declare_war_on = { target = APG type = civil_war } }
+			}
+			if = {
+				limit = { country_exists = ACC }
+				WCA = { declare_war_on = { target = ACC type = civil_war } }
+				APG = { declare_war_on = { target = ACC type = civil_war } }
+				ACC = { declare_war_on = { target = USA type = civil_war } }
+			}
+
+			if = {
+				limit = { country_exists = WCA }
+				WCA = {
+					country_event = { id = american_civil_war_events.313 days = 1 }
+					country_event = { id = american_civil_war_events.90 days = 90 }
+					add_ideas = amcivwar_idea_WCA
+					if = {
+						limit = { USA = { has_country_flag = USA_ACW_austerity_rejected } }
+						add_timed_idea = { idea = ACW_fired_up days = 180 }
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = APG }
+				APG = {
+					country_event = { id = american_civil_war_events.90 days = 90 }
+					add_ideas = amcivwar_idea_APG
+				}
+			}
+			if = {
+				limit = { country_exists = ACC }
+				ACC = {
+					country_event = { id = american_civil_war_events.90 days = 90 }
+					add_ideas = amcivwar_idea_ACC
+				}
+			}
+
+			# remove USA cores in uncontrolled territory
+			every_state = {
+				limit = { is_core_of = USA }
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = WCA
+							is_controlled_by = APG
+							is_controlled_by = ACC
+						}
+					}
+					remove_core_of = USA
+					add_claim_by = USA
+				}
+			}
+
+			#hidden looping event for ACW desertions
+			USA = { country_event = { id = american_civil_war_events.803 days = 1185 random_days = 100 } }
+			WCA = { country_event = { id = american_civil_war_events.803 days = 1185 random_days = 100 } }
+			NEE = { country_event = { id = american_civil_war_events.803 days = 1185 random_days = 100 } }
+			ACC = { country_event = { id = american_civil_war_events.803 days = 1185 random_days = 100 } }
+			APG = { country_event = { id = american_civil_war_events.803 days = 1185 random_days = 100 } }
+
+			USA = {
+				country_event = { id = hawaii_events.1 days = 1 random_days = 3 } # Hawaii Rebels
+				country_event = { id = american_civil_war_events.61 days = 2 random_days = 3 } # Conscription
+				country_event = { id = american_civil_war_events.62 days = 30 } # Recall the China Marines?
+				country_event = { id = american_civil_war_events.63 days = 6 } # Emergency Stockpiles
+				if = {
+					limit = { NOT = { has_country_flag = USA_ACW_austerity_rejected } }
+					country_event = { id = american_civil_war_events.90 days = 90 }
+				}
+				add_ideas = amcivwar_idea_USA
+				add_named_threat = {
+					threat = 12
+					name = american_civil_war_threat
+				}
+
+				# remove guarantees
+				if = {
+					limit = { GUA = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = GUA relation = guarantee active = no }
+				}
+				if = {
+					limit = { ELS = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = ELS relation = guarantee active = no }
+				}
+				if = {
+					limit = { HON = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = HON relation = guarantee active = no }
+				}
+				if = {
+					limit = { COS = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = COS relation = guarantee active = no }
+				}
+				if = {
+					limit = { PAN = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = PAN relation = guarantee active = no }
+				}
+				if = {
+					limit = { LEC = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = LEC relation = guarantee active = no }
+				}
+				if = {
+					limit = { HAI = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = HAI relation = guarantee active = no }
+				}
+				if = {
+					limit = { DOM = { is_guaranteed_by = USA } }
+					diplomatic_relation = { country = DOM relation = guarantee active = no }
+				}
+				if = {
+					limit = { HAI = { gives_military_access_to = USA } }
+					diplomatic_relation = { country = HAI relation = military_access active = no }
+				}
+				if = {
+					limit = { DOM = { gives_military_access_to = USA } }
+					diplomatic_relation = { country = DOM relation = military_access active = no }
+				}
+
+				country_event = { id = american_civil_war_events.65 days = 40 random_days = 10 } # Martial Law?
+				country_event = { id = american_civil_war_events.64 days = 90 random_days = 10 } # Hardtransfer_ship of the civil war
+				country_event = { id = american_civil_war_events.66 days = 120 random_days = 20 } # Loyalist Terror
+				country_event = { id = american_civil_war_events.67 days = 150 random_days = 20 } # Native American Code talkers
+				country_event = { id = american_civil_war_events.69 days = 180 random_days = 20 } # Double V Campaign
+				country_event = { id = american_civil_war_events.70 days = 200 random_days = 20 } # Militarize the WASPs?
+
+				news_event = { id = united_states_events.1000 hours = 4 } #main news event
+			}
+			WCA = {
+				country_event = { id = american_civil_war_events.35 days = 40 random_days = 80 } # Female Soldiers
+				country_event = { id = american_civil_war_events.34 days = 60 random_days = 120 } # Red Witches
+				country_event = { id = american_civil_war_events.32 days = 120 random_days = 240 } # Life During Wartime
+			}
+			ACC = {
+				country_event = { id = american_civil_war_events.62 days = 30 } # Recall the China Marines?
+			}
+
+			# Canada receives notification
+			CAN = {
+				country_event = { id = american_civil_war_events.150 hours = 8 }
+				country_event = { id = american_civil_war_events.151 days = 7 hours = 8 }
+			}
+
+			# USA colony events
+			LIB = { country_event = { id = american_civil_war_events.212 hours = 8 } }
+			PHI = { country_event = { id = philippines_political_events.020 hours = 8 } } #The Declaration of the Republic
+
+			# ACW related events for non-US nations
+			PAN = {
+				country_event = { id = panama_events.5 days = 2 }
+				remove_targeted_decision = { target = COS decision = PAN_pressure_coto_36 }
+				if = {
+					limit = { has_idea = CEN_monroe_doctrine }
+					activate_targeted_decision = { target = USA decision = PAN_remove_monroe }
+				}
+			}
+			COS = {
+				country_event = { id = costa_rica_events.23 days = 5 random_days = 15 }
+			}
+			NIC = {
+				country_event = { id = nicaragua_events.41 days = 3 }
+			}
+			ELS = {
+				country_event = { id = el_salvador_events.106 days = 3 }
+			}
+			HON = {
+				country_event = { id = honduras_events.101 days = 10 }
+			}
+			GUA = {
+				country_event = { id = guatemala_events.4 days = 3 }
+			}
+			MEX = {
+				activate_targeted_decision = { target = USA decision = MEX_nationalize_oil }
+				if = {
+					limit = { has_socialist_government = yes }
+					activate_targeted_decision = { target = WCA decision = MEX_intervene_WCA }
+					activate_targeted_decision = { target = GUA decision = MEX_support_socialists }
+					activate_targeted_decision = { target = ELS decision = MEX_support_socialists }
+					activate_targeted_decision = { target = HON decision = MEX_support_socialists }
+					activate_targeted_decision = { target = NIC decision = MEX_support_socialists }
+					activate_targeted_decision = { target = CEN decision = MEX_fight_reactionary_central_america }
+				}
+				if = {
+					limit = { has_government = national_populist }
+					activate_targeted_decision = { target = THIS decision = MEX_claim_central_america }
+					activate_targeted_decision = { target = THIS decision = MEX_reconquista_decision }
+				}
+			}
+			BRA = {
+				country_event = { id = brazil_events.203 days = 45 random_days = 180 } #Refugees from the ACW
+				country_event = { id = brazil_events.215 days = 90 random_days = 270 } #Increasing German Alignment
+			}
+			HAI = {
+				country_event = { id = haiti_events.15 days = 7 random_days = 3 } #Haiti breaks free
+			}
+			HOL = {
+				country_event = { id = netherlands_post_election_events.43 days = 45 random_days = 45 }
+			}
+			QIE = {
+				if = {
+					limit = { has_country_leader = { character = QIE_hu_shih } }
+					country_event = { id = qing_flavour_events.10 days = 30 random_days = 4 } #Edith Clifford Williams
+				}
+			}
+			PAL = {
+				country_event = palestine_events.5
+			}
+			LEC = {
+				country_event = { id = legation_cities_american_events.11 days = 5 }
+			}
+			IRE = {
+				IRE_ACW_start_effect = yes
+			}
+			RUS = {
+				country_event = { id = russia_flavour_events.123 days = 30 random_days = 30 } #The American Kolchak
+			}
+		}
+	}
+}
+
+USA_civil_war_ends = {
+	hidden_effect = {
+		if = {
+			limit = { NOT = { has_global_flag = USA_civil_war_over_flag } }
+			set_global_flag = USA_civil_war_over_flag
+			USA = {
+				clr_country_flag = ACW_is_recruiting
+				if = {
+					limit = { has_cosmetic_tag = USA_ACW }
+					USA_swap_to_blue_cosmetic_tag = yes
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_cosmetic_tag = USA_ACW_colourless
+							has_cosmetic_tag = USA_ACW_macarthur
+						}
+					}
+					USA_swap_to_colourless_cosmetic_tag = yes
+				}
+				if = {
+					limit = { exists = no }
+					remove_ideas = amcivwar_idea_USA
+					add_ideas = {
+						civilian_economy
+						volunteer_only
+						USA_civil_war_aftermath_idea
+						USA_civil_war_depression_idea
+					}
+				}
+			}
+			APG = {
+				clr_country_flag = ACW_is_recruiting
+				if = {
+					limit = { has_cosmetic_tag = APG_ACW }
+					drop_cosmetic_tag = yes
+				}
+				if = {
+					limit = { exists = no }
+					remove_ideas = amcivwar_idea_APG
+					add_ideas = {
+						civilian_economy
+						volunteer_only
+						USA_civil_war_aftermath_idea
+						USA_civil_war_depression_idea
+					}
+				}
+			}
+			WCA = {
+				clr_country_flag = ACW_is_recruiting
+				if = {
+					limit = { has_cosmetic_tag = WCA_ACW }
+					drop_cosmetic_tag = yes
+				}
+				if = {
+					limit = { exists = no }
+					remove_ideas = amcivwar_idea_WCA
+					add_ideas = {
+						civilian_economy
+						volunteer_only
+						USA_civil_war_aftermath_idea
+						USA_civil_war_depression_idea
+					}
+				}
+			}
+			ACC = {
+				clr_country_flag = ACW_is_recruiting
+				if = {
+					limit = { has_cosmetic_tag = ACC_ACW }
+					drop_cosmetic_tag = yes
+				}
+				if = {
+					limit = { exists = no }
+					remove_ideas = amcivwar_idea_ACC
+					add_ideas = {
+						civilian_economy
+						volunteer_only
+						USA_civil_war_aftermath_idea
+						USA_civil_war_depression_idea
+					}
+				}
+			}
+			every_collection_element = {
+				input = collection:all_mainland_american_states
+				clr_state_flag = ACW_recruited_militias
+				USA = { remove_targeted_decision = { decision = ACW_recruit_in_state target = PREV } }
+				WCA = { remove_targeted_decision = { decision = ACW_recruit_in_state target = PREV } }
+				APG = { remove_targeted_decision = { decision = ACW_recruit_in_state target = PREV } }
+				ACC = { remove_targeted_decision = { decision = ACW_recruit_in_state target = PREV } }
+			}
+			every_state = {
+				limit = {
+					owner = {
+						is_american_tag = yes
+						if = {
+							limit = { tag = NEE }
+							has_country_flag = NEE_entered_the_civil_war
+						}
+					}
+					arms_factory > 2
+				}
+				set_temp_variable = { state_factories = building_level@arms_factory }
+				subtract_from_temp_variable = { state_factories = 1 }
+				remove_building = { type = arms_factory level = state_factories }
+				subtract_from_temp_variable = { state_factories = 1 }
+				add_building_construction = { type = industrial_complex level = state_factories instant_build = yes }
+			}
+			every_country = {
+				USA = { remove_all_volunteer_relation_modifiers_from_PREV = yes }
+				WCA = { remove_all_volunteer_relation_modifiers_from_PREV = yes }
+				NEE = { remove_all_volunteer_relation_modifiers_from_PREV = yes }
+				ACC = { remove_all_volunteer_relation_modifiers_from_PREV = yes }
+				APG = { remove_all_volunteer_relation_modifiers_from_PREV = yes }
+			}
+			MEX = {
+				country_event = { id = mexico_events.135 days = 60 random_days = 300 }
+				remove_targeted_decision = { target = WCA decision = MEX_intervene_WCA }
+			}
+			BRA = {
+				country_event = { id = brazil_events.204 days = 15 random_days = 45 } #The Last Democracy?
+				country_event = { id = brazil_events.205 days = 30 random_days = 90 } #Send Osvaldo Aranha to the United States?
+			}
+			IRE = {
+				IRE_ACW_end_effect = yes
+			}
+			CUB = {
+				remove_targeted_decision = { target = THIS decision = CUB_waited_promotesoc_WCAdecision }
+				remove_targeted_decision = { target = THIS decision = CUB_waited_promotenonsoc_USAdecision }
+				remove_targeted_decision = { target = THIS decision = CUB_waited_promotenonsoc_ACCdecision }
+				remove_targeted_decision = { target = THIS decision = CUB_waited_promotenonsoc_APGdecision }
+				remove_targeted_decision = { target = THIS decision = CUB_waited_promotesoc_noWCAdecision }
+			}
+
+			#Power Projection event for Russia
+			RUS = { country_event = { id = russia_foreign_policy_events.258 days = 1 } }
+		}
+	}
+}
+
+USA_macarthur_coup_effect = {
+	set_politics = {
+		ruling_party = paternal_autocrat
+		elections_allowed = yes
+	}
+	USA_united_states_congress = {
+		custom_effect_tooltip = {
+			localization_key = tooltip_replace_character_trait
+			ROLE = second_in_command
+			OLD_TRAIT = KR_parliament_sic
+			NEW_TRAIT = KR_authoritarian_sic
+		}
+		effect_tooltip = {
+			set_temp_variable = { modifier_change_tt = 0.05 tooltip = stability_factor_tooltip }
+			set_temp_variable = { modifier_change_tt = 0.10 tooltip = war_support_factor_tooltip }
+			set_temp_variable = { modifier_change_tt = -0.08 tooltip = political_power_factor_tooltip }
+		}
+	}
+	hidden_effect = {
+		remove_mission = USA_father_coxs_march
+		USA_swap_to_colourless_cosmetic_tag = yes
+		country_event = { id = united_states_crisis_events.309 days = 1 }
+		country_event = { id = united_states_events.283 days = 6 }
+		LEC = { country_event = { id = legation_cities_american_events.8 days = 1 } }
+	}
+}

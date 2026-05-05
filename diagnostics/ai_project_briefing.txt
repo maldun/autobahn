@@ -1,0 +1,279 @@
+AI PROJECT BRIEFING
+Generated: 2026-05-04
+Workspace: D:\Downloads\OneDrive\Documents\code\autobahn
+
+What This Project Is
+This project is a Hearts of Iron IV mod-stack compatibility recovery effort centered on a Kaiserreich playset running on HOI4 1.18.x.
+
+The user is not asking for abstract advice. The goal is to:
+- identify real script and content conflicts across the active mod stack,
+- build the smallest reliable local fixes or compatches,
+- verify them with logs and in-game smoke tests,
+- and leave behind a stable, documented playset.
+
+This file is meant to be a fast handoff for any other AI system. It should be read before making changes.
+
+Primary Mission
+Get the user's Kaiserreich playset working harmoniously again.
+
+That means:
+- Kaiserreich core gameplay must work.
+- The 2ACW chain must work normally.
+- Major UI/designer/navy crash seams must be gone.
+- The error log must be reduced from runaway spam to manageable residual noise.
+- Any local compatches should be as small and source-traceable as possible.
+
+Ground Rules
+1. Treat Kaiserreich as the gameplay source of truth.
+2. Prefer surgical compatibility work over broad rewrites.
+3. Do not assume one mod is the only problem. The current stack has multiple simultaneous failure sources.
+4. Do not keep stale local shims alive just because they existed earlier.
+5. Use logs and effective file ownership, not workshop descriptions alone, to determine responsibility.
+
+Important Paths
+Game install:
+E:\SteamLibrary\steamapps\common\Hearts of Iron IV
+
+User data:
+E:\Games\Paradox Interactive\Hearts of Iron IV
+
+Primary logs:
+E:\Games\Paradox Interactive\Hearts of Iron IV\logs\error.log
+E:\Games\Paradox Interactive\Hearts of Iron IV\logs\game.log
+E:\Games\Paradox Interactive\Hearts of Iron IV\logs\system.log
+
+Workshop root:
+E:\SteamLibrary\steamapps\workshop\content\394360
+
+Current working repo:
+D:\Downloads\OneDrive\Documents\code\autobahn
+
+Related local source repo:
+D:\Downloads\OneDrive\Documents\code\knr-kr-runtime-fix
+
+Most Relevant Repo Diagnostics
+- diagnostics\kr_playset_recovery_roadmap.txt
+- diagnostics\extracted_log_errors.md
+- diagnostics\file_ownership.md
+- diagnostics\mod_source_map.md
+- diagnostics\consistency_audit.md
+
+Known Historical Context
+Earlier in this effort, the major visible bug was a broken Kaiserreich 2ACW chain when Autobahn was enabled.
+
+That earlier issue was traced to an old Autobahn override of KR ACW scripted effects. A local 2ACW fix mod was created and the civil war chain was successfully restored at that time.
+
+However, the mod ecosystem later updated:
+- Kaiserreich updated
+- KNR updated
+- Autobahn updated
+
+After those updates, the old Autobahn 2ACW seam no longer appears to be the main active problem. The earlier local Autobahn ACW fix now looks obsolete and possibly risky to keep enabled.
+
+Current High-Level Conclusion
+The present problem is no longer "the 2ACW bug."
+
+The current problem is that the user's playset has drifted into a multi-mod compatibility failure state with several active sources of breakage:
+- Autobahn drift
+- KNR drift
+- a stale Autobahn <-> KNR compatch
+- multiple Better Mechanics modules generating large runtime error volumes
+- Expanded Tank Designer overriding current designer assumptions
+
+Current Goals in Order
+1. Stabilize the core KR + Autobahn + KNR stack.
+2. Rebuild or replace the stale Autobahn <-> KNR compatch.
+3. Keep KNR-specific fixes that still solve live breakpoints.
+4. Remove or replace obsolete local patches.
+5. Reintroduce secondary mods in batches and patch only what proves necessary.
+
+What Has Already Been Proven
+1. The current error volume is dominated by a small number of winning files and stale overrides.
+2. Effective file ownership matters more than dependency lists.
+3. The old Autobahn KR 2ACW fix is likely obsolete now.
+4. The KNR runtime fix still addresses real live seams.
+5. The active Autobahn <-> KNR compatch is stale and likely needs rebuilding.
+6. Several Better Mechanics modules are not just noisy; they are actively incompatible with the current stack.
+
+Current Mod-Level Assessment
+Kaiserreich
+- Treat as source of truth for gameplay behavior.
+- Not the main culprit for the highest-volume current log spam.
+- Some parser or doctrine-related errors may still appear, but do not assume KR is the root cause when later mods win the file.
+
+Autobahn nach 56
+- Still appears to own major live errors in aircraft/equipment, special forces, and graphics database seams.
+- It is currently the winning owner for plane_airframes.txt and special_forces_doctrine.txt.
+- It contains stale idea checks that do not exist in the current KR stack.
+
+Kaiserreich Naval Rework
+- Still contains the known has_navy_size character-scope problem in naval traits.
+- Still appears to suppress or drift away from some current KR naval project content.
+- Needs continued local compatibility support unless upstream has fixed those exact seams.
+
+Autobahn nach 56 and Kaiserreich Naval Rework Compatch
+- Appears stale.
+- Its current override set is small, but at least some of those files look like old frozen merges rather than valid current merges.
+- It likely needs a rebuild against current upstreams.
+
+Better Mechanics modules
+- Must not be treated as one monolith.
+- Some are probably salvageable.
+- Some are currently too stale and should be disabled until proven otherwise.
+- The worst current modules are:
+  - Better Mechanics : Supply Production Health
+  - Better Mechanics : AI Divisions
+  - Better Mechanics : AI Designs
+  - Better Mechanics : Extended Projects
+  - Better Mechanics : Namelists
+
+Expanded Tank Designer - Even More Fixed!+
+- Currently a strong removal candidate.
+- It is winning tank_chassis.txt and likely causing designer/module setup incompatibilities.
+
+Local compatibility mods
+- Autobahn KR 2ACW Fix:
+  likely obsolete now; do not assume it should remain enabled.
+- KNR KR Runtime Fix:
+  likely still useful; should be updated and retained unless a new upstream KNR release makes it unnecessary.
+
+Most Important Live Findings
+1. Autobahn plane_airframes drift
+Winning file:
+E:\SteamLibrary\steamapps\workshop\content\394360\2823622716\common\units\equipment\plane_airframes.txt
+
+Why it matters:
+- It drives extremely large invalid-idea spam in error.log.
+- It still references ideas like BUL_army_restrictions, MPL_mandate, and old German treaty ideas.
+
+2. Expanded Tank Designer drift
+Winning file:
+E:\SteamLibrary\steamapps\workshop\content\394360\3366131759\common\units\equipment\tank_chassis.txt
+
+Why it matters:
+- It likely causes invalid module setup and designer drift.
+- It should not be patched before the core triad is stable.
+
+3. Better Mechanics Supply Production Health spam
+Winning files include:
+- common/scripted_effects/BM_supplyhealth_scripted_effects.txt
+- common/decisions/BM_supplyhealth_decisions.txt
+- common/scripted_localisation/BM_supplyhealth_scripted_localisation.txt
+
+Why it matters:
+- It repeatedly checks dead KR ideas and invalid tech references.
+- It is a major high-noise module and should be removed from baseline testing.
+
+4. Better Mechanics AI drift
+Winning files include:
+- common/ai_strategy/00_production.txt
+- common/ai_strategy/DAI_Air_Composition.txt
+- common/ai_equipment/generic_tank.txt
+
+Why it matters:
+- It references invalid techs, invalid triggers, and obsolete equipment/module names.
+
+5. Better Mechanics Namelists parser breakage
+Why it matters:
+- It appears parser-broken under current HOI4/KR schema.
+- It should stay out of the baseline debug playset.
+
+6. KNR naval trait and naval project seams
+Why it matters:
+- The admiral/navy crash seam likely intersects here.
+- KNR still appears to need a runtime compatibility patch.
+
+7. Stale Autobahn <-> KNR compatch
+Why it matters:
+- It is likely suppressing newer KNR or KR content with outdated merged files.
+
+Core Strategy
+The right strategy is staged isolation, not broad editing.
+
+Stage 1
+Create a stripped-down debug playset with only:
+- Kaiserreich
+- Autobahn nach 56
+- Kaiserreich Naval Rework
+- Autobahn nach 56 and Kaiserreich Naval Rework Compatch
+- KNR KR Runtime Fix
+
+Stage 2
+Clear logs and test that core stack only.
+
+Stage 3
+If the core stack is still unstable:
+- rebuild the compatch,
+- revalidate KNR runtime fixes,
+- patch Autobahn's biggest live compatibility seams.
+
+Stage 4
+Only after the core triad is stable, reintroduce secondary mods in batches.
+
+Critical Decision Rules
+Patch a mod if:
+- the mod is valuable to the user,
+- the break is clearly localized,
+- and the required fix surface is small.
+
+Remove or disable a mod if:
+- it wins broad foundational files,
+- it generates large repeat-spam against dead ideas/techs,
+- or it requires large stale forks just to load cleanly.
+
+Do Not
+- do not patch Better Mechanics or Expanded Tank Designer first
+- do not rebuild half the stack before a clean baseline exists
+- do not keep the old 2ACW fix alive without retesting whether it still serves a purpose
+- do not trust supported_version metadata alone
+- do not assume current log spam is all caused by KR
+
+Recommended Immediate Next Steps
+1. Build the KR Harmony Debug playset.
+2. Disable the non-core high-noise modules.
+3. Run a clean baseline test and archive the logs.
+4. Use that baseline result to decide whether the first real patch target is:
+   - the Autobahn <-> KNR compatch,
+   - KNR runtime fixes,
+   - or Autobahn core content drift.
+
+Expected Likely First Patch Targets
+In order of likelihood:
+1. Autobahn <-> KNR compatch rebuild
+2. KNR runtime fix refresh
+3. Autobahn plane_airframes compatibility cleanup
+4. Autobahn GUI/graphics database cleanup
+
+Validation Standard
+Success does not require a mathematically empty error.log.
+
+Success does require:
+- no runaway repeated dead-reference spam,
+- no major parser failures,
+- no obvious crash seams in navy/designer/UI interactions,
+- and normal KR gameplay behavior including the 2ACW.
+
+How to Update This File
+When new facts are established, add:
+- what was tested,
+- what changed,
+- what the result proved,
+- and whether it affects the recommended next step.
+
+Suggested update format:
+Date:
+Tester:
+Change:
+Evidence:
+Conclusion:
+Next step:
+
+Final Orientation for Another AI
+If you are picking this up cold:
+- start with diagnostics\kr_playset_recovery_roadmap.txt
+- use this briefing as the mental model
+- verify the current playset state before editing anything
+- then execute the baseline-isolation strategy before attempting broad fixes
+
+Short version:
+This project is now a controlled playset stabilization effort, not a single-event bug hunt.

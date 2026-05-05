@@ -1,0 +1,843 @@
+[
+  {
+    "order": 1,
+    "descriptor_ref": "mod/ugc_1521695605.mod",
+    "name": "Kaiserreich",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\1521695605",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_1521695605.mod",
+    "supported_version": "1.18.1.*",
+    "replace_path": [
+      "common/abilities",
+      "common/ai_areas",
+      "common/ai_equipment",
+      "common/ai_focuses",
+      "common/ai_navy/fleet",
+      "common/ai_navy/goals",
+      "common/ai_navy/taskforce",
+      "common/ai_strategy",
+      "common/ai_strategy_plans",
+      "common/ai_templates",
+      "common/autonomous_states",
+      "common/bookmarks",
+      "common/bop",
+      "common/characters",
+      "common/collections",
+      "common/continuous_focus",
+      "common/countries",
+      "common/country_leader",
+      "common/country_tag_aliases",
+      "common/country_tags",
+      "common/decisions",
+      "common/decisions/categories",
+      "common/difficulty_settings",
+      "common/doctrines/subdoctrines/air",
+      "common/doctrines/subdoctrines/land",
+      "common/doctrines/subdoctrines/sea",
+      "common/dynamic_modifiers",
+      "common/factions/goals",
+      "common/factions/rules",
+      "common/factions/rules/groups",
+      "common/factions/templates",
+      "common/focus_inlay_windows",
+      "common/game_rules",
+      "common/idea_tags",
+      "common/ideas",
+      "common/ideologies",
+      "common/military_industrial_organization/organizations",
+      "common/modifiers",
+      "common/modifier_definitions",
+      "common/names",
+      "common/national_focus",
+      "common/on_actions",
+      "common/operations",
+      "common/opinion_modifiers",
+      "common/peace_conference/ai_peace",
+      "common/peace_conference/categories",
+      "common/peace_conference/cost_modifiers",
+      "common/raids",
+      "common/scorers/country",
+      "common/scripted_diplomatic_actions",
+      "common/scripted_effects",
+      "common/scripted_guis",
+      "common/scripted_localisation",
+      "common/scripted_triggers",
+      "common/special_projects/projects",
+      "common/special_projects/prototype_rewards",
+      "common/state_category",
+      "common/technologies",
+      "common/technology_sharing",
+      "common/technology_tags",
+      "common/units/codenames_operatives",
+      "common/units/names",
+      "common/units/names_divisions",
+      "common/units/names_railway_guns",
+      "common/units/names_ships",
+      "events",
+      "gfx/loadingscreens",
+      "gfx/flags",
+      "gfx/leaders",
+      "history/countries",
+      "history/general",
+      "history/states",
+      "history/units",
+      "map/strategicregions",
+      "map/supplyareas",
+      "portraits",
+      "tests"
+    ],
+    "remote_file_id": "1521695605",
+    "high_risk_domains": {
+      "common/technologies": 14,
+      "common/technology_tags": 1,
+      "common/units/equipment": 26,
+      "common/units/equipment/modules": 1,
+      "common/scripted_effects": 182,
+      "common/scripted_triggers": 110,
+      "common/ai_strategy": 81,
+      "common/ai_templates": 10,
+      "common/national_focus": 197,
+      "common/ideas": 196,
+      "common/special_projects": 14,
+      "common/military_industrial_organization": 95,
+      "history/countries": 257,
+      "history/units": 305,
+      "interface/countrytechtreeview.gui": 1,
+      "localisation": 567
+    }
+  },
+  {
+    "order": 2,
+    "descriptor_ref": "mod/ugc_2823622716.mod",
+    "name": "Autobahn nach 56",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2823622716",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2823622716.mod",
+    "supported_version": "1.17.*",
+    "replace_path": [],
+    "remote_file_id": "2823622716",
+    "high_risk_domains": {
+      "common/technologies": 22,
+      "common/technology_tags": 1,
+      "common/units/equipment": 45,
+      "common/units/equipment/modules": 4,
+      "common/scripted_effects": 1,
+      "common/ideas": 13,
+      "common/special_projects": 8,
+      "history/units": 13,
+      "interface/countrytechtreeview.gui": 1,
+      "localisation": 40
+    }
+  },
+  {
+    "order": 3,
+    "descriptor_ref": "mod/ugc_2862849828.mod",
+    "name": "Kaiserreich Naval Rework",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2862849828",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2862849828.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [
+      "common/units/names_ships",
+      "common/ai_navy/fleet",
+      "common/ai_navy/goals",
+      "common/ai_navy/taskforce"
+    ],
+    "remote_file_id": "2862849828",
+    "high_risk_domains": {
+      "common/technologies": 4,
+      "common/units/equipment": 23,
+      "common/units/equipment/modules": 10,
+      "common/scripted_effects": 9,
+      "common/scripted_triggers": 1,
+      "common/ai_strategy": 1,
+      "common/ideas": 3,
+      "common/special_projects": 4,
+      "history/countries": 1,
+      "history/units": 143,
+      "interface/countrytechtreeview.gui": 1,
+      "localisation": 17
+    }
+  },
+  {
+    "order": 4,
+    "descriptor_ref": "mod/ugc_2990847665.mod",
+    "name": "Autobahn nach 56 and Kaiserreich Naval Rework Compatch",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2990847665",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2990847665.mod",
+    "supported_version": "1.17.*",
+    "replace_path": [],
+    "remote_file_id": "2990847665",
+    "high_risk_domains": {
+      "common/units/equipment": 1,
+      "common/special_projects": 1,
+      "interface/countrytechtreeview.gui": 1
+    }
+  },
+  {
+    "order": 5,
+    "descriptor_ref": "mod/autobahn_kr_2acw_fix.local.mod",
+    "name": "Autobahn KR 2ACW Fix",
+    "root_path": "E:\\Games\\Paradox Interactive\\Hearts of Iron IV\\mod\\autobahn_kr_2acw_fix",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\autobahn_kr_2acw_fix.local.mod",
+    "supported_version": "1.17.*",
+    "replace_path": [],
+    "remote_file_id": null,
+    "high_risk_domains": {
+      "common/scripted_effects": 1
+    }
+  },
+  {
+    "order": 6,
+    "descriptor_ref": "mod/ugc_3688362655.mod",
+    "name": "Kaiserreich: Expanded Doctrines",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3688362655",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3688362655.mod",
+    "supported_version": "1.17.5.1",
+    "replace_path": [],
+    "remote_file_id": "3688362655",
+    "high_risk_domains": {
+      "localisation": 1
+    }
+  },
+  {
+    "order": 7,
+    "descriptor_ref": "mod/ugc_3366131759.mod",
+    "name": "Expanded Tank Designer - Even More Fixed!+",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3366131759",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3366131759.mod",
+    "supported_version": "1.17*",
+    "replace_path": [],
+    "remote_file_id": "3366131759",
+    "high_risk_domains": {
+      "common/technologies": 7,
+      "common/units/equipment": 9,
+      "common/units/equipment/modules": 4,
+      "common/military_industrial_organization": 1,
+      "interface/tank_designer_view.gui": 1,
+      "localisation": 2
+    }
+  },
+  {
+    "order": 8,
+    "descriptor_ref": "mod/ugc_3377153265.mod",
+    "name": "Majors Tank Blueprints",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3377153265",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3377153265.mod",
+    "supported_version": "1.17.3.0",
+    "replace_path": [],
+    "remote_file_id": "3377153265",
+    "high_risk_domains": {
+      "localisation": 21
+    }
+  },
+  {
+    "order": 9,
+    "descriptor_ref": "mod/ugc_2852740673.mod",
+    "name": "Better Mechanics : Buttons",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2852740673",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2852740673.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "2852740673",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 10,
+    "descriptor_ref": "mod/ugc_2938290655.mod",
+    "name": "Better Mechanics : GFX Rework",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2938290655",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2938290655.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "2938290655",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 11,
+    "descriptor_ref": "mod/ugc_2983285066.mod",
+    "name": "Better Mechanics : Technology Spread",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2983285066",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2983285066.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "2983285066",
+    "high_risk_domains": {
+      "localisation": 1
+    }
+  },
+  {
+    "order": 12,
+    "descriptor_ref": "mod/ugc_2984601101.mod",
+    "name": "Better Mechanics : Laws | Kaiserreich/KX",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2984601101",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2984601101.mod",
+    "supported_version": "1.12.*",
+    "replace_path": [],
+    "remote_file_id": "2984601101",
+    "high_risk_domains": {
+      "common/ideas": 16,
+      "localisation": 2
+    }
+  },
+  {
+    "order": 13,
+    "descriptor_ref": "mod/ugc_3008681235.mod",
+    "name": "Better Mechanics : AI Designs",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3008681235",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3008681235.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [
+      "common/ai_equipment"
+    ],
+    "remote_file_id": "3008681235",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 14,
+    "descriptor_ref": "mod/ugc_3021465796.mod",
+    "name": "Better Mechanics : Economic Scales",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3021465796",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3021465796.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3021465796",
+    "high_risk_domains": {
+      "common/scripted_effects": 2,
+      "common/scripted_triggers": 1,
+      "common/ideas": 2,
+      "localisation": 1
+    }
+  },
+  {
+    "order": 15,
+    "descriptor_ref": "mod/ugc_3139707147.mod",
+    "name": "Better Mechanics : Battle Indicators",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3139707147",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3139707147.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3139707147",
+    "high_risk_domains": {
+      "localisation": 7
+    }
+  },
+  {
+    "order": 16,
+    "descriptor_ref": "mod/ugc_3305141798.mod",
+    "name": "Better Mechanics : Extended Units",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3305141798",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3305141798.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3305141798",
+    "high_risk_domains": {
+      "common/technologies": 2,
+      "common/units/equipment": 5,
+      "common/scripted_triggers": 4,
+      "common/ai_strategy": 7,
+      "common/ai_templates": 30,
+      "common/special_projects": 1,
+      "common/military_industrial_organization": 3,
+      "localisation": 9
+    }
+  },
+  {
+    "order": 17,
+    "descriptor_ref": "mod/ugc_3314272472.mod",
+    "name": "Better Mechanics : Supply Production Health",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3314272472",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3314272472.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3314272472",
+    "high_risk_domains": {
+      "common/scripted_effects": 2,
+      "common/ideas": 3,
+      "localisation": 6
+    }
+  },
+  {
+    "order": 18,
+    "descriptor_ref": "mod/ugc_3698792578.mod",
+    "name": "Better Mechanics : Unit Counters",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3698792578",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3698792578.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3698792578",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 19,
+    "descriptor_ref": "mod/ugc_2984937408.mod",
+    "name": "Better Mechanics : Frontline AI | Updated",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2984937408",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2984937408.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2984937408",
+    "high_risk_domains": {
+      "common/scripted_effects": 1,
+      "common/scripted_triggers": 2,
+      "common/ai_strategy": 3,
+      "localisation": 2
+    }
+  },
+  {
+    "order": 20,
+    "descriptor_ref": "mod/ugc_2994638916.mod",
+    "name": "Better Mechanics : Combat",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2994638916",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2994638916.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2994638916",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 21,
+    "descriptor_ref": "mod/ugc_2996942228.mod",
+    "name": "Better Mechanics : Production",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2996942228",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2996942228.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2996942228",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 22,
+    "descriptor_ref": "mod/ugc_3010037573.mod",
+    "name": "Better Mechanics : Division Designer",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3010037573",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3010037573.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3010037573",
+    "high_risk_domains": {
+      "localisation": 1
+    }
+  },
+  {
+    "order": 23,
+    "descriptor_ref": "mod/ugc_3071265258.mod",
+    "name": "Better Mechanics : Tactical Warfare",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3071265258",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3071265258.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3071265258",
+    "high_risk_domains": {
+      "common/technologies": 1,
+      "localisation": 1
+    }
+  },
+  {
+    "order": 24,
+    "descriptor_ref": "mod/ugc_3217205852.mod",
+    "name": "Better Mechanics : Officer Corps",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3217205852",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3217205852.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3217205852",
+    "high_risk_domains": {
+      "common/ideas": 6,
+      "localisation": 2
+    }
+  },
+  {
+    "order": 25,
+    "descriptor_ref": "mod/ugc_3313579396.mod",
+    "name": "Better Mechanics : Generic 3D Models",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3313579396",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3313579396.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3313579396",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 26,
+    "descriptor_ref": "mod/ugc_3319664808.mod",
+    "name": "Better Mechanics : Devastation Overhaul",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3319664808",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3319664808.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3319664808",
+    "high_risk_domains": {
+      "common/scripted_effects": 1,
+      "common/scripted_triggers": 2,
+      "common/ideas": 2,
+      "localisation": 1
+    }
+  },
+  {
+    "order": 27,
+    "descriptor_ref": "mod/ugc_3330969122.mod",
+    "name": "Better Mechanics : Medals",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3330969122",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3330969122.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3330969122",
+    "high_risk_domains": {
+      "localisation": 1
+    }
+  },
+  {
+    "order": 28,
+    "descriptor_ref": "mod/ugc_3413087807.mod",
+    "name": "Better Mechanics : Namelists",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3413087807",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3413087807.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3413087807",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 29,
+    "descriptor_ref": "mod/ugc_3446246309.mod",
+    "name": "Better Mechanics : Extended Projects",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3446246309",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3446246309.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3446246309",
+    "high_risk_domains": {
+      "common/technologies": 2,
+      "common/units/equipment": 19,
+      "common/units/equipment/modules": 11,
+      "common/scripted_effects": 1,
+      "common/special_projects": 33,
+      "common/military_industrial_organization": 1,
+      "localisation": 4
+    }
+  },
+  {
+    "order": 30,
+    "descriptor_ref": "mod/ugc_2835509087.mod",
+    "name": "Better Mechanics : Supply Replenishment",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2835509087",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2835509087.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "2835509087",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 31,
+    "descriptor_ref": "mod/ugc_2996504479.mod",
+    "name": "Better Mechanics : AI Divisions",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2996504479",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2996504479.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [
+      "common/ai_templates"
+    ],
+    "remote_file_id": "2996504479",
+    "high_risk_domains": {
+      "common/scripted_triggers": 4,
+      "common/ai_strategy": 7,
+      "common/ai_templates": 30,
+      "localisation": 3
+    }
+  },
+  {
+    "order": 32,
+    "descriptor_ref": "mod/ugc_3034632572.mod",
+    "name": "Better Mechanics : Training and Experience",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3034632572",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3034632572.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3034632572",
+    "high_risk_domains": {
+      "localisation": 1
+    }
+  },
+  {
+    "order": 33,
+    "descriptor_ref": "mod/ugc_3652307927.mod",
+    "name": "Better Mechanics : Artillery Reborn",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3652307927",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3652307927.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3652307927",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 34,
+    "descriptor_ref": "mod/ugc_3659193471.mod",
+    "name": "Better Mechanics : Logistical Capacity for Navies",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3659193471",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3659193471.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3659193471",
+    "high_risk_domains": {
+      "common/scripted_effects": 1,
+      "common/scripted_triggers": 1,
+      "localisation": 3
+    }
+  },
+  {
+    "order": 35,
+    "descriptor_ref": "mod/ugc_3255803991.mod",
+    "name": "Better Mechanics : Strategic View",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3255803991",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3255803991.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3255803991",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 36,
+    "descriptor_ref": "mod/ugc_3009241301.mod",
+    "name": "Better Mechanics : Camera",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3009241301",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3009241301.mod",
+    "supported_version": "1.*.*",
+    "replace_path": [],
+    "remote_file_id": "3009241301",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 37,
+    "descriptor_ref": "mod/ugc_3686096588.mod",
+    "name": "Additional Ship Models \u2013 Kaiserreich",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3686096588",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3686096588.mod",
+    "supported_version": "1.18.0.0",
+    "replace_path": [],
+    "remote_file_id": "3686096588",
+    "high_risk_domains": {}
+  },
+  {
+    "order": 38,
+    "descriptor_ref": "mod/ugc_3519242416.mod",
+    "name": "Kaiserreich: More Ship Names - KR: Naval Rework Compactible",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3519242416",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3519242416.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3519242416",
+    "high_risk_domains": {
+      "history/units": 1,
+      "localisation": 1
+    }
+  },
+  {
+    "order": 39,
+    "descriptor_ref": "mod/ugc_2364428411.mod",
+    "name": "Kaiserreich Models - Allied Armor DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2364428411",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2364428411.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2364428411",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 40,
+    "descriptor_ref": "mod/ugc_3048778600.mod",
+    "name": "Kaiserreich Models - Arms Against Tyranny DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3048778600",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3048778600.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3048778600",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 41,
+    "descriptor_ref": "mod/ugc_2364383431.mod",
+    "name": "Kaiserreich Models - Axis Armor DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2364383431",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2364383431.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2364383431",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 42,
+    "descriptor_ref": "mod/ugc_2364431052.mod",
+    "name": "Kaiserreich Models - Base Game",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2364431052",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2364431052.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2364431052",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 43,
+    "descriptor_ref": "mod/ugc_2364383134.mod",
+    "name": "Kaiserreich Models - Battle for the Bosporus DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2364383134",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2364383134.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2364383134",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 44,
+    "descriptor_ref": "mod/ugc_2956284007.mod",
+    "name": "Kaiserreich Models - By Blood Alone DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2956284007",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2956284007.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2956284007",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 45,
+    "descriptor_ref": "mod/ugc_3006782869.mod",
+    "name": "Kaiserreich Models - Eastern Front Planes Pack DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3006782869",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3006782869.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3006782869",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 46,
+    "descriptor_ref": "mod/ugc_3383695570.mod",
+    "name": "Kaiserreich Models - G\u00f6tterd\u00e4mmerung DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3383695570",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3383695570.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3383695570",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 47,
+    "descriptor_ref": "mod/ugc_2364382040.mod",
+    "name": "Kaiserreich Models - La R\u00e9sistance DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2364382040",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2364382040.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2364382040",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 48,
+    "descriptor_ref": "mod/ugc_2546443097.mod",
+    "name": "Kaiserreich Models - No Step Back DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\2546443097",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_2546443097.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "2546443097",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 49,
+    "descriptor_ref": "mod/ugc_3205649576.mod",
+    "name": "Kaiserreich Models - Trial of Allegiance DLC",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3205649576",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3205649576.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "3205649576",
+    "high_risk_domains": {
+      "localisation": 10
+    }
+  },
+  {
+    "order": 50,
+    "descriptor_ref": "mod/ugc_1360299796.mod",
+    "name": "Kaiserreich Music",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\1360299796",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_1360299796.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "1360299796",
+    "high_risk_domains": {
+      "localisation": 2
+    }
+  },
+  {
+    "order": 51,
+    "descriptor_ref": "mod/ugc_1721585687.mod",
+    "name": "Kaiserreich Music Internationales",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\1721585687",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_1721585687.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "1721585687",
+    "high_risk_domains": {
+      "localisation": 1
+    }
+  },
+  {
+    "order": 52,
+    "descriptor_ref": "mod/ugc_1721597650.mod",
+    "name": "Kaiserreich Music Kaisercat",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\1721597650",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_1721597650.mod",
+    "supported_version": "1.18.*",
+    "replace_path": [],
+    "remote_file_id": "1721597650",
+    "high_risk_domains": {
+      "localisation": 2
+    }
+  },
+  {
+    "order": 53,
+    "descriptor_ref": "mod/knr_kr_runtime_fix.local.mod",
+    "name": "KNR KR Runtime Fix",
+    "root_path": "E:\\Games\\Paradox Interactive\\Hearts of Iron IV\\mod\\knr_kr_runtime_fix",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\knr_kr_runtime_fix.local.mod",
+    "supported_version": "1.17.*",
+    "replace_path": [],
+    "remote_file_id": null,
+    "high_risk_domains": {
+      "common/units/equipment": 1,
+      "common/special_projects": 1
+    }
+  },
+  {
+    "order": 54,
+    "descriptor_ref": "mod/ugc_3134811913.mod",
+    "name": "Expanded Radical Quotes Mod",
+    "root_path": "E:\\SteamLibrary\\steamapps\\workshop\\content\\394360\\3134811913",
+    "descriptor_path": "D:\\Downloads\\OneDrive\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ugc_3134811913.mod",
+    "supported_version": "1.18.1.0",
+    "replace_path": [],
+    "remote_file_id": "3134811913",
+    "high_risk_domains": {
+      "localisation": 1
+    }
+  }
+]

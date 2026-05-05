@@ -1,0 +1,13 @@
+guiTypes = {
+	# Autobahn's countrytechnologyview override omits these vanilla offsets.
+	# Restoring them prevents the technology_sharing_offset GUI crash seam.
+	positionType = {
+		name = "technology_sharing_offset"
+		position = { x = 100 y = 0 }
+	}
+
+	positionType = {
+		name = "technology_sharing_faction_offset"
+		position = { x = 75 y = -5 }
+	}
+}

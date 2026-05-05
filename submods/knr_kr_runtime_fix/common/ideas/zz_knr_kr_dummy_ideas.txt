@@ -1,0 +1,112 @@
+ideas = {
+	country = {
+		# Dummy placeholders for vanilla-only or missing keys referenced by the
+		# active KR/Autobahn/Better Mechanics stack. No country is granted these
+		# ideas here; their presence only makes has_idea/swap_ideas parse safely.
+
+		BUL_army_restrictions = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		MPL_mandate = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		GER_treaty_of_versailles = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		GER_treaty_of_versailles_2 = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		GER_treaty_of_versailles_3 = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		CHI_hyper_inflation_none = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		CHI_hyper_inflation_1 = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		CHI_hyper_inflation_2 = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		CHI_hyper_inflation_3 = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		CHI_hyper_inflation_4 = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		CHI_hyper_inflation_5 = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		internationalism = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		nationalism = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		naval_academy_scholarships_spirit = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+
+		SPR_collectivized_society = {
+			allowed = { always = no }
+			visible = { always = no }
+			removal_cost = -1
+			modifier = { }
+		}
+	}
+}

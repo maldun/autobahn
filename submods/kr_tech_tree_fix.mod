@@ -4,7 +4,7 @@ tags={
 	"Fixes"
 	"Gameplay"
 }
-supported_version="1.17.*"
+supported_version="1.18.*"
 path="D:/Downloads/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/kr_tech_tree_fix"
 dependencies={
 	"Kaiserreich"

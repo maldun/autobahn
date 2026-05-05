@@ -1,12 +1,9 @@
-# Runtime effect stubs for the KR/Autobahn/KNR stack.
-# These are intentionally empty; they only exist to stop parser aborts so
-# later technology definitions in the same file stay registered.
+# Runtime callback stubs for legacy RT56/KR merge hooks that are missing in the
+# current HOI4 1.18.x stack. Keeping them empty is safer than letting parser
+# aborts unregister later techs and project content.
 
 FIN_nokia_tires_after_tech_effect = { }
 
-# Expanded Tank Designer ships NSB armor tech callbacks that do not exist in
-# this stack. These stubs keep its tech file parseable during diagnostics, but
-# they do not make the mod's tank chassis schema compatible with KR.
 ITA_add_basic_light_flamethrower_template = { }
 ITA_add_improved_light_tank_templates = { }
 ITA_add_improved_medium_tank_templates = { }
@@ -17,8 +14,7 @@ ITA_add_il_duce_sh_tank_template_and_production = { }
 ITA_add_modern_musculus_sh_tank_template_and_production = { }
 ITA_add_hand_of_god_sh_tank_template_and_production = { }
 
-# These hooks are referenced by RT56-derived project or tech content in the
-# active stack but are not defined by current KR-era dependencies.
 GER_amerika_bomber_focke_wulf_completion_MIO_effects = { }
 GER_amerika_bomber_focke_wulf_completion_SP_effects = { }
+
 play_warning_to_japan_effect = { }

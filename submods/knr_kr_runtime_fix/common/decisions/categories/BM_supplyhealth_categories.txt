@@ -1,7 +1,0 @@
-economic_crisis_decisions = {
-	icon = generic_crisis
-	priority = 100
-	visible = {
-		always = yes
-	}
-}

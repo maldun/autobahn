@@ -47,7 +47,3 @@ has_air_academy = {
 has_air_force_command = {
 	always = yes
 }
-
-has_USA_sanction_idea = {
-	always = no
-}

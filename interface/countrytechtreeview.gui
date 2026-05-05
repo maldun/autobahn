@@ -432,6 +432,15 @@ guiTypes = {
 				format = "LEFT"
 			}
 
+			# Rangers tech branch — added in KR 1.18; must be present or engine throws
+			# "Found no grid box for tech special_forces_rangers" on every tech tree open
+			gridboxtype = {
+				name = "rangers_tech_tree"
+				position = { x = 140 y = 325 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
 			gridboxtype = {
 				name = "tech_special_forces_tree"
 				position = { x = 140 y = 325 }

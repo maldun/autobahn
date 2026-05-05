@@ -941,7 +941,6 @@ research_processing_techs_1 = {
 research_processing_techs_2 = {
 	enable = {
 		##date > 1939.1.1
-		has_tech = oil_processing
 		num_of_military_factories > 100
 		synthetic_refinery > 15
 	}
@@ -957,7 +956,6 @@ research_processing_techs_2 = {
 research_processing_techs_3 = {
 	enable = {
 		####date > 1941.1.1
-		has_tech = rubber_plant_a
 		num_of_military_factories > 150
 		synthetic_refinery > 20
 	}
@@ -973,7 +971,6 @@ research_processing_techs_3 = {
 research_processing_techs_4 = {
 	enable = {
 		##date > 1943.1.1
-		has_tech = rubber_plant_b
 		num_of_military_factories > 200
 		synthetic_refinery > 30
 	}
@@ -992,8 +989,6 @@ majors_build_some_refineries_1 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 30
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 10 } } }
-		NOT = { resource@rubber > 10 }
 		NOT = { synthetic_refinery > 5 }
 	}
 	abort_when_not_enabled = yes
@@ -1011,8 +1006,6 @@ majors_build_some_refineries_2 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 60
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 20 } } }
-		NOT = { resource@rubber > 20 }
 		NOT = { synthetic_refinery > 10 }
 	}
 	abort_when_not_enabled = yes
@@ -1030,8 +1023,6 @@ majors_build_some_refineries_3 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 90
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 30 } } }
-		NOT = { resource@rubber > 30 }
 		NOT = { synthetic_refinery > 15 }
 	}
 	abort_when_not_enabled = yes
@@ -1049,8 +1040,6 @@ majors_build_some_refineries_4 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 120
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 40 } } }
-		NOT = { resource@rubber > 40 }
 		NOT = { synthetic_refinery > 20 }
 	}
 	abort_when_not_enabled = yes
@@ -1068,8 +1057,6 @@ majors_build_some_refineries_5 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 150
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 50 } } }
-		NOT = { resource@rubber > 50 }
 		NOT = { synthetic_refinery > 25 }
 	}
 	abort_when_not_enabled = yes
@@ -1087,8 +1074,6 @@ majors_build_some_refineries_6 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 180
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 60 } } }
-		NOT = { resource@rubber > 60 }
 		NOT = { synthetic_refinery > 30 }
 	}
 	abort_when_not_enabled = yes
@@ -1106,8 +1091,6 @@ majors_build_some_refineries_7 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 210
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 70 } } }
-		NOT = { resource@rubber > 70 }
 		NOT = { synthetic_refinery > 35 }
 	}
 	abort_when_not_enabled = yes
@@ -1125,8 +1108,6 @@ majors_build_some_refineries_8 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 240
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 80 } } }
-		NOT = { resource@rubber > 80 }
 		NOT = { synthetic_refinery > 40 }
 	}
 	abort_when_not_enabled = yes
@@ -1144,8 +1125,6 @@ majors_build_some_refineries_9 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 270
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 90 } } }
-		NOT = { resource@rubber > 90 }
 		NOT = { synthetic_refinery > 45 }
 	}
 	abort_when_not_enabled = yes
@@ -1163,8 +1142,6 @@ majors_build_some_refineries_10 = {
 		is_major = yes
 		has_tech = synth_oil_experiments
 		num_of_military_factories > 300
-		NOT = { any_subject_country = { check_variable = { resource@rubber > 100 } } }
-		NOT = { resource@rubber > 100 }
 		NOT = { synthetic_refinery > 50 }
 	}
 	abort_when_not_enabled = yes

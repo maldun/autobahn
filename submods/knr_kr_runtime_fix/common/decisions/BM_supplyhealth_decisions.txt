@@ -1,0 +1,1236 @@
+# ECONOMY
+economic_crisis_decisions = {
+	improved_supply_conditions = {
+		icon = generic_industry
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 540
+		cost = 50
+		available = {
+			OR = {
+				NOT = {
+					AND = {
+						has_idea = partial_economic_mobilisation
+						has_idea = war_economy
+						has_idea = tot_economic_mobilisation
+					}
+				}
+				NOT = {
+					has_war = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = less_than_100_sc_tt
+				check_variable = {
+					Root.supply_condition < 100
+				}
+			}
+		}
+		visible = {
+			always = yes
+		}
+		modifier = {
+			#stability_weekly = 0.005
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
+		}
+		complete_effect = {
+			set_country_flag = { flag = improved_supply_conditions_flag value = 1 days = 180 }
+			custom_effect_tooltip = for_180_days
+			custom_effect_tooltip = plus_point_5_per_week_tt
+			custom_effect_tooltip = also_tt
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				check_variable = {
+					Root.supply_condition < 45
+				}
+			}
+			modifier = {
+				factor = -10
+				has_active_mission = JAP_form_RRC_mission
+			}
+		}
+	}
+	RCM_foreign_aid = {
+		icon = eng_trade_unions_support
+		cancel_if_not_visible = no
+		days_remove = 140
+		cost = 25
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						#check_variable = { THIS.capital.state_land_connection_index = FROM.capital.state_land_connection_index }
+					}
+				}
+				has_equipment = {
+					convoy > 19
+				}
+			}
+			
+			
+			FROM = {
+				if = {
+					limit = {
+						FROM = {
+							is_chinese_tag = no
+						}
+					}
+					has_war_together_with = ROOT
+					is_in_faction_with = ROOT
+				}				
+				custom_trigger_tooltip = {
+					tooltip = less_than_40_sc_tt
+					check_variable = {
+						This.supply_condition < 40
+					}
+				}
+			}
+			
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_subject = no
+					AND = {
+						num_divisions > 40
+						any_enemy_country = {
+							is_neighbor_of = PREV
+						}
+					}
+				}
+				OR = {
+					AND = {
+						has_war_together_with = ROOT
+						is_in_faction_with = ROOT
+					}
+					AND = {
+						any_enemy_country = {
+							tag = JAP
+							is_neighbor_of = PREV
+						}
+						num_divisions > 40
+						is_chinese_tag = yes
+						ROOT = {
+							NOT = {
+								OR = {
+									is_in_faction_with = JAP
+									has_war_together_with = JAP
+								}
+							}
+							has_country_flag = I_should_aid@PREV
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			always = no ###MODDED its broken
+			custom_trigger_tooltip = {
+				tooltip = more_than_50_sc_tt
+				check_variable = {
+					Root.supply_condition > 50
+				}
+			}
+			FROM = {
+				OR = {
+					any_enemy_country = {
+						is_neighbor_of = PREV
+					}
+					num_divisions > 40
+				}
+				OR = {
+					has_capitulated = no
+					num_of_controlled_states > 7
+				}
+				check_variable = {
+					This.supply_condition < 40
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				casualties > 1500000
+			}
+			modifier = {
+				factor = 0
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					has_capitulated = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				tag = SOV
+				NOT = {
+					JAP = {
+						has_completed_focus = JAP_focus_war_effort_on_china_focus
+					}
+				}
+				has_global_flag = CHI_SOV_ties_severed
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					JAP = {
+						has_war_with = USA
+					}
+				}
+				tag = USA
+				has_global_flag = CHI_USA_ties_severed
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					Root.num_of_foreign_aid > 1 #no sending if losing
+				}
+			}
+			modifier = {
+				factor = 0
+				surrender_progress > 0.1 #no sending aid if we are losing
+			}
+			modifier = {
+				factor = 0
+				any_enemy_country = {
+					num_of_factories > 135
+					is_neighbor_of = ROOT
+					has_offensive_war_with = ROOT
+				} #no sending aid if at major war
+			}
+			modifier = {
+				factor = 0
+				tag = ENG
+				any_enemy_country = {
+					num_of_factories > 135
+				}
+				check_variable = {
+					This.supply_condition < 60
+				} #no sending aid if at major war
+			}
+			modifier = {
+				factor = 0
+				tag = GER
+				any_enemy_country = {
+					num_of_factories > 135
+				}
+				check_variable = {
+					This.supply_condition < 60
+				} #no sending aid if at major war
+			}
+			modifier = {
+				factor = 0
+				has_any_authoritarian_government = yes # authoritarian governments are more stingy
+				FROM = {
+					num_of_factories < 20
+				}
+				check_variable = {
+					This.supply_condition < 60
+				}
+			}
+			modifier = {
+				factor = 0
+				is_chinese_tag = yes
+				any_enemy_country = {
+					OR = {
+						tag = JAP
+						is_chinese_tag = yes
+					}
+				}
+			}					
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						#check_variable = { THIS.capital.state_land_connection_index = FROM.capital.state_land_connection_index }
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = -20
+				}
+			}
+			
+			FROM = {
+				country_event = rcmgeneric.7
+			}
+			custom_effect_tooltip = commence_foreign_aid_tt
+			custom_effect_tooltip = tot_economic_mobilisation_TT
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = counter_set_for_foreign_aid
+					}
+				}
+				set_variable = {
+					Root.num_of_foreign_aid = 1
+				}
+				set_country_flag = counter_set_for_foreign_aid
+			}
+			else = {
+				add_to_variable = {
+					Root.num_of_foreign_aid = 1
+				}
+			}
+			FROM = {
+				if = {
+					limit = {
+						ic_ratio = { #to v. big countries
+							tag = ROOT 
+							ratio > 2.5
+						}
+					}
+					add_to_variable = {
+						This.foreign_aid_ver_big = 1
+					}
+					set_country_flag = foreign_aid_ver_big@ROOT
+					custom_effect_tooltip = foreign_aid_tt_ver_big
+				}
+				else_if = {
+					limit = {
+						ic_ratio = { #to big countries
+							tag = ROOT 
+							ratio < 2.5
+						}
+						ic_ratio = { #to big countries
+							tag = ROOT 
+							ratio > 1.5
+						}
+					}
+					add_to_variable = {
+						This.foreign_aid_big = 1
+					}
+					set_country_flag = foreign_aid_big@ROOT
+					custom_effect_tooltip = foreign_aid_tt_big
+				}
+				else_if = {
+					limit = {
+						ic_ratio = { #to med countries
+							tag = ROOT 
+							ratio < 1.5
+						}
+						ic_ratio = { #to med countries
+							tag = ROOT 
+							ratio > 0.5
+						}
+					}
+					add_to_variable = {
+						This.foreign_aid_med = 1
+					}
+					set_country_flag = foreign_aid_med@ROOT
+					custom_effect_tooltip = foreign_aid_tt_med
+				}
+				else_if = {
+					limit = {
+						ic_ratio = { #to small countries
+							tag = ROOT 
+							ratio < 0.5
+						}
+						ic_ratio = { #to small countries
+							tag = ROOT 
+							ratio > 0.25
+						}
+					}
+					add_to_variable = {
+						This.foreign_aid_sml = 1
+					}
+					set_country_flag = foreign_aid_sml@ROOT
+					custom_effect_tooltip = foreign_aid_tt_sml
+				}
+				else_if = {
+					limit = {
+						ic_ratio = { #to  v. small countries
+							tag = ROOT 
+							ratio < 0.25
+						}
+					}
+					add_to_variable = {
+						This.foreign_aid_ver_sml = 1
+					}
+					set_country_flag = foreign_aid_ver_sml@ROOT
+					custom_effect_tooltip = foreign_aid_tt_ver_sml
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				country_event = rcmgeneric.8
+			}
+			add_to_variable = {
+				#Root.num_of_foreign_aid = -1 #MODDED 1.12 cuz it was broken since NSB
+			}
+			FROM = {
+				if = {
+					limit = {
+						has_country_flag = foreign_aid_ver_big@ROOT
+					}
+					subtract_from_variable = {
+						This.foreign_aid_ver_big = 1
+					}
+					clr_country_flag = foreign_aid_ver_big@ROOT
+				}
+				else_if = {
+					limit = {
+						has_country_flag = foreign_aid_big@ROOT
+					}
+					subtract_from_variable = {
+						This.foreign_aid_big = 1
+					}
+					clr_country_flag = foreign_aid_big@ROOT
+				}
+				else_if = {
+					limit = {
+						has_country_flag = foreign_aid_med@ROOT
+					}
+					subtract_from_variable = {
+						This.foreign_aid_med = 1
+					}
+					clr_country_flag = foreign_aid_med@ROOT
+				}
+				else_if = {
+					limit = {
+						has_country_flag = foreign_aid_sml@ROOT
+					}
+					subtract_from_variable = {
+						This.foreign_aid_sml = 1
+					}
+					clr_country_flag = foreign_aid_sml@ROOT
+				}
+				else_if = {
+					limit = {
+						has_country_flag = foreign_aid_ver_sml@ROOT
+					}
+					subtract_from_variable = {
+						This.foreign_aid_ver_sml = 1
+					}
+					clr_country_flag = foreign_aid_ver_sml@ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						#check_variable = { THIS.capital.state_land_connection_index = FROM.capital.state_land_connection_index }
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = 20
+				}
+			}
+		}
+	}
+	RCM_inflation_crisis = {
+		icon = hol_attract_foreign_investors
+		is_good = no
+		days_mission_timeout = 90
+		available = {
+			if = {
+				limit = {
+					has_idea = free_trade
+				}
+				has_stability > 0.15
+			}
+			if = {
+				limit = {
+					has_idea = export_focus						
+				}
+				OR = {
+					has_stability > 0.35
+					has_idea = free_trade
+				}
+			}
+			if = {
+				limit = {
+					has_idea = limited_exports						
+				}
+				OR = {
+					has_stability > 0.55
+					has_idea = export_focus
+				}
+			}
+			if = {
+				limit = {
+					has_idea = closed_economy						
+				}
+				OR = {
+					has_stability > 0.75
+					has_idea = limited_exports
+				}
+			}
+		}
+		activation = {
+			always = no #activate in an event
+			#NOT = {
+			#	has_country_flag = economy_inflate_cooldown_flag
+			#}
+			#if = {
+			#	limit = {
+			#		has_idea = free_trade
+			#	}
+			#	has_stability < 0.15
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_idea = export_focus						
+			#	}
+			#	has_stability < 0.35
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_idea = limited_exports						
+			#	}
+			#	has_stability < 0.55
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_idea = closed_economy						
+			#	}
+			#	has_stability < 0.75
+			#}
+			#else = {
+			#	always = no
+			#}
+		}
+		complete_effect = {
+			set_country_flag = { flag = economy_inflate_cooldown_flag value = 1 days = 50 }
+		}
+		timeout_effect = {							
+			random_list = {
+				75 = {
+					country_event = rcmgeneric.12
+					RCM_increase_inflation_level = yes						
+				}
+				25 = {						
+					country_event = rcmgeneric.11
+					activate_mission = RCM_inflation_crisis
+				}
+			}
+		}
+	}
+	RCM_lighten_trade_regulations = {
+		icon = eng_trade_unions_support
+		cost = 50
+		available = {
+			has_active_mission = RCM_inflation_crisis
+		}
+		visible = {
+			NOT = {
+				has_idea = free_trade
+			}
+			has_active_mission = RCM_inflation_crisis
+		}
+		ai_will_do = {
+			factor = 300
+			modifier = {
+				factor = 0
+				tag = PRC
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = export_focus						
+				}
+				add_ideas = free_trade
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_exports						
+				}
+				add_ideas = export_focus
+			}
+			else_if = {
+				limit = {
+					has_idea = closed_economy						
+				}
+				add_ideas = limited_exports
+			}
+		}
+	}
+	CHI_government_bailout_focus = {
+		icon = ger_mefo_bills
+		#days_re_enable = 100
+		days_remove = 40
+		custom_cost_text = pp_per_day_neg_025
+		#cost = 50
+		available = {
+			
+			#NOT = {
+			#	OR = {
+			#		has_idea = CHI_hyper_inflation_4
+			#		has_idea = CHI_hyper_inflation_5
+			#	}
+			#}
+			OR = {
+				has_elected_government = yes
+				has_any_authoritarian_government = yes
+			}
+			political_power_growth > 0.75
+		}
+		custom_cost_trigger = {
+			political_power_growth > 0.25
+		}
+		ai_will_do = {
+			factor = 2.5
+			modifier = {
+				factor = 32
+				tag = CHI
+			}
+			modifier = {
+				factor = 32
+				check_variable = {
+					Root.supply_condition < 10
+				}
+			}
+			modifier = {
+				factor = 16
+				check_variable = {
+					Root.supply_condition < 20
+				}
+			}
+			modifier = {
+				factor = 8
+				check_variable = {
+					Root.supply_condition < 30
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					Root.supply_condition < 40
+				}
+			}
+			modifier = {
+				has_idea = CHI_hyper_inflation_2
+				factor = 5
+			}
+			modifier = {
+				has_idea = CHI_hyper_inflation_3
+				factor = 200
+			}
+			modifier = {
+				tag = PRC #for christ sake just take this already
+				factor = 20
+			}
+			modifier = {
+				has_idea = CHI_hyper_inflation_none
+				factor = -2000
+			}
+			#modifier = {
+			#	has_idea = CHI_hyper_inflation_4
+			#	factor = 35
+			#}
+			#modifier = {
+			#	has_idea = CHI_hyper_inflation_5
+			#	factor = 75
+			#}
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+		}
+		modifier = {
+			political_power_gain = -0.25
+		}
+		remove_effect = {
+			add_timed_idea = {
+				days = 60 idea = CHI_emergency_bailout
+			}
+			custom_effect_tooltip = blank_line
+			CHI_hyper_inflation_level_down = yes
+		}
+	}
+	RCM_plunder_occupied_industries = {
+		icon = generic_scorched_earth
+		days_re_enable = 50
+		days_remove = 10
+		cost = 25
+		available = {
+			num_occupied_states > 10
+			#has_stability < 0.8
+			custom_trigger_tooltip = {
+				tooltip = has_supp_cond_lower_than_60
+				check_variable = {
+					Root.supply_condition < 60
+				}
+			}
+			threat > 0.5
+			any_controlled_state = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_owned_by = ROOT
+				}
+				industrial_complex > 1
+			}
+			#any_enemy_country = {
+			#	has_capitulated = yes
+			#	all_owned_state = {
+			#		is_fully_controlled_by = ROOT
+			#	}
+			#	any_owned_state = {
+			#		industrial_complex > 1
+			#		arms_factory > 0
+			#	}
+			#}
+			OR = {
+				#has_war = yes
+				has_any_authoritarian_government = yes
+				has_socialist_government = yes
+			}
+			OR = {
+				#has_idea = partial_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 320
+				check_variable = {
+					Root.supply_condition < 10
+				}
+			}
+			modifier = {
+				factor = 160
+				check_variable = {
+					Root.supply_condition < 20
+				}
+			}
+			modifier = {
+				factor = 80
+				check_variable = {
+					Root.supply_condition < 30
+				}
+			}
+			modifier = {
+				factor = 20
+				check_variable = {
+					Root.supply_condition < 40
+				}
+			}
+			modifier = {
+				factor = 0
+				custom_trigger_tooltip = {
+					tooltip = has_supp_cond_lower_than_60
+					check_variable = {
+						Root.supply_condition > 60
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				has_war = yes
+				surrender_progress < 0.02			
+			}
+			modifier = {
+				factor = 5
+				num_occupied_states > 35		
+			}
+			#uncomment this to reenable ES#modifier = {
+			#uncomment this to reenable ES#	factor = 0.2
+			#uncomment this to reenable ES#	has_war_support < 0.4		
+			#uncomment this to reenable ES#}
+			#uncomment this to reenable ES#modifier = {
+			#uncomment this to reenable ES#	factor = 0.2
+			#uncomment this to reenable ES#	has_war_support < 0.2		
+			#uncomment this to reenable ES#
+			modifier = {
+				factor = 0.3 #we need those civies!
+				check_variable = {
+					Root.supply_condition > 40
+				}
+				check_variable = {
+					Root.num_of_civilian_factories < Root.num_of_military_factories						
+				}
+			}
+		}
+		visible = {
+		}
+		complete_effect = {
+			random_state = {
+				limit = {
+					#has_state_flag = plundered_state
+					is_fully_controlled_by = ROOT
+					NOT = {
+						is_owned_by = ROOT
+					}
+					industrial_complex > 1
+				}
+				#set_state_flag = plundered_state
+				remove_building = {
+					type = industrial_complex
+					level = This.industrial_complex_level
+				}
+			}
+		}
+		modifier = {
+			political_power_factor = -0.05
+			command_power_gain_mult = -0.05
+		}
+		remove_effect = {
+			#add_war_support = -0.05 #uncomment this to reenable ES#
+			#add_stability = 0.05 #comment this to reenable ES#
+			custom_effect_tooltip = gain_base_supp_cond_p3_tt
+			add_to_variable = {
+				Root.supply_condition_base = 3
+			}				
+			#uncomment this to reenable ES#CHI_hyper_inflation_level_down = yes
+		}
+	}
+	RCM_divert_our_military_production = {
+		icon = generic_intelligence_operation
+		#allowed = { always = no } #comment this to reenable ES#
+		fixed_random_seed = no
+		fire_only_once = no
+		days_re_enable = 45
+		cost = 75
+		available = {
+			OR = {
+				OR = {
+					has_idea = CHI_hyper_inflation_5
+					has_idea = CHI_hyper_inflation_4
+				}				
+				OR = {
+					has_idea = tot_economic_mobilisation
+					has_idea = war_economy
+				}
+			}
+			num_of_military_factories > 5 #Change this if amount of factories change  
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = low_economic_mobilisation
+					add_idea = civilian_economy
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = partial_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = partial_economic_mobilisation
+					add_idea = low_economic_mobilisation
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = war_economy
+				}
+				swap_ideas = {
+					remove_idea = war_economy
+					add_idea = partial_economic_mobilisation
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = tot_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = tot_economic_mobilisation
+					add_idea = war_economy
+				}
+			}
+			
+			if = {
+				limit = {
+					num_of_military_factories < 16
+				}
+				replace_arms_with_civ_factories_1 = yes
+			}
+			if = {
+				limit = {
+					num_of_military_factories > 15
+					num_of_military_factories < 31
+				}
+				replace_arms_with_civ_factories_2 = yes
+			}
+			if = {
+				limit = {
+					num_of_military_factories > 30
+					num_of_military_factories < 46
+				}
+				replace_arms_with_civ_factories_3 = yes
+			}
+			if = {
+				limit = {
+					num_of_military_factories > 45
+					num_of_military_factories < 121
+				}
+				replace_arms_with_civ_factories_4 = yes
+			}
+			if = {
+				limit = {
+					num_of_military_factories > 120
+				}
+				replace_arms_with_civ_factories_5 = yes
+			}
+			add_war_support = -0.05
+			add_stability = 0.03
+			CHI_hyper_inflation_level_down = yes
+			custom_effect_tooltip = gain_base_supp_cond_p7p5_tt
+			add_to_variable = {
+				Root.supply_condition_base = 7.5
+			}
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					tag = CHI
+					tag = SOV
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+				has_stability < 0.6
+			}
+			modifier = {
+				factor = 0
+				has_defensive_war = yes
+				surrender_progress > 0.1
+			}
+			modifier = {
+				factor = 5
+				has_offensive_war = yes
+				surrender_progress < 0.05
+			}
+			modifier = {
+				factor = 7
+				has_unsupported_economic_law = yes
+			}
+			modifier = {
+				factor = 5
+				has_idea = CHI_hyper_inflation_5
+			}
+			modifier = {
+				factor = 3
+				has_idea = CHI_hyper_inflation_4
+			}
+			modifier = {
+				factor = 0.5
+				has_idea = CHI_hyper_inflation_3
+			}
+			modifier = {
+				factor = 0
+				has_idea = CHI_hyper_inflation_2
+			}
+			modifier = {
+				factor = 0
+				has_idea = CHI_hyper_inflation_1
+			}
+		}
+	}
+	RCM_rationing = {
+		icon = hol_attract_foreign_investors
+		custom_cost_text = pp_per_day_neg_025
+		#days_re_enable = 100
+		days_remove = 120
+		available = {
+			hidden_trigger = {
+				political_power_growth > 0.25
+			}
+			NOT = {
+				has_elected_government = yes
+			}
+			NOT = {
+				has_idea = civilian_economy				
+			}
+			
+			#if = {
+			#	limit = {
+			#		has_idea = undisturbed_isolation
+			#	}
+			#	NOT = {
+			#		has_idea = undisturbed_isolation
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		has_idea = warlord_economy
+			#	}
+			#	NOT = {
+			#		has_idea = warlord_economy
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		has_idea = isolation
+			#	}
+			#	NOT = {
+			#		has_idea = isolation
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		has_idea = unstable_economy
+			#	}
+			#	NOT = {
+			#		has_idea = unstable_economy
+			#	}
+			#}
+		}
+		custom_cost_trigger = {
+			political_power_growth > 0.25
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				has_war = yes			
+			}
+			modifier = {
+				factor = 32
+				check_variable = {
+					Root.supply_condition < 10
+				}
+			}
+			modifier = {
+				factor = 16
+				check_variable = {
+					Root.supply_condition < 20
+				}
+			}
+			modifier = {
+				factor = 8
+				check_variable = {
+					Root.supply_condition < 30
+				}
+			}
+			modifier = {
+				factor = 4
+				check_variable = {
+					Root.supply_condition < 40
+				}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					Root.supply_condition < 50
+				}
+			}
+			modifier = {
+				factor = 32
+				has_idea = CHI_hyper_inflation_5
+			}
+			modifier = {
+				factor = 16
+				has_idea = CHI_hyper_inflation_4
+			}
+			modifier = {
+				factor = 8
+				has_idea = CHI_hyper_inflation_3
+			}
+			modifier = {
+				factor = 2
+				has_idea = CHI_hyper_inflation_2
+			}
+			modifier = {
+				factor = 0.5
+				has_idea = CHI_hyper_inflation_1
+			}
+			modifier = {
+				factor = -2000
+				has_idea = CHI_hyper_inflation_none
+			}
+			modifier = {
+				factor = 0
+				political_power_growth < 0.1
+			}
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			#add_ideas = RCM_rationing_idea
+			#uncomment this to reenable ES#custom_effect_tooltip = rationing_tt
+		}
+		modifier = {
+			stability_weekly = 0.001
+			political_power_gain = -0.25
+			consumer_goods_factor = 0.1
+			command_power_gain_mult = -0.1
+		}
+		remove_effect = {
+			#remove_ideas = RCM_rationing_idea
+			CHI_hyper_inflation_level_down = yes
+		}
+	}
+	RCM_defensive_mob_decision = {
+		icon = eng_blackshirt_march
+		#days_re_enable = 100
+		days_remove = 90
+		fixed_random_seed = no
+		cost = 50
+
+		available = {
+			NOT = {
+				has_elected_government = yes
+			}
+			OR = {
+				has_doctrine = mass_assault
+				has_doctrine = guerilla_war
+				has_doctrine = peoples_war
+			}
+			has_defensive_war = yes
+			
+			surrender_progress > 0.40
+			has_manpower > 400000
+		}
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_manpower < 900000
+			}
+			modifier = {
+				factor = 100
+				has_manpower > 900000
+				OR = {
+					tag = SOV
+					is_chinese_tag = yes
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_doctrine = grand_battleplan
+					has_doctrine = superior_firepower
+					has_doctrine = new_mobile_warfare
+				}
+			}
+		}
+		complete_effect = {
+			add_manpower = -400000
+		}
+		modifier = {
+			max_dig_in_factor = 0.3
+			dig_in_speed_factor = 0.3
+			#industrial_capacity_factory = 0.1
+			#local_resources_factor = 0.1
+			political_power_gain = -0.15
+			#production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.3
+			#enemy_army_bonus_air_superiority_factor = -0.4
+			#training_time_factor = -0.1
+			army_core_defence_factor = 0.3
+			consumer_goods_factor = 0.15
+			command_power_gain_mult = -0.15
+		}
+		remove_effect = {
+			random_list = {
+				25 = {
+					add_manpower = 386732
+				}
+				30 = {
+					add_manpower = 343723
+				}
+				25 = {
+					add_manpower = 312839
+				}
+				10 = {
+					add_manpower = 287632
+				}
+				10 = {
+					add_manpower = 256732
+				}
+			}
+			#random_owned_controlled_state = {
+			#	limit = {
+			#		NOT = {
+			#			is_fully_controlled_by = ROOT
+			#		}
+			#		arms_factory > 1
+			#		any_neighbor_state = {
+			#			controller = {
+			#				has_war_with = ROOT
+			#			}
+			#		}
+			#	}
+			#	remove_building = {
+			#		type = arms_factory
+			#		level = 2
+			#	}
+			#	ROOT = {
+			#		random_owned_controlled_state = {
+			#			limit = {
+			#				capital_scope = {
+			#					distance_to = {
+			#						target = PREV
+			#						value < 1500
+			#					}
+			#				}
+			#				#is_coastal = no
+			#				free_building_slots = {
+			#					building = arms_factory
+			#					size > 2
+			#					included_locked = yes
+			#				}
+			#				all_neighbor_state = {
+			#					is_fully_controlled_by = ROOT
+			#					is_owned_and_controlled_by = ROOT
+			#					#is_coastal = no
+			#				}
+			#				is_fully_controlled_by = ROOT
+			#			}
+			#			add_extra_state_shared_building_slots = 2
+			#			add_building_construction = {
+			#				type = arms_factory
+			#				level = 2
+			#				instant_build = yes
+			#			}
+			#		}
+			#	}
+			#}
+			
+			#custom_effect_tooltip = only_stabilize_economy_when_we_have_major_recession_or_worse_tt
+			#if = {
+			#	limit = {
+			#		OR = {
+			#			has_idea = CHI_hyper_inflation_3
+			#			has_idea = CHI_hyper_inflation_4
+			#			has_idea = CHI_hyper_inflation_5
+			#		}
+			#	}
+			#uncomment this to reenable ES#	CHI_hyper_inflation_level_down = yes
+			#}			
+			
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = less_than_80_sc_tt
+						check_variable = {
+							Root.supply_condition < 80
+						}
+					}
+				}
+				add_to_variable = {
+					Root.supply_condition_base = 7.5
+				}
+				custom_effect_tooltip = gain_base_supp_cond_p7p5_tt
+			}
+		}
+	}
+}

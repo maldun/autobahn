@@ -28,10 +28,6 @@ technologies = {
             research_cost_coeff = 1
             
         }
-        allow_branch = {
-            has_dlc = "Man the Guns"
-            
-        }
         research_cost = 1.5
         start_year = 1922
         folder = {
@@ -956,10 +952,6 @@ technologies = {
         path = {
             leads_to_tech = improved_airplane_launcher
             research_cost_coeff = 1
-            
-        }
-        allow_branch = {
-            has_dlc = "Man the Guns"
             
         }
         on_research_complete = {

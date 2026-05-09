@@ -41,7 +41,6 @@
         "r56e_upgrades.txt": []
     },
     "localisation/english/": {
-	"research_l_english.yml": [],
 	"r56_special_projects_l_english.yml": [],
 	"r56_operations_l_english.yml": [],
 	"r56_spying_l_english.yml": [],
@@ -74,7 +73,8 @@
 					  "r56e_equip_naval_english.yml"],
       "r56e_equip_tank_l_english.yml": ["localisation/english/",
 					  "r56e_equip_tankl_english.yml"],
-					  
+        "r56_research_l_english.yml": ["localisation/english/",
+					  "r56_research_l_english.yml"],
      "tank_modules_l_english.yml": ["localisation/english/",
 					  "tank_modules_l_english.yml"]
 	

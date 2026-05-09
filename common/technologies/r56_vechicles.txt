@@ -160,11 +160,19 @@ technologies = {
             }
             modifier = {
                 is_major = no
+                NOT = {
+                    tag = TAN
+                    
+                }
                 factor = 0
                 
             }
             modifier = {
                 factor = 0
+                NOT = {
+                    tag = TAN
+                    
+                }
                 num_of_civilian_factories < 3
                 
             }
@@ -615,10 +623,6 @@ technologies = {
     amphibious_mechanized_infantry = {
         enable_equipments = {
             amphibious_mechanized_equipment_1
-            
-        }
-        allow_branch = {
-            has_dlc = "Man the Guns"
             
         }
         enable_subunits = {

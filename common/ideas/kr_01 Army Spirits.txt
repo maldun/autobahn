@@ -1,65 +1,44 @@
 ideas = {
     academy_spirit = {
-        KR_whampoa_academy_spirit = {
-            on_add = {
-                log = "[GetLogRoot]: add idea KR_whampoa_academy_spirit"
-                
-            }
-            ledger = army
-            allowed = {
-                is_chinese_or_potential_chinese_tag = yes
-                
-            }
-            visible = {
-                OR = {
-                    china_alignment_left_kuomintang = yes
-                    china_alignment_right_kuomintang = yes
-                    
-                }
-                if = {
-                    limit = {
-                        original_tag = KUM
-                        
-                    }
-                    has_country_flag = KUM_is_chinese_tag
-                    
-                }
-                
-            }
-            available = {
-                if = {
-                    limit = {
-                        tag = CHI
-                        
-                    }
-                    has_completed_focus = CHI_reopen_whampoa
-                    
-                }
-                else_if = {
-                    limit = {
-                        tag = GXC
-                        
-                    }
-                    has_completed_focus = GXC_legacy_of_whampoa
-                    
-                }
-                
-            }
-            modifier = {
-                military_leader_cost_factor = 1
-                party_popularity_stability_factor = 0.25
-                trait_commando_xp_gain_factor = 0.15
-                trait_trickster_xp_gain_factor = 0.15
-                trait_infantry_leader_xp_gain_factor = 0.15
-                custom_modifier_tooltip = KR_whampoa_academy_spirit_tt
-                
-            }
-            ai_will_do = {
-                factor = 2
-                
-            }
-            
-        }
+		KR_whampoa_academy_spirit = {
+			on_add = { log = "[GetLogRoot]: add idea KR_whampoa_academy_spirit" }
+			ledger = army
+			allowed = {
+				is_chinese_or_potential_chinese_tag = yes
+			}
+			visible = {
+				OR = {
+					china_alignment_left_kuomintang = yes
+					china_alignment_right_kuomintang = yes
+				}
+				if = {
+					limit = {
+						original_tag = KUM
+					}
+					has_country_flag = KUM_is_chinese_tag
+				}
+			}
+			available = {
+				if = {
+					limit = { tag = CHI }
+					has_completed_focus = CHI_reopen_whampoa
+				}
+				else_if = {
+					limit = { tag = GXC }
+					has_completed_focus = GXC_legacy_of_whampoa
+				}
+			}
+			modifier = {
+				military_leader_cost_factor = 1
+				party_popularity_stability_factor = 0.25
+				trait_commando_xp_gain_factor = 0.15
+				trait_trickster_xp_gain_factor = 0.15
+				trait_infantry_leader_xp_gain_factor = 0.15
+				custom_modifier_tooltip = KR_whampoa_academy_spirit_tt
+			}
+			ai_will_do = { factor = 2 }
+		}
+	}
         professional_officer_corps_spirit = {
             on_add = {
                 log = "[GetLogRoot]: add idea professional_officer_corps_spirit"

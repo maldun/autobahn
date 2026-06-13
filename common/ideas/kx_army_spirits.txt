@@ -88,62 +88,6 @@ ideas = {
         
     }
     division_command_spirit = {
-        quick_improvisation_spirit = {
-            ledger = army
-            available = {
-                has_doctrine = new_mobile_warfare
-                
-            }
-            modifier = {
-                command_abilities_cost_factor = -0.2
-                command_power_gain = 0.2
-                planning_speed = 0.2
-                
-            }
-            ai_will_do = {
-                factor = 1
-                modifier = {
-                    factor = 2.0
-                    OR = {
-                        has_doctrine = mission_type_tactics
-                        has_doctrine = rapid_domination
-                        has_doctrine = mobile_defense
-                        
-                    }
-                    
-                }
-                
-            }
-            
-        }
-        decentralised_logistics_spirit = {
-            ledger = army
-            visible = {
-                is_chinese_tag = yes
-                
-            }
-            modifier = {
-                supply_combat_penalties_on_core_factor = -0.2
-                supply_node_range = 0.1
-                
-            }
-            ai_will_do = {
-                factor = 2
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
         istanbul_pact_spirit = {
             ledger = army
             picture = TUR_ottoman_hegemony
@@ -161,99 +105,6 @@ ideas = {
                 army_attack_against_minor_factor = 0.1
                 acclimatization_hot_climate_gain_factor = 0.25
                 coordination_bonus = 0.05
-                
-            }
-            ai_will_do = {
-                factor = 5
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        gekokujo_spirit = {
-            ledger = army
-            picture = japanese_influence_1
-            visible = {
-                tag = JAP
-                
-            }
-            modifier = {
-                pocket_penalty = -0.15
-                army_morale_factor = 0.05
-                experience_loss_factor = -0.3
-                initiative_factor = 0.1
-                
-            }
-            ai_will_do = {
-                factor = 15
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        international_revolution_spirit = {
-            ledger = army
-            picture = upbeat_command_spirit
-            visible = {
-                is_in_faction_with = INT
-                
-            }
-            modifier = {
-                coordination_bonus = 0.05
-                experience_loss_factor = -0.15
-                
-            }
-            ai_will_do = {
-                factor = 2
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        blackcat_saboteurs_spirit = {
-            ledger = army
-            picture = CSA_blackcat_saboteurs
-            visible = {
-                tag = CSA
-                
-            }
-            modifier = {
-                required_garrison_factor = -0.3
-                resistance_target = -0.15
-                resistance_growth_on_our_occupied_states = 0.5
-                out_of_supply_factor = -0.2
-                land_reinforce_rate = 0.1
-                max_training = -0.2
                 
             }
             ai_will_do = {
@@ -302,6 +153,98 @@ ideas = {
                     has_tech = trench_warfare
                     has_tech = mass_assault
                     has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        gekokujo_spirit = {
+            ledger = army
+            picture = japanese_influence_1
+            visible = {
+                tag = JAP
+                
+            }
+            modifier = {
+                pocket_penalty = -0.15
+                army_morale_factor = 0.05
+                experience_loss_factor = -0.3
+                initiative_factor = 0.1
+                
+            }
+            ai_will_do = {
+                factor = 15
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        blackcat_saboteurs_spirit = {
+            ledger = army
+            picture = CSA_blackcat_saboteurs
+            visible = {
+                tag = CSA
+                
+            }
+            modifier = {
+                required_garrison_factor = -0.3
+                resistance_target = -0.15
+                resistance_growth_on_our_occupied_states = 0.5
+                out_of_supply_factor = -0.2
+                land_reinforce_rate = 0.1
+                max_training = -0.2
+                
+            }
+            ai_will_do = {
+                factor = 5
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        quick_improvisation_spirit = {
+            ledger = army
+            available = {
+                has_doctrine = new_mobile_warfare
+                
+            }
+            modifier = {
+                command_abilities_cost_factor = -0.2
+                command_power_gain = 0.2
+                planning_speed = 0.2
+                
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    factor = 2.0
+                    OR = {
+                        has_doctrine = mission_type_tactics
+                        has_doctrine = rapid_domination
+                        has_doctrine = mobile_defense
+                        
+                    }
                     
                 }
                 
@@ -361,6 +304,63 @@ ideas = {
             }
             ai_will_do = {
                 factor = 15
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        decentralised_logistics_spirit = {
+            ledger = army
+            visible = {
+                is_chinese_tag = yes
+                
+            }
+            modifier = {
+                supply_combat_penalties_on_core_factor = -0.2
+                supply_node_range = 0.1
+                
+            }
+            ai_will_do = {
+                factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        international_revolution_spirit = {
+            ledger = army
+            picture = upbeat_command_spirit
+            visible = {
+                is_in_faction_with = INT
+                
+            }
+            modifier = {
+                coordination_bonus = 0.05
+                experience_loss_factor = -0.15
+                
+            }
+            ai_will_do = {
+                factor = 2
                 
             }
             available = {

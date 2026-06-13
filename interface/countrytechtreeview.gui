@@ -10685,6 +10685,76 @@ guiTypes = {
             format = "UPPER_LEFT"
             
         }
+        instantTextboxType = {
+            name = "leader_bonuses_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "leader_bonuses_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "support_category_multipliers_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "support_category_multipliers_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
         gridboxtype = {
             name = "terrain_modifiers_grid"
             position = {
@@ -10843,6 +10913,76 @@ guiTypes = {
             format = "UPPER_LEFT"
             
         }
+        instantTextboxType = {
+            name = "leader_bonuses_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "leader_bonuses_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "support_category_multipliers_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "support_category_multipliers_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
         gridboxtype = {
             name = "air_missions_grid"
             position = {
@@ -10941,6 +11081,76 @@ guiTypes = {
             format = "UPPER_LEFT"
             
         }
+        instantTextboxType = {
+            name = "leader_bonuses_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "leader_bonuses_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "support_category_multipliers_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "support_category_multipliers_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
         gridboxtype = {
             name = "terrain_modifiers_grid"
             position = {
@@ -11036,6 +11246,76 @@ guiTypes = {
                 
             }
             max_slots_horizontal = 2
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "leader_bonuses_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "leader_bonuses_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "support_category_multipliers_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "support_category_multipliers_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
             format = "UPPER_LEFT"
             
         }
@@ -11161,6 +11441,76 @@ guiTypes = {
             format = "UPPER_LEFT"
             
         }
+        instantTextboxType = {
+            name = "leader_bonuses_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "leader_bonuses_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "support_category_multipliers_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "support_category_multipliers_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
         gridboxtype = {
             name = "terrain_modifiers_grid"
             position = {
@@ -11259,6 +11609,76 @@ guiTypes = {
             format = "UPPER_LEFT"
             
         }
+        instantTextboxType = {
+            name = "leader_bonuses_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "leader_bonuses_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "support_category_multipliers_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "support_category_multipliers_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
         gridboxtype = {
             name = "terrain_modifiers_grid"
             position = {
@@ -11329,6 +11749,76 @@ guiTypes = {
             slotsize = {
                 width = 200
                 height = 20
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "leader_bonuses_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "leader_bonuses_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
+                
+            }
+            max_slots_horizontal = 1
+            format = "UPPER_LEFT"
+            
+        }
+        instantTextboxType = {
+            name = "support_category_multipliers_header"
+            font = "hoi4_typewriter16"
+            position = {
+                x = 35
+                y = 65
+                
+            }
+            maxWidth = 500
+            maxHeight = 25
+            fixedsize = yes
+            format = left
+            
+        }
+        gridboxtype = {
+            name = "support_category_multipliers_grid"
+            position = {
+                x = 90
+                y = 70
+                
+            }
+            size = {
+                width = 400
+                height = 400
+                
+            }
+            slotsize = {
+                width = 224
+                height = 30
                 
             }
             max_slots_horizontal = 1

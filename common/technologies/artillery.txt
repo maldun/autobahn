@@ -1809,7 +1809,6 @@ technologies = {
         }
         enable_equipment_modules = {
             r56_tank_heavy_cannon_4
-            r56_tank_high_velocity_cannon_4
             r56_tank_medium_cannon_4
             
         }
@@ -3112,6 +3111,13 @@ technologies = {
         special_project_specialization = {
             specialization_land
             specialization_air
+            
+        }
+        
+    }
+    the_thunder_at_our_gates_artillery = {
+        artillery_brigade = {
+            combat_width = -0.1
             
         }
         

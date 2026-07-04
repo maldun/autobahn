@@ -1992,24 +1992,9 @@ technologies = {
         
     }
     support_weapons = {
-        category_infantry_and_bicycle = {
-            defense = 0.05
-            breakthrough = 0.05
-            
-        }
-        category_cavalry = {
-            defense = 0.02
-            breakthrough = 0.02
-            
-        }
-        category_special_forces_leg_infantry = {
-            defense = 0.03
-            breakthrough = 0.03
-            
-        }
-        category_vehicle_infantry = {
-            defense = 0.05
-            breakthrough = 0.05
+        enable_subunits = {
+            fire_support
+            mot_fire_support
             
         }
         path = {
@@ -2078,24 +2063,21 @@ technologies = {
         
     }
     support_weapons2 = {
-        category_infantry_and_bicycle = {
-            defense = 0.05
+        field_guns = {
+            defense = 0.1
+            soft_attack = 0.1
+            
+        }
+        fire_support = {
+            defense = 0.15
+            breakthrough = 0.15
+            soft_attack = 0.1
+            
+        }
+        mot_fire_support = {
+            defense = 0.15
             breakthrough = 0.05
-            
-        }
-        category_cavalry = {
-            defense = 0.02
-            breakthrough = 0.02
-            
-        }
-        category_special_forces_leg_infantry = {
-            defense = 0.03
-            breakthrough = 0.03
-            
-        }
-        category_vehicle_infantry = {
-            defense = 0.05
-            breakthrough = 0.05
+            soft_attack = 0.1
             
         }
         on_research_complete = {
@@ -2177,24 +2159,21 @@ technologies = {
         
     }
     support_weapons3 = {
-        category_infantry_and_bicycle = {
-            defense = 0.05
+        field_guns = {
+            defense = 0.1
+            soft_attack = 0.1
+            
+        }
+        fire_support = {
+            defense = 0.15
+            breakthrough = 0.15
+            soft_attack = 0.1
+            
+        }
+        mot_fire_support = {
+            defense = 0.15
             breakthrough = 0.05
-            
-        }
-        category_cavalry = {
-            defense = 0.02
-            breakthrough = 0.02
-            
-        }
-        category_special_forces_leg_infantry = {
-            defense = 0.03
-            breakthrough = 0.03
-            
-        }
-        category_vehicle_infantry = {
-            defense = 0.05
-            breakthrough = 0.05
+            soft_attack = 0.1
             
         }
         path = {
@@ -2249,24 +2228,21 @@ technologies = {
         
     }
     support_weapons4 = {
-        category_infantry_and_bicycle = {
-            defense = 0.05
+        field_guns = {
+            defense = 0.1
+            soft_attack = 0.1
+            
+        }
+        fire_support = {
+            defense = 0.15
+            breakthrough = 0.15
+            soft_attack = 0.1
+            
+        }
+        mot_fire_support = {
+            defense = 0.15
             breakthrough = 0.05
-            
-        }
-        category_cavalry = {
-            defense = 0.02
-            breakthrough = 0.02
-            
-        }
-        category_special_forces_leg_infantry = {
-            defense = 0.03
-            breakthrough = 0.03
-            
-        }
-        category_vehicle_infantry = {
-            defense = 0.05
-            breakthrough = 0.05
+            soft_attack = 0.1
             
         }
         path = {

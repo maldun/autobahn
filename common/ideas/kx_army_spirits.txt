@@ -124,22 +124,111 @@ ideas = {
             }
             
         }
-        ostasien_marines_spirit = {
+        decentralised_logistics_spirit = {
             ledger = army
-            picture = GEA_naval_yards
             visible = {
-                tag = GEA
+                is_chinese_tag = yes
                 
             }
             modifier = {
-                naval_invasion_prep_speed = 0.1
-                naval_invasion_penalty = -0.2
-                amphibious_invasion = 0.3
-                special_forces_cap = 0.1
-                acclimatization_hot_climate_gain_factor = 0.5
-                army_attack_against_minor_factor = 0.15
-                army_attack_against_major_factor = -0.05
-                special_forces_attack_factor = 0.15
+                supply_combat_penalties_on_core_factor = -0.2
+                supply_node_range = 0.1
+                
+            }
+            ai_will_do = {
+                factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        reichspakt_defense_spirit = {
+            ledger = army
+            picture = GER_imperial_pride_guns
+            visible = {
+                is_in_faction_with = GER
+                GER = {
+                    is_faction_leader = yes
+                    
+                }
+                
+            }
+            modifier = {
+                army_org_factor = 0.1
+                army_morale_factor = 0.05
+                
+            }
+            ai_will_do = {
+                factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        quick_improvisation_spirit = {
+            ledger = army
+            available = {
+                has_doctrine = new_mobile_warfare
+                
+            }
+            modifier = {
+                command_abilities_cost_factor = -0.2
+                command_power_gain = 0.2
+                planning_speed = 0.2
+                
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    factor = 2.0
+                    OR = {
+                        has_doctrine = mission_type_tactics
+                        has_doctrine = rapid_domination
+                        has_doctrine = mobile_defense
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        stavka_legacy = {
+            ledger = army
+            picture = RUS_planning_school
+            visible = {
+                tag = RUS
+                
+            }
+            modifier = {
+                acclimatization_cold_climate_gain_factor = 0.15
+                army_breakthrough_against_minor_factor = 0.1
+                army_morale_factor = 0.05
+                initiative_factor = -0.025
+                coordination_bonus = -0.025
+                command_abilities_cost_factor = -0.25
+                command_power_gain = 0.2
+                planning_speed = 0.15
                 
             }
             ai_will_do = {
@@ -223,130 +312,6 @@ ideas = {
             }
             
         }
-        quick_improvisation_spirit = {
-            ledger = army
-            available = {
-                has_doctrine = new_mobile_warfare
-                
-            }
-            modifier = {
-                command_abilities_cost_factor = -0.2
-                command_power_gain = 0.2
-                planning_speed = 0.2
-                
-            }
-            ai_will_do = {
-                factor = 1
-                modifier = {
-                    factor = 2.0
-                    OR = {
-                        has_doctrine = mission_type_tactics
-                        has_doctrine = rapid_domination
-                        has_doctrine = mobile_defense
-                        
-                    }
-                    
-                }
-                
-            }
-            
-        }
-        reichspakt_defense_spirit = {
-            ledger = army
-            picture = GER_imperial_pride_guns
-            visible = {
-                is_in_faction_with = GER
-                GER = {
-                    is_faction_leader = yes
-                    
-                }
-                
-            }
-            modifier = {
-                army_org_factor = 0.1
-                army_morale_factor = 0.05
-                
-            }
-            ai_will_do = {
-                factor = 2
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        stavka_legacy = {
-            ledger = army
-            picture = RUS_planning_school
-            visible = {
-                tag = RUS
-                
-            }
-            modifier = {
-                acclimatization_cold_climate_gain_factor = 0.15
-                army_breakthrough_against_minor_factor = 0.1
-                army_morale_factor = 0.05
-                initiative_factor = -0.025
-                coordination_bonus = -0.025
-                command_abilities_cost_factor = -0.25
-                command_power_gain = 0.2
-                planning_speed = 0.15
-                
-            }
-            ai_will_do = {
-                factor = 15
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
-        decentralised_logistics_spirit = {
-            ledger = army
-            visible = {
-                is_chinese_tag = yes
-                
-            }
-            modifier = {
-                supply_combat_penalties_on_core_factor = -0.2
-                supply_node_range = 0.1
-                
-            }
-            ai_will_do = {
-                factor = 2
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
         international_revolution_spirit = {
             ledger = army
             picture = upbeat_command_spirit
@@ -361,6 +326,41 @@ ideas = {
             }
             ai_will_do = {
                 factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        ostasien_marines_spirit = {
+            ledger = army
+            picture = GEA_naval_yards
+            visible = {
+                tag = GEA
+                
+            }
+            modifier = {
+                naval_invasion_prep_speed = 0.1
+                naval_invasion_penalty = -0.2
+                amphibious_invasion = 0.3
+                special_forces_cap = 0.1
+                acclimatization_hot_climate_gain_factor = 0.5
+                army_attack_against_minor_factor = 0.15
+                army_attack_against_major_factor = -0.05
+                special_forces_attack_factor = 0.15
+                
+            }
+            ai_will_do = {
+                factor = 15
                 
             }
             available = {

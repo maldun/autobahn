@@ -4,13 +4,24 @@ l_english:
 #Flags
  rt56_old_school:0 ""
 
+#Country selection labels
+ country_releasable: "Releasable"
+ country_america: "Americas"
+ country_asia: "Asia-Pacific"
+ country_europe: "Europe"
+ country_africa: "Africa"
+ new_r56_content: "New Content"
+
+#Misc
+lemur_generic_focus:0 "Additional Continuous Focuses"
+
 #Ideas
  etgi_ideas:0 "National Character"
  
  r56i_laws_category_gender:0 "Legal Status of Women"
  r56i_laws_gender_traditional:0 "Traditional Roles"
- r56i_laws_gender_limited:0 "Limited Rights"
  r56i_laws_gender_patriarchy:0 "Enforced Patriarchy"
+ r56i_laws_gender_limited:0 "Limited Rights"
  r56i_laws_gender_equality:0 "Total Equality"
  
  r56i_laws_social:0 "Social Order"
@@ -40,7 +51,7 @@ l_english:
  r56i_laws_leadership:0 "The State's Mandate"
  r56i_laws_leadership_politics:0 "Power and Politics"
  r56i_laws_leadership_cult:0 "Personality Cult"
- r56i_laws_leadership_secular:0 "Secular Institutions"
+ r56i_laws_leadership_secular:0 "Justice and Liberty"
  r56i_laws_leadership_divine:0 "Divine Inspiration"
  r56i_laws_leadership_people:0 "Will of the People"
  r56i_laws_leadership_communal_decision_making:0 "Communal Decision Making"
@@ -64,10 +75,7 @@ l_english:
  air_sky_soldiers_spirit:0 "Sky Soldiers"
  air_glider_insertion_spirit:0 "Airborne Insertion"
  modifier_tactic_guerrilla_tactics_preferred_weight_factor:0 "Additional §YGuerrilla Tactics§! Chance if it is the Preferred tactic"
- modifier_unit_shocktroop_design_cost_factor:0 "Shocktroop Unit Design Cost"
- modifier_unit_jaeger_design_cost_factor:0 "Jaeger Unit Design Cost"
- modifier_unit_jungletroop_design_cost_factor:0 "Jungle Infantry Unit Design Cost"
- modifier_unit_desertinfantry_design_cost_factor:0 "Desert Infantry Unit Design Cost"
+
 #Decisions
  #r56i_national_character_decisions:0 "National Decisions"
  r56i_decision_suppress_revolts:0 "Crackdown on the Civil Unrest"
@@ -78,14 +86,22 @@ l_english:
  r56i_decision_spend_revolts_desc:0 "The public wants projects and programs. Maybe if we agree to some of them, the violence will end."
 
 #Tooltips
+ r56i_tooltip_suppress_spend:0 "Removes National Spirit §YCivil Unrest§!\n §g'We will attempt to spend our way out of the problem.'§!"
+ r56i_tooltip_suppress_talks:0 "Removes National Spirit §YCivil Unrest§!\n §g'We will talk with the riot leaders and see what can be done.'§!"
+ r56i_tooltip_suppress_harsh:0 "Removes National Spirit §YCivil Unrest§!\n §g'We will send out the military police to do what is needed.'§!"
+ r56i_laws_security_order_tt:0 "§WChance of Strikes§!:§G -100%§!"
+ has_government_democratic_socialism_tt:0 "Current country leader has ideology §HDemocratic Socialism§!"
+ not_has_government_anarchism_tt:0 "Current country leader does not have ideology §HAnarchism§! or §HAnarchist Communism§!"
+ has_government_anarchism_tt:0 "Current country leader has ideology §HAnarchism§! or §HAnarchist Communism§!"
+ individual_rights_trigger_tt:0 "Current country leader has ideology §HDemocratic Socialism§!, §HAnarchism§! or §HAnarchist Communism§!"
+ r56_tooltip_is_indepndent_or_has_democratic_overlord:0 "Must be fully independent or NOT have a §YDemocratic Overlord§!"
+ r56_tooltip_is_independent_or_has_fascist_overlord:0 "Must be fully independent or NOT have a §YFascist Overlord§!"
+ r56_tooltip_is_indepedent_or_has_authoritarian_overlord:0 "Must be fully independent or NOT have a §YAuthoritarian Overlord§!"
+ r56_tooltip_is_independent_or_has_democratic_or_communist_overlord:0 "Must be fully independent or NOT have a §YDemocratic§! or §YCommunist Overlord§!"
 
-r56i_tooltip_suppress_spend:0 "Removes National Spirit §YCivil Unrest§!\n §g'We will attempt to spend our way out of the problem.'§!"
-r56i_tooltip_suppress_talks:0 "Removes National Spirit §YCivil Unrest§!\n §g'We will talk with the riot leaders and see what can be done.'§!"
-r56i_tooltip_suppress_harsh:0 "Removes National Spirit §YCivil Unrest§!\n §g'We will send out the military police to do what is needed.'§!"
-r56i_laws_security_order_tt:0 "§WChance of Strikes§!:§G -100%§!"
-
+  baltic_integrate_estonia_r56: "Integrate Estonia"
+  baltic_integrate_estonia_r56_desc: "While their language and culture is distant from ours, we and the Estonians share a brotherhood as a nation of the Baltic, with dangerous enemies to the south and east. Our only chance forward is to unite as one and fight to the bitter end!"
 #Events
- 
  #People are unhappy
  r56i.event.01.title:0 "Riots in the Streets"
  r56i.event.01.description:0 "It seems the public has been ignored for a bit too long. Angered by the current situation and unable to take anymore, violence has erupted. While their demands are reasonably moderate, they are undoubtedly costly."

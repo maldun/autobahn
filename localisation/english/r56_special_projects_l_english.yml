@@ -66,7 +66,7 @@ r56_anti_tank_rifle_grenade_tech_desc:0 "Developing miniaturized shape charges f
 #Heavy Tank Studies 
 sp_r56_heavy_tank_studies:0 "Heavy Tank Studies"
 GER_sp_r56_heavy_tank_studies:0 "WaA's Durchbruchwagen Request"
-RUS_sp_r56_heavy_tank_studies:0 "Breakthrough Tank Requirement"
+SOV_sp_r56_heavy_tank_studies:0 "Breakthrough Tank Requirement"
 ENG_sp_r56_heavy_tank_studies:0 "General Staff's Uparmor Request" 
 USA_sp_r56_heavy_tank_studies:0 "Chief of Infantry's Recommendation"
 sp_r56_heavy_tank_studies_desc:0 "Heavy Tanks are complex beasts that require much more research and development than the standard industry processes can provide. Commissioning a large study into these large mechanical vehicles could lead to designs that are better prepared for combat."

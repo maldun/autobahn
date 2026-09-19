@@ -91,6 +91,19 @@
     },
     "common/special_projects/project_tags/": {
       "r56_tags.txt": []
+    },
+    "common/doctrines/grand_doctrines/": {
+    "r56_land_grand_doctrines.txt": [],
+    "special_forces_grand_doctrines.txt": []
+    },
+    "common/doctrines/subdoctrines/land/": {
+     "armor_subdoctrines.txt":[],
+     "combat_support_subdoctrines.txt": [],
+     "infantry_subdoctrines.txt": [],
+     "operations_subdoctrines.txt": []
+    },
+    "common/doctrines/subdoctrines/special_forces/": {
+    "special_forces_subdoctrines.txt": []
     }
 }
     

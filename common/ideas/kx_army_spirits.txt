@@ -1,5 +1,33 @@
 ideas = {
     academy_spirit = {
+        professional_officer_corps_spirit = {
+            on_add = {
+                log = "[GetLogRoot]: add idea professional_officer_corps_spirit"
+                
+            }
+            ledger = army
+            modifier = {
+                experience_gain_army_unit_factor = 0.15
+                max_command_power = 30
+                
+            }
+            ai_will_do = {
+                factor = 1
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
         KR_whampoa_academy_spirit = {
             on_add = {
                 log = "[GetDateText]: [Root.GetName]: add idea KR_whampoa_academy_spirit"
@@ -57,58 +85,29 @@ ideas = {
             }
             
         }
-        professional_officer_corps_spirit = {
-            on_add = {
-                log = "[GetLogRoot]: add idea professional_officer_corps_spirit"
-                
-            }
-            ledger = army
-            modifier = {
-                experience_gain_army_unit_factor = 0.15
-                max_command_power = 30
-                
-            }
-            ai_will_do = {
-                factor = 1
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
         
     }
     division_command_spirit = {
-        istanbul_pact_spirit = {
+        stavka_legacy = {
             ledger = army
-            picture = TUR_ottoman_hegemony
+            picture = RUS_planning_school
             visible = {
-                is_in_faction_with = TUR
-                TUR = {
-                    is_faction_leader = yes
-                    
-                }
+                tag = RUS
                 
             }
             modifier = {
-                army_org_factor = 0.05
-                army_attack_against_major_factor = -0.1
-                army_attack_against_minor_factor = 0.1
-                acclimatization_hot_climate_gain_factor = 0.25
-                coordination_bonus = 0.05
+                acclimatization_cold_climate_gain_factor = 0.15
+                army_breakthrough_against_minor_factor = 0.1
+                army_morale_factor = 0.05
+                initiative_factor = -0.025
+                coordination_bonus = -0.025
+                command_abilities_cost_factor = -0.25
+                command_power_gain = 0.2
+                planning_speed = 0.15
                 
             }
             ai_will_do = {
-                factor = 5
+                factor = 15
                 
             }
             available = {
@@ -137,6 +136,67 @@ ideas = {
             }
             ai_will_do = {
                 factor = 2
+                
+            }
+            available = {
+                OR = {
+                    has_tech = mobile_warfare
+                    has_tech = superior_firepower
+                    has_tech = trench_warfare
+                    has_tech = mass_assault
+                    has_tech = r56_guerilla_warfare
+                    
+                }
+                
+            }
+            
+        }
+        quick_improvisation_spirit = {
+            ledger = army
+            available = {
+                has_doctrine = new_mobile_warfare
+                
+            }
+            modifier = {
+                command_abilities_cost_factor = -0.2
+                command_power_gain = 0.2
+                planning_speed = 0.2
+                
+            }
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    factor = 2.0
+                    OR = {
+                        has_doctrine = mission_type_tactics
+                        has_doctrine = rapid_domination
+                        has_doctrine = mobile_defense
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        blackcat_saboteurs_spirit = {
+            ledger = army
+            picture = CSA_blackcat_saboteurs
+            visible = {
+                tag = CSA
+                
+            }
+            modifier = {
+                required_garrison_factor = -0.3
+                resistance_target = -0.15
+                resistance_growth_on_our_occupied_states = 0.5
+                out_of_supply_factor = -0.2
+                land_reinforce_rate = 0.1
+                max_training = -0.2
+                
+            }
+            ai_will_do = {
+                factor = 5
                 
             }
             available = {
@@ -185,69 +245,6 @@ ideas = {
             }
             
         }
-        quick_improvisation_spirit = {
-            ledger = army
-            available = {
-                has_doctrine = new_mobile_warfare
-                
-            }
-            modifier = {
-                command_abilities_cost_factor = -0.2
-                command_power_gain = 0.2
-                planning_speed = 0.2
-                
-            }
-            ai_will_do = {
-                factor = 1
-                modifier = {
-                    factor = 2.0
-                    OR = {
-                        has_doctrine = mission_type_tactics
-                        has_doctrine = rapid_domination
-                        has_doctrine = mobile_defense
-                        
-                    }
-                    
-                }
-                
-            }
-            
-        }
-        stavka_legacy = {
-            ledger = army
-            picture = RUS_planning_school
-            visible = {
-                tag = RUS
-                
-            }
-            modifier = {
-                acclimatization_cold_climate_gain_factor = 0.15
-                army_breakthrough_against_minor_factor = 0.1
-                army_morale_factor = 0.05
-                initiative_factor = -0.025
-                coordination_bonus = -0.025
-                command_abilities_cost_factor = -0.25
-                command_power_gain = 0.2
-                planning_speed = 0.15
-                
-            }
-            ai_will_do = {
-                factor = 15
-                
-            }
-            available = {
-                OR = {
-                    has_tech = mobile_warfare
-                    has_tech = superior_firepower
-                    has_tech = trench_warfare
-                    has_tech = mass_assault
-                    has_tech = r56_guerilla_warfare
-                    
-                }
-                
-            }
-            
-        }
         gekokujo_spirit = {
             ledger = army
             picture = japanese_influence_1
@@ -279,24 +276,20 @@ ideas = {
             }
             
         }
-        blackcat_saboteurs_spirit = {
+        international_revolution_spirit = {
             ledger = army
-            picture = CSA_blackcat_saboteurs
+            picture = upbeat_command_spirit
             visible = {
-                tag = CSA
+                is_in_faction_with = INT
                 
             }
             modifier = {
-                required_garrison_factor = -0.3
-                resistance_target = -0.15
-                resistance_growth_on_our_occupied_states = 0.5
-                out_of_supply_factor = -0.2
-                land_reinforce_rate = 0.1
-                max_training = -0.2
+                coordination_bonus = 0.05
+                experience_loss_factor = -0.15
                 
             }
             ai_will_do = {
-                factor = 5
+                factor = 2
                 
             }
             available = {
@@ -312,20 +305,27 @@ ideas = {
             }
             
         }
-        international_revolution_spirit = {
+        istanbul_pact_spirit = {
             ledger = army
-            picture = upbeat_command_spirit
+            picture = TUR_ottoman_hegemony
             visible = {
-                is_in_faction_with = INT
+                is_in_faction_with = TUR
+                TUR = {
+                    is_faction_leader = yes
+                    
+                }
                 
             }
             modifier = {
+                army_org_factor = 0.05
+                army_attack_against_major_factor = -0.1
+                army_attack_against_minor_factor = 0.1
+                acclimatization_hot_climate_gain_factor = 0.25
                 coordination_bonus = 0.05
-                experience_loss_factor = -0.15
                 
             }
             ai_will_do = {
-                factor = 2
+                factor = 5
                 
             }
             available = {

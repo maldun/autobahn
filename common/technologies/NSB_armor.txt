@@ -1173,30 +1173,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-				}
-				if = {
-					limit = {
-						has_completed_focus = ITA_capo_supremo
-					}
-					ITA_add_il_duce_sh_tank_template_and_production = yes
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = ITA_modern_musculus
-					}
-					ITA_add_modern_musculus_sh_tank_template_and_production = yes
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = ITA_a_time_for_war
-					}
-					ITA_add_hand_of_god_sh_tank_template_and_production = yes
-				}
-			}
-
 			if = {
 				limit = {
 					has_dlc = "Gotterdammerung"

@@ -2,14 +2,7 @@
 #	equipments = {
 #		fighter_equipment = {
 #		year = 1933
-#			can_be_produced = {
-#			NOT = {
-#				has_idea = BUL_army_restrictions
-#				has_idea = GER_treaty_of_versailles
-#				has_idea = GER_treaty_of_versailles_2
-#				has_idea = GER_treaty_of_versailles_3
-#			}
-#		}
+
 #			is_archetype = yes
 #		is_convertable = yes
 #		picture = archetype_fighter_equipment
@@ -46,11 +39,6 @@
 #	}
 #		cv_fighter_equipment = {
 #		year = 1933
-#			can_be_produced = {
-#			NOT = {
-#				has_idea = BUL_army_restrictions
-#			}
-#		}
 #			is_archetype = yes
 #		is_convertable = yes
 #		picture = archetype_fighter_equipment
@@ -87,11 +75,6 @@
 #	}
 #		CAS_equipment = {
 #		year = 1933
-#			can_be_produced = {
-#			NOT = {
-#				has_idea = BUL_army_restrictions
-#			}
-#		}
 #			is_archetype = yes
 #		is_convertable = yes
 #		picture = archetype_CAS_equipment
@@ -126,11 +109,6 @@
 #	}
 #		cv_CAS_equipment = {
 #		year = 1933
-#			can_be_produced = {
-#			NOT = {
-#				has_idea = BUL_army_restrictions
-#			}
-#		}
 #			is_archetype = yes
 #		is_convertable = yes
 #		picture = archetype_CAS_equipment
@@ -166,11 +144,6 @@
 #	}
 #		nav_bomber_equipment = {
 #		year = 1933
-#			can_be_produced = {
-#			NOT = {
-#				has_idea = BUL_army_restrictions
-#			}
-#		}
 #			is_archetype = yes
 #		is_convertable = yes
 #		picture = archetype_heavy_fighter_equipment
@@ -205,11 +178,6 @@
 #	}
 #		jet_fighter_equipment = {
 #		year = 1933
-#			can_be_produced = {
-#			NOT = {
-#				has_idea = BUL_army_restrictions
-#			}
-#		}
 #			is_archetype = yes
 #		is_convertable = yes
 #		picture = archetype_fighter_equipment
@@ -821,11 +789,6 @@
 #	rocket_interceptor_equipment = {
 #		year = 1936
 #
-#		can_be_produced = {
-#			NOT = {
-#				has_idea = BUL_army_restrictions
-#			}
-#		}
 #
 #		is_archetype = yes
 #		is_convertable = yes

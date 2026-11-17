@@ -151,34 +151,6 @@ ideas = {
             }
             
         }
-        quick_improvisation_spirit = {
-            ledger = army
-            available = {
-                has_doctrine = new_mobile_warfare
-                
-            }
-            modifier = {
-                command_abilities_cost_factor = -0.2
-                command_power_gain = 0.2
-                planning_speed = 0.2
-                
-            }
-            ai_will_do = {
-                factor = 1
-                modifier = {
-                    factor = 2.0
-                    OR = {
-                        has_doctrine = mission_type_tactics
-                        has_doctrine = rapid_domination
-                        has_doctrine = mobile_defense
-                        
-                    }
-                    
-                }
-                
-            }
-            
-        }
         blackcat_saboteurs_spirit = {
             ledger = army
             picture = CSA_blackcat_saboteurs

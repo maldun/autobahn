@@ -914,7 +914,7 @@ technologies = {
         }
         categories = {
             motorized_equipment
-            armored_cars_tech
+            cat_armored_cars
             cat_light_armor
             
         }
@@ -951,7 +951,7 @@ technologies = {
         }
         categories = {
             motorized_equipment
-            armored_cars_tech
+            cat_armored_cars
             cat_light_armor
             
         }
@@ -987,7 +987,7 @@ technologies = {
         }
         categories = {
             motorized_equipment
-            armored_cars_tech
+            cat_armored_cars
             cat_light_armor
             
         }
@@ -1016,7 +1016,7 @@ technologies = {
         categories = {
             motorized_equipment
             armor
-            armored_cars_tech
+            cat_armored_cars
             armor_variant_tech
             
         }

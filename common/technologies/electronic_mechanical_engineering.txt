@@ -2885,6 +2885,7 @@ modern_radio = {
 		}
 		
 		nuclear_production = 0.5
+		
 		categories = {
 			nuclear
 		}

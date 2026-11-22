@@ -121,7 +121,7 @@ mountaineers_2 = {
             factor = 25
             OR = {
             	original_tag = GER
-            	original_tag = SOV
+            	original_tag = RUS
             	original_tag = POL
             	original_tag = ITA
             	original_tag = BEL
@@ -450,7 +450,7 @@ paratroopers_1 = {
         modifier = {
             factor = 15
             OR = {
-            	original_tag = SOV
+            	original_tag = RUS
             	original_tag = JAP
             	original_tag = ITA
             }
@@ -841,7 +841,7 @@ shocktroops_1 = {
         modifier = {
             factor = 25
             OR = {
-            	original_tag = SOV
+            	original_tag = RUS
             	original_tag = GER
             }          
         }

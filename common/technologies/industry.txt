@@ -1133,7 +1133,6 @@ technologies = {
             cat_synth_oil
             
         }
-
         ai_will_do = {
             factor = 5
             modifier = {
@@ -1916,9 +1915,9 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            base = 0
             modifier = {
-                factor = 5.0
+                add = 5.0
                 OR = {
                     oil > 0
                     aluminium > 0
@@ -2003,9 +2002,9 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            base = 0
             modifier = {
-                factor = 1
+                add = 1
                 OR = {
                     oil > 0
                     aluminium > 0
@@ -2090,9 +2089,9 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            base = 0
             modifier = {
-                factor = 1
+                add = 1
                 OR = {
                     oil > 0
                     aluminium > 0
@@ -2177,9 +2176,9 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            base = 0
             modifier = {
-                factor = 1.0
+                add = 1
                 OR = {
                     oil > 0
                     aluminium > 0
@@ -2259,9 +2258,9 @@ technologies = {
             
         }
         ai_will_do = {
-            factor = 0
+            base = 0
             modifier = {
-                factor = 1.0
+                add = 1
                 OR = {
                     oil > 0
                     aluminium > 0

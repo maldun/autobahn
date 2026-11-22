@@ -8,8 +8,6 @@
         "r56_techs_electronics.gfx": [],
         "r56_techs_vechicles.gfx": [],
         "r56e_countrystateview.gfx": [],
-        "countrystateview.gui": [],
-        "countrystateview.gfx": [],
         "r56_goals.gfx": [],
         "r56_goals_shine.gfx": [],
         "r56_plane_modules_icons.gfx": [],
@@ -95,12 +93,6 @@
     "common/doctrines/grand_doctrines/": {
     "r56_land_grand_doctrines.txt": [],
     "special_forces_grand_doctrines.txt": []
-    },
-    "common/doctrines/subdoctrines/land/": {
-     "armor_subdoctrines.txt":[],
-     "combat_support_subdoctrines.txt": [],
-     "infantry_subdoctrines.txt": [],
-     "operations_subdoctrines.txt": []
     },
     "common/doctrines/subdoctrines/special_forces/": {
     "special_forces_subdoctrines.txt": []

@@ -73,17 +73,17 @@ technologies = {
             factor = 2
             modifier = {
                 factor = 2
-                date > 1937-01-01
+                date > 1937.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1938-01-01
+                date > 1938.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1939-01-01
+                date > 1939.01.01
                 
             }
             
@@ -148,17 +148,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1937-01-01
+                date > 1937.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1938-01-01
+                date > 1938.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1939-01-01
+                date > 1939.01.01
                 
             }
             
@@ -226,17 +226,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1939-01-01
+                date > 1939.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1940-01-01
+                date > 1940.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             modifier = {
@@ -306,17 +306,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1940-01-01
+                date > 1940.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             modifier = {
@@ -385,17 +385,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             modifier = {
@@ -456,17 +456,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1944-01-01
+                date > 1944.01.01
                 
             }
             
@@ -531,17 +531,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1944-01-01
+                date > 1944.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1945-01-01
+                date > 1945.01.01
                 
             }
             
@@ -1311,17 +1311,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1937-01-01
+                date > 1937.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1938-01-01
+                date > 1938.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1939-01-01
+                date > 1939.01.01
                 
             }
             
@@ -1382,17 +1382,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1939-01-01
+                date > 1939.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1940-01-01
+                date > 1940.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             
@@ -1458,17 +1458,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1940-01-01
+                date > 1940.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             
@@ -1533,17 +1533,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             
@@ -1605,17 +1605,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1944-01-01
+                date > 1944.01.01
                 
             }
             
@@ -1677,17 +1677,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1944-01-01
+                date > 1944.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1945-01-01
+                date > 1945.01.01
                 
             }
             
@@ -1983,17 +1983,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1937-01-01
+                date > 1937.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1938-01-01
+                date > 1938.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1939-01-01
+                date > 1939.01.01
                 
             }
             
@@ -2061,17 +2061,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1939-01-01
+                date > 1939.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1940-01-01
+                date > 1940.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             
@@ -2132,17 +2132,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1940-01-01
+                date > 1940.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             
@@ -2215,17 +2215,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1941-01-01
+                date > 1941.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             
@@ -2288,17 +2288,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1944-01-01
+                date > 1944.01.01
                 
             }
             
@@ -2357,17 +2357,17 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1943-01-01
+                date > 1943.01.01
                 
             }
             modifier = {
                 factor = 2
-                date > 1944-01-01
+                date > 1944.01.01
                 
             }
             modifier = {
                 factor = 5
-                date > 1945-01-01
+                date > 1945.01.01
                 
             }
             
@@ -2949,7 +2949,7 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             
@@ -3009,7 +3009,7 @@ technologies = {
             }
             modifier = {
                 factor = 2
-                date > 1942-01-01
+                date > 1942.01.01
                 
             }
             

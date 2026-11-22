@@ -213,5 +213,5 @@ def patch(kx_path, rt56_path, out_folder):
     #patch_airships_techtree(kx_path,rt56_path,out_folder)
     # Is removed in KX for now
     #patch_naval_ai_equipment(kx_path, out_folder)
-    patch_countrystateview(kx_path, out_folder)
+    # patch_countrystateview(kx_path, out_folder)
     patch_combat_tactics(kx_path, rt56_path, out_folder)

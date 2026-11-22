@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import rt56_patches
 import pyparsing
+import re
 from Hoi4Converter.parser import parse_grammar as code2obj
 from Hoi4Converter.converter import *
 from Hoi4Converter.mappings import *
@@ -39,11 +40,16 @@ def replace_string(str1, str2, out_dir):
                     txt = fp.read()
                     fp.seek(0)
                     fp.write(txt.replace(str1, str2))
+                    # CRLF is read as LF, so the text can be shorter than
+                    # the file. Without truncate the old tail stays
+                    # behind and corrupts the file.
+                    fp.truncate()
             except UnicodeDecodeError:
                 with open(fname, 'r+', encoding='latin-1') as fp:
                     txt = fp.read()
                     fp.seek(0)
                     fp.write(txt.replace(str1, str2))
+                    fp.truncate()
 
 ###############################################################################
 # Copy Files                                                                 #
@@ -346,6 +352,36 @@ def patch_electrical_engineering(mod_path, out_path):
         txt = txt.replace("USA", "GER")
     with open(out_file, 'w') as fp:
         fp.write(txt)
+    # the effect does not exist in KX. The file can not be parsed,
+    # so the code has to be patched as text.
+    patch_code_text(out_file, rt56_patches.japan_warning_snippet,
+                    rt56_patches.japan_warning_patch)
+
+
+def patch_code_text(out_file, org_code, patched_code=''):
+    """
+    Like patch_code for files which Hoi4Converter can not parse.
+    Whitespace, line breaks and comments in the file are ignored when
+    looking for org_code. All other text and the formatting are kept.
+    """
+    tokens = re.findall(r"[{}=]|[^\s{}=]+", org_code)
+    separator = r"(?:\s|#[^\n]*)*"
+    pattern = re.compile(separator.join(re.escape(token) for token in tokens))
+    with open(out_file, 'r') as fp:
+        txt = fp.read()
+    txt, count = pattern.subn(lambda _: patched_code, txt)
+    if count == 0:
+        print(f"Warning: code to patch not found in {out_file}")
+    with open(out_file, 'w') as fp:
+        fp.write(txt)
+
+
+def patch_nsb_armor(mod_path, out_path):
+    out_file = os.path.join(out_path, TECHNOLOGY_PATH, "NSB_armor.txt")
+    # the Italian template effects do not exist in KX. Patched as text to
+    # keep the comments and the formatting of the file.
+    patch_code_text(out_file, rt56_patches.ITA_templates_snippet,
+                    rt56_patches.ITA_templates_patch)
 
 
 def patch_industry(mod_path, out_path):
@@ -368,6 +404,7 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     patch_artillery(mod_path, out_path)
     patch_armor(mod_path, out_path)
     patch_electrical_engineering(mod_path, out_path)
+    patch_nsb_armor(mod_path, out_path)
     patch_infantry(mod_path, r56_path, out_path, KX)
     patch_industry(mod_path, out_path)
     patch_rt56_vehicles(mod_path, out_path)
@@ -381,7 +418,6 @@ def patch_ai(mod_path, r56_path, kr_path, out_path, KX):
     patch_mtg_support(out_path)
 
     # No operations necessary:
-    # NSB armor
     # infantry extra tech
     # r56_techs
     # r56e_etax.txt
@@ -405,7 +441,7 @@ def patch_code(out_file, org_code, patched_code):
 
 
 def patch_missing_BUL_idea(out_path):
-    snippet = rt56_patches.BUL_army_restrictions_snippet
+    snippets = rt56_patches.BUL_army_restrictions_snippets
     patch = rt56_patches.BUL_army_restrictions_patch
     for root, _, files in os.walk(os.path.join(out_path, EQUIPMENT_PATH)):
         for file in files:
@@ -413,7 +449,8 @@ def patch_missing_BUL_idea(out_path):
             with open(current_file, 'r') as fp:
                 txt = fp.read()
             if "BUL_army_restrictions" in txt:
-                patch_code(current_file, snippet, patch)
+                for snippet in snippets:
+                    patch_code(current_file, snippet, patch)
 
 
 def patch_missing_mtg_naval_subtechs(mod_path, out_path):
@@ -518,6 +555,40 @@ def patch_army_spirits(r56_path, out_path):
     text = text.replace("has_completed_focus = NOR_officers_academy",'\n')
     with open(out_file,'w') as fp:
         fp.write(text)
+
+DATE_KEY = "date"
+# HOI4 needs dates as YYYY.MM.DD, the sources sometimes have YYYY-MM-DD
+DASH_DATE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})$")
+DASH_DATE_IN_CODE = re.compile(r"\bdate\s*[<>=]+\s*\d{4}-\d{2}-\d{2}")
+
+
+def _fix_dates(obj):
+    """Changes the values of 'date <op> YYYY-MM-DD' items to YYYY.MM.DD"""
+    if not isinstance(obj, list):
+        return
+    if len(obj) == 3 and obj[0] == DATE_KEY and isinstance(obj[2], list):
+        obj[2] = [DASH_DATE.sub(r"\1.\2.\3", val) if isinstance(val, str)
+                  else val for val in obj[2]]
+    for item in obj:
+        _fix_dates(item)
+
+
+def fix_date_format(out_path):
+    """Run after all other patches, as they may create new files"""
+    for root, _, files in os.walk(os.path.join(out_path, COMMON_PATH)):
+        for file in files:
+            current_file = os.path.join(root, file)
+            if not file.endswith(".txt"):
+                continue
+            with open(current_file, 'r') as fp:
+                txt = fp.read()
+            if not DASH_DATE_IN_CODE.search(txt):
+                continue
+            obj = paradox2list(current_file)
+            _fix_dates(obj)
+            with open(current_file, 'w') as fp:
+                fp.write(list2paradox(obj))
+
 
 def patch_bugs(mod_path, r56_path, kr_path, out_path, KX):
     patch_missing_BUL_idea(out_path)

@@ -1,5 +1,5 @@
 equipment_modules = {
-a	airship_engine_1_sc = {
+ 	airship_engine_1_sc = {
 		abbreviation = "ae1sc"
 		category = airship_engine_type
 		sfx = sfx_ui_sd_module_engine

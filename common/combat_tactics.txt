@@ -1713,7 +1713,7 @@ tactic_cc_order_227 = {
         phase = close_combat
         tag = SOV
         hardness < .05
-        date > 1939-01-01
+        date > 1939.01.01
         OR = {
             is_fighting_in_terrain = urban
             
@@ -1851,13 +1851,13 @@ tactic_dday_landings = {
             }
             OR = {
                 AND = {
-                    date < 1944-07-01
-                    date > 1944-05-31
+                    date < 1944.07.01
+                    date > 1944.05.31
                     
                 }
                 AND = {
-                    date < 1945-07-01
-                    date > 1945-05-31
+                    date < 1945.07.01
+                    date > 1945.05.31
                     
                 }
                 

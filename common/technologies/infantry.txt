@@ -5478,5 +5478,23 @@ technologies = {
         }
         
     }
+    TtbE_river_fleet_tech = {
+        allow = {
+            always = no
+            
+        }
+        research_cost = 1
+        start_year = 1936
+        category_all_infantry = {
+            river = {
+                movement = 0.05
+                attack = 0.05
+                defence = 0.1
+                
+            }
+            
+        }
+        
+    }
     
 }

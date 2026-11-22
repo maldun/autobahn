@@ -91,7 +91,7 @@ rt56_techs = {
     "winter_clothes_gw",
     "r56_gw_railway_gun",
     "r56_railway_mortar_subtech",
-    "r56_militia_tech",
+    "militia_tech",
     "r56_guerilla_warfare",  # Docrtine
     "jungletroops",
 }
@@ -435,3 +435,6 @@ if __name__ == "__main__":
     country_maps = apply_equipment_table(
         "KX_equipment.csv" if KX is True else "equipment.csv")
     apply_equipment_maps(maps, country_maps)
+
+    # dates are YYYY.MM.DD in HOI4 (has to be done after all other patches)
+    rt56_update.fix_date_format(OUT_FOLDER)

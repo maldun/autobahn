@@ -13,7 +13,7 @@ with open('militia_hlp.txt') as fp:
 
 for key in df.index:
     if key in tags:
-      df.loc[key]['r56_militia_tech'] = 1.0
+      df.loc[key]['militia_tech'] = 1.0
         
 df.to_csv('KX_equipment.csv')
 

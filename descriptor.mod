@@ -9,6 +9,6 @@ dependencies={
 }
 name="Autobahn nach 56 Redux"
 picture="thumbnail.png"
-supported_version="1.19.*"
+supported_version="1.20.*"
 path="/home/maldun/.local/share/Paradox Interactive/Hearts of Iron IV/mod/autobahn_KX"
 remote_file_id="2825956409"

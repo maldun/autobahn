@@ -1,17 +1,6 @@
 equipments = {
     small_plane_airframe = {
         year = 1933
-        can_be_produced = {
-            NOT = {
-                has_idea = BUL_army_restrictions
-                has_idea = MPL_mandate
-                has_idea = GER_treaty_of_versailles
-                has_idea = GER_treaty_of_versailles_2
-                has_idea = GER_treaty_of_versailles_3
-                
-            }
-            
-        }
         is_archetype = yes
         is_convertable = yes
         picture = archetype_fighter_equipment
@@ -850,17 +839,6 @@ equipments = {
     }
     cv_small_plane_airframe = {
         year = 1933
-        can_be_produced = {
-            NOT = {
-                has_idea = BUL_army_restrictions
-                has_idea = MPL_mandate
-                has_idea = GER_treaty_of_versailles
-                has_idea = GER_treaty_of_versailles_2
-                has_idea = GER_treaty_of_versailles_3
-                
-            }
-            
-        }
         is_archetype = yes
         is_convertable = yes
         carrier_capable = yes
@@ -1522,17 +1500,6 @@ equipments = {
     }
     medium_plane_airframe = {
         year = 1933
-        can_be_produced = {
-            NOT = {
-                has_idea = BUL_army_restrictions
-                has_idea = MPL_mandate
-                has_idea = GER_treaty_of_versailles
-                has_idea = GER_treaty_of_versailles_2
-                has_idea = GER_treaty_of_versailles_3
-                
-            }
-            
-        }
         is_archetype = yes
         is_convertable = yes
         picture = archetype_strat_bomber_equipment
@@ -2456,17 +2423,6 @@ equipments = {
     }
     large_plane_airframe = {
         year = 1933
-        can_be_produced = {
-            NOT = {
-                has_idea = BUL_army_restrictions
-                has_idea = MPL_mandate
-                has_idea = GER_treaty_of_versailles
-                has_idea = GER_treaty_of_versailles_2
-                has_idea = GER_treaty_of_versailles_3
-                
-            }
-            
-        }
         is_archetype = yes
         is_convertable = yes
         picture = archetype_strat_bomber_equipment

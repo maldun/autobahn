@@ -550,3 +550,101 @@ BUL_army_restrictions_snippet = """
 			    	has_idea = BUL_army_restrictions
 			        }}"""
 BUL_army_restrictions_patch = ""
+
+# The same for the other ideas, which do not exist in KX
+# (ship hulls and the archetypes of planes and tanks).
+BUL_army_restrictions_snippets = [BUL_army_restrictions_snippet]
+BUL_army_restrictions_snippets += ["""
+                               can_be_produced = {
+                                 NOT = {
+                                   has_idea = BUL_army_restrictions
+                                   has_idea = MPL_mandate
+                                 }}"""]
+BUL_army_restrictions_snippets += ["""
+                               can_be_produced = {
+                                 NOT = {
+                                   has_idea = BUL_army_restrictions
+                                   has_idea = MPL_mandate
+                                   has_idea = GER_treaty_of_versailles
+                                   has_idea = GER_treaty_of_versailles_2
+                                   has_idea = GER_treaty_of_versailles_3
+                                 }}"""]
+# land cruiser chassis
+BUL_army_restrictions_snippets += ["""
+                               can_be_produced = {
+                                 if = {
+                                   limit = {
+                                     has_dlc = "Arms Against Tyranny"
+                                   }
+                                   NOT = {
+                                     has_idea = BUL_army_restrictions_aat
+                                   }
+                                 }
+                                 else = {
+                                   NOT = {
+                                     has_idea = BUL_army_restrictions
+                                   }
+                                 }
+                               }"""]
+
+#######################################################################
+# Patches for effects which do not exist in KX                        #
+#######################################################################
+
+# Italian tank templates (NSB_armor.txt)
+ITA_templates_snippet = """
+            if = {
+                limit = {
+                    original_tag = ITA
+                }
+                if = {
+                    limit = {
+                        has_completed_focus = ITA_capo_supremo
+                    }
+                    ITA_add_il_duce_sh_tank_template_and_production = yes
+                }
+                else_if = {
+                    limit = {
+                        has_completed_focus = ITA_modern_musculus
+                    }
+                    ITA_add_modern_musculus_sh_tank_template_and_production = yes
+                }
+                else_if = {
+                    limit = {
+                        has_completed_focus = ITA_a_time_for_war
+                    }
+                    ITA_add_hand_of_god_sh_tank_template_and_production = yes
+                }
+            }
+            """
+ITA_templates_patch = ''
+
+# Warning to Japan (electronic_mechanical_engineering.txt),
+# the snippet has USA already changed to GER
+japan_warning_snippet = """
+            on_research_complete = {
+                if = {
+                    limit = {
+                        tag = GER
+                        has_war_with = JAP
+                    }
+                    play_warning_to_japan_effect = yes
+                }
+            }
+            """
+japan_warning_patch = ''
+
+# Nokia tires (industry.txt)
+industry_snippets += ["""
+            on_research_complete = {
+                if = {
+                    limit = {
+                        tag = FIN
+                        has_completed_focus = FIN_tire_factory_at_nokia
+                        controls_state = 1037
+                    }
+                    FIN_nokia_tires_after_tech_effect = yes
+                }
+            }
+            """]
+industry_patches += ['']

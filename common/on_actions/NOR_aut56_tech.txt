@@ -3,7 +3,7 @@ on_actions = {
         effect = {
             NOR = {
                 set_technology = {
-                    r56_militia_tech = 1
+                    militia_tech = 1
                     popup = no
                     
                 }

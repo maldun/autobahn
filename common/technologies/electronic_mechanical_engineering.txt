@@ -2885,15 +2885,6 @@ modern_radio = {
 		}
 		
 		nuclear_production = 0.5
-		on_research_complete = {
-			if = {
-				limit = {
-					tag = GER
-					has_war_with = JAP
-				}
-				play_warning_to_japan_effect = yes
-			}
-		}
 		categories = {
 			nuclear
 		}
